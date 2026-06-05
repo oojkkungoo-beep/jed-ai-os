@@ -700,6 +700,48 @@ hr.divider { border: none; border-top: 1px solid var(--border); margin: 28px 0; 
 }
 .briefing-agent:hover img { border-color: var(--green-mid); }
 
+/* Agent Log Cards */
+.agent-logs-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 4px;
+}
+.agent-log-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: border-color .15s;
+}
+.agent-log-card:hover { border-color: var(--green-mid); }
+.agent-log-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 14px;
+  background: var(--surface);
+}
+.agent-log-emoji { font-size: 20px; flex-shrink: 0; margin-top: 1px; }
+.agent-log-name { font-size: 14px; font-weight: 600; color: var(--text); }
+.agent-log-title { font-weight: 400; color: var(--muted); font-size: 13px; }
+.agent-log-summary { font-size: 12px; color: var(--muted); margin-top: 2px; line-height: 1.5; }
+.agent-log-toggle { margin-left: auto; font-size: 16px; color: var(--muted); flex-shrink: 0; }
+.agent-log-body {
+  padding: 10px 14px 12px 46px;
+  background: var(--card-bg);
+  border-top: 1px solid var(--border);
+}
+.agent-log-highlights { margin: 0 0 8px; padding-left: 16px; }
+.agent-log-highlights li { font-size: 13px; color: var(--text); margin-bottom: 4px; line-height: 1.5; }
+.agent-log-link {
+  font-size: 12px;
+  color: var(--green);
+  text-decoration: none;
+  font-weight: 500;
+}
+.agent-log-link:hover { text-decoration: underline; }
+
 /* ══ HOME GRID ══ */
 .home-grid {
   display: grid;

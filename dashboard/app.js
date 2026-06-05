@@ -39,6 +39,7 @@ let diary     = JSON.parse(localStorage.getItem('jed_diary')     || '[]');
 let todos     = JSON.parse(localStorage.getItem('jed_todos')     || '[]');
 let knowledge = JSON.parse(localStorage.getItem('jed_knowledge') || '[]');
 let sessions  = JSON.parse(localStorage.getItem('jed_sessions')  || '[]');
+let teamLogs  = [];
 
 // ── NAVIGATE ──
 function navigate(page) {
@@ -793,6 +794,30 @@ function renderBriefing() {
         </div>
       </div>
 
+      ${teamLogs.length ? `
+      <div class="briefing-card" style="grid-column:1/-1">
+        <div class="briefing-card-title">📋 Agent Daily Logs — ${teamLogs[teamLogs.length-1].dateDisplay}</div>
+        <div class="agent-logs-grid">
+          ${teamLogs[teamLogs.length-1].agents.map(a => `
+            <div class="agent-log-card" onclick="toggleLog('log-${a.id}')">
+              <div class="agent-log-head">
+                <span class="agent-log-emoji">${a.emoji}</span>
+                <div>
+                  <div class="agent-log-name">${a.name} <span class="agent-log-title">— ${a.title}</span></div>
+                  <div class="agent-log-summary">${a.summary}</div>
+                </div>
+                <span class="agent-log-toggle">▸</span>
+              </div>
+              <div class="agent-log-body" id="log-${a.id}" style="display:none">
+                <ul class="agent-log-highlights">
+                  ${a.highlights.map(h=>`<li>${h}</li>`).join('')}
+                </ul>
+                <a class="agent-log-link" href="${a.url}" target="_blank">เปิดใน Notion →</a>
+              </div>
+            </div>`).join('')}
+        </div>
+      </div>` : ''}
+
     </div>`;
 
   const el = document.getElementById('briefing-content');
@@ -821,6 +846,15 @@ function renderBriefing() {
   }
 }
 
+function toggleLog(id) {
+  const el = document.getElementById(id);
+  const card = el.closest('.agent-log-card');
+  const arrow = card.querySelector('.agent-log-toggle');
+  const open = el.style.display === 'none';
+  el.style.display = open ? 'block' : 'none';
+  arrow.textContent = open ? '▾' : '▸';
+}
+
 // ── LOAD FROM FILES ──
 async function loadFromFiles() {
   const loads = [
@@ -829,6 +863,11 @@ async function loadFromFiles() {
     { url: '/output/activity.json',     key: 'jed_activity',  ref: () => activity,  set: v => { activity = v; }  },
     { url: '/output/session_log.json',  key: 'jed_sessions',  ref: () => sessions,  set: v => { sessions = v; }  },
   ];
+  // Load team logs separately (not merged with localStorage)
+  try {
+    const r = await fetch('/output/team_logs.json');
+    if (r.ok) teamLogs = await r.json();
+  } catch (_) {}
   await Promise.all(loads.map(async ({ url, key, ref, set }) => {
     try {
       const res = await fetch(url);
