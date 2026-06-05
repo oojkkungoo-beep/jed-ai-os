@@ -1,0 +1,9 @@
+[
+  { "agent": "Laura",  "action": "อัปเดต character files ทั้ง 9 คน — Gender + คำอ่านไทย",          "time": "2026-06-05T09:00:00.000Z" },
+  { "agent": "Forge",  "action": "Redesign Team grid เป็น portrait card + pipeline square images",   "time": "2026-06-05T10:30:00.000Z" },
+  { "agent": "Forge",  "action": "เพิ่มภาพ character ทุกคนใน dashboard",                             "time": "2026-06-05T11:00:00.000Z" },
+  { "agent": "Laura",  "action": "สร้าง Vera (QA Agent) เข้าทีม",                                   "time": "2026-06-05T12:00:00.000Z" },
+  { "agent": "Nova",   "action": "Share Notion databases 5 รายการสำเร็จ",                            "time": "2026-06-05T14:00:00.000Z" },
+  { "agent": "Forge",  "action": "Init git + push code ขึ้น GitHub / Connect Vercel",                "time": "2026-06-05T15:30:00.000Z" },
+  { "agent": "Sage",   "action": "บันทึก diary + session log + YouTube log วันที่ 5 มิ.ย. 2569",    "time": "2026-06-05T16:00:00.000Z" }
+]

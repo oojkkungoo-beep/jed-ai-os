@@ -711,8 +711,39 @@ function fmt(iso) {
   return new Date(iso).toLocaleDateString('th-TH', { month:'short', day:'numeric', hour:'2-digit', minute:'2-digit' });
 }
 
+// ── LOAD FROM FILES ──
+async function loadFromFiles() {
+  const loads = [
+    { url: '/output/diary.json',        key: 'jed_diary',     ref: () => diary,     set: v => { diary = v; }     },
+    { url: '/output/projects.json',     key: 'jed_projects',  ref: () => projects,  set: v => { projects = v; }  },
+    { url: '/output/activity.json',     key: 'jed_activity',  ref: () => activity,  set: v => { activity = v; }  },
+    { url: '/output/session_log.json',  key: 'jed_sessions',  ref: () => sessions,  set: v => { sessions = v; }  },
+  ];
+  await Promise.all(loads.map(async ({ url, key, ref, set }) => {
+    try {
+      const res = await fetch(url);
+      if (!res.ok) return;
+      const data = await res.json();
+      if (!Array.isArray(data)) return;
+      // Merge: file entries take priority, deduplicate by content+date
+      const local = ref();
+      const merged = [...data];
+      local.forEach(item => {
+        const exists = merged.some(f =>
+          JSON.stringify(f) === JSON.stringify(item) ||
+          (f.date && f.date === item.date && f.content === item.content)
+        );
+        if (!exists) merged.push(item);
+      });
+      set(merged);
+      localStorage.setItem(key, JSON.stringify(merged));
+    } catch (_) {}
+  }));
+}
+
 // ── INIT ──
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+  await loadFromFiles();
   renderAgents();
   renderPipeline();
   renderDiary();
