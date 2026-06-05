@@ -46,8 +46,9 @@ function navigate(page) {
   document.querySelectorAll('.nav-item[data-page]').forEach(n => n.classList.remove('active'));
   document.getElementById('page-' + page)?.classList.add('active');
   document.querySelector(`[data-page="${page}"]`)?.classList.add('active');
-  if (page === 'session') loadSessionLog();
-  if (page === 'home')    renderHome();
+  if (page === 'session')  loadSessionLog();
+  if (page === 'home')     renderHome();
+  if (page === 'briefing') renderBriefing();
 }
 
 function switchTab(t) {
@@ -711,6 +712,115 @@ function fmt(iso) {
   return new Date(iso).toLocaleDateString('th-TH', { month:'short', day:'numeric', hour:'2-digit', minute:'2-digit' });
 }
 
+// ═══════════════════════════════════════════════
+//  DAILY BRIEFING
+// ═══════════════════════════════════════════════
+function getBriefingGreeting() {
+  const h = new Date().getHours();
+  if (h < 12) return '☀️ สวัสดีตอนเช้า Jed';
+  if (h < 17) return '🌤 สวัสดีตอนบ่าย Jed';
+  return '🌙 สวัสดีตอนเย็น Jed';
+}
+
+function renderBriefing() {
+  const now = new Date();
+  const dateStr = now.toLocaleDateString('th-TH', { weekday:'long', year:'numeric', month:'long', day:'numeric' });
+
+  // Update greeting & date
+  const greetEl = document.getElementById('briefing-greeting');
+  const dateEl  = document.getElementById('briefing-date');
+  if (greetEl) greetEl.textContent = getBriefingGreeting();
+  if (dateEl)  dateEl.textContent  = dateStr;
+
+  const pending  = todos.filter(t => !t.done);
+  const urgent   = pending.filter(t => t.priority === 'high');
+  const activeP  = projects.filter(p => p.status === 'active');
+  const lastDiary = diary.length ? diary[diary.length - 1] : null;
+  const lastSession = sessions.length ? sessions[sessions.length - 1] : null;
+
+  const html = `
+    <div class="briefing-grid">
+
+      <div class="briefing-card briefing-focus">
+        <div class="briefing-card-title">🎯 Focus วันนี้</div>
+        ${urgent.length
+          ? urgent.slice(0,3).map(t => `<div class="briefing-item urgent">🔴 ${t.text}</div>`).join('')
+          : '<div class="briefing-item muted">ไม่มีงานด่วน — วันนี้ Jed โล่งใจได้ ✨</div>'
+        }
+      </div>
+
+      <div class="briefing-card">
+        <div class="briefing-card-title">📋 Todo ทั้งหมด</div>
+        <div class="briefing-stat">${pending.length} <span>งานที่รออยู่</span></div>
+        <div class="briefing-item muted">เสร็จแล้ว ${todos.filter(t=>t.done).length} งาน</div>
+      </div>
+
+      <div class="briefing-card">
+        <div class="briefing-card-title">📂 Projects Active</div>
+        ${activeP.length
+          ? activeP.slice(0,3).map(p=>`<div class="briefing-item">• ${p.name}</div>`).join('')
+          : '<div class="briefing-item muted">ยังไม่มี project</div>'
+        }
+      </div>
+
+      <div class="briefing-card">
+        <div class="briefing-card-title">📖 Diary ล่าสุด</div>
+        ${lastDiary
+          ? `<div class="briefing-item muted">${lastDiary.date}</div>
+             <div class="briefing-item">${lastDiary.content.slice(0,120)}${lastDiary.content.length>120?'…':''}</div>`
+          : '<div class="briefing-item muted">ยังไม่มี diary</div>'
+        }
+      </div>
+
+      <div class="briefing-card">
+        <div class="briefing-card-title">📊 Session ล่าสุด</div>
+        ${lastSession
+          ? `<div class="briefing-item muted">${lastSession.date}</div>
+             <div class="briefing-item">หมวดหลัก: <strong>${lastSession.topCategory || '—'}</strong></div>
+             <div class="briefing-cats">${(lastSession.categories||[]).slice(0,3).map(c=>`<span class="cat-chip">${c.name} ${c.pct}%</span>`).join('')}</div>`
+          : '<div class="briefing-item muted">ยังไม่มี session log</div>'
+        }
+      </div>
+
+      <div class="briefing-card briefing-team">
+        <div class="briefing-card-title">🤖 ทีม AI OS</div>
+        <div class="briefing-agents">
+          ${AGENTS.map(a=>`
+            <div class="briefing-agent" onclick="openModal('${a.id}')">
+              <img src="${a.img}" alt="${a.name}" onerror="this.style.display='none'">
+              <span>${a.name}</span>
+            </div>`).join('')}
+        </div>
+      </div>
+
+    </div>`;
+
+  const el = document.getElementById('briefing-content');
+  if (el) el.innerHTML = html;
+
+  // Home widget (compact)
+  const homeEl = document.getElementById('home-briefing-content');
+  if (homeEl) {
+    homeEl.innerHTML = `
+      <div class="briefing-home-inner">
+        <div class="briefing-home-left">
+          <div class="briefing-home-greeting">${getBriefingGreeting()}</div>
+          <div class="briefing-home-date">${dateStr}</div>
+          <div class="briefing-home-stats">
+            <span>📋 ${pending.length} งาน</span>
+            <span>📂 ${activeP.length} projects</span>
+            <span>🤖 ${AGENTS.length} agents</span>
+          </div>
+        </div>
+        <div class="briefing-home-right">
+          ${urgent.length ? `<div class="briefing-urgent-label">🔴 งานด่วน</div>` : ''}
+          ${urgent.slice(0,2).map(t=>`<div class="briefing-urgent-item">${t.text}</div>`).join('')}
+          ${!urgent.length ? '<div class="briefing-no-urgent">วันนี้ไม่มีงานด่วน ✨</div>' : ''}
+        </div>
+      </div>`;
+  }
+}
+
 // ── LOAD FROM FILES ──
 async function loadFromFiles() {
   const loads = [
@@ -753,6 +863,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   renderTodos();
   renderKnowledge();
   renderTodoBadge();
+  renderBriefing();
   renderHome();
   navigate('home');
 });

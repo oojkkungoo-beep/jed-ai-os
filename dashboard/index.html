@@ -20,6 +20,7 @@
 
   <div class="nav-section">Overview</div>
   <div class="nav-item active" data-page="home"     onclick="navigate('home')">    <span class="nav-icon">🏠</span> Home</div>
+  <div class="nav-item"        data-page="briefing" onclick="navigate('briefing')"><span class="nav-icon">☀️</span> Daily Briefing</div>
   <div class="nav-item"        data-page="todo"     onclick="navigate('todo')">    <span class="nav-icon">✅</span> Todo
     <span class="nav-badge" id="todo-badge" style="display:none"></span>
   </div>
@@ -44,6 +45,20 @@
 
 <!-- ── MAIN ── -->
 <main class="main">
+
+  <!-- ══ DAILY BRIEFING ══ -->
+  <div class="page" id="page-briefing">
+    <div class="page-top">
+      <div>
+        <div class="page-title" id="briefing-greeting">☀️ Good Morning, Jed</div>
+        <div class="page-sub" id="briefing-date"></div>
+      </div>
+      <button class="btn btn-ghost btn-sm" onclick="renderBriefing()">🔄 Refresh</button>
+    </div>
+    <div class="page-body" style="padding-top:0">
+      <div id="briefing-content"></div>
+    </div>
+  </div>
 
   <!-- ══ HOME ══ -->
   <div class="page active" id="page-home">
@@ -75,6 +90,11 @@
         <div class="stat-value" id="stat-sessions">0</div>
         <div class="stat-label">Sessions</div>
       </div>
+    </div>
+
+    <!-- Daily Briefing widget -->
+    <div class="briefing-widget" onclick="navigate('briefing')" style="cursor:pointer">
+      <div id="home-briefing-content"></div>
     </div>
 
     <!-- Summary widgets -->
