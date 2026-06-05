@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jed's AI OS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── SIDEBAR ── -->
+<nav class="sidebar">
+  <div class="logo" onclick="navigate('home')" style="cursor:pointer">
+    <img src="/dashboard/images/Jed.png" alt="Jed" class="logo-avatar">
+    <div class="logo-text">
+      <div class="logo-title">Jed's AI OS</div>
+      <div class="logo-sub">Personal Command Center</div>
+    </div>
+  </div>
+
+  <div class="nav-section">Overview</div>
+  <div class="nav-item active" data-page="home"     onclick="navigate('home')">    <span class="nav-icon">🏠</span> Home</div>
+  <div class="nav-item"        data-page="todo"     onclick="navigate('todo')">    <span class="nav-icon">✅</span> Todo
+    <span class="nav-badge" id="todo-badge" style="display:none"></span>
+  </div>
+  <div class="nav-item"        data-page="session"  onclick="navigate('session')"> <span class="nav-icon">📊</span> Session Log</div>
+  <div class="nav-item"        data-page="knowledge"onclick="navigate('knowledge')"><span class="nav-icon">🧠</span> Knowledge</div>
+
+  <div class="nav-section" style="margin-top:12px">Records</div>
+  <div class="nav-item" data-page="diary"    onclick="navigate('diary')">   <span class="nav-icon">📖</span> Diary</div>
+  <div class="nav-item" data-page="projects" onclick="navigate('projects')"><span class="nav-icon">📂</span> Projects</div>
+  <div class="nav-item" data-page="activity" onclick="navigate('activity')"><span class="nav-icon">📈</span> Activity</div>
+  <div class="nav-item" data-page="review"   onclick="navigate('review')">  <span class="nav-icon">💬</span> Review
+    <span class="nav-badge" id="review-badge" style="display:none"></span>
+  </div>
+
+  <div class="nav-section" style="margin-top:12px">Team</div>
+  <div class="nav-item" data-page="team" onclick="navigate('team')"><span class="nav-icon">👥</span> Agents</div>
+  <div class="nav-item" onclick="navigate('team');setTimeout(()=>switchTab('pipeline'),50)"><span class="nav-icon">🔀</span> Pipeline</div>
+
+  <div class="sidebar-spacer"></div>
+  <div class="sidebar-copyright">© 2026 · Jed's AI OS</div>
+</nav>
+
+<!-- ── MAIN ── -->
+<main class="main">
+
+  <!-- ══ HOME ══ -->
+  <div class="page active" id="page-home">
+    <div class="hero">
+      <div class="hero-eyebrow">— personal AI command center</div>
+      <div class="hero-title">Jed <em>doesn't</em><br>work alone.</div>
+      <div class="hero-btns">
+        <button class="btn btn-green" onclick="navigate('todo')">My Tasks →</button>
+        <button class="btn btn-outline" onclick="navigate('diary')">Diary</button>
+        <button class="btn btn-ghost" onclick="navigate('knowledge')">Knowledge</button>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats-row">
+      <div class="stat-card" onclick="navigate('todo')" style="cursor:pointer">
+        <div class="stat-value" id="stat-todo">0</div>
+        <div class="stat-label">Tasks</div>
+      </div>
+      <div class="stat-card" onclick="navigate('projects')" style="cursor:pointer">
+        <div class="stat-value" id="stat-projects">0</div>
+        <div class="stat-label">Projects</div>
+      </div>
+      <div class="stat-card" onclick="navigate('knowledge')" style="cursor:pointer">
+        <div class="stat-value" id="stat-knowledge">0</div>
+        <div class="stat-label">Knowledge</div>
+      </div>
+      <div class="stat-card" onclick="navigate('session')" style="cursor:pointer">
+        <div class="stat-value" id="stat-sessions">0</div>
+        <div class="stat-label">Sessions</div>
+      </div>
+    </div>
+
+    <!-- Summary widgets -->
+    <div class="home-grid">
+
+      <!-- Today's Todo -->
+      <div class="widget">
+        <div class="widget-head">
+          <div class="widget-title">✅ งานที่ต้องทำ</div>
+          <button class="btn btn-ghost btn-xs" onclick="navigate('todo')">ดูทั้งหมด →</button>
+        </div>
+        <div id="home-todo-list" class="widget-list"></div>
+      </div>
+
+      <!-- Recent Diary -->
+      <div class="widget">
+        <div class="widget-head">
+          <div class="widget-title">📖 Diary ล่าสุด</div>
+          <button class="btn btn-ghost btn-xs" onclick="navigate('diary')">ดูทั้งหมด →</button>
+        </div>
+        <div id="home-diary-preview" class="widget-list"></div>
+      </div>
+
+      <!-- Session Analysis -->
+      <div class="widget">
+        <div class="widget-head">
+          <div class="widget-title">📊 Session ล่าสุด</div>
+          <button class="btn btn-ghost btn-xs" onclick="navigate('session')">ดูทั้งหมด →</button>
+        </div>
+        <div id="home-session-preview" class="widget-list"></div>
+      </div>
+
+      <!-- Projects -->
+      <div class="widget">
+        <div class="widget-head">
+          <div class="widget-title">📂 Projects</div>
+          <button class="btn btn-ghost btn-xs" onclick="navigate('projects')">ดูทั้งหมด →</button>
+        </div>
+        <div id="home-projects-preview" class="widget-list"></div>
+      </div>
+
+      <!-- Knowledge -->
+      <div class="widget">
+        <div class="widget-head">
+          <div class="widget-title">🧠 ความรู้ล่าสุด</div>
+          <button class="btn btn-ghost btn-xs" onclick="navigate('knowledge')">ดูทั้งหมด →</button>
+        </div>
+        <div id="home-knowledge-preview" class="widget-list"></div>
+      </div>
+
+      <!-- Activity -->
+      <div class="widget">
+        <div class="widget-head">
+          <div class="widget-title">📈 Activity ล่าสุด</div>
+          <button class="btn btn-ghost btn-xs" onclick="navigate('activity')">ดูทั้งหมด →</button>
+        </div>
+        <div id="home-activity-preview" class="widget-list"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══ TODO ══ -->
+  <div class="page" id="page-todo">
+    <div class="page-top">
+      <div>
+        <div class="page-title">✅ Todo</div>
+        <div class="page-sub">งานที่ต้องทำ — จาก session วิเคราะห์ และเพิ่มเอง</div>
+      </div>
+      <button class="btn btn-green btn-sm" onclick="toggleTodoForm()">+ เพิ่มงาน</button>
+    </div>
+    <div class="page-body" style="padding-top:0">
+
+      <!-- Add form -->
+      <div class="add-form" id="todo-add-form">
+        <input class="inp" id="todo-text" placeholder="งานที่ต้องทำ...">
+        <div class="form-row">
+          <select class="inp" id="todo-cat">
+            <option value="🎯 Strategy">🎯 Strategy</option>
+            <option value="💡 Creative">💡 Creative</option>
+            <option value="🌿 Life & Health">🌿 Life & Health</option>
+            <option value="🔧 Dev & Tech">🔧 Dev & Tech</option>
+            <option value="💰 Finance">💰 Finance</option>
+            <option value="🔍 Research">🔍 Research</option>
+            <option value="📝 Memory">📝 Memory</option>
+            <option value="📌 General">📌 General</option>
+          </select>
+          <select class="inp" id="todo-priority">
+            <option value="high">🔴 สำคัญ</option>
+            <option value="medium">🟡 ปานกลาง</option>
+            <option value="low">🟢 เบา</option>
+          </select>
+          <button class="btn btn-green btn-sm" onclick="addTodo()">บันทึก</button>
+        </div>
+      </div>
+
+      <!-- Filter tabs -->
+      <div class="filter-row" id="todo-filter-row"></div>
+
+      <!-- Todo list -->
+      <div id="todo-list"></div>
+    </div>
+  </div>
+
+  <!-- ══ SESSION LOG ══ -->
+  <div class="page" id="page-session">
+    <div class="page-top">
+      <div>
+        <div class="page-title">📊 Session Log</div>
+        <div class="page-sub">วิเคราะห์บทสนทนา — หมวดหมู่และสัดส่วน</div>
+      </div>
+      <button class="btn btn-ghost btn-sm" onclick="loadSessionLog()">🔄 Refresh</button>
+    </div>
+    <div class="page-body" style="padding-top:0">
+
+      <!-- Summary chart -->
+      <div class="session-summary" id="session-summary">
+        <div class="empty"><div class="empty-icon">📊</div><p>ยังไม่มี session log<br>จะมีข้อมูลหลังจบการสนทนา</p></div>
+      </div>
+
+      <!-- Session entries -->
+      <div id="session-list"></div>
+    </div>
+  </div>
+
+  <!-- ══ KNOWLEDGE ══ -->
+  <div class="page" id="page-knowledge">
+    <div class="page-top">
+      <div>
+        <div class="page-title">🧠 Knowledge</div>
+        <div class="page-sub">สิ่งที่ได้เรียนรู้ — VDO, บทความ, Podcast, ประสบการณ์</div>
+      </div>
+      <button class="btn btn-green btn-sm" onclick="toggleKnowledgeForm()">+ เพิ่ม</button>
+    </div>
+    <div class="page-body" style="padding-top:0">
+
+      <!-- Add form -->
+      <div class="add-form" id="knowledge-add-form">
+        <input class="inp" id="k-title" placeholder="ชื่อเรื่อง / หัวข้อที่เรียนรู้...">
+        <div class="form-row">
+          <select class="inp" id="k-source">
+            <option value="🎬 VDO">🎬 VDO</option>
+            <option value="📚 บทความ">📚 บทความ</option>
+            <option value="🎙 Podcast">🎙 Podcast</option>
+            <option value="💬 บทสนทนา">💬 บทสนทนา</option>
+            <option value="📖 หนังสือ">📖 หนังสือ</option>
+            <option value="🌐 อื่นๆ">🌐 อื่นๆ</option>
+          </select>
+          <select class="inp" id="k-topic">
+            <option value="💰 Finance">💰 Finance</option>
+            <option value="🏥 Medical">🏥 Medical</option>
+            <option value="🤖 AI & Tech">🤖 AI & Tech</option>
+            <option value="🎯 Business">🎯 Business</option>
+            <option value="🌿 Health">🌿 Health</option>
+            <option value="💡 Creative">💡 Creative</option>
+            <option value="📌 General">📌 General</option>
+          </select>
+        </div>
+        <textarea class="diary-ta" id="k-content" placeholder="Key takeaway — สิ่งสำคัญที่ได้เรียนรู้..." style="margin-top:8px;height:80px"></textarea>
+        <div class="form-row" style="margin-top:8px">
+          <input class="inp" id="k-url" placeholder="URL / Link (ถ้ามี)">
+          <button class="btn btn-green btn-sm" onclick="addKnowledge()">บันทึก</button>
+        </div>
+      </div>
+
+      <!-- Filter -->
+      <div class="filter-row" id="knowledge-filter-row"></div>
+
+      <!-- Knowledge list -->
+      <div id="knowledge-list"></div>
+    </div>
+  </div>
+
+  <!-- ══ DIARY ══ -->
+  <div class="page" id="page-diary">
+    <div class="page-top">
+      <div><div class="page-title">📖 Diary</div><div class="page-sub">บันทึกประจำวัน</div></div>
+    </div>
+    <div class="page-body" style="padding-top:0">
+      <div class="diary-input-card">
+        <div class="diary-input-label">เขียน diary วันนี้</div>
+        <textarea class="diary-ta" id="diary-input" placeholder="วันนี้ทำอะไรไปบ้าง..."></textarea>
+        <div style="margin-top:10px"><button class="btn btn-green btn-sm" onclick="writeDiary()">บันทึก</button></div>
+      </div>
+      <div class="diary-entries" id="diary-list"></div>
+    </div>
+  </div>
+
+  <!-- ══ PROJECTS ══ -->
+  <div class="page" id="page-projects">
+    <div class="page-top">
+      <div><div class="page-title">📂 Projects</div><div class="page-sub">โปรเจกต์ทั้งหมด</div></div>
+      <button class="btn btn-green btn-sm" onclick="document.getElementById('add-form').classList.toggle('open')">+ เพิ่ม</button>
+    </div>
+    <div class="page-body" style="padding-top:0">
+      <div class="add-form" id="add-form">
+        <input class="inp" id="new-proj-name" placeholder="ชื่อโปรเจกต์...">
+        <div class="form-row">
+          <select class="inp" id="new-proj-status">
+            <option value="active">Active</option>
+            <option value="pending">Pending</option>
+            <option value="done">Done</option>
+          </select>
+          <button class="btn btn-green btn-sm" onclick="addProject()">บันทึก</button>
+        </div>
+      </div>
+      <div class="project-list" id="projects-list"></div>
+    </div>
+  </div>
+
+  <!-- ══ ACTIVITY ══ -->
+  <div class="page" id="page-activity">
+    <div class="page-top">
+      <div><div class="page-title">📈 Activity</div><div class="page-sub">ประวัติการทำงานของทีม</div></div>
+      <button class="btn btn-ghost btn-sm" onclick="clearActivity()">ล้าง</button>
+    </div>
+    <div class="page-body" style="padding-top:0">
+      <div class="act-list" id="act-list"></div>
+    </div>
+  </div>
+
+  <!-- ══ REVIEW ══ -->
+  <div class="page" id="page-review">
+    <div class="page-top">
+      <div><div class="page-title">💬 Review</div><div class="page-sub">รวม comments จากทุก agent</div></div>
+      <div style="display:flex;gap:8px">
+        <button class="btn btn-ghost btn-sm" onclick="clearReview()">ล้าง</button>
+        <button class="btn btn-gold  btn-sm" onclick="exportReview()">📤 Export</button>
+      </div>
+    </div>
+    <div class="page-body" style="padding-top:0">
+      <div class="rev-list" id="rev-list"></div>
+    </div>
+  </div>
+
+  <!-- ══ TEAM ══ -->
+  <div class="page" id="page-team">
+    <div class="page-top">
+      <div>
+        <div class="page-title">👥 Team</div>
+        <div class="page-sub">AI agents ทั้งหมด — กดเพื่อดู prompt และเพิ่ม comment</div>
+      </div>
+    </div>
+    <div class="page-body" style="padding-top:0">
+      <div class="tab-toggle">
+        <button class="tab-btn active" id="tab-grid"     onclick="switchTab('grid')">Team grid</button>
+        <button class="tab-btn"        id="tab-pipeline" onclick="switchTab('pipeline')">Pipeline flow</button>
+      </div>
+      <div id="view-grid">
+        <div class="agents-grid" id="agents-grid"></div>
+      </div>
+      <div id="view-pipeline" style="display:none">
+        <div id="pipeline-content"></div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- ── MODAL ── -->
+<div class="modal-overlay" id="modal-overlay" onclick="if(event.target===this)closeModal()">
+  <div class="modal">
+    <div class="modal-head">
+      <div>
+        <div class="modal-name" id="modal-name"></div>
+        <div class="modal-role" id="modal-role"></div>
+      </div>
+      <span class="modal-close" onclick="closeModal()">✕</span>
+    </div>
+    <div class="tab-toggle" style="margin-bottom:14px">
+      <button class="tab-btn active" id="tab-prompt" onclick="setModalTab('prompt')">📋 Prompt</button>
+      <button class="tab-btn" id="tab-char" onclick="setModalTab('character')">🎭 Character</button>
+    </div>
+    <div class="modal-body" id="modal-body">กำลังโหลด...</div>
+    <input type="hidden" id="modal-agent-id">
+    <textarea class="modal-ta" id="comment-input" placeholder="เพิ่ม comment หรือคำแนะนำ..."></textarea>
+    <div style="margin-top:10px">
+      <button class="btn btn-green btn-sm" onclick="saveComment()">บันทึก Comment</button>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
