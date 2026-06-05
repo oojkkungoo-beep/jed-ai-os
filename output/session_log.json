@@ -1,0 +1,18 @@
+[
+  {
+    "date": "5 มิถุนายน 2569",
+    "topCategory": "AI OS Dashboard",
+    "categories": [
+      { "name": "Dashboard & UI", "count": 12, "pct": 40 },
+      { "name": "Team Setup", "count": 8, "pct": 27 },
+      { "name": "System Integration", "count": 6, "pct": 20 },
+      { "name": "Strategy", "count": 4, "pct": 13 }
+    ],
+    "tasks": [
+      "อัปเดต character files ทั้ง 9 คน — Gender + คำอ่านไทย",
+      "Redesign Team grid เป็น portrait card + Pipeline square images",
+      "สร้าง Vera (QA Agent) เข้าทีม",
+      "Share Notion + Connect GitHub → Vercel"
+    ]
+  }
+]
