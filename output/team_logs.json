@@ -9,7 +9,11 @@
         "emoji": "🤖",
         "title": "Daily Briefing",
         "summary": "วันนี้เป็นวันที่ระบบ AI ทีมทำงานอย่างครบวงจร ประสานงานทุก Agent ให้สอดคล้องกับ priority ของ Jed",
-        "highlights": ["ประสาน Agent ทั้งทีมครบถ้วน", "3 สิ่งที่ควรทำพรุ่งนี้: รายงาน OHC, Sprint planning, AI OS Architecture", "ถาม Jed: ต้องการ focus ที่ OHC App / AI OS / Clinical?"],
+        "highlights": [
+          "ประสาน Agent ทั้งทีมครบถ้วน",
+          "3 สิ่งที่ควรทำพรุ่งนี้: รายงาน OHC, Sprint planning, AI OS Architecture",
+          "ถาม Jed: ต้องการ focus ที่ OHC App / AI OS / Clinical?"
+        ],
         "url": "https://app.notion.com/p/376e50158c48810e80afcdcdaff6efcc",
         "full": "## Laura — Daily Briefing\n**วันที่:** 5 มิถุนายน 2569\n\n### สรุปวันนี้\nวันนี้เป็นวันที่ระบบ AI ทีมทำงานอย่างครบวงจร ตั้งแต่การดูแลงาน Clinical ของ รพ. ไปจนถึงการพัฒนา OHC App และการวางสถาปัตยกรรม AI OS ใหม่\n\n### 🎯 3 สิ่งที่ควรทำพรุ่งนี้\n1. 🏥 Review และ sign-off รายงาน Occupational Health\n2. 📱 Sprint planning OHC App กับ Forge\n3. 🧠 ทบทวน Agent Orchestration Architecture กับ Sage\n\n### คำถามจาก Laura\nสัปดาห์นี้ Jed อยากให้ทีมโฟกัสที่ด้านไหน?\n(A) เร่ง OHC App · (B) AI OS Infrastructure · (C) งาน Clinical"
       },
@@ -19,7 +23,11 @@
         "emoji": "🎯",
         "title": "CEO Thought",
         "summary": "ความจริงที่ไม่อยากได้ยิน: ความมั่นคงของราชการคือยาสลบ — คุณกำลังสร้างธุรกิจ หรือสะสมงานอดิเรกราคาแพง?",
-        "highlights": ["ข้อได้เปรียบเฉพาะตัว: แพทย์ + AI Literacy = คูเมืองที่เงินซื้อไม่ได้", "คำถามโฟกัส: ใครยอมจ่ายเงินให้ OHC App วันนี้ และคุยกับเขาแล้วกี่คน?", "นิสัย CEO: วัดตัวเลข 3 ตัวก่อนนอนทุกคืน"],
+        "highlights": [
+          "ข้อได้เปรียบเฉพาะตัว: แพทย์ + AI Literacy = คูเมืองที่เงินซื้อไม่ได้",
+          "คำถามโฟกัส: ใครยอมจ่ายเงินให้ OHC App วันนี้ และคุยกับเขาแล้วกี่คน?",
+          "นิสัย CEO: วัดตัวเลข 3 ตัวก่อนนอนทุกคืน"
+        ],
         "url": "https://app.notion.com/p/376e50158c4881d8ae85c69ec6b496d4",
         "full": "## Atlas — CEO Thought (5 มิ.ย. 2026)\n\n### 🔥 ความจริงที่ไม่อยากได้ยิน\nความมั่นคงของราชการคือยาสลบ มันทำให้คุณไม่เคยต้องเจ็บจริง ไม่เคยต้องเดิมพันจริง\n\n**คำถาม:** คุณกำลังสร้างธุรกิจ หรือกำลังสะสมงานอดิเรกราคาแพง?\n\n### 📊 ข้อได้เปรียบเฉพาะตัวของ Jed\n1. แพทย์ + บริบทระบบสาธารณสุขไทย — คูเมืองที่เงินซื้อไม่ได้\n2. วินัยทหาร + AI Literacy — สะพานหายากระหว่างคนเข้าใจปัญหา กับเครื่องมือที่แก้ปัญหา\n\n### 🎯 คำถามโฟกัสประจำสัปดาห์\n\"ใครคือคนที่ยอมจ่ายเงินให้ OHC App วันนี้ — ไม่ใช่ปีหน้า — และฉันได้คุยกับเขาไปแล้วกี่คนในสัปดาห์นี้?\"\n\n### 💼 นิสัย CEO ประจำวัน\nก่อนนอนเขียน 3 ตัวเลข: (1) ผู้ใช้เพิ่มกี่ราย (2) เงินเข้าออกเท่าไหร่ (3) ตัวเลขที่สำคัญที่สุดขยับไหม"
       },
@@ -29,7 +37,11 @@
         "emoji": "🌿",
         "title": "Daily Check",
         "summary": "Health score + ตารางพรุ่งนี้ 6 มิ.ย. 2569 พร้อมคำแนะนำสุขภาพสำหรับทหาร-แพทย์ที่ทำงานหนัก",
-        "highlights": ["ตรวจสอบ: อาหาร 3 มื้อ, น้ำ 8 แก้ว, ออกกำลังกาย, นอน 7-8 ชม.", "ตารางพรุ่งนี้: PT 05:30 · งาน 08:00 · Coding 18:00 · Diary 21:00", "Tip: ยืดเหยียด 5-10 นาทีทุก 2 ชั่วโมง ลด Burnout"],
+        "highlights": [
+          "ตรวจสอบ: อาหาร 3 มื้อ, น้ำ 8 แก้ว, ออกกำลังกาย, นอน 7-8 ชม.",
+          "ตารางพรุ่งนี้: PT 05:30 · งาน 08:00 · Coding 18:00 · Diary 21:00",
+          "Tip: ยืดเหยียด 5-10 นาทีทุก 2 ชั่วโมง ลด Burnout"
+        ],
         "url": "https://app.notion.com/p/376e50158c488182a19bfb586834e736",
         "full": "## Nova — Daily Check (5 มิ.ย. 2026)\n\n### Health Score วันนี้\n- ☐ อาหาร/น้ำดื่ม: 3 มื้อ + น้ำ 8 แก้ว\n- ☐ ออกกำลังกาย\n- ☐ นอน 7-8 ชั่วโมง\n- ☐ จัดการความเครียด\n\n### ตารางพรุ่งนี้ (6 มิ.ย.)\n| เวลา | กิจกรรม |\n|------|----------|\n| 05:30 | PT + อาหารเช้า |\n| 08:00 | งานหลัก |\n| 18:00 | AI OS / OHC Coding |\n| 21:00 | สรุปวัน + Diary |\n\n### 💧 Tip สุขภาพ\nยืดเหยียด 5-10 นาทีทุก 2 ชั่วโมง บรรเทาความตึงเครียดได้ดีสำหรับทหาร-แพทย์ที่ทำงานหนัก"
       },
@@ -39,7 +51,11 @@
         "emoji": "💰",
         "title": "Finance Report",
         "summary": "Portfolio Signal: SET ระวังช่วง 1,300-1,350 · ทองยังเป็น Safe Haven · บาทอ่อนค่า 34-36 บาท/USD",
-        "highlights": ["SET: ถ้ายืนเหนือ 1,320 มีโอกาส Rebound", "ทอง: Safe Haven ดี — DCA Gold ETF ต่อเนื่อง", "Tip: แยกบัญชี 3 ใบ — เงินเดือน / ธุรกิจ / ฉุกเฉิน"],
+        "highlights": [
+          "SET: ถ้ายืนเหนือ 1,320 มีโอกาส Rebound",
+          "ทอง: Safe Haven ดี — DCA Gold ETF ต่อเนื่อง",
+          "Tip: แยกบัญชี 3 ใบ — เงินเดือน / ธุรกิจ / ฉุกเฉิน"
+        ],
         "url": "https://app.notion.com/p/376e50158c48815da888f88dfc5b7969",
         "full": "## Mint — Finance Report (5 มิ.ย. 2026)\n\n### Portfolio Signal\n**🇹🇭 SET:** แนวโน้มระมัดระวัง 1,300-1,350 จุด — ถ้ายืนเหนือ 1,320 มีโอกาส Rebound\n**🥇 ทอง:** ยังเป็น Safe Haven ที่ดี — DCA Gold ETF สม่ำเสมอ\n**💵 USD/THB:** บาทอ่อน 34-36 บาท — ถ้ามีรายรับ USD รอแลกตอนเกิน 35.50\n\n### 💡 Tip ประจำวัน\nแยกบัญชี 3 ใบชัดเจน:\n1. บัญชีเงินเดือน → ชีวิตส่วนตัว + ออม\n2. บัญชีธุรกิจ → OHC App & AI OS\n3. บัญชีฉุกเฉิน → 3-6 เดือน ห้ามแตะ"
       },
@@ -49,9 +65,159 @@
         "emoji": "📝",
         "title": "Diary Prompt",
         "summary": "5 คำถามสะท้อนวัน: ความขัดแย้ง Military vs AI Builder, สุขภาพ/Burnout, ความหมายของ Healer, วิวัฒนาการ 90 วัน",
-        "highlights": ["ความขัดแย้ง Military Officer vs AI Builder วันนี้เป็นอย่างไร?", "สัญญาณ Burnout ทางกาย/ใจมีไหม?", "Quote: ทั้งสองคุณค่าอยู่ในคุณ — ใช้มันให้เต็มที่"],
+        "highlights": [
+          "ความขัดแย้ง Military Officer vs AI Builder วันนี้เป็นอย่างไร?",
+          "สัญญาณ Burnout ทางกาย/ใจมีไหม?",
+          "Quote: ทั้งสองคุณค่าอยู่ในคุณ — ใช้มันให้เต็มที่"
+        ],
         "url": "https://app.notion.com/p/376e50158c48815895f0f3a10bb33195",
         "full": "## Sage — Diary Prompt (5 มิ.ย. 2569)\n\n### คำถามสะท้อนวันนี้\n1. **Military vs AI Builder:** วันนี้ dissonance เพิ่มหรือลด?\n2. **สุขภาพ/Burnout:** สังเกตสัญญาณทางกาย/ใจไหม?\n3. **ความหมายของ Healer:** วันนี้ช่วยใครบ้าง?\n4. **วิวัฒนาการ 90 วัน:** เห็นการเปลี่ยนแปลงอะไรที่ภูมิใจ?\n5. **การตัดสินใจที่หลีกเลี่ยง:** มีสิ่งที่ต้อง commit แต่ยังลังเลอยู่ไหม?\n\n### 💭 Quote ประจำวัน\n*\"ทั้งสองคุณค่าอยู่ในคุณ — ใช้มันให้เต็มที่\"*"
+      }
+    ]
+  },
+  {
+    "date": "2026-06-06",
+    "dateDisplay": "6 มิถุนายน 2569",
+    "agents": [
+      {
+        "id": "laura",
+        "name": "Laura",
+        "emoji": "🤖",
+        "title": "Daily Briefing",
+        "summary": "เปิดประชุมทีม วันเสาร์ที่ 6 มิ.ย. — 3 งานค้างจากเมื่อวาน: Vercel redirect, Slide ยาสลบ, Character card",
+        "highlights": [
+          "Vercel redirect ✅ แก้แล้ว + push GitHub แล้ว",
+          "Slide ยาสลบ — Muse พร้อมช่วย draft โครงสร้าง",
+          "Character card — รอ Jed เปิด Bing Image Creator"
+        ],
+        "url": "",
+        "full": "## Laura — Daily Briefing\n**วันที่:** 6 มิถุนายน 2569 (วันเสาร์)\n\n### สรุปการประชุมทีมเช้าวันนี้\nเปิดประชุม Daily Briefing ทั้ง 10 คน ทบทวนงานค้างจากเมื่อวาน 3 รายการ\n\n### งานค้างจากวันที่ 5 มิ.ย.\n1. 🔧 Debug Vercel redirect — **✅ เสร็จแล้ว** (Forge แก้ + push GitHub)\n2. 🎨 Slide ยาสลบ หน้าแรก — Muse พร้อมช่วย\n3. 🖼️ Generate character card — รอ Jed\n\n### Priority วันนี้\n- 🔴 Vercel (เสร็จแล้ว)\n- 🟡 Slide ยาสลบ\n- 🟡 Character card\n- 🟢 ออกกำลังกาย (ไทเก็ก)"
+      },
+      {
+        "id": "forge",
+        "name": "Forge",
+        "emoji": "🔧",
+        "title": "Dev Report",
+        "summary": "แก้ Vercel redirect สำเร็จ — เปลี่ยน meta refresh เป็น JS replace, เพิ่ม /dashboard rewrite, push GitHub เรียบร้อย",
+        "highlights": [
+          "แก้ index.html: meta refresh → window.location.replace()",
+          "เพิ่ม vercel.json: rewrite /dashboard path",
+          "Push ขึ้น GitHub (master) → Vercel auto-deploy แล้ว"
+        ],
+        "url": "",
+        "full": "## Forge — Dev Report\n**วันที่:** 6 มิถุนายน 2569\n\n### งานที่ทำวันนี้\n**Fix: Vercel redirect ปัญหา**\n\n**วิเคราะห์ปัญหา:**\n- `index.html` ใช้ meta refresh redirect → ช้า + ไม่น่าเชื่อถือ\n- `vercel.json` rewrite เฉพาะ `/` path ไม่ครอบคลุม\n\n**สิ่งที่แก้:**\n1. `index.html` — เปลี่ยนเป็น `window.location.replace('/dashboard/index.html')`\n2. `vercel.json` — เพิ่ม rewrite สำหรับ `/dashboard` path\n\n**ผลลัพธ์:**\n- ✅ Dashboard โหลดได้ปกติในเครื่อง\n- ✅ Push ขึ้น GitHub commit `6b9cb12`\n- ✅ Vercel auto-deploy triggered"
+      },
+      {
+        "id": "nova",
+        "name": "Nova",
+        "emoji": "🌿",
+        "title": "Daily Schedule",
+        "summary": "วันเสาร์ — แนะนำเริ่มด้วยไทเก็ก เช้า: Vercel, บ่าย: Slide ยาสลบ, เย็น: ดูคลิปหรือพัก",
+        "highlights": [
+          "เช้านี้: ไทเก็ก 18 ท่า (คลิปอยู่ในคิว)",
+          "บ่าย: Slide ยาสลบ หน้าแรก กับ Muse",
+          "เย็น: ดูคลิป Mew Social Claude Code EP.1-2"
+        ],
+        "url": "",
+        "full": "## Nova — Daily Schedule\n**วันที่:** 6 มิถุนายน 2569 (วันเสาร์)\n\n### ตารางแนะนำวันนี้\n| ช่วงเวลา | กิจกรรม |\n|---------|----------|\n| เช้า | ไทเก็ก 18 ท่า + อาหารเช้า |\n| สาย | Debug Vercel (เสร็จแล้ว ✅) |\n| บ่าย | Slide ยาสลบ หน้าแรก กับ Muse |\n| บ่ายแก่ | Generate character card |\n| เย็น | ดูคลิป Claude Code ที่คิวไว้ |\n\n### 🌿 Health Reminder\nวันเสาร์ — ชาร์จพลัง อย่าลืมดื่มน้ำและพักตาจากหน้าจอบ้างนะคะ"
+      },
+      {
+        "id": "muse",
+        "name": "Muse",
+        "emoji": "✨",
+        "title": "Content Idea",
+        "summary": "Slide ยาสลบ — hook หน้าแรก: 'ก่อนหมอผ่าตัด... คุณรู้ไหมว่าเกิดอะไรขึ้นในร่างกายคุณ?' พร้อม draft โครงสร้างทั้งหมด",
+        "highlights": [
+          "Hook หน้าแรก: ตั้งคำถามให้อยากรู้ต่อ",
+          "โครงสร้างสไลด์: Hook → ยาสลบคืออะไร → กลไก → ขั้นตอน → Q&A",
+          "พร้อม draft เต็มถ้า Jed ต้องการ"
+        ],
+        "url": "",
+        "full": "## Muse — Content Idea\n**วันที่:** 6 มิถุนายน 2569\n\n### 🎨 Slide ยาสลบคืออะไร — แนวคิดหน้าแรก\n\n**Hook ที่แนะนำ:**\n> *\"ก่อนหมอผ่าตัด... คุณรู้ไหมว่าเกิดอะไรขึ้นในร่างกายคุณ?\"*\n\n**โครงสร้างสไลด์เบื้องต้น:**\n1. Hook (หน้าแรก) — ตั้งคำถาม\n2. ยาสลบคืออะไร — นิยามเข้าใจง่าย\n3. กลไกการออกฤทธิ์ — visual diagram\n4. ขั้นตอนก่อน/ระหว่าง/หลังใช้ยา\n5. คำถามที่คนสงสัยบ่อย\n6. สรุป + CTA\n\nถ้า Jed พร้อม — บอกได้เลยค่ะ จะ draft เต็มทันที"
+      },
+      {
+        "id": "atlas",
+        "name": "Atlas",
+        "emoji": "🎯",
+        "title": "Strategic Note",
+        "summary": "Priority ชัดเจน: Vercel (production ต้องพร้อมก่อน) → Slide ยาสลบ (สร้าง credibility แพทย์+AI) อย่าปล่อยค้างนาน",
+        "highlights": [
+          "Vercel = production — ต้องแก้ก่อนเสมอ (เสร็จแล้ว ✅)",
+          "Slide ยาสลบ = content สร้าง credibility ในฐานะแพทย์ที่ใช้ AI",
+          "Mint แนะนำ: คิดต่อถึง monetization ของ AI OS"
+        ],
+        "url": "",
+        "full": "## Atlas — Strategic Note\n**วันที่:** 6 มิถุนายน 2569\n\n### มุมมองวันนี้\n**2 Priority ที่ชัดเจน:**\n\n🔴 **Urgent — Vercel:** ระบบ production ต้องพร้อมก่อน → **เสร็จแล้ว ✅**\n\n🟡 **Strategic — Slide ยาสลบ:** Content ที่สร้าง credibility ให้ Jed ในฐานะแพทย์ที่ใช้ AI — อย่าปล่อยค้างนาน\n\n### มองไปข้างหน้า\nเมื่อ Vercel พร้อม → เริ่มคิดเรื่อง monetization ของ AI OS ได้แล้ว Mint พร้อม support ครับ"
+      },
+      {
+        "id": "scout",
+        "name": "Scout",
+        "emoji": "🔍",
+        "title": "Research Queue",
+        "summary": "คลิปน่าสนใจในคิว: คู่มือ AI Agent 0-1 (Jedi Trinupab) + Claude Code series ของ Mew Social — พร้อม summarize ถ้า Jed ต้องการ",
+        "highlights": [
+          "คู่มือสร้าง AI Agent จาก 0-1 — Jedi Trinupab (YouTube)",
+          "Claude Code 18 ระบบ EP.1 + EP.2 — Mew Social",
+          "พร้อม research note ถ้า Jed ดูแล้วอยากสรุป"
+        ],
+        "url": "",
+        "full": "## Scout — Research Queue\n**วันที่:** 6 มิถุนายน 2569\n\n### คลิปน่าสนใจในคิววันนี้\n1. **คู่มือสร้าง AI Agent จาก 0-1 (Full Course)** — Jedi Trinupab\n   อาจมี framework ใหม่ที่เอามาปรับใช้กับทีมนี้ได้\n2. **Claude Code 18 ระบบ EP.1 + EP.2** — Mew Social\n   เคส real-world ที่น่าศึกษา\n3. **ปั้นกองทัพ Claude Army** — หมอกิม AIM Academy\n   ตรงกับสิ่งที่ Jed กำลังทำอยู่\n\n### พร้อม\nถ้า Jed ดูคลิปไหนแล้วอยากได้ research note — บอกได้เลยครับ"
+      },
+      {
+        "id": "mint",
+        "name": "Mint",
+        "emoji": "💰",
+        "title": "Finance Note",
+        "summary": "ไม่มีตัวเลขเร่งด่วนวันนี้ แต่เมื่อ Vercel พร้อม — AI OS มีมูลค่าที่ควรวางแผน monetization ได้แล้ว",
+        "highlights": [
+          "วันนี้: ไม่มีตัวเลขเร่งด่วน",
+          "Vercel พร้อม → เริ่มคิด monetization AI OS ได้",
+          "AI OS = asset มูลค่าสูง ควรมี revenue model"
+        ],
+        "url": "",
+        "full": "## Mint — Finance Note\n**วันที่:** 6 มิถุนายน 2569\n\n### สถานการณ์วันนี้\nไม่มีตัวเลขเร่งด่วนค่ะ\n\n### มองไปข้างหน้า\nเมื่อ Vercel พร้อมใช้งานเต็มที่ — AI OS ที่ Jed สร้างมีมูลค่าเป็น asset จริงๆ ค่ะ\n\n**ขั้นตอนต่อไปที่แนะนำ:**\n1. ประเมิน cost ที่ใช้ไป (Vercel, Claude API, tools)\n2. คิด revenue model: SaaS / consultation / licensing\n3. กำหนด target: คุ้มทุนในกี่เดือน?"
+      },
+      {
+        "id": "sage",
+        "name": "Sage",
+        "emoji": "📝",
+        "title": "Daily Log",
+        "summary": "บันทึก: ประชุมทีมเช้า, Forge แก้ Vercel สำเร็จ, 2 งานค้าง: Slide ยาสลบ + Character card",
+        "highlights": [
+          "✅ Vercel redirect แก้แล้ว — push GitHub commit 6b9cb12",
+          "🎨 Slide ยาสลบ — ยังรออยู่",
+          "🖼️ Character card — ยังรออยู่"
+        ],
+        "url": "",
+        "full": "## Sage — Daily Log\n**วันที่:** 6 มิถุนายน 2569\n\n### บันทึกวันนี้\n\n**09:00 — ประชุมทีม Daily Briefing**\nทั้ง 10 คนรายงานตัว ทบทวนงานค้าง 3 รายการ\n\n**งานที่เสร็จ:**\n- ✅ Vercel redirect fix (Forge) — commit `6b9cb12` push แล้ว\n\n**งานที่ยังค้าง:**\n- 🎨 Slide ยาสลบ หน้าแรก\n- 🖼️ Character card (Bing Image Creator)\n\n### สิ่งที่เรียนรู้เกี่ยวกับ Jed วันนี้\n- Jed ให้ความสำคัญกับระบบที่รันได้จริงก่อน (Vercel)\n- ชอบประชุมทีมแบบ in-character ที่ทุกคนมีบุคลิกชัดเจน"
+      },
+      {
+        "id": "vera",
+        "name": "Vera",
+        "emoji": "🔎",
+        "title": "QA Check",
+        "summary": "Briefing วันนี้ผ่าน — ทีมพร้อมทุกคน output ชัดเจน ขอ review ผล Vercel หลัง deploy จริงด้วยนะคะ",
+        "highlights": [
+          "Briefing quality: ✅ ครบ 10 คน มี priority ชัดเจน",
+          "Forge output: ✅ แก้ถูกจุด push แล้ว รอ verify บน production",
+          "Pending: ตรวจ Vercel production URL หลัง deploy"
+        ],
+        "url": "",
+        "full": "## Vera — QA Check\n**วันที่:** 6 มิถุนายน 2569\n\n### ผลการตรวจ Daily Briefing\n- ✅ ความครบถ้วน: ทีมพร้อมทุกคน 10/10\n- ✅ Priority: ชัดเจน เรียงลำดับถูกต้อง\n- ✅ Format: อ่านง่าย มีโครงสร้าง\n- ✅ Action: มี next step ที่ทำได้จริง\n\n**คะแนน: A**\n\n### สิ่งที่ต้องติดตาม\n- หลัง Forge push แล้ว → ตรวจ Vercel production URL จริง\n- Slide ยาสลบ → ตรวจ draft ก่อนใช้งาน\n\n**Recommendation:** ผ่าน — ส่ง Jed ได้เลยค่ะ"
+      },
+      {
+        "id": "council",
+        "name": "Council",
+        "emoji": "⚖️",
+        "title": "Standby",
+        "summary": "ไม่มีวาระตัดสินใจใหญ่วันนี้ — พร้อม call ทันทีถ้า Jed ต้องตัดสินใจเรื่อง AI OS direction หรือ Slide content strategy",
+        "highlights": [
+          "วันนี้: Standby ไม่มีวาระเร่งด่วน",
+          "พร้อม: ถ้าต้องตัดสินใจเรื่อง AI OS monetization",
+          "พร้อม: ถ้าต้องตัดสินใจเรื่อง Slide ยาสลบ — จะพรีเซนต์ที่ไหน"
+        ],
+        "url": "",
+        "full": "## Council — Standby\n**วันที่:** 6 มิถุนายน 2569\n\n### สถานะวันนี้\nไม่มีวาระการตัดสินใจใหญ่เร่งด่วนครับ\n\n### พร้อม Call เมื่อ\n1. **AI OS Direction** — จะเอา AI OS ไปทำอะไรต่อ? (product / tool / ขาย?)\n2. **Slide ยาสลบ** — จะพรีเซนต์ที่ไหน? กลุ่มเป้าหมายคือใคร?\n3. **Monetization** — ถ้า Mint นำเสนอ model แล้วต้องตัดสินใจ — เรียกได้เลยครับ"
       }
     ]
   }

@@ -865,7 +865,7 @@ async function loadFromFiles() {
   ];
   // Load team logs separately (not merged with localStorage)
   try {
-    const r = await fetch('/output/team_logs.json');
+    const r = await fetch('/output/team_logs.json', { cache: 'no-cache' });
     if (r.ok) teamLogs = await r.json();
   } catch (_) {}
   await Promise.all(loads.map(async ({ url, key, ref, set }) => {
