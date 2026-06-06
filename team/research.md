@@ -20,6 +20,11 @@
 - หลัง research เสร็จ → เพิ่มสาระสำคัญใน Knowledge dashboard (jed_knowledge localStorage) ด้วยเสมอ
 - แยก entry ตาม concept ย่อย ไม่ใส่ทุกอย่างในก้อนเดียว
 
+## Second Brain Integration
+- **Vault Path:** `D:\Second_Brain\`
+- Research notes → save ใน `D:\Second_Brain\20-AI-Learning\Research-Notes\`
+- เช็ค vault ก่อนค้นเว็บเสมอ — ถ้าเจอใน vault ดึงมาใช้เลย ประหยัด token
+
 ## Output Format
 ```markdown
 # 🔍 [หัวข้อ]

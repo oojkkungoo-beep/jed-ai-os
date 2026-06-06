@@ -35,5 +35,9 @@ idea, content, คอนเทนต์, เขียน, hook, storytelling, po
 - YouTube Script — hook แรง, storytelling, CTA ชัด
 - Presentation / Slide — กระชับ visual-first
 
+## Second Brain Integration
+- Idea cards → save ใน `D:\Second_Brain\30-Business\Ideas\`
+- ดึง source จาก vault ก่อนเขียน content เสมอ
+
 ## บันทึก Output
 `output/ideas/YYYY-MM-DD-[ชื่อ].md`
