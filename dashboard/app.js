@@ -2,6 +2,15 @@
 //  Jed's AI OS — Dashboard App
 // ═══════════════════════════════════════════════
 
+// ── BASE PATH — works on both localhost and GitHub Pages ──
+// localhost:3334 → BASE = ''
+// oojkkungoo-beep.github.io/jed-ai-os → BASE = '/jed-ai-os'
+const BASE = (() => {
+  const p = location.pathname;
+  const m = p.match(/^(\/[^/]+)\/dashboard\//);
+  return (m && location.hostname !== 'localhost') ? m[1] : '';
+})();
+
 // ── AGENTS ──
 const AGENTS = [
   { id:'laura',   name:'Laura',   thai:'ลอร่า',   gender:'หญิง', ending:'ค่ะ',  model:'sonnet', emoji:'🎭', img:'images/Laura.png',   role:'Main Orchestrator',       desc:'รับทุก input ตัดสินใจ delegate ไปยัง agent ที่เหมาะสม', file:'/team/laura.md',        charFile:'/characters/laura.md'   },
@@ -278,7 +287,7 @@ function clearDoneTodos() {
 async function loadSessionLog() {
   // Try to fetch output/session_log.json if exists
   try {
-    const res = await fetch('/output/session_log.json');
+    const res = await fetch(`${BASE}/output/session_log.json`);
     if (res.ok) {
       const data = await res.json();
       if (Array.isArray(data)) {
@@ -963,16 +972,16 @@ function toggleLog(id) {
 async function loadFromFiles() {
   // Files written by agents — always authoritative
   const fileSources = [
-    { url: '/output/diary.json',        set: v => { diary = v; }      },
-    { url: '/output/projects.json',     set: v => { projects = v; }   },
-    { url: '/output/activity.json',     set: v => { activity = v; }   },
-    { url: '/output/session_log.json',  set: v => { sessions = v; }   },
-    { url: '/output/knowledge.json',    set: v => { knowledge = v; }  },
+    { url: `${BASE}/output/diary.json`,        set: v => { diary = v; }      },
+    { url: `${BASE}/output/projects.json`,     set: v => { projects = v; }   },
+    { url: `${BASE}/output/activity.json`,     set: v => { activity = v; }   },
+    { url: `${BASE}/output/session_log.json`,  set: v => { sessions = v; }   },
+    { url: `${BASE}/output/knowledge.json`,    set: v => { knowledge = v; }  },
   ];
 
   // Team logs (no-cache because agents update often)
   try {
-    const r = await fetch('/output/team_logs.json', { cache: 'no-cache' });
+    const r = await fetch(`${BASE}/output/team_logs.json`, { cache: 'no-cache' });
     if (r.ok) teamLogs = await r.json();
   } catch (_) {}
 
@@ -988,7 +997,7 @@ async function loadFromFiles() {
 
   // Todos: merge JSON file (agent-written) + localStorage (UI-added)
   try {
-    const res = await fetch('/output/todos.json', { cache: 'no-cache' });
+    const res = await fetch(`${BASE}/output/todos.json`, { cache: 'no-cache' });
     if (res.ok) {
       const fileTodos = await res.json();
       const localTodos = JSON.parse(localStorage.getItem('jed_todos') || '[]');
