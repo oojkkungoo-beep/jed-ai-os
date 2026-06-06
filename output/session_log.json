@@ -14,5 +14,22 @@
       "สร้าง Vera (QA Agent) เข้าทีม",
       "Share Notion + Connect GitHub → Vercel"
     ]
+  },
+  {
+    "date": "6 มิถุนายน 2569",
+    "topCategory": "System Upgrade",
+    "categories": [
+      { "name": "Vercel & Deploy", "count": 4, "pct": 20 },
+      { "name": "Skill Audit", "count": 6, "pct": 30 },
+      { "name": "Second Brain", "count": 7, "pct": 35 },
+      { "name": "Research & Knowledge", "count": 3, "pct": 15 }
+    ],
+    "tasks": [
+      "แก้ Vercel redirect loop + browser cache bug",
+      "Token Audit CLAUDE.md: 49→23 บรรทัด ลด 45%",
+      "Skill Audit + upgrade team files ครบ 10 agent",
+      "Setup Second Brain vault + Obsidian plugins 3 ตัว",
+      "สร้าง knowledge.json — 12 entries persistent"
+    ]
   }
 ]

@@ -32,13 +32,15 @@ const PIPELINE = [
 ];
 
 // ── DATA STORES ──
-let comments  = JSON.parse(localStorage.getItem('jed_comments')  || '[]');
-let projects  = JSON.parse(localStorage.getItem('jed_projects')  || '[]');
-let activity  = JSON.parse(localStorage.getItem('jed_activity')  || '[]');
-let diary     = JSON.parse(localStorage.getItem('jed_diary')     || '[]');
-let todos     = JSON.parse(localStorage.getItem('jed_todos')     || '[]');
-let knowledge = JSON.parse(localStorage.getItem('jed_knowledge') || '[]');
-let sessions  = JSON.parse(localStorage.getItem('jed_sessions')  || '[]');
+// JSON files = source of truth (written by agents, persists forever)
+// localStorage = UI cache only (rebuilt from JSON on every load)
+let comments  = [];
+let projects  = [];
+let activity  = [];
+let diary     = [];
+let todos     = [];
+let knowledge = [];
+let sessions  = [];
 let teamLogs  = [];
 
 // ── NAVIGATE ──
@@ -856,38 +858,52 @@ function toggleLog(id) {
 }
 
 // ── LOAD FROM FILES ──
+// JSON files are the single source of truth.
+// localStorage is used only to cache UI-only data (todos, comments).
 async function loadFromFiles() {
-  const loads = [
-    { url: '/output/diary.json',        key: 'jed_diary',     ref: () => diary,     set: v => { diary = v; }     },
-    { url: '/output/projects.json',     key: 'jed_projects',  ref: () => projects,  set: v => { projects = v; }  },
-    { url: '/output/activity.json',     key: 'jed_activity',  ref: () => activity,  set: v => { activity = v; }  },
-    { url: '/output/session_log.json',  key: 'jed_sessions',  ref: () => sessions,  set: v => { sessions = v; }  },
+  // Files written by agents — always authoritative
+  const fileSources = [
+    { url: '/output/diary.json',        set: v => { diary = v; }      },
+    { url: '/output/projects.json',     set: v => { projects = v; }   },
+    { url: '/output/activity.json',     set: v => { activity = v; }   },
+    { url: '/output/session_log.json',  set: v => { sessions = v; }   },
+    { url: '/output/knowledge.json',    set: v => { knowledge = v; }  },
   ];
-  // Load team logs separately (not merged with localStorage)
+
+  // Team logs (no-cache because agents update often)
   try {
     const r = await fetch('/output/team_logs.json', { cache: 'no-cache' });
     if (r.ok) teamLogs = await r.json();
   } catch (_) {}
-  await Promise.all(loads.map(async ({ url, key, ref, set }) => {
+
+  // Load all agent-written files in parallel
+  await Promise.all(fileSources.map(async ({ url, set }) => {
     try {
-      const res = await fetch(url);
+      const res = await fetch(url, { cache: 'no-cache' });
       if (!res.ok) return;
       const data = await res.json();
-      if (!Array.isArray(data)) return;
-      // Merge: file entries take priority, deduplicate by content+date
-      const local = ref();
-      const merged = [...data];
-      local.forEach(item => {
-        const exists = merged.some(f =>
-          JSON.stringify(f) === JSON.stringify(item) ||
-          (f.date && f.date === item.date && f.content === item.content)
-        );
-        if (!exists) merged.push(item);
-      });
-      set(merged);
-      localStorage.setItem(key, JSON.stringify(merged));
+      if (Array.isArray(data)) set(data);
     } catch (_) {}
   }));
+
+  // Todos: merge JSON file (agent-written) + localStorage (UI-added)
+  try {
+    const res = await fetch('/output/todos.json', { cache: 'no-cache' });
+    if (res.ok) {
+      const fileTodos = await res.json();
+      const localTodos = JSON.parse(localStorage.getItem('jed_todos') || '[]');
+      // Merge: file first, then local items not already in file
+      const merged = [...fileTodos];
+      localTodos.forEach(item => {
+        if (!merged.find(f => f.id === item.id)) merged.push(item);
+      });
+      todos = merged;
+    } else {
+      todos = JSON.parse(localStorage.getItem('jed_todos') || '[]');
+    }
+  } catch (_) {
+    todos = JSON.parse(localStorage.getItem('jed_todos') || '[]');
+  }
 }
 
 // ── INIT ──

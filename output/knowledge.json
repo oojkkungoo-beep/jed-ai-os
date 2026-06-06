@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1717603200001,
+    "title": "AI Agent คืออะไร — 4 องค์ประกอบหลัก",
+    "topic": "AI Agent",
+    "source": "YouTube",
+    "content": "AI Agent ประกอบด้วย 4 ส่วน: Perception (รับ input), LLM Brain (ประมวลผล), Planning (วางแผน action), Memory (จำ context). ต่างจาก Chatbot ตรงที่ agent ทำงานหลายขั้นตอนและตัดสินใจได้เอง",
+    "url": "https://www.youtube.com/watch?v=jedi-trinupab",
+    "date": "2026-06-06"
+  },
+  {
+    "id": 1717603200002,
+    "title": "Framework สร้าง AI Agent — 3 แนวทาง",
+    "topic": "AI Agent",
+    "source": "YouTube",
+    "content": "1) Single Agent: agent เดียวทำทุกอย่าง (ง่าย แต่ไม่ scale), 2) Multi-Agent: แบ่งงานตาม specialty (Jed AI OS ใช้แนวนี้), 3) Hierarchical: มี orchestrator คุม agents อื่น",
+    "url": "https://www.youtube.com/watch?v=jedi-trinupab",
+    "date": "2026-06-06"
+  },
+  {
+    "id": 1717603200003,
+    "title": "7 ขั้นตอนสร้าง AI Agent จาก 0",
+    "topic": "AI Agent",
+    "source": "YouTube",
+    "content": "1) กำหนด Goal ชัดเจน, 2) เลือก LLM ที่เหมาะ, 3) ออกแบบ Memory (short/long-term), 4) เชื่อม Tools (search/code/API), 5) ทดสอบ loop, 6) เพิ่ม Safety guardrails, 7) Monitor & iterate",
+    "url": "https://www.youtube.com/watch?v=jedi-trinupab",
+    "date": "2026-06-06"
+  },
+  {
+    "id": 1717603200004,
+    "title": "Jed AI OS mapping กับ Agent Architecture",
+    "topic": "AI Agent",
+    "source": "YouTube",
+    "content": "Laura = Orchestrator layer, Scout/Forge = Tool layer, Sage = Memory layer, Vera = Safety/QA layer. CLAUDE.md ทำหน้าที่ System Prompt ที่ define behavior ของทุก agent",
+    "url": "https://www.youtube.com/watch?v=jedi-trinupab",
+    "date": "2026-06-06"
+  },
+  {
+    "id": 1717603200005,
+    "title": "Memory ใน AI Agent — 3 ประเภท",
+    "topic": "AI Agent",
+    "source": "YouTube",
+    "content": "1) In-context Memory: ข้อมูลใน prompt ปัจจุบัน (จำกัดด้วย token), 2) External Memory: database/file ภายนอก (Jed ใช้ JSON files + Second Brain), 3) Parametric Memory: ความรู้ใน model weights (ปรับได้ด้วย fine-tune)",
+    "url": "https://www.youtube.com/watch?v=jedi-trinupab",
+    "date": "2026-06-06"
+  },
+  {
+    "id": 1717603200006,
+    "title": "Tool Use — วิธีให้ Agent เชื่อมต่อโลกภายนอก",
+    "topic": "AI Agent",
+    "source": "YouTube",
+    "content": "Agent ต้องการ Tools เพื่อ act บน real world: Web Search, Code Execution, File R/W, API calls, Browser control. Claude Code ของ Jed มี tools ครบ — Forge ใช้ได้ทั้งหมด",
+    "url": "https://www.youtube.com/watch?v=jedi-trinupab",
+    "date": "2026-06-06"
+  },
+  {
+    "id": 1717603200007,
+    "title": "Session Compounding — AI เก่งขึ้นทุก session",
+    "topic": "AI Optimization",
+    "source": "Substack",
+    "content": "ยิ่งใช้ AI บ่อย ยิ่งเก่งขึ้น เพราะ: 1) เราถามคำถามดีขึ้น, 2) AI เรียนรู้ pattern ของเรา (via memory), 3) ระบบ (CLAUDE.md) ดีขึ้นทุกครั้ง. Jed AI OS ออกแบบมาเพื่อ compounding นี้",
+    "url": "https://substack.com/home/post/p-193055637",
+    "date": "2026-06-06"
+  },
+  {
+    "id": 1717603200008,
+    "title": "Post-Task Review — วิธีเก็บ insight หลังงานเสร็จ",
+    "topic": "AI Optimization",
+    "source": "Substack",
+    "content": "หลังทุก task ให้ถาม AI: 1) อะไรที่ทำได้ดี, 2) อะไรที่ควรปรับ, 3) prompt ไหนที่ work. Vera ทำหน้าที่นี้ใน Jed AI OS — Post-session review trigger",
+    "url": "https://substack.com/home/post/p-193055637",
+    "date": "2026-06-06"
+  },
+  {
+    "id": 1717603200009,
+    "title": "Cross-Model Validation — ใช้หลาย AI ตรวจสอบกัน",
+    "topic": "AI Optimization",
+    "source": "Substack",
+    "content": "ใช้ Claude ตอบ → ให้ GPT ตรวจ → ให้ Gemini ยืนยัน สำหรับการตัดสินใจสำคัญ Council ใน Jed AI OS ใช้แนวคิดนี้ — วิเคราะห์ 3 มุมมองก่อน recommend",
+    "url": "https://substack.com/home/post/p-193055637",
+    "date": "2026-06-06"
+  },
+  {
+    "id": 1717603200010,
+    "title": "Token Audit — ลด cost โดยไม่เสีย quality",
+    "topic": "AI Optimization",
+    "source": "Substack",
+    "content": "ตรวจ System Prompt ทุก 2 สัปดาห์ ตัดส่วนที่ซ้ำหรือ implicit ออก CLAUDE.md ของ Jed ลดจาก 49 → 23 บรรทัด ประหยัด 45% token ทุก conversation",
+    "url": "https://substack.com/home/post/p-193055637",
+    "date": "2026-06-06"
+  },
+  {
+    "id": 1717603200011,
+    "title": "Mirror Skill — ให้ AI เลียนแบบ writing style เรา",
+    "topic": "AI Optimization",
+    "source": "Substack",
+    "content": "ให้ AI อ่าน content เก่าของเรา 10+ ชิ้น แล้ว extract voice profile Muse ใน Jed AI OS มี Jed Voice Profile: semi-formal, concise, doctor+military+AI angle",
+    "url": "https://substack.com/home/post/p-193055637",
+    "date": "2026-06-06"
+  },
+  {
+    "id": 1717603200012,
+    "title": "Second Brain + AI = Knowledge Compounding",
+    "topic": "AI Optimization",
+    "source": "Substack",
+    "content": "เก็บทุก research note ใน Second Brain → AI ดึงมาใช้ได้ทุก session ความรู้สะสมแทนที่จะหายทุกครั้ง Jed ใช้ Obsidian vault ที่ D:\\Second_Brain\\ เป็น external memory",
+    "url": "https://substack.com/home/post/p-193055637",
+    "date": "2026-06-06"
+  }
+]

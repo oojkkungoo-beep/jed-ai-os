@@ -2,5 +2,9 @@
   {
     "date": "วันศุกร์ที่ 5 มิถุนายน 2569",
     "content": "วันนี้ทำงานหนักมาก — ปรับปรุง AI OS Dashboard ครบวงจร\n\n**งานหลัก:**\n- อัปเดต character files ทั้ง 9 คน เพิ่ม Gender (ครับ/ค่ะ) + คำอ่านภาษาไทย\n- Redesign Team grid เป็น portrait card ใหญ่ แบบ longtundiary.com\n- เพิ่มภาพ character ทุกคนใน Team grid + Pipeline flow\n- เปลี่ยน Logo มุมบนซ้ายเป็นรูป Jed เต็ม sidebar\n- สร้าง Vera (เวร่า) — QA & Skill Developer เข้าทีม\n- Share Notion databases 5 รายการ ✅\n- Connect GitHub → Vercel auto-deploy ✅\n\n**ทีม AI OS ตอนนี้มี 10 คน:** Laura · Muse · Atlas · Nova · Scout · Council · Forge · Mint · Sage · Vera"
+  },
+  {
+    "date": "วันเสาร์ที่ 6 มิถุนายน 2569",
+    "content": "วันแห่งการ upgrade ระบบครั้งใหญ่ — ทุกอย่างแข็งแกร่งขึ้น\n\n**งานหลัก:**\n- แก้ Vercel redirect loop + browser cache bug ✅\n- Token Audit CLAUDE.md: 49→23 บรรทัด ประหยัด 45% ✅\n- Skill Audit + upgrade team files ครบ 10 agent ✅\n- Setup Second Brain vault D:\\Second_Brain\\ + Obsidian (Dataview, Git, Templater) ✅\n- Research: AI Agent architecture + AI Optimization 5 methods ✅\n- Dashboard stability upgrade: knowledge.json persistent ✅\n\n**Insight วันนี้:** ระบบที่ดีต้องเสถียร — ข้อมูลใน JSON file ไม่หายแม้ browser รีเซต"
   }
 ]
