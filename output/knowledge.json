@@ -106,5 +106,113 @@
     "content": "เก็บทุก research note ใน Second Brain → AI ดึงมาใช้ได้ทุก session ความรู้สะสมแทนที่จะหายทุกครั้ง Jed ใช้ Obsidian vault ที่ D:\\Second_Brain\\ เป็น external memory",
     "url": "https://substack.com/home/post/p-193055637",
     "date": "2026-06-06"
+  },
+  {
+    "id": 1717603300001,
+    "title": "Second Brain คืออะไร — หลักการและเหตุผล",
+    "topic": "Second Brain",
+    "source": "Discussion",
+    "content": "Second Brain คือระบบจัดเก็บและเชื่อมโยงความรู้ภายนอกสมอง ช่วยให้ Jed: 1) จัดระเบียบข้อมูลที่หลากหลาย (clinical/AI/business/life), 2) นำความรู้กลับมาใช้ได้จริง, 3) ประหยัด token — ไม่ต้องอธิบาย context ซ้ำทุก session, 4) ระบบ compound — ยิ่งเก็บมาก ยิ่งฉลาดขึ้น",
+    "url": "",
+    "date": "2026-06-06"
+  },
+  {
+    "id": 1717603300002,
+    "title": "ทำไมเลือก Obsidian — เหตุผลหลัก 4 ข้อ",
+    "topic": "Second Brain",
+    "source": "Discussion",
+    "content": "1) Local-first: ข้อมูลอยู่ที่เครื่อง ไม่หายถ้า service ปิด, 2) Plain Markdown: ทุก AI อ่านได้ ไม่ lock-in, 3) Plugin ecosystem: Dataview (query), Git (backup), Templater (auto-fill), 4) Bidirectional links: เห็น connection ระหว่าง notes ผ่าน Graph View",
+    "url": "",
+    "date": "2026-06-06"
+  },
+  {
+    "id": 1717603300003,
+    "title": "PARA + Zettelkasten — โครงสร้าง vault ของ Jed",
+    "topic": "Second Brain",
+    "source": "Discussion",
+    "content": "ผสม 2 methodology: PARA (Projects/Areas/Resources/Archive) สำหรับ actionable content + Zettelkasten สำหรับ atomic notes ที่ link กัน โครงสร้างจริง: 00-Inbox, 10-Clinical, 20-AI-Learning, 30-Business, 40-Life, 50-Resources, 60-Templates, 99-Archive",
+    "url": "",
+    "date": "2026-06-06"
+  },
+  {
+    "id": 1717603300004,
+    "title": "Vault Structure — 22 folders ของ Jed Second Brain",
+    "topic": "Second Brain",
+    "source": "Discussion",
+    "content": "D:\\Second_Brain\\ แบ่งเป็น: 10-Clinical (Anesthesia/OHC/Pharmacology/Case-Studies), 20-AI-Learning (Frameworks/Tools/Research-Notes/Experiments), 30-Business (Jed-AI-OS/OHC-App/Strategy/Ideas), 40-Life (Diary/Health/Goals/Reflections), 50-Resources (Books/Videos/Articles), 60-Templates, 99-Archive",
+    "url": "",
+    "date": "2026-06-06"
+  },
+  {
+    "id": 1717603300005,
+    "title": "Obsidian Plugins — 3 ตัวที่ติดตั้งใน Jed vault",
+    "topic": "Second Brain",
+    "source": "Discussion",
+    "content": "1) Dataview v0.5.68: query notes ด้วย SQL-like syntax เช่น TABLE date, topic FROM \"20-AI-Learning\" WHERE type = \"research\", 2) Git v2.38.3: auto-backup vault ขึ้น GitHub, 3) Templater v2.9.1: สร้าง note จาก template พร้อม frontmatter อัตโนมัติ",
+    "url": "",
+    "date": "2026-06-06"
+  },
+  {
+    "id": 1717603300006,
+    "title": "Frontmatter — เตรียมดินก่อนสร้าง Index",
+    "topic": "Second Brain",
+    "source": "Discussion",
+    "content": "เพิ่ม YAML frontmatter ใน templates ทุกตัว: title, date, type, tags, agent. Field ที่สำคัญที่สุดคือ 'type' (research/diary/idea/clinical/meeting) เพราะใช้ routing ตอนสร้าง INDEX ในอนาคต Dataview query: TABLE date, topic FROM \"\" WHERE type = \"research\"",
+    "url": "",
+    "date": "2026-06-06"
+  },
+  {
+    "id": 1717603300007,
+    "title": "Index Routing System — บทเรียนจาก LTD OS",
+    "topic": "Second Brain",
+    "source": "YouTube — ลงทุน Diary",
+    "content": "LTD OS (vault 456 files) ใช้ Master INDEX.md + Sub-indexes: INDEX_insights.md (237 files), INDEX_transcripts.md (168 files), INDEX_output.md (78 files) + Special lookup files: TOPIC_MAP.md, THESIS_TRACKER.md. กฎ: เมื่อสร้างไฟล์ใหม่ → ดู frontmatter → เพิ่มใน sub-index ที่ถูก → อัพเดท count ใน master",
+    "url": "https://youtu.be/3KIwEcL07zk",
+    "date": "2026-06-06"
+  },
+  {
+    "id": 1717603300008,
+    "title": "เมื่อไหรควรสร้าง Index — Decision Framework",
+    "topic": "Second Brain",
+    "source": "Discussion",
+    "content": "ไม่จำเป็นตอนนี้ (vault ยังน้อยไฟล์) ควรสร้างเมื่อ: 1) vault ถึง 50+ files, 2) Scout รายงานว่าหาไฟล์ยากขึ้น. ทำทีหลังดีกว่าทำเลย เพราะ: เห็น pattern จริงก่อน → ออกแบบ Index ได้แม่นกว่า Vera จะ monitor และแจ้ง Jed เมื่อถึง trigger",
+    "url": "",
+    "date": "2026-06-06"
+  },
+  {
+    "id": 1717603300009,
+    "title": "NotebookLM + Claude = Workflow คู่หูของ Second Brain",
+    "topic": "Second Brain",
+    "source": "YouTube — ลงทุน Diary",
+    "content": "Workflow จากคลิป ลงทุน Diary: upload research notes จาก Obsidian → NotebookLM → query ด้วยภาษาธรรมชาติ. Apply กับ Jed: Scout เก็บ notes ใน vault → Jed upload เข้า NotebookLM เป็นชุด → ถามข้ามไฟล์ได้โดยไม่เปลือง token",
+    "url": "https://youtu.be/3KIwEcL07zk",
+    "date": "2026-06-06"
+  },
+  {
+    "id": 1717603300010,
+    "title": "Recall MCP — ให้ Claude ดึงความรู้จาก vault โดยตรง",
+    "topic": "Second Brain",
+    "source": "YouTube — ลงทุน Diary",
+    "content": "Recall MCP เป็น plugin ที่ให้ Claude เชื่อมต่อกับ saved articles/notes โดยตรง Scout ดึง knowledge จาก vault มาตอบได้โดยไม่ต้อง web search ซ้ำ ประหยัด token + ตอบได้เร็วกว่า ยังไม่ได้ติดตั้ง — เป็น next step สำหรับ Jed AI OS",
+    "url": "https://youtu.be/3KIwEcL07zk",
+    "date": "2026-06-06"
+  },
+  {
+    "id": 1717603300011,
+    "title": "Second Brain Integration กับ Jed AI OS — 3 agents",
+    "topic": "Second Brain",
+    "source": "Discussion",
+    "content": "Scout → save research ที่ D:\\Second_Brain\\20-AI-Learning\\Research-Notes\\, Muse → save ideas ที่ D:\\Second_Brain\\30-Business\\Ideas\\, Sage → sync diary ที่ D:\\Second_Brain\\40-Life\\Diary\\ (auto หลังทุก session). ทุก agent รู้ vault path แล้ว — integration พร้อมใช้",
+    "url": "",
+    "date": "2026-06-06"
+  },
+  {
+    "id": 1717603300012,
+    "title": "Second Brain ช่วยประหยัด Token — กลไก",
+    "topic": "Second Brain",
+    "source": "Discussion",
+    "content": "แทนที่จะอธิบาย context ยาวๆ ทุก session → ส่ง link note ให้ทีมอ่าน Scout/Sage ดึง knowledge จาก vault มาตอบแทน web search ซ้ำ ระยะยาว: notes link กัน → Obsidian Graph View เห็น connection → ระบบฉลาดขึ้นโดยไม่เพิ่ม token",
+    "url": "",
+    "date": "2026-06-06"
   }
 ]
