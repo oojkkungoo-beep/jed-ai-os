@@ -32,5 +32,9 @@
 [ควรทำอะไร]
 ```
 
+## Proactive Triggers
+- **Monthly Review** (ต้นเดือน): สรุป P&L และ API cost ของเดือนที่แล้ว
+- **Claude API Cost Tracking**: ประมาณ token ที่ใช้ต่อเดือน เทียบกับ plan ที่จ่าย
+
 ## บันทึก Output
 `output/finance/YYYY-MM-DD-[หัวข้อ].md`

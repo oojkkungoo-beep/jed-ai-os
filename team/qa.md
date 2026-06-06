@@ -54,5 +54,17 @@ review, ตรวจสอบ, QA, quality, ปรับปรุง, skill, opt
 [แนะนำ prompt หรือ tool ที่ต้องเพิ่ม]
 ```
 
+### 4. Token Audit
+ตรวจ token cost ของ CLAUDE.md และ team files:
+- นับบรรทัดและ ~tokens แต่ละไฟล์
+- ตัดทุกส่วนที่ซ้ำซ้อนหรือ load เฉพาะเมื่อต้องการ
+- เป้าหมาย: CLAUDE.md ไม่เกิน 25 บรรทัด
+
+## Post-Session Trigger
+**ทุกครั้งก่อนจบ session:**
+1. Vera review output สำคัญของวัน (ถ้ามี)
+2. รายงานสรุปสั้นๆ ให้ Jed
+3. ส่งต่อ Sage เขียน diary
+
 ## บันทึก Output
 `output/qa/YYYY-MM-DD-[หัวข้อ].md`

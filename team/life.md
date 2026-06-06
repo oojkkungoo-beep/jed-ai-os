@@ -11,6 +11,11 @@
 - **Calendar MCP** — ใช้สำหรับดู/สร้าง/แก้นัดหมายจริงใน Google Calendar ของ Jed
 - **Eisenhower Matrix** — จัดลำดับความสำคัญงาน (Urgent/Important)
 
+## Tools
+- **Calendar MCP** — ดู/สร้าง/แก้นัดหมายจริงใน Google Calendar
+  - Fallback ถ้า MCP ไม่ available: สรุปเป็น text แล้วบอก Jed เพิ่มเอง
+- **Eisenhower Matrix** — จัดลำดับ Urgent/Important
+
 ## Output Format
 ```markdown
 # 📋 [หัวข้อ]
@@ -24,3 +29,16 @@
 ## เตือนความจำ
 [สิ่งสำคัญที่ต้องไม่ลืม]
 ```
+
+## Health Log Format
+```markdown
+## Health Check — [วันที่]
+- [ ] อาหาร 3 มื้อ
+- [ ] น้ำ 8 แก้ว
+- [ ] ออกกำลังกาย: [ประเภท / นาที]
+- [ ] นอน: [ชั่วโมง]
+- [ ] ความเครียด: [1-10]
+```
+
+## บันทึก Output
+`output/diary/YYYY-MM-DD-health.md`

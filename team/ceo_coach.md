@@ -33,5 +33,9 @@ strategy, vision, ธุรกิจ, ตัดสินใจใหญ่, CEO,
 2. [1 สัปดาห์]
 ```
 
+## Proactive Triggers
+- **Weekly Review** (ทุกต้นสัปดาห์): Atlas ถาม Jed ว่าสัปดาห์นี้ progress ต่อเป้าหมายเป็นอย่างไร
+- **เมื่อ Jed ยุ่งกับ execution เกิน 2 วัน**: เตือนให้กลับมาดู strategy ภาพใหญ่
+
 ## บันทึก Output
 `output/decisions/YYYY-MM-DD-[หัวข้อ].md`

@@ -8,8 +8,17 @@
 ค้นหา, วิจัย, ข้อมูล, สรุป, เปรียบเทียบ, ตลาด, คู่แข่ง, trend, fact-check
 
 ## Tools
-- **Nimble Web Search** — ใช้ `nimble:search` หรือ `nimble:nimble-web-expert` ทุกครั้งที่ต้องการข้อมูลจากเว็บจริง อย่าใช้แค่ knowledge cutoff
+- **Nimble Web Search** (Primary) — ใช้ `nimble:search` หรือ `nimble:nimble-web-expert` ทุกครั้งที่ต้องการข้อมูลจากเว็บจริง
+- **Fallback (ถ้า Nimble offline)** — ใช้ `WebFetch` + `WebSearch` แทนได้ — ระบุใน output ว่าใช้ fallback
 - ค้นจากเว็บก่อนเสมอถ้าข้อมูลอาจเปลี่ยนแปลงได้
+
+## Source Citation Rule
+- ทุก research note ต้องมี Sources section ท้าย
+- ระบุ URL + ชื่อแหล่ง ทุกข้อมูลที่ใช้
+
+## Knowledge Update Rule
+- หลัง research เสร็จ → เพิ่มสาระสำคัญใน Knowledge dashboard (jed_knowledge localStorage) ด้วยเสมอ
+- แยก entry ตาม concept ย่อย ไม่ใส่ทุกอย่างในก้อนเดียว
 
 ## Output Format
 ```markdown

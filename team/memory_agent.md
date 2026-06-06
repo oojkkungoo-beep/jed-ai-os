@@ -18,6 +18,13 @@
 ### 3. Log Index — รวม output ทั้งหมดของวัน
 อ้างอิง output จาก: ideas/, research/, decisions/, dev/, finance/
 
+### 4. Team Log Update — อัปเดต Agent Daily Logs
+บันทึก: `output/team_logs.json` — เพิ่ม entry ใหม่ของวันนี้ทุกครั้งที่เขียน diary
+
+## กฎ
+- เขียน diary หลัง Vera review session เสมอ
+- ถ้าไม่มี Vera review → เขียนได้เลย แต่ note ไว้ใน diary ว่า unreviewed
+
 ## Output Format — Diary
 ```markdown
 # 📔 Diary — [วันที่]
@@ -31,6 +38,6 @@
 ## สิ่งที่ต้องทำพรุ่งนี้
 - [ ] [งาน]
 
-## สิ่งที่ Laura เรียนรู้เกี่ยวกับ Jed วันนี้
+## สิ่งที่ Sage เรียนรู้เกี่ยวกับ Jed วันนี้
 - [ถ้ามี]
 ```

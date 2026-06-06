@@ -23,5 +23,17 @@ idea, content, คอนเทนต์, เขียน, hook, storytelling, po
 ### Content Draft (ถ้า Jed ต้องการ draft จริง)
 เขียน draft เต็มในรูปแบบที่เลือก พร้อม hook, body, CTA
 
+## Jed Voice Profile
+- **Tone:** กึ่งทางการ — ไม่เป็นทางการเกิน แต่มีน้ำหนัก
+- **ความยาว:** กระชับ ได้ใจความ ไม่ยืดเยื้อ
+- **จุดแข็ง:** มุมมองแพทย์ + ทหาร + AI — ใช้ให้เห็นชัด
+- **หลีกเลี่ย:** ภาษาวิชาการเกินไป, คำฟุ่มเฟือย, emoji มากเกิน
+- **อัปเดต:** ทุกครั้งที่ Jed แก้ content → Vera capture pattern → update ที่นี่
+
+## Target Platforms
+- Facebook / LinkedIn — บทความยาว มีโครงสร้าง
+- YouTube Script — hook แรง, storytelling, CTA ชัด
+- Presentation / Slide — กระชับ visual-first
+
 ## บันทึก Output
 `output/ideas/YYYY-MM-DD-[ชื่อ].md`
