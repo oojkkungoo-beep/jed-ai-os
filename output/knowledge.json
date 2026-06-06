@@ -215,4 +215,77 @@
     "url": "",
     "date": "2026-06-06"
   }
+,
+  {
+    "id": 1717604000001,
+    "title": "Thesis: AI Tools & Workflow Mastery — Overview",
+    "topic": "AI Workflow",
+    "source": "YouTube",
+    "content": "สรุปจาก 14 คลิป | 6 หมวด: Claude Code/AI System (5), AI Agent Full Course (1), n8n Automation (1), AI Content Creation (2), AI Infrastructure Trends (2), Deep Work (1) | Key insight: Laura OS + Claude Code + n8n = stack ที่ให้ leverage สูงสุด คนเดียวทำได้เทียบเท่าทีม 10 คน",
+    "url": "https://youtu.be/zPDUMG66DUk",
+    "date": "2026-06-06"
+  },
+  {
+    "id": 1717604000002,
+    "title": "Claude Project — สร้าง Claude Army หลาย Agent",
+    "topic": "AI Workflow",
+    "source": "YouTube",
+    "content": "Claude Project = จัดกลุ่ม context + knowledge base ให้ Claude จดจำบทบาทเฉพาะ สร้าง agent หลายตัวที่มีหน้าที่ต่างกัน (Claude Army) ทำงานร่วมกันเป็นทีม | Apply: ตั้ง Claude Project สำหรับแต่ละ agent ใน Laura OS (Forge, Muse, Atlas ฯลฯ)",
+    "url": "https://youtu.be/xoCT5OtHJzk",
+    "date": "2026-06-06"
+  },
+  {
+    "id": 1717604000003,
+    "title": "Claude Code Solo Dev — 18 ระบบใน 2 เดือน",
+    "topic": "AI Workflow",
+    "source": "YouTube",
+    "content": "คนเดียวสร้างได้ 18 ระบบใน 2 เดือน โดยใช้ Claude Code เป็น co-developer ไม่ต้องมีทีม ไม่ต้องมีโค้ดพื้นฐาน | Apply: clone pattern นี้มาสร้าง Laura OS + OHC App ให้ครบ 18+ ระบบ",
+    "url": "https://youtu.be/zPDUMG66DUk",
+    "date": "2026-06-06"
+  },
+  {
+    "id": 1717604000004,
+    "title": "Claude Code as Teacher — เรียน AI แบบใหม่",
+    "topic": "AI Workflow",
+    "source": "YouTube",
+    "content": "Claude Code = ครูส่วนตัวที่ตอบได้ทุกอย่าง ไม่ต้องไปเรียนคลาส ถามได้ตลอดเวลา ปรับตามระดับตัวเอง | Apply: ใช้ Claude Code เรียน programming, AI concepts, medical coding ทุกอย่างที่ต้องการ",
+    "url": "https://youtu.be/mby89M6W-OM",
+    "date": "2026-06-06"
+  },
+  {
+    "id": 1717604000005,
+    "title": "n8n Automation — เชื่อม Tools ทั้งหมดอัตโนมัติ",
+    "topic": "AI Workflow",
+    "source": "YouTube",
+    "content": "n8n = open-source workflow automation (คล้าย Zapier แต่ self-host ได้) ลากต่อ node แทนการเขียนโค้ด เชื่อมต่อ API/webhook/database ได้หลายร้อยตัว | Apply: เชื่อม Laura OS → Google Calendar, Gmail, Notion อัตโนมัติ, สร้าง OHC alert pipeline",
+    "url": "https://youtu.be/0-zcdA6YXBE",
+    "date": "2026-06-06"
+  },
+  {
+    "id": 1717604000006,
+    "title": "AI Content Creation — 3D Pixar + NotebookLM",
+    "topic": "AI Workflow",
+    "source": "YouTube",
+    "content": "ใช้ AI สร้างการ์ตูน 3D Pixar style ฟรี + ตัดต่อใน CapCut | NotebookLM = Google AI tool สรุป/สร้างเนื้อหาจาก document | Apply: สร้าง slide ยาสลบ Pixar style, ใช้ NotebookLM สรุป medical doc สำหรับ OHC",
+    "url": "https://youtu.be/gzrN3AusHy4",
+    "date": "2026-06-06"
+  },
+  {
+    "id": 1717604000007,
+    "title": "AI Infrastructure Shift — Agent > Model",
+    "topic": "AI Workflow",
+    "source": "YouTube",
+    "content": "AI Infrastructure กำลัง shift จาก model-centric → agent/workflow-centric ผู้ชนะคือคนที่เชื่อมต่อ tools ได้ ไม่ใช่คนที่รู้ model ดีที่สุด | Apply: ลงทุนเวลาใน agent orchestration มากกว่า model fine-tuning",
+    "url": "https://youtu.be/qyvz3vGdqNc",
+    "date": "2026-06-06"
+  },
+  {
+    "id": 1717604000008,
+    "title": "Deep Work — เครื่องมือสร้างชีวิตที่มี leverage",
+    "topic": "AI Workflow",
+    "source": "YouTube",
+    "content": "Deep Work (Cal Newport) = งานที่ต้องสมาธิสูง สร้าง value สูงสุด vs Shallow Work = งาน reactive ทดแทนได้ง่าย AI ช่วยกำจัด shallow work → เพิ่มเวลา deep work | Apply: ใช้ Laura OS กำจัด shallow work ทั้งหมด, design deep work block ทุกวัน ≥ 4 ชั่วโมง",
+    "url": "https://youtu.be/3iCpzKHQEzw",
+    "date": "2026-06-06"
+  }
 ]

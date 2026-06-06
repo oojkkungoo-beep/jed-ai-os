@@ -453,28 +453,31 @@ function renderKnowledge() {
   }
 
   if (knowledgeView === 'table') {
+    const reversed = [...filtered].reverse();
     el.innerHTML = `
-      <table class="k-table">
-        <thead>
-          <tr>
-            <th style="width:36px">#</th>
-            <th>หัวข้อ</th>
-            <th style="width:130px">หมวด</th>
-            <th style="width:100px">แหล่ง</th>
-            <th style="width:90px">วันที่</th>
-          </tr>
-        </thead>
-        <tbody>
-          ${filtered.map((k, i) => `
-            <tr class="k-row" onclick="showKnowledgeDetail(${k.id}, ${i}, ${filtered.length})">
-              <td class="k-num">${i + 1}</td>
-              <td class="k-row-title">${k.title}</td>
-              <td>${topicBadge(k.topic)}</td>
-              <td>${sourceBadge(k.source)}</td>
-              <td class="k-row-date">${k.date || ''}</td>
-            </tr>`).join('')}
-        </tbody>
-      </table>`;
+      <div class="k-table-wrapper">
+        <table class="k-table">
+          <thead>
+            <tr>
+              <th style="width:36px">#</th>
+              <th>หัวข้อ</th>
+              <th style="width:130px">หมวด</th>
+              <th style="width:100px">แหล่ง</th>
+              <th style="width:90px">วันที่</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${reversed.map((k, i) => `
+              <tr class="k-row" onclick="showKnowledgeDetail(${k.id}, ${filtered.length - 1 - i}, ${filtered.length})">
+                <td class="k-num">${filtered.length - i}</td>
+                <td class="k-row-title">${k.title}</td>
+                <td>${topicBadge(k.topic)}</td>
+                <td>${sourceBadge(k.source)}</td>
+                <td class="k-row-date">${k.date || ''}</td>
+              </tr>`).join('')}
+          </tbody>
+        </table>
+      </div>`;
   } else {
     el.innerHTML = filtered.map((k, i) => `
       <div class="knowledge-card" onclick="showKnowledgeDetail(${k.id}, ${i}, ${filtered.length})" style="cursor:pointer">
