@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jed's AI OS</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20260606c">
 </head>
 <body>
 
@@ -227,7 +227,13 @@
         <div class="page-title">🧠 Knowledge</div>
         <div class="page-sub">สิ่งที่ได้เรียนรู้ — VDO, บทความ, Podcast, ประสบการณ์</div>
       </div>
-      <button class="btn btn-green btn-sm" onclick="toggleKnowledgeForm()">+ เพิ่ม</button>
+      <div style="display:flex;gap:8px;align-items:center">
+        <div class="view-toggle">
+          <button id="k-view-table" class="view-btn active" onclick="setKnowledgeView('table')">☰ ตาราง</button>
+          <button id="k-view-card"  class="view-btn"        onclick="setKnowledgeView('card')">⊞ การ์ด</button>
+        </div>
+        <button class="btn btn-green btn-sm" onclick="toggleKnowledgeForm()">+ เพิ่ม</button>
+      </div>
     </div>
     <div class="page-body" style="padding-top:0">
 
@@ -236,21 +242,22 @@
         <input class="inp" id="k-title" placeholder="ชื่อเรื่อง / หัวข้อที่เรียนรู้...">
         <div class="form-row">
           <select class="inp" id="k-source">
-            <option value="🎬 VDO">🎬 VDO</option>
-            <option value="📚 บทความ">📚 บทความ</option>
-            <option value="🎙 Podcast">🎙 Podcast</option>
-            <option value="💬 บทสนทนา">💬 บทสนทนา</option>
-            <option value="📖 หนังสือ">📖 หนังสือ</option>
-            <option value="🌐 อื่นๆ">🌐 อื่นๆ</option>
+            <option value="YouTube">YouTube</option>
+            <option value="Substack">Substack</option>
+            <option value="บทความ">บทความ</option>
+            <option value="Podcast">Podcast</option>
+            <option value="Discussion">Discussion</option>
+            <option value="หนังสือ">หนังสือ</option>
+            <option value="อื่นๆ">อื่นๆ</option>
           </select>
           <select class="inp" id="k-topic">
-            <option value="💰 Finance">💰 Finance</option>
-            <option value="🏥 Medical">🏥 Medical</option>
-            <option value="🤖 AI & Tech">🤖 AI & Tech</option>
-            <option value="🎯 Business">🎯 Business</option>
-            <option value="🌿 Health">🌿 Health</option>
-            <option value="💡 Creative">💡 Creative</option>
-            <option value="📌 General">📌 General</option>
+            <option value="AI Agent">AI Agent</option>
+            <option value="AI Optimization">AI Optimization</option>
+            <option value="Second Brain">Second Brain</option>
+            <option value="Finance">Finance</option>
+            <option value="Medical">Medical</option>
+            <option value="Business">Business</option>
+            <option value="General">General</option>
           </select>
         </div>
         <textarea class="diary-ta" id="k-content" placeholder="Key takeaway — สิ่งสำคัญที่ได้เรียนรู้..." style="margin-top:8px;height:80px"></textarea>
@@ -266,6 +273,16 @@
       <!-- Knowledge list -->
       <div id="knowledge-list"></div>
     </div>
+  </div>
+
+  <!-- ══ KNOWLEDGE DETAIL PANEL ══ -->
+  <div class="k-detail-overlay" id="k-detail-overlay" onclick="closeKnowledgeDetail()"></div>
+  <div class="k-detail-panel" id="k-detail-panel">
+    <div class="k-detail-header">
+      <div class="k-detail-nav" id="k-detail-nav"></div>
+      <button class="k-detail-close" onclick="closeKnowledgeDetail()">✕</button>
+    </div>
+    <div class="k-detail-body" id="k-detail-body"></div>
   </div>
 
   <!-- ══ DIARY ══ -->
@@ -377,6 +394,6 @@
   </div>
 </div>
 
-<script src="app.js?v=20260606b"></script>
+<script src="app.js?v=20260606c"></script>
 </body>
 </html>

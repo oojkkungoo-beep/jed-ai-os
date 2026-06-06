@@ -365,10 +365,19 @@ function addManualSession(topCategory, categories, tasks) {
 //  KNOWLEDGE
 // ═══════════════════════════════════════════════
 let knowledgeFilter = 'all';
+let knowledgeView   = 'table'; // 'table' | 'card'
+let knowledgeDetailIdx = -1;   // index in filtered array
 
 function toggleKnowledgeForm() {
   document.getElementById('knowledge-add-form').classList.toggle('open');
   document.getElementById('k-title').focus();
+}
+
+function setKnowledgeView(v) {
+  knowledgeView = v;
+  document.getElementById('k-view-table').classList.toggle('active', v === 'table');
+  document.getElementById('k-view-card').classList.toggle('active',  v === 'card');
+  renderKnowledge();
 }
 
 function addKnowledge() {
@@ -382,7 +391,7 @@ function addKnowledge() {
     source: document.getElementById('k-source').value,
     topic:  document.getElementById('k-topic').value,
     url:    document.getElementById('k-url').value.trim(),
-    date:   new Date().toISOString()
+    date:   new Date().toISOString().slice(0, 10)
   });
   localStorage.setItem('jed_knowledge', JSON.stringify(knowledge));
   document.getElementById('k-title').value   = '';
@@ -396,38 +405,81 @@ function addKnowledge() {
 function deleteKnowledge(id) {
   knowledge = knowledge.filter(k => k.id !== id);
   localStorage.setItem('jed_knowledge', JSON.stringify(knowledge));
+  closeKnowledgeDetail();
   renderKnowledge();
 }
 
+// ── TOPIC COLOR MAP ──
+const TOPIC_COLORS = {
+  'AI Agent':       { bg:'#e8f4fd', color:'#1a6ea8' },
+  'AI Optimization':{ bg:'#eef6ee', color:'#2d6a2d' },
+  'Second Brain':   { bg:'#f3effe', color:'#6b46c1' },
+  'Finance':        { bg:'#fdf3dc', color:'#b8860b' },
+  'Medical':        { bg:'#fdecea', color:'#c0392b' },
+  'Business':       { bg:'#fdf3dc', color:'#b8860b' },
+};
+function topicBadge(topic) {
+  const c = TOPIC_COLORS[topic] || { bg:'var(--bg)', color:'var(--muted)' };
+  return `<span class="k-topic-badge" style="background:${c.bg};color:${c.color}">${topic}</span>`;
+}
+function sourceBadge(source) {
+  return `<span class="k-source-badge">${source}</span>`;
+}
+
+// ── RENDER ──
 function renderKnowledge() {
   const topics = ['all', ...new Set(knowledge.map(k => k.topic))];
   document.getElementById('knowledge-filter-row').innerHTML = topics.map(t => `
     <button class="filter-btn ${knowledgeFilter === t ? 'active' : ''}" onclick="setKnowledgeFilter('${t}')">
-      ${t === 'all' ? '📚 ทั้งหมด' : t}
+      ${t === 'all' ? '📚 ทั้งหมด (' + knowledge.length + ')' : t}
     </button>`).join('');
 
-  const filtered = knowledgeFilter === 'all' ? knowledge : knowledge.filter(k => k.topic === knowledgeFilter);
+  const filtered = (knowledgeFilter === 'all' ? knowledge : knowledge.filter(k => k.topic === knowledgeFilter));
   const el = document.getElementById('knowledge-list');
 
   if (!filtered.length) {
-    el.innerHTML = `<div class="empty"><div class="empty-icon">🧠</div><p>ยังไม่มีความรู้บันทึก<br>กด "+ เพิ่ม" เพื่อบันทึกสิ่งที่เรียนรู้</p></div>`;
+    el.innerHTML = `<div class="empty"><div class="empty-icon">🧠</div><p>ยังไม่มีความรู้บันทึก</p></div>`;
+    document.getElementById('stat-knowledge').textContent = knowledge.length;
     return;
   }
 
-  el.innerHTML = [...filtered].reverse().map(k => `
-    <div class="knowledge-card">
-      <div class="knowledge-head">
-        <div class="knowledge-title">${k.title}</div>
-        <button class="btn-icon" onclick="deleteKnowledge(${k.id})">🗑</button>
-      </div>
-      <div class="knowledge-meta">
-        <span class="k-source">${k.source}</span>
-        <span class="k-topic">${k.topic}</span>
-        <span class="k-date">${fmt(k.date)}</span>
-      </div>
-      ${k.content ? `<div class="knowledge-content">${k.content}</div>` : ''}
-      ${k.url ? `<a class="knowledge-link" href="${k.url}" target="_blank">🔗 เปิด Link</a>` : ''}
-    </div>`).join('');
+  if (knowledgeView === 'table') {
+    el.innerHTML = `
+      <table class="k-table">
+        <thead>
+          <tr>
+            <th style="width:36px">#</th>
+            <th>หัวข้อ</th>
+            <th style="width:130px">หมวด</th>
+            <th style="width:100px">แหล่ง</th>
+            <th style="width:90px">วันที่</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${filtered.map((k, i) => `
+            <tr class="k-row" onclick="showKnowledgeDetail(${k.id}, ${i}, ${filtered.length})">
+              <td class="k-num">${i + 1}</td>
+              <td class="k-row-title">${k.title}</td>
+              <td>${topicBadge(k.topic)}</td>
+              <td>${sourceBadge(k.source)}</td>
+              <td class="k-row-date">${k.date || ''}</td>
+            </tr>`).join('')}
+        </tbody>
+      </table>`;
+  } else {
+    el.innerHTML = filtered.map((k, i) => `
+      <div class="knowledge-card" onclick="showKnowledgeDetail(${k.id}, ${i}, ${filtered.length})" style="cursor:pointer">
+        <div class="knowledge-head">
+          <div class="knowledge-title">${k.title}</div>
+          <button class="btn-icon" onclick="event.stopPropagation();deleteKnowledge(${k.id})">🗑</button>
+        </div>
+        <div class="knowledge-meta">
+          ${sourceBadge(k.source)} ${topicBadge(k.topic)}
+          <span class="k-date">${k.date || ''}</span>
+        </div>
+        ${k.content ? `<div class="knowledge-content">${k.content.slice(0,120)}${k.content.length>120?'…':''}</div>` : ''}
+      </div>`).join('');
+  }
 
   document.getElementById('stat-knowledge').textContent = knowledge.length;
 }
@@ -435,6 +487,54 @@ function renderKnowledge() {
 function setKnowledgeFilter(topic) {
   knowledgeFilter = topic;
   renderKnowledge();
+}
+
+// ── DETAIL PANEL ──
+function showKnowledgeDetail(id, idx, total) {
+  const k = knowledge.find(x => x.id === id);
+  if (!k) return;
+  knowledgeDetailIdx = idx;
+
+  // Nav arrows
+  const prevId = idx > 0 ? getFilteredKnowledge()[idx - 1]?.id : null;
+  const nextId = idx < total - 1 ? getFilteredKnowledge()[idx + 1]?.id : null;
+  document.getElementById('k-detail-nav').innerHTML = `
+    <span class="k-detail-counter">${idx + 1} / ${total}</span>
+    <button class="k-nav-btn" onclick="event.stopPropagation();${prevId ? `showKnowledgeDetail(${prevId},${idx-1},${total})` : ''}" ${!prevId ? 'disabled' : ''}>‹ ก่อนหน้า</button>
+    <button class="k-nav-btn" onclick="event.stopPropagation();${nextId ? `showKnowledgeDetail(${nextId},${idx+1},${total})` : ''}" ${!nextId ? 'disabled' : ''}>ถัดไป ›</button>
+  `;
+
+  // Body content
+  document.getElementById('k-detail-body').innerHTML = `
+    <div class="k-detail-topic-row">
+      ${topicBadge(k.topic)} ${sourceBadge(k.source)}
+      <span class="k-detail-date">📅 ${k.date || ''}</span>
+    </div>
+    <h2 class="k-detail-title">${k.title}</h2>
+    <div class="k-detail-divider"></div>
+    <div class="k-detail-section-label">📝 รายละเอียด</div>
+    <div class="k-detail-content">${k.content || '<em>ไม่มีรายละเอียด</em>'}</div>
+    ${k.url ? `
+    <div class="k-detail-divider"></div>
+    <div class="k-detail-section-label">🔗 แหล่งที่มา</div>
+    <a class="k-detail-url" href="${k.url}" target="_blank">${k.url}</a>` : ''}
+    <div class="k-detail-divider"></div>
+    <div class="k-detail-actions">
+      <button class="btn btn-ghost btn-sm" onclick="deleteKnowledge(${k.id})">🗑 ลบ</button>
+    </div>
+  `;
+
+  document.getElementById('k-detail-overlay').classList.add('open');
+  document.getElementById('k-detail-panel').classList.add('open');
+}
+
+function closeKnowledgeDetail() {
+  document.getElementById('k-detail-overlay').classList.remove('open');
+  document.getElementById('k-detail-panel').classList.remove('open');
+}
+
+function getFilteredKnowledge() {
+  return knowledgeFilter === 'all' ? knowledge : knowledge.filter(k => k.topic === knowledgeFilter);
 }
 
 // ═══════════════════════════════════════════════
