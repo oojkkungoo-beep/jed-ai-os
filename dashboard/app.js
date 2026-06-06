@@ -4,16 +4,16 @@
 
 // ── AGENTS ──
 const AGENTS = [
-  { id:'laura',   name:'Laura',   thai:'ลอร่า',   gender:'หญิง', ending:'ค่ะ',  model:'sonnet', emoji:'🎭', img:'/dashboard/images/Laura.png',   role:'Main Orchestrator',       desc:'รับทุก input ตัดสินใจ delegate ไปยัง agent ที่เหมาะสม', file:'/team/laura.md',        charFile:'/characters/laura.md'   },
-  { id:'muse',    name:'Muse',    thai:'มิ้วส์',  gender:'หญิง', ending:'ค่ะ',  model:'sonnet', emoji:'💡', img:'/dashboard/images/Muse.png',    role:'Idea & Content',           desc:'รับ idea ดิบ → Idea Card + content draft พร้อม hook',    file:'/team/idea.md',          charFile:'/characters/muse.md'    },
-  { id:'atlas',   name:'Atlas',   thai:'แอตลาส',  gender:'ชาย',  ending:'ครับ', model:'opus',   emoji:'🎯', img:'/dashboard/images/Atlas.png',   role:'CEO Coach & Strategist',   desc:'Mentor CEO mindset พูดตรง ท้าทาย assumptions ไม่ประจบ',  file:'/team/ceo_coach.md',    charFile:'/characters/atlas.md'   },
-  { id:'nova',    name:'Nova',    thai:'โนว่า',   gender:'หญิง', ending:'ค่ะ',  model:'haiku',  emoji:'🌿', img:'/dashboard/images/Nova.png',    role:'Life & Health Manager',     desc:'ตาราง todo สุขภาพ habit tracking และ calendar',          file:'/team/life.md',          charFile:'/characters/nova.md'    },
-  { id:'scout',   name:'Scout',   thai:'สเกาท์',  gender:'ชาย',  ending:'ครับ', model:'sonnet', emoji:'🔍', img:'/dashboard/images/Scout.png',   role:'Research & Analysis',       desc:'ค้นคว้าเชิงลึก สรุปข้อมูล วิเคราะห์ trend และ insight',  file:'/team/research.md',     charFile:'/characters/scout.md'   },
-  { id:'council', name:'Council', thai:'เคาน์ซิล',gender:'ชาย',  ending:'ครับ', model:'opus',   emoji:'⚖️', img:'/dashboard/images/Council.png', role:'Decision Chamber',          desc:'วิเคราะห์การตัดสินใจสำคัญ 3 มุมมอง',                    file:'/team/council.md',      charFile:'/characters/council.md' },
-  { id:'forge',   name:'Forge',   thai:'ฟอร์จ',   gender:'ชาย',  ending:'ครับ', model:'sonnet', emoji:'⚙️', img:'/dashboard/images/Forge.png',   role:'Code & Dev Agent',          desc:'เขียนโค้ด แก้ bug พัฒนาโปรแกรม script และ tool',         file:'/team/forge.md',        charFile:'/characters/forge.md'   },
-  { id:'mint',    name:'Mint',    thai:'มิ้นท์',  gender:'หญิง', ending:'ค่ะ',  model:'sonnet', emoji:'💰', img:'/dashboard/images/Mint.png',    role:'Finance & Investment',       desc:'เงิน budget P&L วิเคราะห์การลงทุน financial planning',   file:'/team/finance.md',      charFile:'/characters/mint.md'    },
-  { id:'sage',    name:'Sage',    thai:'เซจ',     gender:'ชาย',  ending:'ครับ', model:'haiku',  emoji:'📝', img:'/dashboard/images/Sage.png',    role:'Memory & Diary Agent',       desc:'บันทึก diary สรุปวัน จำ context สำคัญ log ความทรงจำ',   file:'/team/memory_agent.md', charFile:'/characters/sage.md'    },
-  { id:'vera',    name:'Vera',    thai:'เวร่า',   gender:'หญิง', ending:'ค่ะ',  model:'sonnet', emoji:'🔎', img:'/dashboard/images/vera.png',    role:'QA & Skill Developer',       desc:'ตรวจสอบ output ของทีม วิเคราะห์ skill gap พัฒนาทีม',    file:'/team/qa.md',           charFile:'/characters/vera.md'    },
+  { id:'laura',   name:'Laura',   thai:'ลอร่า',   gender:'หญิง', ending:'ค่ะ',  model:'sonnet', emoji:'🎭', img:'images/Laura.png',   role:'Main Orchestrator',       desc:'รับทุก input ตัดสินใจ delegate ไปยัง agent ที่เหมาะสม', file:'/team/laura.md',        charFile:'/characters/laura.md'   },
+  { id:'muse',    name:'Muse',    thai:'มิ้วส์',  gender:'หญิง', ending:'ค่ะ',  model:'sonnet', emoji:'💡', img:'images/Muse.png',    role:'Idea & Content',           desc:'รับ idea ดิบ → Idea Card + content draft พร้อม hook',    file:'/team/idea.md',          charFile:'/characters/muse.md'    },
+  { id:'atlas',   name:'Atlas',   thai:'แอตลาส',  gender:'ชาย',  ending:'ครับ', model:'opus',   emoji:'🎯', img:'images/Atlas.png',   role:'CEO Coach & Strategist',   desc:'Mentor CEO mindset พูดตรง ท้าทาย assumptions ไม่ประจบ',  file:'/team/ceo_coach.md',    charFile:'/characters/atlas.md'   },
+  { id:'nova',    name:'Nova',    thai:'โนว่า',   gender:'หญิง', ending:'ค่ะ',  model:'haiku',  emoji:'🌿', img:'images/Nova.png',    role:'Life & Health Manager',     desc:'ตาราง todo สุขภาพ habit tracking และ calendar',          file:'/team/life.md',          charFile:'/characters/nova.md'    },
+  { id:'scout',   name:'Scout',   thai:'สเกาท์',  gender:'ชาย',  ending:'ครับ', model:'sonnet', emoji:'🔍', img:'images/Scout.png',   role:'Research & Analysis',       desc:'ค้นคว้าเชิงลึก สรุปข้อมูล วิเคราะห์ trend และ insight',  file:'/team/research.md',     charFile:'/characters/scout.md'   },
+  { id:'council', name:'Council', thai:'เคาน์ซิล',gender:'ชาย',  ending:'ครับ', model:'opus',   emoji:'⚖️', img:'images/Council.png', role:'Decision Chamber',          desc:'วิเคราะห์การตัดสินใจสำคัญ 3 มุมมอง',                    file:'/team/council.md',      charFile:'/characters/council.md' },
+  { id:'forge',   name:'Forge',   thai:'ฟอร์จ',   gender:'ชาย',  ending:'ครับ', model:'sonnet', emoji:'⚙️', img:'images/Forge.png',   role:'Code & Dev Agent',          desc:'เขียนโค้ด แก้ bug พัฒนาโปรแกรม script และ tool',         file:'/team/forge.md',        charFile:'/characters/forge.md'   },
+  { id:'mint',    name:'Mint',    thai:'มิ้นท์',  gender:'หญิง', ending:'ค่ะ',  model:'sonnet', emoji:'💰', img:'images/Mint.png',    role:'Finance & Investment',       desc:'เงิน budget P&L วิเคราะห์การลงทุน financial planning',   file:'/team/finance.md',      charFile:'/characters/mint.md'    },
+  { id:'sage',    name:'Sage',    thai:'เซจ',     gender:'ชาย',  ending:'ครับ', model:'haiku',  emoji:'📝', img:'images/Sage.png',    role:'Memory & Diary Agent',       desc:'บันทึก diary สรุปวัน จำ context สำคัญ log ความทรงจำ',   file:'/team/memory_agent.md', charFile:'/characters/sage.md'    },
+  { id:'vera',    name:'Vera',    thai:'เวร่า',   gender:'หญิง', ending:'ค่ะ',  model:'sonnet', emoji:'🔎', img:'images/vera.png',    role:'QA & Skill Developer',       desc:'ตรวจสอบ output ของทีม วิเคราะห์ skill gap พัฒนาทีม',    file:'/team/qa.md',           charFile:'/characters/vera.md'    },
 ];
 
 const JED = {
@@ -677,7 +677,7 @@ function renderAgents() {
   const jedCard = `
     <div class="agent-card commander-card" onclick="openCharModal('jed')">
       <div class="agent-portrait">
-        <img src="/dashboard/images/Jed.png" alt="Jed" onerror="this.src=''">
+        <img src="images/Jed.png" alt="Jed" onerror="this.src=''">
         <span class="model-badge" style="background:#fdf3dc;color:#8a6500;border:1px solid #c8971a">COMMANDER</span>
       </div>
       <div class="agent-info">
