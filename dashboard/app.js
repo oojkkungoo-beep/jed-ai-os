@@ -586,10 +586,12 @@ function renderProjects() {
     el.innerHTML = `<div class="empty"><div class="empty-icon">📂</div><p>ยังไม่มีโปรเจกต์</p></div>`;
     return;
   }
-  el.innerHTML = [...projects].reverse().map(p => {
+  const order = projects.map((_, i) => i).reverse();
+  el.innerHTML = order.map(i => {
+    const p = projects[i];
     const pct = Math.max(0, Math.min(100, p.progress ?? (p.status === 'done' ? 100 : 0)));
     return `
-    <div class="project-row">
+    <div class="project-row" onclick="showProjectDetail(${i})" style="cursor:pointer">
       <div class="project-name">${p.name}</div>
       <div class="project-progress-wrap">
         <div class="project-progress-bar"><div class="project-progress-fill" style="width:${pct}%"></div></div>
@@ -599,6 +601,73 @@ function renderProjects() {
       <span class="project-date">${fmt(p.updated)}</span>
     </div>`;
   }).join('');
+}
+
+function showProjectDetail(i) {
+  const p = projects[i];
+  if (!p) return;
+  const pct = Math.max(0, Math.min(100, p.progress ?? (p.status === 'done' ? 100 : 0)));
+  const statusLabel = { active: 'Active', pending: 'Pending', done: 'Done' }[p.status];
+
+  document.getElementById('k-detail-nav').innerHTML = `<span class="k-detail-counter">📂 รายละเอียดโปรเจกต์</span>`;
+
+  document.getElementById('k-detail-body').innerHTML = `
+    <div class="k-detail-topic-row">
+      <span class="st-badge st-${p.status}">${statusLabel}</span>
+      <span class="k-detail-date">📅 อัปเดตล่าสุด ${fmt(p.updated)}</span>
+    </div>
+    <h2 class="k-detail-title">${p.name}</h2>
+    <div class="k-detail-divider"></div>
+    <div class="k-detail-section-label">📊 ความคืบหน้า</div>
+    <div class="project-progress-wrap" style="max-width:320px">
+      <div class="project-progress-bar"><div class="project-progress-fill" style="width:${pct}%"></div></div>
+      <span class="project-progress-pct">${pct}%</span>
+    </div>
+    ${p.notes ? `
+    <div class="k-detail-divider"></div>
+    <div class="k-detail-section-label">📝 บันทึก / รายละเอียดเพิ่มเติม</div>
+    <div class="k-detail-content">${p.notes}</div>` : ''}
+    <div class="k-detail-divider"></div>
+    <div class="k-detail-section-label">⚙️ แก้ไข</div>
+    <div class="form-row">
+      <select class="inp" id="pd-status">
+        <option value="active"  ${p.status === 'active'  ? 'selected' : ''}>Active</option>
+        <option value="pending" ${p.status === 'pending' ? 'selected' : ''}>Pending</option>
+        <option value="done"    ${p.status === 'done'    ? 'selected' : ''}>Done</option>
+      </select>
+      <input class="inp" id="pd-progress" type="number" min="0" max="100" value="${pct}" style="max-width:120px">
+      <button class="btn btn-green btn-sm" onclick="saveProjectDetail(${i})">บันทึก</button>
+    </div>
+    <div class="k-detail-divider"></div>
+    <div class="k-detail-actions">
+      <button class="btn btn-ghost btn-sm" onclick="deleteProject(${i})">🗑 ลบโปรเจกต์</button>
+    </div>
+  `;
+
+  document.getElementById('k-detail-overlay').classList.add('open');
+  document.getElementById('k-detail-panel').classList.add('open');
+}
+
+function saveProjectDetail(i) {
+  const p = projects[i];
+  if (!p) return;
+  p.status   = document.getElementById('pd-status').value;
+  p.progress = Math.max(0, Math.min(100, parseInt(document.getElementById('pd-progress').value, 10) || 0));
+  p.updated  = new Date().toISOString();
+  localStorage.setItem('jed_projects', JSON.stringify(projects));
+  closeKnowledgeDetail();
+  renderProjects();
+  logActivity('Laura', `อัปเดตโปรเจกต์: ${p.name} (${p.progress}%)`);
+}
+
+function deleteProject(i) {
+  const p = projects[i];
+  if (!p) return;
+  projects.splice(i, 1);
+  localStorage.setItem('jed_projects', JSON.stringify(projects));
+  closeKnowledgeDetail();
+  renderProjects();
+  logActivity('Laura', `ลบโปรเจกต์: ${p.name}`);
 }
 
 function addProject() {
