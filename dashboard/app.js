@@ -586,19 +586,28 @@ function renderProjects() {
     el.innerHTML = `<div class="empty"><div class="empty-icon">📂</div><p>ยังไม่มีโปรเจกต์</p></div>`;
     return;
   }
-  el.innerHTML = [...projects].reverse().map(p => `
+  el.innerHTML = [...projects].reverse().map(p => {
+    const pct = Math.max(0, Math.min(100, p.progress ?? (p.status === 'done' ? 100 : 0)));
+    return `
     <div class="project-row">
       <div class="project-name">${p.name}</div>
+      <div class="project-progress-wrap">
+        <div class="project-progress-bar"><div class="project-progress-fill" style="width:${pct}%"></div></div>
+        <span class="project-progress-pct">${pct}%</span>
+      </div>
       <span class="st-badge st-${p.status}">${{active:'Active',pending:'Pending',done:'Done'}[p.status]}</span>
       <span class="project-date">${fmt(p.updated)}</span>
-    </div>`).join('');
+    </div>`;
+  }).join('');
 }
 
 function addProject() {
   const name   = document.getElementById('new-proj-name').value.trim();
   const status = document.getElementById('new-proj-status').value;
+  const progEl = document.getElementById('new-proj-progress');
+  const progress = progEl ? Math.max(0, Math.min(100, parseInt(progEl.value, 10) || 0)) : (status === 'done' ? 100 : 0);
   if (!name) return;
-  projects.push({ name, status, updated: new Date().toISOString() });
+  projects.push({ name, status, progress, updated: new Date().toISOString() });
   localStorage.setItem('jed_projects', JSON.stringify(projects));
   document.getElementById('new-proj-name').value = '';
   document.getElementById('add-form').classList.remove('open');

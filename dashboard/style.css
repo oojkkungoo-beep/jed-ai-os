@@ -486,6 +486,10 @@ textarea.diary-ta {
   display: flex; align-items: center; gap: 14px;
 }
 .project-name { font-size: 14px; font-weight: 500; flex: 1; }
+.project-progress-wrap { display: flex; align-items: center; gap: 8px; min-width: 140px; }
+.project-progress-bar { flex: 1; height: 7px; background: var(--border); border-radius: 6px; overflow: hidden; }
+.project-progress-fill { height: 100%; background: var(--green); border-radius: 6px; transition: width .3s ease; }
+.project-progress-pct { font-size: 11px; color: var(--muted); width: 34px; text-align: right; }
 .st-badge { font-size: 11px; font-weight: 500; padding: 3px 10px; border-radius: 12px; }
 .st-active  { background: var(--green-bg);  color: var(--green); }
 .st-pending { background: var(--gold-bg);   color: var(--gold);  }

@@ -11,7 +11,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Jed AI OS">
   <link rel="apple-touch-icon" href="images/Jed.png">
-  <link rel="stylesheet" href="style.css?v=20260606d">
+  <link rel="stylesheet" href="style.css?v=20260607a">
 </head>
 <body>
 
@@ -322,6 +322,7 @@
             <option value="pending">Pending</option>
             <option value="done">Done</option>
           </select>
+          <input class="inp" id="new-proj-progress" type="number" min="0" max="100" placeholder="ความคืบหน้า % (0-100)" style="max-width:160px">
           <button class="btn btn-green btn-sm" onclick="addProject()">บันทึก</button>
         </div>
       </div>
@@ -401,7 +402,7 @@
   </div>
 </div>
 
-<script src="app.js?v=20260606f"></script>
+<script src="app.js?v=20260607a"></script>
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
