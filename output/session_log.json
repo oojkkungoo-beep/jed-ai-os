@@ -87,5 +87,25 @@
     ],
     "details": "ต่อเนื่องจากที่ Jed ถามว่าต้องเพิ่มเลขา/สกิลไหมเพื่อเร่ง Level 1 ของ framework — Vera เข้ามาวิเคราะห์และพบว่า Wealth (Atlas/Mint/Council) และ Mindset (Atlas/Sage) มีคนดูแลครบแล้ว แต่ Health ยังเป็นช่องว่าง: Nova ดูแลแค่ \"เวลา/ตาราง\" ไม่มีใครเชี่ยวชาญเรื่องร่างกาย/ฟื้นฟู/พลังงานโดยตรง Vera เสนอ 2 ทาง — เพิ่มสกิลให้ Nova หรือ ตั้ง agent ใหม่เฉพาะทาง\n\nJed เลือกทางตั้ง agent ใหม่ทันที โดยให้เหตุผลว่าจะลุยสาย Health เพิ่มแน่นอน ไม่ใช่แค่โปรเจกต์ \"เพื่อนเบาหวาน\" แต่รวมถึงงานประจำวันที่ต้องมีคนช่วยตัดสินใจ และวางแผนจะป้อนความรู้การพยาบาล/สุขภาพเข้าระบบอีกมากในอนาคต พร้อมขอให้ปรับธีมเป็นแนวนิยาย/การ์ตูนต่างโลกที่ Jed ชอบ\n\nจึงเกิด \"Eir\" (เอียร์) — นักบวช Healer (Half-Elf Cleric) จากต่างโลก ที่ถูกซัมมอนมาเป็น Healer ประจำปาร์ตี้ของ Jed (Guild Master) พูดแบบอบอุ่นห่วงใย แทรกศัพท์ RPG (HP/MP/Buff/Debuff/Quest/Status Window) ให้การดูแลสุขภาพสนุกเหมือนผจญภัย แต่เนื้อหายังคงถูกต้องตามหลักวิชาชีพ มีสกิลครบ 5 ด้าน (Vitality Check, Routine Crafting, Pattern Tracking, Knowledge Forge, Buff/Debuff Advisory) และแบ่งงานกับ Nova ชัดเจนไม่ทับซ้อน (Nova=เวลา/ตาราง, Eir=สุขภาพ/ร่างกาย/ความรู้)\n\nเพิ่มเข้าทีมในทุกจุด: AGENTS grid, ผังองค์กร (สาย Life Operations & Wellness), routing table ใน CLAUDE.md, และสร้างไฟล์ persona/character ครบชุด — ทีมตอนนี้มี 7 agent + Laura + Jed",
     "relatedProjects": ["Jed AI OS Dashboard", "Jed_fremwork"]
+  },
+  {
+    "id": 5,
+    "date": "7 มิถุนายน 2569",
+    "topCategory": "Dashboard Bugfix + Team Profile Upgrade",
+    "tags": ["🔧 Dev & Tech"],
+    "summary": "แก้บั๊กกดดู Character ไม่ได้ + เพิ่มข้อมูล \"เผ่าพันธุ์\" ให้ agent ทุกคนในหน้า Team",
+    "categories": [
+      { "name": "Bugfix", "count": 2, "pct": 50 },
+      { "name": "Feature — Team Profiles", "count": 2, "pct": 50 }
+    ],
+    "tasks": [
+      "พบสาเหตุ: path ไฟล์ team/characters ใช้ leading slash → fetch ผิดที่บน GitHub Pages subpath",
+      "แก้เป็น relative path ../team/... และ ../characters/... ให้ทุก agent (รวม Jed)",
+      "เพิ่ม field 'race' (เผ่าพันธุ์) ให้ agent ทุกคน + Jed ดึงจาก character file ของแต่ละคน",
+      "แสดงผล 🧬 เผ่าพันธุ์ ต่อท้ายชื่อใน Team grid พร้อม CSS ใหม่ .agent-race",
+      "เพิ่ม เผ่าพันธุ์ ให้ Vera ที่ไม่เคยมีนิยามไว้ (Clockwork Inspector / Golem-kin Auditor)"
+    ],
+    "details": "Jed แจ้งว่ากดดู \"Character\" ของ agent ในหน้า Team ไม่ขึ้น — ตรวจสอบพบว่าทุก agent ตั้งค่า path ของไฟล์ persona/character ด้วย leading slash (เช่น '/team/wellness.md') ซึ่งบน localhost อาจทำงานได้ แต่บน GitHub Pages ที่ dashboard อยู่ใน subpath '/jed-ai-os/dashboard/' การ fetch path แบบ absolute จะชี้ไปที่ root ของโดเมนผิดที่ ทำให้ 404 ทั้ง Prompt และ Character tab (ไม่ใช่แค่ Eir คนเดียว แต่เป็นบั๊กที่ซ่อนอยู่กับทุก agent) — แก้โดยเปลี่ยนเป็น relative path '../team/...' และ '../characters/...' ทำให้ใช้งานได้ถูกต้องทั้ง local และ live\n\nนอกจากนี้ Jed ขอให้เพิ่มข้อมูล \"เผ่าพันธุ์\" ต่อท้ายชื่อ agent ในหน้าโปรไฟล์ (ตามสไตล์ที่ใช้ตอนแนะนำ Eir ว่าเป็น Half-Elf Cleric) — จึงไปดึงข้อมูลเผ่าพันธุ์จาก character file ของแต่ละคนมาใส่ใน AGENTS array แล้วแสดงเป็นแถบ 🧬 ใต้ชื่อใน Team grid ทุกใบการ์ด พบว่า Vera เป็นคนเดียวที่ยังไม่เคยมีนิยามเผ่าพันธุ์ จึงตั้งให้เป็น \"Clockwork Inspector (Golem-kin Auditor)\" ให้เข้ากับธีม QA ที่ละเอียด เที่ยงตรง เหมือนกลไกนาฬิกา",
+    "relatedProjects": ["Jed AI OS Dashboard"]
   }
 ]
