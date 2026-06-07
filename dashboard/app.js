@@ -31,14 +31,39 @@ const JED = {
   charFile:'/characters/jed.md'
 };
 
-const PIPELINE = [
-  { label:'orchestration',     dot:'dot-green', title:'Orchestrator',      sub:'routes every task',          agents:['laura']         },
-  { label:'content · pipeline',dot:'dot-gold',  title:'Ideas & Content',   sub:'idea → draft → publish',     agents:['muse','scout']  },
-  { label:'strategy · pipeline',dot:'dot-green',title:'Strategy & Life',   sub:'CEO mindset + daily ops',    agents:['atlas','nova']  },
-  { label:'finance · pipeline', dot:'dot-gold',  title:'Finance & Dev',    sub:'money + code',               agents:['mint','forge']  },
-  { label:'memory · pipeline',  dot:'dot-green', title:'Memory & Decision',sub:'diary + big decisions',      agents:['sage','council']},
-  { label:'qa · pipeline',      dot:'dot-green', title:'QA & Skill Dev',   sub:'review + optimize team',     agents:['vera']          },
-];
+// ── ORG CHART ── (โครงสร้างองค์กรสไตล์ "หนึ่งสายงาน หนึ่งหน้าที่" แบบกลุ่มบริษัทใหญ่)
+// Jed = CEO → Laura = Chief of Staff (สำนักงาน CEO) → 6 สายงาน ไม่ทับซ้อนกัน
+const ORG_CHART = {
+  divisions: [
+    { name: 'สายกลยุทธ์ & การตัดสินใจ',      sub: 'Strategy & Decision Division',        dot: 'dot-green',
+      agents: [
+        { id: 'atlas',   title: 'Chief Strategy Officer (CSO) — กำหนดทิศทาง เป้าหมายใหญ่ ท้าทาย mindset' },
+        { id: 'council', title: 'Strategic Advisory Board — ตัดสินใจใหญ่ที่มีความเสี่ยง/trade-off สูง' },
+      ] },
+    { name: 'สายการเงิน',                    sub: 'Finance Division',                    dot: 'dot-gold',
+      agents: [
+        { id: 'mint', title: 'Chief Financial Officer (CFO) — งบ ตัวเลข กระแสเงินสด การลงทุน' },
+      ] },
+    { name: 'สายปฏิบัติการชีวิต & สุขภาพ',    sub: 'Life Operations & Wellness Division', dot: 'dot-green',
+      agents: [
+        { id: 'nova', title: 'Chief Operating Officer — Life (COO) — ตาราง สุขภาพ habit ประจำวัน' },
+      ] },
+    { name: 'สายสร้างสรรค์ & ข้อมูลเชิงลึก',  sub: 'Creative & Insights Division',        dot: 'dot-gold',
+      agents: [
+        { id: 'muse',  title: 'Chief Creative Officer (CCO) — ไอเดีย คอนเทนต์ การสื่อสารสู่ภายนอก' },
+        { id: 'scout', title: 'Head of Research & Insights — ข้อมูล วิจัย วิเคราะห์ตลาด/trend' },
+      ] },
+    { name: 'สายเทคโนโลยี',                  sub: 'Technology Division',                 dot: 'dot-green',
+      agents: [
+        { id: 'forge', title: 'Chief Technology Officer (CTO) — โค้ด ระบบ เครื่องมือ deploy' },
+      ] },
+    { name: 'สายบุคคล ความรู้ & คุณภาพ',      sub: 'People, Knowledge & Quality Division', dot: 'dot-gold',
+      agents: [
+        { id: 'sage', title: 'Chief Knowledge Officer (CKO) — diary ความจำ log ขององค์กร' },
+        { id: 'vera', title: 'Head of QA & Talent Development — ตรวจคุณภาพ พัฒนา skill ทีม' },
+      ] },
+  ]
+};
 
 // ── DATA STORES ──
 // JSON files = source of truth (written by agents, persists forever)
@@ -798,29 +823,53 @@ function renderAgents() {
 }
 
 function renderPipeline() {
-  document.getElementById('pipeline-content').innerHTML = PIPELINE.map(p => `
-    <div class="pipeline-box">
-      <div class="pipeline-header">
-        <span class="pipeline-tag">${p.label}</span>
-        <div class="pipeline-dot ${p.dot}"></div>
-        <div><div class="pipeline-h-title">${p.title}</div><div class="pipeline-h-sub">${p.sub}</div></div>
+  const laura = AGENTS.find(x => x.id === 'laura');
+  const agentNode = (id, title) => {
+    const a = AGENTS.find(x => x.id === id);
+    if (!a) return '';
+    return `<div class="p-agent" onclick="openModal('${a.id}')">
+      <div class="p-avatar-img"><img src="${a.img}" alt="${a.name}" onerror="this.style.display='none'"></div>
+      <div>
+        <div class="p-name">${a.name} <span style="font-size:11px;color:var(--muted);font-weight:400">${a.thai}</span></div>
+        <div class="p-role">${title}</div>
       </div>
-      <div class="pipeline-agents">
-        ${p.agents.map(id => {
-          const a = AGENTS.find(x => x.id === id);
-          if (!a) return '';
-          return `<div class="p-agent" onclick="openModal('${a.id}')">
-            <div class="p-avatar-img">
-              <img src="${a.img}" alt="${a.name}" onerror="this.style.display='none'">
-            </div>
-            <div>
-              <div class="p-name">${a.name} <span style="font-size:11px;color:var(--muted);font-weight:400">${a.thai}</span></div>
-              <div class="p-role">${a.role}</div>
-            </div>
-          </div>`;
-        }).join('')}
+    </div>`;
+  };
+
+  document.getElementById('pipeline-content').innerHTML = `
+    <div class="org-chart">
+      <div class="org-tier">
+        <div class="org-card org-card-ceo" onclick="openCharModal('jed')">
+          <img class="org-avatar" src="images/Jed.png" alt="Jed" onerror="this.style.display='none'">
+          <div class="org-name">Jed</div>
+          <div class="org-title">CEO / ผู้บัญชาการสูงสุด</div>
+        </div>
       </div>
-    </div>`).join('');
+      <div class="org-line"></div>
+      <div class="org-tier">
+        <div class="org-card org-card-staff" onclick="openModal('laura')">
+          <img class="org-avatar" src="${laura.img}" alt="Laura" onerror="this.style.display='none'">
+          <div class="org-name">Laura <span style="font-size:11px;color:var(--muted);font-weight:400">${laura.thai}</span></div>
+          <div class="org-title">Chief of Staff — สำนักงาน CEO (ประสานงาน + ส่งต่อทุกสายงาน)</div>
+        </div>
+      </div>
+      <div class="org-line"></div>
+      <div class="org-divisions">
+        ${ORG_CHART.divisions.map(d => `
+          <div class="org-division">
+            <div class="org-division-head">
+              <div class="pipeline-dot ${d.dot}"></div>
+              <div>
+                <div class="org-division-name">${d.name}</div>
+                <div class="org-division-sub">${d.sub}</div>
+              </div>
+            </div>
+            <div class="pipeline-agents">
+              ${d.agents.map(da => agentNode(da.id, da.title)).join('')}
+            </div>
+          </div>`).join('')}
+      </div>
+    </div>`;
 }
 
 // ── MODAL ──
