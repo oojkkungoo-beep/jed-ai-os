@@ -626,7 +626,7 @@ function showProjectDetail(i) {
     ${p.notes ? `
     <div class="k-detail-divider"></div>
     <div class="k-detail-section-label">📝 บันทึก / รายละเอียดเพิ่มเติม</div>
-    <div class="k-detail-content">${p.notes}</div>` : ''}
+    <div class="k-detail-content">${p.notes.replace(/\n/g, '<br>')}</div>` : ''}
     <div class="k-detail-divider"></div>
     <div class="k-detail-section-label">⚙️ แก้ไข</div>
     <div class="form-row">

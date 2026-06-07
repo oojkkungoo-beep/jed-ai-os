@@ -1,6 +1,30 @@
 [
-  { "name": "Jed AI OS Dashboard", "status": "active", "progress": 70, "updated": "2026-06-05T16:00:00.000Z" },
-  { "name": "OHC App — ระบบห้องพยาบาล", "status": "active", "progress": 60, "updated": "2026-06-05T10:00:00.000Z" },
-  { "name": "Medical Presentation — ยาสลบ", "status": "pending", "progress": 10, "updated": "2026-06-05T14:00:00.000Z" },
-  { "name": "Jed_fremwork", "status": "active", "progress": 25, "updated": "2026-06-07T02:30:00.000Z" }
+  {
+    "name": "Jed AI OS Dashboard",
+    "status": "active",
+    "progress": 70,
+    "updated": "2026-06-05T16:00:00.000Z",
+    "notes": "Personal Command Center ของ Jed — เว็บแอป Pure HTML/CSS/JS (ไม่มี framework) โฮสต์บน GitHub Pages และติดตั้งเป็น PWA ได้ทั้งมือถือ/เดสก์ท็อป\n\n📌 ฟีเจอร์หลักที่ทำแล้ว: Home, Daily Briefing, Todo, Session Log, Knowledge (พร้อม detail panel), Diary, Projects (พร้อม progress bar), Activity log, Review/Comments, Team (Agents grid + Pipeline flow)\n\n🔗 Repo: github.com/oojkkungoo-beep/jed-ai-os\n🔗 Live: oojkkungoo-beep.github.io/jed-ai-os/dashboard/\n\n⏭ ที่เหลือ: เติมข้อมูลให้ครบทุกหน้า, เชื่อม session log อัตโนมัติให้สมบูรณ์, ปรับ UX ตามการใช้งานจริง"
+  },
+  {
+    "name": "OHC App — ระบบห้องพยาบาล",
+    "status": "active",
+    "progress": 60,
+    "updated": "2026-06-05T10:00:00.000Z",
+    "notes": "ระบบจัดการห้องพยาบาลองค์กร (Occupational Health Center) — แอปเดสก์ท็อปเขียนด้วย Python + customtkinter (UI) + SQLite (ฐานข้อมูล) อยู่ที่โฟลเดอร์ ohc_app/\n\n📌 ความคืบหน้า: ติดตั้ง library หลักแล้ว (customtkinter, openpyxl สำหรับ export Excel, Pillow สำหรับจัดการรูป) เปิดโปรแกรมใช้งานได้แล้ว\n\n🎯 เป้าหมาย: ให้พยาบาล/เจ้าหน้าที่ห้องพยาบาลในองค์กรใช้บันทึกข้อมูลผู้ป่วย จัดการคิว และออกรายงานได้สะดวกขึ้น\n\n⏭ ที่เหลือ: เพิ่มฟีเจอร์ที่ยังขาด, ทดสอบกับผู้ใช้งานจริง, ทำ export รายงานให้ครบ"
+  },
+  {
+    "name": "Medical Presentation — ยาสลบ",
+    "status": "pending",
+    "progress": 10,
+    "updated": "2026-06-05T14:00:00.000Z",
+    "notes": "สไลด์ให้ความรู้หัวข้อ \"ยาสลบคืออะไร\" — งานที่ Jed ขอให้ Muse (ทีม Idea/Content) ช่วยทำ เพื่อใช้เป็นสื่อการสอน/คอนเทนต์ความรู้ โดยใช้ความเชี่ยวชาญด้านวิสัญญีของ Jed เอง\n\n📌 สถานะ: อยู่ในรายการงานค้าง — ยังไม่ได้เริ่มลงมือทำจริง (มอบหมายให้ Muse ไว้แล้วแต่ยังไม่ได้ kick off)\n\n💡 หมายเหตุ: งานนี้เชื่อมโยงกับแผนหารายได้เสริมใน Jed_fremwork ด้วย — เป็นจุดเริ่มต้นที่ดีของการทำคอนเทนต์ความรู้จากวิชาชีพที่มีอยู่แล้ว\n\n⏭ ที่เหลือ: ส่งบรีฟให้ Muse เริ่มร่างโครงสไลด์ → รีวิว → ผลิตจริง"
+  },
+  {
+    "name": "Jed_fremwork",
+    "status": "active",
+    "progress": 25,
+    "updated": "2026-06-07T02:30:00.000Z",
+    "notes": "โปรเจกต์ออกแบบ \"4-Level Framework\" ของชีวิต Jed (ตัวเอง → ครอบครัว → งาน → ธุรกิจ) ทำงานร่วมกับ Atlas (CEO Coach) ต่อยอดจาก session Framework_01\n\n📌 สิ่งที่ตกผลึกแล้ว:\n• ลำดับความสำคัญ: ครอบครัว > เงิน > ความคิดวนซ้ำ > สุขภาพ > งาน\n• โฟกัส 90 วันแรก: เงิน > ครอบครัว > สุขภาพ\n• เป้าหมายเงินที่ชัดเจน: รายได้เสริม +20,000 บาท/เดือน ภายใน 90 วัน\n\n🔍 สำรวจช่องทางหารายได้เสริมจาก 4 ต้นทุนที่มีอยู่แล้ว: เพื่อนเบาหวาน (แพลตฟอร์มสุขภาพ), Dressing2Home (รับทำแผล), NursePant (สต๊อกค้าง 60 ตัว), และคอนเทนต์ความรู้วิสัญญี\n\n📋 แผนที่เสนอ (รอ Jed ยืนยัน): เคลียร์สต๊อก NursePant เป็น Quick Win 2 สัปดาห์แรก + ทำคอนเทนต์ความรู้คู่ขนาน (เริ่มจากสไลด์ยาสลบ) ต่อยอดสู่เพื่อนเบาหวานระยะยาว\n\n⏭ ที่เหลือ: Jed ตอบรับ/ปรับแผน → แปลงเป็น action plan รายสัปดาห์ที่วัดผลได้"
+  }
 ]
