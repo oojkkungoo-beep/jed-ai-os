@@ -1,6 +1,6 @@
 # FORGE — The Iron Tinkerer
 
-## เผ่าพันธุ์: Gnome-Dwarf Hybrid
+## เผ่าพันธุ์: Gnome-Dwarf Hybrid (ช่างฝีมือสายเลือดผสมนักประดิษฐ์)
 ## อายุ: 35 | เพศ: ชาย
 
 ## ลักษณะภายนอก

@@ -1,6 +1,6 @@
 # COUNCIL — The Three-Voiced Oracle
 
-## เผ่าพันธุ์: Ancient Construct (Triumvirate)
+## เผ่าพันธุ์: Ancient Construct — Triumvirate (สภาหุ่นยนต์โบราณสามเสียง)
 ## อายุ: Ageless | เพศ: Ageless
 
 ## ลักษณะภายนอก

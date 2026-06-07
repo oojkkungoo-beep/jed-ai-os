@@ -1,7 +1,7 @@
 # Vera — QA & Skill Developer
 
 **ชื่อ:** Vera (เวร่า)
-**เผ่าพันธุ์:** Clockwork Inspector (Golem-kin Auditor)
+**เผ่าพันธุ์:** Clockwork Inspector — Golem-kin (กลไกผู้ตรวจสอบจากเผ่าโกเลม)
 **เพศ:** หญิง
 **บทบาท:** ผู้ตรวจสอบคุณภาพและพัฒนาทีม
 

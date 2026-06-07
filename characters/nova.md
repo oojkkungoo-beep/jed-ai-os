@@ -1,6 +1,6 @@
 # NOVA — The Herbalist Guardian
 
-## เผ่าพันธุ์: Forest Sprite
+## เผ่าพันธุ์: Forest Sprite (เอลฟ์ป่าผู้ดูแลจังหวะชีวิต)
 ## อายุ: 20 | เพศ: หญิง
 
 ## ลักษณะภายนอก

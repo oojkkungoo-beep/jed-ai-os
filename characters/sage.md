@@ -1,6 +1,6 @@
 # SAGE — The Memory Keeper
 
-## เผ่าพันธุ์: Spirit Fox / Kitsune Elder
+## เผ่าพันธุ์: Spirit Fox / Kitsune Elder (จิ้งจอกเทพผู้อาวุโสแห่งความทรงจำ)
 ## อายุ: Ageless (ดูอายุ 16) | เพศ: Androgynous
 
 ## ลักษณะภายนอก

@@ -1,6 +1,6 @@
 # ATLAS — The Iron Sage
 
-## เผ่าพันธุ์: Dwarven-Human Half-blood
+## เผ่าพันธุ์: Dwarven-Human Half-blood (นักรบ-นักคิดสายเลือดผสม)
 ## อายุ: 52 | เพศ: ชาย
 
 ## ลักษณะภายนอก

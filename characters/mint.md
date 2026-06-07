@@ -1,6 +1,6 @@
 # MINT — The Golden Merchant
 
-## เผ่าพันธุ์: High Human (Merchant Noble)
+## เผ่าพันธุ์: High Human — Merchant Noble (ขุนนางพ่อค้าสายเลือดสูง)
 ## อายุ: 30 | เพศ: หญิง
 
 ## ลักษณะภายนอก
