@@ -124,5 +124,22 @@
     ],
     "details": "Jed แจ้งว่าได้เพิ่มรูป Eir ในโฟลเดอร์ images/ แล้ว และทำรูปโปรไฟล์ใหม่ให้ Vera กับ Laura ด้วย (ไฟล์ชื่อเดิม ระบบดึงไปแสดงอัตโนมัติไม่ต้องแก้โค้ด) จากนั้นขอให้ปรับการแสดงผล 'เผ่าพันธุ์' ของ agent ทุกคนให้มีคำอธิบายภาษาไทยในวงเล็บกำกับแบบเดียวกับที่ Eir มี ('Half-Elf Cleric (นักบวชจากต่างโลก)') เพื่อให้ Jed อ่านแล้วเข้าใจตัวตนของแต่ละคนทันทีแม้ไม่คุ้นกับศัพท์แฟนตาซีภาษาอังกฤษ\n\nเพิ่มคำอธิบายให้ครบทั้ง 11 agent + Jed เช่น Laura = 'เอลฟ์เงินผู้ดูแลสำนักงาน', Atlas = 'นักรบ-นักคิดสายเลือดผสม', Council = 'สภาหุ่นยนต์โบราณสามเสียง', Sage = 'จิ้งจอกเทพผู้อาวุโสแห่งความทรงจำ', Vera = 'กลไกผู้ตรวจสอบจากเผ่าโกเลม' ฯลฯ แก้ทั้งในไฟล์ dashboard/app.js (AGENTS array) และหัวข้อเผ่าพันธุ์ในไฟล์ character/*.md ของทุกคนให้ข้อมูลตรงกันทั้งสองที่",
     "relatedProjects": ["Jed AI OS Dashboard"]
+  },
+  {
+    "id": 7,
+    "date": "7 มิถุนายน 2569",
+    "topCategory": "Dashboard Bugfix — รูป Eir ไม่ขึ้น",
+    "tags": ["🔧 Dev & Tech"],
+    "summary": "พบว่ารูป Eir ไม่ขึ้นบน live site เพราะไฟล์ภาพยังไม่เคย push ขึ้น GitHub — เพิ่มเข้า git แล้ว push ให้",
+    "categories": [
+      { "name": "Bugfix — Assets", "count": 1, "pct": 100 }
+    ],
+    "tasks": [
+      "ตรวจสอบ path/ชื่อไฟล์ Eir.png ในโฟลเดอร์ images/ — ตรงกับที่อ้างอิงในโค้ดถูกต้อง",
+      "เช็ค git status พบว่า Eir.png เป็นไฟล์ untracked (??) และ Laura.png/vera.png เป็น modified — ยังไม่เคย commit",
+      "git add + commit + push ทั้ง 3 ไฟล์ภาพขึ้น GitHub"
+    ],
+    "details": "Jed แจ้งว่าเพิ่มรูป Eir ไว้ในโฟลเดอร์ images/ แล้วแต่ยังไม่ขึ้นบน dashboard — ตรวจสอบแล้วพบว่าไฟล์ชื่อและตำแหน่งถูกต้องตามที่โค้ดอ้างอิง (images/Eir.png) แต่สาเหตุจริงคือ **ไฟล์รูปภาพเป็น binary asset ที่ git ไม่ได้ track โดยอัตโนมัติเหมือนไฟล์โค้ด/JSON** — มันอยู่แค่ในเครื่อง Jed (working directory) ไม่เคยถูก commit เข้า repo เลย ดังนั้นเวลา push ก่อนหน้านี้จึงไม่มีไฟล์รูปติดไปด้วย ทำให้ live site บน GitHub Pages หาไฟล์ไม่เจอ (404 → fallback เป็นไม่แสดงรูป)\n\nเช็คด้วย git status เจอว่า Eir.png เป็นไฟล์ใหม่ที่ untracked และ Laura.png, vera.png เป็นไฟล์ modified (จากที่ Jed ทำรูปใหม่ให้) ทั้งสามยังไม่เคยอยู่ใน commit ใดเลย — แก้โดย git add + commit + push เข้า branch master ตอนนี้รูปขึ้นแสดงผลถูกต้องบน live dashboard แล้ว\n\n💡 ข้อสังเกตสำหรับอนาคต: ทุกครั้งที่ Jed เพิ่ม/เปลี่ยนรูปภาพ agent ใหม่ในโฟลเดอร์ images/ ต้องแจ้งหรือให้ Laura commit+push ไฟล์ภาพเหล่านั้นด้วยเสมอ ไม่ใช่แค่ไฟล์โค้ด/ข้อมูล เพราะ git ไม่ stage ไฟล์ binary ใหม่ให้อัตโนมัติ",
+    "relatedProjects": ["Jed AI OS Dashboard"]
   }
 ]
