@@ -2,9 +2,9 @@
   {
     "name": "Jed AI OS Dashboard",
     "status": "active",
-    "progress": 70,
-    "updated": "2026-06-05T16:00:00.000Z",
-    "notes": "Personal Command Center ของ Jed — เว็บแอป Pure HTML/CSS/JS (ไม่มี framework) โฮสต์บน GitHub Pages และติดตั้งเป็น PWA ได้ทั้งมือถือ/เดสก์ท็อป\n\n📌 ฟีเจอร์หลักที่ทำแล้ว: Home, Daily Briefing, Todo, Session Log, Knowledge (พร้อม detail panel), Diary, Projects (พร้อม progress bar), Activity log, Review/Comments, Team (Agents grid + Pipeline flow)\n\n🔗 Repo: github.com/oojkkungoo-beep/jed-ai-os\n🔗 Live: oojkkungoo-beep.github.io/jed-ai-os/dashboard/\n\n⏭ ที่เหลือ: เติมข้อมูลให้ครบทุกหน้า, เชื่อม session log อัตโนมัติให้สมบูรณ์, ปรับ UX ตามการใช้งานจริง"
+    "progress": 78,
+    "updated": "2026-06-07T03:10:00.000Z",
+    "notes": "Personal Command Center ของ Jed — เว็บแอป Pure HTML/CSS/JS (ไม่มี framework) โฮสต์บน GitHub Pages และติดตั้งเป็น PWA ได้ทั้งมือถือ/เดสก์ท็อป\n\n📌 ฟีเจอร์หลักที่ทำแล้ว: Home, Daily Briefing, Todo, Session Log (พร้อม tag filter + detail panel), Knowledge (พร้อม detail panel), Diary, Projects (พร้อม progress bar + detail/edit/delete panel), Activity log, Review/Comments, Team (Agents grid + ผังองค์กร 6 สายงาน)\n\n🆕 อัปเดตล่าสุด (7 มิ.ย.): เพิ่มผังองค์กรแทน Pipeline เดิม, ปรับ Session Log ใหม่ทั้งหมดให้มี tag จัดหมวด + กดดูรายละเอียดได้, เพิ่ม project detail panel ที่แก้ไข/ลบได้ในตัว\n\n🔗 Repo: github.com/oojkkungoo-beep/jed-ai-os\n🔗 Live: oojkkungoo-beep.github.io/jed-ai-os/dashboard/\n\n⏭ ที่เหลือ: เชื่อม session log ให้บันทึกอัตโนมัติจากทุก session จริง, ปรับ UX ตามการใช้งานจริง"
   },
   {
     "name": "OHC App — ระบบห้องพยาบาล",

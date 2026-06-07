@@ -327,12 +327,26 @@ async function loadSessionLog() {
   renderSessionLog();
 }
 
+let sessionLogFilter = 'all';
+
+function setSessionLogFilter(tag) {
+  sessionLogFilter = tag;
+  renderSessionLog();
+}
+
+function getFilteredSessions() {
+  if (sessionLogFilter === 'all') return sessions;
+  return sessions.filter(s => (s.tags || []).includes(sessionLogFilter));
+}
+
 function renderSessionLog() {
   const summaryEl = document.getElementById('session-summary');
+  const filterEl  = document.getElementById('session-filter-row');
   const listEl    = document.getElementById('session-list');
 
   if (!sessions.length) {
     summaryEl.innerHTML = `<div class="empty"><div class="empty-icon">📊</div><p>ยังไม่มี session log<br>จะมีข้อมูลหลังจบการสนทนา</p></div>`;
+    if (filterEl) filterEl.innerHTML = '';
     listEl.innerHTML = '';
     return;
   }
@@ -364,23 +378,72 @@ function renderSessionLog() {
       }).join('')}
     </div>`;
 
-  // Session list (newest first)
-  listEl.innerHTML = [...sessions].reverse().map(s => `
-    <div class="session-card">
+  // Tag filter chips
+  if (filterEl) {
+    const allTags = ['all', ...new Set(sessions.flatMap(s => s.tags || []))];
+    filterEl.innerHTML = allTags.map(t => `
+      <button class="filter-btn ${sessionLogFilter === t ? 'active' : ''}" onclick="setSessionLogFilter('${t}')">
+        ${t === 'all' ? `🗂 ทั้งหมด (${sessions.length})` : t}
+      </button>`).join('');
+  }
+
+  // Session list (newest first, filtered by tag)
+  const filtered = getFilteredSessions();
+  if (!filtered.length) {
+    listEl.innerHTML = `<div class="empty"><div class="empty-icon">🔖</div><p>ไม่มี log ในหมวดนี้</p></div>`;
+    return;
+  }
+  listEl.innerHTML = [...filtered].reverse().map((s, idx) => {
+    const realIdx = sessions.indexOf(s);
+    return `
+    <div class="session-card" onclick="showSessionDetail(${realIdx})" style="cursor:pointer">
       <div class="session-card-head">
         <div class="session-date">${s.date}</div>
         <div class="session-top-cat">${s.topCategory || '—'}</div>
       </div>
-      <div class="session-cats">
-        ${(s.categories || []).slice(0, 5).map(c => `
-          <span class="cat-chip">${c.name} <strong>${c.pct}%</strong></span>`).join('')}
-      </div>
+      ${s.tags && s.tags.length ? `
+        <div class="session-cats">
+          ${s.tags.map(t => `<span class="cat-chip">${t}</span>`).join('')}
+        </div>` : ''}
+      ${s.summary ? `<div class="session-summary-text">${s.summary}</div>` : ''}
       ${s.tasks && s.tasks.length ? `
         <div class="session-tasks">
           <div class="session-tasks-label">Tasks ที่พบ:</div>
           ${s.tasks.slice(0, 3).map(t => `<div class="session-task-item">• ${t}</div>`).join('')}
+          ${s.tasks.length > 3 ? `<div class="session-task-item" style="color:var(--muted)">… อีก ${s.tasks.length - 3} รายการ — กดเพื่อดูทั้งหมด</div>` : ''}
         </div>` : ''}
-    </div>`).join('');
+    </div>`;
+  }).join('');
+}
+
+// ── Session Detail Panel (reuses k-detail overlay/panel) ──
+function showSessionDetail(idx) {
+  const s = sessions[idx];
+  if (!s) return;
+
+  document.getElementById('k-detail-nav').innerHTML = `<span class="k-detail-counter">📊 รายละเอียด Session</span>`;
+
+  document.getElementById('k-detail-body').innerHTML = `
+    <div class="k-detail-topic-row">
+      ${(s.tags || []).map(t => `<span class="cat-chip">${t}</span>`).join(' ')}
+      <span class="k-detail-date">📅 ${s.date}</span>
+    </div>
+    <h2 class="k-detail-title">${s.topCategory || ''}</h2>
+    ${s.summary ? `<div class="k-detail-content" style="font-style:italic;color:var(--muted)">${s.summary}</div>` : ''}
+    <div class="k-detail-divider"></div>
+    <div class="k-detail-section-label">📝 รายละเอียด</div>
+    <div class="k-detail-content">${(s.details || '<em>ไม่มีรายละเอียดเพิ่มเติม</em>').replace(/\n/g, '<br>')}</div>
+    <div class="k-detail-divider"></div>
+    <div class="k-detail-section-label">✅ งานที่ทำในวันนี้</div>
+    <div class="k-detail-content">${(s.tasks || []).map(t => `• ${t}`).join('<br>') || '<em>ไม่มีข้อมูล</em>'}</div>
+    ${s.relatedProjects && s.relatedProjects.length ? `
+    <div class="k-detail-divider"></div>
+    <div class="k-detail-section-label">📂 โปรเจกต์ที่เกี่ยวข้อง</div>
+    <div>${s.relatedProjects.map(p => `<span class="cat-chip">${p}</span>`).join(' ')}</div>` : ''}
+  `;
+
+  document.getElementById('k-detail-overlay').classList.add('open');
+  document.getElementById('k-detail-panel').classList.add('open');
 }
 
 // Manual session add (for testing / manual log)

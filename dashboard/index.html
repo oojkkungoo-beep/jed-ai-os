@@ -11,7 +11,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Jed AI OS">
   <link rel="apple-touch-icon" href="images/Jed.png">
-  <link rel="stylesheet" href="style.css?v=20260607b">
+  <link rel="stylesheet" href="style.css?v=20260607c">
 </head>
 <body>
 
@@ -222,6 +222,9 @@
         <div class="empty"><div class="empty-icon">📊</div><p>ยังไม่มี session log<br>จะมีข้อมูลหลังจบการสนทนา</p></div>
       </div>
 
+      <!-- Tag filter -->
+      <div class="filter-row" id="session-filter-row" style="margin-top:14px"></div>
+
       <!-- Session entries -->
       <div id="session-list"></div>
     </div>
@@ -402,7 +405,7 @@
   </div>
 </div>
 
-<script src="app.js?v=20260607d"></script>
+<script src="app.js?v=20260607e"></script>
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
