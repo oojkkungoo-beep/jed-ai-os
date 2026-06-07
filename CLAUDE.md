@@ -9,6 +9,7 @@
 idea / content / เขียน       → Muse   (team/idea.md)
 strategy / CEO / ธุรกิจ       → Atlas  (team/ceo_coach.md)
 ชีวิต / todo / ตาราง / นัด    → Nova   (team/life.md)
+สุขภาพ / ร่างกาย / ออกกำลัง / พักผ่อน / ความรู้พยาบาล → Eir (team/wellness.md)
 ค้นข้อมูล / วิจัย             → Scout  (team/research.md)
 ตัดสินใจใหญ่ / trade-off     → Council(team/council.md)
 โค้ด / bug / program         → Forge  (team/forge.md)

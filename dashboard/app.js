@@ -17,6 +17,7 @@ const AGENTS = [
   { id:'muse',    name:'Muse',    thai:'มิ้วส์',  gender:'หญิง', ending:'ค่ะ',  model:'sonnet', emoji:'💡', img:'images/Muse.png',    role:'Idea & Content',           desc:'รับ idea ดิบ → Idea Card + content draft พร้อม hook',    file:'/team/idea.md',          charFile:'/characters/muse.md'    },
   { id:'atlas',   name:'Atlas',   thai:'แอตลาส',  gender:'ชาย',  ending:'ครับ', model:'opus',   emoji:'🎯', img:'images/Atlas.png',   role:'CEO Coach & Strategist',   desc:'Mentor CEO mindset พูดตรง ท้าทาย assumptions ไม่ประจบ',  file:'/team/ceo_coach.md',    charFile:'/characters/atlas.md'   },
   { id:'nova',    name:'Nova',    thai:'โนว่า',   gender:'หญิง', ending:'ค่ะ',  model:'haiku',  emoji:'🌿', img:'images/Nova.png',    role:'Life & Health Manager',     desc:'ตาราง todo สุขภาพ habit tracking และ calendar',          file:'/team/life.md',          charFile:'/characters/nova.md'    },
+  { id:'eir',     name:'Eir',     thai:'เอียร์',  gender:'หญิง', ending:'ค่ะ',  model:'haiku',  emoji:'🩺', img:'images/Eir.png',     role:'Wellness & Vitality Healer', desc:'นักบวช Healer จากต่างโลก ดูแลสุขภาพกาย-ใจ-พลัง สไตล์ RPG (HP/MP/Quest) + คลังความรู้พยาบาล', file:'/team/wellness.md', charFile:'/characters/eir.md' },
   { id:'scout',   name:'Scout',   thai:'สเกาท์',  gender:'ชาย',  ending:'ครับ', model:'sonnet', emoji:'🔍', img:'images/Scout.png',   role:'Research & Analysis',       desc:'ค้นคว้าเชิงลึก สรุปข้อมูล วิเคราะห์ trend และ insight',  file:'/team/research.md',     charFile:'/characters/scout.md'   },
   { id:'council', name:'Council', thai:'เคาน์ซิล',gender:'ชาย',  ending:'ครับ', model:'opus',   emoji:'⚖️', img:'images/Council.png', role:'Decision Chamber',          desc:'วิเคราะห์การตัดสินใจสำคัญ 3 มุมมอง',                    file:'/team/council.md',      charFile:'/characters/council.md' },
   { id:'forge',   name:'Forge',   thai:'ฟอร์จ',   gender:'ชาย',  ending:'ครับ', model:'sonnet', emoji:'⚙️', img:'images/Forge.png',   role:'Code & Dev Agent',          desc:'เขียนโค้ด แก้ bug พัฒนาโปรแกรม script และ tool',         file:'/team/forge.md',        charFile:'/characters/forge.md'   },
@@ -46,7 +47,8 @@ const ORG_CHART = {
       ] },
     { name: 'สายปฏิบัติการชีวิต & สุขภาพ',    sub: 'Life Operations & Wellness Division', dot: 'dot-green',
       agents: [
-        { id: 'nova', title: 'Chief Operating Officer — Life (COO) — ตาราง สุขภาพ habit ประจำวัน' },
+        { id: 'nova', title: 'Chief Operating Officer — Life (COO) — ตาราง เวลา habit ประจำวัน' },
+        { id: 'eir',  title: 'Head of Wellness & Vitality — สุขภาพกาย-ใจ-พลัง, routine ฟื้นฟู, คลังความรู้พยาบาล' },
       ] },
     { name: 'สายสร้างสรรค์ & ข้อมูลเชิงลึก',  sub: 'Creative & Insights Division',        dot: 'dot-gold',
       agents: [
