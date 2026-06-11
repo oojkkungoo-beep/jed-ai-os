@@ -1,5 +1,12 @@
 [
   {
+    "name": "Clear_stock_nursepant",
+    "status": "active",
+    "progress": 20,
+    "updated": "2026-06-08T00:00:00.000Z",
+    "notes": "Quick Win แรกของแผนรายได้เสริม 90 วัน — เคลียร์สต๊อกกางเกงพยาบาล NursePant ที่ค้างเกือบ 1.5 ปี (66 ตัว, ทุนคืนหมดแล้ว) ในราคา 400 บาท/ตัว (ไม่รวมส่ง) จากปกติ 750 บาท\n\n📁 รายละเอียดโปรเจกต์: `output/projects/Clear_stock_nursepant/` — README.md (ภาพรวม), post_facebook.md (โพสต์พร้อมใช้), stock_tracking.md (ติดตามสต๊อก/ยอดขาย)\n\n👥 ทีม: Mint (ราคา/เป้าเงิน), Muse (โพสต์), Scout (สำรวจตลาด), Vera (QA โพสต์)\n\n🟢 ขั้นตอนต่อไป: Jed รีวิวโพสต์ครั้งสุดท้าย → โพสต์ลงเพจ NursePant → อัปเดต stock_tracking.md ทุกออเดอร์"
+  },
+  {
     "name": "Jed AI OS Dashboard",
     "status": "active",
     "progress": 83,
