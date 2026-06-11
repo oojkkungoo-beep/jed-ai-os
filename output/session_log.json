@@ -3,13 +3,33 @@
     "id": 1,
     "date": "5 มิถุนายน 2569",
     "topCategory": "AI OS Dashboard",
-    "tags": ["🔧 Dev & Tech", "👥 Team Setup", "🎯 Strategy"],
+    "tags": [
+      "🔧 Dev & Tech",
+      "👥 Team Setup",
+      "🎯 Strategy"
+    ],
     "summary": "วางรากฐานทีม AI ครบ 9-10 คน + ปรับ UI dashboard และเชื่อมระบบ deploy",
     "categories": [
-      { "name": "Dashboard & UI", "count": 12, "pct": 40 },
-      { "name": "Team Setup", "count": 8, "pct": 27 },
-      { "name": "System Integration", "count": 6, "pct": 20 },
-      { "name": "Strategy", "count": 4, "pct": 13 }
+      {
+        "name": "Dashboard & UI",
+        "count": 12,
+        "pct": 40
+      },
+      {
+        "name": "Team Setup",
+        "count": 8,
+        "pct": 27
+      },
+      {
+        "name": "System Integration",
+        "count": 6,
+        "pct": 20
+      },
+      {
+        "name": "Strategy",
+        "count": 4,
+        "pct": 13
+      }
     ],
     "tasks": [
       "อัปเดต character files ทั้ง 9 คน — Gender + คำอ่านไทย",
@@ -18,19 +38,41 @@
       "Share Notion + Connect GitHub → Vercel"
     ],
     "details": "วันนี้เป็นวันวางรากฐานของทีม AI — ตั้งค่า character ให้ agent ทุกคนมีตัวตนชัดเจน (เพศ, สรรพนาม, คำลงท้าย) ปรับหน้า Team ให้ดูเป็นทีมจริงจังขึ้นด้วย portrait card และเพิ่ม Vera เข้ามาเป็น QA agent คนที่ 9 (ตอนนั้น) นอกจากนี้ยังเชื่อมต่อ Notion และตั้งค่า deploy ผ่าน Vercel ให้ Jed เข้าถึง dashboard ได้จากทุกที่",
-    "relatedProjects": ["Jed AI OS Dashboard"]
+    "relatedProjects": [
+      "Jed AI OS Dashboard"
+    ]
   },
   {
     "id": 2,
     "date": "6 มิถุนายน 2569",
     "topCategory": "System Upgrade",
-    "tags": ["🔧 Dev & Tech", "🧠 Knowledge", "📝 Memory"],
+    "tags": [
+      "🔧 Dev & Tech",
+      "🧠 Knowledge",
+      "📝 Memory"
+    ],
     "summary": "อัปเกรดระบบทั้งชุด — แก้บั๊ก deploy, ลด token CLAUDE.md, ตั้ง Second Brain และ Knowledge dashboard",
     "categories": [
-      { "name": "Vercel & Deploy", "count": 4, "pct": 20 },
-      { "name": "Skill Audit", "count": 6, "pct": 30 },
-      { "name": "Second Brain", "count": 7, "pct": 35 },
-      { "name": "Research & Knowledge", "count": 3, "pct": 15 }
+      {
+        "name": "Vercel & Deploy",
+        "count": 4,
+        "pct": 20
+      },
+      {
+        "name": "Skill Audit",
+        "count": 6,
+        "pct": 30
+      },
+      {
+        "name": "Second Brain",
+        "count": 7,
+        "pct": 35
+      },
+      {
+        "name": "Research & Knowledge",
+        "count": 3,
+        "pct": 15
+      }
     ],
     "tasks": [
       "แก้ Vercel redirect loop + browser cache bug",
@@ -40,19 +82,43 @@
       "สร้าง knowledge.json — 12 entries persistent"
     ],
     "details": "วันที่เน้นการ \"ทำความสะอาดและอัปเกรดระบบ\" — แก้ปัญหาทางเทคนิคที่สะสม (Vercel redirect loop, cache bug), ลดความยาวไฟล์ CLAUDE.md ลงเกือบครึ่งเพื่อประหยัด token, ตรวจสอบ skill ของ agent ทุกคนและอัปเกรดให้ครบ 10 คน พร้อมวาง Second Brain (Obsidian) และระบบ Knowledge บน dashboard ให้ Jed เก็บสิ่งที่เรียนรู้ได้อย่างเป็นระบบ",
-    "relatedProjects": ["Jed AI OS Dashboard"]
+    "relatedProjects": [
+      "Jed AI OS Dashboard"
+    ]
   },
   {
     "id": 3,
     "date": "7 มิถุนายน 2569",
     "topCategory": "Framework_01 — ชีวิตและรายได้เสริม",
-    "tags": ["🎯 Strategy", "💰 Finance", "👨‍👩‍👧 Family", "🌿 Health", "🔧 Dev & Tech"],
+    "tags": [
+      "🎯 Strategy",
+      "💰 Finance",
+      "👨‍👩‍👧 Family",
+      "🌿 Health",
+      "🔧 Dev & Tech"
+    ],
     "summary": "สาน Framework 4-Level ต่อกับ Atlas — ตกผลึกเป้าหมายเงิน 90 วัน + สำรวจช่องทางรายได้เสริม + อัปเดต dashboard หลายจุด",
     "categories": [
-      { "name": "Strategy & Life Framework", "count": 9, "pct": 35 },
-      { "name": "Finance Planning", "count": 6, "pct": 23 },
-      { "name": "Dashboard & UI", "count": 7, "pct": 27 },
-      { "name": "Org Design", "count": 4, "pct": 15 }
+      {
+        "name": "Strategy & Life Framework",
+        "count": 9,
+        "pct": 35
+      },
+      {
+        "name": "Finance Planning",
+        "count": 6,
+        "pct": 23
+      },
+      {
+        "name": "Dashboard & UI",
+        "count": 7,
+        "pct": 27
+      },
+      {
+        "name": "Org Design",
+        "count": 4,
+        "pct": 15
+      }
     ],
     "tasks": [
       "สรุป session Framework_01 (Wealth/Health Score, ความรู้สึก emotional isolation, 4-Level Framework)",
@@ -64,18 +130,38 @@
       "ออกแบบผังองค์กร 6 สายงาน (Jed CEO → Laura Chief of Staff → ทีม) แทน Pipeline เดิม"
     ],
     "details": "วันนี้คือวันที่ framework ของ Jed เริ่มเป็นรูปเป็นร่างจริงจัง — Atlas ช่วยคลี่ปมความรู้สึก (อยาก \"ทำเงียบๆ ให้ผลลัพธ์พูดแทน\" ไม่ใช่การซ่อน) และพา Jed มาถึงเป้าหมายที่ชัดเจน: รายได้เสริม +20,000 บาท/เดือน ภายใน 90 วัน จากนั้นสำรวจพบว่า Jed มีต้นทุนเดิมอยู่แล้ว 4 ทาง และเลือกเส้นทาง \"เคลียร์สต๊อก NursePant 60 ตัว\" เป็น Quick Win — ที่น่าสนใจคือ Jed เผยว่าทุนคืนหมดแล้ว ทำให้ของที่เหลือกลายเป็น \"กำไรล้วน\" เกือบเท่าเป้าหมายรายได้เสริมทั้งเดือน\n\nคู่ขนานกันนั้น Laura ก็ทยอยอัปเดต dashboard หลายจุดตามคำขอของ Jed: เพิ่มโปรเจกต์ Jed_fremwork, ใส่ progress bar และ detail panel ให้ทุกโปรเจกต์, และออกแบบผังองค์กรใหม่ 6 สายงานที่ไม่ทับซ้อนกัน (Strategy, Finance, Life Ops, Creative & Insights, Technology, People & Quality) แทนมุมมอง Pipeline เดิม",
-    "relatedProjects": ["Jed_fremwork", "Jed AI OS Dashboard", "Medical Presentation — ยาสลบ"]
+    "relatedProjects": [
+      "Jed_fremwork",
+      "Jed AI OS Dashboard",
+      "Medical Presentation — ยาสลบ"
+    ]
   },
   {
     "id": 4,
     "date": "7 มิถุนายน 2569",
     "topCategory": "ตั้ง Agent ใหม่ — Eir (Wellness Healer)",
-    "tags": ["👥 Team Setup", "🌿 Health", "🔧 Dev & Tech"],
+    "tags": [
+      "👥 Team Setup",
+      "🌿 Health",
+      "🔧 Dev & Tech"
+    ],
     "summary": "Vera วิเคราะห์ skill gap พบทีมยังขาดคนดูแลสาย Health → Jed ตัดสินใจตั้ง agent ใหม่ \"Eir\" นักบวช Healer ธีม isekai พร้อมสกิลครบชุด",
     "categories": [
-      { "name": "Team Setup", "count": 6, "pct": 50 },
-      { "name": "Skill Gap Analysis", "count": 3, "pct": 25 },
-      { "name": "Dashboard & UI", "count": 3, "pct": 25 }
+      {
+        "name": "Team Setup",
+        "count": 6,
+        "pct": 50
+      },
+      {
+        "name": "Skill Gap Analysis",
+        "count": 3,
+        "pct": 25
+      },
+      {
+        "name": "Dashboard & UI",
+        "count": 3,
+        "pct": 25
+      }
     ],
     "tasks": [
       "Vera วิเคราะห์ skill gap ของทีม สำหรับ Level 1 (Wealth/Health/Mindset)",
@@ -86,17 +172,30 @@
       "เพิ่ม Eir เข้า AGENTS grid และผังองค์กร (สาย Life Operations & Wellness คู่กับ Nova) ใน dashboard + อัปเดต routing ใน CLAUDE.md"
     ],
     "details": "ต่อเนื่องจากที่ Jed ถามว่าต้องเพิ่มเลขา/สกิลไหมเพื่อเร่ง Level 1 ของ framework — Vera เข้ามาวิเคราะห์และพบว่า Wealth (Atlas/Mint/Council) และ Mindset (Atlas/Sage) มีคนดูแลครบแล้ว แต่ Health ยังเป็นช่องว่าง: Nova ดูแลแค่ \"เวลา/ตาราง\" ไม่มีใครเชี่ยวชาญเรื่องร่างกาย/ฟื้นฟู/พลังงานโดยตรง Vera เสนอ 2 ทาง — เพิ่มสกิลให้ Nova หรือ ตั้ง agent ใหม่เฉพาะทาง\n\nJed เลือกทางตั้ง agent ใหม่ทันที โดยให้เหตุผลว่าจะลุยสาย Health เพิ่มแน่นอน ไม่ใช่แค่โปรเจกต์ \"เพื่อนเบาหวาน\" แต่รวมถึงงานประจำวันที่ต้องมีคนช่วยตัดสินใจ และวางแผนจะป้อนความรู้การพยาบาล/สุขภาพเข้าระบบอีกมากในอนาคต พร้อมขอให้ปรับธีมเป็นแนวนิยาย/การ์ตูนต่างโลกที่ Jed ชอบ\n\nจึงเกิด \"Eir\" (เอียร์) — นักบวช Healer (Half-Elf Cleric) จากต่างโลก ที่ถูกซัมมอนมาเป็น Healer ประจำปาร์ตี้ของ Jed (Guild Master) พูดแบบอบอุ่นห่วงใย แทรกศัพท์ RPG (HP/MP/Buff/Debuff/Quest/Status Window) ให้การดูแลสุขภาพสนุกเหมือนผจญภัย แต่เนื้อหายังคงถูกต้องตามหลักวิชาชีพ มีสกิลครบ 5 ด้าน (Vitality Check, Routine Crafting, Pattern Tracking, Knowledge Forge, Buff/Debuff Advisory) และแบ่งงานกับ Nova ชัดเจนไม่ทับซ้อน (Nova=เวลา/ตาราง, Eir=สุขภาพ/ร่างกาย/ความรู้)\n\nเพิ่มเข้าทีมในทุกจุด: AGENTS grid, ผังองค์กร (สาย Life Operations & Wellness), routing table ใน CLAUDE.md, และสร้างไฟล์ persona/character ครบชุด — ทีมตอนนี้มี 7 agent + Laura + Jed",
-    "relatedProjects": ["Jed AI OS Dashboard", "Jed_fremwork"]
+    "relatedProjects": [
+      "Jed AI OS Dashboard",
+      "Jed_fremwork"
+    ]
   },
   {
     "id": 5,
     "date": "7 มิถุนายน 2569",
     "topCategory": "Dashboard Bugfix + Team Profile Upgrade",
-    "tags": ["🔧 Dev & Tech"],
+    "tags": [
+      "🔧 Dev & Tech"
+    ],
     "summary": "แก้บั๊กกดดู Character ไม่ได้ + เพิ่มข้อมูล \"เผ่าพันธุ์\" ให้ agent ทุกคนในหน้า Team",
     "categories": [
-      { "name": "Bugfix", "count": 2, "pct": 50 },
-      { "name": "Feature — Team Profiles", "count": 2, "pct": 50 }
+      {
+        "name": "Bugfix",
+        "count": 2,
+        "pct": 50
+      },
+      {
+        "name": "Feature — Team Profiles",
+        "count": 2,
+        "pct": 50
+      }
     ],
     "tasks": [
       "พบสาเหตุ: path ไฟล์ team/characters ใช้ leading slash → fetch ผิดที่บน GitHub Pages subpath",
@@ -106,16 +205,25 @@
       "เพิ่ม เผ่าพันธุ์ ให้ Vera ที่ไม่เคยมีนิยามไว้ (Clockwork Inspector / Golem-kin Auditor)"
     ],
     "details": "Jed แจ้งว่ากดดู \"Character\" ของ agent ในหน้า Team ไม่ขึ้น — ตรวจสอบพบว่าทุก agent ตั้งค่า path ของไฟล์ persona/character ด้วย leading slash (เช่น '/team/wellness.md') ซึ่งบน localhost อาจทำงานได้ แต่บน GitHub Pages ที่ dashboard อยู่ใน subpath '/jed-ai-os/dashboard/' การ fetch path แบบ absolute จะชี้ไปที่ root ของโดเมนผิดที่ ทำให้ 404 ทั้ง Prompt และ Character tab (ไม่ใช่แค่ Eir คนเดียว แต่เป็นบั๊กที่ซ่อนอยู่กับทุก agent) — แก้โดยเปลี่ยนเป็น relative path '../team/...' และ '../characters/...' ทำให้ใช้งานได้ถูกต้องทั้ง local และ live\n\nนอกจากนี้ Jed ขอให้เพิ่มข้อมูล \"เผ่าพันธุ์\" ต่อท้ายชื่อ agent ในหน้าโปรไฟล์ (ตามสไตล์ที่ใช้ตอนแนะนำ Eir ว่าเป็น Half-Elf Cleric) — จึงไปดึงข้อมูลเผ่าพันธุ์จาก character file ของแต่ละคนมาใส่ใน AGENTS array แล้วแสดงเป็นแถบ 🧬 ใต้ชื่อใน Team grid ทุกใบการ์ด พบว่า Vera เป็นคนเดียวที่ยังไม่เคยมีนิยามเผ่าพันธุ์ จึงตั้งให้เป็น \"Clockwork Inspector (Golem-kin Auditor)\" ให้เข้ากับธีม QA ที่ละเอียด เที่ยงตรง เหมือนกลไกนาฬิกา",
-    "relatedProjects": ["Jed AI OS Dashboard"]
+    "relatedProjects": [
+      "Jed AI OS Dashboard"
+    ]
   },
   {
     "id": 6,
     "date": "7 มิถุนายน 2569",
     "topCategory": "Team Profile — เผ่าพันธุ์ ฉบับภาษาไทย",
-    "tags": ["🔧 Dev & Tech", "🧠 Knowledge"],
+    "tags": [
+      "🔧 Dev & Tech",
+      "🧠 Knowledge"
+    ],
     "summary": "Jed อัปรูป Eir/Vera/Laura ใหม่ + ขอให้เพิ่มคำอธิบายเผ่าพันธุ์เป็นภาษาไทยให้ทุก agent แบบเดียวกับ Eir",
     "categories": [
-      { "name": "Team Profiles", "count": 2, "pct": 100 }
+      {
+        "name": "Team Profiles",
+        "count": 2,
+        "pct": 100
+      }
     ],
     "tasks": [
       "Jed เพิ่ม images/Eir.png และทำรูปใหม่ให้ Vera + Laura",
@@ -123,16 +231,24 @@
       "อัปเดตทั้งใน AGENTS array (app.js) และหัวข้อ เผ่าพันธุ์ ใน character file ของทุกคนให้ตรงกัน"
     ],
     "details": "Jed แจ้งว่าได้เพิ่มรูป Eir ในโฟลเดอร์ images/ แล้ว และทำรูปโปรไฟล์ใหม่ให้ Vera กับ Laura ด้วย (ไฟล์ชื่อเดิม ระบบดึงไปแสดงอัตโนมัติไม่ต้องแก้โค้ด) จากนั้นขอให้ปรับการแสดงผล 'เผ่าพันธุ์' ของ agent ทุกคนให้มีคำอธิบายภาษาไทยในวงเล็บกำกับแบบเดียวกับที่ Eir มี ('Half-Elf Cleric (นักบวชจากต่างโลก)') เพื่อให้ Jed อ่านแล้วเข้าใจตัวตนของแต่ละคนทันทีแม้ไม่คุ้นกับศัพท์แฟนตาซีภาษาอังกฤษ\n\nเพิ่มคำอธิบายให้ครบทั้ง 11 agent + Jed เช่น Laura = 'เอลฟ์เงินผู้ดูแลสำนักงาน', Atlas = 'นักรบ-นักคิดสายเลือดผสม', Council = 'สภาหุ่นยนต์โบราณสามเสียง', Sage = 'จิ้งจอกเทพผู้อาวุโสแห่งความทรงจำ', Vera = 'กลไกผู้ตรวจสอบจากเผ่าโกเลม' ฯลฯ แก้ทั้งในไฟล์ dashboard/app.js (AGENTS array) และหัวข้อเผ่าพันธุ์ในไฟล์ character/*.md ของทุกคนให้ข้อมูลตรงกันทั้งสองที่",
-    "relatedProjects": ["Jed AI OS Dashboard"]
+    "relatedProjects": [
+      "Jed AI OS Dashboard"
+    ]
   },
   {
     "id": 7,
     "date": "7 มิถุนายน 2569",
     "topCategory": "Dashboard Bugfix — รูป Eir ไม่ขึ้น",
-    "tags": ["🔧 Dev & Tech"],
+    "tags": [
+      "🔧 Dev & Tech"
+    ],
     "summary": "พบว่ารูป Eir ไม่ขึ้นบน live site เพราะไฟล์ภาพยังไม่เคย push ขึ้น GitHub — เพิ่มเข้า git แล้ว push ให้",
     "categories": [
-      { "name": "Bugfix — Assets", "count": 1, "pct": 100 }
+      {
+        "name": "Bugfix — Assets",
+        "count": 1,
+        "pct": 100
+      }
     ],
     "tasks": [
       "ตรวจสอบ path/ชื่อไฟล์ Eir.png ในโฟลเดอร์ images/ — ตรงกับที่อ้างอิงในโค้ดถูกต้อง",
@@ -140,6 +256,41 @@
       "git add + commit + push ทั้ง 3 ไฟล์ภาพขึ้น GitHub"
     ],
     "details": "Jed แจ้งว่าเพิ่มรูป Eir ไว้ในโฟลเดอร์ images/ แล้วแต่ยังไม่ขึ้นบน dashboard — ตรวจสอบแล้วพบว่าไฟล์ชื่อและตำแหน่งถูกต้องตามที่โค้ดอ้างอิง (images/Eir.png) แต่สาเหตุจริงคือ **ไฟล์รูปภาพเป็น binary asset ที่ git ไม่ได้ track โดยอัตโนมัติเหมือนไฟล์โค้ด/JSON** — มันอยู่แค่ในเครื่อง Jed (working directory) ไม่เคยถูก commit เข้า repo เลย ดังนั้นเวลา push ก่อนหน้านี้จึงไม่มีไฟล์รูปติดไปด้วย ทำให้ live site บน GitHub Pages หาไฟล์ไม่เจอ (404 → fallback เป็นไม่แสดงรูป)\n\nเช็คด้วย git status เจอว่า Eir.png เป็นไฟล์ใหม่ที่ untracked และ Laura.png, vera.png เป็นไฟล์ modified (จากที่ Jed ทำรูปใหม่ให้) ทั้งสามยังไม่เคยอยู่ใน commit ใดเลย — แก้โดย git add + commit + push เข้า branch master ตอนนี้รูปขึ้นแสดงผลถูกต้องบน live dashboard แล้ว\n\n💡 ข้อสังเกตสำหรับอนาคต: ทุกครั้งที่ Jed เพิ่ม/เปลี่ยนรูปภาพ agent ใหม่ในโฟลเดอร์ images/ ต้องแจ้งหรือให้ Laura commit+push ไฟล์ภาพเหล่านั้นด้วยเสมอ ไม่ใช่แค่ไฟล์โค้ด/ข้อมูล เพราะ git ไม่ stage ไฟล์ binary ใหม่ให้อัตโนมัติ",
-    "relatedProjects": ["Jed AI OS Dashboard"]
+    "relatedProjects": [
+      "Jed AI OS Dashboard"
+    ]
+  },
+  {
+    "id": 8,
+    "date": "11 มิถุนายน 2569",
+    "topCategory": "เปิดโปรเจกต์ Risk_OR_BAH + Vera Review สไลด์ป้องกันสิ่งตกค้าง",
+    "tags": [
+      "👥 Team Setup",
+      "🌿 Health"
+    ],
+    "summary": "เชื่อมโปรเจกต์ Risk_OR_BAH (session แยก root) เข้าระบบทีม Laura สำเร็จ + Vera ตรวจสไลด์ 'กระบวนการป้องกันสิ่งตกค้าง 69' จนผ่าน A-",
+    "categories": [
+      {
+        "name": "Team Setup — Cross-project",
+        "count": 1,
+        "pct": 50
+      },
+      {
+        "name": "QA Review — เอกสารโรงพยาบาล",
+        "count": 1,
+        "pct": 50
+      }
+    ],
+    "tasks": [
+      "สร้าง CLAUDE.md ใน D:\\Claude_Cowork\\งาน_รพ\\Risk\\ ให้ session Risk_OR_BAH_01 ใช้ตัวตน Laura + routing เดียวกับทีมหลัก",
+      "เพิ่ม project Risk_OR_BAH เข้า output/projects.json แล้ว commit+push",
+      "Vera ตรวจสไลด์ 'กระบวนการป้องกันสิ่งตกค้าง 69 (ปรับปรุง)' รอบ 1 (14 สไลด์) พบ Slide 3 ว่างเปล่า ให้คะแนน B",
+      "Jed กำหนดหัวข้อ Slide 3 เอง + เพิ่ม section High-Risk Scenarios ใหม่ → ไฟล์ขยายเป็น 16 สไลด์",
+      "Vera ตรวจรอบ 2 — Slide 3 แก้แล้ว เนื้อหาครบ ให้คะแนน A-"
+    ],
+    "details": "Jed สร้าง session ใหม่ชื่อ Risk_OR_BAH_01 ที่ root D:\\Claude_Cowork\\งาน_รพ\\Risk\\ (คนละ working directory กับ Jed_org) สำหรับงานทะเบียนความเสี่ยง/กระบวนการป้องกันสิ่งตกค้างของกองวิสัญญีและห้องผ่าตัด รพ.ภูมิพลอดุลยเดช พอ. แต่ session นั้นยังไม่มีตัวตน Laura หรือทีมงาน — Laura จึงสร้างไฟล์ CLAUDE.md ในโฟลเดอร์ Risk กำหนดตัวตน Laura + routing table เดียวกับระบบหลัก โดยอ้างอิง agent profile จาก Jed_org/team/ ด้วย absolute path แล้วลงทะเบียนโปรเจกต์ Risk_OR_BAH เข้า dashboard\n\nจากนั้น Jed สั่งให้ Vera ตรวจสไลด์ 'กระบวนการป้องกันสิ่งตกค้าง 69 (ปรับปรุง).pptx' — รอบแรก (14 สไลด์) เนื้อหาหลักครบถ้วนสอดคล้องกัน เน้นประเด็นผ่าตัด 2 Operation/Field พร้อมกัน แต่ Slide 3 ว่างเปล่าทั้งหมด ให้คะแนน B และแนะนำให้แก้ Jed เลือกกำหนดหัวข้อ Slide 3 เอง แล้วปรับปรุงไฟล์เพิ่มเป็น 16 สไลด์ (เติมนิยาม RSI/Sponge Count ใน Slide 3 + เพิ่ม section ใหม่ 'สถานการณ์เฝ้าระวังพิเศษ') — Vera ตรวจรอบสองอัปเกรดเป็น A- โดยมีหมายเหตุว่าหลายสไลด์เนื้อหาอยู่ในรูปภาพ/diagram ที่ตรวจ visual ไม่ได้จากเครื่องมือนี้ ขอให้ Jed เปิดไฟล์ตรวจตาเองอีก 1 รอบ\n\nบันทึก diary ที่ output/diary/2026-06-11.md และ sync ไป Second_Brain เรียบร้อย",
+    "relatedProjects": [
+      "Risk_OR_BAH"
+    ]
   }
 ]
