@@ -751,6 +751,25 @@ function closeDiaryBook() {
   document.getElementById('book-modal').classList.remove('open');
 }
 
+// ── เปิดหน้าหนังสือ diary จากวันที่ (ISO) — ใช้กับ Daily Briefing บนหน้า Briefing ──
+const THAI_WEEKDAYS = ['วันจันทร์','วันอังคาร','วันพุธ','วันพฤหัสบดี','วันศุกร์','วันเสาร์','วันอาทิตย์'];
+const THAI_MONTHS   = ['', 'มกราคม','กุมภาพันธ์','มีนาคม','เมษายน','พฤษภาคม','มิถุนายน','กรกฎาคม','สิงหาคม','กันยายน','ตุลาคม','พฤศจิกายน','ธันวาคม'];
+
+function toThaiDiaryDate(iso) {
+  const d = new Date(iso + 'T00:00:00');
+  const wd = THAI_WEEKDAYS[(d.getDay() + 6) % 7]; // getDay(): 0=Sun → ปรับให้ 0=จันทร์
+  return `${wd}ที่ ${d.getDate()} ${THAI_MONTHS[d.getMonth() + 1]} ${d.getFullYear() + 543}`;
+}
+
+function openDiaryBookByDate(personId, isoDate) {
+  const dateStr = toThaiDiaryDate(isoDate);
+  const list = diaryByPerson[personId] || [];
+  const idx = list.findIndex(e => e.date === dateStr);
+  if (idx === -1) { alert('ไม่พบ diary ของวันนี้'); return; }
+  selectDiaryPerson(personId);
+  openDiaryBook(personId, idx);
+}
+
 // ═══════════════════════════════════════════════
 //  PROJECTS
 // ═══════════════════════════════════════════════
@@ -1189,7 +1208,7 @@ function renderBriefing() {
 
       ${teamLogs.length ? `
       <div class="briefing-card" style="grid-column:1/-1">
-        <div class="briefing-card-title">📋 Agent Daily Logs — ${teamLogs[teamLogs.length-1].dateDisplay}</div>
+        <div class="briefing-card-title">📋 Daily Briefing ล่าสุด — ${teamLogs[teamLogs.length-1].dateDisplay}</div>
         <div class="agent-logs-grid">
           ${teamLogs[teamLogs.length-1].agents.map(a => `
             <div class="agent-log-card" onclick="toggleLog('log-${a.id}')">
@@ -1206,6 +1225,7 @@ function renderBriefing() {
                   ${a.highlights.map(h=>`<li>${h}</li>`).join('')}
                 </ul>
                 <a class="agent-log-link" href="${a.url}" target="_blank">เปิดใน Notion →</a>
+                <a class="agent-log-link" href="#" onclick="event.stopPropagation();event.preventDefault();navigate('diary');openDiaryBookByDate('${a.name.trim().toLowerCase()}','${teamLogs[teamLogs.length-1].date}')">📖 เปิดใน Diary →</a>
               </div>
             </div>`).join('')}
         </div>

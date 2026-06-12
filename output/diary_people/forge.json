@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "date": "วันเสาร์ที่ 6 มิถุนายน 2569",
+    "content": "📋 Daily Briefing — Dev Report\n\n## Forge — Dev Report\n**วันที่:** 6 มิถุนายน 2569\n\n### งานที่ทำวันนี้\n**Fix: Vercel redirect ปัญหา**\n\n**วิเคราะห์ปัญหา:**\n- `index.html` ใช้ meta refresh redirect → ช้า + ไม่น่าเชื่อถือ\n- `vercel.json` rewrite เฉพาะ `/` path ไม่ครอบคลุม\n\n**สิ่งที่แก้:**\n1. `index.html` — เปลี่ยนเป็น `window.location.replace('/dashboard/index.html')`\n2. `vercel.json` — เพิ่ม rewrite สำหรับ `/dashboard` path\n\n**ผลลัพธ์:**\n- ✅ Dashboard โหลดได้ปกติในเครื่อง\n- ✅ Push ขึ้น GitHub commit `6b9cb12`\n- ✅ Vercel auto-deploy triggered"
+  },
+  {
+    "date": "วันจันทร์ที่ 8 มิถุนายน 2569",
+    "content": "📋 Daily Briefing — Dev Report\n\n## Forge — Dev Report\n**วันที่:** 8 มิถุนายน 2569\n\n### งานที่ทำเมื่อวาน/เช้านี้\n- แก้ motto หน้า Home: \"Jed doesn't work alone.\" -> \"Even a guild master needs a party.\" — commit + push ขึ้น GitHub แล้ว\n- ตรวจพบสาเหตุบั๊กภาพ Vera 2 ชั้น: (1) ไฟล์เดิมเป็นภาพของ Laura ที่เซฟผิดตอน commit ก่อนหน้า (2) ไฟล์ใหม่ที่ Jed อัปโหลด มีสัดส่วน 2.108 ขณะที่การ์ดทุกคนใช้ 2:3 (ratio 1.5)\n\n### รอดำเนินการต่อ\nเตรียม prompt ที่ระบุ aspect ratio 2:3 (1024x1536px) ให้ Jed ใช้สร้างภาพใหม่ — พร้อม add + commit + push ให้ทันทีที่ได้ไฟล์ที่ถูกต้อง"
+  }
+]

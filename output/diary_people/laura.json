@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "date": "วันศุกร์ที่ 5 มิถุนายน 2569",
+    "content": "📋 Daily Briefing — Daily Briefing\n\n## Laura — Daily Briefing\n**วันที่:** 5 มิถุนายน 2569\n\n### สรุปวันนี้\nวันนี้เป็นวันที่ระบบ AI ทีมทำงานอย่างครบวงจร ตั้งแต่การดูแลงาน Clinical ของ รพ. ไปจนถึงการพัฒนา OHC App และการวางสถาปัตยกรรม AI OS ใหม่\n\n### 🎯 3 สิ่งที่ควรทำพรุ่งนี้\n1. 🏥 Review และ sign-off รายงาน Occupational Health\n2. 📱 Sprint planning OHC App กับ Forge\n3. 🧠 ทบทวน Agent Orchestration Architecture กับ Sage\n\n### คำถามจาก Laura\nสัปดาห์นี้ Jed อยากให้ทีมโฟกัสที่ด้านไหน?\n(A) เร่ง OHC App · (B) AI OS Infrastructure · (C) งาน Clinical"
+  },
+  {
+    "date": "วันเสาร์ที่ 6 มิถุนายน 2569",
+    "content": "📋 Daily Briefing — Daily Briefing\n\n## Laura — Daily Briefing\n**วันที่:** 6 มิถุนายน 2569 (วันเสาร์)\n\n### สรุปการประชุมทีมเช้าวันนี้\nเปิดประชุม Daily Briefing ทั้ง 10 คน ทบทวนงานค้างจากเมื่อวาน 3 รายการ\n\n### งานค้างจากวันที่ 5 มิ.ย.\n1. 🔧 Debug Vercel redirect — **✅ เสร็จแล้ว** (Forge แก้ + push GitHub)\n2. 🎨 Slide ยาสลบ หน้าแรก — Muse พร้อมช่วย\n3. 🖼️ Generate character card — รอ Jed\n\n### Priority วันนี้\n- 🔴 Vercel (เสร็จแล้ว)\n- 🟡 Slide ยาสลบ\n- 🟡 Character card\n- 🟢 ออกกำลังกาย (ไทเก็ก)"
+  },
+  {
+    "date": "วันจันทร์ที่ 8 มิถุนายน 2569",
+    "content": "📋 Daily Briefing — Daily Briefing\n\n## Laura — Daily Briefing\n**วันที่:** 8 มิถุนายน 2569 (วันจันทร์)\n\n### สรุปประชุมทีมเช้านี้\nต่อเนื่องจาก Framework ครอบครัวที่ Atlas คุยกับ Jed ไว้ — วันนี้ทีมโฟกัส 3 เรื่องหลัก: (1) ติดตามผลการคุยกับภรรยาเรื่องเวลา (2) เดินหน้าแผนรายได้เสริม NursePant (3) เคลียร์งานค้างด้าน dashboard (ภาพ Vera, motto)\n\n### Priority วันนี้\n- 🔴 รอ Jed ตอบคำถาม NursePant (สต๊อก/ราคา/เพจ) — ปลดล็อกแผน 90 วัน\n- 🟡 ติดตามผลคุย \"พาลูกเข้านอน\" กับภรรยา\n- 🟢 ภาพ Vera ใหม่ (ตาม prompt 2:3 ratio ที่เตรียมไว้)\n- 🟢 Slide ยาสลบ กับ Muse"
+  },
+  {
+    "date": "วันพฤหัสบดีที่ 11 มิถุนายน 2569",
+    "content": "📋 Daily Briefing — เชื่อมโปรเจกต์ Risk_OR_BAH เข้าทีม\n\n## Laura — เชื่อมโปรเจกต์ Risk_OR_BAH เข้าทีม\n**วันที่:** 11 มิถุนายน 2569\n\nJed สร้าง session ใหม่ชื่อ Risk_OR_BAH_01 ที่ root D:\\Claude_Cowork\\งาน_รพ\\Risk\\ ซึ่งเป็นคนละ working directory กับ Jed_org เลยยังไม่มีตัวตน Laura/ทีมงานในนั้น — ผมสร้างไฟล์ CLAUDE.md ในโฟลเดอร์ Risk ให้กำหนดตัวตน Laura + routing table เดียวกับระบบหลัก โดยอ้างอิง agent profile จาก Jed_org/team/ ด้วย absolute path (session มีสิทธิ์อ่านทั้ง drive D อยู่แล้ว) จากนั้นลงทะเบียนโปรเจกต์ Risk_OR_BAH ใน output/projects.json และ commit+push ขึ้น GitHub เรียบร้อย"
+  },
+  {
+    "date": "วันศุกร์ที่ 12 มิถุนายน 2569",
+    "content": "📋 Daily Briefing — อัปเดต Model Assignment ทั้งทีม\n\n## Laura — อัปเดต Model Assignment ทั้งทีม\n**วันที่:** 12 มิถุนายน 2569\n\nสร้าง team/model_assignment.md เป็น reference กลางจับคู่ agent กับ Claude model ที่เหมาะสม พร้อมเครื่องมือเสริมใหม่ (Canva/Claude Design, pptx, xlsx, nimble-web-expert) ปักหมุดสั้นๆ ในไฟล์ team แต่ละคน และเพิ่มลิงก์จาก CLAUDE.md"
+  }
+]
