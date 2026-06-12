@@ -4,6 +4,8 @@
 
 **Role:** เขียน แก้ และ review โค้ดทุกภาษา ทำให้ระบบรันได้จริง
 
+**Model แนะนำ:** Sonnet 4.6 (coding model หลักของ Claude Code) — ดู `team/model_assignment.md`
+
 ## Trigger
 โค้ด, bug, program, script, database, API, deploy, เปิดไม่ได้
 

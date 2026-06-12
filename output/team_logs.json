@@ -428,5 +428,67 @@
         "full": "## Sage — Memory Note\n**วันที่:** 11 มิถุนายน 2569\n\nบันทึกไดอารี่วันนี้แล้วครับ ครอบคลุม 2 เรื่องหลัก: (1) เชื่อมโปรเจกต์ Risk_OR_BAH (session แยก root ที่ Jed สร้างไว้) เข้าระบบทีม Laura ผ่าน CLAUDE.md และลงทะเบียนใน dashboard (2) Vera ตรวจสไลด์ 'กระบวนการป้องกันสิ่งตกค้าง 69' 2 รอบ จาก B (Slide 3 ว่างเปล่า) จนเป็น A- หลัง Jed แก้เอง\n\nInsight ที่เก็บไว้: ระบบ review ตรงไปตรงมาของ Vera ทำให้ Jed ลงมือแก้ไขทันทีและได้ผลลัพธ์ที่ดีขึ้นจริง ควรคงสไตล์นี้ไว้ และ Jed มีแนวโน้มจะขยายระบบทีมไปยังโปรเจกต์/session ใหม่ที่อยู่นอก Jed_org อีกในอนาคต — pattern การสร้าง CLAUDE.md เชื่อมเข้าทีมที่ใช้วันนี้ ควรนำกลับมาใช้ซ้ำได้เลย"
       }
     ]
+  },
+  {
+    "date": "2026-06-12",
+    "dateDisplay": "12 มิถุนายน 2569",
+    "agents": [
+      {
+        "id": "laura",
+        "name": "Laura",
+        "emoji": "🎭",
+        "title": "อัปเดต Model Assignment ทั้งทีม",
+        "summary": "สร้างตารางกลาง team/model_assignment.md จับคู่ Claude model (Fable 5, Opus 4.8, Sonnet 4.6, Haiku 4.5) + เครื่องมือใหม่ (Canva/Claude Design, pptx, xlsx) ให้เหมาะกับงานของแต่ละ agent ทั้ง 11 คน",
+        "highlights": [
+          "Fable 5 → Muse (content) และ Eir (เฉพาะ lore/Quest narrative ยาว); Opus 4.8 → Atlas, Council; Sonnet 4.6 → ค่าเริ่มต้นส่วนใหญ่; Haiku 4.5 → Nova",
+          "เพิ่ม Canva/Claude Design + pptx ให้ Muse/Atlas, xlsx ให้ Mint, nimble-web-expert ให้ Scout",
+          "ปักหมุด Model แนะนำในไฟล์ team/*.md ของทุกคน + ลิงก์จาก CLAUDE.md"
+        ],
+        "url": "",
+        "full": "## Laura — อัปเดต Model Assignment ทั้งทีม\n**วันที่:** 12 มิถุนายน 2569\n\nสร้าง team/model_assignment.md เป็น reference กลางจับคู่ agent กับ Claude model ที่เหมาะสม พร้อมเครื่องมือเสริมใหม่ (Canva/Claude Design, pptx, xlsx, nimble-web-expert) ปักหมุดสั้นๆ ในไฟล์ team แต่ละคน และเพิ่มลิงก์จาก CLAUDE.md"
+      },
+      {
+        "id": "qa",
+        "name": "Vera",
+        "emoji": "🔍",
+        "title": "Review การอัปเดต Model Assignment",
+        "summary": "ตรวจ output การอัปเดต model assignment ได้คะแนน A- พบ 3 จุดที่ควรปรับ: CLAUDE.md เกิน token budget, wording Mint/Council escalate ซ้ำ, criteria การใช้ Fable 5 ของ Eir ยังไม่ชัด",
+        "highlights": [
+          "คะแนนรวม A-",
+          "ชี้ว่า CLAUDE.md เกิน 25 บรรทัด ไป 3 บรรทัด",
+          "ชี้ความกำกวมเรื่อง Mint escalate model vs ส่งงานต่อ Council"
+        ],
+        "url": "",
+        "full": "## Vera — Review Model Assignment\n**วันที่:** 12 มิถุนายน 2569\n\nตรวจ output การอัปเดต model assignment ของ Laura ได้คะแนน A- พบ 3 จุดเล็กที่ควรปรับปรุง ส่งต่อ Council วิเคราะห์ว่าควรแก้ตอนนี้หรือรอ"
+      },
+      {
+        "id": "council",
+        "name": "Council",
+        "emoji": "⚖️",
+        "title": "วิเคราะห์ข้อเสนอแก้ไขของ Vera",
+        "summary": "วิเคราะห์ 3 จุดที่ Vera เสนอจาก 3 มุมมอง สรุปว่าจุด Mint/Council escalate และ Eir/Fable 5 criteria ควรแก้ทันที (ต้นทุนต่ำ) ส่วน CLAUDE.md token budget รอรวมกับ token audit รอบหน้าได้ — Jed เลือกแก้ทั้ง 3 จุดเลย",
+        "highlights": [
+          "Challenger ชี้ความเสี่ยง wording กำกวมเรื่อง escalate",
+          "Strategist มองว่า CLAUDE.md เกิน budget เป็นแค่ housekeeping",
+          "Executor: ทั้ง 3 จุดแก้ได้เร็ว ต้นทุนต่ำ"
+        ],
+        "url": "",
+        "full": "## Council — ข้อเสนอแก้ไขของ Vera (Model Assignment)\n**วันที่:** 12 มิถุนายน 2569\n\nวิเคราะห์ 3 จุดที่ Vera เสนอจาก 3 มุมมอง (Challenger/Strategist/Executor) แนะนำให้แก้จุด Mint↔Council wording และ Eir/Fable 5 criteria ทันที ส่วน CLAUDE.md token budget รอได้ — สุดท้าย Jed สั่งแก้ทั้ง 3 จุด"
+      },
+      {
+        "id": "memory_agent",
+        "name": "Sage",
+        "emoji": "📔",
+        "title": "เขียน diary 12 มิ.ย. + บันทึก insight",
+        "summary": "บันทึกไดอารี่วันนี้ครอบคลุมการอัปเดต model assignment ทั้งทีม, Vera review, Council review, และการแก้ไขครบ 3 จุด พร้อม sync ไป Second Brain",
+        "highlights": [
+          "เขียน output/diary/2026-06-12.md และ sync ไป D:\\Second_Brain -Life\\Diary\\",
+          "อัปเดต team_logs.json เพิ่ม entry วันนี้",
+          "เก็บ insight: Jed มักเลือกแก้ทุกจุดที่ Vera/Council เสนอทันที แม้บางจุดถูกประเมินว่ารอได้"
+        ],
+        "url": "",
+        "full": "## Sage — Memory Note\n**วันที่:** 12 มิถุนายน 2569\n\nบันทึกไดอารี่วันนี้ครอบคลุมงานหลัก: อัปเดต team/model_assignment.md จับคู่ Claude model+tool ให้แต่ละ agent, Vera review (A-), Council วิเคราะห์ข้อเสนอแก้ไข, และ Jed สั่งแก้ครบทั้ง 3 จุด\n\nInsight ที่เก็บไว้: เมื่อ Vera/Council เสนอ list ของจุดที่ควรปรับ Jed มักเลือก 'แก้ให้ครบทุกจุดทันที' แม้บางจุดจะถูกประเมินว่า 'รอได้' — สะท้อนว่า Jed ให้ความสำคัญกับ closure/ความครบถ้วนมากกว่าการปล่อยงานค้างไว้ทีละน้อย ครั้งหน้าเตรียม draft การแก้ทุกจุดไว้ล่วงหน้าได้เลย"
+      }
+    ]
   }
 ]

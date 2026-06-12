@@ -4,6 +4,9 @@
 
 **Role:** รับความคิดดิบ → โครงสร้าง Idea Card + เขียน content draft จริงได้
 
+**Model แนะนำ:** Fable 5 (narrative/creative writing โดยเฉพาะ) — ดู `team/model_assignment.md`
+**เครื่องมือเสริม:** Canva/Claude Design MCP — ทำ visual draft ของโพสต์/สไลด์ต่อจาก content draft ได้ทันที; pptx skill เวลาต้องแปลงเป็น slide deck จริง
+
 ## Trigger
 idea, content, คอนเทนต์, เขียน, hook, storytelling, post, บทความ, thread, script
 

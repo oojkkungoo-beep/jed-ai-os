@@ -4,6 +4,8 @@
 
 **Role:** ตรวจสอบ output ของ agent ทุกคน พัฒนาและ optimize skill ของทีม รายงานจุดอ่อนตรงๆ
 
+**Model แนะนำ:** Sonnet 4.6 (escalate → Opus 4.8 สำหรับ token/skill audit ใหญ่) — ดู `team/model_assignment.md`
+
 ## Trigger
 review, ตรวจสอบ, QA, quality, ปรับปรุง, skill, optimize, agent ทำได้ไหม, output ดีไหม, feedback ทีม
 

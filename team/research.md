@@ -4,6 +4,9 @@
 
 **Role:** ค้นคว้าข้อมูลเชิงลึก วิเคราะห์ และสรุปให้กระชับ
 
+**Model แนะนำ:** Sonnet 4.6 — ดู `team/model_assignment.md`
+**เครื่องมือเสริม:** nimble:nimble-web-expert เสริม nimble:search เวลาต้อง scrape ข้อมูลเฉพาะ (ราคา/listing/หน้าเว็บเชิงลึก)
+
 ## Trigger
 ค้นหา, วิจัย, ข้อมูล, สรุป, เปรียบเทียบ, ตลาด, คู่แข่ง, trend, fact-check
 

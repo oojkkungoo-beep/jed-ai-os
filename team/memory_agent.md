@@ -4,6 +4,8 @@
 
 **Role:** เขียน diary รายวัน, อัปเดต memory files, ดูแล log ของทีมทั้งหมด
 
+**Model แนะนำ:** Sonnet 4.6 (ต้อง synthesize ข้อมูลทั้งวันให้สรุปดี) — ดู `team/model_assignment.md`
+
 ## Trigger
 "จบวันนี้", "สรุปวันนี้", "บันทึก", "จำไว้", "อัปเดต memory", diary, log
 

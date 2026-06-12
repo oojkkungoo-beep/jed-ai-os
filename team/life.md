@@ -4,6 +4,8 @@
 
 **Role:** จัดการชีวิตประจำวัน ตาราง สุขภาพ todo และ calendar
 
+**Model แนะนำ:** Haiku 4.5 (งาน structured/routine เร็ว ประหยัด) — ดู `team/model_assignment.md`
+
 ## Trigger
 ตาราง, todo, นัด, สุขภาพ, นอน, ออกกำลัง, habit, เตือน, deadline, วางแผนสัปดาห์
 
