@@ -1,0 +1,18 @@
+[
+  {
+    "date": "วันศุกร์ที่ 5 มิถุนายน 2569",
+    "content": "วันนี้ทำงานหนักมาก — ปรับปรุง AI OS Dashboard ครบวงจร\n\n**งานหลัก:**\n- อัปเดต character files ทั้ง 9 คน เพิ่ม Gender (ครับ/ค่ะ) + คำอ่านภาษาไทย\n- Redesign Team grid เป็น portrait card ใหญ่ แบบ longtundiary.com\n- เพิ่มภาพ character ทุกคนใน Team grid + Pipeline flow\n- เปลี่ยน Logo มุมบนซ้ายเป็นรูป Jed เต็ม sidebar\n- สร้าง Vera (เวร่า) — QA & Skill Developer เข้าทีม\n- Share Notion databases 5 รายการ ✅\n- Connect GitHub → Vercel auto-deploy ✅\n\n**ทีม AI OS ตอนนี้มี 10 คน:** Laura · Muse · Atlas · Nova · Scout · Council · Forge · Mint · Sage · Vera"
+  },
+  {
+    "date": "วันเสาร์ที่ 6 มิถุนายน 2569",
+    "content": "วันแห่งการ upgrade ระบบครั้งใหญ่ — ทุกอย่างแข็งแกร่งขึ้น\n\n**งานหลัก:**\n- แก้ Vercel redirect loop + browser cache bug ✅\n- Token Audit CLAUDE.md: 49→23 บรรทัด ประหยัด 45% ✅\n- Skill Audit + upgrade team files ครบ 10 agent ✅\n- Setup Second Brain vault D:\\Second_Brain\\ + Obsidian (Dataview, Git, Templater) ✅\n- Research: AI Agent architecture + AI Optimization 5 methods ✅\n- Dashboard stability upgrade: knowledge.json persistent ✅\n\n**Insight วันนี้:** ระบบที่ดีต้องเสถียร — ข้อมูลใน JSON file ไม่หายแม้ browser รีเซต"
+  },
+  {
+    "date": "วันอาทิตย์ที่ 7 มิถุนายน 2569",
+    "content": "วันแห่งการสานต่อ Framework ครอบครัว + แก้บั๊ก dashboard\n\n**งานหลัก:**\n- สานต่อ Framework Level 2 (ครอบครัว) กับ Atlas — ตั้ง baseline คะแนน 3 มิติ + แผนกัน lifestyle inflation ✅\n- ค้นพบว่าคอขวดเวลาขยายได้จริงจาก 1.5 → 3-4 ชม./วัน — Atlas เสนอแบ่งสัดส่วนเวลาให้ครอบคลุมทั้งเงิน/ครอบครัว/สุขภาพ ✅\n- เปลี่ยน motto หน้า Home เป็น \"Even a guild master needs a party.\" ให้เข้ากับธีม isekai ของทีม ✅\n- ตรวจพบสาเหตุบั๊กภาพ Vera 2 ชั้น (ไฟล์ผิดคน + สัดส่วนภาพไม่ตรง 2:3) พร้อมเขียน prompt แก้ไขใหม่ให้ Jed ✅\n\n**Insight วันนี้:** เมื่อถูกถามตรงๆ เรื่องคอขวดเวลา Jed หาทางออกที่เป็นไปได้จริงออกมาทันที — เวลาที่ดูเหมือน \"ล็อกไว้\" จริงๆ ยืดหยุ่นได้มากกว่าที่คิด"
+  },
+  {
+    "date": "วันจันทร์ที่ 8 มิถุนายน 2569",
+    "content": "วันแห่งการปลดล็อกครอบครัว + เปิดโปรเจกต์เคลียร์สต๊อก\n\n**งานหลัก:**\n- Framework Level 2 (ครอบครัว) ปลดล็อกครบ — ภรรยาตกลงช่วยพาลูกเข้านอน + เสนอสลับกันเองวันที่ Jed ติดงาน ป.เอก ✅\n- Atlas ปรับแผนเวลาเป็น \"Minimum Viable Day\" (🟢/🟡/🔴 ตามพลังงาน) — Jed ตอบรับใช้ทันที ✅\n- บั๊กภาพ Vera ปิดสมบูรณ์ — ภาพใหม่ถูกต้องทั้งสัดส่วนและเนื้อหา ✅\n- เปิดโปรเจกต์ใหม่ \"Clear_stock_nursepant\" — Quick Win แรกของแผน 90 วัน: เคลียร์สต๊อก 66 ตัว ราคา 400 บาท (ทุนคืนหมดแล้ว) โพสต์ Facebook พร้อมแล้ว รอรูปภาพ ✅\n\n**Insight วันนี้:** การคุยตรงๆ กับภรรยาเรื่องเวลา ได้ผลตอบรับดีกว่าที่ Jed กังวลไว้มาก — ปม \"กลัวภรรยาไม่เข้าใจ\" อาจไม่ตรงกับความจริงเท่าที่คิด"
+  }
+]

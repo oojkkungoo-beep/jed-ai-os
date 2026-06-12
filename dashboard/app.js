@@ -32,6 +32,12 @@ const JED = {
   charFile:'../characters/jed.md'
 };
 
+// ── PEOPLE — Jed + ทีมทั้งหมด สำหรับ Diary แยกรายบุคคล ──
+const PEOPLE = [
+  { id:'jed', name:'Jed', thai:'เจด', img:'images/Jed.png', writable:true },
+  ...AGENTS.map(a => ({ id:a.id, name:a.name, thai:a.thai, img:a.img, writable:false })),
+];
+
 // ── ORG CHART ── (โครงสร้างองค์กรสไตล์ "หนึ่งสายงาน หนึ่งหน้าที่" แบบกลุ่มบริษัทใหญ่)
 // Jed = CEO → Laura = Chief of Staff (สำนักงาน CEO) → 6 สายงาน ไม่ทับซ้อนกัน
 const ORG_CHART = {
@@ -78,6 +84,10 @@ let todos     = [];
 let knowledge = [];
 let sessions  = [];
 let teamLogs  = [];
+let diaryByPerson = {}; // { personId: [{date, content}, ...] }
+let _diaryPerson  = 'jed';
+let _bookList     = []; // diary entries currently shown in the book modal (newest first)
+let _bookIdx      = 0;
 
 // ── NAVIGATE ──
 function navigate(page) {
@@ -640,30 +650,105 @@ function getFilteredKnowledge() {
 }
 
 // ═══════════════════════════════════════════════
-//  DIARY
+//  DIARY — แยกของแต่ละคน เลือกอ่าน + ดูย้อนหลังแบบเปิดหนังสือ
 // ═══════════════════════════════════════════════
+function renderDiaryPeople() {
+  const el = document.getElementById('diary-people');
+  if (!el) return;
+  el.innerHTML = PEOPLE.map(p => {
+    const count = (diaryByPerson[p.id] || []).length;
+    return `
+    <div class="diary-person ${p.id === _diaryPerson ? 'active' : ''}" onclick="selectDiaryPerson('${p.id}')">
+      <img src="${p.img}" alt="${p.name}" onerror="this.style.display='none'">
+      <div class="diary-person-name">${p.name}${p.thai ? `<span>${p.thai}</span>` : ''}</div>
+      <div class="diary-person-count">${count} บันทึก</div>
+    </div>`;
+  }).join('');
+}
+
+function selectDiaryPerson(id) {
+  _diaryPerson = id;
+  renderDiaryPeople();
+  renderDiary();
+}
+
 function renderDiary() {
+  renderDiaryPeople();
+
+  const person = PEOPLE.find(p => p.id === _diaryPerson) || PEOPLE[0];
+  const inputCard = document.getElementById('diary-input-card');
+  if (inputCard) inputCard.style.display = person.writable ? 'block' : 'none';
+
+  const titleEl = document.getElementById('diary-list-title');
+  if (titleEl) titleEl.textContent = `📖 Diary ของ ${person.name}${person.thai ? ' (' + person.thai + ')' : ''}`;
+
+  const list = diaryByPerson[_diaryPerson] || [];
   const el = document.getElementById('diary-list');
-  if (!diary.length) {
-    el.innerHTML = `<div class="empty"><div class="empty-icon">📖</div><p>ยังไม่มี diary<br>บันทึกสิ่งที่ทำวันนี้ได้เลย</p></div>`;
+  if (!list.length) {
+    el.innerHTML = `<div class="empty"><div class="empty-icon">📖</div><p>ยังไม่มี diary ของ ${person.name}${person.writable ? '<br>บันทึกสิ่งที่ทำวันนี้ได้เลย' : ''}</p></div>`;
     return;
   }
-  el.innerHTML = [...diary].reverse().map(d => `
-    <div class="diary-card">
+  el.innerHTML = [...list].reverse().map((d, i) => {
+    const realIdx = list.length - 1 - i;
+    return `
+    <div class="diary-card" onclick="openDiaryBook('${_diaryPerson}', ${realIdx})" style="cursor:pointer">
       <div class="diary-date">${d.date}</div>
-      <div class="diary-content">${d.content}</div>
-    </div>`).join('');
+      <div class="diary-content">${d.content.length > 200 ? d.content.slice(0, 200) + '…' : d.content}</div>
+    </div>`;
+  }).join('');
 }
 
 function writeDiary() {
   const content = document.getElementById('diary-input').value.trim();
   if (!content) return;
   const today = new Date().toLocaleDateString('th-TH', { year:'numeric', month:'long', day:'numeric', weekday:'long' });
-  diary.push({ date: today, content });
-  localStorage.setItem('jed_diary', JSON.stringify(diary));
+  if (!diaryByPerson['jed']) diaryByPerson['jed'] = [];
+  diaryByPerson['jed'].push({ date: today, content });
+  localStorage.setItem('jed_diary_jed', JSON.stringify(diaryByPerson['jed']));
   document.getElementById('diary-input').value = '';
   renderDiary();
-  logActivity('Sage', 'บันทึก diary ประจำวัน');
+  logActivity('Jed', 'บันทึก diary ประจำวัน');
+}
+
+// ── BOOK MODAL — เปิดไดอารี่เป็นหน้าหนังสือ ฝั่งซ้ายรูป ฝั่งขวารายละเอียด ──
+function openDiaryBook(personId, idx) {
+  const person = PEOPLE.find(p => p.id === personId);
+  const list = diaryByPerson[personId] || [];
+  if (!person || !list.length) return;
+
+  // เก็บลิสต์แบบใหม่ไปเก่า (เหมือนที่แสดงในหน้า diary) เพื่อใช้เลื่อนหน้า
+  _bookList = [...list].reverse();
+  _bookIdx  = _bookList.findIndex((_, i) => (list.length - 1 - i) === idx);
+  if (_bookIdx < 0) _bookIdx = 0;
+
+  renderDiaryBook(person);
+  document.getElementById('book-overlay').classList.add('open');
+  document.getElementById('book-modal').classList.add('open');
+}
+
+function renderDiaryBook(person) {
+  const entry = _bookList[_bookIdx];
+  document.getElementById('book-portrait').src = person.img;
+  document.getElementById('book-portrait').alt = person.name;
+  document.getElementById('book-person-name').innerHTML = `${person.name}${person.thai ? ` <span>${person.thai}</span>` : ''}`;
+  document.getElementById('book-date').textContent = entry.date;
+  document.getElementById('book-content').textContent = entry.content;
+  document.getElementById('book-counter').textContent = `${_bookIdx + 1} / ${_bookList.length}`;
+  document.getElementById('book-prev').disabled = _bookIdx <= 0;
+  document.getElementById('book-next').disabled = _bookIdx >= _bookList.length - 1;
+}
+
+function bookNav(dir) {
+  const person = PEOPLE.find(p => p.id === _diaryPerson);
+  const newIdx = _bookIdx + dir;
+  if (newIdx < 0 || newIdx >= _bookList.length) return;
+  _bookIdx = newIdx;
+  renderDiaryBook(person);
+}
+
+function closeDiaryBook() {
+  document.getElementById('book-overlay').classList.remove('open');
+  document.getElementById('book-modal').classList.remove('open');
 }
 
 // ═══════════════════════════════════════════════
@@ -1169,12 +1254,34 @@ function toggleLog(id) {
 async function loadFromFiles() {
   // Files written by agents — always authoritative
   const fileSources = [
-    { url: `${BASE}/output/diary.json`,        set: v => { diary = v; }      },
     { url: `${BASE}/output/projects.json`,     set: v => { projects = v; }   },
     { url: `${BASE}/output/activity.json`,     set: v => { activity = v; }   },
     { url: `${BASE}/output/session_log.json`,  set: v => { sessions = v; }   },
     { url: `${BASE}/output/knowledge.json`,    set: v => { knowledge = v; }  },
   ];
+
+  // Diary — แยกไฟล์ต่อคน (Jed + ทีม) จาก output/diary_people/<id>.json
+  await Promise.all(PEOPLE.map(async (p) => {
+    let entries = [];
+    try {
+      const res = await fetch(`${BASE}/output/diary_people/${p.id}.json`, { cache: 'no-cache' });
+      if (res.ok) {
+        const data = await res.json();
+        if (Array.isArray(data)) entries = data;
+      }
+    } catch (_) {}
+    if (p.writable) {
+      // Jed เขียน diary ของตัวเองได้ — merge กับที่บันทึกไว้ใน localStorage
+      try {
+        const local = JSON.parse(localStorage.getItem(`jed_diary_${p.id}`) || '[]');
+        local.forEach(item => {
+          if (!entries.find(e => e.date === item.date && e.content === item.content)) entries.push(item);
+        });
+      } catch (_) {}
+    }
+    diaryByPerson[p.id] = entries;
+  }));
+  diary = diaryByPerson['sage'] || []; // ใช้สำหรับ widget Diary ล่าสุดที่หน้า Home/Briefing (diary ทีมของ Sage)
 
   // Team logs (no-cache because agents update often)
   try {

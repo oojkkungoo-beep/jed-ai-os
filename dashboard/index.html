@@ -11,7 +11,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Jed AI OS">
   <link rel="apple-touch-icon" href="images/Jed.png">
-  <link rel="stylesheet" href="style.css?v=20260607g">
+  <link rel="stylesheet" href="style.css?v=20260612a">
 </head>
 <body>
 
@@ -298,14 +298,18 @@
   <!-- ══ DIARY ══ -->
   <div class="page" id="page-diary">
     <div class="page-top">
-      <div><div class="page-title">📖 Diary</div><div class="page-sub">บันทึกประจำวัน</div></div>
+      <div><div class="page-title">📖 Diary</div><div class="page-sub">บันทึกประจำวัน — เลือกคนที่จะอ่าน แล้วกดบันทึกเพื่อเปิดเป็นหน้าหนังสือ</div></div>
     </div>
     <div class="page-body" style="padding-top:0">
-      <div class="diary-input-card">
-        <div class="diary-input-label">เขียน diary วันนี้</div>
+      <div class="diary-people" id="diary-people"></div>
+
+      <div class="diary-input-card" id="diary-input-card" style="display:none">
+        <div class="diary-input-label">เขียน diary วันนี้ (Jed)</div>
         <textarea class="diary-ta" id="diary-input" placeholder="วันนี้ทำอะไรไปบ้าง..."></textarea>
         <div style="margin-top:10px"><button class="btn btn-green btn-sm" onclick="writeDiary()">บันทึก</button></div>
       </div>
+
+      <div class="diary-list-title" id="diary-list-title"></div>
       <div class="diary-entries" id="diary-list"></div>
     </div>
   </div>
@@ -405,7 +409,26 @@
   </div>
 </div>
 
-<script src="app.js?v=20260607h"></script>
+<!-- ── DIARY BOOK MODAL ── -->
+<div class="book-overlay" id="book-overlay" onclick="if(event.target===this)closeDiaryBook()"></div>
+<div class="book-modal" id="book-modal">
+  <span class="book-close" onclick="closeDiaryBook()">✕</span>
+  <div class="book-page book-page-left">
+    <img id="book-portrait" src="" alt="">
+    <div class="book-person-name" id="book-person-name"></div>
+  </div>
+  <div class="book-page book-page-right">
+    <div class="book-date" id="book-date"></div>
+    <div class="book-content" id="book-content"></div>
+    <div class="book-nav">
+      <button class="k-nav-btn" id="book-prev" onclick="bookNav(-1)">‹ ใหม่กว่า</button>
+      <span class="k-detail-counter" id="book-counter"></span>
+      <button class="k-nav-btn" id="book-next" onclick="bookNav(1)">เก่ากว่า ›</button>
+    </div>
+  </div>
+</div>
+
+<script src="app.js?v=20260612a"></script>
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
