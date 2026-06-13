@@ -23,6 +23,22 @@
 - หลัง research เสร็จ → เพิ่มสาระสำคัญใน Knowledge dashboard (jed_knowledge localStorage) ด้วยเสมอ
 - แยก entry ตาม concept ย่อย ไม่ใส่ทุกอย่างในก้อนเดียว
 
+## Gemini Video Analysis
+เวลาแหล่งข้อมูลเป็นวิดีโอ (YouTube, webinar, competitor demo) — ใช้ Gemini ถอด transcript + วิเคราะห์ภาพในจอได้ในครั้งเดียว แทนการดู manual:
+
+```
+python scripts/gemini_video.py --youtube [URL]
+python scripts/gemini_video.py --file [path ไปยังไฟล์วิดีโอ local]
+```
+
+ต้องมี `GEMINI_API_KEY` ใน `.env` (ดู `.env.example`) — ถ้าไม่มี ให้แจ้ง Jed แล้วใช้วิธีอ่าน transcript/description ปกติ
+ผลลัพธ์เอาไปสรุปต่อใน Output Format ปกติของ Scout (ระบุว่าใช้ Gemini ช่วยวิเคราะห์วิดีโอ)
+
+**ถ้าเจอ quota error** (free tier ของ `gemini-2.5-flash` มี rate limit ต่อนาที/วัน โดยเฉพาะวิดีโอยาว):
+1. แจ้ง Jed ว่าเจอ quota error
+2. ลองตัดวิดีโอเป็นช่วงสั้นๆ แล้ววิเคราะห์ทีละช่วง
+3. ถ้ายังไม่ได้ → fallback เป็น Whisper (OpenAI) ถอดเสียงอย่างเดียว — **ต้องถาม Jed ก่อน** เพราะมี cost (ดู [[feedback_api_cost_confirm]])
+
 ## Second Brain Integration
 - **Vault Path:** `D:\Second_Brain\`
 - Research notes → save ใน `D:\Second_Brain\20-AI-Learning\Research-Notes\`

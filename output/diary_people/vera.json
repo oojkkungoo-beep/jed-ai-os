@@ -14,5 +14,9 @@
   {
     "date": "วันศุกร์ที่ 12 มิถุนายน 2569",
     "content": "📋 Daily Briefing — Review การอัปเดต Model Assignment\n\n## Vera — Review Model Assignment\n**วันที่:** 12 มิถุนายน 2569\n\nตรวจ output การอัปเดต model assignment ของ Laura ได้คะแนน A- พบ 3 จุดเล็กที่ควรปรับปรุง ส่งต่อ Council วิเคราะห์ว่าควรแก้ตอนนี้หรือรอ"
+  },
+  {
+    "date": "วันอาทิตย์ที่ 14 มิถุนายน 2569",
+    "content": "🔎 Vera — Audit ทีมเลขา เทียบ longtundiary.com\n**วันที่:** 14 มิถุนายน 2569\n\nJed ให้ดูทีมเลขาตัวอย่างจาก longtundiary.com (Reese-Research, Chris-Quality Gate, Vera-Fact-Gate, Devil-Adversarial ฯลฯ) แล้วถามว่าทีมเราควรปรับไหม\n\nทำ audit เทียบ role ต่อ role: Reese ≈ Scout, Chris/Vera-Fact-Gate ≈ Vera อยู่แล้ว (เลยขยาย scope ตัวเองเพิ่ม fact-check criterion ใน team/qa.md แทนสร้าง agent ใหม่) ช่องว่างเดียวที่ไม่มีใครทำคือ adversarial/bear-case review — เสนอเพิ่ม Devil เป็น opt-in agent ตัวเดียว เพื่อไม่เพิ่ม routing complexity เกินจำเป็น\n\nบทเรียน: เวลามี idea ใหม่จากข้างนอก ให้ audit ว่า 'ใครในทีมทำอยู่แล้วบ้าง' ก่อนเสนอสร้าง agent ใหม่ทุกครั้ง"
   }
 ]

@@ -490,5 +490,57 @@
         "full": "## Sage — Memory Note\n**วันที่:** 12 มิถุนายน 2569\n\nบันทึกไดอารี่วันนี้ครอบคลุมงานหลัก: อัปเดต team/model_assignment.md จับคู่ Claude model+tool ให้แต่ละ agent, Vera review (A-), Council วิเคราะห์ข้อเสนอแก้ไข, และ Jed สั่งแก้ครบทั้ง 3 จุด\n\nInsight ที่เก็บไว้: เมื่อ Vera/Council เสนอ list ของจุดที่ควรปรับ Jed มักเลือก 'แก้ให้ครบทุกจุดทันที' แม้บางจุดจะถูกประเมินว่า 'รอได้' — สะท้อนว่า Jed ให้ความสำคัญกับ closure/ความครบถ้วนมากกว่าการปล่อยงานค้างไว้ทีละน้อย ครั้งหน้าเตรียม draft การแก้ทุกจุดไว้ล่วงหน้าได้เลย"
       }
     ]
+  },
+  {
+    "date": "2026-06-14",
+    "dateDisplay": "14 มิถุนายน 2569",
+    "agents": [
+      {
+        "id": "vera",
+        "name": "Vera",
+        "emoji": "🔎",
+        "title": "Audit ทีมเลขา + เสนอเพิ่ม Devil agent",
+        "summary": "เทียบทีมปัจจุบันกับทีมเลขาตัวอย่างจาก longtundiary.com สรุปว่า role ส่วนใหญ่มี Scout/Vera คลุมแล้ว ช่องว่างเดียวคือ adversarial/bear-case review",
+        "highlights": [
+          "Reese-Research ≈ Scout, Vera-Fact-Gate/Chris ≈ Vera (ขยาย scope แทนสร้างใหม่)",
+          "ช่องที่ขาดจริง: Devil-Adversarial — ไม่มีใครทำ bear case / blind spot check ก่อน ship งานสำคัญ",
+          "เสนอเพิ่ม Devil เป็น opt-in agent ตัวเดียว ไม่เพิ่มทั้งทีมเพื่อคุม routing complexity"
+        ]
+      },
+      {
+        "id": "laura",
+        "name": "Laura",
+        "emoji": "🎭",
+        "title": "สร้าง Devil agent + ปรับ routing/dashboard",
+        "summary": "สร้าง team/devil.md, characters/devil.md, อัปเดต CLAUDE.md routing, model_assignment.md, qa.md (ขยาย Vera), และเพิ่ม Devil เข้า dashboard ครบ (AGENTS, org chart, รูป)",
+        "highlights": [
+          "Devil: เดวิล (ชาย/ครับ) — Mirror Demon, 3 modes (Bear Case / Polarity Audit / Evidence Match), opt-in",
+          "Vera เพิ่ม fact-check criterion + ส่งต่อ Devil เมื่อเจอความเสี่ยง",
+          "commit 6a47db9 และ 072196a"
+        ]
+      },
+      {
+        "id": "devil",
+        "name": "Devil",
+        "emoji": "😈",
+        "title": "วันแรกในทีม — เริ่มตั้งค่า Gemini bridge",
+        "summary": "agent ใหม่เข้าทีมวันนี้ — เริ่มมี external model (Gemini) สำหรับ Mode A/B/C ตามหลักการ 'คนละสมองจริง'",
+        "highlights": [
+          "scripts/gemini_review.py พร้อมใช้ — ทดสอบ Mode A กับ gemini-2.5-flash สำเร็จ",
+          "ยังไม่มี trigger อัตโนมัติ — รอ Jed เรียกใช้ หรือ Council/Atlas escalate"
+        ]
+      },
+      {
+        "id": "scout",
+        "name": "Scout",
+        "emoji": "🔍",
+        "title": "เพิ่มความสามารถวิเคราะห์วิดีโอด้วย Gemini",
+        "summary": "ต่อ scripts/gemini_video.py เข้า research workflow — รับ YouTube URL หรือไฟล์วิดีโอ local ถอด transcript + วิเคราะห์ภาพในจอ",
+        "highlights": [
+          "ทดสอบกับวิดีโอ YouTube จริง — ถอด transcript + สรุปประเด็น + ระบุช่วงเวลาภาพสำคัญได้",
+          "ถ้าเจอ quota error: แจ้ง Jed → ลองตัดวิดีโอเป็นช่วงสั้น → fallback Whisper (ต้องถามก่อน)"
+        ]
+      }
+    ]
   }
 ]

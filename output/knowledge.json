@@ -295,5 +295,23 @@
     "content": "Dashboard ของ Jed (jed-ai-os) เคยเปิด public ผ่าน GitHub Pages มาตลอด — repo public + Pages เปิด = ใครมี link เข้าดู todo, diary, แผนธุรกิจ ฯลฯ ได้หมดโดยไม่ต้อง login. แก้โดย: 1) ติดตั้ง Tailscale (private VPN ฟรี) เชื่อม notebook-iPad ผ่าน private network, 2) แก้ serve.ps1 ให้ serve จาก project root (ไม่ใช่แค่ dashboard/) เพื่อให้ /output/*.json โหลดได้ผ่าน Tailscale, 3) เปิด firewall port 3334 เฉพาะจาก Tailscale CIDR (100.64.0.0/10), 4) ปิด GitHub Pages ทิ้ง (gh api -X DELETE repos/.../pages). บทเรียน: ระบบที่มีข้อมูล sensitive ต้องเช็ค 'ใครเข้าถึงได้บ้าง' ตั้งแต่แรก ไม่ใช่รอให้ sensitive แล้วค่อยแก้",
     "url": "",
     "date": "2026-06-14"
+  },
+  {
+    "id": 1717604000010,
+    "title": "Devil Agent — Adversarial Reviewer ใหม่ในทีม",
+    "topic": "AI Workflow",
+    "source": "Session กับ Laura",
+    "content": "เพิ่ม agent ใหม่ 'Devil' (เดวิล, ครับ) เป็น adversarial reviewer แบบ opt-in — มี 3 modes: A) Bear Case (ท้าทาย draft จาก Muse/Scout), B) Polarity Audit (เช็ค kill-condition จาก Council/Atlas), C) Evidence Match (เทียบ claim ที่จะ publish กับข้อมูล). หลักการ 'คนละสมองจริง' — ใช้ model/provider ที่ต่างจาก agent ต้นทาง ไม่ใช่แค่ Claude คนละรุ่น. ขยาย Vera (QA) เพิ่ม fact-check criterion และส่งต่อ Devil เมื่อเจอจุดเสี่ยงเชิงลึก. เพิ่ม Devil เข้า dashboard (AGENTS list + org chart + character card).",
+    "url": "",
+    "date": "2026-06-14"
+  },
+  {
+    "id": 1717604000011,
+    "title": "Gemini API vs Gemini Subscription รายปี — คนละระบบ คนละบิล",
+    "topic": "AI Optimization",
+    "source": "Session กับ Laura (ทดสอบจริง)",
+    "content": "Google AI Pro/Ultra subscription รายปี (gemini.google.com, NotebookLM) เป็นคนละระบบกับ Gemini Developer API (aistudio.google.com) — สมัครรายปีไม่ได้แปลว่า API ใช้ฟรีไม่จำกัด. ทดสอบจริง: gemini-2.5-pro ติด quota=0 บน free tier (ต้องเปิด billing ผูกบัตรกับ Google Cloud project), แต่ gemini-2.5-flash มี free tier ใช้งานได้จริงทั้ง text และ video analysis (ทดสอบกับ YouTube URL สำเร็จ — ถอด transcript + วิเคราะห์ภาพในจอได้). สร้าง wrapper scripts ไว้ที่ scripts/gemini_review.py (Devil ใช้ adversarial review) และ scripts/gemini_video.py (Scout ใช้วิเคราะห์วิดีโอ) default model = gemini-2.5-flash. กฎ: ใช้ flash ได้เลยไม่ต้องถาม, ถ้าจะใช้ pro (ต้อง billing) ต้องถาม Jed ก่อนเหมือน OpenAI.",
+    "url": "",
+    "date": "2026-06-14"
   }
 ]

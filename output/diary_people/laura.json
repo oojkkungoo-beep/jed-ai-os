@@ -18,5 +18,9 @@
   {
     "date": "วันศุกร์ที่ 12 มิถุนายน 2569",
     "content": "📋 Daily Briefing — อัปเดต Model Assignment ทั้งทีม\n\n## Laura — อัปเดต Model Assignment ทั้งทีม\n**วันที่:** 12 มิถุนายน 2569\n\nสร้าง team/model_assignment.md เป็น reference กลางจับคู่ agent กับ Claude model ที่เหมาะสม พร้อมเครื่องมือเสริมใหม่ (Canva/Claude Design, pptx, xlsx, nimble-web-expert) ปักหมุดสั้นๆ ในไฟล์ team แต่ละคน และเพิ่มลิงก์จาก CLAUDE.md"
+  },
+  {
+    "date": "วันอาทิตย์ที่ 14 มิถุนายน 2569",
+    "content": "📋 Daily Briefing — เพิ่ม Devil เข้าทีม + ต่อ Gemini API\n\n## Laura — สร้าง Devil agent และต่อ Gemini API\n**วันที่:** 14 มิถุนายน 2569\n\nJed ส่งตัวอย่างทีมเลขาจาก longtundiary.com มาให้ดู — ให้ Vera audit เทียบกับทีมปัจจุบันก่อน พบว่าช่องว่างจริงมีแค่ adversarial/bear-case review จึงสร้าง agent ใหม่ตัวที่ 13 ชื่อ **Devil (เดวิล, ครับ)** — Mirror Demon, opt-in, 3 modes (Bear Case / Polarity Audit / Evidence Match) พร้อมอัปเดต routing, model_assignment, qa.md, dashboard ครบ\n\nต่อมา Jed ถามเรื่องต่อ agent กับ Gemini/OpenAI เพื่อให้ Devil เป็น 'คนละสมองจริง' — ตั้งค่า Gemini API (.env, gitignore, google-genai SDK) เขียน scripts/gemini_review.py และ gemini_video.py ทดสอบกับ API key จริงของ Jed สำเร็จด้วย gemini-2.5-flash (free tier) ทั้ง text review และ video analysis ส่วน gemini-2.5-pro ติด quota ต้องเปิด billing — บันทึกกฎไว้ในความจำว่าต้องถาม Jed ก่อนถ้าจะใช้ pro"
   }
 ]

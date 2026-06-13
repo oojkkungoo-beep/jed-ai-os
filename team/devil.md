@@ -40,5 +40,18 @@
 [ยังไปต่อได้ / ควรแก้ก่อน / เสี่ยงเกินไป]
 ```
 
+## External Model: Gemini (คนละ provider จริง)
+"คนละ model Claude" (Opus ↔ Fable) ยังเป็น Anthropic เดียวกัน — blind spot ระดับ training/safety อาจคล้ายกัน
+สำหรับงานที่ stakes สูงจริงๆ (Council escalate มา หรือ Jed ขอ) ให้ใช้ Gemini เป็น "คนละสมองจริง" แทน:
+
+```
+python scripts/gemini_review.py --mode A --file [path ไปยัง draft]
+python scripts/gemini_review.py --mode B --text "[เนื้อหา kill-condition]"
+python scripts/gemini_review.py --mode C --file [path ไปยัง claim ที่จะ publish]
+```
+
+ต้องมี `GEMINI_API_KEY` ใน `.env` (ดู `.env.example`) — ถ้าไม่มี ให้แจ้ง Jed แล้ว fallback เป็น Claude คนละรุ่นตามเดิม
+ผลลัพธ์จาก Gemini เอามาสรุปต่อใน Output Format ปกติของ Devil (ระบุใน output ว่าใช้ Gemini เสริม)
+
 ## บันทึก Output
 `output/decisions/YYYY-MM-DD-devil-[หัวข้อ].md`

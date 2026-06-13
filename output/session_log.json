@@ -360,37 +360,37 @@
       "🔍 Research",
       "📝 Memory & Diary"
     ],
-    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (36%) — รอ Sage สรุปท้ายวัน",
+    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (41%) — รอ Sage สรุปท้ายวัน",
     "categories": [
       {
         "name": "🔧 Dev & Tech",
-        "count": 128,
-        "pct": 36
+        "count": 236,
+        "pct": 41
       },
       {
         "name": "🌿 Life & Health",
-        "count": 73,
-        "pct": 21
+        "count": 80,
+        "pct": 14
       },
       {
         "name": "🔍 Research",
-        "count": 35,
+        "count": 59,
         "pct": 10
       },
       {
         "name": "📝 Memory & Diary",
-        "count": 35,
-        "pct": 10
+        "count": 52,
+        "pct": 9
       },
       {
         "name": "💡 Creative & Content",
-        "count": 34,
-        "pct": 10
+        "count": 49,
+        "pct": 9
       },
       {
-        "name": "⚖️ Decision",
-        "count": 19,
-        "pct": 5
+        "name": "🤖 System & Setup",
+        "count": 46,
+        "pct": 8
       }
     ],
     "tasks": [
@@ -432,6 +432,40 @@
       "แก้บั๊กรอบ 2: Service Worker cache เก่าทำให้ browser ไม่โหลด app.js ใหม่ — เปลี่ยน sw.js เป็น network-first สำหรับ html/css/js และ bump CACHE เป็น v4"
     ],
     "details": "วันนี้อัปเกรดหน้า Todo ของ dashboard แบบเต็มรูปแบบ: เพิ่มระบบ Eisenhower Matrix แบ่งงานเป็น 4 กลุ่ม (ทำทันที/วางแผน/มอบหมาย/ตัดทิ้ง) เลือกได้ตอนเพิ่มงานและ filter ดูทีหลังได้ พร้อมหน้าแก้ไขรายละเอียดงานแบบกดเข้าไปดู/แก้ได้เลย แล้วเติมงานค้างทั้งหมดของ Jed ลงไป 10 รายการครอบคลุมทุกโปรเจกต์ที่กำลังทำอยู่ (วารสารสุขภาพไทย, NursePant, Risk_OR_BAH, OHC App, dashboard เอง)\n\nหลังจากนั้น Jed เจอบั๊ก: ติ๊กงานว่าทำเสร็จแล้ว+save แต่ refresh หน้าใหม่กลับไม่ติ๊ก — เจอ 2 ชั้น ชั้นแรกคือ logic merge ข้อมูลใน app.js ที่ให้ไฟล์ todos.json (done:false เสมอ) ชนะค่าที่แก้ใน localStorage เสมอ แก้ให้ local edit ชนะแทน ชั้นสองคือ Service Worker cache เวอร์ชันเก่าของ app.js ค้างอยู่ใน browser ทำให้โหลดโค้ดใหม่ไม่ได้ ต้องปรับ sw.js ให้ใช้ network-first กับไฟล์ html/css/js แล้ว bump cache version เป็น v4 ถึงจะใช้ได้จริง\n\n⚠️ หมายเหตุสำคัญ: ระหว่าง session นี้มีการ commit+push ขึ้น GitHub ไปแล้ว 4 ครั้ง (e1f79fc, 2daa441, 99716b4 และอีก 1 commit) ก่อนที่จะพบกฎใหม่ในความจำว่า GitHub Pages ปิดไปแล้วและ Jed ขอให้ push เฉพาะเมื่อสั่งเท่านั้น — งานที่เหลือ (อัปเดต session log, activity, projects notes ของรอบนี้) จะ**ไม่ push** ตามกฎใหม่ รอ Jed สั่งถ้าต้องการ sync ขึ้น GitHub",
+    "relatedProjects": [
+      "Jed AI OS Dashboard"
+    ],
+    "auto": false
+  },
+  {
+    "id": 12,
+    "date": "14 มิถุนายน 2569",
+    "topCategory": "👥 Team Setup",
+    "tags": [
+      "👥 Team Setup",
+      "🔧 Dev & Tech",
+      "🧠 Knowledge"
+    ],
+    "summary": "เพิ่ม Devil agent (adversarial reviewer) เข้าทีม + ต่อ Gemini API ให้ Devil และ Scout ใช้วิเคราะห์งาน/วิดีโอ",
+    "categories": [
+      {
+        "name": "👥 Team Setup",
+        "count": 1,
+        "pct": 100
+      }
+    ],
+    "tasks": [
+      "วิเคราะห์ทีมเลขาจาก longtundiary.com เทียบกับทีมปัจจุบัน — สรุปว่า Reese/Chris/Vera-Fact-Gate ส่วนใหญ่มี Scout/Vera คลุมอยู่แล้ว ช่องที่ขาดคือ adversarial review",
+      "สร้าง team/devil.md + characters/devil.md — Devil (เดวิล, ครับ) 3 modes: Bear Case / Polarity Audit / Evidence Match, opt-in",
+      "ขยาย team/qa.md — Vera เพิ่ม fact-check criterion + section ตรวจความเสี่ยงส่งต่อ Devil",
+      "อัปเดต model_assignment.md + CLAUDE.md routing ให้ครอบคลุม Devil",
+      "เพิ่ม Devil ใน dashboard (AGENTS list, org chart, agent card + รูปที่ Jed ใส่ให้)",
+      "ตั้งค่า Gemini API: สร้าง .env/.gitignore, ติดตั้ง google-genai, เขียน scripts/gemini_review.py (Devil) และ scripts/gemini_video.py (Scout)",
+      "ทดสอบจริงกับ API key ของ Jed — พบว่า gemini-2.5-pro ติด quota=0 (ต้องเปิด billing), เปลี่ยน default เป็น gemini-2.5-flash ซึ่งใช้ free tier ได้จริงทั้ง text review และ video analysis (ทดสอบกับ YouTube URL สำเร็จ)",
+      "อัปเดต research.md ให้ Scout รู้วิธี fallback ถ้าเจอ quota error (ตัดวิดีโอเป็นช่วง / Whisper ต้องถามก่อน)",
+      "บันทึก feedback memory: แยก Gemini subscription รายปี vs Gemini API billing ชัดเจน"
+    ],
+    "details": "Jed เห็นทีมเลขาตัวอย่างจาก longtundiary.com (Chris-Quality Gate, Vera-Fact-Gate, Devil-Adversarial ฯลฯ) แล้วถามว่าทีมเราควรปรับไหม — Vera ทำ audit เทียบแล้วพบว่า role ส่วนใหญ่มี Scout/Vera คลุมอยู่แล้ว มีแค่ 'adversarial review / bear case' ที่ไม่มีใครทำ จึงตั้ง Devil เป็น agent ใหม่ opt-in (ไม่ trigger ทุกงาน) พร้อม 3 modes และหลักการ 'ใช้ model ต่างจาก agent ต้นทาง'\n\nต่อมาคุยเรื่องต่อ agent กับ Gemini/OpenAI — สรุปว่า Claude Code agent ต่อ external API ได้ผ่าน Bash script เท่านั้น (ไม่ใช่ native subagent) Gemini เหมาะกว่า OpenAI เพราะรับวิดีโอตรงได้และ Jed มี subscription รายปีอยู่แล้ว (แต่พบว่าเป็นคนละระบบกับ API). สร้าง wrapper scripts ให้ Devil และ Scout แล้วทดสอบกับ API key จริงของ Jed — เจอ gemini-2.5-pro ติด quota เพราะยังไม่เปิด billing, แก้เป็น gemini-2.5-flash ซึ่งทำงานได้ฟรีจริง ทดสอบ Mode A ของ Devil และ video analysis ของ Scout (วิดีโอ YouTube ทดสอบ) ผ่านทั้งคู่\n\nบันทึกกฎสำคัญไว้ในความจำ: ก่อนใช้ gemini-2.5-pro หรือ OpenAI (ต้อง billing/pay-per-use) ต้องถาม Jed ก่อนเสมอ ส่วน gemini-2.5-flash (free tier) เรียกได้เลย",
     "relatedProjects": [
       "Jed AI OS Dashboard"
     ],

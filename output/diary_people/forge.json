@@ -6,5 +6,9 @@
   {
     "date": "วันจันทร์ที่ 8 มิถุนายน 2569",
     "content": "📋 Daily Briefing — Dev Report\n\n## Forge — Dev Report\n**วันที่:** 8 มิถุนายน 2569\n\n### งานที่ทำเมื่อวาน/เช้านี้\n- แก้ motto หน้า Home: \"Jed doesn't work alone.\" -> \"Even a guild master needs a party.\" — commit + push ขึ้น GitHub แล้ว\n- ตรวจพบสาเหตุบั๊กภาพ Vera 2 ชั้น: (1) ไฟล์เดิมเป็นภาพของ Laura ที่เซฟผิดตอน commit ก่อนหน้า (2) ไฟล์ใหม่ที่ Jed อัปโหลด มีสัดส่วน 2.108 ขณะที่การ์ดทุกคนใช้ 2:3 (ratio 1.5)\n\n### รอดำเนินการต่อ\nเตรียม prompt ที่ระบุ aspect ratio 2:3 (1024x1536px) ให้ Jed ใช้สร้างภาพใหม่ — พร้อม add + commit + push ให้ทันทีที่ได้ไฟล์ที่ถูกต้อง"
+  },
+  {
+    "date": "วันอาทิตย์ที่ 14 มิถุนายน 2569",
+    "content": "🛠️ Forge — สร้าง Gemini API bridge scripts\n**วันที่:** 14 มิถุนายน 2569\n\nเขียน Python wrapper สำหรับเชื่อม Claude Code agent เข้ากับ Gemini Developer API:\n- scripts/gemini_review.py (Devil ใช้ adversarial review 3 modes)\n- scripts/gemini_video.py (Scout ใช้วิเคราะห์วิดีโอ YouTube/local)\n- .env + .gitignore สำหรับเก็บ GEMINI_API_KEY อย่างปลอดภัย\n\nดีบักเจอ gemini-2.5-pro ติด quota=0 บน free tier ต้อง billing — เปลี่ยน default model ทั้งสอง script เป็น gemini-2.5-flash ซึ่งทดสอบแล้วใช้งานได้จริงทั้ง text และ video"
   }
 ]

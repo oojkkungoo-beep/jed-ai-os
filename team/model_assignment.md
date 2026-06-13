@@ -35,6 +35,12 @@
 ### 🌐 nimble:nimble-web-expert
 - **Scout**: ใช้แทน/เสริม nimble:search เวลาต้อง scrape ข้อมูลเฉพาะ (ราคา, listing, ข้อมูลเชิงลึกจากหน้าเว็บ) ไม่ใช่แค่ค้นทั่วไป
 
+### ✨ Gemini API (`scripts/gemini_*.py`) — ต้องตั้ง `GEMINI_API_KEY` ใน `.env` ก่อนใช้ (ดู `.env.example`)
+- **Devil**: `scripts/gemini_review.py` — adversarial review (Mode A/B/C) จาก provider อื่นจริงๆ (ไม่ใช่แค่ Claude คนละรุ่น) ดู `team/devil.md`
+- **Scout**: `scripts/gemini_video.py` — ถอด transcript + วิเคราะห์วิดีโอ (YouTube/local file) ดู `team/research.md`
+- **Model**: default = `gemini-2.5-flash` (มี free tier ใช้งานได้จริง) — **ห้ามใช้ `gemini-2.5-pro`** ติด quota=0 บน free tier (ต้องเปิด billing แยก)
+- **Cost**: Gemini subscription รายปีของ Jed (gemini.google.com) **เป็นคนละระบบกับ Gemini API** — API ใช้ free tier ของ `gemini-2.5-flash` ได้โดยไม่ต้องผูกบัตร เรียกได้โดยไม่ต้องถามทุกครั้ง แต่ถ้าจะใช้ `gemini-2.5-pro` ต้องเปิด billing ก่อน → ต้องถาม Jed (เหมือน OpenAI ดู [[feedback_api_cost_confirm]])
+
 ## วิธีระบุ model ให้ subagent (อนาคต)
 ถ้า Jed ต้องการให้ Laura สั่ง subagent แบบระบุ model จริง — ใช้ Agent tool พร้อม `model:` ตามตารางด้านบน เมื่อ Forge/Mint/Atlas ทำงานผ่าน Agent tool
 
