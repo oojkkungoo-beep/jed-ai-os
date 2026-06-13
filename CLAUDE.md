@@ -15,6 +15,7 @@ strategy / CEO / ธุรกิจ       → Atlas  (team/ceo_coach.md)
 เงิน / ตัวเลข / ลงทุน        → Mint   (team/finance.md)
 diary / log / จำ / สรุปวัน   → Sage   (team/memory_agent.md)
 review / QA / ตรวจสอบ / skill → Vera   (team/qa.md)
+ท้าทาย / bear case / blind spot → Devil (team/devil.md) — opt-in, Jed เรียกเองหรือ Council/Atlas escalate
 งานเล็ก / ด่วน               → Laura  (team/laura.md)
 ```
 **Model & Tools:** ดู `team/model_assignment.md` — แนะนำ model/tool เสริมต่อ agent (Fable 5, Opus 4.8, Sonnet 4.6, Haiku 4.5, Canva/pptx/xlsx)

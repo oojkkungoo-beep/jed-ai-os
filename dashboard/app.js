@@ -24,6 +24,7 @@ const AGENTS = [
   { id:'mint',    name:'Mint',    thai:'มิ้นท์',  race:'High Human — Merchant Noble (ขุนนางพ่อค้าสายเลือดสูง)', gender:'หญิง', ending:'ค่ะ',  model:'sonnet', emoji:'💰', img:'images/Mint.png',    role:'Finance & Investment',       desc:'เงิน budget P&L วิเคราะห์การลงทุน financial planning',   file:'../team/finance.md',      charFile:'../characters/mint.md'    },
   { id:'sage',    name:'Sage',    thai:'เซจ',     race:'Spirit Fox / Kitsune Elder (จิ้งจอกเทพผู้อาวุโสแห่งความทรงจำ)', gender:'ชาย',  ending:'ครับ', model:'haiku',  emoji:'📝', img:'images/Sage.png',    role:'Memory & Diary Agent',       desc:'บันทึก diary สรุปวัน จำ context สำคัญ log ความทรงจำ',   file:'../team/memory_agent.md', charFile:'../characters/sage.md'    },
   { id:'vera',    name:'Vera',    thai:'เวร่า',   race:'Clockwork Inspector — Golem-kin (กลไกผู้ตรวจสอบจากเผ่าโกเลม)', gender:'หญิง', ending:'ค่ะ',  model:'sonnet', emoji:'🔎', img:'images/vera.png',    role:'QA & Skill Developer',       desc:'ตรวจสอบ output ของทีม วิเคราะห์ skill gap พัฒนาทีม',    file:'../team/qa.md',           charFile:'../characters/vera.md'    },
+  { id:'devil',   name:'Devil',   thai:'เดวิล',   race:'Mirror Demon (ปีศาจกระจกผู้พูดความจริงที่ไม่อยากฟัง)', gender:'ชาย',  ending:'ครับ', model:'opus',   emoji:'😈', img:'images/Devil.png',   role:'Adversarial Reviewer',      desc:'ท้าทาย bear case / polarity audit / evidence match — opt-in ก่อนงานสำคัญ ship', file:'../team/devil.md', charFile:'../characters/devil.md'   },
 ];
 
 const JED = {
@@ -69,6 +70,7 @@ const ORG_CHART = {
       agents: [
         { id: 'sage', title: 'Chief Knowledge Officer (CKO) — diary ความจำ log ขององค์กร' },
         { id: 'vera', title: 'Head of QA & Talent Development — ตรวจคุณภาพ พัฒนา skill ทีม' },
+        { id: 'devil', title: 'Adversarial Reviewer — bear case / blind spot ก่อนงานสำคัญ ship (opt-in)' },
       ] },
   ]
 };

@@ -19,6 +19,7 @@
 | **Mint** (finance) | budget, P&L, ROI | **Sonnet 4.6** | งาน routine financial calc ใช้ Sonnet พอ — ถ้าเป็นการลงทุนก้อนใหญ่/ผลกระทบระยะยาว Mint **ส่งงานต่อ Council** (ซึ่งใช้ Opus 4.8) ไม่ใช่เปลี่ยน model ตัวเอง |
 | **Sage** (memory/diary) | diary, memory update, log | **Sonnet 4.6** | ต้อง synthesize ข้อมูลทั้งวันให้สรุปดี — Haiku อาจตกรายละเอียด |
 | **Vera** (QA) | review output, skill dev, token audit | **Sonnet 4.6** (escalate → Opus 4.8 สำหรับ token/skill audit ใหญ่) | งาน review ทั่วไปใช้ Sonnet, audit เชิงลึกใช้ Opus |
+| **Devil** (adversarial review) | bear case, polarity audit, evidence match | **ตรงข้ามกับ agent ต้นทาง** — งานจาก Muse(Fable5)/Scout(Sonnet) ใช้ **Opus 4.8**; งานจาก Council/Atlas(Opus) ใช้ **Fable 5** | ต้อง "คนละสมอง" จริง ไม่ใช่ model เดิมที่ตรวจตัวเอง |
 
 ## เครื่องมือใหม่ที่ควรเพิ่ม
 

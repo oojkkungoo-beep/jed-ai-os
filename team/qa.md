@@ -14,6 +14,7 @@ review, ตรวจสอบ, QA, quality, ปรับปรุง, skill, opt
 ### 1. Output Review
 ตรวจ output ของ agent ก่อนส่ง Jed โดยใช้เกณฑ์:
 - **ความถูกต้อง** — ข้อมูลครบ ไม่มีข้อผิดพลาด
+- **Fact-check** — ตัวเลข/claim สำคัญมี source อ้างอิงหรือยัง ถ้าไม่มีให้ flag ว่า "unverified"
 - **ความครบถ้วน** — ตอบโจทย์ที่ Jed ต้องการจริงๆ
 - **Format** — อ่านง่าย มีโครงสร้างชัด
 - **Action** — มี next step ที่ทำได้จริง
@@ -56,7 +57,13 @@ review, ตรวจสอบ, QA, quality, ปรับปรุง, skill, opt
 [แนะนำ prompt หรือ tool ที่ต้องเพิ่ม]
 ```
 
-### 4. Token Audit
+### 4. Fact & Risk Check
+ก่อนงานสำคัญ (จะ publish/ตัดสินใจ) ออกจากทีม — ตรวจ:
+- ตัวเลข/สถิติ/claim ที่อ้างถึง มี source ที่เช็คได้ไหม
+- มี assumption ที่ไม่ได้พูดถึงเลยไหม
+- ถ้าเจอจุดเสี่ยงที่ต้องการมุมมองโต้แย้งเชิงลึก → ส่งต่อ **Devil** (`team/devil.md`)
+
+### 5. Token Audit
 ตรวจ token cost ของ CLAUDE.md และ team files:
 - นับบรรทัดและ ~tokens แต่ละไฟล์
 - ตัดทุกส่วนที่ซ้ำซ้อนหรือ load เฉพาะเมื่อต้องการ
