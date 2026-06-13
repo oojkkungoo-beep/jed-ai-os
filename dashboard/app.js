@@ -157,7 +157,7 @@ function renderHome() {
     homeSession.innerHTML = `
       <div class="widget-row" onclick="navigate('session')">
         <div>
-          <div class="widget-text">หมวดหลัก: <strong>${s.topCategory || '—'}</strong></div>
+          <div class="widget-text">หมวดหลัก: <strong>${s.topCategory || '—'}</strong> ${s.auto ? '<span class="session-live-badge">🔄 กำลังบันทึก</span>' : ''}</div>
           <div class="widget-meta">${s.date} · ${(s.categories || []).length} หมวด</div>
         </div>
       </div>`;
@@ -516,13 +516,18 @@ function renderSessionLog() {
     <div class="session-card" onclick="showSessionDetail(${realIdx})" style="cursor:pointer">
       <div class="session-card-head">
         <div class="session-date">${s.date}</div>
-        <div class="session-top-cat">${s.topCategory || '—'}</div>
+        <div>
+          <span class="session-top-cat">${s.topCategory || '—'}</span>
+          ${s.auto ? '<span class="session-live-badge">🔄 กำลังบันทึก</span>' : ''}
+        </div>
       </div>
       ${s.tags && s.tags.length ? `
         <div class="session-cats">
           ${s.tags.map(t => `<span class="cat-chip">${t}</span>`).join('')}
         </div>` : ''}
-      ${s.summary ? `<div class="session-summary-text">${s.summary}</div>` : ''}
+      ${s.auto
+        ? `<div class="session-summary-text">📍 session วันนี้ยังดำเนินอยู่ — สรุปจะอัปเดตท้ายวันโดย Sage</div>`
+        : (s.summary ? `<div class="session-summary-text">${s.summary}</div>` : '')}
       ${s.tasks && s.tasks.length ? `
         <div class="session-tasks">
           <div class="session-tasks-label">Tasks ที่พบ:</div>
@@ -545,8 +550,10 @@ function showSessionDetail(idx) {
       ${(s.tags || []).map(t => `<span class="cat-chip">${t}</span>`).join(' ')}
       <span class="k-detail-date">📅 ${s.date}</span>
     </div>
-    <h2 class="k-detail-title">${s.topCategory || ''}</h2>
-    ${s.summary ? `<div class="k-detail-content" style="font-style:italic;color:var(--muted)">${s.summary}</div>` : ''}
+    <h2 class="k-detail-title">${s.topCategory || ''} ${s.auto ? '<span class="session-live-badge">🔄 กำลังบันทึก</span>' : ''}</h2>
+    ${s.auto
+      ? `<div class="k-detail-content" style="font-style:italic;color:var(--muted)">📍 session วันนี้ยังดำเนินอยู่ — สรุปฉบับเต็มจะอัปเดตท้ายวันโดย Sage</div>`
+      : (s.summary ? `<div class="k-detail-content" style="font-style:italic;color:var(--muted)">${s.summary}</div>` : '')}
     <div class="k-detail-divider"></div>
     <div class="k-detail-section-label">📝 รายละเอียด</div>
     <div class="k-detail-content">${(s.details || '<em>ไม่มีรายละเอียดเพิ่มเติม</em>').replace(/\n/g, '<br>')}</div>
@@ -1430,8 +1437,10 @@ async function loadFromFiles() {
     if (res.ok) {
       const fileTodos = await res.json();
       const localTodos = JSON.parse(localStorage.getItem('jed_todos') || '[]');
-      // Merge: file first, then local items not already in file
-      const merged = [...fileTodos];
+      // Merge: local edits (done/edited via UI) override file version of the same id,
+      // then add any local-only items not present in the file
+      const localById = new Map(localTodos.map(t => [t.id, t]));
+      const merged = fileTodos.map(f => localById.get(f.id) || f);
       localTodos.forEach(item => {
         if (!merged.find(f => f.id === item.id)) merged.push(item);
       });

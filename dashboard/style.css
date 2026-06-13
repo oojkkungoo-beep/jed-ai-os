@@ -1062,6 +1062,16 @@ hr.divider { border: none; border-top: 1px solid var(--border); margin: 28px 0; 
 }
 .session-date    { font-size: 12px; color: var(--muted); }
 .session-top-cat { font-size: 13px; font-weight: 600; color: var(--green); }
+.session-live-badge {
+  font-size: 10px;
+  background: var(--gold-bg, #fdf3dc);
+  color: var(--gold, #b8860b);
+  border-radius: 999px;
+  padding: 2px 8px;
+  margin-left: 8px;
+  font-weight: 600;
+  white-space: nowrap;
+}
 .session-cats    { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
 .cat-chip {
   font-size: 11px;
