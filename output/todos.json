@@ -1,1 +1,92 @@
-[]
+[
+  {
+    "id": 1,
+    "text": "วารสารสุขภาพไทย: เติมข้อมูลผู้ติดต่อ (Corresponding author) — ที่อยู่/โทร/อีเมล ตามหมายเหตุสีแดงในต้นฉบับที่ Vera แก้ไว้",
+    "category": "🔍 Research",
+    "priority": "high",
+    "quadrant": "q1",
+    "done": false,
+    "created": "2026-06-13T01:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "text": "วารสารสุขภาพไทย: พิจารณาย่อชื่อเรื่องภาษาอังกฤษ (ปัจจุบัน 116 ตัวอักษร เกิน 100)",
+    "category": "🔍 Research",
+    "priority": "high",
+    "quadrant": "q1",
+    "done": false,
+    "created": "2026-06-13T01:01:00.000Z"
+  },
+  {
+    "id": 3,
+    "text": "วารสารสุขภาพไทย: ยืนยันแก้ไขครบแล้ว ส่งต้นฉบับเข้าระบบ submission ของวารสาร",
+    "category": "🔍 Research",
+    "priority": "high",
+    "quadrant": "q1",
+    "done": false,
+    "created": "2026-06-13T01:02:00.000Z"
+  },
+  {
+    "id": 4,
+    "text": "NursePant: รีวิวโพสต์ครั้งสุดท้าย แล้วโพสต์ลงเพจ NursePant (Quick Win แผนรายได้เสริม 90 วัน)",
+    "category": "💰 Finance",
+    "priority": "high",
+    "quadrant": "q1",
+    "done": false,
+    "created": "2026-06-13T01:03:00.000Z"
+  },
+  {
+    "id": 5,
+    "text": "NursePant: อัปเดต stock_tracking.md ทุกครั้งที่มีออเดอร์เข้า",
+    "category": "💰 Finance",
+    "priority": "medium",
+    "quadrant": "q2",
+    "done": false,
+    "created": "2026-06-13T01:04:00.000Z"
+  },
+  {
+    "id": 6,
+    "text": "Risk_OR_BAH: เปิดไฟล์ตรวจสไลด์ที่เป็นรูป/diagram ด้วยตา (สไลด์ 5, 8-10, 12, 14-16) แล้วสั่งทำทะเบียนความเสี่ยงปี 2569 ต่อ",
+    "category": "📌 General",
+    "priority": "medium",
+    "quadrant": "q2",
+    "done": false,
+    "created": "2026-06-13T01:05:00.000Z"
+  },
+  {
+    "id": 7,
+    "text": "บรีฟ Muse เริ่มร่างโครงสไลด์ \"ยาสลบคืออะไร\" (ค้างมาหลายวัน — Phase 1 ของแผน 90 วัน)",
+    "category": "💡 Creative",
+    "priority": "medium",
+    "quadrant": "q2",
+    "done": false,
+    "created": "2026-06-13T01:06:00.000Z"
+  },
+  {
+    "id": 8,
+    "text": "นัด Atlas เช็ค progress แผน 90 วันครั้งแรก (Phase 1, สัปดาห์ 1-2)",
+    "category": "🎯 Strategy",
+    "priority": "medium",
+    "quadrant": "q2",
+    "done": false,
+    "created": "2026-06-13T01:07:00.000Z"
+  },
+  {
+    "id": 9,
+    "text": "OHC App: เพิ่มฟีเจอร์ที่ยังขาด + ทดสอบกับผู้ใช้จริง + ทำ export รายงานให้ครบ",
+    "category": "🔧 Dev & Tech",
+    "priority": "low",
+    "quadrant": "q3",
+    "done": false,
+    "created": "2026-06-13T01:08:00.000Z"
+  },
+  {
+    "id": 10,
+    "text": "Dashboard: เชื่อม session log ให้บันทึกอัตโนมัติจากทุก session จริง + ปรับ UX ตามการใช้งาน",
+    "category": "🔧 Dev & Tech",
+    "priority": "low",
+    "quadrant": "q3",
+    "done": false,
+    "created": "2026-06-13T01:09:00.000Z"
+  }
+]
