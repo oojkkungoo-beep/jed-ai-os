@@ -292,5 +292,149 @@
     "relatedProjects": [
       "Risk_OR_BAH"
     ]
+  },
+  {
+    "id": 9,
+    "date": "13 มิถุนายน 2569",
+    "topCategory": "🔧 Dev & Tech",
+    "tags": [
+      "🔧 Dev & Tech",
+      "🌿 Life & Health",
+      "📝 Memory & Diary",
+      "🔍 Research"
+    ],
+    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (47%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 54,
+        "pct": 47
+      },
+      {
+        "name": "🌿 Life & Health",
+        "count": 16,
+        "pct": 14
+      },
+      {
+        "name": "📝 Memory & Diary",
+        "count": 14,
+        "pct": 12
+      },
+      {
+        "name": "🔍 Research",
+        "count": 9,
+        "pct": 8
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 7,
+        "pct": 6
+      },
+      {
+        "name": "⚖️ Decision",
+        "count": 6,
+        "pct": 5
+      }
+    ],
+    "tasks": [
+      "[Laura] เริ่มสำรวจ dashboard ปัจจุบันก่อนนะคะ เพื่อดูโครงสร้างและวิธี log ที่มีอยู่",
+      "ตอนนี้เข้าใจโครงสร้างแล้วค่ะ: `output/session_log.json` ปัจจุบันเป็น manual — Sage เขียนทีหลังเมื่อ Jed สั่ง \"สรุปวันนี้",
+      "มีจุดที่ต้องตัดสินใจก่อนเริ่มทำค่ะ",
+      "4. ปรับ `team/memory_agent.md` — ตอน Sage เขียน \"สรุปวันนี้\" จะ**เขียนทับ** entry auto ของวันนั้น (ใส่ summary/details ฉ",
+      "ทดสอบกับ transcript จริงแล้ว ได้ entry ที่ถูกต้อง (ลบ test data ออกแล้ว) — session นี้พอจบ Stop hook จะรันจริงและสร้าง e",
+      "Now let's update app.js for the todo logic.",
+      "Reload reset to home. Let's click todo again.",
+      "## สรุปการอัปเดต Todo Dashboard"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 10,
+    "date": "14 มิถุนายน 2569",
+    "topCategory": "🔧 Dev & Tech",
+    "tags": [
+      "🔧 Dev & Tech",
+      "🌿 Life & Health",
+      "🔍 Research",
+      "📝 Memory & Diary"
+    ],
+    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (36%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 128,
+        "pct": 36
+      },
+      {
+        "name": "🌿 Life & Health",
+        "count": 73,
+        "pct": 21
+      },
+      {
+        "name": "🔍 Research",
+        "count": 35,
+        "pct": 10
+      },
+      {
+        "name": "📝 Memory & Diary",
+        "count": 35,
+        "pct": 10
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 34,
+        "pct": 10
+      },
+      {
+        "name": "⚖️ Decision",
+        "count": 19,
+        "pct": 5
+      }
+    ],
+    "tasks": [
+      "Now let's update app.js for the todo logic.",
+      "Reload reset to home. Let's click todo again.",
+      "## สรุปการอัปเดต Todo Dashboard",
+      "**สิ่งที่เพิ่มเข้ามา:**",
+      "2. **เรียงลำดับ** — งานที่ยังไม่เสร็จล่าสุดอยู่บนสุด งานที่ทำแล้วอยู่ล่างสุด (เรียงตามวันที่อัปเดต/สร้างล่าสุด)",
+      "3. **Eisenhower Matrix** — แบ่งงานเป็น 4 ประเภท: 🔥 ทำทันที (ด่วน+สำคัญ), 📅 วางแผน (สำคัญไม่ด่วน), 🤝 มอบหมาย (ด่วนไม่สำคั",
+      "ทดสอบใน preview แล้วทำงานครบทุกฟังก์ชัน — filter, sort, edit/save, checkbox ทำงานถูกต้องค่ะ",
+      "ช่วยสรุปสิ่งที่ผมต้องทำทั้งหมดใส่ลงไปใน dashboard todo ด้วยครับ"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 11,
+    "date": "14 มิถุนายน 2569",
+    "topCategory": "🔧 Dev & Tech",
+    "tags": [
+      "🔧 Dev & Tech",
+      "📝 Memory"
+    ],
+    "summary": "อัปเกรด Todo Dashboard เป็น Eisenhower Matrix + แก้บั๊ก done ไม่บันทึก + ปิด auto-push",
+    "categories": [
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 1,
+        "pct": 100
+      }
+    ],
+    "tasks": [
+      "เพิ่ม Eisenhower Matrix 4 quadrant (🔥📅🤝🗑️) ให้ todo พร้อม filter และ quadrant tag",
+      "เพิ่มหน้ารายละเอียด/แก้ไข todo (detail panel) — แก้ข้อความ/หมวด/priority/quadrant/done ได้",
+      "เรียง todo: งานที่ยังไม่เสร็จล่าสุดอยู่บนสุด, งานเสร็จแล้วลงล่าง",
+      "เติม output/todos.json ด้วยรายการงานค้างทั้งหมดของ Jed 10 รายการ (journal, NursePant, Risk_OR_BAH, OHC, dashboard ฯลฯ)",
+      "แก้บั๊ก: ติ๊ก done แล้ว refresh กลับไปไม่ติ๊ก — แก้ logic merge ให้ local edit ชนะไฟล์",
+      "แก้บั๊กรอบ 2: Service Worker cache เก่าทำให้ browser ไม่โหลด app.js ใหม่ — เปลี่ยน sw.js เป็น network-first สำหรับ html/css/js และ bump CACHE เป็น v4"
+    ],
+    "details": "วันนี้อัปเกรดหน้า Todo ของ dashboard แบบเต็มรูปแบบ: เพิ่มระบบ Eisenhower Matrix แบ่งงานเป็น 4 กลุ่ม (ทำทันที/วางแผน/มอบหมาย/ตัดทิ้ง) เลือกได้ตอนเพิ่มงานและ filter ดูทีหลังได้ พร้อมหน้าแก้ไขรายละเอียดงานแบบกดเข้าไปดู/แก้ได้เลย แล้วเติมงานค้างทั้งหมดของ Jed ลงไป 10 รายการครอบคลุมทุกโปรเจกต์ที่กำลังทำอยู่ (วารสารสุขภาพไทย, NursePant, Risk_OR_BAH, OHC App, dashboard เอง)\n\nหลังจากนั้น Jed เจอบั๊ก: ติ๊กงานว่าทำเสร็จแล้ว+save แต่ refresh หน้าใหม่กลับไม่ติ๊ก — เจอ 2 ชั้น ชั้นแรกคือ logic merge ข้อมูลใน app.js ที่ให้ไฟล์ todos.json (done:false เสมอ) ชนะค่าที่แก้ใน localStorage เสมอ แก้ให้ local edit ชนะแทน ชั้นสองคือ Service Worker cache เวอร์ชันเก่าของ app.js ค้างอยู่ใน browser ทำให้โหลดโค้ดใหม่ไม่ได้ ต้องปรับ sw.js ให้ใช้ network-first กับไฟล์ html/css/js แล้ว bump cache version เป็น v4 ถึงจะใช้ได้จริง\n\n⚠️ หมายเหตุสำคัญ: ระหว่าง session นี้มีการ commit+push ขึ้น GitHub ไปแล้ว 4 ครั้ง (e1f79fc, 2daa441, 99716b4 และอีก 1 commit) ก่อนที่จะพบกฎใหม่ในความจำว่า GitHub Pages ปิดไปแล้วและ Jed ขอให้ push เฉพาะเมื่อสั่งเท่านั้น — งานที่เหลือ (อัปเดต session log, activity, projects notes ของรอบนี้) จะ**ไม่ push** ตามกฎใหม่ รอ Jed สั่งถ้าต้องการ sync ขึ้น GitHub",
+    "relatedProjects": [
+      "Jed AI OS Dashboard"
+    ],
+    "auto": false
   }
 ]

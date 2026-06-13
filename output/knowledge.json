@@ -214,8 +214,7 @@
     "content": "แทนที่จะอธิบาย context ยาวๆ ทุก session → ส่ง link note ให้ทีมอ่าน Scout/Sage ดึง knowledge จาก vault มาตอบแทน web search ซ้ำ ระยะยาว: notes link กัน → Obsidian Graph View เห็น connection → ระบบฉลาดขึ้นโดยไม่เพิ่ม token",
     "url": "",
     "date": "2026-06-06"
-  }
-,
+  },
   {
     "id": 1717604000001,
     "title": "Thesis: AI Tools & Workflow Mastery — Overview",
@@ -287,5 +286,14 @@
     "content": "Deep Work (Cal Newport) = งานที่ต้องสมาธิสูง สร้าง value สูงสุด vs Shallow Work = งาน reactive ทดแทนได้ง่าย AI ช่วยกำจัด shallow work → เพิ่มเวลา deep work | Apply: ใช้ Laura OS กำจัด shallow work ทั้งหมด, design deep work block ทุกวัน ≥ 4 ชั่วโมง",
     "url": "https://youtu.be/3iCpzKHQEzw",
     "date": "2026-06-06"
+  },
+  {
+    "id": 1717604000009,
+    "title": "Public Dashboard Risk — ข้อมูลส่วนตัวรั่วผ่าน GitHub Pages",
+    "topic": "Security & Privacy",
+    "source": "Session กับ Laura",
+    "content": "Dashboard ของ Jed (jed-ai-os) เคยเปิด public ผ่าน GitHub Pages มาตลอด — repo public + Pages เปิด = ใครมี link เข้าดู todo, diary, แผนธุรกิจ ฯลฯ ได้หมดโดยไม่ต้อง login. แก้โดย: 1) ติดตั้ง Tailscale (private VPN ฟรี) เชื่อม notebook-iPad ผ่าน private network, 2) แก้ serve.ps1 ให้ serve จาก project root (ไม่ใช่แค่ dashboard/) เพื่อให้ /output/*.json โหลดได้ผ่าน Tailscale, 3) เปิด firewall port 3334 เฉพาะจาก Tailscale CIDR (100.64.0.0/10), 4) ปิด GitHub Pages ทิ้ง (gh api -X DELETE repos/.../pages). บทเรียน: ระบบที่มีข้อมูล sensitive ต้องเช็ค 'ใครเข้าถึงได้บ้าง' ตั้งแต่แรก ไม่ใช่รอให้ sensitive แล้วค่อยแก้",
+    "url": "",
+    "date": "2026-06-14"
   }
 ]

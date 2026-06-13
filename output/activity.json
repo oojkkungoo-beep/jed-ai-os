@@ -1,35 +1,157 @@
 [
-  { "agent": "Laura",  "action": "อัปเดต character files ทั้ง 9 คน — Gender + คำอ่านไทย",          "time": "2026-06-05T09:00:00.000Z" },
-  { "agent": "Forge",  "action": "Redesign Team grid เป็น portrait card + pipeline square images",   "time": "2026-06-05T10:30:00.000Z" },
-  { "agent": "Forge",  "action": "เพิ่มภาพ character ทุกคนใน dashboard",                             "time": "2026-06-05T11:00:00.000Z" },
-  { "agent": "Laura",  "action": "สร้าง Vera (QA Agent) เข้าทีม",                                   "time": "2026-06-05T12:00:00.000Z" },
-  { "agent": "Nova",   "action": "Share Notion databases 5 รายการสำเร็จ",                            "time": "2026-06-05T14:00:00.000Z" },
-  { "agent": "Forge",  "action": "Init git + push code ขึ้น GitHub / Connect Vercel",                "time": "2026-06-05T15:30:00.000Z" },
-  { "agent": "Sage",   "action": "บันทึก diary + session log + YouTube log วันที่ 5 มิ.ย. 2569",    "time": "2026-06-05T16:00:00.000Z" },
-
-  { "agent": "Forge",  "action": "แก้ Vercel redirect loop + browser cache bug",                      "time": "2026-06-06T10:00:00.000Z" },
-  { "agent": "Vera",   "action": "Skill Audit + upgrade team files ครบ 10 agent",                     "time": "2026-06-06T13:00:00.000Z" },
-  { "agent": "Sage",   "action": "Setup Second Brain vault + สร้าง knowledge.json (12 entries)",      "time": "2026-06-06T15:00:00.000Z" },
-  { "agent": "Laura",  "action": "Token Audit CLAUDE.md ลด 45% (49→23 บรรทัด)",                       "time": "2026-06-06T16:00:00.000Z" },
-
-  { "agent": "Atlas",  "action": "สาน Framework 4-Level — ตกผลึกเป้ารายได้เสริม +20,000/เดือน ใน 90 วัน", "time": "2026-06-07T09:00:00.000Z" },
-  { "agent": "Laura",  "action": "เพิ่มโปรเจกต์ Jed_fremwork + progress bar/detail panel ทุกโปรเจกต์",  "time": "2026-06-07T10:30:00.000Z" },
-  { "agent": "Laura",  "action": "ออกแบบผังองค์กรใหม่ 6 สายงาน แทน Pipeline เดิม",                    "time": "2026-06-07T11:00:00.000Z" },
-  { "agent": "Vera",   "action": "วิเคราะห์ skill gap ทีม พบสาย Health ยังไม่มีเจ้าภาพ",               "time": "2026-06-07T13:00:00.000Z" },
-  { "agent": "Laura",  "action": "สร้าง Eir (Wellness Healer) เข้าทีม",                               "time": "2026-06-07T13:30:00.000Z" },
-  { "agent": "Forge",  "action": "แก้บั๊ก Character tab (leading slash path) + เพิ่ม เผ่าพันธุ์ ให้ทุก agent", "time": "2026-06-07T15:00:00.000Z" },
-  { "agent": "Forge",  "action": "เพิ่มคำอธิบายเผ่าพันธุ์ภาษาไทยให้ agent ทุกคน",                     "time": "2026-06-07T16:00:00.000Z" },
-  { "agent": "Forge",  "action": "แก้บั๊กรูป Eir ไม่ขึ้น — commit+push images ที่ค้างอยู่",            "time": "2026-06-07T17:00:00.000Z" },
-
-  { "agent": "Atlas",  "action": "ปรับแผนเวลาเป็น Minimum Viable Day (🟢/🟡/🔴 ตามพลังงาน)",          "time": "2026-06-08T09:00:00.000Z" },
-  { "agent": "Laura",  "action": "เปิดโปรเจกต์ Clear_stock_nursepant + ร่างโพสต์ Facebook เคลียร์สต๊อก", "time": "2026-06-08T11:00:00.000Z" },
-  { "agent": "Forge",  "action": "แก้บั๊กรูปโปรไฟล์ Vera ให้แสดงผลถูกต้อง",                            "time": "2026-06-08T14:00:00.000Z" },
-
-  { "agent": "Laura",  "action": "เชื่อมโปรเจกต์ Risk_OR_BAH เข้าระบบทีม (CLAUDE.md + projects.json)", "time": "2026-06-11T10:00:00.000Z" },
-  { "agent": "Vera",   "action": "ตรวจสไลด์ป้องกันสิ่งตกค้าง 69 รอบ 1 — พบ Slide 3 ว่าง ให้คะแนน B",   "time": "2026-06-11T11:00:00.000Z" },
-  { "agent": "Vera",   "action": "ตรวจรอบ 2 หลังแก้ไข Slide 3 — อัปเกรดเป็น A-",                       "time": "2026-06-11T14:00:00.000Z" },
-  { "agent": "Sage",   "action": "บันทึก diary + sync Second Brain วันที่ 11 มิ.ย. 2569",              "time": "2026-06-11T16:00:00.000Z" },
-
-  { "agent": "Mint",   "action": "Sync ราคา NursePant เป็น 420 บาท + เพิ่ม model assignment guide",   "time": "2026-06-12T09:00:00.000Z" },
-  { "agent": "Atlas",  "action": "ยืนยันแผน 90 วันของ Jed_fremwork พร้อม weekly checkpoints",          "time": "2026-06-12T10:00:00.000Z" }
+  {
+    "agent": "Laura",
+    "action": "อัปเดต character files ทั้ง 9 คน — Gender + คำอ่านไทย",
+    "time": "2026-06-05T09:00:00.000Z"
+  },
+  {
+    "agent": "Forge",
+    "action": "Redesign Team grid เป็น portrait card + pipeline square images",
+    "time": "2026-06-05T10:30:00.000Z"
+  },
+  {
+    "agent": "Forge",
+    "action": "เพิ่มภาพ character ทุกคนใน dashboard",
+    "time": "2026-06-05T11:00:00.000Z"
+  },
+  {
+    "agent": "Laura",
+    "action": "สร้าง Vera (QA Agent) เข้าทีม",
+    "time": "2026-06-05T12:00:00.000Z"
+  },
+  {
+    "agent": "Nova",
+    "action": "Share Notion databases 5 รายการสำเร็จ",
+    "time": "2026-06-05T14:00:00.000Z"
+  },
+  {
+    "agent": "Forge",
+    "action": "Init git + push code ขึ้น GitHub / Connect Vercel",
+    "time": "2026-06-05T15:30:00.000Z"
+  },
+  {
+    "agent": "Sage",
+    "action": "บันทึก diary + session log + YouTube log วันที่ 5 มิ.ย. 2569",
+    "time": "2026-06-05T16:00:00.000Z"
+  },
+  {
+    "agent": "Forge",
+    "action": "แก้ Vercel redirect loop + browser cache bug",
+    "time": "2026-06-06T10:00:00.000Z"
+  },
+  {
+    "agent": "Vera",
+    "action": "Skill Audit + upgrade team files ครบ 10 agent",
+    "time": "2026-06-06T13:00:00.000Z"
+  },
+  {
+    "agent": "Sage",
+    "action": "Setup Second Brain vault + สร้าง knowledge.json (12 entries)",
+    "time": "2026-06-06T15:00:00.000Z"
+  },
+  {
+    "agent": "Laura",
+    "action": "Token Audit CLAUDE.md ลด 45% (49→23 บรรทัด)",
+    "time": "2026-06-06T16:00:00.000Z"
+  },
+  {
+    "agent": "Atlas",
+    "action": "สาน Framework 4-Level — ตกผลึกเป้ารายได้เสริม +20,000/เดือน ใน 90 วัน",
+    "time": "2026-06-07T09:00:00.000Z"
+  },
+  {
+    "agent": "Laura",
+    "action": "เพิ่มโปรเจกต์ Jed_fremwork + progress bar/detail panel ทุกโปรเจกต์",
+    "time": "2026-06-07T10:30:00.000Z"
+  },
+  {
+    "agent": "Laura",
+    "action": "ออกแบบผังองค์กรใหม่ 6 สายงาน แทน Pipeline เดิม",
+    "time": "2026-06-07T11:00:00.000Z"
+  },
+  {
+    "agent": "Vera",
+    "action": "วิเคราะห์ skill gap ทีม พบสาย Health ยังไม่มีเจ้าภาพ",
+    "time": "2026-06-07T13:00:00.000Z"
+  },
+  {
+    "agent": "Laura",
+    "action": "สร้าง Eir (Wellness Healer) เข้าทีม",
+    "time": "2026-06-07T13:30:00.000Z"
+  },
+  {
+    "agent": "Forge",
+    "action": "แก้บั๊ก Character tab (leading slash path) + เพิ่ม เผ่าพันธุ์ ให้ทุก agent",
+    "time": "2026-06-07T15:00:00.000Z"
+  },
+  {
+    "agent": "Forge",
+    "action": "เพิ่มคำอธิบายเผ่าพันธุ์ภาษาไทยให้ agent ทุกคน",
+    "time": "2026-06-07T16:00:00.000Z"
+  },
+  {
+    "agent": "Forge",
+    "action": "แก้บั๊กรูป Eir ไม่ขึ้น — commit+push images ที่ค้างอยู่",
+    "time": "2026-06-07T17:00:00.000Z"
+  },
+  {
+    "agent": "Atlas",
+    "action": "ปรับแผนเวลาเป็น Minimum Viable Day (🟢/🟡/🔴 ตามพลังงาน)",
+    "time": "2026-06-08T09:00:00.000Z"
+  },
+  {
+    "agent": "Laura",
+    "action": "เปิดโปรเจกต์ Clear_stock_nursepant + ร่างโพสต์ Facebook เคลียร์สต๊อก",
+    "time": "2026-06-08T11:00:00.000Z"
+  },
+  {
+    "agent": "Forge",
+    "action": "แก้บั๊กรูปโปรไฟล์ Vera ให้แสดงผลถูกต้อง",
+    "time": "2026-06-08T14:00:00.000Z"
+  },
+  {
+    "agent": "Laura",
+    "action": "เชื่อมโปรเจกต์ Risk_OR_BAH เข้าระบบทีม (CLAUDE.md + projects.json)",
+    "time": "2026-06-11T10:00:00.000Z"
+  },
+  {
+    "agent": "Vera",
+    "action": "ตรวจสไลด์ป้องกันสิ่งตกค้าง 69 รอบ 1 — พบ Slide 3 ว่าง ให้คะแนน B",
+    "time": "2026-06-11T11:00:00.000Z"
+  },
+  {
+    "agent": "Vera",
+    "action": "ตรวจรอบ 2 หลังแก้ไข Slide 3 — อัปเกรดเป็น A-",
+    "time": "2026-06-11T14:00:00.000Z"
+  },
+  {
+    "agent": "Sage",
+    "action": "บันทึก diary + sync Second Brain วันที่ 11 มิ.ย. 2569",
+    "time": "2026-06-11T16:00:00.000Z"
+  },
+  {
+    "agent": "Mint",
+    "action": "Sync ราคา NursePant เป็น 420 บาท + เพิ่ม model assignment guide",
+    "time": "2026-06-12T09:00:00.000Z"
+  },
+  {
+    "agent": "Atlas",
+    "action": "ยืนยันแผน 90 วันของ Jed_fremwork พร้อม weekly checkpoints",
+    "time": "2026-06-12T10:00:00.000Z"
+  },
+  {
+    "agent": "Laura",
+    "action": "บันทึก Knowledge + Diary เรื่อง dashboard privacy risk และวิธีแก้ด้วย Tailscale",
+    "time": "2026-06-14T01:05:17.214989"
+  },
+  {
+    "agent": "Forge",
+    "action": "เพิ่ม Eisenhower Matrix + detail panel ให้ Todo และเติมงานค้างของ Jed 10 รายการลง todos.json",
+    "time": "2026-06-13T18:16:56.732416"
+  },
+  {
+    "agent": "Forge",
+    "action": "แก้บั๊ก todo done ไม่บันทึกหลัง refresh (merge logic + Service Worker cache v4)",
+    "time": "2026-06-13T18:16:56.732416"
+  }
 ]

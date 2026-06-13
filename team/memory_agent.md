@@ -20,6 +20,16 @@
 ### 3. Log Index — รวม output ทั้งหมดของวัน
 อ้างอิง output จาก: ideas/, research/, decisions/, dev/, finance/
 
+### 3.5 Session Log — เขียนทับ entry auto ของวันนี้ (ไม่สร้างซ้ำ)
+ตอนนี้มี hook (`session_analyzer.py`) auto-สร้าง/อัปเดต entry ใน `output/session_log.json`
+ของวันนี้อยู่แล้วทุกครั้งที่ Claude ตอบ (มี `"auto": true`, summary แบบ placeholder)
+เมื่อ Jed สั่ง "สรุปวันนี้":
+- หา entry ที่ `date` ตรงกับวันนี้ (รูปแบบ "D เดือนไทย พ.ศ.")
+- ถ้าเจอ entry ที่ `auto: true` → **เขียนทับ** entry เดิม (ใช้ id เดิม) ด้วย
+  summary/details/tasks/relatedProjects/tags ที่ synthesize เอง แล้วตั้ง `"auto": false`
+  (เพื่อ hook จะไม่ทับ entry นี้อีกถ้ามี session ต่อในวันเดียวกัน)
+- ถ้าไม่เจอ entry ของวันนี้ → สร้าง entry ใหม่ปกติ (id = max+1, `"auto": false`)
+
 ### 4. Team Log Update — อัปเดต Agent Daily Logs
 บันทึก: `output/team_logs.json` — เพิ่ม entry ใหม่ของวันนี้ทุกครั้งที่เขียน diary
 
