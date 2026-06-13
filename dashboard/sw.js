@@ -1,5 +1,5 @@
 // Jed's AI OS — Service Worker
-const CACHE = 'jed-ai-os-v3';
+const CACHE = 'jed-ai-os-v4';
 const STATIC = [
   '/dashboard/index.html',
   '/dashboard/style.css',
@@ -37,7 +37,8 @@ self.addEventListener('activate', e => {
 
 // Fetch strategy:
 // - JSON data files → Network first (always fresh from GitHub)
-// - Static assets → Cache first (fast load)
+// - HTML/CSS/JS (code) → Network first (always get latest, fall back to cache offline)
+// - Other static assets (images) → Cache first (fast load)
 self.addEventListener('fetch', e => {
   const url = new URL(e.request.url);
 
@@ -49,7 +50,21 @@ self.addEventListener('fetch', e => {
     return;
   }
 
-  // Static assets — cache first
+  // Code files (html/css/js) — network first so updates apply immediately
+  if (/\.(html|css|js)$/.test(url.pathname) || url.pathname.endsWith('/')) {
+    e.respondWith(
+      fetch(e.request).then(res => {
+        if (res.ok) {
+          const clone = res.clone();
+          caches.open(CACHE).then(c => c.put(e.request, clone));
+        }
+        return res;
+      }).catch(() => caches.match(e.request))
+    );
+    return;
+  }
+
+  // Other static assets (images) — cache first
   e.respondWith(
     caches.match(e.request).then(cached => {
       if (cached) return cached;
