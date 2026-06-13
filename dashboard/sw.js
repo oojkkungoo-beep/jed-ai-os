@@ -1,5 +1,5 @@
 // Jed's AI OS — Service Worker
-const CACHE = 'jed-ai-os-v1';
+const CACHE = 'jed-ai-os-v2';
 const STATIC = [
   '/dashboard/index.html',
   '/dashboard/style.css',

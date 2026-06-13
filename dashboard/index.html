@@ -11,7 +11,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Jed AI OS">
   <link rel="apple-touch-icon" href="images/Jed.png">
-  <link rel="stylesheet" href="style.css?v=20260613a">
+  <link rel="stylesheet" href="style.css?v=20260613b">
 </head>
 <body>
 
@@ -194,11 +194,18 @@
             <option value="medium">🟡 ปานกลาง</option>
             <option value="low">🟢 เบา</option>
           </select>
+          <select class="inp" id="todo-quadrant">
+            <option value="q1">🔥 ทำทันที</option>
+            <option value="q2" selected>📅 วางแผน</option>
+            <option value="q3">🤝 มอบหมาย</option>
+            <option value="q4">🗑️ ตัดทิ้ง</option>
+          </select>
           <button class="btn btn-green btn-sm" onclick="addTodo()">บันทึก</button>
         </div>
       </div>
 
       <!-- Filter tabs -->
+      <div class="filter-row" id="todo-quadrant-row"></div>
       <div class="filter-row" id="todo-filter-row"></div>
 
       <!-- Todo list -->
@@ -293,6 +300,16 @@
       <button class="k-detail-close" onclick="closeKnowledgeDetail()">✕</button>
     </div>
     <div class="k-detail-body" id="k-detail-body"></div>
+  </div>
+
+  <!-- ══ TODO DETAIL PANEL ══ -->
+  <div class="k-detail-overlay" id="todo-detail-overlay" onclick="closeTodoDetail()"></div>
+  <div class="k-detail-panel" id="todo-detail-panel">
+    <div class="k-detail-header">
+      <div class="k-detail-nav"><span class="k-detail-counter">📝 รายละเอียดงาน</span></div>
+      <button class="k-detail-close" onclick="closeTodoDetail()">✕</button>
+    </div>
+    <div class="k-detail-body" id="todo-detail-body"></div>
   </div>
 
   <!-- ══ DIARY ══ -->
@@ -428,7 +445,7 @@
   </div>
 </div>
 
-<script src="app.js?v=20260613a"></script>
+<script src="app.js?v=20260613b"></script>
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {

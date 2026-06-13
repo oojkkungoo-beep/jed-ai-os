@@ -596,7 +596,8 @@ textarea.diary-ta {
   display: none;
 }
 .add-form.open { display: block; }
-.form-row { display: flex; gap: 8px; margin-top: 8px; }
+.form-row { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
+.form-row .inp { flex: 1; min-width: 120px; }
 
 /* ── ACTIVITY ── */
 .act-list { display: flex; flex-direction: column; gap: 8px; }
@@ -970,6 +971,20 @@ hr.divider { border: none; border-top: 1px solid var(--border); margin: 28px 0; 
 .todo-cat  { font-size: 11px; color: var(--muted); background: var(--bg); border: 1px solid var(--border); padding: 1px 7px; border-radius: 10px; }
 .todo-date { font-size: 11px; color: var(--muted); }
 .todo-actions { flex-shrink: 0; }
+.todo-body { cursor: pointer; }
+
+.quadrant-tag { font-size: 10px; font-weight: 600; padding: 2px 7px; border-radius: 10px; }
+.q-q1 { background: #fff0f0; color: #c0392b; }
+.q-q2 { background: var(--green-bg); color: var(--green); }
+.q-q3 { background: var(--gold-bg); color: var(--gold); }
+.q-q4 { background: var(--border); color: var(--muted); }
+
+/* ── TODO DETAIL PANEL ── */
+.todo-detail-field { margin-bottom: 14px; }
+.todo-detail-field label { display: block; font-size: 11px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 6px; }
+.todo-done-toggle { display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 400; text-transform: none; letter-spacing: normal; cursor: pointer; }
+.todo-done-toggle input { width: 16px; height: 16px; cursor: pointer; }
+.todo-detail-meta { display: flex; flex-direction: column; gap: 4px; font-size: 11px; color: var(--muted); margin-bottom: 14px; }
 .btn-icon {
   background: none;
   border: none;

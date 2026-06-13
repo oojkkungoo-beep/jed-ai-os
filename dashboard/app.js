@@ -206,6 +206,14 @@ function renderHome() {
 //  TODO
 // ═══════════════════════════════════════════════
 let todoFilter = 'all';
+let todoQuadrantFilter = 'all';
+
+const QUADRANTS = {
+  q1: { label: '🔥 ทำทันที',  desc: 'ด่วน + สำคัญ',     cls: 'q-q1' },
+  q2: { label: '📅 วางแผน',   desc: 'สำคัญ ไม่ด่วน',    cls: 'q-q2' },
+  q3: { label: '🤝 มอบหมาย',  desc: 'ด่วน ไม่สำคัญ',    cls: 'q-q3' },
+  q4: { label: '🗑️ ตัดทิ้ง',  desc: 'ไม่ด่วน ไม่สำคัญ', cls: 'q-q4' }
+};
 
 function toggleTodoForm() {
   document.getElementById('todo-add-form').classList.toggle('open');
@@ -217,11 +225,13 @@ function addTodo() {
   if (!text) return;
   const cat      = document.getElementById('todo-cat').value;
   const priority = document.getElementById('todo-priority').value;
+  const quadrant = document.getElementById('todo-quadrant').value;
   todos.push({
     id: Date.now(),
     text,
     category: cat,
     priority,
+    quadrant,
     done: false,
     created: new Date().toISOString()
   });
@@ -245,6 +255,7 @@ function deleteTodo(id) {
   saveTodos();
   renderTodos();
   renderHome();
+  closeTodoDetail();
 }
 
 function saveTodos() {
@@ -260,16 +271,28 @@ function renderTodoBadge() {
 }
 
 function renderTodos() {
-  // Build filter tabs
+  // Build category filter tabs
   const cats = ['all', ...new Set(todos.map(t => t.category))];
   document.getElementById('todo-filter-row').innerHTML = cats.map(c => `
     <button class="filter-btn ${todoFilter === c ? 'active' : ''}" onclick="setTodoFilter('${c}')">
       ${c === 'all' ? '📋 ทั้งหมด' : c}
     </button>`).join('');
 
-  const filtered = todoFilter === 'all' ? todos : todos.filter(t => t.category === todoFilter);
-  const pending  = filtered.filter(t => !t.done);
-  const done     = filtered.filter(t => t.done);
+  // Build Eisenhower quadrant filter tabs
+  document.getElementById('todo-quadrant-row').innerHTML = `
+    <button class="filter-btn ${todoQuadrantFilter === 'all' ? 'active' : ''}" onclick="setTodoQuadrantFilter('all')">🧭 ทุกประเภท</button>
+    ${Object.entries(QUADRANTS).map(([key, q]) => `
+    <button class="filter-btn ${todoQuadrantFilter === key ? 'active' : ''}" onclick="setTodoQuadrantFilter('${key}')">
+      ${q.label}
+    </button>`).join('')}`;
+
+  let filtered = todoFilter === 'all' ? todos : todos.filter(t => t.category === todoFilter);
+  if (todoQuadrantFilter !== 'all') filtered = filtered.filter(t => (t.quadrant || 'q2') === todoQuadrantFilter);
+
+  // งานที่ยังไม่ทำ ล่าสุดอยู่บนสุด, งานที่ทำแล้วอยู่ล่างสุด เรียงจากล่าสุด
+  const byNewest = (a, b) => new Date(b.updated || b.created) - new Date(a.updated || a.created);
+  const pending  = filtered.filter(t => !t.done).sort(byNewest);
+  const done     = filtered.filter(t => t.done).sort(byNewest);
   const el = document.getElementById('todo-list');
 
   if (!filtered.length) {
@@ -277,23 +300,27 @@ function renderTodos() {
     return;
   }
 
-  const renderItems = (items) => items.map(t => `
+  const renderItems = (items) => items.map(t => {
+    const q = QUADRANTS[t.quadrant || 'q2'];
+    return `
     <div class="todo-item ${t.done ? 'done' : ''}">
-      <div class="todo-check" onclick="toggleTodo(${t.id})">
+      <div class="todo-check" onclick="event.stopPropagation();toggleTodo(${t.id})">
         ${t.done ? '✅' : '<span class="check-circle"></span>'}
       </div>
-      <div class="todo-body">
+      <div class="todo-body" onclick="showTodoDetail(${t.id})">
         <div class="todo-text">${t.text}</div>
         <div class="todo-meta">
           <span class="priority-tag p-${t.priority}">${{high:'🔴 สำคัญ',medium:'🟡 ปานกลาง',low:'🟢 เบา'}[t.priority]}</span>
+          <span class="quadrant-tag ${q.cls}">${q.label}</span>
           <span class="todo-cat">${t.category}</span>
           <span class="todo-date">${fmt(t.created)}</span>
         </div>
       </div>
       <div class="todo-actions">
-        <button class="btn-icon" onclick="deleteTodo(${t.id})">🗑</button>
+        <button class="btn-icon" onclick="event.stopPropagation();deleteTodo(${t.id})">🗑</button>
       </div>
-    </div>`).join('');
+    </div>`;
+  }).join('');
 
   let html = '';
   if (pending.length) {
@@ -312,10 +339,88 @@ function setTodoFilter(cat) {
   renderTodos();
 }
 
+function setTodoQuadrantFilter(q) {
+  todoQuadrantFilter = q;
+  renderTodos();
+}
+
 function clearDoneTodos() {
   todos = todos.filter(t => !t.done);
   saveTodos();
   renderTodos();
+}
+
+// ── TODO DETAIL / EDIT PANEL ──
+function showTodoDetail(id) {
+  const t = todos.find(x => x.id === id);
+  if (!t) return;
+
+  const catOptions = ['🎯 Strategy','💡 Creative','🌿 Life & Health','🔧 Dev & Tech','💰 Finance','🔍 Research','📝 Memory','📌 General'];
+
+  document.getElementById('todo-detail-body').innerHTML = `
+    <div class="todo-detail-field">
+      <label>📝 รายละเอียดงาน</label>
+      <textarea class="diary-ta" id="td-text" style="height:90px">${t.text}</textarea>
+    </div>
+    <div class="todo-detail-field">
+      <label>📂 ประเภทงาน</label>
+      <select class="inp" id="td-cat">
+        ${catOptions.map(c => `<option value="${c}" ${t.category === c ? 'selected' : ''}>${c}</option>`).join('')}
+      </select>
+    </div>
+    <div class="todo-detail-field">
+      <label>⚡ ความสำคัญ</label>
+      <select class="inp" id="td-priority">
+        <option value="high"   ${t.priority === 'high'   ? 'selected' : ''}>🔴 สำคัญ</option>
+        <option value="medium" ${t.priority === 'medium' ? 'selected' : ''}>🟡 ปานกลาง</option>
+        <option value="low"    ${t.priority === 'low'    ? 'selected' : ''}>🟢 เบา</option>
+      </select>
+    </div>
+    <div class="todo-detail-field">
+      <label>🧭 หมวด Eisenhower Matrix</label>
+      <select class="inp" id="td-quadrant">
+        ${Object.entries(QUADRANTS).map(([key, q]) => `<option value="${key}" ${ (t.quadrant || 'q2') === key ? 'selected' : ''}>${q.label} — ${q.desc}</option>`).join('')}
+      </select>
+    </div>
+    <div class="todo-detail-field">
+      <label>✅ สถานะ</label>
+      <label class="todo-done-toggle">
+        <input type="checkbox" id="td-done" ${t.done ? 'checked' : ''}> ทำเสร็จแล้ว
+      </label>
+    </div>
+    <div class="k-detail-divider"></div>
+    <div class="todo-detail-meta">
+      <span>สร้างเมื่อ: ${fmt(t.created)}</span>
+      ${t.updated ? `<span>อัปเดตล่าสุด: ${fmt(t.updated)}</span>` : ''}
+    </div>
+    <div class="k-detail-actions">
+      <button class="btn btn-ghost btn-sm" onclick="deleteTodo(${t.id})">🗑 ลบงานนี้</button>
+      <button class="btn btn-green btn-sm" onclick="saveTodoDetail(${t.id})">💾 บันทึก</button>
+    </div>
+  `;
+
+  document.getElementById('todo-detail-overlay').classList.add('open');
+  document.getElementById('todo-detail-panel').classList.add('open');
+}
+
+function saveTodoDetail(id) {
+  const t = todos.find(x => x.id === id);
+  if (!t) return;
+  t.text     = document.getElementById('td-text').value.trim() || t.text;
+  t.category = document.getElementById('td-cat').value;
+  t.priority = document.getElementById('td-priority').value;
+  t.quadrant = document.getElementById('td-quadrant').value;
+  t.done     = document.getElementById('td-done').checked;
+  t.updated  = new Date().toISOString();
+  saveTodos();
+  renderTodos();
+  renderHome();
+  closeTodoDetail();
+}
+
+function closeTodoDetail() {
+  document.getElementById('todo-detail-overlay').classList.remove('open');
+  document.getElementById('todo-detail-panel').classList.remove('open');
 }
 
 // ═══════════════════════════════════════════════
