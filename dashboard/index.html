@@ -11,7 +11,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Jed AI OS">
   <link rel="apple-touch-icon" href="images/Jed.png">
-  <link rel="stylesheet" href="style.css?v=20260613e">
+  <link rel="stylesheet" href="style.css?v=20260614a">
 </head>
 <body>
 
@@ -44,7 +44,7 @@
 
   <div class="nav-section" style="margin-top:12px">Team</div>
   <div class="nav-item" data-page="team" onclick="navigate('team')"><span class="nav-icon">👥</span> Agents</div>
-  <div class="nav-item" onclick="navigate('team');setTimeout(()=>switchTab('pipeline'),50)"><span class="nav-icon">🔀</span> Pipeline</div>
+  <div class="nav-item" onclick="navigate('team');setTimeout(()=>switchTab('pipeline'),50)"><span class="nav-icon">🔀</span> Org Chart</div>
 
   <div class="sidebar-spacer"></div>
   <div class="sidebar-copyright">© 2026 · Jed's AI OS</div>
@@ -403,21 +403,21 @@
 
 </main>
 
-<!-- ── MODAL ── -->
-<div class="modal-overlay" id="modal-overlay" onclick="if(event.target===this)closeModal()">
-  <div class="modal">
-    <div class="modal-head">
-      <div>
-        <div class="modal-name" id="modal-name"></div>
-        <div class="modal-role" id="modal-role"></div>
-      </div>
-      <span class="modal-close" onclick="closeModal()">✕</span>
-    </div>
+<!-- ── AGENT BOOK MODAL — เปิดเป็นหน้าหนังสือ ฝั่งซ้ายรูป ฝั่งขวารายละเอียด ── -->
+<div class="book-overlay" id="modal-overlay" onclick="if(event.target===this)closeModal()"></div>
+<div class="book-modal agent-book-modal" id="agent-book-modal">
+  <span class="book-close" onclick="closeModal()">✕</span>
+  <div class="book-page book-page-left">
+    <img id="modal-portrait" src="" alt="">
+    <div class="book-person-name" id="modal-person-name"></div>
+    <div class="modal-role" id="modal-role"></div>
+  </div>
+  <div class="book-page book-page-right">
     <div class="tab-toggle" style="margin-bottom:14px">
       <button class="tab-btn active" id="tab-prompt" onclick="setModalTab('prompt')">📋 Prompt</button>
       <button class="tab-btn" id="tab-char" onclick="setModalTab('character')">🎭 Character</button>
     </div>
-    <div class="modal-body" id="modal-body">กำลังโหลด...</div>
+    <div class="modal-body book-content" id="modal-body">กำลังโหลด...</div>
     <input type="hidden" id="modal-agent-id">
     <textarea class="modal-ta" id="comment-input" placeholder="เพิ่ม comment หรือคำแนะนำ..."></textarea>
     <div style="margin-top:10px">
@@ -445,7 +445,7 @@
   </div>
 </div>
 
-<script src="app.js?v=20260613e"></script>
+<script src="app.js?v=20260614a"></script>
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {

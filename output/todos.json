@@ -73,11 +73,11 @@
   },
   {
     "id": 9,
-    "text": "OHC App: เพิ่มฟีเจอร์ที่ยังขาด + ทดสอบกับผู้ใช้จริง + ทำ export รายงานให้ครบ",
+    "text": "Medic_Station (เดิม OHC App): เปลี่ยนชื่อ project + เติม seed data + ขยาย export Excel เป็น 6 sheet — เสร็จแล้ว",
     "category": "🔧 Dev & Tech",
     "priority": "low",
     "quadrant": "q3",
-    "done": false,
+    "done": true,
     "created": "2026-06-13T01:08:00.000Z"
   },
   {
@@ -88,5 +88,140 @@
     "quadrant": "q3",
     "done": false,
     "created": "2026-06-13T01:09:00.000Z"
+  },
+  {
+    "id": 11,
+    "text": "Medic_Station 🟢: แก้บั๊กปุ่ม \"ดูรายงาน\" ไม่ update ตารางโรค/ยาที่ใช้บ่อยในหน้ารายงาน — ตรวจโค้ดแล้วพบว่า _load() อัปเดตทั้ง 2 ตารางถูกต้องอยู่แล้ว (อาจเคยถูกแก้ไปแล้วในรอบก่อน) — รอ Jed ลองใช้งานจริงยืนยันอีกครั้ง",
+    "category": "🔧 Dev & Tech",
+    "priority": "medium",
+    "quadrant": "q2",
+    "done": true,
+    "created": "2026-06-14T12:00:00.000Z"
+  },
+  {
+    "id": 12,
+    "text": "Medic_Station 🟢: เพิ่มปุ่มช่วงเวลา \"ปีนี้\" และ \"ทั้งหมด\" ในหน้ารายงาน — เสร็จแล้ว",
+    "category": "🔧 Dev & Tech",
+    "priority": "medium",
+    "quadrant": "q2",
+    "done": true,
+    "created": "2026-06-14T12:01:00.000Z"
+  },
+  {
+    "id": 13,
+    "text": "Medic_Station 🟢: แก้ฟอร์ม \"เพิ่มยาใหม่\" ให้ใช้ฟอร์มเดียวกับ \"แก้ไขข้อมูลยา\" + เพิ่มปุ่มบันทึกที่ขาดในฟอร์มแก้ไขยา — ตรวจโค้ดแล้ว MedicineDialog ใช้ฟอร์มเดียวกันและมีปุ่มบันทึกครบทั้ง 2 โหมดอยู่แล้ว",
+    "category": "🔧 Dev & Tech",
+    "priority": "medium",
+    "quadrant": "q2",
+    "done": true,
+    "created": "2026-06-14T12:02:00.000Z"
+  },
+  {
+    "id": 14,
+    "text": "Medic_Station 🟢: เปลี่ยน label \"แผนก\" → \"สังกัด\" ทั้งระบบ — เสร็จแล้ว",
+    "category": "🔧 Dev & Tech",
+    "priority": "medium",
+    "quadrant": "q2",
+    "done": true,
+    "created": "2026-06-14T12:03:00.000Z"
+  },
+  {
+    "id": 15,
+    "text": "Medic_Station 🟢: เพิ่มคอลัมน์ \"ผู้ให้การดูแล\" ใน logbook ประวัติการรักษา (ใส่ค่า manual ก่อนมีระบบ login) — เสร็จแล้ว เพิ่มฟิลด์ caregiver ในฐานข้อมูล + ฟอร์ม + ตาราง + export",
+    "category": "🔧 Dev & Tech",
+    "priority": "medium",
+    "quadrant": "q2",
+    "done": true,
+    "created": "2026-06-14T12:04:00.000Z"
+  },
+  {
+    "id": 16,
+    "text": "Medic_Station 🟡: เพิ่มเลขทะเบียน MN (ปี พ.ศ. 2 หลัก + ลำดับทะเบียน 5 หลัก) auto-gen ในทะเบียนประวัติ — เสร็จแล้ว",
+    "category": "🔧 Dev & Tech",
+    "priority": "medium",
+    "quadrant": "q3",
+    "done": true,
+    "created": "2026-06-14T12:05:00.000Z"
+  },
+  {
+    "id": 17,
+    "text": "Medic_Station 🟡: เพิ่มฟิลด์ \"ยศ\" ในทะเบียนประวัติพนักงาน (นำหน้าชื่อ) — เสร็จแล้ว",
+    "category": "🔧 Dev & Tech",
+    "priority": "medium",
+    "quadrant": "q3",
+    "done": true,
+    "created": "2026-06-14T12:06:00.000Z"
+  },
+  {
+    "id": 18,
+    "text": "Medic_Station 🟡: เพิ่ม checkbox Trauma/Non-trauma + ระบบโรค 8 หมวด ในฟอร์มบันทึกการรักษา — เสร็จแล้ว เพิ่มฟิลด์ is_trauma/disease_systems ในฐานข้อมูล + radio button Trauma/Non-trauma + checkbox 8 หมวดระบบโรค (constants.py: DISEASE_SYSTEMS)",
+    "category": "🔧 Dev & Tech",
+    "priority": "medium",
+    "quadrant": "q3",
+    "done": true,
+    "created": "2026-06-14T12:07:00.000Z"
+  },
+  {
+    "id": 19,
+    "text": "Medic_Station 🟡: เพิ่มระบบรหัสยาตามหมวดระบบโรค (R/U/C/O/I/g/D) ในคลังยา ผูกกับ checkbox ระบบโรค — เสร็จแล้ว เพิ่ม category_code ในตารางยา + dropdown หมวดในฟอร์มยา + เรียงลำดับยาที่ตรงหมวดโรคที่เลือกขึ้นก่อนในหน้าจ่ายยา",
+    "category": "🔧 Dev & Tech",
+    "priority": "medium",
+    "quadrant": "q3",
+    "done": true,
+    "created": "2026-06-14T12:08:00.000Z"
+  },
+  {
+    "id": 20,
+    "text": "Medic_Station 🟡: ตารางทะเบียนประวัติหน้าแรกโชว์ 5 รายการ + เลื่อนดูรายการที่เหลือแบบสไลด์ — เสร็จแล้ว จำกัด Treeview height=5 แถว ค้นหาแล้วเลื่อนดูเพิ่มเองได้ (ไม่ใช่ auto-carousel ตามที่ Jed ยืนยัน)",
+    "category": "🔧 Dev & Tech",
+    "priority": "medium",
+    "quadrant": "q3",
+    "done": true,
+    "created": "2026-06-14T12:09:00.000Z"
+  },
+  {
+    "id": 21,
+    "text": "Medic_Station 🟡: เพิ่ม \"กระดานแจ้งข่าวสาร\" ในพื้นที่ว่างหน้าทะเบียนประวัติ — เสร็จแล้ว เพิ่มตาราง announcements + UI เพิ่ม/ลบข่าวประกาศใต้ตารางทะเบียนประวัติ",
+    "category": "🔧 Dev & Tech",
+    "priority": "medium",
+    "quadrant": "q3",
+    "done": true,
+    "created": "2026-06-14T12:10:00.000Z"
+  },
+  {
+    "id": 22,
+    "text": "Medic_Station 🟡: เพิ่มปุ่ม Export PDF ในหน้ารายงาน + ทำ logbook view กดดู/แก้ไข/ลบประวัติการรักษารายบุคคล — เสร็จแล้ว เพิ่มปุ่ม \"✏️ แก้ไข\" ใน logbook (คืน stock ยาเดิม + บันทึกใหม่ถูกต้อง) และปุ่ม Export PDF ใช้ reportlab + ฟอนต์ Tahoma รองรับภาษาไทย (สรุปสถิติ + โรคที่พบบ่อย + ยาที่ใช้บ่อย) ทดสอบสร้าง PDF จริงสำเร็จ",
+    "category": "🔧 Dev & Tech",
+    "priority": "medium",
+    "quadrant": "q3",
+    "done": true,
+    "created": "2026-06-14T12:11:00.000Z"
+  },
+  {
+    "id": 23,
+    "text": "Medic_Station 🔴: ออกแบบ+ทำระบบ Login (admin/user) + ทะเบียนเจ้าหน้าที่ + ผูก \"ผู้ให้การรักษา\" อัตโนมัติจาก login — ต้องคุยรายละเอียดกับ Jed ก่อนเริ่ม (เก็บรหัสผ่านยังไง, สิทธิ์ admin ทำอะไรได้บ้าง) — caregiver field ใน VisitDialog ถูกเอาออกชั่วคราว รอ login มาเติมอัตโนมัติ",
+    "category": "🔧 Dev & Tech",
+    "priority": "low",
+    "quadrant": "q3",
+    "done": false,
+    "created": "2026-06-14T12:12:00.000Z"
+  },
+  {
+    "id": 24,
+    "text": "Medic_Station: ปรับฟอร์ม \"+ บันทึกการรักษา\" (VisitDialog) 6 จุด — เสร็จแล้ว 1) แถบข้อมูลทะเบียนเป็น 2 บรรทัด MN+ชื่อ(ตัวหนา)/สังกัด-กรุ๊ปเลือด-แพ้ยา(แดงตัวหนาถ้าแพ้)-โรคประจำตัว เหมือนหน้า VisitModule 2) วันที่รักษาเปลี่ยนเป็นปฏิทิน DateEntry (แก้ grab_set ให้กดปฏิทินได้ตอนเปิดใหม่) 3) เอาช่อง \"ผู้ให้การดูแล\" ออกจากฟอร์ม (รอ login) 4) เพิ่ม \"ส่วนสูง\" ใน Vital Signs (เพิ่มคอลัมน์ height ใน visits) 5) เปลี่ยนรหัสระบบโรค \"g\"→\"G\" (Gastrointestinal) ใน constants.py + migration ข้อมูลเดิม 6) ออกแบบ MedPickDialog ใหม่เป็น scrollable list checkbox+จำนวน+วิธีใช้ เลือกได้หลายตัวกดเพิ่มทีเดียว — py_compile + smoke test (new/view/edit visit, MedPickDialog) + เปิด main.py ผ่านหมด ยังไม่ได้ให้ Jed ทดสอบ GUI จริง",
+    "category": "🔧 Dev & Tech",
+    "priority": "medium",
+    "quadrant": "q3",
+    "done": true,
+    "created": "2026-06-15T00:00:00.000Z"
+  },
+  {
+    "id": 25,
+    "text": "Medic_Station คลังยา: 1) เปลี่ยนรหัสยาจาก M001-M008 เป็นรูปแบบ <หมวด>-NNN ตามระบบโรค (R/C/G/U/O/I/D/M) — migration auto-run ใน database.py (next_medicine_code) + อัปเดต seed_data.py 2) ฟอร์ม \"เพิ่มยา\" บังคับเลือกหมวดระบบโรคก่อน แล้ว auto-generate รหัสยาต่อจากเดิมในหมวดนั้น (ช่องรหัสยา read-only) 3) ตรวจ logic แจ้งเตือนสต็อกต่ำ (คงเหลือ<=ขั้นต่ำ) มีอยู่แล้วในโค้ด ใช้งานได้ปกติ — py_compile ผ่าน + ทดสอบ GUI จริงผ่าน (เปิด/เลือกหมวด/auto code/validation) — เสร็จแล้ว",
+    "category": "🔧 Dev & Tech",
+    "priority": "low",
+    "quadrant": "q3",
+    "done": true,
+    "created": "2026-06-15T02:00:00.000Z"
   }
 ]

@@ -1165,22 +1165,29 @@ function openModal(id) {
   const a = AGENTS.find(x => x.id === id);
   _modalAgentId = id;
   _modalActiveTab = 'prompt';
-  document.getElementById('modal-name').textContent = a.name;
+  document.getElementById('modal-portrait').src = a.img;
+  document.getElementById('modal-portrait').alt = a.name;
+  document.getElementById('modal-person-name').innerHTML = `${a.name}${a.thai ? ` <span>${a.thai}</span>` : ''}`;
   document.getElementById('modal-role').textContent = a.role;
   document.getElementById('modal-agent-id').value   = id;
   document.getElementById('comment-input').value    = '';
   document.getElementById('modal-overlay').classList.add('open');
+  document.getElementById('agent-book-modal').classList.add('open');
+  document.getElementById('tab-prompt').style.display = 'inline-block';
   setModalTab('prompt');
 }
 
 function openCharModal(id) {
   if (id === 'jed') {
     _modalAgentId = 'jed';
-    document.getElementById('modal-name').textContent = JED.name;
+    document.getElementById('modal-portrait').src = 'images/Jed.png';
+    document.getElementById('modal-portrait').alt = JED.name;
+    document.getElementById('modal-person-name').innerHTML = JED.name;
     document.getElementById('modal-role').textContent = JED.role;
     document.getElementById('modal-agent-id').value   = 'jed';
     document.getElementById('comment-input').value    = '';
     document.getElementById('modal-overlay').classList.add('open');
+    document.getElementById('agent-book-modal').classList.add('open');
     document.getElementById('tab-prompt').style.display = 'none';
     setModalTab('character');
     return;
@@ -1219,6 +1226,7 @@ function setModalTab(tab) {
 
 function closeModal() {
   document.getElementById('modal-overlay').classList.remove('open');
+  document.getElementById('agent-book-modal').classList.remove('open');
   _modalAgentId = null;
 }
 

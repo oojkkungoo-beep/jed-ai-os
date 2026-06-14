@@ -356,41 +356,41 @@
     "topCategory": "🔧 Dev & Tech",
     "tags": [
       "🔧 Dev & Tech",
+      "📝 Memory & Diary",
       "🌿 Life & Health",
-      "🔍 Research",
-      "📝 Memory & Diary"
+      "🔍 Research"
     ],
-    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (41%) — รอ Sage สรุปท้ายวัน",
+    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (36%) — รอ Sage สรุปท้ายวัน",
     "categories": [
       {
         "name": "🔧 Dev & Tech",
-        "count": 236,
-        "pct": 41
-      },
-      {
-        "name": "🌿 Life & Health",
-        "count": 80,
-        "pct": 14
-      },
-      {
-        "name": "🔍 Research",
-        "count": 59,
-        "pct": 10
+        "count": 481,
+        "pct": 36
       },
       {
         "name": "📝 Memory & Diary",
-        "count": 52,
-        "pct": 9
+        "count": 230,
+        "pct": 17
+      },
+      {
+        "name": "🌿 Life & Health",
+        "count": 135,
+        "pct": 10
+      },
+      {
+        "name": "🔍 Research",
+        "count": 132,
+        "pct": 10
       },
       {
         "name": "💡 Creative & Content",
-        "count": 49,
+        "count": 124,
         "pct": 9
       },
       {
         "name": "🤖 System & Setup",
-        "count": 46,
-        "pct": 8
+        "count": 119,
+        "pct": 9
       }
     ],
     "tasks": [
@@ -470,5 +470,78 @@
       "Jed AI OS Dashboard"
     ],
     "auto": false
+  },
+  {
+    "id": 13,
+    "date": "14 มิถุนายน 2569",
+    "topCategory": "🌿 Life & Health",
+    "tags": [
+      "🌿 Life & Health",
+      "🎯 Strategy",
+      "📝 Memory & Diary"
+    ],
+    "summary": "Atlas เขียน reflection ส่วนตัวให้ Jed ในมุม CEO Coach — ชี้ pattern operator-to-architect, ตั้งคำถามท้าทาย 3 ข้อ, เสนอ momentum แรก (ถ่ายรูป NursePant)",
+    "categories": [],
+    "tasks": [],
+    "details": "Jed ขอให้ Atlas เขียนถึงตัวเองแบบ reflective (ไม่ใช่ task งาน) — บันทึกที่ output/decisions/2026-06-14-atlas-reflection-ceo-lens.md และต่อเข้า diary วันนี้",
+    "relatedProjects": [],
+    "auto": false
+  },
+  {
+    "id": 14,
+    "date": "15 มิถุนายน 2569",
+    "topCategory": "🔧 Dev & Tech",
+    "tags": [
+      "🔧 Dev & Tech",
+      "📝 Memory & Diary",
+      "🔍 Research",
+      "🌿 Life & Health"
+    ],
+    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (40%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 127,
+        "pct": 40
+      },
+      {
+        "name": "📝 Memory & Diary",
+        "count": 78,
+        "pct": 25
+      },
+      {
+        "name": "🔍 Research",
+        "count": 33,
+        "pct": 10
+      },
+      {
+        "name": "🌿 Life & Health",
+        "count": 25,
+        "pct": 8
+      },
+      {
+        "name": "⚖️ Decision",
+        "count": 22,
+        "pct": 7
+      },
+      {
+        "name": "🤖 System & Setup",
+        "count": 16,
+        "pct": 5
+      }
+    ],
+    "tasks": [
+      "[Sage] บันทึก diary วันนี้เพิ่มเรียบร้อยแล้วครับ สรุปสั้นๆ session นี้:",
+      "ทำเสร็จ: Medic_Station กลุ่ม 🟡 (todo id 16-22) ครบทั้ง 7 ข้อ",
+      "ปุ่มแก้ไข logbook + Export PDF (รองรับภาษาไทย, ทดสอบสร้างไฟล์จริงสำเร็จ)",
+      "ทุกไฟล์ผ่าน py_compile และ output/todos.json อัปเดต done ครบแล้ว — รายละเอียดบันทึกไว้ใน output/diary/2026-06-14.md",
+      "Jed ทดสอบ GUI จริง (ยังไม่ได้เปิดแอปทดสอบ)",
+      "ก่อนเริ่ม 🔴 #23 (ระบบ Login) ต้องคุยรายละเอียดกับ Jed ก่อน (เก็บรหัสผ่านยังไง, สิทธิ์ admin)",
+      "[Laura] รับทราบค่ะ Jed กำลังทดสอบ Medic_Station GUI อยู่ — Laura รออยู่ตรงนี้ค่ะ ถ้าเจอบั๊กหรือมีอะไรอยากให้แก้/เพิ่ม แจ",
+      "* เปลี่ยนปุ่ม Action จากคำว่า \"+เพิ่มพนักงาน\" เป็น \"+เพิ่มทะเบียนประวัติ\""
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
   }
 ]

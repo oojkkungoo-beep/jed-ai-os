@@ -1267,6 +1267,16 @@ hr.divider { border: none; border-top: 1px solid var(--border); margin: 28px 0; 
   .book-page-left img { max-width: 120px; }
 }
 
+/* ── AGENT BOOK MODAL — ใช้โครงเดียวกับ diary book ── */
+.agent-book-modal { max-width: 900px; height: 82vh; max-height: 660px; }
+.agent-book-modal .book-page-left .modal-role { margin-top: -10px; }
+.agent-book-modal .book-content { margin-bottom: 12px; }
+.agent-book-modal textarea.modal-ta { margin-top: 8px; }
+
+@media (max-width: 720px) {
+  .agent-book-modal { flex-direction: column; height: 90vh; }
+}
+
 /* ══ RESPONSIVE ══ */
 
 /* Tablet / small desktop — sidebar shrinks to icons only, stays on the left */
