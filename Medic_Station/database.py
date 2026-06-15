@@ -75,6 +75,19 @@ class Database:
                 message TEXT NOT NULL,
                 created_at TEXT DEFAULT (datetime('now','localtime'))
             );
+
+            CREATE TABLE IF NOT EXISTS users (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                username TEXT UNIQUE NOT NULL,
+                password TEXT NOT NULL,
+                display_name TEXT DEFAULT '',
+                role TEXT DEFAULT 'user',
+                created_at TEXT DEFAULT (datetime('now','localtime'))
+            );
+        """)
+        self.conn.execute("""
+            INSERT OR IGNORE INTO users (username, password, display_name, role)
+            VALUES ('admin', 'admin1234', 'ผู้ดูแลระบบ', 'admin')
         """)
         self.conn.commit()
         self._migrate()

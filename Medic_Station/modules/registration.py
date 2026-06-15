@@ -68,6 +68,9 @@ class RegistrationModule(ctk.CTkFrame):
         self._load()
         self._load_announcements()
 
+    def _is_admin(self):
+        return bool(self.app and self.app.current_user and self.app.current_user.get("role") == "admin")
+
     def _build_announcements(self):
         board = ctk.CTkFrame(self, fg_color="white", corner_radius=8)
         board.pack(fill="both", expand=True, padx=15, pady=(5, 15))
@@ -76,6 +79,15 @@ class RegistrationModule(ctk.CTkFrame):
         header.pack(fill="x", padx=15, pady=(10, 5))
         ctk.CTkLabel(header, text="📰 กระดานแจ้งข่าวสาร",
                      font=app_font(15, "bold")).pack(side="left")
+
+        if self._is_admin():
+            add_frame = ctk.CTkFrame(board, fg_color="transparent")
+            add_frame.pack(fill="x", padx=15, pady=(0, 5))
+            self.news_entry = ctk.CTkEntry(add_frame, placeholder_text="พิมพ์ข่าวสาร/ประกาศที่นี่...")
+            self.news_entry.pack(side="left", fill="x", expand=True, padx=(0, 8))
+            self.news_entry.bind("<Return>", lambda e: self._add_announcement())
+            ctk.CTkButton(add_frame, text="+ เพิ่มข่าวสาร", width=110,
+                          command=self._add_announcement).pack(side="left")
 
         self.news_list = ctk.CTkScrollableFrame(board, fg_color="transparent")
         self.news_list.pack(fill="both", expand=True, padx=10, pady=(0, 10))
@@ -94,8 +106,17 @@ class RegistrationModule(ctk.CTkFrame):
                          wraplength=700, justify="left").pack(side="left", fill="x", expand=True, padx=10, pady=8)
             ctk.CTkLabel(row, text=to_display(r["created_at"][:10]), text_color="gray",
                          font=app_font(14)).pack(side="left", padx=5)
-            ctk.CTkButton(row, text="ลบ", width=45, fg_color="#e74c3c", hover_color="#c0392b",
-                          command=lambda i=r["id"]: self._delete_announcement(i)).pack(side="right", padx=5)
+            if self._is_admin():
+                ctk.CTkButton(row, text="ลบ", width=45, fg_color="#e74c3c", hover_color="#c0392b",
+                              command=lambda i=r["id"]: self._delete_announcement(i)).pack(side="right", padx=5)
+
+    def _add_announcement(self):
+        msg = self.news_entry.get().strip()
+        if not msg:
+            return
+        self.db.execute("INSERT INTO announcements (message) VALUES (?)", (msg,))
+        self.news_entry.delete(0, "end")
+        self._load_announcements()
 
     def _delete_announcement(self, ann_id):
         self.db.execute("DELETE FROM announcements WHERE id=?", (ann_id,))

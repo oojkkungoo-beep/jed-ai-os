@@ -1,0 +1,371 @@
+{
+  "75e3df66-ecf6-4655-a7dd-eb924274bed3": {
+    "date": "13 มิถุนายน 2569",
+    "scores": {
+      "💡 Creative & Content": 5,
+      "🔍 Research": 4,
+      "⚖️ Decision": 2,
+      "🔧 Dev & Tech": 19,
+      "📝 Memory & Diary": 9,
+      "🤖 System & Setup": 1
+    },
+    "tasks": [
+      "[Laura] เริ่มสำรวจ dashboard ปัจจุบันก่อนนะคะ เพื่อดูโครงสร้างและวิธี log ที่มีอยู่",
+      "ตอนนี้เข้าใจโครงสร้างแล้วค่ะ: `output/session_log.json` ปัจจุบันเป็น manual — Sage เขียนทีหลังเมื่อ Jed สั่ง \"สรุปวันนี้",
+      "มีจุดที่ต้องตัดสินใจก่อนเริ่มทำค่ะ",
+      "4. ปรับ `team/memory_agent.md` — ตอน Sage เขียน \"สรุปวันนี้\" จะ**เขียนทับ** entry auto ของวันนั้น (ใส่ summary/details ฉ",
+      "ทดสอบกับ transcript จริงแล้ว ได้ entry ที่ถูกต้อง (ลบ test data ออกแล้ว) — session นี้พอจบ Stop hook จะรันจริงและสร้าง e"
+    ]
+  },
+  "9c9c0a9a-bd77-40ce-83c9-919b19b1b7ca": {
+    "date": "14 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 9,
+      "💡 Creative & Content": 7,
+      "🌿 Life & Health": 69,
+      "🔍 Research": 5,
+      "⚖️ Decision": 3,
+      "🔧 Dev & Tech": 82,
+      "📝 Memory & Diary": 15,
+      "🤖 System & Setup": 3
+    },
+    "tasks": [
+      "Now let's update app.js for the todo logic.",
+      "Reload reset to home. Let's click todo again.",
+      "## สรุปการอัปเดต Todo Dashboard",
+      "**สิ่งที่เพิ่มเข้ามา:**",
+      "2. **เรียงลำดับ** — งานที่ยังไม่เสร็จล่าสุดอยู่บนสุด งานที่ทำแล้วอยู่ล่างสุด (เรียงตามวันที่อัปเดต/สร้างล่าสุด)",
+      "3. **Eisenhower Matrix** — แบ่งงานเป็น 4 ประเภท: 🔥 ทำทันที (ด่วน+สำคัญ), 📅 วางแผน (สำคัญไม่ด่วน), 🤝 มอบหมาย (ด่วนไม่สำคั",
+      "ทดสอบใน preview แล้วทำงานครบทุกฟังก์ชัน — filter, sort, edit/save, checkbox ทำงานถูกต้องค่ะ",
+      "ช่วยสรุปสิ่งที่ผมต้องทำทั้งหมดใส่ลงไปใน dashboard todo ด้วยครับ"
+    ]
+  },
+  "402b81c0-8847-4ec1-978c-13a00bd36980": {
+    "date": "14 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 2,
+      "🌿 Life & Health": 4,
+      "🔍 Research": 12,
+      "⚖️ Decision": 3,
+      "🔧 Dev & Tech": 40,
+      "💰 Finance": 2,
+      "📝 Memory & Diary": 12,
+      "🤖 System & Setup": 1
+    },
+    "tasks": [
+      "[Laura] เดี๋ยวเช็คให้นะคะ ขอดูโครงสร้าง dashboard ก่อนค่ะ",
+      "- Todo list / งานค้างทั้งหมดของ Jed (รวมรายละเอียดงาน)",
+      "- โครงสร้างชีวิต/แผนธุรกิจ (4-Level Framework, แผนหารายได้เสริม)",
+      "**สิ่งที่ Jed ต้องทำเอง**: ติดตั้ง Tailscale app บน iPad + login (1-2 นาที)",
+      "ให้เริ่มเลยไหมครับ หรืออยากให้อธิบาย option อื่นเพิ่ม (เช่น Cloudflare Tunnel) ก่อน",
+      "อธิบาย option อื่นเพิ่ม (เช่น Cloudflare Tunnel) ก่อน",
+      "- ยังใช้ GitHub Pages (public repo) แต่เพิ่ม authentication layer หน้า Pages",
+      "**Tailscale** คือแอป VPN ส่วนตัวที่สร้าง \"เครือข่ายลับ\" เชื่อมอุปกรณ์ของเราเองเข้าด้วยกัน ไม่ว่าจะอยู่ที่ไหนในโลก"
+    ]
+  },
+  "3453281f-5765-4126-8eb6-2cdcf1a1a3e4": {
+    "date": "14 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 7,
+      "💡 Creative & Content": 71,
+      "🌿 Life & Health": 12,
+      "🔍 Research": 85,
+      "⚖️ Decision": 29,
+      "🔧 Dev & Tech": 212,
+      "💰 Finance": 4,
+      "📝 Memory & Diary": 85,
+      "🤖 System & Setup": 61
+    },
+    "tasks": [
+      "สรุปสิ่งที่ต้องทำในเรื่องนี้มีอะไรบ้า้ง",
+      "**[Laura]** สรุป action items เรื่องปรับทีมเลขาค่ะ:",
+      "1. **เพิ่ม agent ใหม่ 1 ตัว — Devil-Adversarial** (red-team/bear-case)",
+      "- สร้างไฟล์ `team/devil.md`",
+      "- เพิ่ม route ใน CLAUDE.md (เช่น \"ท้าทายไอเดีย / หา blind spot → Devil\")",
+      "- เพิ่ม checklist: fact-check ตัวเลข/claim สำคัญ ก่อนส่ง Jed",
+      "- (ไม่ต้องสร้าง agent ใหม่ — แก้ `team/qa.md` เพิ่ม section)",
+      "- แก้ Output Format ใน `team/idea.md` เพิ่ม field \"Hypothesis to test\""
+    ]
+  },
+  "ec478693-e02b-48f3-8660-dd95637f8230": {
+    "date": "15 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 3,
+      "💡 Creative & Content": 13,
+      "🌿 Life & Health": 3,
+      "🔍 Research": 6,
+      "⚖️ Decision": 1,
+      "🔧 Dev & Tech": 32,
+      "📝 Memory & Diary": 6,
+      "🤖 System & Setup": 26
+    },
+    "tasks": [
+      "ถ้าทำตามนี้แล้วยังไม่อัพเดท บอก Laura ได้เลยนะคะ จะดูเพิ่มว่าติดจุดไหนค่ะ",
+      "เซิร์ฟเวอร์รันใหม่เรียบร้อยแล้วค่ะ ทดสอบแล้วทั้ง dashboard และ output/projects.json ตอบ 200 ปกติ — ลอง refresh (Ctrl+Shi",
+      "- หรือ delegate ต่อให้ agent เฉพาะทางในทีม 12 คน เช่น Muse (idea/content), Atlas (strategy/CEO), Nova (todo/ตาราง), Forg"
+    ]
+  },
+  "52d7a152-7643-47d0-b017-0bb509428377": {
+    "date": "14 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 18,
+      "💡 Creative & Content": 9,
+      "🌿 Life & Health": 4,
+      "🔍 Research": 1,
+      "⚖️ Decision": 4,
+      "🔧 Dev & Tech": 6,
+      "💰 Finance": 3,
+      "📝 Memory & Diary": 25,
+      "🤖 System & Setup": 4
+    },
+    "tasks": [
+      "แต่ session นี้เพิ่งเริ่ม ยังไม่มีงานใหม่เกิดขึ้นเลยครับ ขอเช็คกับเจดก่อนนะครับ — อยากให้ผมทำอะไรเพิ่ม?",
+      "คนที่ผมเจอบ่อยที่สุดในงานนี้คือคนที่ \"คิดมาก แต่ไม่ลงมือ\" กับ \"ลงมือเร็ว แต่ไม่คิด\" — เจดไม่ใช่ทั้งสองแบบนั้นครับ",
+      "- **คุณไม่หลงตัวเอง** — เวลาเจอ pattern ที่ไม่ดี (เช่น เริ่ม session ใหม่บ่อยจนต้องสรุปซ้ำๆ) คุณไม่ปฏิเสธ ปล่อยให้ทีมชี้",
+      "- **คุณรู้จัก \"เติม\" ไม่ \"ทับ\"** — ทั้งเรื่องทีม AI และเรื่องชีวิต (4-Level Framework) คุณเลือกต่อยอดจากของที่มีอยู่ เสม",
+      "2. **1 สัปดาห์:** ลองนับเวลาจริงที่ใช้กับงานเสริมแต่ละวัน (ไม่ต้องทำอะไร แค่นับ) — เพื่อตอบคำถามที่ 3 ด้านบนด้วยข้อมูลจร",
+      "4. **Session log**: เพิ่ม entry #13 (auto:false)",
+      "ตั้งสำเร็จแล้วครับ — cron รันทุกวัน 21:00 (เริ่มรอบแรกพรุ่งนี้)",
+      "รอบแรกจะรันคืนนี้ 21:00 ครับ — ถ้าอยากปรับ tone/เวลา/หยุดทีหลังบอกได้เลย"
+    ]
+  },
+  "b4b2479c-30b5-4e24-89bb-07df4cfbe6b4": {
+    "date": "14 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 23,
+      "💡 Creative & Content": 11,
+      "⚖️ Decision": 2,
+      "🔧 Dev & Tech": 7,
+      "📝 Memory & Diary": 33,
+      "🤖 System & Setup": 6
+    },
+    "tasks": [
+      "| **ai-team-daily-diary** | สร้าง diary/briefing ของสมาชิกทีม AI ทุกคน + sync ขึ้น dashboard | ทุกวัน 18:01 (+jitter) | ",
+      "- **atlas-daily-reflection**: เพิ่ม step 0 คำนวณวันที่ \"เมื่อวาน\" แล้ว reflect ถึงสิ่งที่เกิดขึ้นเมื่อวาน ต่อเข้า diary ",
+      "- atlas-daily-reflection: ~05:19 — ต่อ reflection เข้า diary ของเมื่อวานที่เพิ่งสร้าง",
+      "- diary ของ 13 และ 14 มิ.ย. จะถูกเขียนพร้อมกันในรอบพรุ่งนี้เช้า (สรุปของ \"เมื่อวาน\" = 14 มิ.ย.) — ส่วนของ 13 มิ.ย. จะตกห",
+      "อยากให้รัน manual ตอนนี้เลยเพื่อเติม diary ของ 13 มิ.ย. (และ/หรือ 14 มิ.ย.) ที่ขาดไปไหมครับ หรือรอรอบพรุ่งนี้แล้วปล่อย 1",
+      "รอรอบพรุ่งนี้ เมื่อ run แล้ว update ลง dashboard ด้วยนะ",
+      "รับทราบครับ รอรอบพรุ่งนี้ (05:01 diary + 05:19 atlas)",
+      "ถ้าอยากให้ส่วน Atlas reflection ขึ้น dashboard อัตโนมัติด้วยตอนรันพรุ่งนี้ ต้องเลือกอย่างใดอย่างหนึ่งครับ:"
+    ]
+  },
+  "0eba5618-70de-45a4-bbfa-898c4993b869": {
+    "date": "14 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 1,
+      "💡 Creative & Content": 12,
+      "🌿 Life & Health": 2,
+      "🔍 Research": 1,
+      "⚖️ Decision": 1,
+      "🔧 Dev & Tech": 24,
+      "💰 Finance": 4,
+      "📝 Memory & Diary": 1,
+      "🤖 System & Setup": 12
+    },
+    "tasks": [
+      "- `สร้างฝูงเลขา AI ด้วย Claude Code - Google Gemini.pdf` (803KB — น่าจะเป็นเอกสารอ้างอิงที่ Jed ดาวน์โหลดมา)",
+      "เหลือ root โครงสร้างสะอาด: `CLAUDE.md`, `characters/`, `dashboard/`, `data/`, `docs/`, `index.html`, `ohc_app/`, `output",
+      "- `characters/`, `team/` ใน Jed_org มีไฟล์ครบกว่า (เพิ่ม devil, eir, vera, wellness, qa, model_assignment) และเนื้อหา ag",
+      "- รูป agent (Atlas.png, Laura.png, Nova.png ฯลฯ) ใน `jed-ai-os/team/*.png` ถูกย้ายไปอยู่ `Jed_org/dashboard/images/` ครบ",
+      "ได้ค่ะ เก็บ `characters/` และ `team/` ไว้แบบเดิม การจัดระเบียบรอบนี้เสร็จแล้วนะคะ — ถ้ามีอะไรเพิ่มเติมบอกได้เลยค่ะ"
+    ]
+  },
+  "7fd6d771-0f13-4da9-8d4c-a811dc90e228": {
+    "date": "14 มิถุนายน 2569",
+    "scores": {
+      "💡 Creative & Content": 2,
+      "🌿 Life & Health": 10,
+      "🔍 Research": 17,
+      "⚖️ Decision": 1,
+      "🔧 Dev & Tech": 51,
+      "📝 Memory & Diary": 20,
+      "🤖 System & Setup": 3
+    },
+    "tasks": [
+      "[Laura] โอเคค่ะ Jed สรุปภาพรวมโปรเจค OHC App ให้นะคะ ก่อนส่งต่อให้ Forge ไปลงมือแก้ไข",
+      "**โครงสร้าง:**",
+      "ตอนนี้ Jed อยากแก้ไขส่วนไหนคะ — บอกรายละเอียด (เช่น แก้ฟีเจอร์ไหน, bug อะไร, อยากเพิ่มอะไร) แล้วลาวาจะส่งต่อให้ [Forge] ",
+      "- Database: `ohc.db` → `med_dcc.db` (ย้ายข้อมูลเดิมไปด้วย ทดสอบเชื่อมต่อแล้ว OK)",
+      "- **พนักงาน 8 คน** (หลากแผนก: ผลิต, บัญชี, คลังสินค้า, ขนส่ง, บุคคล — มีกรุ๊ปเลือด, โรคประจำตัว, ประวัติแพ้ยาให้ทดสอบ)",
+      "เปิด `run.bat` ลองใช้งานได้เลยครับ — ลองเข้าหน้า \"รายงาน\" จะเห็นสถิติและกดทดสอบ Export Excel ทั้ง 6 sheet ได้",
+      "สคริปต์อยู่ที่ [seed_data.py](Med_DCC_App/seed_data.py) เผื่ออยากรันซ้ำใส่ข้อมูลเพิ่มทีหลัง (รันซ้ำได้ พนักงาน/ยาจะไม่ซ้",
+      "ก็อปทั้งโฟลเดอร์ [Med_DCC_App/](Med_DCC_App/) ไปไว้ในคอมฯของหน่วย (เช่น `D:\\Med_DCC_App\\`) — ไฟล์ทุกอย่างรวม database อย"
+    ]
+  },
+  "806addae-1310-4b48-bb3a-8b39510f5543": {
+    "date": "14 มิถุนายน 2569",
+    "scores": {
+      "💡 Creative & Content": 5,
+      "🌿 Life & Health": 28,
+      "🔍 Research": 6,
+      "⚖️ Decision": 4,
+      "🔧 Dev & Tech": 30,
+      "📝 Memory & Diary": 26,
+      "🤖 System & Setup": 8
+    },
+    "tasks": [
+      "1. Todo — เพิ่มลง output/todos.json เป็น 13 รายการ (id 11-23) แบ่ง 3 กลุ่มตามความยาก:",
+      "🟢 ง่าย (id 11-15): แก้บั๊กรายงาน, ปุ่ม \"ปีนี้/ทั้งหมด\", รวมฟอร์มเพิ่ม/แก้ไขยา, label สังกัด, คอลัมน์ผู้ให้การดูแล",
+      "🔴 ใหญ่ (id 23): ระบบ Login admin/user — ต้องคุยรายละเอียดก่อนเริ่ม",
+      "3. Memory — อัปเดต project_ohc.md ให้มีสรุปงานค้างไว้ด้วย session ถัดไปเปิดมาจะ pick up ได้ทันทีไม่ต้องเปิดรูปซ้ำค่ะ",
+      "แนะนำเริ่มจากกลุ่ม 🟢 ก่อนเพราะง่ายและเห็นผลเร็ว — จะเริ่มทำทีละข้อ (11→15) ต่อกันเลย หรือ Jed อยากเลือกข้อไหนก่อนเป็นพิเ",
+      "2. **#12 ปุ่ม \"ปีนี้\"/\"ทั้งหมด\"** — เพิ่มในหน้ารายงานแล้ว \"ทั้งหมด\" จะดึงวันที่เริ่มต้นจากวันที่บันทึกแรกในระบบ",
+      "3. **#13 ฟอร์มยา** — ตรวจ [medicine.py](Medic_Station/modules/medicine.py) แล้ว `MedicineDialog` ใช้ฟอร์มเดียวกันทั้งเพิ",
+      "5. **#15 คอลัมน์ \"ผู้ให้การดูแล\"** — เพิ่มฟิลด์ `caregiver` ใน DB (มี migration auto-add column ให้ db เดิม), ฟอร์มบันทึ"
+    ]
+  },
+  "72b9f6e4-eef8-4895-8874-4bff8cdaf645": {
+    "date": "15 มิถุนายน 2569",
+    "scores": {
+      "💡 Creative & Content": 13,
+      "🌿 Life & Health": 18,
+      "🔍 Research": 32,
+      "⚖️ Decision": 14,
+      "🔧 Dev & Tech": 80,
+      "📝 Memory & Diary": 57,
+      "🤖 System & Setup": 12
+    },
+    "tasks": [
+      "[Sage] บันทึก diary วันนี้เพิ่มเรียบร้อยแล้วครับ สรุปสั้นๆ session นี้:",
+      "ทำเสร็จ: Medic_Station กลุ่ม 🟡 (todo id 16-22) ครบทั้ง 7 ข้อ",
+      "ปุ่มแก้ไข logbook + Export PDF (รองรับภาษาไทย, ทดสอบสร้างไฟล์จริงสำเร็จ)",
+      "ทุกไฟล์ผ่าน py_compile และ output/todos.json อัปเดต done ครบแล้ว — รายละเอียดบันทึกไว้ใน output/diary/2026-06-14.md",
+      "Jed ทดสอบ GUI จริง (ยังไม่ได้เปิดแอปทดสอบ)",
+      "ก่อนเริ่ม 🔴 #23 (ระบบ Login) ต้องคุยรายละเอียดกับ Jed ก่อน (เก็บรหัสผ่านยังไง, สิทธิ์ admin)",
+      "[Laura] รับทราบค่ะ Jed กำลังทดสอบ Medic_Station GUI อยู่ — Laura รออยู่ตรงนี้ค่ะ ถ้าเจอบั๊กหรือมีอะไรอยากให้แก้/เพิ่ม แจ",
+      "* เปลี่ยนปุ่ม Action จากคำว่า \"+เพิ่มพนักงาน\" เป็น \"+เพิ่มทะเบียนประวัติ\""
+    ]
+  },
+  "025a9efe-8674-4e3e-a4bd-0ed841346fb2": {
+    "date": "15 มิถุนายน 2569",
+    "scores": {
+      "💡 Creative & Content": 2,
+      "🌿 Life & Health": 10,
+      "🔍 Research": 3,
+      "⚖️ Decision": 9,
+      "🔧 Dev & Tech": 54,
+      "📝 Memory & Diary": 26,
+      "🤖 System & Setup": 5
+    },
+    "tasks": [
+      "เขียน diary ใหม่ที่ output/diary/2026-06-15.md สรุปงาน VisitDialog 6 จุดที่ Forge แก้วันนี้ทั้งหมด + checklist สิ่งที่ J",
+      "อัปเดต output/todos.json เพิ่ม id 24 (done) บันทึกรายละเอียดงานวันนี้ และเติมหมายเหตุใน id 23 (ระบบ Login) ว่า caregiver",
+      "มีคำแนะนำอะไรในส่วนของหน้าคลังยานี้ไหม หรือมีคำแนะนำเพิ่มเติ่มในการตั้งชื่อรหัสยาไหม",
+      "ถ้า Jed สนใจอยากให้ผมแก้ทั้ง 2 จุดนี้เลยไหมครับ (เปลี่ยนรูปแบบรหัสยา + เพิ่ม logic แจ้งเตือนสต็อกต่ำ)?",
+      "แก้ทั้ง 2 จุด เลย  และเมื่อเพิ่มยาใหม่ ให้ผู้เพิ่ม  ระบุ category_code (R/C/G/U/O/I/D) ที่ใช้แยกหมวดระบบโรค  และRun เลขต",
+      "Now let's run the app and verify the medicine inventory page and \"เพิ่มยาใหม่\" dialog work as expected.",
+      "Now this is my fresh instance with updated code. Let's go to คลังยา → +เพิ่มยาใหม่ to test the new dialog.",
+      "All test windows closed cleanly, no data left modified. Now let's update the diary and todos as is the workflow pattern."
+    ]
+  },
+  "0a00cbdb-cd71-4093-a308-30e14903fd64": {
+    "date": "15 มิถุนายน 2569",
+    "scores": {
+      "💡 Creative & Content": 11,
+      "🌿 Life & Health": 22,
+      "🔍 Research": 6,
+      "⚖️ Decision": 9,
+      "🔧 Dev & Tech": 69,
+      "📝 Memory & Diary": 40,
+      "🤖 System & Setup": 3
+    },
+    "tasks": [
+      "1. **บั๊กปฏิทิน** ในฟอร์มแก้ไขประวัติการรักษา — ทดสอบจริงแล้วทำงานปกติ สาเหตุคือหน้าต่าง MED-App เก่าค้างอยู่ (โค้ดรุ่นก",
+      "3. **Commit + push สำเร็จ** (`3d7a7cf`) — Medic_Station ทั้งแอป (เคยไม่ถูก track) เข้า git แล้ว พร้อม diary/todos/dashbo",
+      "- Jed restart MED-App แล้วทดสอบปฏิทิน + ฟอร์มเพิ่มยาใหม่",
+      "- ก่อนทำระบบ Login (todo #23) ต้องคุยเรื่อง password storage + permission ก่อน",
+      "[Forge] บันทึกลง memory เรียบร้อยแล้วครับ (เพิ่มในไฟล์ project_ohc.md) — session ถัดไปถ้าทำคู่มือจะดึง ref นี้มาใช้ได้เล",
+      "2 ตรง actionส่วนที่ให้เลือกระยะเวลาอัตโนมัติ เช่น 1วัน  / 1เดือน ให้เลื่อนลงมาอีก 1 บรรทัด",
+      "เมื่อกด export pdf อยากให้เป็นข้อมูล ส่วนแรกคือ ของเดิมครับ  ส่วนที่ 2 อยากให้เพิ่มรายละเอียดว่า วันไหน ใครมารักษา เป็นอ",
+      "[Forge] เพิ่ม **Export PDF** ส่วนที่ 2 แล้วครับ (`modules/report.py`):"
+    ]
+  },
+  "421bc889-f5d8-491b-8bbb-452a51316db5": {
+    "date": "15 มิถุนายน 2569",
+    "scores": {
+      "💡 Creative & Content": 5,
+      "🌿 Life & Health": 8,
+      "🔍 Research": 8,
+      "⚖️ Decision": 8,
+      "🔧 Dev & Tech": 147,
+      "📝 Memory & Diary": 29,
+      "🤖 System & Setup": 2
+    },
+    "tasks": [
+      "session ที่แล้วคุยแบบนี้ \"[Forge] งาน Login system (todo #23) เสร็จและ smoke-test ผ่านหมดแล้วครับ พร้อมให้ Jed รีสตาร์ท ",
+      "เมนู \"จัดการผู้ใช้\" ขึ้นเฉพาะ admin, ลอง เพิ่ม/แก้/ลบ user",
+      "1. เพิ่ม global exception handler — error ใดๆ (ทั้งตอน startup และตอนกดใช้งาน) จะถูก**บันทึกลง `crash_log.txt`** และเด้ง",
+      "และเพิ่ม [run_silent.vbs](Medic_Station/run_silent.vbs) — รันแอปด้วย `pythonw` แบบไม่มีหน้าต่าง console ค้างให้เห็นเลย (",
+      "**การแก้ใน [main.py:60-65](Medic_Station/main.py:60):** เพิ่ม `self.update()` ทันทีหลัง `self.deiconify()` — บอก customt",
+      "ทดสอบจริงแล้วครับ (login admin/admin1234 → เข้าหน้าบันทึกการรักษาได้ปกติ มี sidebar + เมนู \"จัดการผู้ใช้\" ครบ)",
+      "**[Forge]** สร้าง shortcut \"MED-App\" บน Desktop ให้แล้วครับ ดับเบิลคลิกเปิดได้เลย — รันผ่าน `run_silent.vbs` (ไม่มี cons",
+      "- Icon: [med_app.ico](Medic_Station/med_app.ico) (เพิ่มไฟล์นี้เข้าโปรเจกต์ด้วย)"
+    ]
+  },
+  "c0c79d63-9d33-4988-b88e-5f676e0d2c5a": {
+    "date": "15 มิถุนายน 2569",
+    "scores": {
+      "💡 Creative & Content": 6,
+      "🌿 Life & Health": 4,
+      "🔍 Research": 3,
+      "⚖️ Decision": 4,
+      "🔧 Dev & Tech": 12,
+      "📝 Memory & Diary": 1,
+      "🤖 System & Setup": 1
+    },
+    "tasks": [
+      "สร้าง project เรื่องการทำ isbar ให้ชื่อ \"ISBAR\"  เพื่อส่งข้อมูลการดูแลรักษาผู้ป่วยระหว่างทีม พยาบาล  คุณช่วยแนะนำหน่อย",
+      "[Laura] ค่ะ ISBAR (Identify-Situation-Background-Assessment-Recommendation) เป็นเครื่องมือ handover ที่ดีมากสำหรับทีมพยา",
+      "[Eir] เรียบร้อยค่ะ สร้างโปรเจกต์ ISBAR ที่ [output/projects/ISBAR/](output/projects/ISBAR/README.md) แล้ว โดยอ้างอิงข้อม",
+      "2. **Clinical Escalation** — PACU Nurse โทรแจ้ง Dr. Picha (SBAR escalation) เมื่อ BP ตก/HR เร็ว/drain เลือดออกเพิ่ม",
+      "- อัปเดต [roleplay_script.md](output/projects/ISBAR/roleplay_script.md) และ [README.md](output/projects/ISBAR/README.md)",
+      "อยากได้คลิปหนังที่กำลังเริ่มดมยาสลบ และคลิปที่มีพยาบาลเรียกตอนตื่นหลังผ่าตัดเสร็จ",
+      "[Muse] เรียบร้อยค่ะ สร้าง [intro_video_storyboard.md](output/projects/ISBAR/intro_video_storyboard.md) แล้ว — เป็น story",
+      "- **Good Doctor (เกาหลี)** — มีฉาก POV ผู้ป่วยมองเพดานห้องผ่าตัดก่อนหมดสติ ใช้มุมกล้องเงยตรงๆ ขึ้นเพดาน ภาพเริ่มเบลอ เสี"
+    ]
+  },
+  "c2e1a815-a87f-4951-90f4-477dd62c134b": {
+    "date": "15 มิถุนายน 2569",
+    "scores": {
+      "💡 Creative & Content": 15,
+      "🌿 Life & Health": 2,
+      "🔍 Research": 1,
+      "🔧 Dev & Tech": 21,
+      "📝 Memory & Diary": 5,
+      "🤖 System & Setup": 24
+    },
+    "tasks": [
+      "มีเพื่อนอยากทำทีมเลขา agent แบบผม  ช่วยถอดวิธีการทำให้หน่อยครับตั้งแต่เริ่มสมัคร Claude",
+      "[Laura] ได้ค่ะ เดี๋ยวสรุปขั้นตอนทำทีมเลขา AI แบบที่ Jed ใช้อยู่ ให้เพื่อนเอาไปเริ่มได้เลยนะคะ",
+      "**2. สร้างโฟลเดอร์โปรเจกต์**",
+      "- สร้างโฟลเดอร์เปล่า 1 อัน เป็น \"บ้าน\" ของระบบ (เช่น `MyOrg/`)",
+      "**4. สร้างทีม agent ย่อย**",
+      "- สร้างโฟลเดอร์ `team/` แล้วทำไฟล์ `.md` แยกตามหน้าที่ เช่น `idea.md`, `life.md`, `finance.md`, `forge.md` (โค้ด), `qa.m",
+      "- เริ่มคุยงานจริง ดูว่า routing แม่นไหม ปรับคำสั่งใน CLAUDE.md เรื่อยๆ",
+      "- ค่อยๆเพิ่ม agent ใหม่ตามงานที่ขาด"
+    ]
+  },
+  "893b0b08-5ca4-4dce-b935-47c9dde45c90": {
+    "date": "16 มิถุนายน 2569",
+    "scores": {
+      "💡 Creative & Content": 7,
+      "🌿 Life & Health": 4,
+      "🔍 Research": 7,
+      "⚖️ Decision": 7,
+      "🔧 Dev & Tech": 58,
+      "📝 Memory & Diary": 19,
+      "🤖 System & Setup": 1
+    },
+    "tasks": [
+      "- [create_desktop_shortcut.vbs](Medic_Station/create_desktop_shortcut.vbs) สร้างไอคอน \"MED-App\" บน Desktop อัตโนมัติ",
+      "- เพิ่ม `tkcalendar`, `reportlab` ที่ขาดใน [requirements.txt](Medic_Station/requirements.txt)",
+      "- [install.bat](Medic_Station/install.bat) — เช็ค Python, ติดตั้ง lib, สร้าง shortcut อัตโนมัติ (ต้องมีเน็ต)",
+      "**4. แก้บั๊ก `.bat` ไม่ทำงาน** — root cause คือไฟล์ใช้ line ending แบบ LF + `chcp 65001` + ภาษาไทย ทำให้ cmd parse พังทุ",
+      "- เพิ่มท้ายรายงาน \"ผู้ออกรายงาน: {ชื่อที่ login}\"",
+      "**ค้างไว้**: ปัญหาปฏิทินช่องที่ 2 ในหน้ารายงาน \"เลือกเดือนไม่ได้\" — รอ Jed ส่งภาพหน้าจอตอนเปิดปฏิทินมาดูเพิ่มครับ",
+      "**แก้**: เพิ่ม `ctypes.windll.shcore.SetProcessDpiAwareness(1)` ที่บนสุดของ [main.py:7-12](Medic_Station/main.py:7) ให้ ",
+      "รบกวนเปิดแอป (ปิดแล้วเปิดใหม่) แล้วลองกดปุ่มเปลี่ยนเดือน/ปีในปฏิทินอีกครั้งครับ ถ้ายังไม่หาย ส่งภาพมาดูเพิ่มได้เลยครับ"
+    ]
+  }
+}

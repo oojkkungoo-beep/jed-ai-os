@@ -494,51 +494,108 @@
     "tags": [
       "🔧 Dev & Tech",
       "📝 Memory & Diary",
-      "🔍 Research",
+      "🤖 System & Setup",
       "🌿 Life & Health"
     ],
-    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (40%) — รอ Sage สรุปท้ายวัน",
+    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (47%) — รอ Sage สรุปท้ายวัน",
     "categories": [
       {
         "name": "🔧 Dev & Tech",
-        "count": 127,
-        "pct": 40
+        "count": 424,
+        "pct": 47
       },
       {
         "name": "📝 Memory & Diary",
-        "count": 78,
-        "pct": 25
-      },
-      {
-        "name": "🔍 Research",
-        "count": 33,
-        "pct": 10
-      },
-      {
-        "name": "🌿 Life & Health",
-        "count": 25,
-        "pct": 8
-      },
-      {
-        "name": "⚖️ Decision",
-        "count": 22,
-        "pct": 7
+        "count": 166,
+        "pct": 18
       },
       {
         "name": "🤖 System & Setup",
-        "count": 16,
-        "pct": 5
+        "count": 73,
+        "pct": 8
+      },
+      {
+        "name": "🌿 Life & Health",
+        "count": 68,
+        "pct": 7
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 67,
+        "pct": 7
+      },
+      {
+        "name": "🔍 Research",
+        "count": 62,
+        "pct": 7
       }
     ],
     "tasks": [
+      "ถ้าทำตามนี้แล้วยังไม่อัพเดท บอก Laura ได้เลยนะคะ จะดูเพิ่มว่าติดจุดไหนค่ะ",
+      "เซิร์ฟเวอร์รันใหม่เรียบร้อยแล้วค่ะ ทดสอบแล้วทั้ง dashboard และ output/projects.json ตอบ 200 ปกติ — ลอง refresh (Ctrl+Shi",
+      "- หรือ delegate ต่อให้ agent เฉพาะทางในทีม 12 คน เช่น Muse (idea/content), Atlas (strategy/CEO), Nova (todo/ตาราง), Forg",
       "[Sage] บันทึก diary วันนี้เพิ่มเรียบร้อยแล้วครับ สรุปสั้นๆ session นี้:",
       "ทำเสร็จ: Medic_Station กลุ่ม 🟡 (todo id 16-22) ครบทั้ง 7 ข้อ",
       "ปุ่มแก้ไข logbook + Export PDF (รองรับภาษาไทย, ทดสอบสร้างไฟล์จริงสำเร็จ)",
       "ทุกไฟล์ผ่าน py_compile และ output/todos.json อัปเดต done ครบแล้ว — รายละเอียดบันทึกไว้ใน output/diary/2026-06-14.md",
-      "Jed ทดสอบ GUI จริง (ยังไม่ได้เปิดแอปทดสอบ)",
-      "ก่อนเริ่ม 🔴 #23 (ระบบ Login) ต้องคุยรายละเอียดกับ Jed ก่อน (เก็บรหัสผ่านยังไง, สิทธิ์ admin)",
-      "[Laura] รับทราบค่ะ Jed กำลังทดสอบ Medic_Station GUI อยู่ — Laura รออยู่ตรงนี้ค่ะ ถ้าเจอบั๊กหรือมีอะไรอยากให้แก้/เพิ่ม แจ",
-      "* เปลี่ยนปุ่ม Action จากคำว่า \"+เพิ่มพนักงาน\" เป็น \"+เพิ่มทะเบียนประวัติ\""
+      "Jed ทดสอบ GUI จริง (ยังไม่ได้เปิดแอปทดสอบ)"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 15,
+    "date": "16 มิถุนายน 2569",
+    "topCategory": "🔧 Dev & Tech",
+    "tags": [
+      "🔧 Dev & Tech",
+      "📝 Memory & Diary",
+      "💡 Creative & Content",
+      "🔍 Research"
+    ],
+    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (56%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 58,
+        "pct": 56
+      },
+      {
+        "name": "📝 Memory & Diary",
+        "count": 19,
+        "pct": 18
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 7,
+        "pct": 7
+      },
+      {
+        "name": "🔍 Research",
+        "count": 7,
+        "pct": 7
+      },
+      {
+        "name": "⚖️ Decision",
+        "count": 7,
+        "pct": 7
+      },
+      {
+        "name": "🌿 Life & Health",
+        "count": 4,
+        "pct": 4
+      }
+    ],
+    "tasks": [
+      "- [create_desktop_shortcut.vbs](Medic_Station/create_desktop_shortcut.vbs) สร้างไอคอน \"MED-App\" บน Desktop อัตโนมัติ",
+      "- เพิ่ม `tkcalendar`, `reportlab` ที่ขาดใน [requirements.txt](Medic_Station/requirements.txt)",
+      "- [install.bat](Medic_Station/install.bat) — เช็ค Python, ติดตั้ง lib, สร้าง shortcut อัตโนมัติ (ต้องมีเน็ต)",
+      "**4. แก้บั๊ก `.bat` ไม่ทำงาน** — root cause คือไฟล์ใช้ line ending แบบ LF + `chcp 65001` + ภาษาไทย ทำให้ cmd parse พังทุ",
+      "- เพิ่มท้ายรายงาน \"ผู้ออกรายงาน: {ชื่อที่ login}\"",
+      "**ค้างไว้**: ปัญหาปฏิทินช่องที่ 2 ในหน้ารายงาน \"เลือกเดือนไม่ได้\" — รอ Jed ส่งภาพหน้าจอตอนเปิดปฏิทินมาดูเพิ่มครับ",
+      "**แก้**: เพิ่ม `ctypes.windll.shcore.SetProcessDpiAwareness(1)` ที่บนสุดของ [main.py:7-12](Medic_Station/main.py:7) ให้ ",
+      "รบกวนเปิดแอป (ปิดแล้วเปิดใหม่) แล้วลองกดปุ่มเปลี่ยนเดือน/ปีในปฏิทินอีกครั้งครับ ถ้ายังไม่หาย ส่งภาพมาดูเพิ่มได้เลยครับ"
     ],
     "details": "",
     "relatedProjects": [],

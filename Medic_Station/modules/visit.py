@@ -140,8 +140,10 @@ class VisitModule(ctk.CTkFrame):
         return int(sel[0])
 
     def _open_add(self):
+        caregiver = self.app.current_user["display_name"] if self.app and self.app.current_user else ""
         VisitDialog(self, self.db, self.selected_emp, None,
-                    lambda eid=None: self._load_visits(eid or (self.selected_emp["emp_id"] if self.selected_emp else None)))
+                    lambda eid=None: self._load_visits(eid or (self.selected_emp["emp_id"] if self.selected_emp else None)),
+                    caregiver=caregiver)
 
     def _open_view(self):
         vid = self._selected_visit_id()
@@ -170,7 +172,7 @@ class VisitModule(ctk.CTkFrame):
 
 
 class VisitDialog(ctk.CTkToplevel):
-    def __init__(self, parent, db, emp, visit_id, on_save, edit_mode=False):
+    def __init__(self, parent, db, emp, visit_id, on_save, edit_mode=False, caregiver=""):
         super().__init__(parent)
         self.db = db
         self.emp = emp
@@ -180,7 +182,7 @@ class VisitDialog(ctk.CTkToplevel):
         self.readonly = visit_id is not None and not edit_mode
         self.med_items = []
         self.visit_emp_id = emp["emp_id"] if emp else None
-        self.caregiver = ""
+        self.caregiver = caregiver
 
         if self.readonly:
             title = "ดูประวัติการรักษา"
@@ -211,6 +213,10 @@ class VisitDialog(ctk.CTkToplevel):
 
         self.emp_bar = ctk.CTkFrame(scroll, fg_color="#eaf2ff", corner_radius=6)
         self.emp_bar.pack(fill="x", pady=(0, 10))
+
+        self.caregiver_label = ctk.CTkLabel(scroll, text=f"ผู้บันทึก: {self.caregiver}",
+                                             anchor="w", text_color="#7f8c8d", font=app_font(13))
+        self.caregiver_label.pack(fill="x", pady=(0, 6))
 
         ctk.CTkLabel(scroll, text="วันที่รักษา", anchor="w").pack(fill="x")
         self.visit_date_entry = DateEntry(scroll, date_pattern="dd/mm/yyyy",
@@ -362,6 +368,7 @@ class VisitDialog(ctk.CTkToplevel):
         self.visit_emp_id = v["emp_id"]
         self._render_emp_bar(dict(v))
         self.caregiver = v["caregiver"]
+        self.caregiver_label.configure(text=f"ผู้บันทึก: {self.caregiver}")
 
         def fill(widget, val):
             widget.configure(state="normal")

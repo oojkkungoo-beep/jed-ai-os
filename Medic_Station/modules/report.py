@@ -1,13 +1,15 @@
 import customtkinter as ctk
 from tkinter import ttk, messagebox, filedialog
+from tkcalendar import DateEntry
 from datetime import date, timedelta, datetime
-from utils import to_iso, app_font
+from utils import to_iso, to_display, app_font
 
 
 class ReportModule(ctk.CTkFrame):
-    def __init__(self, parent, db):
+    def __init__(self, parent, db, app=None):
         super().__init__(parent, corner_radius=0, fg_color="transparent")
         self.db = db
+        self.app = app
         self._build()
 
     def _build(self):
@@ -19,31 +21,45 @@ class ReportModule(ctk.CTkFrame):
         ff = ctk.CTkFrame(self, fg_color="white", corner_radius=8)
         ff.pack(fill="x", padx=15, pady=5)
 
-        ctk.CTkLabel(ff, text="ช่วงวันที่:").pack(side="left", padx=10, pady=8)
+        row1 = ctk.CTkFrame(ff, fg_color="transparent")
+        row1.pack(fill="x")
+        row2 = ctk.CTkFrame(ff, fg_color="transparent")
+        row2.pack(fill="x")
+
+        ctk.CTkLabel(row1, text="ช่วงวันที่:").pack(side="left", padx=10, pady=8)
         today = date.today()
         first = today.replace(day=1)
 
-        self.date_from = ctk.CTkEntry(ff, width=110)
-        self.date_from.insert(0, first.strftime("%d/%m/%Y"))
+        self.date_from = DateEntry(row1, date_pattern="dd/mm/yyyy",
+                                    font=("TH Sarabun PSK", 14),
+                                    background="#1a5276", foreground="white",
+                                    width=10)
+        self.date_from.set_date(first)
         self.date_from.pack(side="left", padx=3)
 
-        ctk.CTkLabel(ff, text="—").pack(side="left")
+        ctk.CTkLabel(row1, text="—").pack(side="left")
 
-        self.date_to = ctk.CTkEntry(ff, width=110)
-        self.date_to.insert(0, today.strftime("%d/%m/%Y"))
+        self.date_to = DateEntry(row1, date_pattern="dd/mm/yyyy",
+                                  font=("TH Sarabun PSK", 14),
+                                  background="#1a5276", foreground="white",
+                                  width=10)
+        self.date_to.set_date(today)
         self.date_to.pack(side="left", padx=3)
+
+        ctk.CTkButton(row1, text="🔍 ดูรายงาน", command=self._load,
+                      width=110).pack(side="left", padx=8)
 
         quick_btns = [("วันนี้", 0), ("7 วัน", 7), ("30 วัน", 30), ("เดือนนี้", -1),
                       ("ปีนี้", -2), ("ทั้งหมด", -3)]
         for label, days in quick_btns:
-            ctk.CTkButton(ff, text=label, width=72,
-                          command=lambda d=days: self._quick_range(d)).pack(side="left", padx=2)
+            ctk.CTkButton(row2, text=label, width=72,
+                          command=lambda d=days: self._quick_range(d)).pack(side="left", padx=2, pady=8)
 
-        ctk.CTkButton(ff, text="🔍 ดูรายงาน", command=self._load,
-                      width=110).pack(side="left", padx=8)
-        ctk.CTkButton(ff, text="📥 Export Excel", command=self._export,
+        ctk.CTkButton(row2, text="📥 Export Excel", command=self._export,
                       width=130, fg_color="#27ae60", hover_color="#1e8449").pack(side="right", padx=10)
-        ctk.CTkButton(ff, text="📄 Export PDF", command=self._export_pdf,
+        ctk.CTkButton(row2, text="📄 รายการใช้ยา PDF", command=self._export_pdf_medicine,
+                      width=150, fg_color="#c0392b", hover_color="#922b21").pack(side="right", padx=5)
+        ctk.CTkButton(row2, text="📄 สถิติ PDF", command=self._export_pdf_stats,
                       width=120, fg_color="#c0392b", hover_color="#922b21").pack(side="right", padx=5)
 
         # Stat cards
@@ -121,10 +137,8 @@ class ReportModule(ctk.CTkFrame):
             start = today
         else:
             start = today - timedelta(days=days)
-        self.date_from.delete(0, "end")
-        self.date_from.insert(0, start.strftime("%d/%m/%Y"))
-        self.date_to.delete(0, "end")
-        self.date_to.insert(0, today.strftime("%d/%m/%Y"))
+        self.date_from.set_date(start)
+        self.date_to.set_date(today)
         self._load()
 
     def _get_range(self):
@@ -276,19 +290,19 @@ class ReportModule(ctk.CTkFrame):
         wb.save(fp)
         messagebox.showinfo("สำเร็จ", f"บันทึกรายงานเรียบร้อย\n{fp}")
 
-    def _export_pdf(self):
+    def _pdf_prepare(self, file_suffix, title_initial, filename=None):
+        """Common setup: import reportlab, register fonts, ask save path.
+        Returns (fp, mm, Paragraph, ParagraphStyle, styles) or None if cancelled/failed."""
         try:
-            from reportlab.lib import colors
-            from reportlab.lib.pagesizes import A4
             from reportlab.lib.units import mm
             from reportlab.pdfbase import pdfmetrics
             from reportlab.pdfbase.ttfonts import TTFont
-            from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Spacer
+            from reportlab.platypus import Paragraph
             from reportlab.lib.styles import ParagraphStyle
         except ImportError:
             messagebox.showerror("ผิดพลาด",
                                  "กรุณาติดตั้ง reportlab ก่อน:\n\npip install reportlab")
-            return
+            return None
 
         import os
         font_dir = r"C:\Windows\Fonts"
@@ -297,17 +311,15 @@ class ReportModule(ctk.CTkFrame):
             pdfmetrics.registerFont(TTFont("Tahoma-Bold", os.path.join(font_dir, "tahomabd.ttf")))
         except Exception:
             messagebox.showerror("ผิดพลาด", "ไม่พบฟอนต์ Tahoma สำหรับแสดงผลภาษาไทย")
-            return
+            return None
 
         fp = filedialog.asksaveasfilename(
             defaultextension=".pdf",
             filetypes=[("PDF", "*.pdf")],
             title="บันทึกรายงาน PDF",
-            initialfile=f"MedicStation_Report_{date.today()}.pdf")
+            initialfile=filename or f"MedicStation_{file_suffix}_{date.today()}.pdf")
         if not fp:
-            return
-
-        d1, d2 = self._get_range()
+            return None
 
         title_style = ParagraphStyle("title", fontName="Tahoma-Bold", fontSize=16, leading=20,
                                        alignment=1, spaceAfter=4)
@@ -315,13 +327,68 @@ class ReportModule(ctk.CTkFrame):
                                      alignment=1, spaceAfter=10)
         heading_style = ParagraphStyle("heading", fontName="Tahoma-Bold", fontSize=12, leading=16,
                                          spaceBefore=12, spaceAfter=6)
+        cell_style = ParagraphStyle("cell", fontName="Tahoma", fontSize=9, leading=12)
+        footer_style = ParagraphStyle("footer", fontName="Tahoma", fontSize=9, leading=12,
+                                        alignment=2, spaceBefore=16)
 
         elements = [
-            Paragraph("รายงานห้องพยาบาล (Medic Station)", title_style),
+            Paragraph(title_initial, title_style),
             Paragraph(f"ช่วงวันที่: {self.date_from.get()} - {self.date_to.get()}", sub_style),
         ]
+        styles = {"title": title_style, "sub": sub_style, "heading": heading_style,
+                  "cell": cell_style, "footer": footer_style}
+        return fp, mm, Paragraph, styles, elements
 
-        # Summary table
+    def _pdf_visit_detail_elements(self, d1, d2, Paragraph, styles, mm):
+        """รายละเอียดการรักษา — date, patient, diagnosis, medicines given."""
+        cell_style = styles["cell"]
+        visit_rows = self.db.fetchall("""
+            SELECT v.id, v.visit_date, TRIM(e.rank||' '||e.first_name||' '||e.last_name) as pname,
+                   v.diagnosis, v.chief_complaint
+            FROM visits v JOIN employees e ON v.emp_id=e.emp_id
+            WHERE v.visit_date BETWEEN ? AND ?
+            ORDER BY v.visit_date, v.id
+        """, (d1, d2))
+
+        med_by_visit = {}
+        for r in self.db.fetchall("""
+            SELECT md.visit_id, m.medicine_name, md.quantity, m.unit
+            FROM medicine_dispensed md
+            JOIN medicines m ON md.medicine_id=m.id
+            JOIN visits v ON md.visit_id=v.id
+            WHERE v.visit_date BETWEEN ? AND ?
+            ORDER BY md.id
+        """, (d1, d2)):
+            qty = r["quantity"]
+            qty_str = str(int(qty)) if qty == int(qty) else str(qty)
+            med_by_visit.setdefault(r["visit_id"], []).append(
+                f"{r['medicine_name']} x{qty_str} {r['unit']}")
+
+        detail_data = [["วันที่", "ผู้ป่วย", "วินิจฉัย/อาการ", "ยาที่ได้รับ"]]
+        for r in visit_rows:
+            meds = med_by_visit.get(r["id"])
+            meds_text = "<br/>".join(meds) if meds else "-"
+            diag = r["diagnosis"] or r["chief_complaint"] or "-"
+            detail_data.append([
+                to_display(r["visit_date"]),
+                Paragraph(r["pname"], cell_style),
+                Paragraph(diag, cell_style),
+                Paragraph(meds_text, cell_style),
+            ])
+        return [
+            Paragraph("รายละเอียดการรักษา", styles["heading"]),
+            self._pdf_table(detail_data, [22 * mm, 35 * mm, 43 * mm, 60 * mm]),
+        ]
+
+    def _export_pdf_stats(self):
+        """สถิติ PDF — สรุปสถิติ + โรค/วินิจฉัยที่พบบ่อย + ยาที่ใช้บ่อย + รายละเอียดการรักษา"""
+        prep = self._pdf_prepare("Stats", "รายงานสถิติห้องพยาบาล (Medic Station)")
+        if not prep:
+            return
+        fp, mm, Paragraph, styles, elements = prep
+        heading_style = styles["heading"]
+        d1, d2 = self._get_range()
+
         summary_data = [
             ["รายการ", "ค่า"],
             ["จำนวนครั้งรักษา", self.stats["visits"].cget("text")],
@@ -332,7 +399,6 @@ class ReportModule(ctk.CTkFrame):
         elements.append(Paragraph("สรุปสถิติ", heading_style))
         elements.append(self._pdf_table(summary_data, [80 * mm, 40 * mm]))
 
-        # Top diagnoses
         diag_rows = self.db.fetchall("""
             SELECT diagnosis, COUNT(*) as c FROM visits
             WHERE visit_date BETWEEN ? AND ? AND diagnosis != ''
@@ -342,7 +408,6 @@ class ReportModule(ctk.CTkFrame):
         elements.append(Paragraph("โรค/วินิจฉัยที่พบบ่อย", heading_style))
         elements.append(self._pdf_table(diag_data, [100 * mm, 30 * mm]))
 
-        # Top medicines
         med_rows = self.db.fetchall("""
             SELECT m.medicine_name, SUM(md.quantity) as total
             FROM medicine_dispensed md
@@ -355,6 +420,43 @@ class ReportModule(ctk.CTkFrame):
         elements.append(Paragraph("ยาที่ใช้บ่อย", heading_style))
         elements.append(self._pdf_table(med_data, [100 * mm, 30 * mm]))
 
+        elements += self._pdf_visit_detail_elements(d1, d2, Paragraph, styles, mm)
+
+        self._pdf_build(fp, elements, mm)
+
+    def _export_pdf_medicine(self):
+        """รายการใช้ยา PDF — สรุปยาที่ใช้ + รายละเอียดการรักษา"""
+        prep = self._pdf_prepare("MedicineUsage", "รายงานการใช้ยา แผนกแพทย์ หน่วยบินเดโชชัย 3 ดอนเมือง",
+                                  filename=f"รายงานการใช้ยา_เดโชชัย 3_{date.today()}.pdf")
+        if not prep:
+            return
+        fp, mm, Paragraph, styles, elements = prep
+        heading_style = styles["heading"]
+        d1, d2 = self._get_range()
+
+        med_rows = self.db.fetchall("""
+            SELECT m.medicine_name, SUM(md.quantity) as total, COUNT(*) as cnt
+            FROM medicine_dispensed md
+            JOIN medicines m ON md.medicine_id=m.id
+            JOIN visits v ON md.visit_id=v.id
+            WHERE v.visit_date BETWEEN ? AND ?
+            GROUP BY m.id ORDER BY total DESC
+        """, (d1, d2))
+        med_data = [["ชื่อยา", "จำนวนรวม", "จำนวนครั้ง"]] + \
+            [[r["medicine_name"], str(r["total"]), str(r["cnt"])] for r in med_rows]
+        elements.append(Paragraph("สรุปยาที่ใช้", heading_style))
+        elements.append(self._pdf_table(med_data, [80 * mm, 35 * mm, 35 * mm]))
+
+        elements += self._pdf_visit_detail_elements(d1, d2, Paragraph, styles, mm)
+
+        exporter = self.app.current_user["display_name"] if self.app and self.app.current_user else "-"
+        elements.append(Paragraph(f"ผู้ออกรายงาน: {exporter}", styles["footer"]))
+
+        self._pdf_build(fp, elements, mm)
+
+    def _pdf_build(self, fp, elements, mm):
+        from reportlab.lib.pagesizes import A4
+        from reportlab.platypus import SimpleDocTemplate
         doc = SimpleDocTemplate(fp, pagesize=A4,
                                 topMargin=20 * mm, bottomMargin=20 * mm,
                                 leftMargin=20 * mm, rightMargin=20 * mm)
@@ -367,7 +469,7 @@ class ReportModule(ctk.CTkFrame):
         from reportlab.lib.units import mm
 
         if len(data) == 1:
-            data.append(["- ไม่มีข้อมูล -", ""])
+            data.append(["- ไม่มีข้อมูล -"] + [""] * (len(data[0]) - 1))
 
         t = Table(data, colWidths=col_widths)
         t.setStyle(TableStyle([

@@ -138,7 +138,7 @@ class MedicineDialog(ctk.CTkToplevel):
         self.med_id = med_id
         self.on_save = on_save
         self.title("เพิ่มยา" if not med_id else "แก้ไขข้อมูลยา")
-        self.geometry("420x460")
+        self.geometry("420x540")
         self.resizable(False, False)
         self.grab_set()
         self._build()

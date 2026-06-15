@@ -18,3 +18,10 @@ MEDICINE_CATEGORIES = DISEASE_SYSTEMS
 
 MEDICINE_CATEGORY_LABELS = dict(MEDICINE_CATEGORIES)
 DISEASE_SYSTEM_LABELS = dict(DISEASE_SYSTEMS)
+
+# สิทธิ์ผู้ใช้งานระบบ
+USER_ROLES = [
+    ("admin", "ผู้ดูแลระบบ"),
+    ("user", "ผู้ใช้งาน"),
+]
+USER_ROLE_LABELS = dict(USER_ROLES)
