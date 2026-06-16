@@ -13,8 +13,8 @@
     "name": "Atlas Daily Reflection",
     "emoji": "🪞",
     "schedule": "ทุกวัน ~05:19",
-    "lastRunAt": null,
-    "lastRunStatus": "pending",
-    "lastRunNote": "ยังไม่เคยรัน — รอรอบแรก"
+    "lastRunAt": "2026-06-16T05:19:00+07:00",
+    "lastRunStatus": "success",
+    "lastRunNote": "Atlas reflection วันจันทร์ที่ 15 มิถุนายน 2569 เรียบร้อย"
   }
 ]
