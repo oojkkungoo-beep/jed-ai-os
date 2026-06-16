@@ -25,6 +25,7 @@ const AGENTS = [
   { id:'sage',    name:'Sage',    thai:'เซจ',     race:'Spirit Fox / Kitsune Elder (จิ้งจอกเทพผู้อาวุโสแห่งความทรงจำ)', gender:'ชาย',  ending:'ครับ', model:'haiku',  emoji:'📝', img:'images/Sage.png',    role:'Memory & Diary Agent',       desc:'บันทึก diary สรุปวัน จำ context สำคัญ log ความทรงจำ',   file:'../team/memory_agent.md', charFile:'../characters/sage.md'    },
   { id:'vera',    name:'Vera',    thai:'เวร่า',   race:'Clockwork Inspector — Golem-kin (กลไกผู้ตรวจสอบจากเผ่าโกเลม)', gender:'หญิง', ending:'ค่ะ',  model:'sonnet', emoji:'🔎', img:'images/vera.png',    role:'QA & Skill Developer',       desc:'ตรวจสอบ output ของทีม วิเคราะห์ skill gap พัฒนาทีม',    file:'../team/qa.md',           charFile:'../characters/vera.md'    },
   { id:'devil',   name:'Devil',   thai:'เดวิล',   race:'Mirror Demon (ปีศาจกระจกผู้พูดความจริงที่ไม่อยากฟัง)', gender:'ชาย',  ending:'ครับ', model:'opus',   emoji:'😈', img:'images/Devil.png',   role:'Adversarial Reviewer',      desc:'ท้าทาย bear case / polarity audit / evidence match — opt-in ก่อนงานสำคัญ ship', file:'../team/devil.md', charFile:'../characters/devil.md'   },
+  { id:'lena',    name:'Lena',    thai:'เลนา',    race:'Archive Sprite — Sylph of the Eternal Library (นางฟ้าห้องสมุดผู้พิทักษ์ความรู้)', gender:'หญิง', ending:'ค่ะ',  model:'haiku',  emoji:'📚', img:'images/Lena.png',    role:'Vault Librarian',            desc:'จัดเก็บ จัดหมวด cross-link Second Brain vault รายสัปดาห์ — รับงานผ่าน Laura เท่านั้น', file:'../team/librarian.md', charFile:'../characters/lena.md' },
 ];
 
 const JED = {
@@ -69,6 +70,7 @@ const ORG_CHART = {
     { name: 'สายบุคคล ความรู้ & คุณภาพ',      sub: 'People, Knowledge & Quality Division', dot: 'dot-gold',
       agents: [
         { id: 'sage', title: 'Chief Knowledge Officer (CKO) — diary ความจำ log ขององค์กร' },
+        { id: 'lena', title: 'Vault Librarian — จัดเก็บ cross-link Second Brain weekly digest (cron จันทร์ 05:20)' },
         { id: 'vera', title: 'Head of QA & Talent Development — ตรวจคุณภาพ พัฒนา skill ทีม' },
         { id: 'devil', title: 'Adversarial Reviewer — bear case / blind spot ก่อนงานสำคัญ ship (opt-in)' },
       ] },
@@ -86,6 +88,7 @@ let todos     = [];
 let knowledge = [];
 let sessions  = [];
 let teamLogs  = [];
+let scheduledTasksLog = [];
 let diaryByPerson = {}; // { personId: [{date, content}, ...] }
 let _diaryPerson  = 'jed';
 let _bookList     = []; // diary entries currently shown in the book modal (newest first)
@@ -1394,73 +1397,90 @@ function toggleLog(id) {
 // JSON files are the single source of truth.
 // localStorage is used only to cache UI-only data (todos, comments).
 async function loadFromFiles() {
-  // Files written by agents — always authoritative
-  const fileSources = [
-    { url: `${BASE}/output/projects.json`,     set: v => { projects = v; }   },
-    { url: `${BASE}/output/activity.json`,     set: v => { activity = v; }   },
-    { url: `${BASE}/output/session_log.json`,  set: v => { sessions = v; }   },
-    { url: `${BASE}/output/knowledge.json`,    set: v => { knowledge = v; }  },
+  // Fire ALL fetches at once — diary (13 files) + main files + team_logs + todos
+  const diaryFetches = PEOPLE.map(p =>
+    fetch(`${BASE}/output/diary_people/${p.id}.json`, { cache: 'no-cache' })
+      .then(r => r.ok ? r.json() : []).catch(() => [])
+      .then(data => ({ id: p.id, writable: p.writable, data: Array.isArray(data) ? data : [] }))
+  );
+
+  const mainFetches = [
+    fetch(`${BASE}/output/projects.json`,    { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).catch(() => null),
+    fetch(`${BASE}/output/activity.json`,    { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).catch(() => null),
+    fetch(`${BASE}/output/session_log.json`, { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).catch(() => null),
+    fetch(`${BASE}/output/knowledge.json`,   { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).catch(() => null),
+    fetch(`${BASE}/output/team_logs.json`,   { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).catch(() => null),
+    fetch(`${BASE}/output/todos.json`,           { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).catch(() => null),
+    fetch(`${BASE}/output/scheduled_tasks_log.json`, { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).catch(() => null),
   ];
 
-  // Diary — แยกไฟล์ต่อคน (Jed + ทีม) จาก output/diary_people/<id>.json
-  await Promise.all(PEOPLE.map(async (p) => {
-    let entries = [];
-    try {
-      const res = await fetch(`${BASE}/output/diary_people/${p.id}.json`, { cache: 'no-cache' });
-      if (res.ok) {
-        const data = await res.json();
-        if (Array.isArray(data)) entries = data;
-      }
-    } catch (_) {}
-    if (p.writable) {
-      // Jed เขียน diary ของตัวเองได้ — merge กับที่บันทึกไว้ใน localStorage
+  // Wait for everything in parallel
+  const [diaryResults, [proj, act, sess, know, tl, fileTodos, stLog]] = await Promise.all([
+    Promise.all(diaryFetches),
+    Promise.all(mainFetches),
+  ]);
+
+  // Apply diary results
+  diaryResults.forEach(({ id, writable, data }) => {
+    let entries = data;
+    if (writable) {
       try {
-        const local = JSON.parse(localStorage.getItem(`jed_diary_${p.id}`) || '[]');
+        const local = JSON.parse(localStorage.getItem(`jed_diary_${id}`) || '[]');
         local.forEach(item => {
           if (!entries.find(e => e.date === item.date && e.content === item.content)) entries.push(item);
         });
       } catch (_) {}
     }
-    diaryByPerson[p.id] = entries;
-  }));
-  diary = diaryByPerson['sage'] || []; // ใช้สำหรับ widget Diary ล่าสุดที่หน้า Home/Briefing (diary ทีมของ Sage)
+    diaryByPerson[id] = entries;
+  });
+  diary = diaryByPerson['sage'] || [];
 
-  // Team logs (no-cache because agents update often)
-  try {
-    const r = await fetch(`${BASE}/output/team_logs.json`, { cache: 'no-cache' });
-    if (r.ok) teamLogs = await r.json();
-  } catch (_) {}
+  // Apply main results
+  if (Array.isArray(proj))  projects  = proj;
+  if (Array.isArray(act))   activity  = act;
+  if (Array.isArray(sess))  sessions  = sess;
+  if (Array.isArray(know))  knowledge = know;
+  if (Array.isArray(tl))    teamLogs  = tl;
+  if (Array.isArray(stLog)) scheduledTasksLog = stLog;
 
-  // Load all agent-written files in parallel
-  await Promise.all(fileSources.map(async ({ url, set }) => {
-    try {
-      const res = await fetch(url, { cache: 'no-cache' });
-      if (!res.ok) return;
-      const data = await res.json();
-      if (Array.isArray(data)) set(data);
-    } catch (_) {}
-  }));
-
-  // Todos: merge JSON file (agent-written) + localStorage (UI-added)
-  try {
-    const res = await fetch(`${BASE}/output/todos.json`, { cache: 'no-cache' });
-    if (res.ok) {
-      const fileTodos = await res.json();
-      const localTodos = JSON.parse(localStorage.getItem('jed_todos') || '[]');
-      // Merge: local edits (done/edited via UI) override file version of the same id,
-      // then add any local-only items not present in the file
-      const localById = new Map(localTodos.map(t => [t.id, t]));
-      const merged = fileTodos.map(f => localById.get(f.id) || f);
-      localTodos.forEach(item => {
-        if (!merged.find(f => f.id === item.id)) merged.push(item);
-      });
-      todos = merged;
-    } else {
-      todos = JSON.parse(localStorage.getItem('jed_todos') || '[]');
-    }
-  } catch (_) {
-    todos = JSON.parse(localStorage.getItem('jed_todos') || '[]');
+  // Todos: merge file (agent-written) + localStorage (UI edits)
+  const localTodos = JSON.parse(localStorage.getItem('jed_todos') || '[]');
+  if (Array.isArray(fileTodos)) {
+    const localById = new Map(localTodos.map(t => [t.id, t]));
+    const merged = fileTodos.map(f => localById.get(f.id) || f);
+    localTodos.forEach(item => { if (!merged.find(f => f.id === item.id)) merged.push(item); });
+    todos = merged;
+  } else {
+    todos = localTodos;
   }
+}
+
+// ── SCHEDULED TASKS WIDGET ──
+function renderScheduledTasksWidget() {
+  const el = document.getElementById('home-scheduled-tasks');
+  if (!el) return;
+  if (!scheduledTasksLog.length) {
+    el.innerHTML = `<div class="widget-empty">ไม่มีข้อมูล scheduled tasks</div>`;
+    return;
+  }
+  el.innerHTML = scheduledTasksLog.map(t => {
+    const statusColor = t.lastRunStatus === 'success' ? '#4caf50' : t.lastRunStatus === 'error' ? '#f44336' : '#888';
+    const statusLabel = t.lastRunStatus === 'success' ? '✅ สำเร็จ' : t.lastRunStatus === 'error' ? '❌ ผิดพลาด' : '⏳ รอรัน';
+    let timeAgo = '';
+    if (t.lastRunAt) {
+      const diff = Math.round((Date.now() - new Date(t.lastRunAt)) / 60000);
+      timeAgo = diff < 60 ? `${diff} นาทีที่แล้ว` : diff < 1440 ? `${Math.round(diff/60)} ชม.ที่แล้ว` : `${Math.round(diff/1440)} วันที่แล้ว`;
+    }
+    return `<div class="widget-row" style="flex-direction:column;align-items:flex-start;gap:2px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+      <div style="display:flex;align-items:center;gap:6px;width:100%">
+        <span>${t.emoji}</span>
+        <span style="font-weight:600;font-size:0.85rem;flex:1">${t.name}</span>
+        <span style="font-size:0.75rem;color:${statusColor}">${statusLabel}</span>
+      </div>
+      <div style="font-size:0.75rem;color:var(--muted);padding-left:22px">${t.schedule}${timeAgo ? ` · รันล่าสุด ${timeAgo}` : ''}</div>
+      ${t.lastRunNote ? `<div style="font-size:0.72rem;color:var(--muted);padding-left:22px;opacity:0.7">${t.lastRunNote}</div>` : ''}
+    </div>`;
+  }).join('');
 }
 
 // ── INIT ──
@@ -1477,5 +1497,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   renderTodoBadge();
   renderBriefing();
   renderHome();
+  renderScheduledTasksWidget();
   navigate('home');
 });

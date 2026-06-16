@@ -20,6 +20,7 @@
 | **Sage** (memory/diary) | diary, memory update, log | **Sonnet 4.6** | ต้อง synthesize ข้อมูลทั้งวันให้สรุปดี — Haiku อาจตกรายละเอียด |
 | **Vera** (QA) | review output, skill dev, token audit | **Sonnet 4.6** (escalate → Opus 4.8 สำหรับ token/skill audit ใหญ่) | งาน review ทั่วไปใช้ Sonnet, audit เชิงลึกใช้ Opus |
 | **Devil** (adversarial review) | bear case, polarity audit, evidence match | **ตรงข้ามกับ agent ต้นทาง** — งานจาก Muse(Fable5)/Scout(Sonnet) ใช้ **Opus 4.8**; งานจาก Council/Atlas(Opus) ใช้ **Fable 5** | ต้อง "คนละสมอง" จริง ไม่ใช่ model เดิมที่ตรวจตัวเอง |
+| **Lena** (vault librarian) | intake, organize, cross-link, weekly digest | **Haiku 4.5** (Intake/Organize) → **Sonnet 4.6** (Synthesize/Weekly Digest) | งาน routine structured ใช้ Haiku ประหยัด; weekly digest ต้องการ judgment ใช้ Sonnet |
 
 ## เครื่องมือใหม่ที่ควรเพิ่ม
 
