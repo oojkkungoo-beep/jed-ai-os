@@ -1,0 +1,20 @@
+[
+  {
+    "taskId": "ai-team-daily-diary",
+    "name": "AI Team Daily Diary",
+    "emoji": "📝",
+    "schedule": "ทุกวัน ~05:01",
+    "lastRunAt": "2026-06-16T05:01:00+07:00",
+    "lastRunStatus": "success",
+    "lastRunNote": "เขียน diary ของ 15 มิถุนายน 2569 เรียบร้อย — 12 agents"
+  },
+  {
+    "taskId": "atlas-daily-reflection",
+    "name": "Atlas Daily Reflection",
+    "emoji": "🪞",
+    "schedule": "ทุกวัน ~05:19",
+    "lastRunAt": null,
+    "lastRunStatus": "pending",
+    "lastRunNote": "ยังไม่เคยรัน — รอรอบแรก"
+  }
+]

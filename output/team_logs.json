@@ -492,6 +492,180 @@
     ]
   },
   {
+    "date": "2026-06-15",
+    "dateDisplay": "15 มิถุนายน 2569",
+    "agents": [
+      {
+        "id": "laura",
+        "name": "Laura",
+        "emoji": "🎭",
+        "title": "MED-App วันงานใหญ่",
+        "summary": "วันนี้ทีมโฟกัสหนักที่ Medic_Station — ระบบ login, users, announcements, offline installer และคู่มือ ครบในวันเดียว",
+        "highlights": [
+          "✅ Medic_Station: login/users/announcements + offline installer + คู่มือ",
+          "🟡 Clear_stock_nursepant — ยังรอ Jed โพสต์จริง",
+          "🟡 วารสารวิจัย — รอ Jed กรอก corresponding author"
+        ],
+        "url": "",
+        "full": "## Laura — Daily Briefing\n**วันที่:** 15 มิถุนายน 2569\n\nวันนี้ทีมโฟกัสหนักที่ **Medic_Station** ค่ะ — Forge นำโปรแกรมห้องพยาบาล Python/customtkinter/SQLite ไปสู่ระดับใหม่ทั้งระบบ login, จัดการ users, ประกาศ (announcements) พร้อม offline installer และคู่มือการใช้งานฉบับสมบูรณ์\n\n### Priority วันนี้\n- ✅ Medic_Station: login/users/announcements + installer + คู่มือ\n- 🟡 Clear_stock_nursepant — ยังรอ Jed โพสต์จริง\n- 🟡 วารสารวิจัย — รอ Jed กรอก corresponding author + ตรวจชื่อเรื่อง EN"
+      },
+      {
+        "id": "atlas",
+        "name": "Atlas",
+        "emoji": "🎯",
+        "title": "Medic_Station: Tool → Product?",
+        "summary": "Medic_Station ที่มี login/users/installer ครบแล้ว มีมูลค่าเชิงพาณิชย์จริง — Atlas ตั้งคำถามว่าใครยอมจ่ายเพื่อมีระบบนี้ในองค์กรของตัวเอง",
+        "highlights": [
+          "ระบบครบแล้ว: login, users, announcements, installer, คู่มือ — พร้อม deploy จริง",
+          "คำถาม: ใครในองค์กรสุขภาพยอมจ่ายเพื่อมี Medic_Station?",
+          "ถ้าตอบได้ นี่อาจเป็น product ตัวแรกที่มีตลาดจริงของ Jed"
+        ],
+        "url": "",
+        "full": "## Atlas — Strategic Note\n**วันที่:** 15 มิถุนายน 2569\n\nMedic_Station กำลัง evolve จาก 'โปรแกรมเล็กๆ' เป็นระบบที่มีโครงสร้างองค์กรจริง — login, users, announcements, installer, คู่มือ คือ foundation ที่ถ้าหากต้องขาย/แจก หรือขยายไปห้องพยาบาลอื่นจะทำได้ทันทีครับ\n\nคำถามที่ Atlas ตั้งไว้ให้ Jed คิด: **\"ใครในองค์กรยอมจ่ายเพื่อมี Medic_Station ในห้องพยาบาลของตัวเอง?\"** — ถ้าตอบได้ นี่อาจไม่ใช่แค่เครื่องมือภายใน แต่คือ product ตัวแรกที่มีตลาดจริงของ Jed"
+      },
+      {
+        "id": "forge",
+        "name": "Forge",
+        "emoji": "⚙️",
+        "title": "Dev Report — Medic_Station milestone",
+        "summary": "Ship ฟีเจอร์ Medic_Station ครบ: Login/Users/Announcements/Offline Installer/คู่มือ ในวันเดียว",
+        "highlights": [
+          "✅ ระบบ Login + Users + Announcements",
+          "✅ Offline Installer (.exe) + คู่มือการใช้งาน",
+          "Next: รอ Jed ทดสอบ installer บนเครื่องจริงในห้องพยาบาล"
+        ],
+        "url": "",
+        "full": "## Forge — Dev Report\n**วันที่:** 15 มิถุนายน 2569\n\n**✅ Shipped:**\n- ระบบ Login (username/password + role)\n- จัดการ Users (เพิ่ม/แก้ไข/ลบ)\n- ระบบประกาศ (Announcements) แสดงหน้า dashboard\n- Offline Installer (.exe)\n- คู่มือการใช้งาน Medic_Station ฉบับสมบูรณ์\n\n**commit หลัก:** `e7074de` (feat) + `03d078c` (docs diary)"
+      },
+      {
+        "id": "mint",
+        "name": "Mint",
+        "emoji": "💰",
+        "title": "Finance Pulse — Medic_Station asset",
+        "summary": "ไม่มีตัวเลขเร่งด่วน แต่ Medic_Station ที่ครบแล้วมีมูลค่าเชิงพาณิชย์ — พร้อมประเมิน cost/revenue model",
+        "highlights": [
+          "ไม่มีตัวเลขเร่งด่วนวันนี้",
+          "Medic_Station: ระบบ login + users ครบ = asset มูลค่าสูงกว่าที่คิด",
+          "ถามออมทรัพย์: แยกบัญชี 3 ใบได้ตามแผนไหมเดือนนี้?"
+        ],
+        "url": "",
+        "full": "## Mint — Finance Pulse\n**วันที่:** 15 มิถุนายน 2569\n\nไม่มีตัวเลขเร่งด่วนค่ะ — วันนี้ทีมโฟกัส dev งาน Medic_Station เป็นหลัก\n\nมินท์ตั้งข้อสังเกตว่า Medic_Station ที่มีระบบ login + users ครบแล้ว มีมูลค่าเชิงพาณิชย์มากกว่าที่ Jed อาจตระหนัก — ถ้า Jed สนใจ มินท์พร้อมประเมิน cost/revenue model ให้ค่ะ\n\n**คำถามออมทรัพย์:** เดือนนี้ Jed แยกเงิน 3 บัญชี (เงินเดือน/ธุรกิจ/ฉุกเฉิน) ได้ตามแผนไหมคะ?"
+      },
+      {
+        "id": "nova",
+        "name": "Nova",
+        "emoji": "🌿",
+        "title": "Daily Check — วันจันทร์ dev หนัก",
+        "summary": "Checklist routine วันจันทร์ก่อน dev session ยาว พร้อมเตือนพักตาและดื่มน้ำระหว่าง coding",
+        "highlights": [
+          "เช็ค routine: อาหารเช้า / PT เช้า / พักตาทุก 1 ชม.",
+          "งาน dev หนักใช้พลังสมองมาก — อย่าลืมพักระหว่าง session",
+          "นอนไม่ดึกเกิน 23:00"
+        ],
+        "url": "",
+        "full": "## Nova — Daily Check\n**วันที่:** 15 มิถุนายน 2569\n\nวันจันทร์ต้นสัปดาห์ — โนว่าแนะนำให้ Jed เช็ค routine ก่อนเริ่ม dev session ยาวค่ะ\n\n| รายการ | สถานะ |\n|--------|--------|\n| อาหารเช้า + น้ำ | ☐ |\n| PT เช้า | ☐ |\n| พักตาทุก 1 ชม. | ☐ |\n| นอนไม่ดึกเกิน 23:00 | ☐ |"
+      },
+      {
+        "id": "eir",
+        "name": "Eir",
+        "emoji": "🩺",
+        "title": "Vitality Check — Eye Fatigue Guard",
+        "summary": "เตือน Eye Fatigue และ Posture Debuff จาก dev session ยาว แนะนำ Rule 20-20-20 และยืดหลัง/คอ",
+        "highlights": [
+          "Rule 20-20-20: มองไกล 20 ฟุต 20 วินาที ทุก 20 นาที",
+          "ยืดหลัง/คอ 5 นาทีทุก 1-2 ชม.",
+          "HP/MP: brain fog = stop พักก่อนทันที"
+        ],
+        "url": "",
+        "full": "## Eir — Vitality Check\n**วันที่:** 15 มิถุนายน 2569\n\nวันนี้ Jed ทำงาน dev ยาวและหนัก — เอียร์กังวลเรื่อง **Eye Fatigue** และ **Posture Debuff** ค่ะ ถ้าใช้เวลาหน้าจอนาน > 4 ชั่วโมงต่อเนื่อง แนะนำ:\n- 👁 มอง 20 ฟุต 20 วินาที ทุก 20 นาที (Rule 20-20-20)\n- 🧘 ยืดหลัง/คอ 5 นาที ทุก 1-2 ชั่วโมง\n- 💧 ดื่มน้ำสม่ำเสมอ"
+      },
+      {
+        "id": "scout",
+        "name": "Scout",
+        "emoji": "🔍",
+        "title": "Research Note — Medic_Station market",
+        "summary": "สำรวจ niche ระบบห้องพยาบาลองค์กร desktop app ในตลาดไทย — พร้อม research คู่แข่งและ feature ที่ผู้ใช้จริงต้องการ",
+        "highlights": [
+          "Medic_Station (Python/SQLite) ยังมี niche ไม่มีคู่แข่งใน SME/ราชการไทยมากนัก",
+          "พร้อม research คู่แข่ง/ราคา/feature ที่ต้องการ",
+          "ใช้ข้อมูลนี้ให้ Atlas วางทิศทาง Medic_Station ต่อไป"
+        ],
+        "url": "",
+        "full": "## Scout — Research Note\n**วันที่:** 15 มิถุนายน 2569\n\nสก๊าวท์จับตา trend ที่เกี่ยวกับ Medic_Station ครับ — ระบบห้องพยาบาลองค์กร desktop app (Python/SQLite) ยังมี niche ที่ยังไม่มีคนทำในตลาด SME/ราชการไทยมากนัก\n\nถ้า Jed อยากรู้ว่ามีคู่แข่งไหนในตลาดไทย หรือ feature ที่ผู้ใช้ห้องพยาบาลองค์กรต้องการจริงๆ — สก๊าวท์พร้อม research ให้ทันทีครับ"
+      },
+      {
+        "id": "muse",
+        "name": "Muse",
+        "emoji": "💡",
+        "title": "Content Idea — เรื่องราว Medic_Station",
+        "summary": "แพทย์ทหารสร้างโปรแกรมห้องพยาบาลด้วย AI ด้วยตัวเอง — hook นี้ไม่ต้องแต่งเลย พร้อมทำ thread/รีล behind-the-scenes",
+        "highlights": [
+          "Hook จริง: แพทย์ทหารสร้างระบบห้องพยาบาลด้วย AI",
+          "เสนอ thread/รีล: prototype → login → installer → คู่มือ",
+          "Build credibility + personal brand คู่งานคอนเทนต์ยาสลบที่ค้างอยู่"
+        ],
+        "url": "",
+        "full": "## Muse — Content Idea\n**วันที่:** 15 มิถุนายน 2569\n\nดู Medic_Station ที่ Forge ทำแล้ว มิ้วส์ได้ไอเดียค่ะ — ระบบนี้มีเรื่องราวที่น่าเล่ามาก: **'แพทย์ทหารสร้างโปรแกรมห้องพยาบาลด้วย AI ด้วยตัวเอง'** คือ hook ที่ไม่ต้องแต่งเลย\n\nถ้าสนใจ มิ้วส์เสนอทำ **thread/รีล** สั้นๆ เล่า behind-the-scenes การสร้าง Medic_Station ตั้งแต่ prototype → ระบบ login → offline installer → คู่มือ"
+      },
+      {
+        "id": "council",
+        "name": "Council",
+        "emoji": "⚖️",
+        "title": "Decision Watch — Medic_Station Direction",
+        "summary": "จุดตัดสินใจที่กำลังจะมา: Medic_Station เป็นเครื่องมือภายในหรือ Product? — สองทิศทางนี้คนละการพัฒนา",
+        "highlights": [
+          "ระบบครบพร้อมแล้ว: login/users/announcements/installer/คู่มือ",
+          "ใช้เอง vs ขาย/แจก = คนละทิศทางการพัฒนาอย่างสิ้นเชิง",
+          "พร้อมวิเคราะห์ trade-off 3 มุม เมื่อ Jed พร้อม"
+        ],
+        "url": "",
+        "full": "## Council — Decision Watch\n**วันที่:** 15 มิถุนายน 2569\n\nสภาฯ จับตาดู **1 จุดตัดสินใจที่กำลังจะมาถึง** ครับ:\n\n**Medic_Station — เครื่องมือภายใน vs. Product?** — ขณะนี้ระบบครบพร้อม (login/users/announcements/installer/คู่มือ) แล้ว จุดต่อไปคือ Jed ต้องตัดสินใจว่าจะพัฒนาต่อเพื่อ 'ใช้เอง' หรือ 'แจก/ขายให้องค์กรอื่น' — เป็นคนละทิศทางการพัฒนากันอย่างสิ้นเชิง"
+      },
+      {
+        "id": "vera",
+        "name": "Vera",
+        "emoji": "🔎",
+        "title": "QA Checklist — Medic_Station pre-deploy",
+        "summary": "รายการตรวจก่อน deploy Medic_Station ของจริง: ทดสอบ Login หลาย role, Installer บนเครื่อง clean, คู่มือตรง UI, Announcements ทุก role",
+        "highlights": [
+          "ทดสอบ Login ด้วย user หลาย role (admin/nurse/staff)",
+          "ทดสอบ Installer บนเครื่อง clean ที่ไม่มี Python ติดตั้งก่อน",
+          "ตรวจคู่มือ: screenshot ตรงกับ UI เวอร์ชันปัจจุบัน"
+        ],
+        "url": "",
+        "full": "## Vera — QA Note\n**วันที่:** 15 มิถุนายน 2569\n\nสิ่งที่เวร่าแนะนำให้ตรวจก่อน deploy Medic_Station ของจริงค่ะ:\n\n- ✅ ทดสอบ Login ด้วย user หลายบทบาท (admin/nurse/staff)\n- ☐ ทดสอบ Installer บนเครื่อง clean (ที่ไม่มี Python install ไว้ก่อน)\n- ☐ ตรวจคู่มือว่า screenshot ตรงกับ UI เวอร์ชันปัจจุบัน\n- ☐ ทดสอบ Announcements ว่าแสดงผลถูกต้องทุก role"
+      },
+      {
+        "id": "devil",
+        "name": "Devil",
+        "emoji": "😈",
+        "title": "Standby — พร้อม bear-case Medic_Station",
+        "summary": "Standby — ถ้า Jed คิดให้คนอื่นใช้ Medic_Station พร้อม review Security/Data integrity/Support model",
+        "highlights": [
+          "Security: รหัสผ่าน hash ไหม?",
+          "Data integrity: SQLite บน Windows ที่ shutdown กะทันหัน",
+          "Support Model: installer มีบั๊ก Jed รับ support load ได้ไหม"
+        ],
+        "url": "",
+        "full": "## Devil — Standby\n**วันที่:** 15 มิถุนายน 2569\n\nผมสังเกตจากระยะไกลครับ — วันนี้ทีม ship Medic_Station ครบ feature แล้ว ถ้า Jed คิดจะให้คนอื่นใช้จริง ผมพร้อม bear-case ใน 3 ประเด็น:\n1. Security ระบบ login/users — รหัสผ่าน hash ไหม?\n2. Data integrity SQLite บน Windows ที่ shutdown กะทันหัน\n3. Support Model — ถ้า installer มีบั๊กบนเครื่อง user Jed รับได้ไหม"
+      },
+      {
+        "id": "sage",
+        "name": "Sage",
+        "emoji": "📝",
+        "title": "Memory Note — Medic_Station milestone",
+        "summary": "บันทึกประจำวัน 15 มิ.ย. — Medic_Station ถึง milestone สำคัญ พร้อม deploy จริงแล้ว พร้อม insight ว่า Jed มักสร้างระบบให้สมบูรณ์ก่อนแล้วค่อยตัดสินใจทิศทาง",
+        "highlights": [
+          "Medic_Station milestone: login/users/announcements/installer/คู่มือ ครบ",
+          "Insight: Jed มีแนวโน้ม 'สร้างให้ครบก่อน ค่อยตัดสินใจทิศทาง' เห็นซ้ำในทุกโปรเจกต์",
+          "แนะนำ: ตั้งคำถาม direction ควบคู่ไปกับการ build เพื่อไม่ให้ผิดทิศ"
+        ],
+        "url": "",
+        "full": "## Sage — Memory Note\n**วันที่:** 15 มิถุนายน 2569\n\nบันทึกประจำวันนี้ครับ — งานหลักของทั้งวันคือ **Medic_Station** ที่ Forge พัฒนาอย่างต่อเนื่อง ฟีเจอร์ที่เสร็จในรอบนี้ครอบคลุมทั้งระบบ login, การจัดการ users, announcements, offline installer และคู่มือการใช้งาน — นับเป็น milestone สำคัญที่ทำให้โปรแกรมพร้อม deploy จริงได้แล้ว\n\n**Insight ที่เก็บไว้:** Jed มีแนวโน้มที่จะ 'สร้างระบบให้สมบูรณ์ก่อน' แล้วค่อยตัดสินใจทิศทาง — pattern นี้เห็นซ้ำทั้งใน Dashboard, Risk system, และตอนนี้ Medic_Station ข้อดีคือได้ product ที่ polish แต่ควรตั้งคำถาม direction ไว้ด้วยเพื่อไม่ให้ build ไปทิศผิดครับ"
+      }
+    ]
+  },
+  {
     "date": "2026-06-14",
     "dateDisplay": "14 มิถุนายน 2569",
     "agents": [
