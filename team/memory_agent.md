@@ -37,7 +37,7 @@
 บันทึก: `output/team_logs.json` — เพิ่ม entry ใหม่ของวันนี้ทุกครั้งที่เขียน diary
 
 ### 5. Second Brain Sync
-Sync diary copy ไป `D:\Second_Brain\40-Life\Diary\YYYY-MM-DD.md` ด้วยเสมอ
+Sync diary copy ไป `D:\NB_G_Drive\Second_Brain\40-Life\Diary\YYYY-MM-DD.md` ด้วยเสมอ
 
 ## กฎ
 - เขียน diary หลัง Vera review session เสมอ

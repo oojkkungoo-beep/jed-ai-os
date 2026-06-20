@@ -30,7 +30,7 @@ RESPONSIBILITIES:
 - Weekly digest ทุกวันจันทร์ 05:20 → notify Sage
 
 TRIGGER: vault, Second Brain, บันทึก, sync note, จัด inbox (ผ่าน Laura เท่านั้น)
-OUTPUT: D:\Second_Brain\40-Life\Reflections\weekly-YYYY-WNN.md
+OUTPUT: D:\NB_G_Drive\Second_Brain\40-Life\Reflections\weekly-YYYY-WNN.md
 ```
 
 ## Image Prompt

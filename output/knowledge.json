@@ -313,5 +313,14 @@
     "content": "Google AI Pro/Ultra subscription รายปี (gemini.google.com, NotebookLM) เป็นคนละระบบกับ Gemini Developer API (aistudio.google.com) — สมัครรายปีไม่ได้แปลว่า API ใช้ฟรีไม่จำกัด. ทดสอบจริง: gemini-2.5-pro ติด quota=0 บน free tier (ต้องเปิด billing ผูกบัตรกับ Google Cloud project), แต่ gemini-2.5-flash มี free tier ใช้งานได้จริงทั้ง text และ video analysis (ทดสอบกับ YouTube URL สำเร็จ — ถอด transcript + วิเคราะห์ภาพในจอได้). สร้าง wrapper scripts ไว้ที่ scripts/gemini_review.py (Devil ใช้ adversarial review) และ scripts/gemini_video.py (Scout ใช้วิเคราะห์วิดีโอ) default model = gemini-2.5-flash. กฎ: ใช้ flash ได้เลยไม่ต้องถาม, ถ้าจะใช้ pro (ต้อง billing) ต้องถาม Jed ก่อนเหมือน OpenAI.",
     "url": "",
     "date": "2026-06-14"
+  },
+  {
+    "id": 1717604000012,
+    "title": "Commit vs Push — 2 ขั้นตอนของ Git",
+    "topic": "Git/Dev Basics",
+    "source": "Session กับ Laura",
+    "content": "Commit = บันทึก 'จุดเซฟ' ของไฟล์ในเครื่องตัวเอง พร้อมข้อความอธิบายว่าทำอะไรไป — ยังอยู่แค่ในเครื่อง ยังไม่มีใครอื่นเห็น ย้อนกลับได้ถ้าพลาด. Push = ส่งจุดเซฟที่ commit ไว้ขึ้นไปเก็บบนเซิร์ฟเวอร์ออนไลน์ (เช่น GitHub) ทำให้คนอื่น/เครื่องอื่นเห็นการเปลี่ยนแปลงนั้นด้วย — เป็นขั้น 'เผยแพร่จริง' ย้อนกลับยากกว่า commit เฉยๆ. ลำดับ: แก้ไฟล์ → commit (เซฟในเครื่อง) → push (ส่งขึ้น GitHub). กฎของทีม Jed: commit ทำได้เรื่อยๆ แต่ push ต้อง Jed สั่งเท่านั้น เพราะ push คือขั้นที่ของออกไปสู่ที่สาธารณะแล้ว",
+    "url": "",
+    "date": "2026-06-20"
   }
 ]

@@ -43,7 +43,7 @@ idea, content, คอนเทนต์, เขียน, hook, storytelling, po
 - Presentation / Slide — กระชับ visual-first
 
 ## Second Brain Integration
-- Idea cards → save ใน `D:\Second_Brain\30-Business\Ideas\`
+- Idea cards → save ใน `D:\NB_G_Drive\Second_Brain\30-Business\Ideas\`
 - ดึง source จาก vault ก่อนเขียน content เสมอ
 
 ## บันทึก Output

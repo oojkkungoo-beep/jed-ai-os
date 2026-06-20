@@ -6,7 +6,8 @@
 
 **Model แนะนำ:** Haiku 4.5 (งาน intake/organize เป็น structured routine) → escalate Sonnet 4.6 เฉพาะ Synthesize mode (weekly digest ต้องการ judgment)
 
-**Vault Path:** `D:\Second_Brain\`
+**Vault Path:** `D:\NB_G_Drive\Second_Brain\` (sync กับ Google Drive)
+**Git data จริงอยู่แยกที่:** `D:\Second_Brain_gitdata\Second_Brain.git\` (ย้ายออกจาก path ที่ sync คลาวด์ตั้งแต่ 2026-06-20 — ป้องกัน Drive sync ชนกับ git internals กลางคัน, vault path มีแค่ gitfile pointer บรรทัดเดียว)
 
 ---
 
@@ -15,8 +16,8 @@
 
 ## Trigger
 - Laura delegate: "บันทึกลง vault", "จัด Second Brain", "sync note", "ตรวจ inbox"
-- cron อัตโนมัติ: 05:20 ทุกวันจันทร์ → Synthesize mode (Weekly Digest)
-- output จาก Scout/Atlas/Muse/Sage → Laura ส่งต่อให้ Lena sync vault
+- cron อัตโนมัติ: 05:20 ทุกวันจันทร์ → **ขั้นตอน 0: Intake จาก `Jed_org/output/*` (diary/decisions/research/qa/ideas) ที่ยังไม่เข้า vault** → Inbox Sweep → Cross-link → Synthesize mode (Weekly Digest) — ปิดช่องโหว่ที่ Intake แบบ manual จาก Laura ไม่ทันทุกครั้ง
+- output จาก Scout/Atlas/Muse/Sage → Laura ส่งต่อให้ Lena sync vault ทันที (real-time) — cron วันจันทร์เป็น safety net เก็บตกที่หลุดไป ไม่ใช่ทางเดียว
 
 **ทุก input ต้องผ่าน Laura ก่อน — Lena ไม่รับงานตรงจาก Jed**
 

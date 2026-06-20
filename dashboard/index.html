@@ -11,7 +11,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Jed AI OS">
   <link rel="apple-touch-icon" href="images/Jed.png">
-  <link rel="stylesheet" href="style.css?v=20260614a">
+  <link rel="stylesheet" href="style.css?v=20260616a">
 </head>
 <body>
 
@@ -33,6 +33,7 @@
   </div>
   <div class="nav-item"        data-page="session"  onclick="navigate('session')"> <span class="nav-icon">📊</span> Session Log</div>
   <div class="nav-item"        data-page="knowledge"onclick="navigate('knowledge')"><span class="nav-icon">🧠</span> Knowledge</div>
+  <div class="nav-item"        data-page="glossary" onclick="navigate('glossary')"><span class="nav-icon">📔</span> Glossary</div>
 
   <div class="nav-section" style="margin-top:12px">Records</div>
   <div class="nav-item" data-page="diary"    onclick="navigate('diary')">   <span class="nav-icon">📖</span> Diary</div>
@@ -159,6 +160,14 @@
           <button class="btn btn-ghost btn-xs" onclick="navigate('activity')">ดูทั้งหมด →</button>
         </div>
         <div id="home-activity-preview" class="widget-list"></div>
+      </div>
+
+      <!-- Scheduled Tasks -->
+      <div class="widget">
+        <div class="widget-head">
+          <div class="widget-title">⏰ Scheduled Tasks</div>
+        </div>
+        <div id="home-scheduled-tasks" class="widget-list"></div>
       </div>
 
     </div>
@@ -289,6 +298,20 @@
 
       <!-- Knowledge list -->
       <div id="knowledge-list"></div>
+    </div>
+  </div>
+
+  <!-- ══ GLOSSARY ══ -->
+  <div class="page" id="page-glossary">
+    <div class="page-top">
+      <div>
+        <div class="page-title">📔 Glossary</div>
+        <div class="page-sub">คลังคำศัพท์ — คำที่ Jed ถามความหมาย เก็บไว้ทบทวนทีหลัง</div>
+      </div>
+      <input class="inp" style="max-width:240px" placeholder="ค้นหาคำศัพท์..." oninput="setGlossarySearch(this.value)">
+    </div>
+    <div class="page-body" style="padding-top:0">
+      <div id="glossary-list"></div>
     </div>
   </div>
 
@@ -445,7 +468,7 @@
   </div>
 </div>
 
-<script src="app.js?v=20260614a"></script>
+<script src="app.js?v=20260616a"></script>
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {

@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "term": "Fork from here",
+    "category": "Git / Dev",
+    "meaning": "การแยกสาขา (branch) ใหม่ออกจากจุดปัจจุบันใน git history เพื่อทำงานคู่ขนานโดยไม่กระทบสาขาหลัก จนกว่าจะ merge กลับทีหลัง",
+    "example": "ใช้ตอนอยากลองของใหม่/เสี่ยง หรือให้ subagent ทำงานแยกใน worktree",
+    "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 2,
+    "term": "Weekly digest",
+    "category": "General",
+    "meaning": "สรุปข่าว/ข้อมูลประจำสัปดาห์ รวบรวมสิ่งที่เกิดขึ้นในรอบ 7 วันมาให้อ่านทีเดียว เช่น อีเมลสรุปรายสัปดาห์ หรือรายงานสรุปงาน",
+    "example": "ใช้บ่อยกับ newsletter หรือระบบที่ส่งสรุปอัตโนมัติให้ผู้ใช้ไม่ต้องไล่อ่านทุกวัน",
+    "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 3,
+    "term": "Node",
+    "category": "Dev / Tech",
+    "meaning": "ทั่วไป: 'จุด' หนึ่งจุดในโครงสร้างข้อมูลหรือเครือข่าย (เช่น จุดในกราฟ, จุดเชื่อมใน org chart) | ในโปรแกรมมิ่ง: มักหมายถึง Node.js — runtime สำหรับรัน JavaScript นอก browser",
+    "example": "Node.js ใช้สร้างเว็บ server หรือสคริปต์เบื้องหลัง",
+    "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 4,
+    "term": "ENV",
+    "category": "Dev / Tech",
+    "meaning": "ย่อจาก Environment Variable (ตัวแปรสภาพแวดล้อม) คือค่าที่ตั้งไว้นอกโค้ด ให้โปรแกรมอ่านไปใช้ตอนรัน เช่น API key, path, การตั้งค่าเฉพาะเครื่อง",
+    "example": "เก็บแยกจากโค้ดเพื่อความปลอดภัย ไม่ต้อง hardcode ข้อมูลลับ และเปลี่ยนค่าได้โดยไม่ต้องแก้โค้ด",
+    "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 5,
+    "term": "Migration",
+    "category": "Dev / Tech",
+    "meaning": "การย้าย/แปลงข้อมูลหรือโครงสร้างจากแบบหนึ่งไปอีกแบบ — Database migration: เปลี่ยนโครงสร้างตาราง/schema แบบมีลำดับขั้นตอนโดยไม่ทำข้อมูลเดิมพัง | ย้ายระบบ: ย้ายข้อมูล/แอปจากที่เก่าไปที่ใหม่",
+    "example": "เพิ่มคอลัมน์ใหม่ในตาราง database หรือย้าย server เก่าไป server ใหม่",
+    "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 6,
+    "term": "Bear Case",
+    "category": "Business / Strategy",
+    "meaning": "มุมมองแบบมองโลกในแง่ร้ายของการวิเคราะห์ ใช้คู่กับ Bull Case (มองในแง่ดี) เพื่อตั้งคำถามว่า 'ถ้าแผนนี้พลาด จะพลาดเพราะอะไร' หา blind spot ก่อนตัดสินใจ",
+    "example": "ตรงกับบทบาทของ Devil ในทีม Laura ที่ทำหน้าที่ bear case/ท้าทายแผนให้ Jed",
+    "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 7,
+    "term": "Persist",
+    "category": "Dev / Tech",
+    "meaning": "การเก็บข้อมูลให้คงอยู่ต่อแม้ปิดโปรแกรม/รีสตาร์ทแล้ว ตรงข้ามกับข้อมูลชั่วคราวที่หายไปทันทีที่ปิด",
+    "example": "ไฟล์ output/*.json ของ Jed (todo, diary, knowledge) คือข้อมูลที่ persist ข้ามทุก session",
+    "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 8,
+    "term": "Commit",
+    "category": "Git / Dev",
+    "meaning": "การบันทึก snapshot ของไฟล์ที่เปลี่ยนแปลงไว้ใน git history พร้อมข้อความอธิบาย เก็บไว้บนเครื่อง (local) ยังไม่ขึ้น remote",
+    "example": "แก้โค้ดแล้ว commit เพื่อบันทึกจุดนี้ไว้ ก่อนจะ push ขึ้นไปที่ GitHub",
+    "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 9,
+    "term": "Push",
+    "category": "Git / Dev",
+    "meaning": "การส่ง commit ที่ทำไว้บนเครื่อง (local) ขึ้นไปที่ remote repository (เช่น GitHub) ให้คนอื่น/เครื่องอื่นเห็นการเปลี่ยนแปลงด้วย",
+    "example": "Jed ตั้งกฎว่า Laura ห้าม push เองโดยไม่ได้รับคำสั่งชัดเจนทุกครั้ง",
+    "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
+  }
+]

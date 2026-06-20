@@ -550,52 +550,280 @@
     "topCategory": "🔧 Dev & Tech",
     "tags": [
       "🔧 Dev & Tech",
+      "🤖 System & Setup",
       "📝 Memory & Diary",
-      "💡 Creative & Content",
-      "🔍 Research"
+      "💡 Creative & Content"
     ],
-    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (56%) — รอ Sage สรุปท้ายวัน",
+    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (47%) — รอ Sage สรุปท้ายวัน",
     "categories": [
       {
         "name": "🔧 Dev & Tech",
-        "count": 58,
-        "pct": 56
+        "count": 927,
+        "pct": 47
+      },
+      {
+        "name": "🤖 System & Setup",
+        "count": 275,
+        "pct": 14
       },
       {
         "name": "📝 Memory & Diary",
-        "count": 19,
+        "count": 272,
+        "pct": 14
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 158,
+        "pct": 8
+      },
+      {
+        "name": "🌿 Life & Health",
+        "count": 110,
+        "pct": 6
+      },
+      {
+        "name": "🔍 Research",
+        "count": 107,
+        "pct": 5
+      }
+    ],
+    "tasks": [
+      "Now let's update app.js for the todo logic.",
+      "Reload reset to home. Let's click todo again.",
+      "## สรุปการอัปเดต Todo Dashboard",
+      "**สิ่งที่เพิ่มเข้ามา:**",
+      "2. **เรียงลำดับ** — งานที่ยังไม่เสร็จล่าสุดอยู่บนสุด งานที่ทำแล้วอยู่ล่างสุด (เรียงตามวันที่อัปเดต/สร้างล่าสุด)",
+      "3. **Eisenhower Matrix** — แบ่งงานเป็น 4 ประเภท: 🔥 ทำทันที (ด่วน+สำคัญ), 📅 วางแผน (สำคัญไม่ด่วน), 🤝 มอบหมาย (ด่วนไม่สำคั",
+      "ทดสอบใน preview แล้วทำงานครบทุกฟังก์ชัน — filter, sort, edit/save, checkbox ทำงานถูกต้องค่ะ",
+      "ช่วยสรุปสิ่งที่ผมต้องทำทั้งหมดใส่ลงไปใน dashboard todo ด้วยครับ"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 16,
+    "date": "17 มิถุนายน 2569",
+    "topCategory": "🔧 Dev & Tech",
+    "tags": [
+      "🔧 Dev & Tech",
+      "🤖 System & Setup",
+      "💡 Creative & Content",
+      "📝 Memory & Diary"
+    ],
+    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (65%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 736,
+        "pct": 65
+      },
+      {
+        "name": "🤖 System & Setup",
+        "count": 205,
         "pct": 18
       },
       {
         "name": "💡 Creative & Content",
-        "count": 7,
-        "pct": 7
+        "count": 67,
+        "pct": 6
+      },
+      {
+        "name": "📝 Memory & Diary",
+        "count": 53,
+        "pct": 5
       },
       {
         "name": "🔍 Research",
-        "count": 7,
-        "pct": 7
-      },
-      {
-        "name": "⚖️ Decision",
-        "count": 7,
-        "pct": 7
+        "count": 40,
+        "pct": 4
       },
       {
         "name": "🌿 Life & Health",
-        "count": 4,
+        "count": 13,
+        "pct": 1
+      }
+    ],
+    "tasks": [
+      "### โครงสร้างข้อมูลจาก Excel ที่มีอยู่",
+      "3. **สร้าง Frontend** HTML/JS (ไม่ต้องมี framework ใหญ่)",
+      "**Jed ต้องการให้เริ่มสร้างได้เลยไหมคะ?** ถ้าใช่ขอทราบ:",
+      "| **เชื่อม Google Sheets** | ✅ seamless | ❌ ต้องทำเพิ่ม | ❌ ต้องทำเพิ่ม |",
+      "## แผนที่ Forge จะสร้าง",
+      "Admin อื่นๆ             ←  เพิ่ม email ใน Sheets ได้ทีหลัง",
+      "**ขอทราบเพิ่มเติมก่อนเริ่มค่ะ:**",
+      "3. **เริ่มได้เลยไหม** — หรือรอ confirm ก่อน?"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 17,
+    "date": "18 มิถุนายน 2569",
+    "topCategory": "🔧 Dev & Tech",
+    "tags": [
+      "🔧 Dev & Tech",
+      "🤖 System & Setup",
+      "🔍 Research",
+      "💡 Creative & Content"
+    ],
+    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (64%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 993,
+        "pct": 64
+      },
+      {
+        "name": "🤖 System & Setup",
+        "count": 204,
+        "pct": 13
+      },
+      {
+        "name": "🔍 Research",
+        "count": 143,
+        "pct": 9
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 87,
+        "pct": 6
+      },
+      {
+        "name": "📝 Memory & Diary",
+        "count": 68,
+        "pct": 4
+      },
+      {
+        "name": "🌿 Life & Health",
+        "count": 41,
+        "pct": 3
+      }
+    ],
+    "tasks": [
+      "**งานค้างที่ต้องทำต่อ:**",
+      "1. ทดสอบ API จริง (ดึงข้อมูลสมาชิกจาก Sheets)",
+      "2. ทดสอบ Admin Login (Google OAuth บน GitHub Pages)",
+      "3. ปรับแต่งเพิ่มเติม",
+      "อยากเริ่มจากจุดไหนก่อนดีคะ Jed? หรือมีของใหม่ที่อยากทำเพิ่มเข้ามาคะ?",
+      "ต้องสร้าง Apps Script ที่ handle:",
+      "- Admin actions (approve, update, delete)",
+      "โครงสร้าง Google Sheet \"Members\" ตอนนี้มีคอลัมน์อะไรบ้างคะ? (เช่น ชื่อ, รุ่น, ประเภทสมาชิก, สถานะ, อีเมล ฯลฯ) เพื่อจะได้"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 18,
+    "date": "19 มิถุนายน 2569",
+    "topCategory": "🔧 Dev & Tech",
+    "tags": [
+      "🔧 Dev & Tech",
+      "🔍 Research",
+      "🤖 System & Setup",
+      "💡 Creative & Content"
+    ],
+    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (58%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 532,
+        "pct": 58
+      },
+      {
+        "name": "🔍 Research",
+        "count": 132,
+        "pct": 14
+      },
+      {
+        "name": "🤖 System & Setup",
+        "count": 96,
+        "pct": 10
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 49,
+        "pct": 5
+      },
+      {
+        "name": "📝 Memory & Diary",
+        "count": 46,
+        "pct": 5
+      },
+      {
+        "name": "🌿 Life & Health",
+        "count": 35,
         "pct": 4
       }
     ],
     "tasks": [
-      "- [create_desktop_shortcut.vbs](Medic_Station/create_desktop_shortcut.vbs) สร้างไอคอน \"MED-App\" บน Desktop อัตโนมัติ",
-      "- เพิ่ม `tkcalendar`, `reportlab` ที่ขาดใน [requirements.txt](Medic_Station/requirements.txt)",
-      "- [install.bat](Medic_Station/install.bat) — เช็ค Python, ติดตั้ง lib, สร้าง shortcut อัตโนมัติ (ต้องมีเน็ต)",
-      "**4. แก้บั๊ก `.bat` ไม่ทำงาน** — root cause คือไฟล์ใช้ line ending แบบ LF + `chcp 65001` + ภาษาไทย ทำให้ cmd parse พังทุ",
-      "- เพิ่มท้ายรายงาน \"ผู้ออกรายงาน: {ชื่อที่ login}\"",
-      "**ค้างไว้**: ปัญหาปฏิทินช่องที่ 2 ในหน้ารายงาน \"เลือกเดือนไม่ได้\" — รอ Jed ส่งภาพหน้าจอตอนเปิดปฏิทินมาดูเพิ่มครับ",
-      "**แก้**: เพิ่ม `ctypes.windll.shcore.SetProcessDpiAwareness(1)` ที่บนสุดของ [main.py:7-12](Medic_Station/main.py:7) ให้ ",
-      "รบกวนเปิดแอป (ปิดแล้วเปิดใหม่) แล้วลองกดปุ่มเปลี่ยนเดือน/ปีในปฏิทินอีกครั้งครับ ถ้ายังไม่หาย ส่งภาพมาดูเพิ่มได้เลยครับ"
+      "มีเพื่อนอยากทำทีมเลขา agent แบบผม  ช่วยถอดวิธีการทำให้หน่อยครับตั้งแต่เริ่มสมัคร Claude",
+      "[Laura] ได้ค่ะ เดี๋ยวสรุปขั้นตอนทำทีมเลขา AI แบบที่ Jed ใช้อยู่ ให้เพื่อนเอาไปเริ่มได้เลยนะคะ",
+      "**2. สร้างโฟลเดอร์โปรเจกต์**",
+      "- สร้างโฟลเดอร์เปล่า 1 อัน เป็น \"บ้าน\" ของระบบ (เช่น `MyOrg/`)",
+      "**4. สร้างทีม agent ย่อย**",
+      "- สร้างโฟลเดอร์ `team/` แล้วทำไฟล์ `.md` แยกตามหน้าที่ เช่น `idea.md`, `life.md`, `finance.md`, `forge.md` (โค้ด), `qa.m",
+      "- เริ่มคุยงานจริง ดูว่า routing แม่นไหม ปรับคำสั่งใน CLAUDE.md เรื่อยๆ",
+      "- ค่อยๆเพิ่ม agent ใหม่ตามงานที่ขาด"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 19,
+    "date": "20 มิถุนายน 2569",
+    "topCategory": "🔧 Dev & Tech",
+    "tags": [
+      "🔧 Dev & Tech",
+      "🤖 System & Setup",
+      "🔍 Research",
+      "📝 Memory & Diary"
+    ],
+    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (38%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 440,
+        "pct": 38
+      },
+      {
+        "name": "🤖 System & Setup",
+        "count": 194,
+        "pct": 17
+      },
+      {
+        "name": "🔍 Research",
+        "count": 150,
+        "pct": 13
+      },
+      {
+        "name": "📝 Memory & Diary",
+        "count": 132,
+        "pct": 11
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 78,
+        "pct": 7
+      },
+      {
+        "name": "⚖️ Decision",
+        "count": 66,
+        "pct": 6
+      }
+    ],
+    "tasks": [
+      "วันนี้จะต่อในส่วนไหนคะ? มีอะไรอยากเพิ่ม แก้บัค หรือ feature ใหม่?",
+      "GAS ยังไม่มี `checkAdmin` endpoint ค่ะ ต้องเพิ่มทั้งฝั่ง GAS และแก้ `auth.js`",
+      "1. เพิ่ม `case 'checkAdmin'` ใน GAS (GET — ไม่ต้องการ auth)",
+      "| `apps-script/รหัส.js` | เพิ่ม `case 'checkAdmin'` — GET endpoint ไม่ต้อง auth |",
+      "ต้องทำ **2 อย่างพร้อมกัน:**",
+      "**ขั้นตอนที่ต้องทำค่ะ:**",
+      "https://script.google.com/macros/s/AKfycbysEWdIFN25qayS82Bfoi-mae9RG5MtOb92JKKNhqMgDIlfCDtazpIAybtAfH5EZcwS/exec?action=",
+      "ขั้นตอนที่ 3 สำคัญมากค่ะ — แค่ clasp push ไม่พอ ต้องสร้าง version ใหม่ใน UI ด้วย"
     ],
     "details": "",
     "relatedProjects": [],

@@ -70,8 +70,8 @@ python scripts/gemini_video.py --file [path ไปยังไฟล์วิด
 3. ถ้ายังไม่ได้ → fallback เป็น Whisper (OpenAI) ถอดเสียงอย่างเดียว — **ต้องถาม Jed ก่อน** เพราะมี cost (ดู [[feedback_api_cost_confirm]])
 
 ## Second Brain Integration
-- **Vault Path:** `D:\Second_Brain\`
-- Research notes → save ใน `D:\Second_Brain\20-AI-Learning\Research-Notes\`
+- **Vault Path:** `D:\NB_G_Drive\Second_Brain\`
+- Research notes → save ใน `D:\NB_G_Drive\Second_Brain\20-AI-Learning\Research-Notes\`
 - เช็ค vault ก่อนค้นเว็บเสมอ — ถ้าเจอใน vault ดึงมาใช้เลย ประหยัด token
 
 ## Output Format

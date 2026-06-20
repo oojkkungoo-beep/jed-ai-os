@@ -18,16 +18,16 @@
     ]
   },
   "9c9c0a9a-bd77-40ce-83c9-919b19b1b7ca": {
-    "date": "14 มิถุนายน 2569",
+    "date": "16 มิถุนายน 2569",
     "scores": {
       "🎯 Strategy & CEO": 9,
-      "💡 Creative & Content": 7,
-      "🌿 Life & Health": 69,
-      "🔍 Research": 5,
+      "💡 Creative & Content": 8,
+      "🌿 Life & Health": 70,
+      "🔍 Research": 8,
       "⚖️ Decision": 3,
-      "🔧 Dev & Tech": 82,
-      "📝 Memory & Diary": 15,
-      "🤖 System & Setup": 3
+      "🔧 Dev & Tech": 102,
+      "📝 Memory & Diary": 17,
+      "🤖 System & Setup": 5
     },
     "tasks": [
       "Now let's update app.js for the todo logic.",
@@ -130,14 +130,17 @@
     ]
   },
   "b4b2479c-30b5-4e24-89bb-07df4cfbe6b4": {
-    "date": "14 มิถุนายน 2569",
+    "date": "16 มิถุนายน 2569",
     "scores": {
-      "🎯 Strategy & CEO": 23,
-      "💡 Creative & Content": 11,
-      "⚖️ Decision": 2,
-      "🔧 Dev & Tech": 7,
-      "📝 Memory & Diary": 33,
-      "🤖 System & Setup": 6
+      "🎯 Strategy & CEO": 57,
+      "💡 Creative & Content": 79,
+      "🌿 Life & Health": 14,
+      "🔍 Research": 4,
+      "⚖️ Decision": 4,
+      "🔧 Dev & Tech": 488,
+      "💰 Finance": 2,
+      "📝 Memory & Diary": 145,
+      "🤖 System & Setup": 181
     },
     "tasks": [
       "| **ai-team-daily-diary** | สร้าง diary/briefing ของสมาชิกทีม AI ทุกคน + sync ขึ้น dashboard | ทุกวัน 18:01 (+jitter) | ",
@@ -282,13 +285,13 @@
     ]
   },
   "421bc889-f5d8-491b-8bbb-452a51316db5": {
-    "date": "15 มิถุนายน 2569",
+    "date": "16 มิถุนายน 2569",
     "scores": {
       "💡 Creative & Content": 5,
-      "🌿 Life & Health": 8,
-      "🔍 Research": 8,
+      "🌿 Life & Health": 11,
+      "🔍 Research": 11,
       "⚖️ Decision": 8,
-      "🔧 Dev & Tech": 147,
+      "🔧 Dev & Tech": 149,
       "📝 Memory & Diary": 29,
       "🤖 System & Setup": 2
     },
@@ -326,14 +329,17 @@
     ]
   },
   "c2e1a815-a87f-4951-90f4-477dd62c134b": {
-    "date": "15 มิถุนายน 2569",
+    "date": "19 มิถุนายน 2569",
     "scores": {
-      "💡 Creative & Content": 15,
-      "🌿 Life & Health": 2,
-      "🔍 Research": 1,
-      "🔧 Dev & Tech": 21,
-      "📝 Memory & Diary": 5,
-      "🤖 System & Setup": 24
+      "🎯 Strategy & CEO": 4,
+      "💡 Creative & Content": 37,
+      "🌿 Life & Health": 7,
+      "🔍 Research": 5,
+      "⚖️ Decision": 1,
+      "🔧 Dev & Tech": 49,
+      "💰 Finance": 1,
+      "📝 Memory & Diary": 8,
+      "🤖 System & Setup": 62
     },
     "tasks": [
       "มีเพื่อนอยากทำทีมเลขา agent แบบผม  ช่วยถอดวิธีการทำให้หน่อยครับตั้งแต่เริ่มสมัคร Claude",
@@ -349,13 +355,13 @@
   "893b0b08-5ca4-4dce-b935-47c9dde45c90": {
     "date": "16 มิถุนายน 2569",
     "scores": {
-      "💡 Creative & Content": 7,
-      "🌿 Life & Health": 4,
-      "🔍 Research": 7,
-      "⚖️ Decision": 7,
-      "🔧 Dev & Tech": 58,
-      "📝 Memory & Diary": 19,
-      "🤖 System & Setup": 1
+      "💡 Creative & Content": 9,
+      "🌿 Life & Health": 7,
+      "🔍 Research": 17,
+      "⚖️ Decision": 11,
+      "🔧 Dev & Tech": 66,
+      "📝 Memory & Diary": 30,
+      "🤖 System & Setup": 3
     },
     "tasks": [
       "- [create_desktop_shortcut.vbs](Medic_Station/create_desktop_shortcut.vbs) สร้างไอคอน \"MED-App\" บน Desktop อัตโนมัติ",
@@ -366,6 +372,324 @@
       "**ค้างไว้**: ปัญหาปฏิทินช่องที่ 2 ในหน้ารายงาน \"เลือกเดือนไม่ได้\" — รอ Jed ส่งภาพหน้าจอตอนเปิดปฏิทินมาดูเพิ่มครับ",
       "**แก้**: เพิ่ม `ctypes.windll.shcore.SetProcessDpiAwareness(1)` ที่บนสุดของ [main.py:7-12](Medic_Station/main.py:7) ให้ ",
       "รบกวนเปิดแอป (ปิดแล้วเปิดใหม่) แล้วลองกดปุ่มเปลี่ยนเดือน/ปีในปฏิทินอีกครั้งครับ ถ้ายังไม่หาย ส่งภาพมาดูเพิ่มได้เลยครับ"
+    ]
+  },
+  "06c85ec6-af11-4e21-bf63-3f457d8059bc": {
+    "date": "16 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 4,
+      "💡 Creative & Content": 24,
+      "🌿 Life & Health": 5,
+      "🔍 Research": 31,
+      "⚖️ Decision": 2,
+      "🔧 Dev & Tech": 63,
+      "💰 Finance": 12,
+      "📝 Memory & Diary": 15,
+      "🤖 System & Setup": 48
+    },
+    "tasks": [
+      "สร้าง projectใหม่ ชื่อ \"OR_System\"",
+      "[Agent: Laura] จะสร้างโปรเจกต์ใหม่ OR_System ค่ะ — ขอเช็ก pattern จาก Risk_OR_BAH ก่อนเลยนะคะ",
+      "ได้ pattern แล้วค่ะ จะสร้าง OR_System ในโฟลเดอร์เดียวกัน",
+      "ตอนนี้อัปเดต memory ค่ะ",
+      "สร้างโปรเจกต์ OR_System เสร็จแล้วค่ะ:",
+      "- **`output/projects.json`** — เพิ่ม entry OR_System แล้ว",
+      "ตอนนี้สามารถเปิด session ใหม่ที่ root `D:\\Claude_Cowork\\งาน_รพ\\OR_System\\` แล้วทำงานในโปรเจกต์นี้ได้เลยนะคะ — Jed อยากเร",
+      "**Phase 2 — สร้าง DB ต้นแบบ (สัปดาห์ 3)**"
+    ]
+  },
+  "7a36dd80-9647-4ab1-b374-2c59d8653fc9": {
+    "date": "16 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 14,
+      "💡 Creative & Content": 33,
+      "🌿 Life & Health": 3,
+      "🔍 Research": 36,
+      "⚖️ Decision": 6,
+      "🔧 Dev & Tech": 59,
+      "📝 Memory & Diary": 36,
+      "🤖 System & Setup": 36
+    },
+    "tasks": [
+      "สร้างเลขาเพื่อจัดการเรื่อง Second_Brain โดยเฉพาะดีไหม เหมือนบรรณารักษ์+ วิเคราะห์ จัดเก็บ แปลงกิจกรรมต่างๆสรุปเป็นข้อมูล",
+      "[Laura] ความคิดดีมากค่ะ — แต่ขอถามก่อนว่า Second_Brain ที่ `D:\\Second_Brain` มีโครงสร้างแบบไหนอยู่แล้ว?",
+      "โครงสร้างชัดเจน — Obsidian vault แบบ PARA ค่ะ มีทั้ง Inbox, Clinical, AI-Learning, Business, Life, Resources",
+      "**ความเห็นค่ะ:** ควรสร้างเลขา Second_Brain โดยเฉพาะ — เรียกว่า **Lena (Librarian Agent)** — เหตุผล:",
+      "| **Agent ใหม่ Lena** (แนะนำ) | โฟกัสชัด, ขยายได้, ไม่รก Sage | เพิ่ม agent ลำดับที่ 14 |",
+      "| **ขยาย Sage** (memory agent) | ไม่เพิ่มสมาชิก | Sage จะหนักเกิน, scope ปนกัน |",
+      "**คำแนะนำ:** สร้าง Lena เป็น agent ใหม่ โดยมี hooks ที่ trigger เมื่อ Sage/Atlas/Scout เสร็จงาน → Lena รับ output ไปจัดเ",
+      "อยากให้ลงมือสร้าง `team/librarian.md` เลยไหมคะ หรือจะออกแบบ scope ก่อน?"
+    ]
+  },
+  "52c931da-c543-4c08-9eb5-268e65960703": {
+    "date": "17 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 5,
+      "💡 Creative & Content": 7,
+      "🌿 Life & Health": 3,
+      "🔍 Research": 34,
+      "⚖️ Decision": 9,
+      "🔧 Dev & Tech": 245,
+      "💰 Finance": 1,
+      "📝 Memory & Diary": 14,
+      "🤖 System & Setup": 41
+    },
+    "tasks": [
+      "### โครงสร้างข้อมูลจาก Excel ที่มีอยู่",
+      "3. **สร้าง Frontend** HTML/JS (ไม่ต้องมี framework ใหญ่)",
+      "**Jed ต้องการให้เริ่มสร้างได้เลยไหมคะ?** ถ้าใช่ขอทราบ:",
+      "| **เชื่อม Google Sheets** | ✅ seamless | ❌ ต้องทำเพิ่ม | ❌ ต้องทำเพิ่ม |",
+      "## แผนที่ Forge จะสร้าง",
+      "Admin อื่นๆ             ←  เพิ่ม email ใน Sheets ได้ทีหลัง",
+      "**ขอทราบเพิ่มเติมก่อนเริ่มค่ะ:**",
+      "3. **เริ่มได้เลยไหม** — หรือรอ confirm ก่อน?"
+    ]
+  },
+  "bf3319f8-4e7c-4a7b-8a15-148085df0cd7": {
+    "date": "18 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 1,
+      "💡 Creative & Content": 78,
+      "🌿 Life & Health": 15,
+      "🔍 Research": 26,
+      "⚖️ Decision": 5,
+      "🔧 Dev & Tech": 687,
+      "💰 Finance": 1,
+      "📝 Memory & Diary": 44,
+      "🤖 System & Setup": 182
+    },
+    "tasks": [
+      "**งานค้างที่ต้องทำต่อ:**",
+      "1. ทดสอบ API จริง (ดึงข้อมูลสมาชิกจาก Sheets)",
+      "2. ทดสอบ Admin Login (Google OAuth บน GitHub Pages)",
+      "3. ปรับแต่งเพิ่มเติม",
+      "อยากเริ่มจากจุดไหนก่อนดีคะ Jed? หรือมีของใหม่ที่อยากทำเพิ่มเข้ามาคะ?",
+      "ต้องสร้าง Apps Script ที่ handle:",
+      "- Admin actions (approve, update, delete)",
+      "โครงสร้าง Google Sheet \"Members\" ตอนนี้มีคอลัมน์อะไรบ้างคะ? (เช่น ชื่อ, รุ่น, ประเภทสมาชิก, สถานะ, อีเมล ฯลฯ) เพื่อจะได้"
+    ]
+  },
+  "caa095a5-6c70-499d-853d-2d1224012b23": {
+    "date": "19 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 5,
+      "💡 Creative & Content": 12,
+      "🌿 Life & Health": 28,
+      "🔍 Research": 127,
+      "⚖️ Decision": 22,
+      "🔧 Dev & Tech": 444,
+      "💰 Finance": 2,
+      "📝 Memory & Diary": 33,
+      "🤖 System & Setup": 33
+    },
+    "tasks": [
+      "**งานค้าง 5 ข้อ** — ยังไม่ได้ทดสอบจริงบน GitHub Pages เลยค่ะ",
+      "วันนี้จะเริ่มจากข้อไหนก่อนคะ?",
+      "1. ทดสอบ **Admin Login** (Google OAuth)",
+      "2. ทดสอบ **ค้นหาสมาชิก** (members.html → Sheets)",
+      "3. ทดสอบ **register.html** ส่งข้อมูลเข้า Pending",
+      "4. สร้าง **Admin Panel** เต็ม",
+      "Preview server ที่รันอยู่เป็นของ Jed_org ไม่ใช่ rtaf-nurse-web ค่ะ ต้องทดสอบบน GitHub Pages โดยตรง",
+      "| code ซับซ้อน มี modal + admin actions | ตัด code ออก ~120 บรรทัด |"
+    ]
+  },
+  "31547481-15e3-4506-af17-e264b5004fb0": {
+    "date": "20 มิถุนายน 2569",
+    "scores": {
+      "🔧 Dev & Tech": 44,
+      "📝 Memory & Diary": 5,
+      "🤖 System & Setup": 2
+    },
+    "tasks": [
+      "วันนี้จะต่อในส่วนไหนคะ? มีอะไรอยากเพิ่ม แก้บัค หรือ feature ใหม่?",
+      "GAS ยังไม่มี `checkAdmin` endpoint ค่ะ ต้องเพิ่มทั้งฝั่ง GAS และแก้ `auth.js`",
+      "1. เพิ่ม `case 'checkAdmin'` ใน GAS (GET — ไม่ต้องการ auth)",
+      "| `apps-script/รหัส.js` | เพิ่ม `case 'checkAdmin'` — GET endpoint ไม่ต้อง auth |",
+      "ต้องทำ **2 อย่างพร้อมกัน:**",
+      "**ขั้นตอนที่ต้องทำค่ะ:**",
+      "https://script.google.com/macros/s/AKfycbysEWdIFN25qayS82Bfoi-mae9RG5MtOb92JKKNhqMgDIlfCDtazpIAybtAfH5EZcwS/exec?action=",
+      "ขั้นตอนที่ 3 สำคัญมากค่ะ — แค่ clasp push ไม่พอ ต้องสร้าง version ใหม่ใน UI ด้วย"
+    ]
+  },
+  "e54114f2-60ee-4e29-85bd-7ec3067fc219": {
+    "date": "20 มิถุนายน 2569",
+    "scores": {
+      "💡 Creative & Content": 10,
+      "🌿 Life & Health": 7,
+      "🔍 Research": 23,
+      "⚖️ Decision": 10,
+      "🔧 Dev & Tech": 56,
+      "📝 Memory & Diary": 20,
+      "🤖 System & Setup": 3
+    },
+    "tasks": [
+      "- `_build_announcements`: wrapped add-entry/button block in `if self._is_admin():` (entry placeholder \"พิมพ์ข่าวสาร/ประก",
+      "- \"ช่วยเอายาเดิมออกไปได้ไหมเพราะยาเดิม เป็นสถานการณ์สมมุติที่เราสร้าง\"",
+      "- \"สร้าง คู่มือ วิธิการใช้ app นี้ ให้ครอบคลุมทุกรายละเอียด\" (current/most recent request)",
+      "3. โครงสร้างหน้าจอหลัก",
+      "- **Untrack `medic_station.db`** ออกจาก git แล้ว (ไฟล์ยังอยู่ในเครื่องปกติ ใช้งานได้) + เพิ่มเข้า `.gitignore` — ข้อมูลพ",
+      "- เพิ่ม `.gitignore` กันไฟล์ installer ขนาดใหญ่ (python exe 30MB + packages 20MB ใน `offline_install/`) ไม่ให้เข้า repo ",
+      "- กระดานข่าวสารหน้าแรก: admin เพิ่ม/ลบได้ user ดูอย่างเดียว",
+      "3. **แก้ปัญหาความปลอดภัยข้อมูล**: untrack `medic_station.db` ออกจาก git (มีข้อมูลพนักงาน/สุขภาพจริง) + เพิ่ม `.gitignore"
+    ]
+  },
+  "68397643-781d-4017-b986-082deb912ac4": {
+    "date": "20 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 2,
+      "🌿 Life & Health": 2,
+      "⚖️ Decision": 3,
+      "🔧 Dev & Tech": 6,
+      "📝 Memory & Diary": 2,
+      "🤖 System & Setup": 31
+    },
+    "tasks": [
+      "แต่ขอเช็คเพิ่มนะคะ — เครื่องพิมพ์ที่ Jed ต่อ USB อยู่ตอนนี้ คือตัวไหนใน 3 ตัวนี้ครับ และต้องการให้สั่งพิมพ์ไฟล์อะไร (ไฟล",
+      "**ไม่ต้องรีสตาร์ทค่ะ** ลองสั่งพิมพ์ทดสอบได้เลย ถ้าพิมพ์ไม่ออกหรือมี error ค่อยรีสตาร์ทเป็นทางเลือกสุดท้าย",
+      "ต้องการให้ Laura สั่งพิมพ์หน้าทดสอบ (test page) ให้เช็คเลยไหมคะ",
+      "[Laura] เช็คให้ก่อนค่ะ เริ่มจากสถานะ LAN/เครือข่าย แล้วดูเรื่องเครื่องช้า/แปลกๆ ต่อ",
+      "**ส่วนเรื่องเครื่องช้า/รู้สึกแปลกๆ** — อันนี้คนละเรื่องกับ LAN ค่ะ อยากให้ Laura เช็คอะไรเพิ่มไหม เช่น:",
+      "**สถานะ Antivirus:** Defender เปิดอยู่ (Real-time protection ON, signature อัปเดตล่าสุดวันนี้) แต่**ยังไม่เคยรัน Full Sc",
+      "เริ่ม Full Scan แล้วค่ะ รันอยู่เบื้องหลัง (ใช้เวลานาน อาจถึงเป็นชั่วโมงขึ้นกับขนาดดิสก์) — Laura จะแจ้งผลให้ทันทีที่สแกน"
+    ]
+  },
+  "795e7d6a-e18c-4cd1-9dde-b2e948c069c9": {
+    "date": "20 มิถุนายน 2569",
+    "scores": {
+      "💡 Creative & Content": 23,
+      "🌿 Life & Health": 15,
+      "🔍 Research": 36,
+      "⚖️ Decision": 13,
+      "🔧 Dev & Tech": 93,
+      "💰 Finance": 1,
+      "📝 Memory & Diary": 23,
+      "🤖 System & Setup": 27
+    },
+    "tasks": [
+      "- `_build_announcements`: wrapped add-entry/button block in `if self._is_admin():` (entry placeholder \"พิมพ์ข่าวสาร/ประก",
+      "- \"ช่วยเอายาเดิมออกไปได้ไหมเพราะยาเดิม เป็นสถานการณ์สมมุติที่เราสร้าง\"",
+      "- \"สร้าง คู่มือ วิธิการใช้ app นี้ ให้ครอบคลุมทุกรายละเอียด\" (current/most recent request)",
+      "3. โครงสร้างหน้าจอหลัก",
+      "- **Untrack `medic_station.db`** ออกจาก git แล้ว (ไฟล์ยังอยู่ในเครื่องปกติ ใช้งานได้) + เพิ่มเข้า `.gitignore` — ข้อมูลพ",
+      "- เพิ่ม `.gitignore` กันไฟล์ installer ขนาดใหญ่ (python exe 30MB + packages 20MB ใน `offline_install/`) ไม่ให้เข้า repo ",
+      "- กระดานข่าวสารหน้าแรก: admin เพิ่ม/ลบได้ user ดูอย่างเดียว",
+      "3. **แก้ปัญหาความปลอดภัยข้อมูล**: untrack `medic_station.db` ออกจาก git (มีข้อมูลพนักงาน/สุขภาพจริง) + เพิ่ม `.gitignore"
+    ]
+  },
+  "f143c70e-bc5f-43bd-b9ed-1b53c230f4dd": {
+    "date": "20 มิถุนายน 2569",
+    "scores": {
+      "💡 Creative & Content": 4,
+      "🌿 Life & Health": 5,
+      "🔍 Research": 36,
+      "⚖️ Decision": 27,
+      "🔧 Dev & Tech": 166,
+      "💰 Finance": 1,
+      "📝 Memory & Diary": 34,
+      "🤖 System & Setup": 80
+    },
+    "tasks": [
+      "ผมเคยสร้าง Dashboard รวมผลงานของผม  ไว้ที่: https://drive.google.com/drive/folders/1VE6zh7wr1dpY0aqrDPhumwBA60DGiU6U?usp",
+      "- ดึงเนื้อหามาอัปเดต/รวมกับ Dashboard ที่มีอยู่แล้วใน [dashboard/index.html](dashboard/index.html)",
+      "โครงสร้างที่เจอ:",
+      "[Laura] บันทึก memory เรียบร้อยแล้วค่ะ ตั้งแต่นี้ Laura จะจำได้ทุก session ว่า Dashboard ผลงานของ Jed อยู่ที่ไหนและแก้ยั",
+      "ช่วยเพิ่ม โปรเจค ชศพอ_webapp เข้าไปเก็บใน portfolio ด้วยครับ",
+      "[Laura] เช็คแล้วค่ะ Laura มีแค่เครื่องมือ Drive (อ่าน/อัปโหลดไฟล์ใหม่/copy) ไม่มีเครื่องมือแก้เซลล์ใน Google Sheet โดยตร",
+      "รบกวน Jed เปิด sheet นี้แล้วเพิ่มแถวนี้ในแท็บ **apps** เองนะคะ:",
+      "ต้องเพิ่ม skill \"เครื่องมือแก้เซลล์ใน Google Sheet โดยตรง\" นี้ไหม"
+    ]
+  },
+  "d6e00e80-3b9c-427a-a8cc-d4a2b852d023": {
+    "date": "20 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 13,
+      "💡 Creative & Content": 9,
+      "🌿 Life & Health": 2,
+      "🔍 Research": 14,
+      "⚖️ Decision": 1,
+      "🔧 Dev & Tech": 6,
+      "💰 Finance": 15,
+      "📝 Memory & Diary": 5,
+      "🤖 System & Setup": 14
+    },
+    "tasks": [
+      "11 ของ 13 agent file เสร็จแล้วค่ะ (ขาด Mint ที่เพิ่งทำไป รวมแล้วครบ 13 + Laura) ตอนนี้ขั้น model/tool review — เช็ค mode",
+      "| Agent | World-Class Benchmark ที่เพิ่ม | คะแนน |",
+      "| Devil | Red-team lead, pre-mortem technique เป็นจุดเริ่ม Mode B | A |",
+      "ปรับโครงสร้างเสร็จแล้ว ตอนนี้ขอให้ Scout ลงมือค้นจริง — เริ่มจากโปรเจกต์ที่ Jed กำลังทำอยู่ตอนนี้ (แผนรายได้เสริม 90 วัน",
+      "- ส่งต่อให้ Atlas (ปรับ action plan), Muse (ตีบ niche สไลด์), Mint (ประเมิน monetization 2 ทาง) แล้ว",
+      "1. **Mentor** — ขยายบทบาท Atlas เพิ่ม Mentor Check-in Mode (ไม่สร้าง agent ใหม่ ลดความซ้ำซ้อน) คอยเช็คภาพรวม 4-Level Fra",
+      "2. **Benchmark ก่อนเริ่มงาน** — เพิ่มเป็น Standing Rule ใน `CLAUDE.md` + โหมดใหม่ใน `team/research.md` ให้ Scout ค้นเคสท",
+      "3. **ลงมือจริงแล้ว 1 เคส** — เรื่องคอนเทนต์ความรู้วิสัญญีที่กำลังจะเริ่ม (ด้านบน)"
+    ]
+  },
+  "51b2d14d-caf5-4e5b-928d-2185f4a6459d": {
+    "date": "20 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 10,
+      "💡 Creative & Content": 18,
+      "🌿 Life & Health": 3,
+      "🔍 Research": 18,
+      "⚖️ Decision": 5,
+      "🔧 Dev & Tech": 12,
+      "📝 Memory & Diary": 30,
+      "🤖 System & Setup": 13
+    },
+    "tasks": [
+      "[Laura] เดี๋ยวลอร่าเช็คให้ค่ะ เรื่อง Second Brain/Obsidian นี่ตรงสาย Lena (Vault Librarian) เลย ขอสำรวจโครงสร้างจริงก่อน",
+      "1. **ใช้ได้จริงไหม** — โครงสร้าง/เครื่องมือพร้อมใช้งานจริง 100% (ไม่ใช่ของโชว์) แต่ \"ตัวระบบ\" ยังไม่ได้ถูกใช้งานสม่ำเสมอ",
+      "- เพิ่ม pointer note หลักสูตรวิสัญญีพยาบาล → `10-Clinical/Anesthesia/`",
+      "ถ้าต้องการป้องกันกรณีเครื่องพังด้วย แนะนำให้เพิ่มการ sync หรือ copy ไปไว้ที่ OneDrive/Google Drive หรือ external hard di",
+      "มีอะไรให้ลอร่าอธิบายเพิ่มไหมคะ",
+      "หมายเหตุเล็กน้อย: ไฟล์ diary เก่าวันที่ 6 มิ.ย. ที่เคยพิมพ์ path เดิมไว้ ลอร่าตั้งใจไม่แก้ เพราะเป็นบันทึกประวัติ ณ วันน",
+      "- โครงสร้างโฟลเดอร์ (PARA-style) + plugin (Dataview, Templater, obsidian-git) — มาตรฐานเดียวกับที่มืออาชีพใช้จริง",
+      "อยากให้เลนาลงมือแก้ 3 จุดนี้เลยไหมคะ หรือจะให้ทำเฉพาะจุดที่ Jed ห่วงที่สุดก่อน"
+    ]
+  },
+  "c6a0e1ef-8fa8-41bb-8257-424bc3e895df": {
+    "date": "20 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 1,
+      "💡 Creative & Content": 14,
+      "🌿 Life & Health": 10,
+      "🔍 Research": 11,
+      "⚖️ Decision": 6,
+      "🔧 Dev & Tech": 35,
+      "📝 Memory & Diary": 6,
+      "🤖 System & Setup": 16
+    },
+    "tasks": [
+      "[Laura] ขอเช็คสถานะ Dashboard จริงก่อนตอบนะคะ ให้ Vera (QA) ตรวจสอบโค้ด/โครงสร้างปัจจุบัน",
+      "- ⚠️ Code เริ่มเป็น monolithic (app.js 1,502 บรรทัดไฟล์เดียว) — เพิ่ม agent ใหม่ต้องแก้ไฟล์เดิม",
+      "ถ้า Jed อยากให้ทำจริง อยากให้ Forge เริ่มจากข้อ 1-2 ก่อนไหมคะ (effort ต่ำ ผลชัด) หรือมีจุดเฉพาะที่อยากให้ดูเพิ่มคะ",
+      "ผมต้องการสร้าง dashboard ใหม่เอาให้ perfect ตามสิ่งที่ควรจะเป็น  เมื่อทำเสร็จแล้วจะลบอันเก่าออก",
+      "ก่อนให้ Forge เริ่มออกแบบจริง ขอถามตัดสินใจสำคัญหน่อยนะคะ",
+      "- คือ framework ที่ให้คุณเขียน \"component\" (เหมือนตัวต่อ LEGO) แต่ละชิ้นมี HTML+CSS+JS ของตัวเอง เช่น `<TodoCard>`, `<Ch",
+      "- ข้อเสีย: ต้องติดตั้ง Node.js + build step (compile ก่อนรัน) ถ้า Jed ไม่คุ้นจะมีของให้เรียนรู้เพิ่ม (แต่ไม่ยากเท่า Reac",
+      "- เหมาะกับ: อยากได้ของที่ \"โตได้\" เพิ่ม feature ในอนาคตเรื่อยๆ โดยไม่บวม"
+    ]
+  },
+  "7f036072-7c30-4b99-b9dd-69f602fda078": {
+    "date": "20 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 1,
+      "🌿 Life & Health": 2,
+      "🔍 Research": 12,
+      "⚖️ Decision": 1,
+      "🔧 Dev & Tech": 22,
+      "💰 Finance": 2,
+      "📝 Memory & Diary": 7,
+      "🤖 System & Setup": 8
+    },
+    "tasks": [
+      "ความหมายแบบง่าย: เหมือนการ \"คัดลอกเส้นทางงาน\" ออกไปอีกเส้นหนึ่ง โดยเริ่มจากจุดที่เราอยู่ตอนนี้ (commit ปัจจุบัน) — งานที",
+      "- มี subagent หรือ session แยกที่ต้องทำงานคู่ขนานกัน (เหมือนที่ระบบ Agent tool มี `isolation: worktree` ให้ทำงานแยกจากโค",
+      "ช่วยสร้าง Dictionary คลังคำศัพท์ และจัดเก็บคำศัพท์นี้ให้ผมด้วย",
+      "[Laura] เรียบร้อยค่ะ Jed สร้าง Dictionary คลังคำศัพท์ไว้ที่ [output/glossary.json](output/glossary.json) แล้ว พร้อมเก็บค",
+      "โครงสร้างไฟล์ (ต่อ 1 คำศัพท์):",
+      "[Laura] เพิ่ม Glossary เข้า dashboard เรียบร้อยค่ะ Jed",
+      "- เพิ่มเมนู \"📔 Glossary\" ใน sidebar — [dashboard/index.html](dashboard/index.html)",
+      "- เพิ่มหน้า Glossary พร้อมช่องค้นหาคำศัพท์"
     ]
   }
 }

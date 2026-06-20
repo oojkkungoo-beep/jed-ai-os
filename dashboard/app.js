@@ -86,6 +86,7 @@ let activity  = [];
 let diary     = [];
 let todos     = [];
 let knowledge = [];
+let glossary = [];
 let sessions  = [];
 let teamLogs  = [];
 let scheduledTasksLog = [];
@@ -103,6 +104,7 @@ function navigate(page) {
   if (page === 'session')  loadSessionLog();
   if (page === 'home')     renderHome();
   if (page === 'briefing') renderBriefing();
+  if (page === 'glossary') renderGlossary();
 }
 
 function switchTab(t) {
@@ -767,6 +769,48 @@ function getFilteredKnowledge() {
 }
 
 // ═══════════════════════════════════════════════
+//  GLOSSARY — คลังคำศัพท์
+// ═══════════════════════════════════════════════
+let glossarySearch = '';
+
+function setGlossarySearch(v) {
+  glossarySearch = v.trim().toLowerCase();
+  renderGlossary();
+}
+
+function renderGlossary() {
+  const el = document.getElementById('glossary-list');
+  if (!el) return;
+  document.getElementById('stat-glossary') && (document.getElementById('stat-glossary').textContent = glossary.length);
+
+  const filtered = !glossarySearch ? glossary : glossary.filter(g =>
+    (g.term || '').toLowerCase().includes(glossarySearch) ||
+    (g.meaning || '').toLowerCase().includes(glossarySearch) ||
+    (g.category || '').toLowerCase().includes(glossarySearch)
+  );
+
+  if (!filtered.length) {
+    el.innerHTML = `<div class="widget-empty">ยังไม่มีคำศัพท์ในคลัง — ลองถาม Laura ให้ช่วยอธิบายคำที่สงสัย แล้วขอให้บันทึกเก็บไว้</div>`;
+    return;
+  }
+
+  el.innerHTML = [...filtered].reverse().map(g => `
+    <div class="knowledge-card">
+      <div class="knowledge-head">
+        <div class="knowledge-title">${g.term}</div>
+      </div>
+      <div class="knowledge-meta">
+        <span>${g.category || 'General'}</span>
+        <span>·</span>
+        <span>${g.date_added || ''}</span>
+      </div>
+      <div class="knowledge-content">${g.meaning || ''}</div>
+      ${g.example ? `<div class="knowledge-content" style="opacity:0.7;font-size:0.82rem;margin-top:4px">ตัวอย่าง: ${g.example}</div>` : ''}
+    </div>
+  `).join('');
+}
+
+// ═══════════════════════════════════════════════
 //  DIARY — แยกของแต่ละคน เลือกอ่าน + ดูย้อนหลังแบบเปิดหนังสือ
 // ═══════════════════════════════════════════════
 function renderDiaryPeople() {
@@ -1412,10 +1456,11 @@ async function loadFromFiles() {
     fetch(`${BASE}/output/team_logs.json`,   { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).catch(() => null),
     fetch(`${BASE}/output/todos.json`,           { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).catch(() => null),
     fetch(`${BASE}/output/scheduled_tasks_log.json`, { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).catch(() => null),
+    fetch(`${BASE}/output/glossary.json`,    { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).catch(() => null),
   ];
 
   // Wait for everything in parallel
-  const [diaryResults, [proj, act, sess, know, tl, fileTodos, stLog]] = await Promise.all([
+  const [diaryResults, [proj, act, sess, know, tl, fileTodos, stLog, gloss]] = await Promise.all([
     Promise.all(diaryFetches),
     Promise.all(mainFetches),
   ]);
@@ -1442,6 +1487,7 @@ async function loadFromFiles() {
   if (Array.isArray(know))  knowledge = know;
   if (Array.isArray(tl))    teamLogs  = tl;
   if (Array.isArray(stLog)) scheduledTasksLog = stLog;
+  if (Array.isArray(gloss)) glossary = gloss;
 
   // Todos: merge file (agent-written) + localStorage (UI edits)
   const localTodos = JSON.parse(localStorage.getItem('jed_todos') || '[]');
@@ -1494,6 +1540,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   renderReview();
   renderTodos();
   renderKnowledge();
+  renderGlossary();
   renderTodoBadge();
   renderBriefing();
   renderHome();
