@@ -9,7 +9,8 @@ class LoginWindow(ctk.CTkToplevel):
         self.result = None
 
         self.title("เข้าสู่ระบบ — MED-App")
-        self.geometry("380x380")
+        win_w, win_h = 380, 380
+        self.geometry(f"{win_w}x{win_h}+0+0")
         self.resizable(False, False)
         self.protocol("WM_DELETE_WINDOW", self._cancel)
 

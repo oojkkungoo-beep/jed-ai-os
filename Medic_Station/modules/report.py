@@ -84,13 +84,13 @@ class ReportModule(ctk.CTkFrame):
 
         # Two tables
         tables = ctk.CTkFrame(self, fg_color="transparent")
-        tables.pack(fill="both", expand=True, padx=15, pady=(5, 15))
+        tables.pack(fill="x", padx=15, pady=(5, 5))
 
         left = ctk.CTkFrame(tables, fg_color="white", corner_radius=8)
         left.pack(side="left", fill="both", expand=True, padx=(0, 5))
         ctk.CTkLabel(left, text="โรค/วินิจฉัยที่พบบ่อย",
                      font=app_font(15, "bold")).pack(anchor="w", padx=15, pady=10)
-        self.diag_tree = ttk.Treeview(left, columns=("diag", "cnt"), show="headings", height=14)
+        self.diag_tree = ttk.Treeview(left, columns=("diag", "cnt"), show="headings", height=4)
         self.diag_tree.heading("diag", text="วินิจฉัย")
         self.diag_tree.heading("cnt",  text="จำนวน")
         self.diag_tree.column("diag", width=230)
@@ -104,7 +104,7 @@ class ReportModule(ctk.CTkFrame):
         right.pack(side="right", fill="both", expand=True, padx=(5, 0))
         ctk.CTkLabel(right, text="ยาที่ใช้บ่อย",
                      font=app_font(15, "bold")).pack(anchor="w", padx=15, pady=10)
-        self.med_tree = ttk.Treeview(right, columns=("med", "total"), show="headings", height=14)
+        self.med_tree = ttk.Treeview(right, columns=("med", "total"), show="headings", height=4)
         self.med_tree.heading("med",   text="ชื่อยา")
         self.med_tree.heading("total", text="จำนวนรวม")
         self.med_tree.column("med",   width=190)
@@ -113,6 +113,31 @@ class ReportModule(ctk.CTkFrame):
         self.med_tree.configure(yscrollcommand=lambda f, l: self._autoscroll(med_sb, f, l))
         self.med_tree.pack(side="left", fill="both", expand=True, padx=(10, 0), pady=(0, 10))
         med_sb.pack(side="right", fill="y", pady=(0, 10))
+
+        # สรุปรายการใช้บริการห้องพยาบาล
+        usage = ctk.CTkFrame(self, fg_color="white", corner_radius=8)
+        usage.pack(fill="both", expand=True, padx=15, pady=(5, 15))
+        ctk.CTkLabel(usage, text="สรุปรายการใช้บริการห้องพยาบาล",
+                     font=app_font(15, "bold")).pack(anchor="w", padx=15, pady=10)
+        self.usage_tree = ttk.Treeview(
+            usage, columns=("date", "rank", "patient", "dept", "diag", "meds"),
+            show="headings", height=4)
+        self.usage_tree.heading("date",    text="วันที่")
+        self.usage_tree.heading("rank",    text="ยศ")
+        self.usage_tree.heading("patient", text="ผู้ป่วย")
+        self.usage_tree.heading("dept",    text="สังกัด")
+        self.usage_tree.heading("diag",    text="วินิจฉัย/อาการ")
+        self.usage_tree.heading("meds",    text="ยาที่ได้รับ")
+        self.usage_tree.column("date",    width=90,  anchor="center")
+        self.usage_tree.column("rank",    width=90)
+        self.usage_tree.column("patient", width=150)
+        self.usage_tree.column("dept",    width=130)
+        self.usage_tree.column("diag",    width=220)
+        self.usage_tree.column("meds",    width=260)
+        usage_sb = ttk.Scrollbar(usage, orient="vertical", command=self.usage_tree.yview)
+        self.usage_tree.configure(yscrollcommand=lambda f, l: self._autoscroll(usage_sb, f, l))
+        self.usage_tree.pack(side="left", fill="both", expand=True, padx=(10, 0), pady=(0, 10))
+        usage_sb.pack(side="right", fill="y", pady=(0, 10))
 
         self._load()
 
@@ -189,6 +214,43 @@ class ReportModule(ctk.CTkFrame):
         self.med_tree.delete(*self.med_tree.get_children())
         for r in meds:
             self.med_tree.insert("", "end", values=(r["medicine_name"], r["total"]))
+
+        self._load_usage_summary(d1, d2)
+
+    def _load_usage_summary(self, d1, d2):
+        visit_rows = self.db.fetchall("""
+            SELECT v.id, v.visit_date,
+                   COALESCE(e.rank, '') as rank,
+                   TRIM(e.first_name||' '||e.last_name) as pname,
+                   COALESCE(e.department, '') as department,
+                   v.diagnosis, v.chief_complaint
+            FROM visits v JOIN employees e ON v.emp_id=e.emp_id
+            WHERE v.visit_date BETWEEN ? AND ?
+            ORDER BY v.visit_date, v.id
+        """, (d1, d2))
+
+        med_by_visit = {}
+        for r in self.db.fetchall("""
+            SELECT md.visit_id, m.medicine_name, md.quantity, m.unit
+            FROM medicine_dispensed md
+            JOIN medicines m ON md.medicine_id=m.id
+            JOIN visits v ON md.visit_id=v.id
+            WHERE v.visit_date BETWEEN ? AND ?
+            ORDER BY md.id
+        """, (d1, d2)):
+            qty = r["quantity"]
+            qty_str = str(int(qty)) if qty == int(qty) else str(qty)
+            med_by_visit.setdefault(r["visit_id"], []).append(
+                f"{r['medicine_name']} x{qty_str} {r['unit']}")
+
+        self.usage_tree.delete(*self.usage_tree.get_children())
+        for r in visit_rows:
+            meds = med_by_visit.get(r["id"])
+            meds_text = "; ".join(meds) if meds else "-"
+            diag = r["diagnosis"] or r["chief_complaint"] or "-"
+            self.usage_tree.insert("", "end", values=(
+                to_display(r["visit_date"]), r["rank"], r["pname"],
+                r["department"], diag, meds_text))
 
     def _export(self):
         try:
@@ -340,10 +402,13 @@ class ReportModule(ctk.CTkFrame):
         return fp, mm, Paragraph, styles, elements
 
     def _pdf_visit_detail_elements(self, d1, d2, Paragraph, styles, mm):
-        """รายละเอียดการรักษา — date, patient, diagnosis, medicines given."""
+        """รายละเอียดการรักษา — date, rank, patient, department, diagnosis, medicines given."""
         cell_style = styles["cell"]
         visit_rows = self.db.fetchall("""
-            SELECT v.id, v.visit_date, TRIM(e.rank||' '||e.first_name||' '||e.last_name) as pname,
+            SELECT v.id, v.visit_date,
+                   COALESCE(e.rank, '') as rank,
+                   TRIM(e.first_name||' '||e.last_name) as pname,
+                   COALESCE(e.department, '') as department,
                    v.diagnosis, v.chief_complaint
             FROM visits v JOIN employees e ON v.emp_id=e.emp_id
             WHERE v.visit_date BETWEEN ? AND ?
@@ -364,20 +429,22 @@ class ReportModule(ctk.CTkFrame):
             med_by_visit.setdefault(r["visit_id"], []).append(
                 f"{r['medicine_name']} x{qty_str} {r['unit']}")
 
-        detail_data = [["วันที่", "ผู้ป่วย", "วินิจฉัย/อาการ", "ยาที่ได้รับ"]]
+        detail_data = [["วันที่", "ยศ", "ผู้ป่วย", "สังกัด", "วินิจฉัย/อาการ", "ยาที่ได้รับ"]]
         for r in visit_rows:
             meds = med_by_visit.get(r["id"])
             meds_text = "<br/>".join(meds) if meds else "-"
             diag = r["diagnosis"] or r["chief_complaint"] or "-"
             detail_data.append([
                 to_display(r["visit_date"]),
+                Paragraph(r["rank"], cell_style),
                 Paragraph(r["pname"], cell_style),
+                Paragraph(r["department"], cell_style),
                 Paragraph(diag, cell_style),
                 Paragraph(meds_text, cell_style),
             ])
         return [
             Paragraph("รายละเอียดการรักษา", styles["heading"]),
-            self._pdf_table(detail_data, [22 * mm, 35 * mm, 43 * mm, 60 * mm]),
+            self._pdf_table(detail_data, [22*mm, 18*mm, 28*mm, 28*mm, 37*mm, 37*mm]),
         ]
 
     def _export_pdf_stats(self):

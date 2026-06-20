@@ -50,7 +50,8 @@ class MedicStationApp(ctk.CTk):
     def __init__(self):
         super().__init__()
         self.title("MED-App — ระบบห้องพยาบาล")
-        self.geometry("1350x750")
+        win_w, win_h = 1350, 750
+        self.geometry(f"{win_w}x{win_h}+0+0")
         self.minsize(1100, 620)
 
         self.db = Database()

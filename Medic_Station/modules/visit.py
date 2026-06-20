@@ -3,7 +3,7 @@ from tkinter import ttk, messagebox
 from datetime import date, datetime
 from tkcalendar import DateEntry
 from utils import to_display, app_font
-from constants import DISEASE_SYSTEMS, DISEASE_SYSTEM_LABELS
+from constants import DISEASE_SYSTEMS, DISEASE_SYSTEM_LABELS, MEDICINE_CATEGORY_LABELS
 
 
 class VisitModule(ctk.CTkFrame):
@@ -476,44 +476,81 @@ class MedPickDialog(ctk.CTkToplevel):
     def __init__(self, parent, medicines, callback, selected_codes=None):
         super().__init__(parent)
         selected_codes = selected_codes or set()
-        # ยาที่อยู่ในหมวดระบบโรคที่เลือกไว้ จะถูกเรียงขึ้นมาก่อน
         medicines = sorted(
             medicines,
             key=lambda m: (m["category_code"] not in selected_codes, m["medicine_name"]))
         self.medicines = medicines
         self.callback = callback
         self.title("เลือกยา")
-        self.geometry("560x520")
+        self.geometry("600x580")
         self.transient(parent.winfo_toplevel())
         self.lift()
         self.focus_force()
 
         ctk.CTkLabel(self, text="เลือกยา (เลือกได้หลายรายการ)",
-                     font=app_font(16, "bold")).pack(pady=10)
+                     font=app_font(16, "bold")).pack(pady=(10, 6))
 
-        scroll = ctk.CTkScrollableFrame(self, fg_color="transparent")
-        scroll.pack(fill="both", expand=True, padx=15, pady=(0, 5))
+        # --- แถบกรอง ---
+        filter_bar = ctk.CTkFrame(self, fg_color="transparent")
+        filter_bar.pack(fill="x", padx=15, pady=(0, 6))
+
+        ctk.CTkLabel(filter_bar, text="หมวด:", font=app_font(13)).pack(side="left", padx=(0, 4))
+
+        # สร้างตัวเลือก dropdown จากหมวดที่มีจริงในรายการยา
+        present_codes = sorted({m["category_code"] for m in medicines if m["category_code"]})
+        cat_options = ["ทั้งหมด"] + [
+            f"{code} — {MEDICINE_CATEGORY_LABELS.get(code, code)}" for code in present_codes
+        ]
+        self._cat_var = ctk.StringVar(value="ทั้งหมด")
+        ctk.CTkOptionMenu(filter_bar, values=cat_options, variable=self._cat_var,
+                          width=220, font=app_font(13),
+                          command=lambda _: self._filter()).pack(side="left", padx=(0, 12))
+
+        ctk.CTkLabel(filter_bar, text="ค้นหา:", font=app_font(13)).pack(side="left", padx=(0, 4))
+        self._search_var = ctk.StringVar()
+        self._search_var.trace_add("write", lambda *_: self._filter())
+        ctk.CTkEntry(filter_bar, textvariable=self._search_var,
+                     placeholder_text="พิมพ์ชื่อยา...",
+                     width=160, font=app_font(13)).pack(side="left")
+
+        # --- รายการยา ---
+        self._scroll = ctk.CTkScrollableFrame(self, fg_color="transparent")
+        self._scroll.pack(fill="both", expand=True, padx=15, pady=(0, 5))
 
         self.rows = []
         for m in medicines:
             tag = f" [{m['category_code']}]" if m["category_code"] in selected_codes else ""
-            row = ctk.CTkFrame(scroll, fg_color="#f4f6f7", corner_radius=6)
+            row = ctk.CTkFrame(self._scroll, fg_color="#f4f6f7", corner_radius=6)
             row.pack(fill="x", pady=2)
             var = ctk.BooleanVar(value=False)
             label = f"{m['medicine_name']}{tag}  (คงเหลือ: {m['stock_quantity']} {m['unit']})"
-            ctk.CTkCheckBox(row, text=label, variable=var, width=260).pack(side="left", padx=8, pady=6)
+            ctk.CTkCheckBox(row, text=label, variable=var, width=270).pack(side="left", padx=8, pady=6)
             qty = ctk.CTkEntry(row, width=70, placeholder_text="จำนวน")
             qty.insert(0, "1")
             qty.pack(side="left", padx=4)
             sig = ctk.CTkEntry(row, width=160, placeholder_text="วิธีใช้")
             sig.pack(side="left", padx=4)
-            self.rows.append((m, var, qty, sig))
+            self.rows.append((m, var, qty, sig, row))
 
-        ctk.CTkButton(self, text="เพิ่มรายการที่เลือก", command=self._confirm, width=160).pack(pady=10)
+        ctk.CTkButton(self, text="เพิ่มรายการที่เลือก", command=self._confirm, width=180).pack(pady=10)
+
+    def _filter(self):
+        cat_sel = self._cat_var.get()
+        search = self._search_var.get().strip().lower()
+        # ดึงเฉพาะรหัสหมวดออกมาจาก "R — ระบบ..."
+        selected_code = cat_sel.split(" — ")[0] if cat_sel != "ทั้งหมด" else None
+
+        for m, var, qty_e, sig_e, row in self.rows:
+            match_cat = (selected_code is None) or (m["category_code"] == selected_code)
+            match_search = (not search) or (search in m["medicine_name"].lower())
+            if match_cat and match_search:
+                row.pack(fill="x", pady=2)
+            else:
+                row.pack_forget()
 
     def _confirm(self):
         added = 0
-        for m, var, qty_e, sig_e in self.rows:
+        for m, var, qty_e, sig_e, row in self.rows:
             if not var.get():
                 continue
             try:
