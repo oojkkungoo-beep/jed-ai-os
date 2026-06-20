@@ -583,10 +583,10 @@
       "🌿 Life & Health": 5,
       "🔍 Research": 36,
       "⚖️ Decision": 27,
-      "🔧 Dev & Tech": 166,
+      "🔧 Dev & Tech": 167,
       "💰 Finance": 1,
       "📝 Memory & Diary": 34,
-      "🤖 System & Setup": 80
+      "🤖 System & Setup": 82
     },
     "tasks": [
       "ผมเคยสร้าง Dashboard รวมผลงานของผม  ไว้ที่: https://drive.google.com/drive/folders/1VE6zh7wr1dpY0aqrDPhumwBA60DGiU6U?usp",
@@ -627,13 +627,13 @@
     "date": "20 มิถุนายน 2569",
     "scores": {
       "🎯 Strategy & CEO": 10,
-      "💡 Creative & Content": 18,
+      "💡 Creative & Content": 21,
       "🌿 Life & Health": 3,
       "🔍 Research": 18,
       "⚖️ Decision": 5,
       "🔧 Dev & Tech": 12,
-      "📝 Memory & Diary": 30,
-      "🤖 System & Setup": 13
+      "📝 Memory & Diary": 32,
+      "🤖 System & Setup": 16
     },
     "tasks": [
       "[Laura] เดี๋ยวลอร่าเช็คให้ค่ะ เรื่อง Second Brain/Obsidian นี่ตรงสาย Lena (Vault Librarian) เลย ขอสำรวจโครงสร้างจริงก่อน",
@@ -650,13 +650,13 @@
     "date": "20 มิถุนายน 2569",
     "scores": {
       "🎯 Strategy & CEO": 1,
-      "💡 Creative & Content": 14,
-      "🌿 Life & Health": 10,
-      "🔍 Research": 11,
-      "⚖️ Decision": 6,
-      "🔧 Dev & Tech": 35,
-      "📝 Memory & Diary": 6,
-      "🤖 System & Setup": 16
+      "💡 Creative & Content": 28,
+      "🌿 Life & Health": 20,
+      "🔍 Research": 15,
+      "⚖️ Decision": 7,
+      "🔧 Dev & Tech": 62,
+      "📝 Memory & Diary": 13,
+      "🤖 System & Setup": 22
     },
     "tasks": [
       "[Laura] ขอเช็คสถานะ Dashboard จริงก่อนตอบนะคะ ให้ Vera (QA) ตรวจสอบโค้ด/โครงสร้างปัจจุบัน",
@@ -672,14 +672,15 @@
   "7f036072-7c30-4b99-b9dd-69f602fda078": {
     "date": "20 มิถุนายน 2569",
     "scores": {
-      "🎯 Strategy & CEO": 1,
-      "🌿 Life & Health": 2,
-      "🔍 Research": 12,
-      "⚖️ Decision": 1,
-      "🔧 Dev & Tech": 22,
+      "🎯 Strategy & CEO": 2,
+      "💡 Creative & Content": 2,
+      "🌿 Life & Health": 3,
+      "🔍 Research": 19,
+      "⚖️ Decision": 2,
+      "🔧 Dev & Tech": 33,
       "💰 Finance": 2,
-      "📝 Memory & Diary": 7,
-      "🤖 System & Setup": 8
+      "📝 Memory & Diary": 25,
+      "🤖 System & Setup": 17
     },
     "tasks": [
       "ความหมายแบบง่าย: เหมือนการ \"คัดลอกเส้นทางงาน\" ออกไปอีกเส้นหนึ่ง โดยเริ่มจากจุดที่เราอยู่ตอนนี้ (commit ปัจจุบัน) — งานที",
@@ -690,6 +691,29 @@
       "[Laura] เพิ่ม Glossary เข้า dashboard เรียบร้อยค่ะ Jed",
       "- เพิ่มเมนู \"📔 Glossary\" ใน sidebar — [dashboard/index.html](dashboard/index.html)",
       "- เพิ่มหน้า Glossary พร้อมช่องค้นหาคำศัพท์"
+    ]
+  },
+  "bafcdc1c-9790-4fa5-99a7-301ab1d84303": {
+    "date": "20 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 2,
+      "💡 Creative & Content": 8,
+      "🔍 Research": 14,
+      "⚖️ Decision": 1,
+      "🔧 Dev & Tech": 39,
+      "💰 Finance": 2,
+      "📝 Memory & Diary": 1,
+      "🤖 System & Setup": 12
+    },
+    "tasks": [
+      "Web extraction, search, and URL discovery using the Nimble CLI. Returns clean structured data from any website.",
+      "- **Save all outputs to `.nimble/`.** Never leave extraction results in memory only.",
+      "| **nimble-agent-builder**           | Build reusable agents — create, refine, publish named extraction templates | CLI:",
+      "| \"Crawl / archive a whole section\"  | `nimble crawl`                                | Async bulk extraction            ",
+      "2. **Report:** _\"Found `<agent_name>` — using it now.\"_ or _\"No pre-built agent — falling back to extraction.\"_",
+      "For the full extract waterfall (tiers, flags, browser actions, network capture), see `references/nimble-extract/SKILL.md",
+      "| `references/nimble-extract/SKILL.md`                 | Extract flags, render tiers, browser actions, network capture, ",
+      "| `references/nimble-extract/browser-actions.md`       | Full browser action types and parameters                       "
     ]
   }
 }

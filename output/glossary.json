@@ -79,5 +79,95 @@
     "example": "Jed ตั้งกฎว่า Laura ห้าม push เองโดยไม่ได้รับคำสั่งชัดเจนทุกครั้ง",
     "date_added": "2026-06-20",
     "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 10,
+    "term": "Nimble",
+    "category": "Tools / Web Data",
+    "meaning": "แพลตฟอร์มเครื่องมือดึงข้อมูลจากเว็บแบบ real-time มี Web Search Agent (WSA) และ extraction agent เฉพาะทาง เช่น ค้นบริษัท, วิเคราะห์คู่แข่ง, หาผู้ให้บริการสุขภาพ, SEO, รายชื่อธุรกิจในพื้นที่",
+    "example": "ในระบบ Jed คือ skill ที่ขึ้นต้นด้วย nimble: เช่น nimble:company-deep-dive, nimble:competitor-intel, nimble:search",
+    "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 11,
+    "term": "Nimble CLI",
+    "category": "Tools / Web Data",
+    "meaning": "โปรแกรมบรรทัดคำสั่ง (command-line tool) ของ Nimble ที่ skill ต่างๆใช้เบื้องหลังดึงข้อมูลเว็บจริง (ไม่ใช่ข้อมูลจากความจำ AI) ต้องติดตั้งและล็อกอินไว้ล่วงหน้า",
+    "example": "ตรวจสอบว่าพร้อมใช้งานด้วยคำสั่ง nimble --version — ถ้า skill บอก 'Requires the Nimble CLI' แปลว่าต้องมี CLI นี้ก่อนจะรันได้จริง",
+    "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 12,
+    "term": "Cut-over criteria",
+    "category": "Dev / Project",
+    "meaning": "เกณฑ์ที่ใช้ตัดสินว่าพร้อมเปลี่ยนจากระบบเก่าไปใช้ระบบใหม่จริง (cut-over = วันที่สลับไปใช้ของใหม่แทนของเก่า)",
+    "example": "เช่น ทดสอบผ่านครบ, ข้อมูลย้ายครบ, ไม่มี bug ร้ายแรง — ตั้งไว้ก่อนเพื่อไม่ตัดสินใจสลับระบบแบบเดาสุ่ม",
+    "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 13,
+    "term": "Persistent service",
+    "category": "Dev / Tech",
+    "meaning": "บริการ/โปรเซสที่รันอยู่ต่อเนื่องตลอดเวลา ไม่ใช่รันครั้งเดียวแล้วจบ ตรงข้ามกับสคริปต์ที่รันจบแล้วปิดตัว",
+    "example": "web server ที่เปิดรอรับ request ทั้งวัน หรือ background service ที่ทำงานแม้ไม่มีคนเปิดหน้าเว็บอยู่",
+    "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 14,
+    "term": "Visual regression check",
+    "category": "Dev / QA",
+    "meaning": "การตรวจสอบว่า UI/หน้าตาแอปไม่เปลี่ยนแปลงผิดเพี้ยนไปจากเดิมหลังแก้โค้ด",
+    "example": "ถ่ายภาพหน้าจอเปรียบเทียบก่อน-หลัง หรือเปิดดูจริงในเบราว์เซอร์เพื่อจับ layout/สีที่เพี้ยนไปโดยไม่ตั้งใจ",
+    "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 15,
+    "term": "รันอัตโนมัติตอน login (Run at login / Autostart)",
+    "category": "Dev / Tech",
+    "meaning": "การตั้งโปรแกรม/สคริปต์ให้เริ่มทำงานเองทันทีที่เครื่องหรือ user login เข้าระบบ โดยไม่ต้องเปิดมือเอง",
+    "example": "Windows: Startup folder หรือ Task Scheduler trigger 'At log on' | dashboard ของ Jed AI OS ตั้ง auto-start ผ่าน serve.ps1",
+    "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 16,
+    "term": "Node server",
+    "category": "Dev / Tech",
+    "meaning": "เซิร์ฟเวอร์ที่เขียนด้วย Node.js — runtime สำหรับรัน JavaScript นอกเบราว์เซอร์ ใช้ทำ web server, API backend, หรือ background service",
+    "example": "ระบบของ Jed ใช้ Python http.server / PowerShell HttpListener (serve.ps1) แทน Node server — คนละภาษาแต่ทำหน้าที่เดียวกัน",
+    "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 17,
+    "term": "Chromium สำหรับ login",
+    "category": "Dev / Tech",
+    "meaning": "การใช้เบราว์เซอร์ Chromium (เบราว์เซอร์โอเพนซอร์สที่ Chrome สร้างต่อ) แบบอัตโนมัติ/headless เพื่อ login เข้าเว็บไซต์หรือระบบโดยไม่ต้องเปิดหน้าจอเอง มักใช้ในงาน automation/testing",
+    "example": "เครื่องมือ preview ของ Jed ใช้ Chromium จำลองเบราว์เซอร์เทสหน้าเว็บ และ Claude in Chrome MCP ก็ควบคุม Chromium จริงเพื่อกรอกล็อกอินแทนได้",
+    "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 18,
+    "term": "Headless browser login",
+    "category": "Dev / Tech",
+    "meaning": "การให้สคริปต์/โปรแกรมเปิดเบราว์เซอร์แบบไม่มีหน้าจอ (headless = ไม่ render ภาพให้คนดู) แล้วกรอก username/password ล็อกอินเข้าเว็บแทนคน",
+    "example": "ใช้บ่อยในงาน automation, testing, หรือดึงข้อมูลเว็บที่ต้องล็อกอินก่อน — เร็วกว่าเปิดเบราว์เซอร์จริงเพราะไม่ต้อง render UI",
+    "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 19,
+    "term": "MCP",
+    "category": "Dev / Tech",
+    "meaning": "ย่อจาก Model Context Protocol มาตรฐานที่ Anthropic สร้างขึ้น ให้ AI เชื่อมต่อกับเครื่องมือ/ระบบภายนอกได้แบบมาตรฐานเดียวกัน เช่น Gmail, Calendar, Notion, Canva, Chrome",
+    "example": "tool ที่ขึ้นต้นด้วย mcp__ เช่น mcp__Claude_Preview__*, mcp__Claude_in_Chrome__* คือ MCP server ที่ต่อเข้ามาให้ Laura ใช้งานได้",
+    "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
   }
 ]

@@ -786,33 +786,33 @@
     "categories": [
       {
         "name": "🔧 Dev & Tech",
-        "count": 440,
+        "count": 518,
         "pct": 38
       },
       {
         "name": "🤖 System & Setup",
-        "count": 194,
+        "count": 226,
         "pct": 17
       },
       {
         "name": "🔍 Research",
-        "count": 150,
+        "count": 175,
         "pct": 13
       },
       {
         "name": "📝 Memory & Diary",
-        "count": 132,
-        "pct": 11
+        "count": 160,
+        "pct": 12
       },
       {
         "name": "💡 Creative & Content",
-        "count": 78,
-        "pct": 7
+        "count": 105,
+        "pct": 8
       },
       {
         "name": "⚖️ Decision",
-        "count": 66,
-        "pct": 6
+        "count": 69,
+        "pct": 5
       }
     ],
     "tasks": [

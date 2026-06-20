@@ -32,7 +32,7 @@
 </script>
 
 <svelte:head>
-	<link rel="icon" href="/favicon.png" />
+	<link rel="icon" href="/Jed.ico" />
 </svelte:head>
 
 <Sidebar />

@@ -3,7 +3,9 @@
 	import { activityStore, activityAgentFilter, filteredActivity } from '$lib/stores/activity';
 	import { fmt } from '$lib/utils/format';
 
-	const agents = $derived(['all', ...new Set($activityStore.data.map((a) => a.agent))]);
+	const { data: activityData, error: activityError } = activityStore;
+
+	const agents = $derived(['all', ...new Set($activityData.map((a) => a.agent))]);
 </script>
 
 <PageHeader title="Activity" subtitle="ไทม์ไลน์การทำงานของทีม" />
@@ -20,8 +22,8 @@
 	{/each}
 </div>
 
-{#if $activityStore.error}
-	<div class="error-banner">โหลดข้อมูลไม่สำเร็จ: {$activityStore.error}</div>
+{#if $activityError}
+	<div class="error-banner">โหลดข้อมูลไม่สำเร็จ: {$activityError}</div>
 {/if}
 
 <ul class="activity-list">

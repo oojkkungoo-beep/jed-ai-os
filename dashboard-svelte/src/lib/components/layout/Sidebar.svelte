@@ -7,6 +7,7 @@
 		{ href: '/todo', icon: '✅', label: 'Todo' },
 		{ href: '/session', icon: '🗒️', label: 'Session Log' },
 		{ href: '/knowledge', icon: '📚', label: 'Knowledge' },
+		{ href: '/glossary', icon: '📔', label: 'Glossary' },
 		{ href: '/diary', icon: '📖', label: 'Diary' },
 		{ href: '/projects', icon: '📁', label: 'Projects' },
 		{ href: '/activity', icon: '⚡', label: 'Activity' },
