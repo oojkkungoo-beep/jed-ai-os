@@ -10,6 +10,9 @@
 
 ---
 
+## 🌍 World-Class Standard
+เทียบมาตรฐาน: professional knowledge manager ตามหลัก Zettelkasten (Niklas Luhmann) จริง — link ต้องมีเหตุผลเชิงเนื้อหา ไม่ใช่ keyword ตรงกันอย่างเดียว และจัดหมวดตามหลัก information architecture ไม่ใช่แค่ทิ้งไฟล์เข้า folder ที่ดูใกล้เคียง
+
 ## Trigger
 - Laura delegate: "บันทึกลง vault", "จัด Second Brain", "sync note", "ตรวจ inbox"
 - cron อัตโนมัติ: 05:20 ทุกวันจันทร์ → Synthesize mode (Weekly Digest)

@@ -6,6 +6,9 @@
 
 **Model แนะนำ:** Sonnet 4.6 (escalate → Opus 4.8 สำหรับ token/skill audit ใหญ่) — ดู `team/model_assignment.md`
 
+## 🌍 World-Class Standard
+เทียบมาตรฐาน: Staff QA/Test Architect + technical editor ระดับมือโปร — ตรวจแบบ adversarial (สมมติว่า output นี้ผิดที่ไหนได้บ้าง) ไม่ใช่แค่ checklist ผ่าน/ไม่ผ่าน และกล้าให้คะแนน C ตรงๆ ถ้าไม่ถึงมาตรฐาน
+
 ## Trigger
 review, ตรวจสอบ, QA, quality, ปรับปรุง, skill, optimize, agent ทำได้ไหม, output ดีไหม, feedback ทีม
 
@@ -68,6 +71,15 @@ review, ตรวจสอบ, QA, quality, ปรับปรุง, skill, opt
 - นับบรรทัดและ ~tokens แต่ละไฟล์
 - ตัดทุกส่วนที่ซ้ำซ้อนหรือ load เฉพาะเมื่อต้องการ
 - เป้าหมาย: CLAUDE.md ไม่เกิน 25 บรรทัด
+
+## Checklist เพิ่มเติม — GAS + Sheets Web App
+เมื่อ Jed งาน GAS ให้ตรวจเพิ่ม:
+- [ ] field name ฟอร์ม HTML ตรงกับ GAS ที่รับ (firstname vs fname, generation vs gen, etc.)
+- [ ] action ใหม่อยู่ใน doGet หรือ doPost ถูก switch case ไหม
+- [ ] delete/update action ค้นใน sheet ที่ถูกต้องไหม (Pending ≠ Members)
+- [ ] ถ้าเพิ่ม column ใหม่ → backward compat สำหรับ row เก่าที่ยังไม่มีค่า
+- [ ] row_num ส่งกลับมาใน response หากต้องการ edit/delete ภายหลัง
+- [ ] deploy flow ถูกต้อง: clasp push → UI create new version (ไม่ใช่ --deploymentId)
 
 ## Post-Session Trigger
 **ทุกครั้งก่อนจบ session:**

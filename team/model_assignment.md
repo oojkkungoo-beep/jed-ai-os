@@ -47,3 +47,6 @@
 
 ## Maintenance
 - Vera รับผิดชอบ review ตารางนี้เมื่อมี Claude model ใหม่ออก หรือ Jed สังเกตว่า agent คนไหนทำงานช้า/แพงเกินไปเทียบกับงาน
+
+## 🌍 World-Class Standard Upgrade (2026-06-20)
+Vera review แล้ว — model/tool assignment ปัจจุบันเหมาะสมกับงานแต่ละ agent อยู่แล้ว (Opus สำหรับ deep reasoning, Sonnet สำหรับงาน technical/synthesis, Haiku สำหรับ routine, Fable สำหรับ narrative) **ไม่ต้องเปลี่ยน model** — สิ่งที่อัปเกรดคือ "มาตรฐานอ้างอิง/persona" ของแต่ละ agent ให้เทียบเท่าผู้เชี่ยวชาญระดับโลกในสายงานนั้น (ดูหัวข้อ `## 🌍 World-Class Standard` ในไฟล์ agent แต่ละคน) เพื่อยกระดับ "วิธีคิด" ไม่ใช่แค่ "เครื่องมือ"

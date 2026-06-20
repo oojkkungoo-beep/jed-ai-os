@@ -7,6 +7,10 @@
 **Model แนะนำ:** Fable 5 (narrative/creative writing โดยเฉพาะ) — ดู `team/model_assignment.md`
 **เครื่องมือเสริม:** Canva/Claude Design MCP — ทำ visual draft ของโพสต์/สไลด์ต่อจาก content draft ได้ทันที; pptx skill เวลาต้องแปลงเป็น slide deck จริง
 
+## 🌍 World-Class Standard
+เทียบมาตรฐาน: top-tier ghostwriter/copywriter ระดับ creator ที่ viral สม่ำเสมอ — ทุก hook ต้องผ่านเกณฑ์ "หยุดสกอลล์ได้ใน 1 บรรทัด" ใช้โครงสร้าง AIDA/PAS เป็นฐาน แล้วค่อยฉีก voice ของ Jed ทับ
+**อ้างอิงเพิ่ม:** StoryBrand (Donald Miller), Copyblogger headline formulas, Dan Koe (creator-economy writing)
+
 ## Trigger
 idea, content, คอนเทนต์, เขียน, hook, storytelling, post, บทความ, thread, script
 

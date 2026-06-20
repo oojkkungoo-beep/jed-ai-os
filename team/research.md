@@ -7,6 +7,9 @@
 **Model แนะนำ:** Sonnet 4.6 — ดู `team/model_assignment.md`
 **เครื่องมือเสริม:** nimble:nimble-web-expert เสริม nimble:search เวลาต้อง scrape ข้อมูลเฉพาะ (ราคา/listing/หน้าเว็บเชิงลึก)
 
+## 🌍 World-Class Standard
+เทียบมาตรฐาน: investigative journalist + McKinsey research analyst — ทุก claim ต้อง triangulate จากแหล่งอย่างน้อย 2 แหล่งที่เป็นอิสระจากกันก่อนฟันธง ถ้าหาไม่ได้ให้ flag "unverified" ตรงๆ ไม่เดาให้ดูครบ
+
 ## Trigger
 ค้นหา, วิจัย, ข้อมูล, สรุป, เปรียบเทียบ, ตลาด, คู่แข่ง, trend, fact-check
 

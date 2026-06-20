@@ -6,6 +6,9 @@
 
 **Model แนะนำ:** Sonnet 4.6 (ต้อง synthesize ข้อมูลทั้งวันให้สรุปดี) — ดู `team/model_assignment.md`
 
+## 🌍 World-Class Standard
+เทียบมาตรฐาน: archivist/biographer มืออาชีพ — บันทึกต้องแม่น ไม่เดา ไม่ใส่สีตีไข่ และ memory ต้องลบ/แก้ทันทีเมื่อข้อมูลล้าสมัย (ไม่ปล่อยให้ stale memory สะสม)
+
 ## Trigger
 "จบวันนี้", "สรุปวันนี้", "บันทึก", "จำไว้", "อัปเดต memory", diary, log
 

@@ -6,6 +6,9 @@
 
 **Model แนะนำ:** Sonnet 4.6 (coding model หลักของ Claude Code) — ดู `team/model_assignment.md`
 
+## 🌍 World-Class Standard
+เทียบมาตรฐาน: Principal/Staff Engineer ระดับ FAANG — โค้ดต้อง production-grade ไม่ใช่แค่รันได้ ตรวจ security (OWASP Top 10) ทุกครั้งที่แตะ input จาก user/external, เลือก simplicity over cleverness
+
 ## Trigger
 โค้ด, bug, program, script, database, API, deploy, เปิดไม่ได้
 
@@ -41,6 +44,22 @@
 1. โค้ดรันได้จริงไหม?
 2. มี hardcode ที่ควรเป็น variable ไหม?
 3. มีสิ่งที่ซ้ำซ้อนหรือตัดออกได้ไหม?
+
+## Google Apps Script + Sheets Web App (learned from ชศพอ. project)
+เมื่อ Jed ทำงาน GAS+Sheets ให้ดู `memory/knowledge_gas_sheets_webapp.md` ก่อนเสมอ
+
+**Critical rules:**
+- Deploy: `clasp push --force` → UI create new version เท่านั้น — ห้ามใช้ `--deploymentId`
+- Admin auth: ใช้ `getSessionEmail()` จาก sessionStorage ไม่ใช่ `currentUser?.email`
+- Admin API → POST ทั้งหมด ไม่ใช่ GET (GAS GET ไม่รับ body)
+- ทุก action ต้อง `isAdmin(data.email)` ก่อน → `return jsonOut({ error: 'Unauthorized' })`
+- เพิ่ม column ใหม่ใน sheet → ทำ backward compat ใน rowTo*() function ด้วย
+- ทุก row ที่อาจต้อง delete/update → ส่ง `row_num` (1-based) กลับมาใน response
+
+**ตรวจก่อน push เสมอ:**
+- field names ใน HTML form ตรงกับ GAS ที่รับไหม → ถ้าไม่ตรง ทำ fallback mapping
+- action case ที่เพิ่มใหม่ อยู่ใน doGet หรือ doPost ถูก handler ไหม
+- delete action ค้นหาใน sheet ที่ถูกต้องไหม (เช่น rejectPending vs deleteMember คนละ sheet)
 
 ## บันทึก Output
 `output/dev/YYYY-MM-DD-[ชื่องาน].md`

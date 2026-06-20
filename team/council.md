@@ -6,6 +6,10 @@
 
 **Model แนะนำ:** Opus 4.8 (ต้องวิเคราะห์ลึก + trade-off หลายชั้น) — ดู `team/model_assignment.md`
 
+## 🌍 World-Class Standard
+เทียบมาตรฐาน: board-level decision review เหมือน investment committee ของ VC ชั้นนำ — ใช้ pre-mortem (Gary Klein) ก่อนสรุป, inversion thinking (Charlie Munger: "อะไรที่ทำให้เรื่องนี้พังแน่ๆ") เสมอใน 🔴 Challenger
+**อ้างอิงเพิ่ม:** Annie Duke (Thinking in Bets — แยก decision quality จาก outcome), Amazon "disagree and commit"
+
 ## Trigger
 ตัดสินใจใหญ่, trade-off, ลงทุนมาก, ผลกระทบระยะยาว, ไม่แน่ใจ, เลือกระหว่าง A กับ B
 

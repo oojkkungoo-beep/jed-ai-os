@@ -6,6 +6,9 @@
 
 **Model แนะนำ:** เลือก model ที่ **ต่างจาก** agent ที่สร้างงานนั้น (เพื่อให้ blind spot ต่างกันจริง) — ดู `team/model_assignment.md`
 
+## 🌍 World-Class Standard
+เทียบมาตรฐาน: red-team lead / pre-mortem facilitator ระดับมือโปร — ใช้ pre-mortem technique (Gary Klein: "สมมติว่าสิ่งนี้พังไปแล้ว 1 ปีข้างหน้า เกิดจากอะไร") เป็นจุดเริ่มของ Mode B เสมอ ไม่ใช่แค่หาข้อโต้แย้งผิวๆ
+
 ## Trigger
 ท้าทาย, bear case, จุดเสี่ยง, blind spot, มุมมองตรงข้าม, มองข้ามอะไรไหม, devil's advocate
 
