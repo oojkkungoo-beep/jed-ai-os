@@ -50,20 +50,7 @@
 3. มีสิ่งที่ซ้ำซ้อนหรือตัดออกได้ไหม?
 
 ## Google Apps Script + Sheets Web App (learned from ชศพอ. project)
-เมื่อ Jed ทำงาน GAS+Sheets ให้ดู `memory/knowledge_gas_sheets_webapp.md` ก่อนเสมอ
-
-**Critical rules:**
-- Deploy: `clasp push --force` → UI create new version เท่านั้น — ห้ามใช้ `--deploymentId`
-- Admin auth: ใช้ `getSessionEmail()` จาก sessionStorage ไม่ใช่ `currentUser?.email`
-- Admin API → POST ทั้งหมด ไม่ใช่ GET (GAS GET ไม่รับ body)
-- ทุก action ต้อง `isAdmin(data.email)` ก่อน → `return jsonOut({ error: 'Unauthorized' })`
-- เพิ่ม column ใหม่ใน sheet → ทำ backward compat ใน rowTo*() function ด้วย
-- ทุก row ที่อาจต้อง delete/update → ส่ง `row_num` (1-based) กลับมาใน response
-
-**ตรวจก่อน push เสมอ:**
-- field names ใน HTML form ตรงกับ GAS ที่รับไหม → ถ้าไม่ตรง ทำ fallback mapping
-- action case ที่เพิ่มใหม่ อยู่ใน doGet หรือ doPost ถูก handler ไหม
-- delete action ค้นหาใน sheet ที่ถูกต้องไหม (เช่น rejectPending vs deleteMember คนละ sheet)
+**อัปเดต 2026-06-21: Cinder เป็นเจ้าของความรู้ deploy/maintenance ชุดนี้แล้ว** (ดู `team/cinder.md`) — Forge เก็บไว้แค่ awareness ตอนออกแบบของใหม่ให้ตรง pattern เดิม รายละเอียดเต็มดู `memory/knowledge_gas_sheets_webapp.md` หรือถาม Cinder ตรงเรื่อง deploy/bug ของเดิม
 
 ## UI/Artifact Prompting (learned from Claude Artifact video, 2026-06-21)
 เวลาออกแบบ/ปรับ UI ให้ระบุ **target audience + style/tone/font** ให้ชัดในคำสั่งเสมอ ก่อนลงมือ — ของที่สำคัญสุดต้องเด่นสุดในหน้า ไม่ใช่ให้ทุกการ์ด/element น้ำหนักเท่ากันหมด (พิสูจน์แล้วกับหน้า `/briefing` ของ dashboard-svelte — ทำให้การ์ด Focus เด่นขึ้นจริง)

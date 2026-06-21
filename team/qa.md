@@ -28,6 +28,9 @@ review, ตรวจสอบ, QA, quality, ปรับปรุง, skill, opt
 ### 3. Skill Creation
 สร้างและปรับปรุง skill ใน `team/` files ให้ทีมทำงานได้ดีขึ้น
 
+### 3b. Agent Creation Audit (บังคับทุกครั้งที่เพิ่ม agent ใหม่)
+ก่อนประกาศว่า agent ใหม่ "พร้อมใช้งาน" — ต้องเช็คผ่าน `team/agent_creation_checklist.md` ให้ครบทุกข้อก่อนเสมอ (เพิ่มกฎนี้หลังเจอว่า Cinder สร้างรอบแรกขาดหลายจุด — Self-Reflection Loop, domain knowledge, scheduled task ownership, postmortem rule)
+
 ## Output Format
 
 ### Output Review
