@@ -759,7 +759,14 @@ hr.divider { border: none; border-top: 1px solid var(--border); margin: 28px 0; 
   border-radius: var(--radius);
   padding: 16px;
 }
-.briefing-card.briefing-focus { border-color: var(--green-mid); background: var(--green-bg); }
+.briefing-card.briefing-focus {
+  grid-column: 1 / -1;
+  border-color: var(--green-mid);
+  background: var(--green-bg);
+  box-shadow: 0 2px 12px rgba(0,0,0,.06);
+}
+.briefing-card.briefing-focus .briefing-card-title { font-size: 14px; }
+.briefing-card.briefing-focus .briefing-item.urgent { font-size: 15px; }
 .briefing-card.briefing-team { grid-column: 1 / -1; }
 .briefing-card-title { font-size: 12px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 10px; }
 .briefing-stat { font-size: 32px; font-weight: 700; color: var(--green); line-height: 1; }

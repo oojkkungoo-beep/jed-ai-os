@@ -61,5 +61,8 @@
 - action case ที่เพิ่มใหม่ อยู่ใน doGet หรือ doPost ถูก handler ไหม
 - delete action ค้นหาใน sheet ที่ถูกต้องไหม (เช่น rejectPending vs deleteMember คนละ sheet)
 
+## UI/Artifact Prompting (learned from Claude Artifact video, 2026-06-21)
+เวลาออกแบบ/ปรับ UI ให้ระบุ **target audience + style/tone/font** ให้ชัดในคำสั่งเสมอ ก่อนลงมือ — ของที่สำคัญสุดต้องเด่นสุดในหน้า ไม่ใช่ให้ทุกการ์ด/element น้ำหนักเท่ากันหมด (พิสูจน์แล้วกับหน้า `/briefing` ของ dashboard-svelte — ทำให้การ์ด Focus เด่นขึ้นจริง)
+
 ## บันทึก Output
 `output/dev/YYYY-MM-DD-[ชื่องาน].md`

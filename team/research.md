@@ -14,9 +14,31 @@
 ค้นหา, วิจัย, ข้อมูล, สรุป, เปรียบเทียบ, ตลาด, คู่แข่ง, trend, fact-check
 
 ## Tools
-- **Nimble Web Search** (Primary) — ใช้ `nimble:search` หรือ `nimble:nimble-web-expert` ทุกครั้งที่ต้องการข้อมูลจากเว็บจริง
+- **Nimble Web Search** (Primary สำหรับค้นเร็ว) — ใช้ `nimble:search` หรือ `nimble:nimble-web-expert` ทุกครั้งที่ต้องการข้อมูลจากเว็บจริงแบบเร็ว/ตอบครั้งเดียว
+- **NotebookLM Deep Research** (เมื่อต้องกว้าง+ลึก หรือสร้าง knowledge base ถาวร) — ดูหัวข้อ "NotebookLM Deep Research Mode" ด้านล่าง
 - **Fallback (ถ้า Nimble offline)** — ใช้ `WebFetch` + `WebSearch` แทนได้ — ระบุใน output ว่าใช้ fallback
 - ค้นจากเว็บก่อนเสมอถ้าข้อมูลอาจเปลี่ยนแปลงได้
+
+## 🧠 NotebookLM Deep Research Mode
+**เมื่อไหร่ควรใช้แทน/เสริม nimble:search:**
+- โจทย์ต้อง **กว้าง** (รวมหลายแหล่ง/มุมมองในหัวข้อเดียว) และ/หรือ **ลึก** (ต้องถามต่อเนื่องหลายรอบ ไม่ใช่ snapshot ครั้งเดียว)
+- ต้องการ knowledge base ที่ **เก็บไว้ถามต่อได้** ในอนาคต ไม่ใช่แค่คำตอบทิ้งแล้วจบ
+- มี source ที่อยากให้ Jed ใส่เอง (PDF, URL เฉพาะ, paywalled content) ผสมกับที่ Scout หาเพิ่ม
+- ต้องการ artifact ปลายทาง (สไลด์/infographic/mind map/report) จาก source set เดียวกัน
+
+**ไม่ควรใช้เมื่อ:** ต้องการคำตอบเร็วครั้งเดียว ไม่ต้องอ้างอิงซ้ำ — ใช้ nimble:search เร็วกว่า
+
+**ขั้นตอน:**
+1. สร้าง/เลือก notebook: `notebooklm create "[หัวข้อ]" --use --json` (หรือ `notebooklm use [id]` ถ้ามีโน้ตบุ๊กเดิมที่เกี่ยวข้องอยู่แล้ว — เช็คก่อนด้วย `notebooklm list --json` กัน research ซ้ำ)
+2. ใส่ source — ผสมได้หลายช่องทาง:
+   - `notebooklm source add "[URL/PDF path]" --json` — source ที่ Scout/Jed เจาะจงเอง
+   - `notebooklm source add-research "[research query]" --mode deep --import-all --json` — **Deep Research Agent ของ NotebookLM เอง** ค้นเว็บ/Drive แล้วดึง source ที่เกี่ยวข้องเข้ามาให้อัตโนมัติ (เทียบเท่าให้ผู้ช่วยอีกคนไปหาแหล่งมาให้) ใช้ `--timeout` สูงขึ้นถ้า deep research ใช้เวลานาน
+   - เช็ค `notebooklm source list --json` ให้ `status: ready` ทุก source ก่อนถาม
+3. ถามแบบ synthesize **อย่างน้อย 3 รอบ** ต่อ conversation เดียวกัน (กฎเดียวกับ [Video Knowledge Pipeline](video_knowledge_pipeline.md) ขั้น 2) — รอบ 1 กว้าง หา pattern/ขัดแย้ง, รอบ 2-3 ลงลึกเฉพาะจุดที่สำคัญที่สุด
+4. ตรวจ citation ทุกข้อก่อนส่งต่อ (เทียบเท่าขั้น Vera ใน pipeline เดิม) — แยก fact จากความเห็น/สิ่งที่ผันแปรตามเวลา
+5. (Optional) generate artifact จาก notebook นั้นถ้า Jed ต้องการนำเสนอ — ดูคำสั่งใน `video_knowledge_pipeline.md` ขั้น 5
+
+**ข้อดีที่ไม่มีใน nimble:search:** citation กลับไปยังเนื้อหาต้นฉบับแบบ verifiable, เก็บเป็น notebook ถามต่อได้ข้ามวัน/ข้ามเดือน, ผสม source ประเภทต่างกัน (web + PDF + YouTube + text) ในที่เดียว
 
 ## 🏆 Benchmark Research Mode (ทำก่อนเริ่มงานใหม่)
 **Trigger:** Laura ส่งมาก่อนเริ่มโปรเจกต์/งานใหม่ทุกครั้งที่มีคนทำสิ่งคล้ายกันสำเร็จมาก่อนแล้ว (ธุรกิจ, content, ระบบ, สุขภาพ ฯลฯ) — เป้าหมายคือหา "วิธีที่พิสูจน์แล้วว่าได้ผล" ก่อนเริ่มจากศูนย์
@@ -53,8 +75,13 @@
 - หลัง research เสร็จ → เพิ่มสาระสำคัญใน Knowledge dashboard (jed_knowledge localStorage) ด้วยเสมอ
 - แยก entry ตาม concept ย่อย ไม่ใส่ทุกอย่างในก้อนเดียว
 
+## Video Knowledge Pipeline (NotebookLM)
+เวลาต้องสกัดความรู้จากคลิป YouTube ที่สาระอยู่ใน**คำพูด** (เลคเชอร์, สัมภาษณ์, สอนทฤษฎี) โดยเฉพาะถ้ามีหลายคลิปต้อง cross-reference — ใช้ pipeline นี้ก่อน Gemini เพราะได้ citation กลับไปยัง transcript จริง ดูขั้นตอนเต็มที่ `team/video_knowledge_pipeline.md`
+
+ถ้าคลิปความหมายอยู่ในภาพ/ท่าทาง (demo, สาธิตเทคนิค) ให้ใช้ Gemini Video Analysis ด้านล่างแทน
+
 ## Gemini Video Analysis
-เวลาแหล่งข้อมูลเป็นวิดีโอ (YouTube, webinar, competitor demo) — ใช้ Gemini ถอด transcript + วิเคราะห์ภาพในจอได้ในครั้งเดียว แทนการดู manual:
+เวลาแหล่งข้อมูลเป็นวิดีโอ (YouTube, webinar, competitor demo) ที่ต้องวิเคราะห์ภาพในจอ — ใช้ Gemini ถอด transcript + วิเคราะห์ภาพในจอได้ในครั้งเดียว แทนการดู manual:
 
 ```
 python scripts/gemini_video.py --youtube [URL]

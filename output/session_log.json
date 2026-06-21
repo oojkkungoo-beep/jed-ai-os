@@ -782,36 +782,36 @@
       "🔍 Research",
       "📝 Memory & Diary"
     ],
-    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (38%) — รอ Sage สรุปท้ายวัน",
+    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (36%) — รอ Sage สรุปท้ายวัน",
     "categories": [
       {
         "name": "🔧 Dev & Tech",
-        "count": 518,
-        "pct": 38
+        "count": 540,
+        "pct": 36
       },
       {
         "name": "🤖 System & Setup",
-        "count": 226,
-        "pct": 17
+        "count": 242,
+        "pct": 16
       },
       {
         "name": "🔍 Research",
-        "count": 175,
-        "pct": 13
+        "count": 215,
+        "pct": 14
       },
       {
         "name": "📝 Memory & Diary",
-        "count": 160,
+        "count": 189,
         "pct": 12
       },
       {
         "name": "💡 Creative & Content",
-        "count": 105,
+        "count": 128,
         "pct": 8
       },
       {
         "name": "⚖️ Decision",
-        "count": 69,
+        "count": 80,
         "pct": 5
       }
     ],
@@ -824,6 +824,63 @@
       "**ขั้นตอนที่ต้องทำค่ะ:**",
       "https://script.google.com/macros/s/AKfycbysEWdIFN25qayS82Bfoi-mae9RG5MtOb92JKKNhqMgDIlfCDtazpIAybtAfH5EZcwS/exec?action=",
       "ขั้นตอนที่ 3 สำคัญมากค่ะ — แค่ clasp push ไม่พอ ต้องสร้าง version ใหม่ใน UI ด้วย"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 20,
+    "date": "21 มิถุนายน 2569",
+    "topCategory": "🔍 Research",
+    "tags": [
+      "🔍 Research",
+      "📝 Memory & Diary",
+      "🔧 Dev & Tech",
+      "💡 Creative & Content"
+    ],
+    "summary": "Auto-log: หมวดหลัก 🔍 Research (21%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "🔍 Research",
+        "count": 103,
+        "pct": 21
+      },
+      {
+        "name": "📝 Memory & Diary",
+        "count": 93,
+        "pct": 19
+      },
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 82,
+        "pct": 16
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 65,
+        "pct": 13
+      },
+      {
+        "name": "🤖 System & Setup",
+        "count": 59,
+        "pct": 12
+      },
+      {
+        "name": "⚖️ Decision",
+        "count": 32,
+        "pct": 6
+      }
+    ],
+    "tasks": [
+      "[Laura] เดี๋ยวลอร่าเช็คให้ค่ะ เรื่อง Second Brain/Obsidian นี่ตรงสาย Lena (Vault Librarian) เลย ขอสำรวจโครงสร้างจริงก่อน",
+      "1. **ใช้ได้จริงไหม** — โครงสร้าง/เครื่องมือพร้อมใช้งานจริง 100% (ไม่ใช่ของโชว์) แต่ \"ตัวระบบ\" ยังไม่ได้ถูกใช้งานสม่ำเสมอ",
+      "- เพิ่ม pointer note หลักสูตรวิสัญญีพยาบาล → `10-Clinical/Anesthesia/`",
+      "ถ้าต้องการป้องกันกรณีเครื่องพังด้วย แนะนำให้เพิ่มการ sync หรือ copy ไปไว้ที่ OneDrive/Google Drive หรือ external hard di",
+      "มีอะไรให้ลอร่าอธิบายเพิ่มไหมคะ",
+      "หมายเหตุเล็กน้อย: ไฟล์ diary เก่าวันที่ 6 มิ.ย. ที่เคยพิมพ์ path เดิมไว้ ลอร่าตั้งใจไม่แก้ เพราะเป็นบันทึกประวัติ ณ วันน",
+      "- โครงสร้างโฟลเดอร์ (PARA-style) + plugin (Dataview, Templater, obsidian-git) — มาตรฐานเดียวกับที่มืออาชีพใช้จริง",
+      "อยากให้เลนาลงมือแก้ 3 จุดนี้เลยไหมคะ หรือจะให้ทำเฉพาะจุดที่ Jed ห่วงที่สุดก่อน"
     ],
     "details": "",
     "relatedProjects": [],

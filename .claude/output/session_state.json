@@ -624,16 +624,16 @@
     ]
   },
   "51b2d14d-caf5-4e5b-928d-2185f4a6459d": {
-    "date": "20 มิถุนายน 2569",
+    "date": "21 มิถุนายน 2569",
     "scores": {
       "🎯 Strategy & CEO": 10,
-      "💡 Creative & Content": 21,
-      "🌿 Life & Health": 3,
-      "🔍 Research": 18,
-      "⚖️ Decision": 5,
-      "🔧 Dev & Tech": 12,
-      "📝 Memory & Diary": 32,
-      "🤖 System & Setup": 16
+      "💡 Creative & Content": 23,
+      "🌿 Life & Health": 4,
+      "🔍 Research": 21,
+      "⚖️ Decision": 6,
+      "🔧 Dev & Tech": 14,
+      "📝 Memory & Diary": 34,
+      "🤖 System & Setup": 19
     },
     "tasks": [
       "[Laura] เดี๋ยวลอร่าเช็คให้ค่ะ เรื่อง Second Brain/Obsidian นี่ตรงสาย Lena (Vault Librarian) เลย ขอสำรวจโครงสร้างจริงก่อน",
@@ -677,10 +677,10 @@
       "🌿 Life & Health": 3,
       "🔍 Research": 19,
       "⚖️ Decision": 2,
-      "🔧 Dev & Tech": 33,
+      "🔧 Dev & Tech": 34,
       "💰 Finance": 2,
       "📝 Memory & Diary": 25,
-      "🤖 System & Setup": 17
+      "🤖 System & Setup": 18
     },
     "tasks": [
       "ความหมายแบบง่าย: เหมือนการ \"คัดลอกเส้นทางงาน\" ออกไปอีกเส้นหนึ่ง โดยเริ่มจากจุดที่เราอยู่ตอนนี้ (commit ปัจจุบัน) — งานที",
@@ -714,6 +714,67 @@
       "For the full extract waterfall (tiers, flags, browser actions, network capture), see `references/nimble-extract/SKILL.md",
       "| `references/nimble-extract/SKILL.md`                 | Extract flags, render tiers, browser actions, network capture, ",
       "| `references/nimble-extract/browser-actions.md`       | Full browser action types and parameters                       "
+    ]
+  },
+  "d6971e5c-439e-4ba6-a687-81701667eaff": {
+    "date": "21 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 10,
+      "💡 Creative & Content": 29,
+      "🌿 Life & Health": 16,
+      "🔍 Research": 76,
+      "⚖️ Decision": 21,
+      "🔧 Dev & Tech": 36,
+      "💰 Finance": 22,
+      "📝 Memory & Diary": 57,
+      "🤖 System & Setup": 26
+    },
+    "tasks": [
+      "Library ติดตั้งสำเร็จ แต่ scripts อยู่นอก PATH ต้องเพิ่ม PATH หรือเรียกผ่าน path เต็มก่อน",
+      "CLI ทำงานแล้ว ตอนนี้ต้องเพิ่ม PATH แบบ permanent และติดตั้ง Chromium สำหรับ login",
+      "PATH ถาวรเพิ่มแล้ว (มีผลใน terminal ใหม่หลังจากนี้) ขั้นถัดไปคือติดตั้ง Chromium สำหรับ login — ขั้นนี้จะเปิด browser ให",
+      "182MB now downloaded fully (เดิมที่ดาวน์โหลดมาตอน background อาจไม่สมบูรณ์). ทดสอบเปิด chrome.exe อีกครั้ง",
+      "1. ติดตั้ง `notebooklm-py[browser]` ผ่าน pip + เพิ่ม Python Scripts เข้า PATH ถาวร",
+      "ถ้า Jed อยากลองจริง แนะนำให้ลองกับงาน Benchmark Research ครั้งถัดไปที่ Scout ต้องทำ แล้วดูว่าคุ้มเวลาไหมก่อนตั้งเป็น def",
+      "ในคำถามก่อนลงมือทำจริง:  คุณคิดว่าอย่างไร  council",
+      "สรุป: รอ 1 pilot run ก่อนนะคะ ถ้า Jed มีคลิป/หัวข้อในใจอยู่แล้ว ส่งมาได้เลย จะให้ Scout เริ่มทันที"
+    ]
+  },
+  "da2c58db-5b64-4c61-86f6-182162082bc5": {
+    "date": "21 มิถุนายน 2569",
+    "scores": {
+      "🌿 Life & Health": 1,
+      "🔍 Research": 3,
+      "⚖️ Decision": 2,
+      "🔧 Dev & Tech": 9,
+      "🤖 System & Setup": 1
+    },
+    "tasks": [
+      "คุณคิดว่า หากต้องการสร้าง webApp ที่มี database ใช้ผ่านคอม และมือถือ ได้  ควรทำอย่างไร",
+      "1. **Web app ปกติ (responsive)** — ทำเว็บเดียว ใช้ผ่าน browser ได้ทั้งคอมและมือถือ (มือถือก็เปิดผ่าน Chrome/Safari) ไม่ต",
+      "2. **PWA (Progressive Web App)** — เหมือนข้อ 1 แต่เพิ่ม \"ติดตั้งเป็น icon บนมือถือได้\" รู้สึกเหมือน app จริงมากขึ้น ใช้ง"
+    ]
+  },
+  "a5202961-93c4-4371-83d8-600d233446e8": {
+    "date": "21 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 3,
+      "💡 Creative & Content": 13,
+      "🔍 Research": 3,
+      "⚖️ Decision": 3,
+      "🔧 Dev & Tech": 23,
+      "📝 Memory & Diary": 2,
+      "🤖 System & Setup": 13
+    },
+    "tasks": [
+      "Login กลับมาแล้วค่ะ ลองสร้าง notebook ใหม่อีกครั้ง",
+      "Source พร้อมแล้วค่ะ — ขอเริ่มถาม 3 รอบตามมาตรฐาน pipeline",
+      "- อย่าก๊อปโค้ดจาก Artifact ขึ้นเว็บจริงทันที ต้องทดสอบในระบบปิดก่อน",
+      "จะให้หนูลองเอาเทคนิคนี้ไปทดสอบจริงกับงาน Jed (เช่นปรับ prompt ที่ใช้ทำ dashboard-svelte) เลยไหมคะ จะเห็นชัดกว่าว่า \"ดี\" ",
+      "ทดสอบจริงกับงาน Jed (เช่นปรับ prompt ที่ใช้ทำ dashboard-svelte) เลย  และควรทำเป็นสกิลเพิ่มไหม",
+      "[Laura] ทดสอบเสร็จแล้วค่ะ ผลออกมาเห็นชัดเลย",
+      "**ส่วนคำถามที่ 2 — ควรทำเป็นสกิลเพิ่มไหม:** หนูว่า**ไม่ควรทำสกิลใหม่**ค่ะ เหตุผล:",
+      "- ตรงกับงานที่ Forge ทำอยู่แล้วเวลาสร้าง/ปรับ UI ในสกิลที่มีอยู่"
     ]
   }
 }
