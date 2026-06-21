@@ -15,7 +15,8 @@
 | **Eir** (wellness) | สุขภาพ + RPG narrative | **Sonnet 4.6** | ต้องแม่นยำเชิงวิชาการพยาบาล แต่ก็มี narrative — Sonnet ครอบคลุมทั้งสอง; ใช้ **Fable 5** เฉพาะตอน Jed ขอเรื่องเล่า/Quest narrative ยาวเกิน 1 หน้า (ดูตัวอย่างใน `wellness.md`) |
 | **Scout** (research) | ค้นคว้า วิเคราะห์ | **Sonnet 4.6** | ทำงานคู่กับ Nimble search ได้ดี ไม่ต้องการ reasoning ระดับ Opus ปกติ |
 | **Council** (decision chamber) | ตัดสินใจใหญ่ 3 มุมมอง | **Opus 4.8** | ต้องวิเคราะห์ลึก + trade-off หลายชั้น |
-| **Forge** (dev) | เขียน/แก้/review โค้ด | **Sonnet 4.6** | coding model หลักของ Claude Code, เร็วและแม่นยำ |
+| **Forge** (dev — Build) | สร้างฟีเจอร์ใหม่/ระบบใหม่ | **Sonnet 4.6** | coding model หลักของ Claude Code, เร็วและแม่นยำ |
+| **Cinder** (dev — Run) | bug fix, deploy, backup, maintenance ของระบบเดิม | **Sonnet 4.6** | ต้องอ่านโค้ดคนอื่นแม่นพอจะไม่ทำพัง ไม่ใช่งาน routine ระดับ Haiku |
 | **Mint** (finance) | budget, P&L, ROI | **Sonnet 4.6** | งาน routine financial calc ใช้ Sonnet พอ — ถ้าเป็นการลงทุนก้อนใหญ่/ผลกระทบระยะยาว Mint **ส่งงานต่อ Council** (ซึ่งใช้ Opus 4.8) ไม่ใช่เปลี่ยน model ตัวเอง |
 | **Sage** (memory/diary) | diary, memory update, log | **Sonnet 4.6** | ต้อง synthesize ข้อมูลทั้งวันให้สรุปดี — Haiku อาจตกรายละเอียด |
 | **Vera** (QA) | review output, skill dev, token audit | **Sonnet 4.6** (escalate → Opus 4.8 สำหรับ token/skill audit ใหญ่) | งาน review ทั่วไปใช้ Sonnet, audit เชิงลึกใช้ Opus |

@@ -11,7 +11,8 @@ strategy / CEO / ธุรกิจ       → Atlas  (team/ceo_coach.md)
 สุขภาพ / ร่างกาย / ออกกำลัง / พักผ่อน / ความรู้พยาบาล → Eir (team/wellness.md)
 ค้นข้อมูล / วิจัย             → Scout  (team/research.md)
 ตัดสินใจใหญ่ / trade-off     → Council(team/council.md)
-โค้ด / bug / program         → Forge  (team/forge.md)
+โค้ด / ฟีเจอร์ใหม่ / ระบบใหม่ → Forge  (team/forge.md)
+bug / ซ่อม / deploy / backup / maintenance → Cinder (team/cinder.md)
 เงิน / ตัวเลข / ลงทุน        → Mint   (team/finance.md)
 diary / log / จำ / สรุปวัน   → Sage   (team/memory_agent.md)
 review / QA / ตรวจสอบ / skill → Vera   (team/qa.md)
@@ -20,6 +21,7 @@ vault / Second Brain / บันทึก / sync note / จัด inbox → Lena
 งานเล็ก / ด่วน               → Laura  (team/laura.md)
 ```
 **Model & Tools:** ดู `team/model_assignment.md` — แนะนำ model/tool เสริมต่อ agent (Fable 5, Opus 4.8, Sonnet 4.6, Haiku 4.5, Canva/pptx/xlsx)
+**โครงสร้างแผนก:** ดู `team/org_structure.md` — แบ่งแผนก+หัวหน้าแผนก งานข้ามแผนกผ่าน Laura เหมือนเดิม
 
 ## Standing Rule — Benchmark ก่อนเริ่มงานใหม่
 ก่อนเริ่มโปรเจกต์/งานใหม่ที่มีคนทำสำเร็จมาก่อนแล้ว (ธุรกิจ, content, ระบบ, สุขภาพ ฯลฯ) → Laura ส่ง **Scout** ทำ "Benchmark Research" ก่อนเสมอ (ดู `team/research.md`) หาว่าใครเคยทำสำเร็จ ทำอย่างไร ก่อนให้ agent เจ้าของงานเริ่มลงมือ — ยกเว้น Jed สั่งให้ลุยตรงทันที
