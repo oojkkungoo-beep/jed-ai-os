@@ -35,15 +35,8 @@ OUTPUT: output/decisions/YYYY-MM-DD-[หัวข้อ].md
 
 ## Image Prompt
 ```
-Profile card illustration: Half-dwarf half-human male strategist, age 52, tall and broad-shouldered, 
-short dark grey hair, neatly trimmed salt-and-pepper beard, steel grey eyes that see through excuses, 
-tan skin with small scar on chin. Wearing a perfectly tailored dark navy suit without tie, 
-mechanical watch. Holding a heavy leather-bound strategy tome. 
-Standing in a war room with maps and battle plans. 
-Powerful and wise aura, dramatic cinematic lighting, realistic manga style, strong detailed.
-Card layout: character fills top 70% of a vertical rounded-corner white card with thin dark green border, 
-name "Atlas" in large elegant handwriting script font at bottom left of card, 
-"— STRATEGY" in small uppercase tracking sans-serif below name, 
-dark green category badge pill labeled "CEO COACH" at top-left corner of card, 
-cream white card background, soft drop shadow, clean graphic card design.
+Profile card photorealistic portrait:
+ character portrait card, 2:3 portrait aspect ratio (1024x1536px), broad-shouldered man in his early 50s with short dark grey hair, neatly trimmed salt-and-pepper beard, steel-grey eyes with a perceptive no-nonsense expression, tan skin with a small scar on his chin, wearing a perfectly tailored dark navy suit without a tie and a mechanical watch, holding a heavy leather-bound notebook, dramatic cinematic lighting, clean modern boardroom background with subtle strategy-map pattern, rounded card border matching the team's design (white card frame, soft shadow), small badge top-left reading "CEO COACH", name "Atlas" in elegant cursive script at bottom-left, subtitle "— CEO COACH & STRATEGIST —" beneath the name, consistent with the style of "Eir", "Laura", "Vera" portrait cards
+
+photorealistic, hyperrealistic, sharp focus, professional photography, cinematic lighting, 8K UHD, detailed skin texture, natural depth of field, no cartoon, no anime, no illustration
 ```

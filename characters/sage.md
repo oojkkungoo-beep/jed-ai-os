@@ -37,17 +37,8 @@ OUTPUT: output/diary/YYYY-MM-DD.md
 
 ## Image Prompt
 ```
-Profile card illustration: Kitsune spirit fox, ageless androgynous appearance of 16, 
-small and ethereal, long straight white hair with subtle purple shimmer, 
-heterochromia eyes (left purple, right gold), pale near-translucent skin, 
-small white fox ears and one fluffy white tail. 
-Wearing a white and soft purple kimono with ink-painted cherry blossom pattern, gold silk obi belt. 
-Holding a large glowing Memory Tome with luminescent pages. Purple ink on fingertips. 
-Mystical library of memories background, soft purple and gold lighting, 
-elegant detailed manga illustration style.
-Card layout: character fills top 70% of a vertical rounded-corner white card with thin dark green border, 
-name "Sage" in large elegant handwriting script font at bottom left of card, 
-"— MEMORY" in small uppercase tracking sans-serif below name, 
-soft purple category badge pill labeled "KNOWLEDGE" at top-left corner of card, 
-cream white card background, soft drop shadow, clean graphic card design.
+Profile card photorealistic portrait:
+ character portrait card, 2:3 portrait aspect ratio (1024x1536px), young androgynous person with an ageless youthful appearance, long straight white hair with a subtle soft-lavender sheen, heterochromia eyes (left light purple, right gold), pale fair skin, calm observant expression, wearing a minimalist white-and-soft-lavender outfit with a delicate embroidered pattern, holding an elegant leather-bound notebook, faint purple ink mark on fingertips, soft purple-and-gold lighting, clean quiet archive-library background, rounded card border matching the team's design (white card frame, soft shadow), small badge top-left reading "KNOWLEDGE", name "Sage" in elegant cursive script at bottom-left, subtitle "— MEMORY & DIARY ARCHIVIST —" beneath the name, consistent with the style of "Eir", "Laura", "Vera" portrait cards
+
+photorealistic, hyperrealistic, sharp focus, professional photography, cinematic lighting, 8K UHD, detailed skin texture, natural depth of field, no cartoon, no anime, no illustration
 ```

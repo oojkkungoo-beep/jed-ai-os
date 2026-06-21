@@ -36,15 +36,8 @@ OUTPUT: output/finance/
 
 ## Image Prompt
 ```
-Profile card illustration: High human female treasurer, age 30, tall and elegant, 
-sleek black hair in a neat high bun with a gold pen tucked in, sharp golden eyes, light tan skin. 
-Wearing a deep bottle-green blazer with gold buttons over white blouse, pencil skirt, 
-holding a small golden balance scale. Round gold-frame glasses, gold wristwatch, 
-tiny abacus charm bracelet. Grand treasury or bank vault background. 
-Sharp elegant lighting, sophisticated manga illustration style, powerful and precise.
-Card layout: character fills top 70% of a vertical rounded-corner white card with thin dark green border, 
-name "Mint" in large elegant handwriting script font at bottom left of card, 
-"— FINANCE" in small uppercase tracking sans-serif below name, 
-gold category badge pill labeled "FINANCE" at top-left corner of card, 
-cream white card background, soft drop shadow, clean graphic card design.
+Profile card photorealistic portrait:
+ character portrait card, 2:3 portrait aspect ratio (1024x1536px), tall elegant woman in her early 30s, sleek black hair in a neat high bun with a gold pen tucked in, sharp golden-brown eyes, light tan skin, wearing a deep bottle-green blazer with gold buttons over a white blouse, round gold-frame glasses, gold wristwatch, holding a small gold balance scale, confident precise expression, sharp elegant lighting, clean modern finance-office background with subtle gold geometric pattern, rounded card border matching the team's design (white card frame, soft shadow), small badge top-left reading "FINANCE", name "Mint" in elegant cursive script at bottom-left, subtitle "— FINANCE & INVESTMENT —" beneath the name, consistent with the style of "Eir", "Laura", "Atlas" portrait cards
+
+photorealistic, hyperrealistic, sharp focus, professional photography, cinematic lighting, 8K UHD, detailed skin texture, natural depth of field, no cartoon, no anime, no illustration
 ```

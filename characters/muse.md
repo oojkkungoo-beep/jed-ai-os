@@ -34,15 +34,8 @@ OUTPUT: output/ideas/YYYY-MM-DD-[ชื่อ].md
 
 ## Image Prompt
 ```
-Profile card illustration: Lumina Fairy girl, appears 17, short orange-yellow bob hair 
-with glowing golden tips, bright golden eyes with tiny star sparkles, cream skin with 
-small constellation freckles on cheeks. Wearing oversized soft orange hoodie, wide-leg 
-pale yellow pants, white sneakers. Holding a magic sketchbook with ideas floating out 
-as glowing illustrations. Gold pencil tucked behind ear. Playful energetic pose, 
-warm magical lighting, modern fantasy aesthetic, manga illustration style, cute and detailed.
-Card layout: character fills top 70% of a vertical rounded-corner white card with thin dark green border, 
-name "Muse" in large elegant handwriting script font at bottom left of card, 
-"— IDEAS" in small uppercase tracking sans-serif below name, 
-golden-amber category badge pill labeled "CONTENT" at top-left corner of card, 
-cream white card background, soft drop shadow, clean graphic card design.
+Profile card photorealistic portrait:
+ character portrait card, 2:3 portrait aspect ratio (1024x1536px), young woman in her late teens/early 20s with a short orange-yellow ombre bob haircut, bright amber eyes, cream skin with subtle freckles, playful energetic expression, wearing an oversized soft-orange hoodie, holding an open sketchbook/tablet with creative sketches, gold pencil tucked behind her ear, warm vibrant lighting, clean modern creative-studio background with subtle golden pattern, rounded card border matching the team's design (white card frame, soft shadow), small badge top-left reading "CONTENT", name "Muse" in elegant cursive script at bottom-left, subtitle "— IDEA & CONTENT SPECIALIST —" beneath the name, consistent with the style of "Eir", "Laura", "Atlas" portrait cards
+
+photorealistic, hyperrealistic, sharp focus, professional photography, cinematic lighting, 8K UHD, detailed skin texture, natural depth of field, no cartoon, no anime, no illustration
 ```

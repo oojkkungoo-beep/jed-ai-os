@@ -35,17 +35,8 @@ OUTPUT: output/dev/YYYY-MM-DD-cinder-[ชื่องาน].md
 
 ## Image Prompt
 ```
-Profile card illustration: Ember Sprite girl, appears 19, short dark orange-red hair with
-glowing ember-like tips that flicker faintly, soft pale gold eyes calm and steady, contrasting
-with the heat around her. Wearing a scorched brown leather apron with soot smudges and old
-repair scars, holding a small toolbox with one compartment containing a single glowing coal
-ember — used to relight things, not start new fires. Floating near a cooling forge anvil that
-Forge left behind, quietly tending the embers so they never fully die out. Calm, attentive
-expression, warm dim firelight ambiance, modern fantasy aesthetic, manga illustration style,
-detailed and elegant.
-Card layout: character fills top 70% of a vertical rounded-corner white card with thin dark
-green border, name "Cinder" in large elegant handwriting script font at bottom left of card,
-"— MAINTENANCE & OPS" in small uppercase tracking sans-serif below name,
-burnt-orange category badge pill labeled "CINDER" at top-left corner of card,
-cream white card background, soft drop shadow, clean graphic card design.
+Profile card photorealistic portrait:
+ character portrait card, 2:3 portrait aspect ratio (1024x1536px), young woman in her late teens with short dark orange-red hair, soft pale-gold eyes with a calm and steady expression, wearing a scorched brown leather work apron with soot smudges and old repair marks, holding a small toolbox with a single glowing ember inside, standing near a cooling forge/workshop anvil, warm dim firelight ambiance, clean modern workshop background with subtle ember-orange pattern, rounded card border matching the team's design (white card frame, soft shadow), small badge top-left reading "CINDER", name "Cinder" in elegant cursive script at bottom-left, subtitle "— MAINTENANCE & OPS —" beneath the name, consistent with the style of "Eir", "Laura", "Atlas" portrait cards
+
+photorealistic, hyperrealistic, sharp focus, professional photography, cinematic lighting, 8K UHD, detailed skin texture, natural depth of field, no cartoon, no anime, no illustration
 ```

@@ -31,14 +31,8 @@ OUTPUT: output/decisions/YYYY-MM-DD-devil-[หัวข้อ].md
 
 ## Image Prompt
 ```
-Profile card illustration: A tall dark mirror-demon figure with small curved horns and 
-glowing golden eyes, standing in front of a large cracked obsidian mirror that reflects 
-a slightly distorted "opposite" version of itself. Dark charcoal robes with faint red 
-trim, calm and unsettling expression, minimal pose — arms crossed, observing.
-Epic manga illustration style, cool dark color palette (charcoal, gold, deep red accents).
-Card layout: scene fills top 70% of a vertical rounded-corner white card with thin dark 
-green border, name "Devil" in large elegant handwriting script font at bottom left of 
-card, "— ADVERSARIAL REVIEW" in small uppercase tracking sans-serif below name, 
-deep red category badge pill labeled "DEVIL" at top-left corner of card, 
-cream white card background, soft drop shadow, clean graphic card design.
+Profile card photorealistic portrait:
+ character portrait card, 2:3 portrait aspect ratio (1024x1536px), composed man with sharp golden-toned eyes and a calm, unsettling expression, standing with arms crossed in front of a large cracked dark mirror reflecting a slightly distorted version of himself, wearing dark charcoal tailored attire with faint deep-red trim, cool dark cinematic lighting, clean modern background with subtle dark geometric pattern, rounded card border matching the team's design (white card frame, soft shadow), small badge top-left reading "DEVIL", name "Devil" in elegant cursive script at bottom-left, subtitle "— ADVERSARIAL REVIEWER —" beneath the name, consistent with the style of "Eir", "Laura", "Atlas" portrait cards
+
+photorealistic, hyperrealistic, sharp focus, professional photography, cinematic lighting, 8K UHD, detailed skin texture, natural depth of field, no cartoon, no anime, no illustration
 ```

@@ -36,16 +36,8 @@ OUTPUT: output/dev/
 
 ## Image Prompt
 ```
-Profile card illustration: Gnome-dwarf hybrid male artificer, appears 35, short and stocky 
-with strong arms, curly reddish-brown hair with oil stains, short beard, warm dark brown eyes, 
-large steampunk goggles pushed up on forehead, tan skin with engine grease marks. 
-Wearing a brown leather steampunk apron over dark blue rolled-up sleeve shirt, 
-tools around belt, right leather glove, heavy short boots. 
-Workshop background filled with gears, circuits, and inventions. 
-Warm orange workshop lighting, detailed manga illustration style, cheerful and rugged.
-Card layout: character fills top 70% of a vertical rounded-corner white card with thin dark green border, 
-name "Forge" in large elegant handwriting script font at bottom left of card, 
-"— DEVELOPER" in small uppercase tracking sans-serif below name, 
-steel blue category badge pill labeled "DEV" at top-left corner of card, 
-cream white card background, soft drop shadow, clean graphic card design.
+Profile card photorealistic portrait:
+ character portrait card, 2:3 portrait aspect ratio (1024x1536px), stocky muscular man in his mid-30s with curly reddish-brown hair, short beard, warm dark brown eyes, large work goggles pushed up on his forehead, wearing a brown leather work apron over a dark blue rolled-up-sleeve shirt, tools clipped to his belt, confident cheerful expression, warm orange workshop lighting, clean modern tech-workshop background with subtle circuit pattern, rounded card border matching the team's design (white card frame, soft shadow), small badge top-left reading "DEV", name "Forge" in elegant cursive script at bottom-left, subtitle "— LEAD DEVELOPER —" beneath the name, consistent with the style of "Eir", "Laura", "Atlas" portrait cards
+
+photorealistic, hyperrealistic, sharp focus, professional photography, cinematic lighting, 8K UHD, detailed skin texture, natural depth of field, no cartoon, no anime, no illustration
 ```

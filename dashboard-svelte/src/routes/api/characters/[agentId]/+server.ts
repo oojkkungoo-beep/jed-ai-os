@@ -4,7 +4,7 @@ import { paths } from '$lib/server/paths';
 
 const KNOWN = [
 	'laura', 'muse', 'atlas', 'nova', 'eir', 'scout', 'council', 'forge',
-	'mint', 'sage', 'vera', 'devil', 'lena', 'jed'
+	'mint', 'sage', 'vera', 'devil', 'lena', 'jed', 'cinder'
 ];
 
 export async function GET({ params }) {

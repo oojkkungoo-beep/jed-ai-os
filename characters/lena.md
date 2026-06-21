@@ -35,18 +35,8 @@ OUTPUT: D:\NB_G_Drive\Second_Brain\40-Life\Reflections\weekly-YYYY-WNN.md
 
 ## Image Prompt
 ```
-Profile card illustration: Archive Sprite girl, appears 22, medium-length dark brown hair 
-with golden highlights loosely tied up with two pencils sticking through it, 
-round thin gold-copper glasses, blue-green eyes like old ink, pale skin with 
-permanent ink marks on right hand fingers and wrist. Wearing white long-sleeve 
-shirt with sleeves rolled up, dark brown vest with many small pockets, 
-holding a worn leather index book with tiny floating card pages drifting around her. 
-Surrounded by miniature glowing books hovering in orbit. Calm focused expression, 
-soft library candlelight ambiance, modern fantasy aesthetic, manga illustration style, 
-detailed and elegant.
-Card layout: character fills top 70% of a vertical rounded-corner white card with thin dark green border, 
-name "Lena" in large elegant handwriting script font at bottom left of card, 
-"— VAULT LIBRARIAN" in small uppercase tracking sans-serif below name, 
-teal-green category badge pill labeled "KNOWLEDGE" at top-left corner of card, 
-cream white card background, soft drop shadow, clean graphic card design.
+Profile card photorealistic portrait:
+ character portrait card, 2:3 portrait aspect ratio (1024x1536px), young woman in her early 20s with medium-length dark brown hair with golden highlights loosely tied up with two pencils through it, round thin gold-copper glasses, blue-green eyes, pale skin with faint ink marks on her right hand fingers, wearing a white long-sleeve shirt with rolled-up sleeves and a dark brown vest with many small pockets, holding a worn leather notebook, calm focused expression, soft warm library lighting, clean modern library/archive background with subtle book-shelf pattern, rounded card border matching the team's design (white card frame, soft shadow), small badge top-left reading "KNOWLEDGE", name "Lena" in elegant cursive script at bottom-left, subtitle "— VAULT LIBRARIAN —" beneath the name, consistent with the style of "Eir", "Laura", "Atlas" portrait cards
+
+photorealistic, hyperrealistic, sharp focus, professional photography, cinematic lighting, 8K UHD, detailed skin texture, natural depth of field, no cartoon, no anime, no illustration
 ```

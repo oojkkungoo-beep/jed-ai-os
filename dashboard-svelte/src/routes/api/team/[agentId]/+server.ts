@@ -7,7 +7,7 @@ const FILE_MAP: Record<string, string> = {
 	laura: 'laura.md', muse: 'idea.md', atlas: 'ceo_coach.md', nova: 'life.md',
 	eir: 'wellness.md', scout: 'research.md', council: 'council.md', forge: 'forge.md',
 	mint: 'finance.md', sage: 'memory_agent.md', vera: 'qa.md', devil: 'devil.md',
-	lena: 'librarian.md'
+	lena: 'librarian.md', cinder: 'cinder.md'
 };
 
 export async function GET({ params }) {

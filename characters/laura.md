@@ -36,15 +36,8 @@ OUTPUT: output/diary/
 
 ## Image Prompt
 ```
-Profile card illustration: Silver Elf female, age appears 24, long silver hair half-up half-down, 
-purple-grey eyes, pale skin with slight silver shimmer, pointed elf ears. 
-Wearing elegant white and silver steward's coat with gold trim and six-pointed star brooch. 
-Holding a glowing holographic clipboard. Small key-shaped earrings. 
-Grand fantasy office background with floating task boards. 
-Clean manga illustration style, soft cinematic lighting, detailed, elegant.
-Card layout: character fills top 70% of a vertical rounded-corner white card with thin dark green border, 
-name "Laura" in large elegant handwriting script font at bottom left of card, 
-"— ORCHESTRATOR" in small uppercase tracking sans-serif below name, 
-dark green category badge pill labeled "ORCHESTRATOR" at top-left corner of card, 
-cream white card background, soft drop shadow, clean graphic card design.
+Profile card photorealistic portrait:
+ character portrait card, 2:3 portrait aspect ratio (1024x1536px), young professional woman in her mid-20s with calm silver-toned hair styled half-up half-down, soft grey-purple eyes, composed and attentive expression, wearing an elegant tailored white-and-silver blazer with gold trim and a small six-pointed-star brooch, holding a sleek modern tablet/clipboard, small key-shaped earrings, soft cool-toned lighting, clean modern office background with subtle silver geometric pattern, rounded card border matching the team's design (white card frame, soft shadow), small badge top-left reading "ORCHESTRATOR", name "Laura" in elegant cursive script at bottom-left, subtitle "— MAIN ORCHESTRATOR —" beneath the name, consistent with the style of "Eir", "Vera", "Atlas" portrait cards
+
+photorealistic, hyperrealistic, sharp focus, professional photography, cinematic lighting, 8K UHD, detailed skin texture, natural depth of field, no cartoon, no anime, no illustration
 ```

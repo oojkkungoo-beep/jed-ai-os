@@ -36,15 +36,8 @@ OUTPUT: ตอบทันที (ไม่บันทึกไฟล์ เว
 
 ## Image Prompt
 ```
-Profile card illustration: Forest Sprite female, appears 20, petite, very pale green-tinted skin 
-with subtle leaf vein patterns on arms, long emerald green hair in two braids with tiny flowers 
-woven in, bright green eyes with flower-shaped pupils, small pointed ear tips with tiny leaf earrings. 
-Wearing a light sage green and white flowing outfit with a herbalist's apron, 
-carrying a woven basket with todo scrolls and small potion vials. Brown knee-high boots. 
-Gentle warm lighting, nature background, soft manga illustration style, cute and detailed.
-Card layout: character fills top 70% of a vertical rounded-corner white card with thin dark green border, 
-name "Nova" in large elegant handwriting script font at bottom left of card, 
-"— LIFE & HEALTH" in small uppercase tracking sans-serif below name, 
-sage green category badge pill labeled "LIFESTYLE" at top-left corner of card, 
-cream white card background, soft drop shadow, clean graphic card design.
+Profile card photorealistic portrait:
+ character portrait card, 2:3 portrait aspect ratio (1024x1536px), young woman in her early 20s with a warm gentle expression, hair styled in two soft braids with small flowers woven in, bright green eyes, wearing a light sage-green and white flowing outfit with a herbalist-style apron, carrying a small woven basket with notepads and tiny glass vials, brown knee-high boots, gentle warm natural lighting, clean greenhouse/garden background with subtle leaf pattern, rounded card border matching the team's design (white card frame, soft shadow), small badge top-left reading "LIFESTYLE", name "Nova" in elegant cursive script at bottom-left, subtitle "— LIFE & HEALTH MANAGER —" beneath the name, consistent with the style of "Eir", "Laura", "Atlas" portrait cards
+
+photorealistic, hyperrealistic, sharp focus, professional photography, cinematic lighting, 8K UHD, detailed skin texture, natural depth of field, no cartoon, no anime, no illustration
 ```

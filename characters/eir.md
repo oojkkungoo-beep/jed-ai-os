@@ -35,16 +35,8 @@ OUTPUT: Vitality Report (Status Window + Quest แนะนำ + สัญญา
 
 ## Image Prompt
 ```
-Profile card illustration: Half-elf cleric healer female, appears early 20s, long pale icy-blue 
-shimmering hair with gentle curls at the tips, soft turquoise eyes glowing faintly with healing 
-magic, slightly pointed elf ears. Wearing white-and-pastel-blue cleric robes with a small embroidered 
-cross/healing-rune emblem on the shoulder cape, holding an ornate staff topped with a glowing pale-blue 
-crystal, a small herb pouch and a "Status Log" notebook at her belt, faint soft blue magical aura 
-around her. Warm gentle lighting, fantasy adventure-party background, soft anime/manga illustration 
-style, kind and reassuring expression.
-Card layout: character fills top 70% of a vertical rounded-corner white card with thin pale-blue border, 
-name "Eir" in large elegant handwriting script font at bottom left of card, 
-"— WELLNESS & VITALITY" in small uppercase tracking sans-serif below name, 
-soft blue category badge pill labeled "HEALER" at top-left corner of card, 
-cream white card background, soft drop shadow, clean graphic card design.
+Profile card photorealistic portrait:
+ character portrait card, 2:3 portrait aspect ratio (1024x1536px), young woman in her early 20s with pale icy-blue toned hair with soft curls at the tips, calm turquoise eyes, kind and reassuring expression, wearing a white-and-pastel-blue medical-cleric-inspired uniform with a small embroidered cross emblem on the shoulder, holding an elegant crystal-topped stylus/wand, a small notebook labeled "Status Log" at her belt, soft warm lighting, clean modern wellness-clinic background with subtle pale-blue pattern, rounded card border matching the team's design (white card frame, soft shadow), small badge top-left reading "HEALER", name "Eir" in elegant cursive script at bottom-left, subtitle "— WELLNESS & VITALITY HEALER —" beneath the name, consistent with the style of "Laura", "Vera", "Atlas" portrait cards
+
+photorealistic, hyperrealistic, sharp focus, professional photography, cinematic lighting, 8K UHD, detailed skin texture, natural depth of field, no cartoon, no anime, no illustration
 ```

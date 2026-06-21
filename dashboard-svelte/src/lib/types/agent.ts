@@ -28,14 +28,17 @@ export const AGENTS: Agent[] = [
 	{ id: 'sage', name: 'Sage', race: 'Spirit Fox — Kitsune Elder', emoji: '📝', role: 'Memory & Diary Agent', description: 'จิ้งจอกเทพผู้อาวุโสแห่งความทรงจำ', model: 'Haiku 4.5', image: 'images/Sage.png' },
 	{ id: 'vera', name: 'Vera', race: 'Clockwork Inspector — Golem-kin', emoji: '🔎', role: 'QA & Skill Developer', description: 'กลไกผู้ตรวจสอบจากเผ่าโกเลม', model: 'Sonnet 4.6', image: 'images/Vera.png' },
 	{ id: 'devil', name: 'Devil', race: 'Mirror Demon', emoji: '😈', role: 'Adversarial Reviewer', description: 'ปีศาจกระจก ผู้ท้าทายทุกความเชื่อ (opt-in)', model: 'Opus 4.8', image: 'images/Devil.png' },
-	{ id: 'lena', name: 'Lena', race: 'Archive Sprite — Sylph', emoji: '📚', role: 'Vault Librarian', description: 'ซิลฟ์แห่งหอจดหมายเหตุ ผู้ดูแล Second Brain', model: 'Haiku 4.5 / Sonnet 4.6', image: 'images/Lena.png' }
+	{ id: 'lena', name: 'Lena', race: 'Archive Sprite — Sylph', emoji: '📚', role: 'Vault Librarian', description: 'ซิลฟ์แห่งหอจดหมายเหตุ ผู้ดูแล Second Brain', model: 'Haiku 4.5 / Sonnet 4.6', image: 'images/Lena.png' },
+	{ id: 'cinder', name: 'Cinder', race: 'Ember Sprite', emoji: '🔥', role: 'Maintenance & Ops', description: 'วิญญาณถ่านไฟ ผู้ดูแล bug fix/deploy/backup ของระบบเดิม', model: 'Sonnet 4.6', image: 'images/Cinder.png' }
 ];
 
+// อัปเดต 2026-06-21: จัดเป็น 6 แผนกมีหัวหน้าแผนก (ดู team/org_structure.md) — head อยู่ลำดับแรกของ agentIds เสมอ
 export const ORG_CHART: OrgDivision[] = [
-	{ title: 'สายกลยุทธ์ & การตัดสินใจ', color: 'gold', agentIds: ['atlas', 'council'] },
-	{ title: 'สายการเงิน', color: 'gold', agentIds: ['mint'] },
-	{ title: 'สายปฏิบัติการชีวิต & สุขภาพ', color: 'green', agentIds: ['nova', 'eir'] },
-	{ title: 'สายสร้างสรรค์ & ข้อมูลเชิงลึก', color: 'green', agentIds: ['muse', 'scout'] },
-	{ title: 'สายเทคโนโลยี', color: 'green', agentIds: ['forge'] },
-	{ title: 'สายบุคคล ความรู้ & คุณภาพ', color: 'green', agentIds: ['sage', 'lena', 'vera', 'devil'] }
+	{ title: 'Strategy & Decision (หัวหน้า: Atlas)', color: 'gold', agentIds: ['atlas', 'council', 'devil'] },
+	{ title: 'Finance', color: 'gold', agentIds: ['mint'] },
+	{ title: 'Life & Wellness (หัวหน้า: Nova)', color: 'green', agentIds: ['nova', 'eir'] },
+	{ title: 'Research & Content (หัวหน้า: Scout)', color: 'green', agentIds: ['scout', 'muse'] },
+	{ title: 'Product & Engineering (หัวหน้า: Forge)', color: 'green', agentIds: ['forge', 'cinder'] },
+	{ title: 'Knowledge & Memory (หัวหน้า: Sage)', color: 'green', agentIds: ['sage', 'lena'] },
+	{ title: 'QA — อิสระ ไม่อยู่แผนกไหน', color: 'gold', agentIds: ['vera'] }
 ];

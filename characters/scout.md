@@ -34,15 +34,8 @@ OUTPUT: output/research/YYYY-MM-DD-[หัวข้อ].md
 
 ## Image Prompt
 ```
-Profile card illustration: Halfling male ranger, appears 23 but looks younger, slim build, 
-light brown skin, short messy dark brown hair, round gold-frame glasses with hidden data overlay HUD, 
-sharp quick-moving dark brown eyes. Wearing oversized beige trench coat over black turtleneck, 
-chino pants, brown leather shoes. Large leather satchel overflowing with documents. 
-Multiple pens and notepads everywhere. 
-Mysterious library or information broker den background, atmospheric moody lighting, detailed manga style.
-Card layout: character fills top 70% of a vertical rounded-corner white card with thin dark green border, 
-name "Scout" in large elegant handwriting script font at bottom left of card, 
-"— RESEARCH" in small uppercase tracking sans-serif below name, 
-dark teal category badge pill labeled "RESEARCH" at top-left corner of card, 
-cream white card background, soft drop shadow, clean graphic card design.
+Profile card photorealistic portrait:
+ character portrait card, 2:3 portrait aspect ratio (1024x1536px), young man in his mid-20s, slim build, light brown skin, short messy dark brown hair, round gold-frame glasses, sharp attentive eyes, wearing an oversized beige trench coat over a black turtleneck and chino pants, carrying a large leather satchel overflowing with documents, multiple pens visible in pocket, atmospheric moody lighting, clean library/archive background with subtle data-grid pattern, rounded card border matching the team's design (white card frame, soft shadow), small badge top-left reading "RESEARCH", name "Scout" in elegant cursive script at bottom-left, subtitle "— RESEARCH & ANALYSIS —" beneath the name, consistent with the style of "Eir", "Laura", "Vera" portrait cards
+
+photorealistic, hyperrealistic, sharp focus, professional photography, cinematic lighting, 8K UHD, detailed skin texture, natural depth of field, no cartoon, no anime, no illustration
 ```

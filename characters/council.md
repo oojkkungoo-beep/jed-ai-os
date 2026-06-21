@@ -34,16 +34,8 @@ OUTPUT: output/decisions/YYYY-MM-DD-council-[หัวข้อ].md
 
 ## Image Prompt
 ```
-Profile card illustration: Three ancient mystical council figures around a circular stone table 
-with glowing runes. Left: elderly male in black robes with white hair and red eyes (Challenger). 
-Center: middle-aged figure in dark blue robes with grey hair and glasses (Strategist). 
-Right: young muscular figure in green tactical outfit with black hair (Executor). 
-All three are semi-translucent spirit-like, surrounding a floating flame in the center. 
-Ancient chamber setting, dramatic three-colored lighting (red, blue, green), 
-epic manga illustration style, mysterious and powerful.
-Card layout: scene fills top 70% of a vertical rounded-corner white card with thin dark green border, 
-name "Council" in large elegant handwriting script font at bottom left of card, 
-"— DECISION" in small uppercase tracking sans-serif below name, 
-deep red category badge pill labeled "COUNCIL" at top-left corner of card, 
-cream white card background, soft drop shadow, clean graphic card design.
+Profile card photorealistic portrait:
+ character portrait card, 2:3 portrait aspect ratio (1024x1536px), three professional advisors seated around a modern round conference table, photographed together: an elderly man in a black suit with white hair (Challenger), a middle-aged person in a dark blue suit with grey hair and glasses (Strategist), and a young athletic person in a tactical-green outfit (Executor), serious and focused expressions, dramatic three-toned accent lighting (red, blue, green), clean modern boardroom background with subtle circuit-grid pattern, rounded card border matching the team's design (white card frame, soft shadow), small badge top-left reading "COUNCIL", name "Council" in elegant cursive script at bottom-left, subtitle "— STRATEGIC DECISION CHAMBER —" beneath the name, consistent with the style of "Eir", "Laura", "Atlas" portrait cards
+
+photorealistic, hyperrealistic, sharp focus, professional photography, cinematic lighting, 8K UHD, detailed skin texture, natural depth of field, no cartoon, no anime, no illustration
 ```
