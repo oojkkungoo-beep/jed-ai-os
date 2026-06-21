@@ -169,5 +169,32 @@
     "example": "tool ที่ขึ้นต้นด้วย mcp__ เช่น mcp__Claude_Preview__*, mcp__Claude_in_Chrome__* คือ MCP server ที่ต่อเข้ามาให้ Laura ใช้งานได้",
     "date_added": "2026-06-20",
     "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 20,
+    "term": "Argument",
+    "category": "Dev / Tech",
+    "meaning": "ค่าที่ส่งเข้าไปให้ฟังก์ชัน/คำสั่ง/โปรแกรมตอนเรียกใช้งาน เพื่อบอกว่าให้ทำอะไรกับอะไร",
+    "example": "python -m http.server 3334 --directory . → 3334 และ --directory . คือ argument ที่บอกพอร์ตกับโฟลเดอร์ที่จะเสิร์ฟ",
+    "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 21,
+    "term": "โดเมนกว้างเกินไป (Domain too broad)",
+    "category": "Business / Strategy",
+    "meaning": "ขอบเขตความรับผิดชอบ/หัวข้อที่ครอบคลุมเรื่องมากเกินไปในที่เดียว จนทำงานได้ไม่ลึก ไม่ชัด หรือดูแลไม่ครบ",
+    "example": "agent ที่ต้องรับทั้งสุขภาพ+การเงิน+content พร้อมกัน ถือว่าโดเมนกว้างเกินไป ทำให้ไม่เชี่ยวเฉพาะทาง",
+    "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 22,
+    "term": "แบ่งโดเมน (Splitting domain / Domain decomposition)",
+    "category": "Business / Strategy",
+    "meaning": "การตัดแบ่งขอบเขตที่กว้างออกเป็นส่วนย่อยที่ชัดเจน แต่ละส่วนมีหน้าที่เฉพาะของตัวเอง เพื่อโฟกัสได้ลึกขึ้น ดูแลง่ายขึ้น และมอบหมายงานได้ตรงจุด",
+    "example": "CLAUDE.md routing ของ Laura คือการแบ่งโดเมน — idea/content ไป Muse, สุขภาพไป Eir, เงินไป Mint, โค้ดไป Forge",
+    "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
   }
 ]

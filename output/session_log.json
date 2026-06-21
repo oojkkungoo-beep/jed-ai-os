@@ -832,44 +832,44 @@
   {
     "id": 20,
     "date": "21 มิถุนายน 2569",
-    "topCategory": "🔍 Research",
+    "topCategory": "🔧 Dev & Tech",
     "tags": [
-      "🔍 Research",
-      "📝 Memory & Diary",
       "🔧 Dev & Tech",
-      "💡 Creative & Content"
+      "📝 Memory & Diary",
+      "🔍 Research",
+      "🤖 System & Setup"
     ],
-    "summary": "Auto-log: หมวดหลัก 🔍 Research (21%) — รอ Sage สรุปท้ายวัน",
+    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (26%) — รอ Sage สรุปท้ายวัน",
     "categories": [
       {
-        "name": "🔍 Research",
-        "count": 103,
-        "pct": 21
+        "name": "🔧 Dev & Tech",
+        "count": 256,
+        "pct": 26
       },
       {
         "name": "📝 Memory & Diary",
-        "count": 93,
-        "pct": 19
-      },
-      {
-        "name": "🔧 Dev & Tech",
-        "count": 82,
+        "count": 161,
         "pct": 16
       },
       {
-        "name": "💡 Creative & Content",
-        "count": 65,
-        "pct": 13
+        "name": "🔍 Research",
+        "count": 152,
+        "pct": 15
       },
       {
         "name": "🤖 System & Setup",
-        "count": 59,
+        "count": 146,
+        "pct": 15
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 116,
         "pct": 12
       },
       {
-        "name": "⚖️ Decision",
-        "count": 32,
-        "pct": 6
+        "name": "🎯 Strategy & CEO",
+        "count": 48,
+        "pct": 5
       }
     ],
     "tasks": [

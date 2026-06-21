@@ -670,17 +670,17 @@
     ]
   },
   "7f036072-7c30-4b99-b9dd-69f602fda078": {
-    "date": "20 มิถุนายน 2569",
+    "date": "21 มิถุนายน 2569",
     "scores": {
       "🎯 Strategy & CEO": 2,
-      "💡 Creative & Content": 2,
-      "🌿 Life & Health": 3,
-      "🔍 Research": 19,
+      "💡 Creative & Content": 8,
+      "🌿 Life & Health": 6,
+      "🔍 Research": 20,
       "⚖️ Decision": 2,
-      "🔧 Dev & Tech": 34,
-      "💰 Finance": 2,
-      "📝 Memory & Diary": 25,
-      "🤖 System & Setup": 18
+      "🔧 Dev & Tech": 37,
+      "💰 Finance": 5,
+      "📝 Memory & Diary": 29,
+      "🤖 System & Setup": 22
     },
     "tasks": [
       "ความหมายแบบง่าย: เหมือนการ \"คัดลอกเส้นทางงาน\" ออกไปอีกเส้นหนึ่ง โดยเริ่มจากจุดที่เราอยู่ตอนนี้ (commit ปัจจุบัน) — งานที",
@@ -721,8 +721,8 @@
     "scores": {
       "🎯 Strategy & CEO": 10,
       "💡 Creative & Content": 29,
-      "🌿 Life & Health": 16,
-      "🔍 Research": 76,
+      "🌿 Life & Health": 17,
+      "🔍 Research": 86,
       "⚖️ Decision": 21,
       "🔧 Dev & Tech": 36,
       "💰 Finance": 22,
@@ -758,13 +758,15 @@
   "a5202961-93c4-4371-83d8-600d233446e8": {
     "date": "21 มิถุนายน 2569",
     "scores": {
-      "🎯 Strategy & CEO": 3,
-      "💡 Creative & Content": 13,
-      "🔍 Research": 3,
-      "⚖️ Decision": 3,
-      "🔧 Dev & Tech": 23,
-      "📝 Memory & Diary": 2,
-      "🤖 System & Setup": 13
+      "🎯 Strategy & CEO": 26,
+      "💡 Creative & Content": 56,
+      "🌿 Life & Health": 12,
+      "🔍 Research": 22,
+      "⚖️ Decision": 14,
+      "🔧 Dev & Tech": 160,
+      "💰 Finance": 4,
+      "📝 Memory & Diary": 41,
+      "🤖 System & Setup": 78
     },
     "tasks": [
       "Login กลับมาแล้วค่ะ ลองสร้าง notebook ใหม่อีกครั้ง",

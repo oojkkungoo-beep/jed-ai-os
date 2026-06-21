@@ -126,9 +126,17 @@ AGENTS = {
         "surrounded by floor-to-ceiling bookshelves with soft warm library light, "
         f"{BASE}"
     ),
+    "Cinder": (
+        "photorealistic portrait of a calm Thai woman in her early 20s, "
+        "maintenance and operations specialist, wearing a slightly scorched brown work apron "
+        "over a simple dark shirt, short dark auburn hair, steady warm amber eyes, "
+        "soft dim workshop background with warm ember-orange bokeh lighting, "
+        "attentive composed expression, "
+        f"{BASE}"
+    ),
 }
 
-OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "..", "dashboard", "images")
+OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "..", "dashboard-svelte", "static", "images")
 TARGET_SIZE = (1024, 1536)
 
 
@@ -136,7 +144,7 @@ def generate_portrait(client, name: str, prompt: str) -> bool:
     print(f"  Generating {name}...", end=" ", flush=True)
     try:
         response = client.models.generate_content(
-            model="gemini-2.0-flash-preview-image-generation",
+            model="gemini-2.5-flash-image",
             contents=prompt,
             config=types.GenerateContentConfig(
                 response_modalities=["IMAGE", "TEXT"]
