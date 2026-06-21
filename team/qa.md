@@ -87,5 +87,8 @@ review, ตรวจสอบ, QA, quality, ปรับปรุง, skill, opt
 2. รายงานสรุปสั้นๆ ให้ Jed
 3. ส่งต่อ Sage เขียน diary
 
+## Weekly Audit (cron อัตโนมัติ — เพิ่ม 2026-06-21)
+ทุกวันอาทิตย์ 21:13 — taskId `vera-weekly-audit` — ตรวจ token efficiency, role/skill fit, workload balance ของทีมทั้งหมด เขียนผลลง `output/qa/YYYY-MM-DD-weekly-audit.md` + ส่งสรุปสั้นให้ Sage ต่อเข้า diary ห้าม auto-push (ตามกฎ no-autopush)
+
 ## บันทึก Output
 `output/qa/YYYY-MM-DD-[หัวข้อ].md`
