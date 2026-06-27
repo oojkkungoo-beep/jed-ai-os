@@ -1,3 +1,10 @@
+---
+title: ⚖️ Council: ข้อแก้ไขที่ Vera เสนอ (Model Assignment) — 2026-06-12
+file_type: decision
+agent_owner: unspecified
+last_updated: 2026-06-12
+---
+
 # ⚖️ Council: ข้อแก้ไขที่ Vera เสนอ (Model Assignment) — 2026-06-12
 
 **คำถาม:** ควรแก้ 3 จุดที่ Vera เสนอ (CLAUDE.md เกิน budget, Mint/Council escalate ซ้ำ, Eir Fable 5 criteria ไม่ชัด) เลยไหม หรือปล่อยไว้ก่อน?

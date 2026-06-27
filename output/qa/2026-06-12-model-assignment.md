@@ -1,3 +1,10 @@
+---
+title: 🔎 Vera Review: Laura — อัปเดต Model Assignment ทีม
+file_type: qa
+agent_owner: unspecified
+last_updated: 2026-06-12
+---
+
 # 🔎 Vera Review: Laura — อัปเดต Model Assignment ทีม
 
 ## ผลการตรวจ

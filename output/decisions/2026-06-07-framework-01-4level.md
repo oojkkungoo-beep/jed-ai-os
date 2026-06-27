@@ -1,3 +1,10 @@
+---
+title: 🎯 Framework_01 — 4-Level Life Framework (กับ Atlas)
+file_type: decision
+agent_owner: unspecified
+last_updated: 2026-06-12
+---
+
 # 🎯 Framework_01 — 4-Level Life Framework (กับ Atlas)
 
 **วันที่:** 2026-06-07

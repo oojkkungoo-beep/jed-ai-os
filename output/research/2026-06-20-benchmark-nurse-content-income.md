@@ -1,3 +1,10 @@
+---
+title: 🏆 Benchmark: รายได้เสริมจากคอนเทนต์ความรู้วิชาชีพพยาบาล/วิสัญญี (Jed_fremwork)
+file_type: research
+agent_owner: unspecified
+last_updated: 2026-06-20
+---
+
 # 🏆 Benchmark: รายได้เสริมจากคอนเทนต์ความรู้วิชาชีพพยาบาล/วิสัญญี (Jed_fremwork)
 
 **Mode:** Benchmark Research (ก่อนเริ่มงานคอนเทนต์ใน Jed_fremwork Phase 2)

@@ -1,3 +1,10 @@
+---
+title: 🔍 Research Note: คู่มือสร้าง AI Agent จาก 0-1
+file_type: research
+agent_owner: unspecified
+last_updated: 2026-06-06
+---
+
 # 🔍 Research Note: คู่มือสร้าง AI Agent จาก 0-1
 **แหล่งที่มา:** [YouTube — Jedi Trinupab](https://youtu.be/5SygPldsDUM)
 **วันที่สรุป:** 6 มิถุนายน 2569

@@ -1,3 +1,10 @@
+---
+title: 📊 Stock Tracking — NursePant Clearance
+file_type: project
+agent_owner: unspecified
+last_updated: 2026-06-12
+---
+
 # 📊 Stock Tracking — NursePant Clearance
 
 **ราคาเคลียร์:** 420 บาท/ตัว (ไม่รวมส่ง)

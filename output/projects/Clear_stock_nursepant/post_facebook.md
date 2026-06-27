@@ -1,3 +1,10 @@
+---
+title: โพสต์ Facebook — เคลียร์สต๊อก NursePant (เวอร์ชันล่าสุด)
+file_type: project
+agent_owner: unspecified
+last_updated: 2026-06-12
+---
+
 # โพสต์ Facebook — เคลียร์สต๊อก NursePant (เวอร์ชันล่าสุด)
 
 🔔 **เคลียร์สต๊อกครั้งเดียว — กางเกงพยาบาล NursePant**

@@ -1,3 +1,10 @@
+---
+title: NOVA — The Herbalist Guardian
+file_type: character_definition
+agent_owner: unspecified
+last_updated: 2026-06-22
+---
+
 # NOVA — The Herbalist Guardian
 
 ## เผ่าพันธุ์: Forest Sprite (เอลฟ์ป่าผู้ดูแลจังหวะชีวิต)
@@ -37,7 +44,7 @@ OUTPUT: ตอบทันที (ไม่บันทึกไฟล์ เว
 ## Image Prompt
 ```
 Profile card photorealistic portrait:
- character portrait card, 2:3 portrait aspect ratio (1024x1536px), young woman in her early 20s with a warm gentle expression, hair styled in two soft braids with small flowers woven in, bright green eyes, wearing a light sage-green and white flowing outfit with a herbalist-style apron, carrying a small woven basket with notepads and tiny glass vials, brown knee-high boots, gentle warm natural lighting, clean greenhouse/garden background with subtle leaf pattern, rounded card border matching the team's design (white card frame, soft shadow), small badge top-left reading "LIFESTYLE", name "Nova" in elegant cursive script at bottom-left, subtitle "— LIFE & HEALTH MANAGER —" beneath the name, consistent with the style of "Eir", "Laura", "Atlas" portrait cards
+ character portrait card, 2:3 portrait aspect ratio (1024x1536px), young Forest Sprite woman in her early 20s with subtly pointed elf-like ears and faint leaf-green vein-like markings at her temples, a warm gentle expression, hair styled in two soft braids with small flowers and a few natural leaf-green highlights woven in, bright green eyes — forest sprite heritage fused naturally into a practical modern athleisure-meets-herbalist look, wearing a light sage-green and white flowing outfit with a herbalist-style apron over functional leggings, carrying a small woven basket with notepads and tiny glass vials, brown knee-high boots, gentle warm natural lighting, clean greenhouse/garden background with subtle leaf pattern, rounded card border matching the team's design (white card frame, soft shadow), small badge top-left reading "LIFESTYLE", name "Nova" in elegant cursive script at bottom-left, subtitle "— LIFE & HEALTH MANAGER —" beneath the name, consistent with the style of "Eir", "Laura", "Atlas" portrait cards
 
 photorealistic, hyperrealistic, sharp focus, professional photography, cinematic lighting, 8K UHD, detailed skin texture, natural depth of field, no cartoon, no anime, no illustration
 ```

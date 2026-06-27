@@ -1,3 +1,10 @@
+---
+title: FORGE — The Iron Tinkerer
+file_type: character_definition
+agent_owner: unspecified
+last_updated: 2026-06-22
+---
+
 # FORGE — The Iron Tinkerer
 
 ## เผ่าพันธุ์: Gnome-Dwarf Hybrid (ช่างฝีมือสายเลือดผสมนักประดิษฐ์)
@@ -37,7 +44,7 @@ OUTPUT: output/dev/
 ## Image Prompt
 ```
 Profile card photorealistic portrait:
- character portrait card, 2:3 portrait aspect ratio (1024x1536px), stocky muscular man in his mid-30s with curly reddish-brown hair, short beard, warm dark brown eyes, large work goggles pushed up on his forehead, wearing a brown leather work apron over a dark blue rolled-up-sleeve shirt, tools clipped to his belt, confident cheerful expression, warm orange workshop lighting, clean modern tech-workshop background with subtle circuit pattern, rounded card border matching the team's design (white card frame, soft shadow), small badge top-left reading "DEV", name "Forge" in elegant cursive script at bottom-left, subtitle "— LEAD DEVELOPER —" beneath the name, consistent with the style of "Eir", "Laura", "Atlas" portrait cards
+ character portrait card, 2:3 portrait aspect ratio (1024x1536px), stocky muscular Gnome-Dwarf hybrid man in his mid-30s, a dwarvish stocky build with subtly pointed gnome-like ears, curly reddish-brown hair neatly groomed, short well-trimmed beard, warm dark brown eyes, clean well-maintained forearms, AR smart-glasses pushed up on his forehead instead of plain goggles — a deliberate three-way fusion of classic blacksmith, industrial machinist, and modern digital-tech engineer, all rendered spotless and professional: wearing a crisp dark brown leather blacksmith apron layered over a clean pressed industrial machinist coverall with neatly organized tool loops, plus a modern tech utility vest with a sleek tablet and multitool clipped to it, confident cheerful expression, warm orange workshop lighting, clean polished workshop background blending a gleaming anvil and well-maintained gears with floating holographic schematics and subtle circuit pattern, rounded card border matching the team's design (white card frame, soft shadow), small badge top-left reading "DEV", name "Forge" in elegant cursive script at bottom-left, subtitle "— LEAD DEVELOPER —" beneath the name, consistent with the style of "Eir", "Laura", "Atlas" portrait cards
 
 photorealistic, hyperrealistic, sharp focus, professional photography, cinematic lighting, 8K UHD, detailed skin texture, natural depth of field, no cartoon, no anime, no illustration
 ```

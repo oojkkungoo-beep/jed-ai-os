@@ -1,3 +1,10 @@
+---
+title: โครงสร้างทีม Laura — แบ่งแผนก
+file_type: agent_definition
+agent_owner: unspecified
+last_updated: 2026-06-21
+---
+
 # โครงสร้างทีม Laura — แบ่งแผนก
 
 อัปเดต 2026-06-21 — เพิ่ม Cinder (agent ที่ 15) แล้วจัดทุกคนเข้าแผนก พร้อมหัวหน้าแผนก

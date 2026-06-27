@@ -1,3 +1,10 @@
+---
+title: CINDER — The Ember Keeper
+file_type: character_definition
+agent_owner: unspecified
+last_updated: 2026-06-22
+---
+
 # CINDER — The Ember Keeper
 
 ## เผ่าพันธุ์: Ember Sprite (วิญญาณถ่านไฟที่คุอยู่หลัง Forge ตีเหล็กเสร็จ)
@@ -36,7 +43,7 @@ OUTPUT: output/dev/YYYY-MM-DD-cinder-[ชื่องาน].md
 ## Image Prompt
 ```
 Profile card photorealistic portrait:
- character portrait card, 2:3 portrait aspect ratio (1024x1536px), young woman in her late teens with short dark orange-red hair, soft pale-gold eyes with a calm and steady expression, wearing a scorched brown leather work apron with soot smudges and old repair marks, holding a small toolbox with a single glowing ember inside, standing near a cooling forge/workshop anvil, warm dim firelight ambiance, clean modern workshop background with subtle ember-orange pattern, rounded card border matching the team's design (white card frame, soft shadow), small badge top-left reading "CINDER", name "Cinder" in elegant cursive script at bottom-left, subtitle "— MAINTENANCE & OPS —" beneath the name, consistent with the style of "Eir", "Laura", "Atlas" portrait cards
+ character portrait card, 2:3 portrait aspect ratio (1024x1536px), young Ember Sprite woman in her late teens with a warm ember-glow undertone to her skin and faint glowing hairline cracks like cooling lava across her forearms and collarbone, short dark orange-red hair, soft pale-gold eyes with a calm and steady expression, AR welding visor flipped up on her forehead — a deliberate three-way fusion of classic blacksmith, industrial machinist, and modern digital-tech engineer, all rendered spotless and professional: wearing a crisp dark brown leather apron layered over a clean pressed industrial mechanic coverall, plus a modern tech repair vest holding a sleek digital diagnostic tablet, a small neat toolbox with a single glowing ember inside at her feet, standing near a well-kept forge/workshop anvil beside polished humming machinery and a floating holographic schematic, warm dim firelight ambiance, clean workshop background with subtle ember-orange pattern, rounded card border matching the team's design (white card frame, soft shadow), small badge top-left reading "CINDER", name "Cinder" in elegant cursive script at bottom-left, subtitle "— MAINTENANCE & OPS —" beneath the name, consistent with the style of "Eir", "Laura", "Atlas" portrait cards
 
 photorealistic, hyperrealistic, sharp focus, professional photography, cinematic lighting, 8K UHD, detailed skin texture, natural depth of field, no cartoon, no anime, no illustration
 ```

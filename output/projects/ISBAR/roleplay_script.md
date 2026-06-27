@@ -1,3 +1,10 @@
+---
+title: Roleplay Script: "Safe Transfer from OR to PACU"
+file_type: project
+agent_owner: unspecified
+last_updated: 2026-06-15
+---
+
 # Roleplay Script: "Safe Transfer from OR to PACU"
 
 **English Conversation SBAR Season 2 — Safety Communication: I-SBAR Bedside Handover**

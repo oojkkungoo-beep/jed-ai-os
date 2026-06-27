@@ -1,3 +1,10 @@
+---
+title: Storyboard: วิดีโอนำเรื่อง (Pre-recorded Intro Clips)
+file_type: project
+agent_owner: unspecified
+last_updated: 2026-06-15
+---
+
 # Storyboard: วิดีโอนำเรื่อง (Pre-recorded Intro Clips)
 
 **วัตถุประสงค์:** ฉายก่อนเริ่ม roleplay สด เพื่อปูเรื่อง Mr. Worawit Yosin ตั้งแต่ก่อนผ่าตัด จนถึงจุดที่ส่งตัวเข้า PACU (จุดที่ roleplay สดเริ่ม) — ถ่ายเองโดยทีม ใช้นักแสดง/cast ชุดเดียวกับ roleplay เพื่อให้ผู้ชมจำหน้าได้ต่อเนื่อง

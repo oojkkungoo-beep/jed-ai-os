@@ -1,3 +1,10 @@
+---
+title: Model Assignment — ทีม Laura
+file_type: agent_definition
+agent_owner: unspecified
+last_updated: 2026-06-21
+---
+
 # Model Assignment — ทีม Laura
 
 อัปเดตตาม Claude model lineup ปัจจุบัน: **Fable 5** (`claude-fable-5`), **Opus 4.8** (`claude-opus-4-8`), **Sonnet 4.6** (`claude-sonnet-4-6`), **Haiku 4.5** (`claude-haiku-4-5-20251001`)

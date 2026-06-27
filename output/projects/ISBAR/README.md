@@ -1,3 +1,10 @@
+---
+title: 🗣️ Project: ISBAR Roleplay — English Conversation SBAR Season 2
+file_type: project
+agent_owner: unspecified
+last_updated: 2026-06-15
+---
+
 # 🗣️ Project: ISBAR Roleplay — English Conversation SBAR Season 2
 
 **สถานะ:** active 🟢

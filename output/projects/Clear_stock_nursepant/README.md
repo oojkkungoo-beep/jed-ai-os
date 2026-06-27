@@ -1,3 +1,10 @@
+---
+title: 📦 Project: Clear Stock NursePant
+file_type: project
+agent_owner: unspecified
+last_updated: 2026-06-12
+---
+
 # 📦 Project: Clear Stock NursePant
 
 **สถานะ:** active 🟢

@@ -1,3 +1,10 @@
+---
+title: JED — The Commander
+file_type: character_definition
+agent_owner: unspecified
+last_updated: 2026-06-07
+---
+
 # JED — The Commander
 
 ## ข้อมูลส่วนตัว

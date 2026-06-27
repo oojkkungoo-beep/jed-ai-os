@@ -1,3 +1,10 @@
+---
+title: วิธีใช้โฟลเดอร์ team/
+file_type: content
+agent_owner: unspecified
+last_updated: 2026-06-15
+---
+
 # วิธีใช้โฟลเดอร์ team/
 
 1. คัดลอก `_persona_template.md` เป็นไฟล์ใหม่ต่อ agent 1 คน เช่น `idea.md`, `life.md`, `finance.md`

@@ -1,3 +1,10 @@
+---
+title: 🎯 เจด ในสายตา CEO Coach
+file_type: decision
+agent_owner: unspecified
+last_updated: 2026-06-13
+---
+
 # 🎯 เจด ในสายตา CEO Coach
 
 **Agent:** Atlas | **วันที่:** 14 มิถุนายน 2569

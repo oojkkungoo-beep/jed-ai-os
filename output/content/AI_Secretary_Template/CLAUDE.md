@@ -1,3 +1,10 @@
+---
+title: [ชื่อระบบ] — [ชื่อ Orchestrator] Orchestrator
+file_type: content
+agent_owner: unspecified
+last_updated: 2026-06-15
+---
+
 # [ชื่อระบบ] — [ชื่อ Orchestrator] Orchestrator
 
 ## ตัวตน

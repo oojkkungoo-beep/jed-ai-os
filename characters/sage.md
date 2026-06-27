@@ -1,3 +1,10 @@
+---
+title: SAGE — The Memory Keeper
+file_type: character_definition
+agent_owner: unspecified
+last_updated: 2026-06-22
+---
+
 # SAGE — The Memory Keeper
 
 ## เผ่าพันธุ์: Spirit Fox / Kitsune Elder (จิ้งจอกเทพผู้อาวุโสแห่งความทรงจำ)
@@ -38,7 +45,7 @@ OUTPUT: output/diary/YYYY-MM-DD.md
 ## Image Prompt
 ```
 Profile card photorealistic portrait:
- character portrait card, 2:3 portrait aspect ratio (1024x1536px), young androgynous person with an ageless youthful appearance, long straight white hair with a subtle soft-lavender sheen, heterochromia eyes (left light purple, right gold), pale fair skin, calm observant expression, wearing a minimalist white-and-soft-lavender outfit with a delicate embroidered pattern, holding an elegant leather-bound notebook, faint purple ink mark on fingertips, soft purple-and-gold lighting, clean quiet archive-library background, rounded card border matching the team's design (white card frame, soft shadow), small badge top-left reading "KNOWLEDGE", name "Sage" in elegant cursive script at bottom-left, subtitle "— MEMORY & DIARY ARCHIVIST —" beneath the name, consistent with the style of "Eir", "Laura", "Vera" portrait cards
+ character portrait card, 2:3 portrait aspect ratio (1024x1536px), young androgynous Spirit Fox/Kitsune Elder with an ageless youthful appearance, subtle fox-like ears peeking through long straight white hair with a soft-lavender sheen, a softly visible fox tail resting beside them, faint fox-marking patterns near the eyes, heterochromia eyes (left light purple, right gold), calm observant expression — kitsune heritage fused naturally into a modern minimalist fashion sensibility, wearing a minimalist white-and-soft-lavender outfit blending traditional kitsune motifs with a contemporary cardigan-robe silhouette, holding an elegant leather-bound notebook, immaculately clean hands, soft purple-and-gold lighting, clean quiet archive-library background, rounded card border matching the team's design (white card frame, soft shadow), small badge top-left reading "KNOWLEDGE", name "Sage" in elegant cursive script at bottom-left, subtitle "— MEMORY & DIARY ARCHIVIST —" beneath the name, consistent with the style of "Eir", "Laura", "Vera" portrait cards
 
 photorealistic, hyperrealistic, sharp focus, professional photography, cinematic lighting, 8K UHD, detailed skin texture, natural depth of field, no cartoon, no anime, no illustration
 ```

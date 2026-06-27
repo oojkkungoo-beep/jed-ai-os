@@ -1,3 +1,10 @@
+---
+title: MINT — The Golden Merchant
+file_type: character_definition
+agent_owner: unspecified
+last_updated: 2026-06-22
+---
+
 # MINT — The Golden Merchant
 
 ## เผ่าพันธุ์: High Human — Merchant Noble (ขุนนางพ่อค้าสายเลือดสูง)
@@ -37,7 +44,7 @@ OUTPUT: output/finance/
 ## Image Prompt
 ```
 Profile card photorealistic portrait:
- character portrait card, 2:3 portrait aspect ratio (1024x1536px), tall elegant woman in her early 30s, sleek black hair in a neat high bun with a gold pen tucked in, sharp golden-brown eyes, light tan skin, wearing a deep bottle-green blazer with gold buttons over a white blouse, round gold-frame glasses, gold wristwatch, holding a small gold balance scale, confident precise expression, sharp elegant lighting, clean modern finance-office background with subtle gold geometric pattern, rounded card border matching the team's design (white card frame, soft shadow), small badge top-left reading "FINANCE", name "Mint" in elegant cursive script at bottom-left, subtitle "— FINANCE & INVESTMENT —" beneath the name, consistent with the style of "Eir", "Laura", "Atlas" portrait cards
+ character portrait card, 2:3 portrait aspect ratio (1024x1536px), tall elegant High Human Merchant Noble woman in her early 30s, sleek black hair in a neat high bun with a gold pen tucked in, sharp golden-brown eyes with faint golden flecks, light tan skin, a small noble-crest signet ring on her finger hinting at her merchant-noble lineage — noble heritage fused naturally into sharp modern finance-executive style, wearing a deep bottle-green blazer with gold buttons over a white blouse, round gold-frame glasses, gold wristwatch, holding a small gold balance scale, confident precise expression, sharp elegant lighting, clean modern finance-office background with subtle gold geometric pattern, rounded card border matching the team's design (white card frame, soft shadow), small badge top-left reading "FINANCE", name "Mint" in elegant cursive script at bottom-left, subtitle "— FINANCE & INVESTMENT —" beneath the name, consistent with the style of "Eir", "Laura", "Atlas" portrait cards
 
 photorealistic, hyperrealistic, sharp focus, professional photography, cinematic lighting, 8K UHD, detailed skin texture, natural depth of field, no cartoon, no anime, no illustration
 ```

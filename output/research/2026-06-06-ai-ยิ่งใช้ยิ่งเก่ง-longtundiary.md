@@ -1,3 +1,10 @@
+---
+title: 🔍 Research Note: AI ยิ่งใช้ ยิ่งเก่ง
+file_type: research
+agent_owner: unspecified
+last_updated: 2026-06-06
+---
+
 # 🔍 Research Note: AI ยิ่งใช้ ยิ่งเก่ง
 **แหล่งที่มา:** [longtundiary Substack — AI team ep3](https://longtundiary.substack.com/p/ai-ac5)
 **วันที่เผยแพร่:** 3 เมษายน 2569

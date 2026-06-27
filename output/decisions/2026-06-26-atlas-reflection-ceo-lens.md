@@ -1,3 +1,10 @@
+---
+title: 🪞 Atlas Daily Reflection — วันศุกร์ที่ 26 มิถุนายน 2569
+file_type: decision
+agent_owner: unspecified
+last_updated: 2026-06-27
+---
+
 # 🪞 Atlas Daily Reflection — วันศุกร์ที่ 26 มิถุนายน 2569
 **[Atlas — CEO Coach]**
 

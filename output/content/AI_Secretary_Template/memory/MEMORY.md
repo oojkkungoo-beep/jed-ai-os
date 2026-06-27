@@ -1,3 +1,10 @@
+---
+title: Memory Index
+file_type: content
+agent_owner: unspecified
+last_updated: 2026-06-15
+---
+
 # Memory Index
 
 <!--

@@ -1,3 +1,10 @@
+---
+title: EIR — The Otherworldly Healer
+file_type: character_definition
+agent_owner: unspecified
+last_updated: 2026-06-22
+---
+
 # EIR — The Otherworldly Healer
 
 ## เผ่าพันธุ์: Half-Elf Cleric (จากต่างโลก ถูกซัมมอนมาเป็น Healer ประจำปาร์ตี้ของ Jed)
@@ -36,7 +43,7 @@ OUTPUT: Vitality Report (Status Window + Quest แนะนำ + สัญญา
 ## Image Prompt
 ```
 Profile card photorealistic portrait:
- character portrait card, 2:3 portrait aspect ratio (1024x1536px), young woman in her early 20s with pale icy-blue toned hair with soft curls at the tips, calm turquoise eyes, kind and reassuring expression, wearing a white-and-pastel-blue medical-cleric-inspired uniform with a small embroidered cross emblem on the shoulder, holding an elegant crystal-topped stylus/wand, a small notebook labeled "Status Log" at her belt, soft warm lighting, clean modern wellness-clinic background with subtle pale-blue pattern, rounded card border matching the team's design (white card frame, soft shadow), small badge top-left reading "HEALER", name "Eir" in elegant cursive script at bottom-left, subtitle "— WELLNESS & VITALITY HEALER —" beneath the name, consistent with the style of "Laura", "Vera", "Atlas" portrait cards
+ character portrait card, 2:3 portrait aspect ratio (1024x1536px), young Half-Elf Cleric woman in her early 20s with subtly pointed elf ears, pale icy-blue toned hair with soft curls at the tips, calm turquoise eyes, a faint soft golden healing-rune glow visible on her palms, kind and reassuring expression, wearing a white-and-pastel-blue medical-cleric-inspired uniform with a small embroidered cross emblem on the shoulder — elven heritage fused naturally into a modern healthcare-worker aesthetic, holding an elegant crystal-topped stylus/wand, a small notebook labeled "Status Log" at her belt, soft warm lighting, clean modern wellness-clinic background with subtle pale-blue pattern, rounded card border matching the team's design (white card frame, soft shadow), small badge top-left reading "HEALER", name "Eir" in elegant cursive script at bottom-left, subtitle "— WELLNESS & VITALITY HEALER —" beneath the name, consistent with the style of "Laura", "Vera", "Atlas" portrait cards
 
 photorealistic, hyperrealistic, sharp focus, professional photography, cinematic lighting, 8K UHD, detailed skin texture, natural depth of field, no cartoon, no anime, no illustration
 ```

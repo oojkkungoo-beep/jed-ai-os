@@ -1,3 +1,10 @@
+---
+title: 🪞 Atlas Daily Reflection — วันจันทร์ที่ 15 มิถุนายน 2569
+file_type: decision
+agent_owner: unspecified
+last_updated: 2026-06-16
+---
+
 # 🪞 Atlas Daily Reflection — วันจันทร์ที่ 15 มิถุนายน 2569
 **[Atlas — CEO Coach]**
 

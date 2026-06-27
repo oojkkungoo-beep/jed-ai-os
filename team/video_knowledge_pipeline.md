@@ -1,3 +1,10 @@
+---
+title: Video Knowledge Pipeline — สกัดความรู้จาก YouTube/วิดีโอ ผ่าน NotebookLM
+file_type: agent_definition
+agent_owner: unspecified
+last_updated: 2026-06-20
+---
+
 # Video Knowledge Pipeline — สกัดความรู้จาก YouTube/วิดีโอ ผ่าน NotebookLM
 
 **สถานะ:** Production pattern — พิสูจน์แล้วผ่าน 3 pilot round ข้ามหัวข้อ (2026-06-20/21)

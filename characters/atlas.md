@@ -1,3 +1,10 @@
+---
+title: ATLAS — The Iron Sage
+file_type: character_definition
+agent_owner: unspecified
+last_updated: 2026-06-22
+---
+
 # ATLAS — The Iron Sage
 
 ## เผ่าพันธุ์: Dwarven-Human Half-blood (นักรบ-นักคิดสายเลือดผสม)
@@ -36,7 +43,7 @@ OUTPUT: output/decisions/YYYY-MM-DD-[หัวข้อ].md
 ## Image Prompt
 ```
 Profile card photorealistic portrait:
- character portrait card, 2:3 portrait aspect ratio (1024x1536px), broad-shouldered man in his early 50s with short dark grey hair, neatly trimmed salt-and-pepper beard, steel-grey eyes with a perceptive no-nonsense expression, tan skin with a small scar on his chin, wearing a perfectly tailored dark navy suit without a tie and a mechanical watch, holding a heavy leather-bound notebook, dramatic cinematic lighting, clean modern boardroom background with subtle strategy-map pattern, rounded card border matching the team's design (white card frame, soft shadow), small badge top-left reading "CEO COACH", name "Atlas" in elegant cursive script at bottom-left, subtitle "— CEO COACH & STRATEGIST —" beneath the name, consistent with the style of "Eir", "Laura", "Vera" portrait cards
+ character portrait card, 2:3 portrait aspect ratio (1024x1536px), broad-shouldered Dwarven-Human half-blood man in his early 50s, stocky dwarvish build with a dignified stone-grey undertone to his skin, faintly pointed ears half-hidden under short dark grey hair, neatly trimmed salt-and-pepper beard with two small braided locks held by tiny metal beads (dwarven tradition), steel-grey eyes with a perceptive no-nonsense expression, a faint rune-like tattoo on his forearm, wearing a perfectly tailored dark navy suit without a tie and a mechanical watch — fantasy heritage fused naturally with modern executive style, holding a heavy leather-bound notebook, dramatic cinematic lighting, clean modern boardroom background with subtle strategy-map pattern, rounded card border matching the team's design (white card frame, soft shadow), small badge top-left reading "CEO COACH", name "Atlas" in elegant cursive script at bottom-left, subtitle "— CEO COACH & STRATEGIST —" beneath the name, consistent with the style of "Eir", "Laura", "Vera" portrait cards
 
 photorealistic, hyperrealistic, sharp focus, professional photography, cinematic lighting, 8K UHD, detailed skin texture, natural depth of field, no cartoon, no anime, no illustration
 ```

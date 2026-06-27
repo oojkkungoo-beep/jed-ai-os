@@ -1,3 +1,10 @@
+---
+title: DEVIL — The Adversarial Mirror
+file_type: character_definition
+agent_owner: unspecified
+last_updated: 2026-06-22
+---
+
 # DEVIL — The Adversarial Mirror
 
 ## เผ่าพันธุ์: Mirror Demon (ปีศาจกระจกผู้พูดความจริงที่ไม่อยากฟัง)
@@ -32,7 +39,7 @@ OUTPUT: output/decisions/YYYY-MM-DD-devil-[หัวข้อ].md
 ## Image Prompt
 ```
 Profile card photorealistic portrait:
- character portrait card, 2:3 portrait aspect ratio (1024x1536px), composed man with sharp golden-toned eyes and a calm, unsettling expression, standing with arms crossed in front of a large cracked dark mirror reflecting a slightly distorted version of himself, wearing dark charcoal tailored attire with faint deep-red trim, cool dark cinematic lighting, clean modern background with subtle dark geometric pattern, rounded card border matching the team's design (white card frame, soft shadow), small badge top-left reading "DEVIL", name "Devil" in elegant cursive script at bottom-left, subtitle "— ADVERSARIAL REVIEWER —" beneath the name, consistent with the style of "Eir", "Laura", "Atlas" portrait cards
+ character portrait card, 2:3 portrait aspect ratio (1024x1536px), composed Mirror Demon man with a faint dark violet-grey undertone to his skin, small smooth curved horns subtly visible through swept-back dark hair, sharp glowing amber-red eyes with faint vertical pupils and a calm, unsettling expression, standing with arms crossed in front of a large cracked dark mirror reflecting a slightly distorted version of himself — demonic heritage rendered with restraint and fused into a sharp modern silhouette, wearing dark charcoal tailored attire with faint deep-red trim, cool dark cinematic lighting, clean modern background with subtle dark geometric pattern, rounded card border matching the team's design (white card frame, soft shadow), small badge top-left reading "DEVIL", name "Devil" in elegant cursive script at bottom-left, subtitle "— ADVERSARIAL REVIEWER —" beneath the name, consistent with the style of "Eir", "Laura", "Atlas" portrait cards
 
 photorealistic, hyperrealistic, sharp focus, professional photography, cinematic lighting, 8K UHD, detailed skin texture, natural depth of field, no cartoon, no anime, no illustration
 ```

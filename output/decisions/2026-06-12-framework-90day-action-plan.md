@@ -1,3 +1,10 @@
+---
+title: 🎯 90-Day Action Plan — Jed_fremwork (ยืนยันแล้ว)
+file_type: decision
+agent_owner: unspecified
+last_updated: 2026-06-12
+---
+
 # 🎯 90-Day Action Plan — Jed_fremwork (ยืนยันแล้ว)
 
 **วันที่:** 2026-06-12

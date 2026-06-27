@@ -1,3 +1,10 @@
+---
+title: COUNCIL — The Three-Voiced Oracle
+file_type: character_definition
+agent_owner: unspecified
+last_updated: 2026-06-22
+---
+
 # COUNCIL — The Three-Voiced Oracle
 
 ## เผ่าพันธุ์: Ancient Construct — Triumvirate (สภาหุ่นยนต์โบราณสามเสียง)
@@ -35,7 +42,7 @@ OUTPUT: output/decisions/YYYY-MM-DD-council-[หัวข้อ].md
 ## Image Prompt
 ```
 Profile card photorealistic portrait:
- character portrait card, 2:3 portrait aspect ratio (1024x1536px), three professional advisors seated around a modern round conference table, photographed together: an elderly man in a black suit with white hair (Challenger), a middle-aged person in a dark blue suit with grey hair and glasses (Strategist), and a young athletic person in a tactical-green outfit (Executor), serious and focused expressions, dramatic three-toned accent lighting (red, blue, green), clean modern boardroom background with subtle circuit-grid pattern, rounded card border matching the team's design (white card frame, soft shadow), small badge top-left reading "COUNCIL", name "Council" in elegant cursive script at bottom-left, subtitle "— STRATEGIC DECISION CHAMBER —" beneath the name, consistent with the style of "Eir", "Laura", "Atlas" portrait cards
+ character portrait card, 2:3 portrait aspect ratio (1024x1536px), three ancient-construct humanoid figures (the Triumvirate) seated around a modern round conference table, photographed together: each with immaculately polished bronze-and-stone plating across visible joints fused seamlessly with sleek matte-black modern tech panels, faint glowing rune-etched seams, and softly glowing eyes in three distinct tones (the Challenger glows red, the Strategist glows blue, the Executor glows green) — ancient golem craftsmanship blended with contemporary minimalist design, each wearing modern tailored business attire layered over their construct frames, serious and focused postures, dramatic three-toned accent lighting (red, blue, green), clean modern boardroom background with subtle circuit-grid pattern, rounded card border matching the team's design (white card frame, soft shadow), small badge top-left reading "COUNCIL", name "Council" in elegant cursive script at bottom-left, subtitle "— STRATEGIC DECISION CHAMBER —" beneath the name, consistent with the style of "Eir", "Laura", "Atlas" portrait cards
 
 photorealistic, hyperrealistic, sharp focus, professional photography, cinematic lighting, 8K UHD, detailed skin texture, natural depth of field, no cartoon, no anime, no illustration
 ```

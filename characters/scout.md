@@ -1,3 +1,10 @@
+---
+title: SCOUT — The Shadow Ranger
+file_type: character_definition
+agent_owner: unspecified
+last_updated: 2026-06-22
+---
+
 # SCOUT — The Shadow Ranger
 
 ## เผ่าพันธุ์: Halfling-Rogue (นักสืบเงาตัวเล็กไหวพริบดี)
@@ -35,7 +42,7 @@ OUTPUT: output/research/YYYY-MM-DD-[หัวข้อ].md
 ## Image Prompt
 ```
 Profile card photorealistic portrait:
- character portrait card, 2:3 portrait aspect ratio (1024x1536px), young man in his mid-20s, slim build, light brown skin, short messy dark brown hair, round gold-frame glasses, sharp attentive eyes, wearing an oversized beige trench coat over a black turtleneck and chino pants, carrying a large leather satchel overflowing with documents, multiple pens visible in pocket, atmospheric moody lighting, clean library/archive background with subtle data-grid pattern, rounded card border matching the team's design (white card frame, soft shadow), small badge top-left reading "RESEARCH", name "Scout" in elegant cursive script at bottom-left, subtitle "— RESEARCH & ANALYSIS —" beneath the name, consistent with the style of "Eir", "Laura", "Vera" portrait cards
+ character portrait card, 2:3 portrait aspect ratio (1024x1536px), young Halfling-Rogue man in his mid-20s, noticeably shorter halfling stature with a slim nimble build, slightly rounded ears, light brown skin, short neatly styled dark brown hair, round gold-frame glasses, sharp attentive eyes — halfling heritage fused naturally into a polished modern streetwear-meets-field-researcher look, wearing a well-tailored beige trench coat over a black turtleneck and chino pants, carrying a neat leather satchel with organized documents, a single pen clipped tidily in his pocket, atmospheric moody lighting, clean library/archive background with subtle data-grid pattern, rounded card border matching the team's design (white card frame, soft shadow), small badge top-left reading "RESEARCH", name "Scout" in elegant cursive script at bottom-left, subtitle "— RESEARCH & ANALYSIS —" beneath the name, consistent with the style of "Eir", "Laura", "Vera" portrait cards
 
 photorealistic, hyperrealistic, sharp focus, professional photography, cinematic lighting, 8K UHD, detailed skin texture, natural depth of field, no cartoon, no anime, no illustration
 ```

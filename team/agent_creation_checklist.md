@@ -1,3 +1,10 @@
+---
+title: Checklist การเพิ่ม Agent ใหม่เข้าทีม Laura
+file_type: agent_definition
+agent_owner: unspecified
+last_updated: 2026-06-21
+---
+
 # Checklist การเพิ่ม Agent ใหม่เข้าทีม Laura
 
 **บังคับใช้ทุกครั้ง** ที่จะเพิ่ม agent คนใหม่ — Vera เป็นเจ้าของ checklist นี้ ตรวจให้ครบก่อนประกาศว่า agent ใหม่ "พร้อมใช้งาน" (เพิ่ม 2026-06-21 หลังเจอว่า Cinder สร้างรอบแรกยังไม่ครบ)
