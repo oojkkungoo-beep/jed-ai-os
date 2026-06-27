@@ -9,3 +9,4 @@ Medic_Station/medic_station.db
 # ตัวติดตั้ง offline ขนาดใหญ่ (binary)
 Medic_Station/offline_install/python-3.14.5-amd64.exe
 Medic_Station/offline_install/packages/
+desktop.ini

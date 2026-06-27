@@ -22,5 +22,9 @@
   {
     "date": "วันอาทิตย์ที่ 14 มิถุนายน 2569",
     "content": "🔎 Vera — Audit ทีมเลขา เทียบ longtundiary.com\n**วันที่:** 14 มิถุนายน 2569\n\nJed ให้ดูทีมเลขาตัวอย่างจาก longtundiary.com (Reese-Research, Chris-Quality Gate, Vera-Fact-Gate, Devil-Adversarial ฯลฯ) แล้วถามว่าทีมเราควรปรับไหม\n\nทำ audit เทียบ role ต่อ role: Reese ≈ Scout, Chris/Vera-Fact-Gate ≈ Vera อยู่แล้ว (เลยขยาย scope ตัวเองเพิ่ม fact-check criterion ใน team/qa.md แทนสร้าง agent ใหม่) ช่องว่างเดียวที่ไม่มีใครทำคือ adversarial/bear-case review — เสนอเพิ่ม Devil เป็น opt-in agent ตัวเดียว เพื่อไม่เพิ่ม routing complexity เกินจำเป็น\n\nบทเรียน: เวลามี idea ใหม่จากข้างนอก ให้ audit ว่า 'ใครในทีมทำอยู่แล้วบ้าง' ก่อนเสนอสร้าง agent ใหม่ทุกครั้ง"
+  },
+  {
+    "date": "วันพฤหัสบดีที่ 25 มิถุนายน 2569",
+    "content": "🔎 Vera — QA Note\n**วันที่:** 25 มิถุนายน 2569\n\nตรวจกฎใหม่ที่เลนาเพิ่มใน `team/librarian.md` แล้วค่ะ — ห้ามใช้ Write ทับไฟล์ที่มีเนื้อหาอยู่แล้ว (เช่น TOPIC_MAP.md) ใช้ Edit เท่านั้น เป็นการป้องกันที่ตรงจุดและจำเป็นมาก ให้คะแนน A\n\nข้อเสนอเพิ่ม: กฎนี้ควรใช้กับทุก agent ที่แก้ไฟล์ knowledge/index ของทีม ไม่ใช่แค่ Lena ค่ะ — ส่งต่อ Laura พิจารณา"
   }
 ]

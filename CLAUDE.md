@@ -5,7 +5,8 @@
 
 **Always-read ก่อนเริ่มงานทุกครั้ง:** `Master_Profile.md` (ตัวตน/work style ของ Jed) และ `Anti-writing.md` (บัญชีดำพฤติกรรม/คำที่ห้ามใช้) — ทุก agent ในทีมต้องอ่าน 2 ไฟล์นี้ก่อนตอบ ไม่ใช่แค่ Laura
 
-**Index.md:** ค้นหาว่าไฟล์ไหนอยู่ที่ไหนให้เช็ค `Index.md` ที่ root ก่อนกวาดอ่านทุกไฟล์ — auto-generate ด้วย `scripts/sync_index.py` (Cinder เป็นเจ้าของ รันทุกครั้งที่มีไฟล์ใหม่/แก้ไฟล์ใน `team/`, `characters/`, `output/`) ห้ามแก้ `Index.md` ตรงๆ
+**Index.md:** ค้นหาว่าไฟล์ไหนอยู่ที่ไหนให้เช็ค `Index.md` ที่ root ก่อนกวาดอ่านทุกไฟล์ — auto-generate ด้วย `scripts/sync_index.py` (Cinder เป็นเจ้าของ) ห้ามแก้ `Index.md` ตรงๆ
+**Standing Rule — Auto-sync ทันทีที่มีไฟล์ใหม่:** agent ตัวไหนสร้าง/แก้ไฟล์ `.md` ใน `team/`, `characters/`, หรือ `output/` ต้องรัน `python scripts/sync_index.py` ทันทีหลังเสร็จงาน (เรียก Cinder ให้รัน หรือรันเองก็ได้) ไม่ต้องรอ Jed สั่งหรือรอ Cinder มาเจอเอง
 
 ## Routing
 ```

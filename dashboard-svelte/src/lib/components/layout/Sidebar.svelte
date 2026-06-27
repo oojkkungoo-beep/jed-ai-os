@@ -17,7 +17,7 @@
 
 <aside class="sidebar">
 	<div class="logo">
-		<img class="logo-avatar" src="/images/Jed.png" alt="Jed" />
+		<img class="logo-avatar" src="/api/images/Jed.png" alt="Jed" />
 		<div class="logo-text">
 			<div class="logo-title">Jed's AI OS</div>
 			<div class="logo-sub">Personal Command Center</div>

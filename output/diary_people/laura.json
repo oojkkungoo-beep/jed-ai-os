@@ -26,5 +26,9 @@
   {
     "date": "วันอาทิตย์ที่ 14 มิถุนายน 2569",
     "content": "📋 Daily Briefing — เพิ่ม Devil เข้าทีม + ต่อ Gemini API\n\n## Laura — สร้าง Devil agent และต่อ Gemini API\n**วันที่:** 14 มิถุนายน 2569\n\nJed ส่งตัวอย่างทีมเลขาจาก longtundiary.com มาให้ดู — ให้ Vera audit เทียบกับทีมปัจจุบันก่อน พบว่าช่องว่างจริงมีแค่ adversarial/bear-case review จึงสร้าง agent ใหม่ตัวที่ 13 ชื่อ **Devil (เดวิล, ครับ)** — Mirror Demon, opt-in, 3 modes (Bear Case / Polarity Audit / Evidence Match) พร้อมอัปเดต routing, model_assignment, qa.md, dashboard ครบ\n\nต่อมา Jed ถามเรื่องต่อ agent กับ Gemini/OpenAI เพื่อให้ Devil เป็น 'คนละสมองจริง' — ตั้งค่า Gemini API (.env, gitignore, google-genai SDK) เขียน scripts/gemini_review.py และ gemini_video.py ทดสอบกับ API key จริงของ Jed สำเร็จด้วย gemini-2.5-flash (free tier) ทั้ง text review และ video analysis ส่วน gemini-2.5-pro ติด quota ต้องเปิด billing — บันทึกกฎไว้ในความจำว่าต้องถาม Jed ก่อนถ้าจะใช้ pro"
+  },
+  {
+    "date": "วันพฤหัสบดีที่ 25 มิถุนายน 2569",
+    "content": "🎭 Laura — Daily Briefing\n**วันที่:** 25 มิถุนายน 2569\n\nเมื่อวานทีมเจอ insight สำคัญค่ะ — เลนาตรวจ Second Brain vault แล้วสรุปว่าโครงสร้าง (PARA + Dataview + Templater + obsidian-git) พร้อมใช้จริง 100% แต่ Jed ยังใช้งานไม่สม่ำเสมอ — เพิ่ม pointer note หลักสูตรวิสัญญีพยาบาลเข้า `10-Clinical/Anesthesia/` แล้ว และตั้งกฎใหม่ห้ามใช้ Write ทับไฟล์เก่าเด็ดขาด (ใช้ Edit เท่านั้น) กัน TOPIC_MAP.md โดนทับ\n\nวันนี้โฟกัส: Atlas ท้าทายตรงๆว่าวันนี้คือ deadline Phase 1 ของ NursePant (เป้า ≥15 ตัว ได้จริง 0 ตัว) — ลอร่าจะติดตามว่า Jed ตัดสินใจยังไงค่ะ"
   }
 ]

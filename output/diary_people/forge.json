@@ -14,5 +14,9 @@
   {
     "date": "วันอาทิตย์ที่ 14 มิถุนายน 2569",
     "content": "🛠️ Forge — สร้าง Gemini API bridge scripts\n**วันที่:** 14 มิถุนายน 2569\n\nเขียน Python wrapper สำหรับเชื่อม Claude Code agent เข้ากับ Gemini Developer API:\n- scripts/gemini_review.py (Devil ใช้ adversarial review 3 modes)\n- scripts/gemini_video.py (Scout ใช้วิเคราะห์วิดีโอ YouTube/local)\n- .env + .gitignore สำหรับเก็บ GEMINI_API_KEY อย่างปลอดภัย\n\nดีบักเจอ gemini-2.5-pro ติด quota=0 บน free tier ต้อง billing — เปลี่ยน default model ทั้งสอง script เป็น gemini-2.5-flash ซึ่งทดสอบแล้วใช้งานได้จริงทั้ง text และ video"
+  },
+  {
+    "date": "วันพฤหัสบดีที่ 25 มิถุนายน 2569",
+    "content": "⚙️ Forge — Dev Report\n**วันที่:** 25 มิถุนายน 2569\n\nเช็ค git log แล้วครับ — commit ล่าสุดคือ `455efc4` (21 มิ.ย., sync Cinder เข้า dashboard) ยังไม่มี commit ใหม่หลังจากนั้น แต่ working tree มีงานค้างสะสมพอสมควร: photorealistic prompt ของทุก character file, dashboard-svelte (Sidebar/agent.ts) ที่ยังไม่ sync Cinder, รูป agent หลายไฟล์เปลี่ยนแล้วแต่ยังไม่ commit, และโปรเจกต์ใหม่ Medsupply_Registry (24 มิ.ย.)\n\nแนะนำ commit รวมเมื่อ Jed พร้อม กันของหายครับ"
   }
 ]

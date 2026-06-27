@@ -196,5 +196,23 @@
     "example": "CLAUDE.md routing ของ Laura คือการแบ่งโดเมน — idea/content ไป Muse, สุขภาพไป Eir, เงินไป Mint, โค้ดไป Forge",
     "date_added": "2026-06-20",
     "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 23,
+    "term": "Redundant backup",
+    "category": "Dev / Tech",
+    "meaning": "การเก็บสำเนาข้อมูลสำคัญไว้มากกว่า 1 ที่ เพื่อกันความเสี่ยงข้อมูลหาย ถ้าที่หนึ่งพังหรือเข้าถึงไม่ได้ ยังมีที่อื่นสำรองไว้",
+    "example": "Second Brain Vault ของ Jed sync กับ Google Drive + มี git local backup อีกชั้น — ถ้า Drive มีปัญหา ยังมี git history สำรองไว้",
+    "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 24,
+    "term": "Node.js",
+    "category": "Dev / Tech",
+    "meaning": "runtime ที่ให้รันภาษา JavaScript ได้นอกเบราว์เซอร์ ใช้เขียน server, สคริปต์เบื้องหลัง, CLI tool ได้ด้วย มี npm เป็นคลังไลบรารีให้ใช้งาน",
+    "example": "โปรเจกต์ dashboard-svelte/ ของ Jed (SvelteKit) รันอยู่บน Node.js เบื้องหลัง ต่างจาก dashboard เดิมที่ใช้ Python/PowerShell",
+    "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
   }
 ]

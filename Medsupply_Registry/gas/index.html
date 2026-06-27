@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ทะเบียนเวชภัณฑ์</title>
+<style>
+  :root { --primary:#1d6fa5; --bg:#f4f7fa; --card:#fff; --border:#dde3e8; --danger:#c0392b; --ok:#2e8b57; }
+  * { box-sizing: border-box; }
+  body { font-family: 'Sarabun', 'Segoe UI', sans-serif; background: var(--bg); margin:0; color:#222; }
+  header { background: var(--primary); color:#fff; padding:14px 18px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px; }
+  header h1 { font-size:18px; margin:0; }
+  nav button { background:transparent; border:1px solid #fff; color:#fff; padding:6px 12px; border-radius:6px; cursor:pointer; margin-left:6px; }
+  nav button.active { background:#fff; color:var(--primary); }
+  main { padding:16px; max-width:1000px; margin:0 auto; }
+  .card { background:var(--card); border:1px solid var(--border); border-radius:8px; padding:14px; margin-bottom:12px; }
+  .toolbar { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px; }
+  input, select, textarea { padding:8px; border:1px solid var(--border); border-radius:6px; font-size:14px; font-family:inherit; }
+  input[type=text], textarea { flex:1; min-width:140px; }
+  .grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(220px,1fr)); gap:10px; }
+  .item-card { cursor:pointer; transition:.15s; }
+  .item-card:hover { box-shadow:0 2px 8px rgba(0,0,0,.1); }
+  .item-card h3 { margin:0 0 4px; font-size:15px; }
+  .item-card .meta { font-size:12px; color:#666; }
+  .badge { display:inline-block; padding:2px 8px; border-radius:10px; font-size:11px; color:#fff; }
+  .badge.ok { background:var(--ok); }
+  .badge.bad { background:var(--danger); }
+  .badge.def { background:#999; }
+  form .row { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:8px; }
+  form .row > div { flex:1; min-width:160px; }
+  label { font-size:12px; color:#555; display:block; margin-bottom:2px; }
+  button.primary { background:var(--primary); color:#fff; border:none; padding:8px 16px; border-radius:6px; cursor:pointer; }
+  button.secondary { background:#eee; border:1px solid var(--border); padding:8px 16px; border-radius:6px; cursor:pointer; }
+  button.danger { background:var(--danger); color:#fff; border:none; padding:6px 12px; border-radius:6px; cursor:pointer; }
+  .qr-box { text-align:center; padding:10px; }
+  .qr-box img { width:180px; height:180px; }
+  .log-entry { border-left:3px solid var(--primary); padding:6px 10px; margin-bottom:6px; background:#fafafa; }
+  .log-entry .tag { font-size:11px; font-weight:bold; color:var(--primary); }
+  .hidden { display:none !important; }
+  .back-link { cursor:pointer; color:var(--primary); margin-bottom:10px; display:inline-block; }
+  #toast { position:fixed; bottom:16px; right:16px; background:#222; color:#fff; padding:10px 16px; border-radius:6px; display:none; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>📦 ทะเบียนเวชภัณฑ์</h1>
+  <nav>
+    <button id="navList" class="active">รายการ</button>
+    <button id="navAdd">+ เพิ่มเวชภัณฑ์</button>
+  </nav>
+</header>
+
+<main>
+
+<!-- VIEW: LIST -->
+<section id="viewList">
+  <div class="toolbar">
+    <input type="text" id="searchInput" placeholder="ค้นหา ชื่อ/ยี่ห้อ/S-N/หมายเลขพัสดุ...">
+    <select id="filterType"><option value="">ทุกประเภท</option></select>
+    <select id="filterStatus">
+      <option value="">ทุกสถานะ</option>
+      <option value="ปกติ">ปกติ</option>
+      <option value="ชำรุดรอจำหน่าย">ชำรุดรอจำหน่าย</option>
+      <option value="ตัดจำหน่าย">ตัดจำหน่าย</option>
+    </select>
+  </div>
+  <div class="grid" id="itemGrid"></div>
+</section>
+
+<!-- VIEW: ADD/EDIT -->
+<section id="viewForm" class="hidden">
+  <span class="back-link" onclick="showList()">← กลับไปรายการ</span>
+  <div class="card">
+    <h2 id="formTitle">เพิ่มเวชภัณฑ์ใหม่</h2>
+    <form id="itemForm">
+      <input type="hidden" id="f_id"><input type="hidden" id="f_row_num"><input type="hidden" id="f_created_at">
+      <div class="row">
+        <div><label>ชื่อทั่วไป *</label><input type="text" id="f_name_common" required></div>
+        <div><label>ชื่อ (รายละเอียด)</label><input type="text" id="f_name"></div>
+      </div>
+      <div class="row">
+        <div><label>ชื่อภาษาอังกฤษ/ชื่อการค้า</label><input type="text" id="f_name_en_trade"></div>
+        <div><label>ประเภท *</label><input type="text" id="f_type" list="typeList" required></div>
+      </div>
+      <div class="row">
+        <div><label>ยี่ห้อ</label><input type="text" id="f_brand"></div>
+        <div><label>บริษัทผู้จำหน่าย</label><input type="text" id="f_vendor"></div>
+        <div><label>รุ่น</label><input type="text" id="f_model"></div>
+      </div>
+      <div class="row">
+        <div><label>หมายเลขพัสดุ</label><input type="text" id="f_stock_no"></div>
+        <div><label>S/N</label><input type="text" id="f_serial_no"></div>
+      </div>
+      <div class="row">
+        <div><label>ราคา (บาท)</label><input type="text" id="f_price"></div>
+        <div><label>จำนวน</label><input type="text" id="f_qty"></div>
+        <div><label>งบปี</label><input type="text" id="f_budget_year"></div>
+      </div>
+      <div class="row">
+        <div><label>วันที่ได้รับ</label><input type="text" id="f_received_date" placeholder="เช่น 23มิย63"></div>
+        <div><label>สถานที่จัดเก็บ</label><input type="text" id="f_location"></div>
+        <div><label>สถานะ</label>
+          <select id="f_status">
+            <option value="ปกติ">ปกติ</option>
+            <option value="ชำรุดรอจำหน่าย">ชำรุดรอจำหน่าย</option>
+            <option value="ตัดจำหน่าย">ตัดจำหน่าย</option>
+          </select>
+        </div>
+      </div>
+      <div class="row"><div><label>หมายเหตุ</label><textarea id="f_note" rows="2"></textarea></div></div>
+      <div class="row">
+        <div><label>รูปภาพ (เลือกได้หลายไฟล์ — อัปโหลดเข้า Drive)</label><input type="file" id="f_image_file" accept="image/*" multiple></div>
+      </div>
+      <input type="hidden" id="f_image_urls">
+      <div class="row">
+        <button type="submit" class="primary">บันทึก</button>
+        <button type="button" class="secondary" onclick="showList()">ยกเลิก</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- VIEW: DETAIL -->
+<section id="viewDetail" class="hidden">
+  <span class="back-link" onclick="showList()">← กลับไปรายการ</span>
+  <div class="card" id="detailCard"></div>
+  <div class="card qr-box" id="qrCard"></div>
+  <div class="card">
+    <div style="display:flex; justify-content:space-between; align-items:center;">
+      <h3>📋 Logbook</h3>
+      <button class="primary" onclick="showLogForm()">+ บันทึกใหม่</button>
+    </div>
+    <form id="logForm" class="hidden">
+      <div class="row">
+        <div><label>ประเภท</label>
+          <select id="log_type">
+            <option value="usage">การใช้งาน</option>
+            <option value="storage">การเก็บ</option>
+            <option value="maintenance">การซ่อมบำรุง</option>
+          </select>
+        </div>
+        <div><label>วันที่</label><input type="date" id="log_date"></div>
+      </div>
+      <div class="row"><div><label>รายละเอียด</label><textarea id="log_detail" rows="2"></textarea></div></div>
+      <div class="row"><div><label>ผู้บันทึก</label><input type="text" id="log_by"></div></div>
+      <div class="row">
+        <button type="submit" class="primary">บันทึก Log</button>
+        <button type="button" class="secondary" onclick="hideLogForm()">ยกเลิก</button>
+      </div>
+    </form>
+    <div id="logList"></div>
+  </div>
+</section>
+
+</main>
+<div id="toast"></div>
+
+<script>
+var API_URL = ''; // ใส่ Web App URL ของตัวเองหลัง deploy (เช่น https://script.google.com/macros/s/XXX/exec)
+var currentItem = null;
+
+function toast(msg) {
+  var t = document.getElementById('toast');
+  t.textContent = msg; t.style.display = 'block';
+  setTimeout(function () { t.style.display = 'none'; }, 2500);
+}
+
+function apiGet(action, params) {
+  params = params || {};
+  var qs = Object.keys(params).map(function (k) { return k + '=' + encodeURIComponent(params[k]); }).join('&');
+  return fetch(API_URL + '?action=' + action + (qs ? '&' + qs : '')).then(function (r) { return r.json(); });
+}
+function apiPost(body) {
+  return fetch(API_URL, { method: 'POST', body: JSON.stringify(body) }).then(function (r) { return r.json(); });
+}
+
+function showSection(id) {
+  ['viewList','viewForm','viewDetail'].forEach(function (s) {
+    document.getElementById(s).classList.toggle('hidden', s !== id);
+  });
+}
+function showList() {
+  showSection('viewList');
+  document.getElementById('navList').classList.add('active');
+  document.getElementById('navAdd').classList.remove('active');
+  loadItems();
+  history.replaceState(null, '', location.pathname);
+}
+function showAddForm() {
+  document.getElementById('itemForm').reset();
+  document.getElementById('f_id').value = '';
+  document.getElementById('f_row_num').value = '';
+  document.getElementById('f_image_urls').value = '';
+  document.getElementById('formTitle').textContent = 'เพิ่มเวชภัณฑ์ใหม่';
+  showSection('viewForm');
+  document.getElementById('navAdd').classList.add('active');
+  document.getElementById('navList').classList.remove('active');
+}
+document.getElementById('navList').onclick = showList;
+document.getElementById('navAdd').onclick = showAddForm;
+
+function badgeClass(status) {
+  if (status === 'ปกติ') return 'ok';
+  if (status === 'ตัดจำหน่าย' || status === 'ชำรุดรอจำหน่าย') return 'bad';
+  return 'def';
+}
+
+function loadItems() {
+  var q = document.getElementById('searchInput').value;
+  var type = document.getElementById('filterType').value;
+  var status = document.getElementById('filterStatus').value;
+  apiGet('listItems', { q: q, type: type, status: status }).then(function (res) {
+    var grid = document.getElementById('itemGrid');
+    grid.innerHTML = '';
+    (res.items || []).forEach(function (it) {
+      var div = document.createElement('div');
+      div.className = 'card item-card';
+      div.innerHTML = '<h3>' + (it.name_common || '(ไม่มีชื่อ)') + '</h3>' +
+        '<div class="meta">' + (it.brand || '') + ' ' + (it.model || '') + '</div>' +
+        '<div class="meta">📍 ' + (it.location || '-') + '</div>' +
+        '<span class="badge ' + badgeClass(it.status) + '">' + (it.status || '-') + '</span>';
+      div.onclick = function () { openDetail(it.id); };
+      grid.appendChild(div);
+    });
+    if (!res.items || !res.items.length) grid.innerHTML = '<p>ไม่พบรายการ</p>';
+  });
+}
+document.getElementById('searchInput').addEventListener('input', debounce(loadItems, 400));
+document.getElementById('filterType').addEventListener('change', loadItems);
+document.getElementById('filterStatus').addEventListener('change', loadItems);
+function debounce(fn, ms) { var t; return function () { clearTimeout(t); t = setTimeout(fn, ms); }; }
+
+apiGet('types').then(function (res) {
+  var sel = document.getElementById('filterType');
+  (res.values || []).forEach(function (v) {
+    var o = document.createElement('option'); o.value = v; o.textContent = v; sel.appendChild(o);
+  });
+});
+
+function fileToBase64(file) {
+  return new Promise(function (resolve) {
+    var reader = new FileReader();
+    reader.onload = function () { resolve(reader.result.split(',')[1]); };
+    reader.readAsDataURL(file);
+  });
+}
+
+document.getElementById('itemForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var files = document.getElementById('f_image_file').files;
+  var uploadPromises = Array.from(files).map(function (f) {
+    return fileToBase64(f).then(function (b64) {
+      return apiPost({ action: 'uploadImage', filename: f.name, mimeType: f.type, base64: b64 });
+    });
+  });
+  Promise.all(uploadPromises).then(function (results) {
+    var newUrls = results.filter(function (r) { return r.ok; }).map(function (r) { return r.url; });
+    var existing = document.getElementById('f_image_urls').value;
+    var allUrls = (existing ? existing.split(', ').filter(Boolean) : []).concat(newUrls).join(', ');
+    var payload = {
+      action: document.getElementById('f_row_num').value ? 'updateItem' : 'addItem',
+      id: document.getElementById('f_id').value,
+      row_num: document.getElementById('f_row_num').value,
+      created_at: document.getElementById('f_created_at').value,
+      name_common: val('f_name_common'), name: val('f_name'), name_en_trade: val('f_name_en_trade'),
+      type: val('f_type'), brand: val('f_brand'), vendor: val('f_vendor'), model: val('f_model'),
+      stock_no: val('f_stock_no'), serial_no: val('f_serial_no'), price: val('f_price'),
+      qty: val('f_qty'), budget_year: val('f_budget_year'), received_date: val('f_received_date'),
+      location: val('f_location'), status: val('f_status'), note: val('f_note'), image_urls: allUrls
+    };
+    apiPost(payload).then(function (res) {
+      if (res.ok) { toast('บันทึกสำเร็จ'); showList(); }
+      else toast('ผิดพลาด: ' + res.error);
+    });
+  });
+});
+function val(id) { return document.getElementById(id).value; }
+
+function openDetail(id) {
+  apiGet('getItem', { id: id }).then(function (res) {
+    if (res.error) { toast('ไม่พบรายการ'); return; }
+    currentItem = res.item;
+    renderDetail(currentItem);
+    showSection('viewDetail');
+    loadLogs(id);
+  });
+}
+
+function renderDetail(it) {
+  var imgs = (it.image_urls || '').split(',').map(function (s) { return s.trim(); }).filter(Boolean);
+  var imgHtml = imgs.map(function (u) { return '<img src="' + u + '" style="width:90px;height:90px;object-fit:cover;border-radius:6px;margin:4px;">'; }).join('');
+  document.getElementById('detailCard').innerHTML =
+    '<h2>' + it.name_common + ' <span class="badge ' + badgeClass(it.status) + '">' + (it.status || '-') + '</span></h2>' +
+    '<p>' + (it.name || '') + ' — ' + (it.name_en_trade || '') + '</p>' +
+    '<p><b>ประเภท:</b> ' + (it.type || '-') + ' | <b>ยี่ห้อ:</b> ' + (it.brand || '-') + ' | <b>รุ่น:</b> ' + (it.model || '-') + '</p>' +
+    '<p><b>หมายเลขพัสดุ:</b> ' + (it.stock_no || '-') + ' | <b>S/N:</b> ' + (it.serial_no || '-') + '</p>' +
+    '<p><b>ราคา:</b> ' + (it.price || '-') + ' | <b>จำนวน:</b> ' + (it.qty || '-') + ' | <b>งบปี:</b> ' + (it.budget_year || '-') + '</p>' +
+    '<p><b>วันที่ได้รับ:</b> ' + (it.received_date || '-') + ' | <b>สถานที่จัดเก็บ:</b> ' + (it.location || '-') + '</p>' +
+    '<p><b>หมายเหตุ:</b> ' + (it.note || '-') + '</p>' +
+    '<div>' + imgHtml + '</div>' +
+    '<div style="margin-top:10px;">' +
+      '<button class="secondary" onclick="editItem()">แก้ไข</button> ' +
+      '<button class="danger" onclick="removeItem()">ตัดจำหน่าย</button>' +
+    '</div>';
+
+  var pageUrl = location.origin + location.pathname + '?id=' + it.id;
+  var qrData = encodeURIComponent(pageUrl);
+  document.getElementById('qrCard').innerHTML =
+    '<h3>QR Code</h3>' +
+    '<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=' + qrData + '">' +
+    '<p style="font-size:12px;word-break:break-all;">' + pageUrl + '</p>';
+}
+
+function editItem() {
+  var it = currentItem;
+  showSection('viewForm');
+  document.getElementById('formTitle').textContent = 'แก้ไขเวชภัณฑ์';
+  document.getElementById('f_id').value = it.id;
+  document.getElementById('f_row_num').value = it.row_num;
+  document.getElementById('f_created_at').value = it.created_at;
+  document.getElementById('f_image_urls').value = it.image_urls || '';
+  ['name_common','name','name_en_trade','type','brand','vendor','model','stock_no','serial_no',
+   'price','qty','budget_year','received_date','location','status','note'].forEach(function (k) {
+    var el = document.getElementById('f_' + k);
+    if (el) el.value = it[k] || '';
+  });
+}
+
+function removeItem() {
+  if (!confirm('ยืนยันตัดจำหน่ายรายการนี้?')) return;
+  apiPost({ action: 'deleteItem', row_num: currentItem.row_num }).then(function (res) {
+    if (res.ok) { toast('ตัดจำหน่ายแล้ว'); showList(); }
+  });
+}
+
+function showLogForm() { document.getElementById('logForm').classList.remove('hidden'); }
+function hideLogForm() { document.getElementById('logForm').classList.add('hidden'); }
+
+document.getElementById('logForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+  apiPost({
+    action: 'addLog', item_id: currentItem.id,
+    log_type: document.getElementById('log_type').value,
+    log_date: document.getElementById('log_date').value,
+    detail: document.getElementById('log_detail').value,
+    by_whom: document.getElementById('log_by').value
+  }).then(function (res) {
+    if (res.ok) { toast('บันทึก Log แล้ว'); hideLogForm(); document.getElementById('logForm').reset(); loadLogs(currentItem.id); }
+  });
+});
+
+var logTypeLabel = { usage: '🔧 การใช้งาน', storage: '📦 การเก็บ', maintenance: '🛠️ การซ่อมบำรุง' };
+function loadLogs(itemId) {
+  apiGet('listLogs', { item_id: itemId }).then(function (res) {
+    var list = document.getElementById('logList');
+    list.innerHTML = '';
+    (res.logs || []).forEach(function (l) {
+      var div = document.createElement('div');
+      div.className = 'log-entry';
+      div.innerHTML = '<span class="tag">' + (logTypeLabel[l.log_type] || l.log_type) + '</span> — ' + (l.log_date || '') +
+        '<br>' + (l.detail || '') + (l.by_whom ? ' (โดย ' + l.by_whom + ')' : '');
+      list.appendChild(div);
+    });
+    if (!res.logs || !res.logs.length) list.innerHTML = '<p style="color:#888;">ยังไม่มี log</p>';
+  });
+}
+
+// เปิดตรงไปหน้า detail ถ้ามี ?id= ใน URL (สแกน QR)
+var urlId = new URLSearchParams(location.search).get('id');
+if (urlId) { openDetail(urlId); } else { loadItems(); }
+</script>
+</body>
+</html>

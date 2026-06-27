@@ -624,16 +624,16 @@
     ]
   },
   "51b2d14d-caf5-4e5b-928d-2185f4a6459d": {
-    "date": "21 มิถุนายน 2569",
+    "date": "26 มิถุนายน 2569",
     "scores": {
       "🎯 Strategy & CEO": 10,
-      "💡 Creative & Content": 23,
-      "🌿 Life & Health": 4,
-      "🔍 Research": 21,
-      "⚖️ Decision": 6,
-      "🔧 Dev & Tech": 14,
-      "📝 Memory & Diary": 34,
-      "🤖 System & Setup": 19
+      "💡 Creative & Content": 37,
+      "🌿 Life & Health": 7,
+      "🔍 Research": 49,
+      "⚖️ Decision": 9,
+      "🔧 Dev & Tech": 27,
+      "📝 Memory & Diary": 39,
+      "🤖 System & Setup": 32
     },
     "tasks": [
       "[Laura] เดี๋ยวลอร่าเช็คให้ค่ะ เรื่อง Second Brain/Obsidian นี่ตรงสาย Lena (Vault Librarian) เลย ขอสำรวจโครงสร้างจริงก่อน",
@@ -647,16 +647,17 @@
     ]
   },
   "c6a0e1ef-8fa8-41bb-8257-424bc3e895df": {
-    "date": "20 มิถุนายน 2569",
+    "date": "26 มิถุนายน 2569",
     "scores": {
-      "🎯 Strategy & CEO": 1,
-      "💡 Creative & Content": 28,
-      "🌿 Life & Health": 20,
-      "🔍 Research": 15,
-      "⚖️ Decision": 7,
-      "🔧 Dev & Tech": 62,
-      "📝 Memory & Diary": 13,
-      "🤖 System & Setup": 22
+      "🎯 Strategy & CEO": 4,
+      "💡 Creative & Content": 65,
+      "🌿 Life & Health": 33,
+      "🔍 Research": 33,
+      "⚖️ Decision": 19,
+      "🔧 Dev & Tech": 183,
+      "💰 Finance": 13,
+      "📝 Memory & Diary": 23,
+      "🤖 System & Setup": 106
     },
     "tasks": [
       "[Laura] ขอเช็คสถานะ Dashboard จริงก่อนตอบนะคะ ให้ Vera (QA) ตรวจสอบโค้ด/โครงสร้างปัจจุบัน",
@@ -670,17 +671,17 @@
     ]
   },
   "7f036072-7c30-4b99-b9dd-69f602fda078": {
-    "date": "21 มิถุนายน 2569",
+    "date": "24 มิถุนายน 2569",
     "scores": {
       "🎯 Strategy & CEO": 2,
-      "💡 Creative & Content": 8,
+      "💡 Creative & Content": 9,
       "🌿 Life & Health": 6,
-      "🔍 Research": 20,
+      "🔍 Research": 23,
       "⚖️ Decision": 2,
-      "🔧 Dev & Tech": 37,
+      "🔧 Dev & Tech": 44,
       "💰 Finance": 5,
-      "📝 Memory & Diary": 29,
-      "🤖 System & Setup": 22
+      "📝 Memory & Diary": 33,
+      "🤖 System & Setup": 24
     },
     "tasks": [
       "ความหมายแบบง่าย: เหมือนการ \"คัดลอกเส้นทางงาน\" ออกไปอีกเส้นหนึ่ง โดยเริ่มจากจุดที่เราอยู่ตอนนี้ (commit ปัจจุบัน) — งานที",
@@ -761,9 +762,9 @@
       "🎯 Strategy & CEO": 26,
       "💡 Creative & Content": 56,
       "🌿 Life & Health": 12,
-      "🔍 Research": 22,
+      "🔍 Research": 24,
       "⚖️ Decision": 14,
-      "🔧 Dev & Tech": 160,
+      "🔧 Dev & Tech": 162,
       "💰 Finance": 4,
       "📝 Memory & Diary": 41,
       "🤖 System & Setup": 78
@@ -777,6 +778,186 @@
       "[Laura] ทดสอบเสร็จแล้วค่ะ ผลออกมาเห็นชัดเลย",
       "**ส่วนคำถามที่ 2 — ควรทำเป็นสกิลเพิ่มไหม:** หนูว่า**ไม่ควรทำสกิลใหม่**ค่ะ เหตุผล:",
       "- ตรงกับงานที่ Forge ทำอยู่แล้วเวลาสร้าง/ปรับ UI ในสกิลที่มีอยู่"
+    ]
+  },
+  "6b298c6e-d228-4951-b1b3-98cbaebefee0": {
+    "date": "21 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 5,
+      "💡 Creative & Content": 5,
+      "🌿 Life & Health": 3,
+      "🔍 Research": 14,
+      "⚖️ Decision": 7,
+      "🔧 Dev & Tech": 27,
+      "💰 Finance": 3,
+      "📝 Memory & Diary": 7,
+      "🤖 System & Setup": 24
+    },
+    "tasks": [
+      "เป็น VPN แบบ mesh ที่สร้างเครือข่ายส่วนตัว (private network) เชื่อมอุปกรณ์ของเราเข้าด้วยกัน โดยไม่ต้องเปิด port หรือตั้ง",
+      "- สร้าง \"ท่อเข้ารหัส\" (encrypted tunnel) ระหว่าง 2 เครื่อง โดยใช้กุญแจเข้ารหัสสาธารณะ-ส่วนตัว (public/private key) คล้าย",
+      "2. **Mesh network ระหว่างอุปกรณ์** — แบบที่ Tailscale ใช้ คือเอา WireGuard มาเป็นแกนกลาง แล้วเพิ่มระบบจัดการ key/login ใ",
+      "อยากให้ Laura เจาะลึกส่วนไหนเพิ่มไหมคะ เช่นเทียบ WireGuard กับ VPN แบบเก่า หรือเรื่องความปลอดภัยของ key?",
+      "[Laura] ตอบเลยนะคะ — **ต้องต่อ internet ค่ะ** ทั้งสองเครื่อง (อย่างน้อยตอนเริ่มเชื่อมต่อ)",
+      "- **เช็คสถานะเป็นระยะ (coordination)** — เครื่องจะคุยกับ Tailscale control server เรื่อยๆ เพื่ออัปเดต key, รายชื่อเครื่อ",
+      "อยากให้ Laura ช่วยตั้งค่าอันไหนก่อนคะ — เปิด Tailscale ก่อนเลย หรือเริ่มจากตั้ง local server สำหรับ dashboard ให้ดูบน iP",
+      "ขอฟังประโยชน์หากผมสร้าง sever และ NAS ผมมี Notebook ที่ไม่ได้ใช้ อีก 2 เครื่อง"
+    ]
+  },
+  "88ff530d-2e0b-4336-b57b-103f994e42d3": {
+    "date": "24 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 1,
+      "💡 Creative & Content": 1,
+      "🔧 Dev & Tech": 6,
+      "📝 Memory & Diary": 1,
+      "🤖 System & Setup": 10
+    },
+    "tasks": []
+  },
+  "18b4d2d5-79e3-4629-82e2-c79ed4297190": {
+    "date": "24 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 1,
+      "💡 Creative & Content": 2,
+      "🌿 Life & Health": 1,
+      "🔍 Research": 10,
+      "⚖️ Decision": 3,
+      "🔧 Dev & Tech": 16,
+      "📝 Memory & Diary": 4,
+      "🤖 System & Setup": 1
+    },
+    "tasks": [
+      "ก่อนวาง architecture มีจุดที่อยากให้ Jed เลือกครับ เพราะกระทบโครงสร้างทั้งระบบ",
+      "Backend เสร็จแล้ว ต่อด้วย frontend (SPA หน้าเดียว: list/search, เพิ่ม-แก้-ลบ, detail+QR+logbook)",
+      "**สร้างเสร็จแล้ว** ที่ [Medsupply_Registry/](Medsupply_Registry/)",
+      "| [gas/index.html](Medsupply_Registry/gas/index.html) | SPA หน้าเดียว — list/search/filter, ฟอร์มเพิ่ม-แก้, detail+QR+lo",
+      "**สิ่งที่ Jed ต้องทำต่อ (ทำครั้งแรกเท่านั้น, ตามขั้นตอนใน README):**",
+      "1. สร้าง Google Sheet + Apps Script project, วาง Code.gs + index.html",
+      "2. สร้างโฟลเดอร์ Drive สำหรับรูป → ใส่ Folder ID ใน Code.gs",
+      "ยังไม่ได้ deploy จริงเพราะต้องใช้ Google account ของ Jed เอง (สร้าง Sheet/Apps Script project) — พร้อมเดินตาม README ได้"
+    ]
+  },
+  "1f5337b7-7786-4670-acf8-89f139d88811": {
+    "date": "25 มิถุนายน 2569",
+    "scores": {
+      "💡 Creative & Content": 43,
+      "🌿 Life & Health": 1,
+      "🔍 Research": 58,
+      "🔧 Dev & Tech": 48,
+      "💰 Finance": 34,
+      "📝 Memory & Diary": 7,
+      "🤖 System & Setup": 54
+    },
+    "tasks": [
+      "| **Mind map extraction** | `download mind-map` | Export hierarchical JSON for visualization tools |",
+      "| Error | Cause | Action |",
+      "| Code | Meaning | Action |",
+      "พูดง่ายๆคือ เหมือน OpenRouter ในแง่ \"ใช้โมเดลอื่นนอกจาก Claude ได้\" แต่ของเราเป็นการเชื่อมตรงแบบไม่มีตัวกลางคิดเงินเพิ่ม"
+    ]
+  },
+  "44b83463-992b-401b-a547-5f7eed112343": {
+    "date": "26 มิถุนายน 2569",
+    "scores": {
+      "💡 Creative & Content": 1,
+      "🔍 Research": 1,
+      "🔧 Dev & Tech": 4
+    },
+    "tasks": [
+      "- สร้าง zip ใหม่ชื่อ `second-brain-git-YYYY-MM-DD.zip` ถ้ายังไม่มีของวันนี้",
+      "บริบท: นี่คือ fix ที่ Devil เสนอไว้หลังจากตรวจพบว่าการย้าย `.git` ออกจากโฟลเดอร์ sync คลาวด์ (เพื่อป้องกัน conflict) ทำใ",
+      "**[Cinder]** รัน backup script เรียบร้อยค่ะ — script ตรวจพบว่ามี backup ของวันนี้ (2026-06-26) อยู่แล้ว ที่สร้างไว้ตั้งแ",
+      "- `second-brain-git-2026-06-26.zip` — 1,147,455 bytes (~1.1 MB) สร้างเมื่อ 00:01"
+    ]
+  },
+  "997dd1f5-d2df-4c77-a839-7be26dd7d31d": {
+    "date": "26 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 2,
+      "💡 Creative & Content": 4,
+      "⚖️ Decision": 1,
+      "🔧 Dev & Tech": 2,
+      "💰 Finance": 1,
+      "📝 Memory & Diary": 14,
+      "🤖 System & Setup": 4
+    },
+    "tasks": [
+      "- ตรวจ `team/*.md` ทั้งหมดว่ามี role ซ้ำซ้อนกันใหม่ไหม (โดยเฉพาะไฟล์ที่ถูกแก้ในสัปดาห์นี้)",
+      "- เช็คว่า Laura ลงมือทำงานเองที่ควร delegate ไหม (ดู git log `--since=\"7 days ago\"` ว่า commit ไหนควรเป็นของ Forge/Mint/",
+      "- รัน `git log --since=\"7 days ago\" --oneline` ใน `D:\\Claude_Cowork\\Jed_org` แล้วประเมินว่า agent ไหนรับงานมากที่สุด/น้อ",
+      "- ถ้า agent คนเดียวรับงานข้ามหลายโดเมนต่อเนื่องเกิน 2 สัปดาห์ → flag ว่าอาจต้องพิจารณาแยกบทบาท (แต่ไม่ต้องเสนอสร้าง agen",
+      "สร้างไฟล์ `D:\\Claude_Cowork\\Jed_org\\output\\qa\\YYYY-MM-DD-weekly-audit.md` ใช้ format จาก `team/qa.md` (Output Review sty",
+      "- ถ้าไม่เจอปัญหาอะไรเลย ให้เขียนสั้นๆว่า \"สัปดาห์นี้ทุกอย่างปกติ\" ไม่ต้องยืดเพื่อให้ดูมีเนื้อหา",
+      "1. **Token/โครงสร้างทีม** — ปกติดี การเพิ่ม Cinder + จัดแผนก + Mentor Mode ทำให้ team files โต +430 บรรทัด แต่ 61% มาจาก"
+    ]
+  },
+  "00f2329a-695a-4fa0-88e6-7c9c4391a784": {
+    "date": "26 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 22,
+      "💡 Creative & Content": 10,
+      "🌿 Life & Health": 1,
+      "🔍 Research": 6,
+      "⚖️ Decision": 2,
+      "🔧 Dev & Tech": 7,
+      "📝 Memory & Diary": 22,
+      "🤖 System & Setup": 1
+    },
+    "tasks": [
+      "| `finance/*.md` | `40-Life/` (หรือสร้าง subfolder ถ้าจำนวนมากขึ้น) |",
+      "อ้างอิง script ตัวอย่างที่เคยรันแล้ว: `D:\\Claude_Cowork\\Jed_org\\scripts\\vault_backfill.py` (ใช้ pattern เดียวกันสำหรับไฟ",
+      "1. หา entry ที่มี `date` เก่ากว่า **30 วัน** จากวันนี้ในแต่ละไฟล์ (ถ้ายังไม่มี entry เก่ากว่า 30 วัน — ข้ามขั้นตอนนี้ไปเ",
+      "- ไม่ชัดเจน → คงอยู่ใน `00-Inbox/` แต่เพิ่ม tag `#needs-review`",
+      "3. ย้ายไฟล์ไปยัง folder ที่ถูกต้อง (ไม่ทับไฟล์เดิมถ้าชื่อซ้ำ — ให้เพิ่ม suffix `-2`)",
+      "4. สร้าง log: `D:\\NB_G_Drive\\Second_Brain\\00-Inbox\\processed-YYYY-MM-DD.md`",
+      "สำหรับทุก note ที่ย้ายมาในขั้นตอน 1 และ note ใหม่ที่เพิ่มในสัปดาห์นี้:",
+      "3. เพิ่ม `[[wikilink]]` ใน note ใหม่ → ชี้ไปยัง note เก่าที่เกี่ยวข้อง"
+    ]
+  },
+  "d1d1b289-e2ff-40ce-b7f3-a9acb5e6b508": {
+    "date": "28 มิถุนายน 2569",
+    "scores": {
+      "💡 Creative & Content": 9,
+      "🌿 Life & Health": 1,
+      "🔍 Research": 37,
+      "⚖️ Decision": 4,
+      "🔧 Dev & Tech": 25,
+      "💰 Finance": 1,
+      "📝 Memory & Diary": 5,
+      "🤖 System & Setup": 16
+    },
+    "tasks": [
+      "ก่อนเริ่มงานใหม่ ขอเช็ค memory ที่มีอยู่ก่อนนะคะ เพราะจำได้ว่าเคยทำเรื่องนี้ผ่าน NotebookLM ไปแล้วรอบหนึ่ง (TU/MWIT/KVIS",
+      "Login กลับมาแล้ว ขอเช็ค notebook ที่มีอยู่ก่อนสร้างใหม่ (กันซ้ำ)",
+      "ยังไม่มี source วมว/จภ เข้ามา (deep research timeout ก่อนเสร็จ) ขอลองใหม่โดยเพิ่ม timeout ให้นานขึ้น",
+      "รับทราบครับ ขอสลับไปใช้ notebook ที่ Jed เพิ่งใส่ข้อมูลไว้ แล้วเช็ค source ก่อนเริ่มถามเลย",
+      "ทุก source พร้อมหมดแล้ว (8 ไฟล์ — เรื่อง Skill/Workflow ของ AI Agent, YAML frontmatter, Knowledge Base, aboutme.md, HTML",
+      "## ข้อค้นพบหลัก (จาก 8 คลิปของพี่ที่สอนสร้าง Skill/Workflow/KB)",
+      "อยากให้ผมเริ่มสร้างอันไหนก่อนครับ หรือ Jed อยากให้ผมถามต่อ NotebookLM อีกรอบในมุมอื่นก่อน?",
+      "ถ้า Jed จะลงมือทำ ไม่ต้องถามต่อแล้วครับ พอเริ่มได้เลย — แนะนำเริ่มจาก Master_Profile.md/Anti-writing.md กับกฎ \"in parall"
+    ]
+  },
+  "40546b5f-d32c-469f-b087-a1127b843137": {
+    "date": "27 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 25,
+      "💡 Creative & Content": 8,
+      "🔍 Research": 1,
+      "⚖️ Decision": 2,
+      "🔧 Dev & Tech": 2,
+      "💰 Finance": 1,
+      "📝 Memory & Diary": 25,
+      "🤖 System & Setup": 1
+    },
+    "tasks": [
+      "## สิ่งเล็กๆที่ทำได้วันนี้/พรุ่งนี้",
+      "[1 action เล็กมาก ทำได้ใน 24 ชม. ที่เชื่อมกับงานค้างจริง]",
+      "- สร้างไฟล์ `output/decisions/YYYY-MM-DD-atlas-reflection-ceo-lens.md` (ใช้วันที่ของเมื่อวาน รูปแบบ YYYY-MM-DD จาก step ",
+      "- ถ้ามี `output/diary/YYYY-MM-DD.md` ของเมื่อวานแล้ว → เพิ่ม section ใหม่ \"### 🪞 Atlas Daily Reflection\" ต่อท้ายในส่วน \"",
+      "- sync diary ที่อัปเดต/สร้างใหม่ไปที่ `D:\\Second_Brain\\40-Life\\Diary\\YYYY-MM-DD.md` ด้วย (copy ไฟล์ทับ, ใช้วันที่ของเมื่",
+      "Atlas กำลังเริ่มงาน reflection ประจำวันโดยอ่านบริบทของเมื่อวาน (2026-06-26) จาก diary, session log, และ memory ที่เกี่ยว",
+      "Diary อัปเดตเรียบร้อย ตอนนี้ sync ไปที่ Second Brain vault (ใช้ path ปัจจุบัน `D:\\NB_G_Drive\\Second_Brain\\` เพราะ vault ",
+      "- **Action เล็ก:** แค่ commit+push งาน 6 วันที่ค้างอยู่ (ใช้เวลา <5 นาที) — ผมยังไม่ได้ทำให้ เพราะ task นี้อนุญาตแค่ com"
     ]
   }
 }

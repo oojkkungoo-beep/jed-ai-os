@@ -716,5 +716,198 @@
         ]
       }
     ]
+  },
+  {
+    "date": "2026-06-25",
+    "dateDisplay": "25 มิถุนายน 2569",
+    "agents": [
+      {
+        "id": "laura",
+        "name": "Laura",
+        "emoji": "🎭",
+        "title": "Second Brain audit ครบ + ตั้งกฎป้องกันเขียนทับไฟล์",
+        "summary": "Lena ตรวจ vault พบพร้อมใช้ 100% แต่ใช้ไม่สม่ำเสมอ + ตั้งกฎห้าม Write ทับไฟล์เก่า — วันนี้คือ deadline NursePant Phase 1",
+        "highlights": [
+          "Second Brain พร้อมใช้จริง 100% (PARA+Dataview+Templater+obsidian-git)",
+          "เพิ่ม pointer note วิสัญญีพยาบาล + กฎห้าม Write ทับไฟล์เก่า",
+          "ติดตาม Atlas ท้าทาย NursePant deadline (0/66 ตัว)"
+        ],
+        "url": "",
+        "full": "🎭 Laura — Daily Briefing\n**วันที่:** 25 มิถุนายน 2569\n\nเมื่อวานทีมเจอ insight สำคัญค่ะ — เลนาตรวจ Second Brain vault แล้วสรุปว่าโครงสร้าง (PARA + Dataview + Templater + obsidian-git) พร้อมใช้จริง 100% แต่ Jed ยังใช้งานไม่สม่ำเสมอ — เพิ่ม pointer note หลักสูตรวิสัญญีพยาบาลเข้า `10-Clinical/Anesthesia/` แล้ว และตั้งกฎใหม่ห้ามใช้ Write ทับไฟล์เก่าเด็ดขาด (ใช้ Edit เท่านั้น) กัน TOPIC_MAP.md โดนทับ\n\nวันนี้โฟกัส: Atlas ท้าทายตรงๆว่าวันนี้คือ deadline Phase 1 ของ NursePant (เป้า ≥15 ตัว ได้จริง 0 ตัว) — ลอร่าจะติดตามว่า Jed ตัดสินใจยังไงค่ะ"
+      },
+      {
+        "id": "muse",
+        "name": "Muse",
+        "emoji": "💡",
+        "title": "เสนอลดขนาดงานให้เล็กที่สุด",
+        "summary": "ชี้ pattern เดียวกับ Atlas — สไลด์ยาสลบ/โพสต์ NursePant ค้างเพราะขั้นตอนเล็กๆ ไม่ใช่เพราะไม่มีไอเดีย",
+        "highlights": [
+          "เสนอโพสต์ NursePant ด้วยรูปเดียวก่อน ไม่ต้องครบ 3 ใบ",
+          "พร้อม draft แคปชั่นทันทีถ้า Jed ไฟเขียว",
+          "เชื่อม insight จาก Atlas reflection"
+        ],
+        "url": "",
+        "full": "💡 Muse — Content Idea\n**วันที่:** 25 มิถุนายน 2569\n\nมิ้วส์เห็น pattern ที่ Atlas ชี้แล้วค่ะ — สไลด์ยาสลบกับโพสต์ NursePant ยังไม่ปล่อยออกไปทั้งคู่ เพราะติดขั้นตอนเล็กๆ (ถ่ายรูป/จัดหน้าสุดท้าย) ไม่ใช่เพราะไม่มีไอเดีย\n\nข้อเสนอ: ลดขนาดงานให้เล็กที่สุดเท่าที่ทำได้วันนี้ — โพสต์ NursePant ใช้แค่รูปเดียวก่อนก็ได้ ไม่ต้องครบ 3 ใบ พร้อม draft แคปชั่นสั้นๆให้ทันทีถ้า Jed บอกไฟเขียวค่ะ"
+      },
+      {
+        "id": "atlas",
+        "name": "Atlas",
+        "emoji": "🎯",
+        "title": "Reflection: pattern ครั้งที่ 3 — สร้างระบบแต่ไม่ได้ใช้",
+        "summary": "Second Brain เข้า pattern เดียวกับ Medic_Station/NursePant — วันนี้ deadline Phase 1 (0/66 ตัว) ท้าทายว่าใช่ \"ไม่มีเวลา\" จริงไหม",
+        "highlights": [
+          "ครั้งที่ 3 ในเดือนนี้: สร้างระบบสมบูรณ์ → ไม่ได้ใช้จริงสม่ำเสมอ",
+          "NursePant deadline วันนี้ — เป้า ≥15 ตัว ได้จริง 0/66",
+          "เสนอเริ่มจากของเล็กที่สุด (1 capture/1 รูป) วันนี้"
+        ],
+        "url": "",
+        "full": "🎯 Atlas — Strategic Note\n**วันที่:** 25 มิถุนายน 2569\n\nเมื่อวานเจดคุยกับลอร่า/เลนาเรื่อง Second Brain — สรุปว่าระบบพร้อม 100% แต่ยังใช้ไม่สม่ำเสมอ นี่คือครั้งที่ 3 ในเดือนนี้ที่เห็น pattern \"สร้างระบบสมบูรณ์ → ไม่ได้ใช้จริง\" (Medic_Station, NursePant, Second Brain)\n\nวันนี้คือ deadline Phase 1 ที่เจดตั้งเอง (เป้า ≥15 ตัว ได้จริง 0/66) บล็อกเกอร์คือถ่ายรูป 3 ใบ ใช้เวลาไม่ถึง 10 นาที — ผมถามตรงๆว่า \"ไม่มีเวลา\" ใช่ปัญหาจริงไหม หรือถึงเวลาหาบล็อกเกอร์ที่แท้จริง ลองเริ่มจากของเล็กที่สุดวันนี้ดูครับ"
+      },
+      {
+        "id": "nova",
+        "name": "Nova",
+        "emoji": "🌿",
+        "title": "ชวนลองทำของเล็กๆให้เสร็จจริง",
+        "summary": "ตามที่ Atlas เสนอ — capture โน้ต 1 รายการ หรือถ่ายรูป NursePant 1 ใบ แทนตั้งเป้าครบทุกจุด",
+        "highlights": [
+          "เสนอ 1 action เล็กที่ทำเสร็จได้จริงวันนี้",
+          "เตือนพักตา/ดื่มน้ำช่วง session ยาวต่อเนื่อง"
+        ],
+        "url": "",
+        "full": "🌿 Nova — Daily Check\n**วันที่:** 25 มิถุนายน 2569\n\nวันนี้โนว่าอยากชวน Jed ลองสิ่งที่ Atlas เสนอค่ะ — ทำ 1 อย่างเล็กๆให้เสร็จจริง (capture โน้ตใน Obsidian 1 รายการ หรือถ่ายรูป NursePant 1 ใบ) แทนการตั้งเป้าให้ครบทุกจุดในครั้งเดียว\n\nเตือนพักตา/ดื่มน้ำด้วยนะคะ ช่วงนี้ session คุยเรื่องระบบยาวต่อเนื่องหลายวัน"
+      },
+      {
+        "id": "eir",
+        "name": "Eir",
+        "emoji": "🩺",
+        "title": "Vitality Check — เตือนล้าจาก Quest สาย strategy",
+        "summary": "Quest สาย Second Brain/org structure ต่อเนื่องหลายวัน เตือนสังเกต MP ความคิด",
+        "highlights": [
+          "แนะนำพัก Quest ใหญ่ ลอง Quest เล็กที่เสร็จได้จริง",
+          "เชื่อมกับข้อเสนอ Atlas เรื่องของเล็กที่สุด"
+        ],
+        "url": "",
+        "full": "🩺 Eir — Vitality Check\n**วันที่:** 25 มิถุนายน 2569\n\nสวัสดีค่ะ Guild Master — เอียร์เห็นว่าช่วงนี้ Quest สาย strategy/system (Second Brain, org structure) เยอะต่อเนื่องหลายวัน MP ด้านความคิดอาจเริ่มล้าได้ค่ะ\n\nถ้าวันนี้รู้สึกเริ่มล้า แนะนำพัก Quest ใหญ่ไว้ก่อน แล้วลอง Quest เล็กที่ทำเสร็จได้จริงในไม่กี่นาที (ตามที่ Atlas เสนอ) จะช่วยเติม MP กลับมาได้เร็วกว่าค่ะ"
+      },
+      {
+        "id": "scout",
+        "name": "Scout",
+        "emoji": "🔍",
+        "title": "ของในคิวรอ follow-up",
+        "summary": "Research Tailscale/WireGuard และแนวทางการเรียนของลูกยังรอ Jed กลับมาใช้ต่อ",
+        "highlights": [
+          "เสนอเริ่มจาก Tailscale/WireGuard ก่อน (ความปลอดภัย dashboard)",
+          "พร้อม deep-dive เพิ่มถ้า Jed สนใจ"
+        ],
+        "url": "",
+        "full": "🔍 Scout — Research Note\n**วันที่:** 25 มิถุนายน 2569\n\nสก๊าวท์มีของในคิวที่ยังรอ Jed กลับมาดูครับ — research เรื่อง Tailscale/WireGuard (ความปลอดภัย dashboard) และแนวทางการเรียนของลูก (thesis) ที่ทำไว้ยังไม่ถูกใช้ต่อ\n\nถ้า Jed พร้อม สก๊าวท์เสนอเริ่มจาก Tailscale/WireGuard ก่อนครับ เพราะเกี่ยวกับความปลอดภัยของระบบที่ใช้งานอยู่จริงทุกวัน"
+      },
+      {
+        "id": "council",
+        "name": "Council",
+        "emoji": "⚖️",
+        "title": "จับตา 2 จุดตัดสินใจจาก Atlas reflection",
+        "summary": "NursePant เดินหน้า/ปรับ scope? Second Brain ลงทุนฝึกใช้/ปล่อยเป็น reference?",
+        "highlights": [
+          "NursePant: เดินหน้าต่อ vs ปรับ scope เล็กลง",
+          "Second Brain: ฝึกใช้สม่ำเสมอ vs ใช้เป็น reference อย่างเดียว"
+        ],
+        "url": "",
+        "full": "⚖️ Council — Decision Watch\n**วันที่:** 25 มิถุนายน 2569\n\nสภาฯ จับตา 2 จุดตัดสินใจที่ Atlas ยกขึ้นมาครับ:\n1. **NursePant** — deadline Phase 1 ผ่านแล้ว (0/66 ตัว) จะเดินหน้าต่อด้วยวิธีเดิม หรือปรับ scope ใหม่ให้เล็กลงจนทำได้จริง\n2. **Second Brain** — จะลงทุนเวลาฝึกใช้งานสม่ำเสมอ หรือยอมรับว่าใช้เป็น reference เก็บข้อมูลอย่างเดียวพอ\n\nพร้อมวิเคราะห์ 3 มุมถ้า Jed เรียกครับ"
+      },
+      {
+        "id": "forge",
+        "name": "Forge",
+        "emoji": "⚙️",
+        "title": "Dev status: ไม่มี commit ใหม่ตั้งแต่ 21 มิ.ย.",
+        "summary": "commit ล่าสุด 455efc4 (21 มิ.ย.) — มีงานค้างสะสมไม่ commit หลายจุด รอ consolidate",
+        "highlights": [
+          "ค้าง: photorealistic prompt ทุก character file",
+          "ค้าง: dashboard-svelte (Sidebar/agent.ts) ยังไม่ sync Cinder",
+          "ค้าง: รูป agent + โปรเจกต์ใหม่ Medsupply_Registry"
+        ],
+        "url": "",
+        "full": "⚙️ Forge — Dev Report\n**วันที่:** 25 มิถุนายน 2569\n\nเช็ค git log แล้วครับ — commit ล่าสุดคือ `455efc4` (21 มิ.ย., sync Cinder เข้า dashboard) ยังไม่มี commit ใหม่หลังจากนั้น แต่ working tree มีงานค้างสะสมพอสมควร: photorealistic prompt ของทุก character file, dashboard-svelte (Sidebar/agent.ts) ที่ยังไม่ sync Cinder, รูป agent หลายไฟล์เปลี่ยนแล้วแต่ยังไม่ commit, และโปรเจกต์ใหม่ Medsupply_Registry (24 มิ.ย.)\n\nแนะนำ commit รวมเมื่อ Jed พร้อม กันของหายครับ"
+      },
+      {
+        "id": "mint",
+        "name": "Mint",
+        "emoji": "💰",
+        "title": "Finance Pulse — สต๊อก NursePant แช่แข็งอยู่",
+        "summary": "66 ตัว ทุนคืนหมดแล้ว แต่ขายได้ 0 ตัวหลังผ่าน Phase 1 deadline",
+        "highlights": [
+          "กำไรล้วนที่ยังไม่เกิดขึ้นจริง 66 ตัว",
+          "คำถามออมทรัพย์ประจำเดือน: แยกบัญชี 3 ใบได้ตามแผนไหม"
+        ],
+        "url": "",
+        "full": "💰 Mint — Finance Pulse\n**วันที่:** 25 มิถุนายน 2569\n\nไม่มีตัวเลขใหม่เร่งด่วนค่ะ แต่มินท์ขอตั้งข้อสังเกตตาม Atlas — สต๊อก NursePant 66 ตัว (ทุนคืนหมดแล้ว ขายได้ก็เป็นกำไรล้วน) ยังขายได้ 0 ตัวหลังผ่าน Phase 1 deadline ไปแล้ว เท่ากับเงินก้อนนี้ \"แช่แข็ง\" อยู่โดยไม่จำเป็นค่ะ\n\nคำถามออมทรัพย์ประจำเดือน: เดือนนี้ Jed แยกเงิน 3 บัญชี (เงินเดือน/ธุรกิจ/ฉุกเฉิน) ได้ตามแผนไหมคะ?"
+      },
+      {
+        "id": "sage",
+        "name": "Sage",
+        "emoji": "📝",
+        "title": "Memory Note: insight การเปลี่ยนจาก \"สร้าง\" สู่ \"ใช้\"",
+        "summary": "สรุปวัน Second Brain audit + Atlas reflection ครั้งที่ 3 ของ pattern เดียวกัน",
+        "highlights": [
+          "บันทึก Lena audit + กฎใหม่ป้องกันเขียนทับไฟล์",
+          "Insight: ปัญหาอาจไม่ใช่ไม่มีเวลา แต่คือขั้นตอนสุดท้าย"
+        ],
+        "url": "",
+        "full": "📝 Sage — Memory Note\n**วันที่:** 25 มิถุนายน 2569\n\nบันทึกของวันที่ 25 มิ.ย. ครับ — งานหลักคือ Lena ตรวจ Second Brain vault สรุปว่าระบบพร้อมแต่ใช้ไม่สม่ำเสมอ + ตั้งกฎป้องกันเขียนทับไฟล์เก่า ต่อด้วย Atlas reflection ที่ชี้ pattern สำคัญ: นี่คือครั้งที่ 3 ในเดือนเดียวที่ Jed สร้างระบบสมบูรณ์แล้วไม่ได้ใช้จริงสม่ำเสมอ (Medic_Station, NursePant, Second Brain)\n\nInsight ที่เก็บไว้: ปัญหาของ Jed อาจไม่ใช่ \"ไม่มีเวลา\" แต่เป็นช่วงเปลี่ยนจาก \"สร้าง\" ไปสู่ \"ใช้/ลงมือขั้นสุดท้าย\" — ครั้งหน้าควรช่วยลดขนาด task สุดท้ายให้เล็กที่สุดตั้งแต่เริ่ม ไม่ใช่รอให้ค้างแล้วค่อยเตือนครับ"
+      },
+      {
+        "id": "vera",
+        "name": "Vera",
+        "emoji": "🔎",
+        "title": "QA Note: อนุมัติกฎ Write-protection ของ Lena",
+        "summary": "ตรวจกฎห้าม Write ทับไฟล์เก่าใน librarian.md ให้คะแนน A เสนอขยายใช้ทุก agent",
+        "highlights": [
+          "กฎใหม่: ห้าม Write ทับไฟล์ที่มีเนื้อหา ใช้ Edit เท่านั้น",
+          "เสนอ Laura พิจารณาขยายกฎนี้ไปทุก agent ที่แก้ knowledge file"
+        ],
+        "url": "",
+        "full": "🔎 Vera — QA Note\n**วันที่:** 25 มิถุนายน 2569\n\nตรวจกฎใหม่ที่เลนาเพิ่มใน `team/librarian.md` แล้วค่ะ — ห้ามใช้ Write ทับไฟล์ที่มีเนื้อหาอยู่แล้ว (เช่น TOPIC_MAP.md) ใช้ Edit เท่านั้น เป็นการป้องกันที่ตรงจุดและจำเป็นมาก ให้คะแนน A\n\nข้อเสนอเพิ่ม: กฎนี้ควรใช้กับทุก agent ที่แก้ไฟล์ knowledge/index ของทีม ไม่ใช่แค่ Lena ค่ะ — ส่งต่อ Laura พิจารณา"
+      },
+      {
+        "id": "devil",
+        "name": "Devil",
+        "emoji": "😈",
+        "title": "Standby — bear case แบบตรงกว่า Atlas",
+        "summary": "ถ้า NursePant ผ่าน deadline ไม่มี progress คำถามจริงคือทำไมงานกำไรล้วนสำคัญน้อยกว่างาน dev ไม่มี deadline",
+        "highlights": [
+          "ยังไม่ activate เต็มรูปแบบ — รอ Jed เรียก"
+        ],
+        "url": "",
+        "full": "😈 Devil — Standby\n**วันที่:** 25 มิถุนายน 2569\n\nผมเห็น pattern เดียวกับที่ Atlas พูดครับ แต่จะพูดตรงกว่านี้นิดหนึ่ง: ถ้า NursePant ผ่าน deadline ที่ตั้งเองไปแล้วโดยไม่มี progress เลย คำถามจริงไม่ใช่ \"จะถ่ายรูปเมื่อไหร่\" แต่คือ \"ทำไมของที่ทุนคืนหมดแล้ว กำไรล้วน ยังสำคัญน้อยกว่างาน dev ที่ไม่มี deadline\"\n\nยังไม่ activate เต็มรูปแบบครับ — รอ Jed เรียกถ้าอยากได้ bear case จริงจัง"
+      },
+      {
+        "id": "lena",
+        "name": "Lena",
+        "emoji": "📚",
+        "title": "Second Brain audit + ตั้งกฎ Write-protection",
+        "summary": "ตรวจ vault พร้อมใช้ 100% เพิ่ม pointer note วิสัญญีพยาบาล + เกือบเขียนทับไฟล์เก่าจึงตั้งกฎใหม่",
+        "highlights": [
+          "เพิ่ม pointer note → 10-Clinical/Anesthesia/",
+          "ตั้งกฎห้าม Write ทับไฟล์เก่า ใช้ Edit เท่านั้น",
+          "สร้าง TOPIC_MAP.md กัน tag ซ้ำซ้อน"
+        ],
+        "url": "",
+        "full": "📚 Lena — Vault Note\n**วันที่:** 25 มิถุนายน 2569\n\nเลนาตรวจ Second Brain vault ให้ Jed เมื่อวานค่ะ — สรุปว่าโครงสร้าง (PARA + Dataview + Templater + obsidian-git) พร้อมใช้งานจริง 100% เพิ่ม pointer note หลักสูตรวิสัญญีพยาบาลเข้า `10-Clinical/Anesthesia/` ให้แล้ว\n\nระหว่างตรวจ เจอจุดเสี่ยงในตัวเอง — เกือบใช้ Write ทับไฟล์เก่าโดยไม่ตั้งใจ จึงตั้งกฎถาวรว่าห้ามใช้ Write ทับไฟล์ที่มีเนื้อหาอยู่แล้วเด็ดขาด ต้องใช้ Edit เท่านั้น พร้อมสร้าง `TOPIC_MAP.md` เป็น controlled vocabulary กัน tag ซ้ำซ้อนในอนาคตค่ะ"
+      },
+      {
+        "id": "cinder",
+        "name": "Cinder",
+        "emoji": "🔥",
+        "title": "Health Check: cron diary เงียบไป 9 วัน",
+        "summary": "ai-team-daily-diary และ atlas-daily-reflection ไม่มี log การรันตั้งแต่ 16-25 มิ.ย.",
+        "highlights": [
+          "พบช่องว่าง cron 16-25 มิ.ย. (9 วัน) — เดาว่าเครื่อง/เซสชันไม่ได้เปิดทำงาน",
+          "รอบนี้เขียน diary ของเมื่อวานตามปกติ ไม่ backfill ช่วงที่ขาด",
+          "แจ้ง Jed เผื่ออยากเช็คความสม่ำเสมอของระบบอัตโนมัติ"
+        ],
+        "url": "",
+        "full": "🔥 Cinder — Health Check\n**วันที่:** 25 มิถุนายน 2569\n\nซินเดอร์เช็ค `scheduled_tasks_log.json` แล้วค่ะ — พบว่า cron **ai-team-daily-diary** กับ **atlas-daily-reflection** ไม่มี log การรันใหม่ตั้งแต่ 16 มิ.ย. ถึง 25 มิ.ย. (ห่างไป 9 วัน) ก่อนกลับมารันรอบนี้\n\nเดาสาเหตุเบื้องต้น: เครื่อง/เซสชันที่ตั้ง cron ไว้น่าจะไม่ได้เปิดทำงานต่อเนื่องช่วงนั้น ไม่ใช่บั๊กของ script เอง — รอบนี้เขียน diary ของ \"เมื่อวาน\" (25 มิ.ย.) ให้ครบตามปกติ ไม่ backfill ช่วงที่ขาดเพื่อไม่ให้ปนข้อมูลที่ไม่มีหลักฐานจริงค่ะ แจ้ง Jed ไว้เผื่ออยากเช็คว่าเครื่อง/เซสชันอัตโนมัติยังทำงานสม่ำเสมอไหม"
+      }
+    ]
   }
 ]

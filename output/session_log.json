@@ -835,40 +835,40 @@
     "topCategory": "🔧 Dev & Tech",
     "tags": [
       "🔧 Dev & Tech",
-      "📝 Memory & Diary",
       "🔍 Research",
-      "🤖 System & Setup"
+      "🤖 System & Setup",
+      "📝 Memory & Diary"
     ],
     "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (26%) — รอ Sage สรุปท้ายวัน",
     "categories": [
       {
         "name": "🔧 Dev & Tech",
-        "count": 256,
+        "count": 285,
         "pct": 26
       },
       {
-        "name": "📝 Memory & Diary",
-        "count": 161,
+        "name": "🔍 Research",
+        "count": 171,
         "pct": 16
       },
       {
-        "name": "🔍 Research",
-        "count": 152,
-        "pct": 15
+        "name": "🤖 System & Setup",
+        "count": 171,
+        "pct": 16
       },
       {
-        "name": "🤖 System & Setup",
-        "count": 146,
+        "name": "📝 Memory & Diary",
+        "count": 170,
         "pct": 15
       },
       {
         "name": "💡 Creative & Content",
-        "count": 116,
-        "pct": 12
+        "count": 121,
+        "pct": 11
       },
       {
         "name": "🎯 Strategy & CEO",
-        "count": 48,
+        "count": 53,
         "pct": 5
       }
     ],
@@ -881,6 +881,348 @@
       "หมายเหตุเล็กน้อย: ไฟล์ diary เก่าวันที่ 6 มิ.ย. ที่เคยพิมพ์ path เดิมไว้ ลอร่าตั้งใจไม่แก้ เพราะเป็นบันทึกประวัติ ณ วันน",
       "- โครงสร้างโฟลเดอร์ (PARA-style) + plugin (Dataview, Templater, obsidian-git) — มาตรฐานเดียวกับที่มืออาชีพใช้จริง",
       "อยากให้เลนาลงมือแก้ 3 จุดนี้เลยไหมคะ หรือจะให้ทำเฉพาะจุดที่ Jed ห่วงที่สุดก่อน"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 21,
+    "date": "22 มิถุนายน 2569",
+    "topCategory": "🔧 Dev & Tech",
+    "tags": [
+      "🔧 Dev & Tech",
+      "🤖 System & Setup",
+      "💡 Creative & Content",
+      "🌿 Life & Health"
+    ],
+    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (36%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 153,
+        "pct": 36
+      },
+      {
+        "name": "🤖 System & Setup",
+        "count": 102,
+        "pct": 24
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 60,
+        "pct": 14
+      },
+      {
+        "name": "🌿 Life & Health",
+        "count": 32,
+        "pct": 8
+      },
+      {
+        "name": "🔍 Research",
+        "count": 23,
+        "pct": 5
+      },
+      {
+        "name": "📝 Memory & Diary",
+        "count": 20,
+        "pct": 5
+      }
+    ],
+    "tasks": [
+      "[Laura] ขอเช็คสถานะ Dashboard จริงก่อนตอบนะคะ ให้ Vera (QA) ตรวจสอบโค้ด/โครงสร้างปัจจุบัน",
+      "- ⚠️ Code เริ่มเป็น monolithic (app.js 1,502 บรรทัดไฟล์เดียว) — เพิ่ม agent ใหม่ต้องแก้ไฟล์เดิม",
+      "ถ้า Jed อยากให้ทำจริง อยากให้ Forge เริ่มจากข้อ 1-2 ก่อนไหมคะ (effort ต่ำ ผลชัด) หรือมีจุดเฉพาะที่อยากให้ดูเพิ่มคะ",
+      "ผมต้องการสร้าง dashboard ใหม่เอาให้ perfect ตามสิ่งที่ควรจะเป็น  เมื่อทำเสร็จแล้วจะลบอันเก่าออก",
+      "ก่อนให้ Forge เริ่มออกแบบจริง ขอถามตัดสินใจสำคัญหน่อยนะคะ",
+      "- คือ framework ที่ให้คุณเขียน \"component\" (เหมือนตัวต่อ LEGO) แต่ละชิ้นมี HTML+CSS+JS ของตัวเอง เช่น `<TodoCard>`, `<Ch",
+      "- ข้อเสีย: ต้องติดตั้ง Node.js + build step (compile ก่อนรัน) ถ้า Jed ไม่คุ้นจะมีของให้เรียนรู้เพิ่ม (แต่ไม่ยากเท่า Reac",
+      "- เหมาะกับ: อยากได้ของที่ \"โตได้\" เพิ่ม feature ในอนาคตเรื่อยๆ โดยไม่บวม"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 22,
+    "date": "24 มิถุนายน 2569",
+    "topCategory": "🔧 Dev & Tech",
+    "tags": [
+      "🔧 Dev & Tech",
+      "📝 Memory & Diary",
+      "🤖 System & Setup",
+      "🔍 Research"
+    ],
+    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (32%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 66,
+        "pct": 32
+      },
+      {
+        "name": "📝 Memory & Diary",
+        "count": 38,
+        "pct": 19
+      },
+      {
+        "name": "🤖 System & Setup",
+        "count": 35,
+        "pct": 17
+      },
+      {
+        "name": "🔍 Research",
+        "count": 33,
+        "pct": 16
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 12,
+        "pct": 6
+      },
+      {
+        "name": "🌿 Life & Health",
+        "count": 7,
+        "pct": 3
+      }
+    ],
+    "tasks": [
+      "ความหมายแบบง่าย: เหมือนการ \"คัดลอกเส้นทางงาน\" ออกไปอีกเส้นหนึ่ง โดยเริ่มจากจุดที่เราอยู่ตอนนี้ (commit ปัจจุบัน) — งานที",
+      "- มี subagent หรือ session แยกที่ต้องทำงานคู่ขนานกัน (เหมือนที่ระบบ Agent tool มี `isolation: worktree` ให้ทำงานแยกจากโค",
+      "ช่วยสร้าง Dictionary คลังคำศัพท์ และจัดเก็บคำศัพท์นี้ให้ผมด้วย",
+      "[Laura] เรียบร้อยค่ะ Jed สร้าง Dictionary คลังคำศัพท์ไว้ที่ [output/glossary.json](output/glossary.json) แล้ว พร้อมเก็บค",
+      "โครงสร้างไฟล์ (ต่อ 1 คำศัพท์):",
+      "[Laura] เพิ่ม Glossary เข้า dashboard เรียบร้อยค่ะ Jed",
+      "- เพิ่มเมนู \"📔 Glossary\" ใน sidebar — [dashboard/index.html](dashboard/index.html)",
+      "- เพิ่มหน้า Glossary พร้อมช่องค้นหาคำศัพท์"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 23,
+    "date": "25 มิถุนายน 2569",
+    "topCategory": "🔍 Research",
+    "tags": [
+      "🔍 Research",
+      "🤖 System & Setup",
+      "💡 Creative & Content",
+      "🔧 Dev & Tech"
+    ],
+    "summary": "Auto-log: หมวดหลัก 🔍 Research (24%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "🔍 Research",
+        "count": 106,
+        "pct": 24
+      },
+      {
+        "name": "🤖 System & Setup",
+        "count": 84,
+        "pct": 19
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 77,
+        "pct": 17
+      },
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 69,
+        "pct": 16
+      },
+      {
+        "name": "📝 Memory & Diary",
+        "count": 45,
+        "pct": 10
+      },
+      {
+        "name": "💰 Finance",
+        "count": 34,
+        "pct": 8
+      }
+    ],
+    "tasks": [
+      "[Laura] เดี๋ยวลอร่าเช็คให้ค่ะ เรื่อง Second Brain/Obsidian นี่ตรงสาย Lena (Vault Librarian) เลย ขอสำรวจโครงสร้างจริงก่อน",
+      "1. **ใช้ได้จริงไหม** — โครงสร้าง/เครื่องมือพร้อมใช้งานจริง 100% (ไม่ใช่ของโชว์) แต่ \"ตัวระบบ\" ยังไม่ได้ถูกใช้งานสม่ำเสมอ",
+      "- เพิ่ม pointer note หลักสูตรวิสัญญีพยาบาล → `10-Clinical/Anesthesia/`",
+      "ถ้าต้องการป้องกันกรณีเครื่องพังด้วย แนะนำให้เพิ่มการ sync หรือ copy ไปไว้ที่ OneDrive/Google Drive หรือ external hard di",
+      "มีอะไรให้ลอร่าอธิบายเพิ่มไหมคะ",
+      "หมายเหตุเล็กน้อย: ไฟล์ diary เก่าวันที่ 6 มิ.ย. ที่เคยพิมพ์ path เดิมไว้ ลอร่าตั้งใจไม่แก้ เพราะเป็นบันทึกประวัติ ณ วันน",
+      "- โครงสร้างโฟลเดอร์ (PARA-style) + plugin (Dataview, Templater, obsidian-git) — มาตรฐานเดียวกับที่มืออาชีพใช้จริง",
+      "อยากให้เลนาลงมือแก้ 3 จุดนี้เลยไหมคะ หรือจะให้ทำเฉพาะจุดที่ Jed ห่วงที่สุดก่อน"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 24,
+    "date": "26 มิถุนายน 2569",
+    "topCategory": "🔧 Dev & Tech",
+    "tags": [
+      "🔧 Dev & Tech",
+      "🤖 System & Setup",
+      "💡 Creative & Content",
+      "🔍 Research"
+    ],
+    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (27%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 224,
+        "pct": 27
+      },
+      {
+        "name": "🤖 System & Setup",
+        "count": 145,
+        "pct": 18
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 117,
+        "pct": 14
+      },
+      {
+        "name": "🔍 Research",
+        "count": 109,
+        "pct": 13
+      },
+      {
+        "name": "📝 Memory & Diary",
+        "count": 100,
+        "pct": 12
+      },
+      {
+        "name": "🌿 Life & Health",
+        "count": 42,
+        "pct": 5
+      }
+    ],
+    "tasks": [
+      "[Laura] เดี๋ยวลอร่าเช็คให้ค่ะ เรื่อง Second Brain/Obsidian นี่ตรงสาย Lena (Vault Librarian) เลย ขอสำรวจโครงสร้างจริงก่อน",
+      "1. **ใช้ได้จริงไหม** — โครงสร้าง/เครื่องมือพร้อมใช้งานจริง 100% (ไม่ใช่ของโชว์) แต่ \"ตัวระบบ\" ยังไม่ได้ถูกใช้งานสม่ำเสมอ",
+      "- เพิ่ม pointer note หลักสูตรวิสัญญีพยาบาล → `10-Clinical/Anesthesia/`",
+      "ถ้าต้องการป้องกันกรณีเครื่องพังด้วย แนะนำให้เพิ่มการ sync หรือ copy ไปไว้ที่ OneDrive/Google Drive หรือ external hard di",
+      "มีอะไรให้ลอร่าอธิบายเพิ่มไหมคะ",
+      "หมายเหตุเล็กน้อย: ไฟล์ diary เก่าวันที่ 6 มิ.ย. ที่เคยพิมพ์ path เดิมไว้ ลอร่าตั้งใจไม่แก้ เพราะเป็นบันทึกประวัติ ณ วันน",
+      "- โครงสร้างโฟลเดอร์ (PARA-style) + plugin (Dataview, Templater, obsidian-git) — มาตรฐานเดียวกับที่มืออาชีพใช้จริง",
+      "อยากให้เลนาลงมือแก้ 3 จุดนี้เลยไหมคะ หรือจะให้ทำเฉพาะจุดที่ Jed ห่วงที่สุดก่อน"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 25,
+    "date": "27 มิถุนายน 2569",
+    "topCategory": "📝 Memory & Diary",
+    "tags": [
+      "📝 Memory & Diary",
+      "🔍 Research",
+      "🎯 Strategy & CEO",
+      "💡 Creative & Content"
+    ],
+    "summary": "Auto-log: หมวดหลัก 📝 Memory & Diary (26%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "📝 Memory & Diary",
+        "count": 29,
+        "pct": 26
+      },
+      {
+        "name": "🔍 Research",
+        "count": 28,
+        "pct": 25
+      },
+      {
+        "name": "🎯 Strategy & CEO",
+        "count": 25,
+        "pct": 22
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 9,
+        "pct": 8
+      },
+      {
+        "name": "🤖 System & Setup",
+        "count": 8,
+        "pct": 7
+      },
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 7,
+        "pct": 6
+      }
+    ],
+    "tasks": [
+      "ก่อนเริ่มงานใหม่ ขอเช็ค memory ที่มีอยู่ก่อนนะคะ เพราะจำได้ว่าเคยทำเรื่องนี้ผ่าน NotebookLM ไปแล้วรอบหนึ่ง (TU/MWIT/KVIS",
+      "Login กลับมาแล้ว ขอเช็ค notebook ที่มีอยู่ก่อนสร้างใหม่ (กันซ้ำ)",
+      "ยังไม่มี source วมว/จภ เข้ามา (deep research timeout ก่อนเสร็จ) ขอลองใหม่โดยเพิ่ม timeout ให้นานขึ้น",
+      "รับทราบครับ ขอสลับไปใช้ notebook ที่ Jed เพิ่งใส่ข้อมูลไว้ แล้วเช็ค source ก่อนเริ่มถามเลย",
+      "ทุก source พร้อมหมดแล้ว (8 ไฟล์ — เรื่อง Skill/Workflow ของ AI Agent, YAML frontmatter, Knowledge Base, aboutme.md, HTML",
+      "## ข้อค้นพบหลัก (จาก 8 คลิปของพี่ที่สอนสร้าง Skill/Workflow/KB)",
+      "อยากให้ผมเริ่มสร้างอันไหนก่อนครับ หรือ Jed อยากให้ผมถามต่อ NotebookLM อีกรอบในมุมอื่นก่อน?",
+      "## สิ่งเล็กๆที่ทำได้วันนี้/พรุ่งนี้"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 26,
+    "date": "28 มิถุนายน 2569",
+    "topCategory": "🔍 Research",
+    "tags": [
+      "🔍 Research",
+      "🔧 Dev & Tech",
+      "🤖 System & Setup",
+      "💡 Creative & Content"
+    ],
+    "summary": "Auto-log: หมวดหลัก 🔍 Research (38%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "🔍 Research",
+        "count": 37,
+        "pct": 38
+      },
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 25,
+        "pct": 26
+      },
+      {
+        "name": "🤖 System & Setup",
+        "count": 16,
+        "pct": 16
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 9,
+        "pct": 9
+      },
+      {
+        "name": "📝 Memory & Diary",
+        "count": 5,
+        "pct": 5
+      },
+      {
+        "name": "⚖️ Decision",
+        "count": 4,
+        "pct": 4
+      }
+    ],
+    "tasks": [
+      "ก่อนเริ่มงานใหม่ ขอเช็ค memory ที่มีอยู่ก่อนนะคะ เพราะจำได้ว่าเคยทำเรื่องนี้ผ่าน NotebookLM ไปแล้วรอบหนึ่ง (TU/MWIT/KVIS",
+      "Login กลับมาแล้ว ขอเช็ค notebook ที่มีอยู่ก่อนสร้างใหม่ (กันซ้ำ)",
+      "ยังไม่มี source วมว/จภ เข้ามา (deep research timeout ก่อนเสร็จ) ขอลองใหม่โดยเพิ่ม timeout ให้นานขึ้น",
+      "รับทราบครับ ขอสลับไปใช้ notebook ที่ Jed เพิ่งใส่ข้อมูลไว้ แล้วเช็ค source ก่อนเริ่มถามเลย",
+      "ทุก source พร้อมหมดแล้ว (8 ไฟล์ — เรื่อง Skill/Workflow ของ AI Agent, YAML frontmatter, Knowledge Base, aboutme.md, HTML",
+      "## ข้อค้นพบหลัก (จาก 8 คลิปของพี่ที่สอนสร้าง Skill/Workflow/KB)",
+      "อยากให้ผมเริ่มสร้างอันไหนก่อนครับ หรือ Jed อยากให้ผมถามต่อ NotebookLM อีกรอบในมุมอื่นก่อน?",
+      "ถ้า Jed จะลงมือทำ ไม่ต้องถามต่อแล้วครับ พอเริ่มได้เลย — แนะนำเริ่มจาก Master_Profile.md/Anti-writing.md กับกฎ \"in parall"
     ],
     "details": "",
     "relatedProjects": [],

@@ -4,7 +4,7 @@
 	import { AGENTS } from '$lib/types/agent';
 
 	const PEOPLE_META: Record<string, { name: string; race: string; image: string }> = {
-		jed: { name: 'Jed', race: 'Royal Medic Knight', image: 'images/Jed.png' },
+		jed: { name: 'Jed', race: 'Royal Medic Knight', image: '/api/images/Jed.png' },
 		...Object.fromEntries(
 			AGENTS.map((a) => [a.id, { name: a.name, race: a.race, image: a.image }])
 		)
@@ -46,7 +46,7 @@
 			class:active={$selectedPerson === p}
 			onclick={() => selectedPerson.set(p)}
 		>
-			<img src={PEOPLE_META[p]?.image ?? 'images/Jed.png'} alt={PEOPLE_META[p]?.name ?? p} />
+			<img src={PEOPLE_META[p]?.image ?? '/api/images/Jed.png'} alt={PEOPLE_META[p]?.name ?? p} />
 			<div class="diary-person-name">
 				{PEOPLE_META[p]?.name ?? p}
 				<span>{$diaryByPerson[p]?.length ?? 0} รายการ</span>
@@ -81,7 +81,7 @@
 	<div class="book-modal open">
 		<span class="book-close" onclick={closeBook} role="button" tabindex="0">✕</span>
 		<div class="book-page book-page-left">
-			<img src={PEOPLE_META[$selectedPerson]?.image ?? 'images/Jed.png'} alt={PEOPLE_META[$selectedPerson]?.name} />
+			<img src={PEOPLE_META[$selectedPerson]?.image ?? '/api/images/Jed.png'} alt={PEOPLE_META[$selectedPerson]?.name} />
 			<div class="book-person-name">
 				{PEOPLE_META[$selectedPerson]?.name}
 				<span>{PEOPLE_META[$selectedPerson]?.race ?? ''}</span>
