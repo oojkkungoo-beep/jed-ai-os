@@ -26,5 +26,9 @@
   {
     "date": "วันพฤหัสบดีที่ 25 มิถุนายน 2569",
     "content": "🔎 Vera — QA Note\n**วันที่:** 25 มิถุนายน 2569\n\nตรวจกฎใหม่ที่เลนาเพิ่มใน `team/librarian.md` แล้วค่ะ — ห้ามใช้ Write ทับไฟล์ที่มีเนื้อหาอยู่แล้ว (เช่น TOPIC_MAP.md) ใช้ Edit เท่านั้น เป็นการป้องกันที่ตรงจุดและจำเป็นมาก ให้คะแนน A\n\nข้อเสนอเพิ่ม: กฎนี้ควรใช้กับทุก agent ที่แก้ไฟล์ knowledge/index ของทีม ไม่ใช่แค่ Lena ค่ะ — ส่งต่อ Laura พิจารณา"
+  },
+  {
+    "date": "วันอาทิตย์ที่ 28 มิถุนายน 2569",
+    "content": "🔎 Vera — QA Note\n**วันที่:** 28 มิถุนายน 2569\n\nรัน Weekly Team Audit ของตัวเองเมื่อวานค่ะ ให้เกรดทีมสัปดาห์นี้ C+ — งาน content/structure ดีขึ้น (frontmatter sync, benchmark-then-build ของมินท์, routing sync ผ่านซินเดอร์) แต่ action item เรื่อง cron diary/briefing ที่หยุดรันมา ~2 สัปดาห์ ยังเป็น 0% เป็นครั้งที่ 2 ติดต่อกันที่ flag แล้วไม่มีคนตาม เพิ่ม action ใหม่: เอา `.nimble/` และ `.claude/skills/` เข้า .gitignore ก่อนหลุดเข้า commit ค่ะ"
   }
 ]

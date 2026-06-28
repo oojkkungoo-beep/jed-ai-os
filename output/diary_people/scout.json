@@ -18,5 +18,9 @@
   {
     "date": "วันพฤหัสบดีที่ 25 มิถุนายน 2569",
     "content": "🔍 Scout — Research Note\n**วันที่:** 25 มิถุนายน 2569\n\nสก๊าวท์มีของในคิวที่ยังรอ Jed กลับมาดูครับ — research เรื่อง Tailscale/WireGuard (ความปลอดภัย dashboard) และแนวทางการเรียนของลูก (thesis) ที่ทำไว้ยังไม่ถูกใช้ต่อ\n\nถ้า Jed พร้อม สก๊าวท์เสนอเริ่มจาก Tailscale/WireGuard ก่อนครับ เพราะเกี่ยวกับความปลอดภัยของระบบที่ใช้งานอยู่จริงทุกวัน"
+  },
+  {
+    "date": "วันอาทิตย์ที่ 28 มิถุนายน 2569",
+    "content": "🔍 Scout — Research Note\n**วันที่:** 28 มิถุนายน 2569\n\nเมื่อวานสก๊าวท์ส่งสรุปวิจัย \"Annabel - Your Wealth Architect\" (NotebookLM, 20 sources) ให้ทีมการเงินใช้ทำ benchmark ก่อนเริ่ม Jed_Finance_Tracker ตาม Standing Rule ครับ — กรอบ 4 พิมพ์เขียว (Human Capital/Cash Flow/Asset Ownership/Risk Management) ใช้ได้จริงในระดับ mindset แต่ไม่มีตัวเลข % พอร์ตที่เจาะจง ส่งต่อให้มินท์ตัดสินใจระดับ implementation แล้วครับ"
   }
 ]

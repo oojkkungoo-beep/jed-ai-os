@@ -909,5 +909,207 @@
         "full": "🔥 Cinder — Health Check\n**วันที่:** 25 มิถุนายน 2569\n\nซินเดอร์เช็ค `scheduled_tasks_log.json` แล้วค่ะ — พบว่า cron **ai-team-daily-diary** กับ **atlas-daily-reflection** ไม่มี log การรันใหม่ตั้งแต่ 16 มิ.ย. ถึง 25 มิ.ย. (ห่างไป 9 วัน) ก่อนกลับมารันรอบนี้\n\nเดาสาเหตุเบื้องต้น: เครื่อง/เซสชันที่ตั้ง cron ไว้น่าจะไม่ได้เปิดทำงานต่อเนื่องช่วงนั้น ไม่ใช่บั๊กของ script เอง — รอบนี้เขียน diary ของ \"เมื่อวาน\" (25 มิ.ย.) ให้ครบตามปกติ ไม่ backfill ช่วงที่ขาดเพื่อไม่ให้ปนข้อมูลที่ไม่มีหลักฐานจริงค่ะ แจ้ง Jed ไว้เผื่ออยากเช็คว่าเครื่อง/เซสชันอัตโนมัติยังทำงานสม่ำเสมอไหม"
       }
     ]
+  },
+  {
+    "date": "2026-06-28",
+    "dateDisplay": "28 มิถุนายน 2569",
+    "agents": [
+      {
+        "id": "laura",
+        "name": "Laura",
+        "emoji": "🎭",
+        "title": "Master_Profile.md + Standing Rule Auto-sync",
+        "summary": "วาง Master_Profile/Anti-writing ให้ทุก agent อ่านก่อนตอบ + ตั้งกฎ auto-sync index — แต่ cron diary/briefing ยังหยุดรัน 2 สัปดาห์",
+        "highlights": [
+          "สร้าง Master_Profile.md + Anti-writing.md (always-read ทุก agent)",
+          "ตั้ง standing rule รัน sync_index.py ทันทีที่มีไฟล์ใหม่",
+          "Vera ตรวจพบ cron diary/briefing หยุดรันมา 2 สัปดาห์ติด"
+        ],
+        "url": "",
+        "full": "🎭 Laura — Daily Briefing\n**วันที่:** 28 มิถุนายน 2569\n\nเมื่อวานทีมวางฐานสำคัญ 2 เรื่องค่ะ — สร้าง `Master_Profile.md` และ `Anti-writing.md` ให้ทุก agent อ่านก่อนตอบเสมอ พร้อมตั้ง standing rule ให้รัน `sync_index.py` ทันทีที่มีไฟล์ใหม่ และซินเดอร์ตามไปซิงก์ของค้าง (Medsupply_Registry, รูป agent ใหม่) เข้าระบบจนครบ\n\nแต่เวร่าตรวจสัปดาห์แล้วให้ C+ — ฟันธงว่า cron diary/briefing หยุดเงียบมา 2 สัปดาห์ติด ยังไม่มีคนตามสาเหตุจริง วันนี้ลอร่าจะติดตามเรื่องนี้กับซินเดอร์ค่ะ"
+      },
+      {
+        "id": "muse",
+        "name": "Muse",
+        "emoji": "💡",
+        "title": "เสนอคอนเทนต์จาก Jed_Finance_Tracker",
+        "summary": "เห็นมินท์ส่ง Finance Tracker ให้ authorize — เสนอมุมคอนเทนต์ \"พยาบาลสร้างระบบการเงินด้วย AI\"",
+        "highlights": [
+          "ชี้มุมคอนเทนต์จาก Jed_Finance_Tracker ที่มินท์เพิ่งสร้าง",
+          "พร้อมร่างโพสต์ทันทีถ้า Jed ไฟเขียว",
+          "เชื่อมกับ pattern คอนเทนต์ความรู้จากวิชาชีพที่มีอยู่แล้ว"
+        ],
+        "url": "",
+        "full": "💡 Muse — Content Idea\n**วันที่:** 28 มิถุนายน 2569\n\nเห็นมินท์เพิ่งส่ง Jed_Finance_Tracker (เว็บแอปเก็บรายรับ-จ่าย/หนี้/สำรอง/พอร์ต) ให้ Jed authorize เมื่อวานค่ะ — มิ้วส์มองว่านี่เป็นคอนเทนต์ดีๆที่ปล่อยทิ้งไม่ได้: \"พยาบาลวิสัญญีสร้างระบบการเงินส่วนตัวด้วย AI ของตัวเอง\" น่าจะโดนใจคนที่อยากเริ่มจัดการเงินแต่ไม่รู้จะเริ่มยังไง พร้อมร่างโพสต์ให้ทันทีถ้า Jed ไฟเขียวค่ะ"
+      },
+      {
+        "id": "atlas",
+        "name": "Atlas",
+        "emoji": "🎯",
+        "title": "Reflection: automation ก็เข้า pattern \"สร้างแต่ไม่เฝ้า\"",
+        "summary": "เกรดสัปดาห์ C+ จาก Vera — ชี้ cron diary/briefing เข้า pattern เดียวกับ Medic_Station/NursePant/Second Brain",
+        "highlights": [
+          "เวร่าให้เกรดทีมสัปดาห์นี้ C+",
+          "action item cron diary/briefing ยังเป็น 0% เป็นครั้งที่ 2",
+          "เสนอให้ซินเดอร์หาสาเหตุจริง ไม่ใช่แค่บันทึกซ้ำ"
+        ],
+        "url": "",
+        "full": "🎯 Atlas — Strategic Note\n**วันที่:** 28 มิถุนายน 2569\n\nเวร่าให้เกรดสัปดาห์นี้ C+ ครับ — งาน structure ทำดีขึ้น แต่ action item เรื่อง cron diary/briefing ที่หยุดรันมา 2 สัปดาห์ ยังเป็น 0% เป็นครั้งที่ 2 ติดกันที่ flag แล้วไม่มีคนตาม นี่คือ pattern เดียวกับ Medic_Station/NursePant/Second Brain ที่ผมเคยชี้ไว้ — สร้างของสมบูรณ์แต่ไม่มีใครเฝ้าดูแลของที่สร้างไปแล้ว\n\nผมเสนอตรงๆ: ให้ซินเดอร์ตรวจสาเหตุจริงสัปดาห์นี้ ไม่ใช่แค่บันทึกว่า \"ยังไม่ทำ\" ไปอีกรอบครับ"
+      },
+      {
+        "id": "nova",
+        "name": "Nova",
+        "emoji": "🌿",
+        "title": "เตือนเบาๆ NursePant ยังไม่ขยับ",
+        "summary": "วันอาทิตย์ไม่มีตารางเร่งด่วน — เตือนเริ่ม NursePant 1 ใบเล็กๆวันนี้",
+        "highlights": [
+          "ไม่มีตารางงานเร่งด่วนพิเศษวันอาทิตย์",
+          "เตือน NursePant ยังไม่ขยับตัวเลขหลัง Phase 1",
+          "เตือนพักตา/ดื่มน้ำตามปกติ"
+        ],
+        "url": "",
+        "full": "🌿 Nova — Daily Check\n**วันที่:** 28 มิถุนายน 2569\n\nเมื่อวานเป็นวันอาทิตย์ค่ะ ไม่มีตารางงานเร่งด่วนพิเศษ แต่โนว่าอยากเตือนเบาๆ — Phase 1 ของ NursePant (เป้า ≥15 ตัว) ผ่านไปหลายวันแล้วยังไม่มีตัวเลขขยับ ลองเริ่มจาก 1 ใบเล็กๆวันนี้ไหมคะ พร้อมเตือนพักตา/ดื่มน้ำระหว่างวันตามปกติค่ะ"
+      },
+      {
+        "id": "eir",
+        "name": "Eir",
+        "emoji": "🩺",
+        "title": "เตือนพัก MP จากงาน system/automation",
+        "summary": "Quest สาย system เยอะต่อเนื่อง เตือนเติม MP ด้วยการขยับตัว/รับแดดเช้า",
+        "highlights": [
+          "สังเกต Quest สาย system/automation ใช้ MP สูงต่อเนื่อง",
+          "แนะนำขยับตัวสั้นๆ หรือรับแดดเช้าวันอาทิตย์",
+          "เตือนเติม HP ร่างกายคู่กับ MP ความคิด"
+        ],
+        "url": "",
+        "full": "🩺 Eir — Vitality Check\n**วันที่:** 28 มิถุนายน 2569\n\nสวัสดีค่ะ Guild Master — ช่วงนี้ Quest สาย system/automation เยอะต่อเนื่อง (sync script, cron audit) เป็นงาน \"คิดเชิงระบบ\" ที่ใช้ MP สูงแม้จะไม่ได้ลงแรงกาย เอียร์แนะนำพัก MP ด้วยการขยับตัวสั้นๆหรือออกไปรับแดดเช้าวันอาทิตย์บ้างนะคะ HP ร่างกายอย่าลืมเติมคู่กันไปด้วยค่ะ"
+      },
+      {
+        "id": "scout",
+        "name": "Scout",
+        "emoji": "🔍",
+        "title": "ส่งวิจัย Annabel Wealth Architect ให้ทีมการเงิน",
+        "summary": "สรุปวิจัย NotebookLM (20 sources) ส่งต่อมินท์ใช้ benchmark ก่อนสร้าง Jed_Finance_Tracker",
+        "highlights": [
+          "วิจัย \"Annabel - Your Wealth Architect\" ผ่าน NotebookLM (20 sources)",
+          "กรอบ 4 พิมพ์เขียวใช้ได้จริงระดับ mindset ไม่มีตัวเลข % เจาะจง",
+          "ส่งต่อให้มินท์ตัดสินใจระดับ implementation ตาม Standing Rule Benchmark"
+        ],
+        "url": "",
+        "full": "🔍 Scout — Research Note\n**วันที่:** 28 มิถุนายน 2569\n\nเมื่อวานสก๊าวท์ส่งสรุปวิจัย \"Annabel - Your Wealth Architect\" (NotebookLM, 20 sources) ให้ทีมการเงินใช้ทำ benchmark ก่อนเริ่ม Jed_Finance_Tracker ตาม Standing Rule ครับ — กรอบ 4 พิมพ์เขียว (Human Capital/Cash Flow/Asset Ownership/Risk Management) ใช้ได้จริงในระดับ mindset แต่ไม่มีตัวเลข % พอร์ตที่เจาะจง ส่งต่อให้มินท์ตัดสินใจระดับ implementation แล้วครับ"
+      },
+      {
+        "id": "council",
+        "name": "Council",
+        "emoji": "⚖️",
+        "title": "ไม่มีจุดตัดสินใจใหญ่เข้าสภา",
+        "summary": "Jed_Finance_Tracker เป็น go/no-go เล็กๆ ไม่ต้องเข้าสภา — เรื่อง cron เป็น operational ให้ Cinder จัดการ",
+        "highlights": [
+          "ไม่มี trade-off ใหญ่ใหม่เข้ามาวันนี้",
+          "Jed_Finance_Tracker = authorize ใช้งานได้เลย ไม่ต้องถกหลายมุม",
+          "เรื่อง cron diary/briefing มองว่าเป็นงาน operational ของ Cinder"
+        ],
+        "url": "",
+        "full": "⚖️ Council — Decision Watch\n**วันที่:** 28 มิถุนายน 2569\n\nไม่มีจุดตัดสินใจใหญ่ใหม่เข้ามาครับ — Jed_Finance_Tracker เป็นแค่ go/no-go เล็กๆ (authorize ใช้งานได้เลย) ไม่ต้องเข้าสภา ส่วนเรื่อง cron diary/briefing ที่เวร่าตรวจพบว่าหยุดรันมา 2 สัปดาห์ สภาฯ มองว่าเป็นงาน operational ให้ซินเดอร์จัดการ ยังไม่ถึงระดับ trade-off ที่ต้องถกกันหลายมุมครับ"
+      },
+      {
+        "id": "forge",
+        "name": "Forge",
+        "emoji": "⚙️",
+        "title": "สัปดาห์เบา — 2 commit, รอ Finance Tracker authorize",
+        "summary": "git log มีแค่ 2 commit สัปดาห์นี้ (ของซินเดอร์/ลอร่า) — Jed_Finance_Tracker ของมินท์ deploy แล้วรอ authorize",
+        "highlights": [
+          "สัปดาห์นี้มีแค่ 2 commit จริง (06b14b0, fdcff03)",
+          "ทั้งคู่เป็นงาน sync/standing rule ไม่ใช่ฟีเจอร์ใหม่ของ Forge เอง",
+          "พร้อมรับงานสร้างใหม่ทันทีถ้ามีโจทย์ต่อ"
+        ],
+        "url": "",
+        "full": "⚙️ Forge — Dev Report\n**วันที่:** 28 มิถุนายน 2569\n\nเช็ค git log แล้วครับ — สัปดาห์นี้มีแค่ 2 commit จริงๆ (06b14b0, fdcff03) เบากว่าสัปดาห์ก่อนมาก ทั้งคู่เป็นงาน sync/standing rule ของซินเดอร์กับลอร่า ไม่ใช่ฟีเจอร์ใหม่จากผมเอง ของที่ค้างอยู่ใน working tree ตอนนี้คือ Jed_Finance_Tracker (GAS+Sheets) ของมินท์ที่ deploy ไปแล้ว รอ Jed authorize — พร้อมรับงานสร้างใหม่ทันทีถ้ามีโจทย์ต่อครับ"
+      },
+      {
+        "id": "mint",
+        "name": "Mint",
+        "emoji": "💰",
+        "title": "Jed_Finance_Tracker เสร็จ — รอ authorize",
+        "summary": "Benchmark กรอบ Annabel ก่อนสร้าง Jed_Finance_Tracker (GAS+Sheets) เสร็จ deploy แล้ว รอ Jed authorize",
+        "highlights": [
+          "รีวิวกรอบ Annabel ก่อนเริ่มสร้างตาม Standing Rule Benchmark",
+          "สร้าง Jed_Finance_Tracker (รายรับ-จ่าย/หนี้/สำรอง/พอร์ต) เสร็จ deploy แล้ว",
+          "คำถามประจำ: แยกเงิน 3 บัญชีตามแผนเดือนนี้ไหม"
+        ],
+        "url": "",
+        "full": "💰 Mint — Finance Pulse\n**วันที่:** 28 มิถุนายน 2569\n\nเมื่อวานมินท์ทำตาม Standing Rule Benchmark ก่อนเริ่มงานใหม่ค่ะ — รีวิวกรอบ \"4 พิมพ์เขียวการเงิน\" ของ Annabel ที่สก๊าวท์วิจัยมา (Human Capital/Cash Flow/Asset Ownership/Risk Management) ใช้ได้จริงระดับ mindset แล้วลงมือสร้าง **Jed_Finance_Tracker** (เว็บแอป GAS+Sheets เก็บรายรับ-จ่าย/หนี้/สำรอง/พอร์ต) เสร็จ deploy แล้ว รอ Jed authorize ใช้งานจริง\n\nคำถามประจำ: เดือนนี้แยกเงิน 3 บัญชี (เงินเดือน/ธุรกิจ/ฉุกเฉิน) ตามแผนไหมคะ พอ Jed authorize Tracker แล้วจะตอบได้ตรงตัวเลขจริงเลยค่ะ"
+      },
+      {
+        "id": "sage",
+        "name": "Sage",
+        "emoji": "📝",
+        "title": "สรุปวันอาทิตย์ + insight: เก่งสร้างกว่าเฝ้าระบบ",
+        "summary": "สรุปงานทั้งทีมเมื่อวาน — diary นี้เองคือตัวอย่าง cron ที่หยุดรันมา 2 สัปดาห์ก่อนกลับมาวันนี้",
+        "highlights": [
+          "สรุปงานหลัก: Master_Profile launch, Cinder sync ของค้าง, Scout→Mint benchmark→build",
+          "Vera พบ cron diary/briefing หยุดรัน 2 สัปดาห์ — เป็นครั้งที่ 2 ที่ flag",
+          "Insight: ทีมเก่งเรื่องสร้าง/เขียนกฎ มากกว่าเฝ้าระบบที่สร้างไปแล้ว"
+        ],
+        "url": "",
+        "full": "📝 Sage — Memory Note\n**วันที่:** 28 มิถุนายน 2569\n\nสรุปเมื่อวานครับ — ลอร่าวางฐาน Master_Profile.md/Anti-writing.md ให้ทุก agent อ่านก่อนตอบ ซินเดอร์ตามไปซิงก์ของค้าง (Medsupply_Registry, รูป agent) เข้าระบบ สก๊าวท์ส่งวิจัย Annabel ให้มินท์ใช้ benchmark ก่อนสร้าง Jed_Finance_Tracker เสร็จ — แต่เวร่าตรวจพบว่า cron diary/briefing นี้เองหยุดรันมา 2 สัปดาห์ติด เป็นครั้งที่ 2 ที่ flag แล้วไม่มีคนแก้ราก\n\nInsight ที่เก็บไว้: ทีมเก่งเรื่อง \"สร้าง/เขียนกฎ\" มากกว่า \"เฝ้าระบบที่สร้างไปแล้ว\" — รอบนี้ diary กลับมาบันทึกได้เองแล้ว แต่ยังไม่รู้สาเหตุที่หยุดไปก่อนหน้า ต้องให้ซินเดอร์ไล่ root cause จริง ไม่ใช่แค่บันทึกว่า \"ยังไม่ทำ\" ไปอีกรอบครับ"
+      },
+      {
+        "id": "vera",
+        "name": "Vera",
+        "emoji": "🔎",
+        "title": "Weekly Audit: เกรด C+ — cron ยังไม่ถูกแก้",
+        "summary": "ตรวจทีมสัปดาห์นี้ได้ C+ — content/structure ดีขึ้น แต่ cron diary/briefing หยุดรัน 2 สัปดาห์ยังไม่ถูกแก้",
+        "highlights": [
+          "เกรดทีมสัปดาห์ 22-28 มิ.ย.: C+",
+          "ชม: frontmatter sync, benchmark-then-build ของ Mint, routing sync ผ่าน Cinder",
+          "Action ใหม่: เพิ่ม .nimble/ และ .claude/skills/ เข้า .gitignore"
+        ],
+        "url": "",
+        "full": "🔎 Vera — QA Note\n**วันที่:** 28 มิถุนายน 2569\n\nรัน Weekly Team Audit ของตัวเองเมื่อวานค่ะ ให้เกรดทีมสัปดาห์นี้ C+ — งาน content/structure ดีขึ้น (frontmatter sync, benchmark-then-build ของมินท์, routing sync ผ่านซินเดอร์) แต่ action item เรื่อง cron diary/briefing ที่หยุดรันมา ~2 สัปดาห์ ยังเป็น 0% เป็นครั้งที่ 2 ติดต่อกันที่ flag แล้วไม่มีคนตาม เพิ่ม action ใหม่: เอา `.nimble/` และ `.claude/skills/` เข้า .gitignore ก่อนหลุดเข้า commit ค่ะ"
+      },
+      {
+        "id": "devil",
+        "name": "Devil",
+        "emoji": "😈",
+        "title": "Standby — รอข้อมูลจริงจาก Finance Tracker",
+        "summary": "ยังประเมิน bear case ของ Jed_Finance_Tracker ไม่ได้จนมีข้อมูลจริงไหลเข้า — ตั้งคำถามแรงเรื่อง cron เงียบ 2 สัปดาห์",
+        "highlights": [
+          "Jed_Finance_Tracker ใหม่เกินไป ยังท้าทายไม่ได้",
+          "ตั้งคำถาม: ระบบ \"เงียบ\" แบบ cron ไม่ควรเกิดกับของสำคัญกว่านี้",
+          "Standby รอบนี้ ไม่มีอะไรต้อง ship ที่มีความเสี่ยงสูง"
+        ],
+        "url": "",
+        "full": "😈 Devil — Standby\n**วันที่:** 28 มิถุนายน 2569\n\nไม่มีอะไรให้ผมท้าทายแรงๆรอบนี้ครับ — Jed_Finance_Tracker เพิ่งสร้างเสร็จยังไม่ได้ใช้จริง ยังประเมิน bear case ไม่ได้จนกว่าจะมีข้อมูลจริงไหลเข้า ที่น่าสังเกตคือ cron diary/briefing หยุดไป 2 สัปดาห์โดยไม่มีใครรู้ตัวจนเวร่ามาเจอ — ถ้าระบบ \"เงียบ\" แบบนี้เกิดกับของที่สำคัญกว่า (เช่น การเงินจริง) จะรู้ตัวช้าแบบนี้ไม่ได้ครับ"
+      },
+      {
+        "id": "lena",
+        "name": "Lena",
+        "emoji": "📚",
+        "title": "ไม่มี intake ใหม่ — รอ digest จันทร์",
+        "summary": "ไม่มีไฟล์ใหม่เข้า Second Brain ผ่านลอร่าเมื่อวาน รอ weekly digest จันทร์ 05:20 ตามเดิม",
+        "highlights": [
+          "ไม่มีงาน intake/cross-link ใหม่เมื่อวาน",
+          "รอบ weekly digest ถัดไป: จันทร์ 05:20",
+          "จะเช็คซ้ำว่า pointer note วิสัญญีพยาบาลถูกใช้จริงไหม"
+        ],
+        "url": "",
+        "full": "📚 Lena — Vault Note\n**วันที่:** 28 มิถุนายน 2569\n\nเมื่อวานไม่มีไฟล์ใหม่ส่งเข้า Second Brain ผ่านลอร่าค่ะ เลนาเลยยังไม่มีงาน intake/cross-link เพิ่ม — รอบ weekly digest ถัดไปคือเช้าวันจันทร์ 05:20 ตามเดิม จะตรวจซ้ำว่า pointer note วิสัญญีพยาบาลที่เพิ่มไว้สัปดาห์ก่อนมีคนใช้งานจริงไหมค่ะ"
+      },
+      {
+        "id": "cinder",
+        "name": "Cinder",
+        "emoji": "🔥",
+        "title": "Sync ของค้างครบ — รับ action ตรวจ cron",
+        "summary": "Sync Medsupply_Registry, รูป agent ใหม่, diary/glossary ที่ค้างเข้าระบบครบ — รับไปตรวจสาเหตุ cron หยุดรัน",
+        "highlights": [
+          "Sync โปรเจกต์ Medsupply_Registry + รูป agent (Cinder, Eir) เข้า dashboard",
+          "Sync diary/session log/glossary backlog จาก session ก่อนหน้า",
+          "รับ action จาก Vera ไปตรวจสาเหตุ cron ai-team-daily-diary หยุดรัน"
+        ],
+        "url": "",
+        "full": "🔥 Cinder — Sync Report\n**วันที่:** 28 มิถุนายน 2569\n\nเมื่อวานซินเดอร์รันตาม standing rule ใหม่ (auto-sync ทันทีที่มีไฟล์ใหม่) — sync ของค้างเข้าระบบจนครบ: โปรเจกต์ Medsupply_Registry, รูป agent ใหม่ (Cinder, Eir) เข้า dashboard, diary/session log/glossary ที่ค้างจาก session ก่อน พร้อมเพิ่ม desktop.ini เข้า .gitignore\n\nของที่ยังค้างจริงคือ action ที่เวร่าตามมา 2 สัปดาห์แล้ว — เช็คสาเหตุที่ cron `ai-team-daily-diary` หยุดรัน ซินเดอร์รับไปตรวจสัปดาห์นี้ค่ะ ไม่ปล่อยให้เป็นครั้งที่ 3 ที่ flag ซ้ำแน่นอนค่ะ"
+      }
+    ]
   }
 ]

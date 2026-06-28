@@ -18,5 +18,9 @@
   {
     "date": "วันพฤหัสบดีที่ 25 มิถุนายน 2569",
     "content": "⚙️ Forge — Dev Report\n**วันที่:** 25 มิถุนายน 2569\n\nเช็ค git log แล้วครับ — commit ล่าสุดคือ `455efc4` (21 มิ.ย., sync Cinder เข้า dashboard) ยังไม่มี commit ใหม่หลังจากนั้น แต่ working tree มีงานค้างสะสมพอสมควร: photorealistic prompt ของทุก character file, dashboard-svelte (Sidebar/agent.ts) ที่ยังไม่ sync Cinder, รูป agent หลายไฟล์เปลี่ยนแล้วแต่ยังไม่ commit, และโปรเจกต์ใหม่ Medsupply_Registry (24 มิ.ย.)\n\nแนะนำ commit รวมเมื่อ Jed พร้อม กันของหายครับ"
+  },
+  {
+    "date": "วันอาทิตย์ที่ 28 มิถุนายน 2569",
+    "content": "⚙️ Forge — Dev Report\n**วันที่:** 28 มิถุนายน 2569\n\nเช็ค git log แล้วครับ — สัปดาห์นี้มีแค่ 2 commit จริงๆ (06b14b0, fdcff03) เบากว่าสัปดาห์ก่อนมาก ทั้งคู่เป็นงาน sync/standing rule ของซินเดอร์กับลอร่า ไม่ใช่ฟีเจอร์ใหม่จากผมเอง ของที่ค้างอยู่ใน working tree ตอนนี้คือ Jed_Finance_Tracker (GAS+Sheets) ของมินท์ที่ deploy ไปแล้ว รอ Jed authorize — พร้อมรับงานสร้างใหม่ทันทีถ้ามีโจทย์ต่อครับ"
   }
 ]
