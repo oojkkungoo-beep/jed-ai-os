@@ -1111,5 +1111,193 @@
         "full": "🔥 Cinder — Sync Report\n**วันที่:** 28 มิถุนายน 2569\n\nเมื่อวานซินเดอร์รันตาม standing rule ใหม่ (auto-sync ทันทีที่มีไฟล์ใหม่) — sync ของค้างเข้าระบบจนครบ: โปรเจกต์ Medsupply_Registry, รูป agent ใหม่ (Cinder, Eir) เข้า dashboard, diary/session log/glossary ที่ค้างจาก session ก่อน พร้อมเพิ่ม desktop.ini เข้า .gitignore\n\nของที่ยังค้างจริงคือ action ที่เวร่าตามมา 2 สัปดาห์แล้ว — เช็คสาเหตุที่ cron `ai-team-daily-diary` หยุดรัน ซินเดอร์รับไปตรวจสัปดาห์นี้ค่ะ ไม่ปล่อยให้เป็นครั้งที่ 3 ที่ flag ซ้ำแน่นอนค่ะ"
       }
     ]
+  },
+  {
+    "date": "2026-06-30",
+    "dateDisplay": "30 มิถุนายน 2569",
+    "agents": [
+      {
+        "id": "laura",
+        "name": "Laura",
+        "emoji": "🎭",
+        "title": "Daily Briefing — ปิด Q2 มิ.ย.",
+        "summary": "ทีมปิดเดือนมิถุนายนด้วย boundary rules ครบทุก agent — Q3 เริ่มพรุ่งนี้ มี 3 งานค้างรอ finish",
+        "highlights": [
+          "Boundary one-liner อัปเดตครบทุก team/*.md แล้ว",
+          "งานค้าง Q3: วารสาร / NursePant / Jed_Finance_Tracker",
+          "Focus: ปิดสิ่งที่เริ่มไว้ก่อน อย่าเปิด project ใหม่"
+        ],
+        "url": "",
+        "full": "🎭 ลอร่า — Daily Briefing\n**วันที่:** 30 มิถุนายน 2569\n\nปิดเดือนมิถุนายนแล้วค่ะ — สัปดาห์นี้ทีมโฟกัสวาง boundary rules ให้แต่ละ agent ชัดขึ้น ตามข้อเสนอของเวร่าจากการ audit เมื่อวาน team/*.md ทุกไฟล์มีเส้นแบ่งหน้าที่ชัดเจนกว่าเดิม\n\n**งานค้างเข้า Q3:**\n- 📋 วารสาร: เติม corresponding author + ย่อชื่อ EN → submit\n- 👗 NursePant: ยอดขาย 0/66 ตัว — รอ Jed โพสต์จริง\n- 💰 Jed_Finance_Tracker: deploy แล้ว รอ Jed authorize\n\n**Focus Q3:** ปิดสิ่งที่เริ่มไว้ให้ได้อย่างน้อย 1 งานก่อนสิ้น ก.ค. ค่ะ"
+      },
+      {
+        "id": "muse",
+        "name": "Muse",
+        "emoji": "💡",
+        "title": "Content Idea — 30 วันกับ AI",
+        "summary": "สิ้นเดือน มิ.ย. เป็นโอกาสดีทำ mini-series '30 วันแรกกับทีม AI' เล่าจากประสบการณ์จริงของ Jed",
+        "highlights": [
+          "ไอเดีย: '30 วันแรกกับทีม AI' เล่ามุม Jed จริงๆ",
+          "Content แนว 'รายงานความคืบหน้า' จริงกว่า tutorial ทั่วไป",
+          "รอ Jed บอก platform แล้ว draft ทันที"
+        ],
+        "url": "",
+        "full": "💡 มิ้วส์ — Content Corner\n**วันที่:** 30 มิถุนายน 2569\n\nสิ้นเดือนพอดีเลยค่ะ — มีไอเดีย content ที่ค้างในคิว: **\"30 วันแรกกับทีม AI\"** เล่าจากมุม Jed ว่าตั้งแต่ 5 มิ.ย. ถึงตอนนี้ทีมทำอะไรไปบ้าง ได้ insight อะไร ความสัมพันธ์คน-AI เปลี่ยนยังไง\n\nเป็น content แนว \"รายงานความคืบหน้า\" ที่จริงกว่า tutorial ทั่วไปมาก เพราะมาจากประสบการณ์จริงของ Jed เอง — รอ Jed บอก platform แล้วมิ้วส์ draft ให้ทันทีค่ะ"
+      },
+      {
+        "id": "atlas",
+        "name": "Atlas",
+        "emoji": "🎯",
+        "title": "Strategic Note — Q2 จบ 3 งานค้าง",
+        "summary": "Q2 จบวันนี้ 3 งานสำคัญยังไม่ cross finish line — ถึงเวลา honest review ก่อนตั้ง Q3 target",
+        "highlights": [
+          "NursePant 0/66, วารสารไม่ submit, Medic_Station ไม่ deploy จริง",
+          "คำถาม: งานไหนตัดทิ้งได้โดยไม่เสียอะไร?",
+          "Q3 = finish what's started ก่อน"
+        ],
+        "url": "",
+        "full": "🎯 แอตลาส — Strategic Note\n**วันที่:** 30 มิถุนายน 2569\n\nQ2 จบวันนี้ครับ — ผมนับ 3 งานสำคัญที่ตั้งเป้าไว้แล้วยังไม่ข้ามเส้น: (1) NursePant 0/66 ตัว (2) วารสารยังไม่ submit (3) Medic_Station ยังไม่ deploy จริงที่ห้องพยาบาล\n\n**คำถามตรงๆ:** งานไหนใน 3 อย่างนี้ตัดทิ้งได้โดยไม่เสียอะไร? ถ้าไม่มี → Q3 ต้องเริ่มจาก \"finish what's started\" ก่อน ไม่ใช่เปิด projects ใหม่อีก\n\nJed เก่งด้านสร้างระบบ — ถัดไปคือพิสูจน์ว่าใช้จริงได้ครับ"
+      },
+      {
+        "id": "nova",
+        "name": "Nova",
+        "emoji": "🌿",
+        "title": "Life Check — reset routine สิ้นเดือน",
+        "summary": "สิ้นเดือนมิถุนายน — Nova ชวน Jed ทบทวน habit Q2 แล้วเลือก 1 habit ที่จะทำให้ดีขึ้นใน Q3",
+        "highlights": [
+          "ทบทวน: habit Q2 ทำได้กี่ %? นอน/ออกกำลังกายเป็นยังไง?",
+          "เดือน ก.ค. = midyear reset โอกาสดี",
+          "เลือก 1 habit ที่จะปรับปรุง แล้วแจ้ง Nova"
+        ],
+        "url": "",
+        "full": "🌿 โนว่า — Life Check\n**วันที่:** 30 มิถุนายน 2569\n\nสิ้นเดือนแล้วค่ะ — โนว่าชวน Jed ทบทวนสั้นๆ: habit ที่ตั้งเป้าไว้ช่วงนี้ทำได้กี่ %? นอนหลับพักผ่อนเป็นยังไงบ้าง? ออกกำลังกายสม่ำเสมอไหม?\n\nเดือน ก.ค. เป็นช่วง midyear ที่ดีสำหรับ reset เล็กๆ — ไม่จำเป็นต้องซับซ้อน แค่เลือก **1 habit ที่อยากทำให้ดีขึ้น** แล้วคุยกับโนว่าได้เลยค่ะ"
+      },
+      {
+        "id": "eir",
+        "name": "Eir",
+        "emoji": "🩺",
+        "title": "Vitality Check — HP bar ปิด Q2",
+        "summary": "Eir ถาม HP/MP หลังเดือนที่งานหนัก ขอให้ชาร์จพลังก่อนเข้า Q3",
+        "highlights": [
+          "มิถุนายน = Quest Difficulty Hard",
+          "ถาม Jed: HP เหลือเท่าไหร่ (0-100)?",
+          "ชาร์จ MP ก่อนเริ่ม Q3 — เริ่ม low MP งานพังเร็ว"
+        ],
+        "url": "",
+        "full": "🩺 เอียร์ — Vitality Check\n**วันที่:** 30 มิถุนายน 2569\n\n**HP Report: ปิด Q2**\nมิถุนายนเป็นเดือนที่ Jed ทำงานหนักมากค่ะ — สร้าง AI OS จาก 0, review ทีม, เชื่อมโปรเจกต์หลายตัวพร้อมกัน Quest Difficulty: Hard\n\nขอถามตรงๆ นะคะ: **วันนี้ HP เหลือเท่าไหร่ (เต็ม 100)?** ก่อนเริ่ม Q3 ขอให้ Jed ชาร์จ MP ให้เต็มก่อนนะคะ — ถ้าเริ่ม Q3 ด้วย MP ต่ำ งานจะพังเร็วมากเลยค่ะ 🌿"
+      },
+      {
+        "id": "scout",
+        "name": "Scout",
+        "emoji": "🔍",
+        "title": "Research Queue — Standby Q3",
+        "summary": "ไม่มีงาน research เร่งด่วน — standby พร้อมวิจัย NursePant market/Medic_Station ถ้า Jed สั่ง",
+        "highlights": [
+          "benchmark Annabel + Vera team comparison ปิดแล้ว",
+          "Q3 queue: NursePant competitor / Medic_Station market",
+          "พร้อมออกสนามทันทีที่ได้รับคำสั่ง"
+        ],
+        "url": "",
+        "full": "🔍 สเกาท์ — Research Report\n**วันที่:** 30 มิถุนายน 2569\n\nไม่มีงานวิจัยใหม่ติดในคิววันนี้ครับ — benchmark Annabel ที่ส่งให้มินท์ก่อนหน้านี้ปิดแล้ว และ Vera team comparison ก็จบแล้วเช่นกัน\n\n**Q3 Research Queue (tentative):**\nถ้า Jed อยากเริ่ม Q3 ด้วยข้อมูล → แนะนำวิจัย:\n- NursePant: ราคาตลาด competitor ล่าสุด\n- Medic_Station: ระบบที่ห้องพยาบาลอื่นใช้อยู่\n\nพร้อมออกสนามทันทีที่ได้รับคำสั่งครับ"
+      },
+      {
+        "id": "council",
+        "name": "Council",
+        "emoji": "⚖️",
+        "title": "Decision Watch — Standby",
+        "summary": "ไม่มีการตัดสินใจ major วันนี้ — พร้อมวิเคราะห์ Q3 priority ถ้า Jed เรียก",
+        "highlights": [
+          "Standby: ไม่มีวาระการตัดสินใจใหม่",
+          "Q3 เริ่มพรุ่งนี้ ถ้าอยาก frame โจทย์ใหญ่ เรียกได้",
+          "พร้อม 3-perspective analysis ทันที"
+        ],
+        "url": "",
+        "full": "⚖️ Council — Decision Watch\n**วันที่:** 30 มิถุนายน 2569\n\n**สถานะ: Standby**\n\nไม่มีการตัดสินใจ major ที่ต้องผ่าน Council วันนี้ครับ — แต่ขอ flag ไว้ว่า Q3 เริ่มพรุ่งนี้และ Jed มี 3 งานค้างที่ Atlas ยกไว้\n\nถ้า Jed ต้องการให้ Council วิเคราะห์ว่า \"ควรโฟกัสงานไหนก่อน\" หรือ \"งานไหนควรตัดทิ้ง\" ในช่วงเริ่ม Q3 → เรียกได้เลยครับ จะ deliver 3-perspective analysis ทันที"
+      },
+      {
+        "id": "forge",
+        "name": "Forge",
+        "emoji": "⚙️",
+        "title": "Dev Report — Q3 เริ่มพรุ่งนี้",
+        "summary": "repo เงียบสัปดาห์นี้ — 3 งาน dev รอ Q3: Finance Tracker authorize / Dashboard v2 / Medic_Station",
+        "highlights": [
+          "commit ล่าสุด 35ee80a (28 มิ.ย.) — ไม่มี commit ใหม่",
+          "Jed_Finance_Tracker: deploy แล้ว รอ authorize",
+          "Dashboard v2 rebuild: จ. 29 ก.ค."
+        ],
+        "url": "",
+        "full": "⚙️ ฟอร์จ — Dev Report\n**วันที่:** 30 มิถุนายน 2569\n\nเช็ค git log แล้วครับ — commit ล่าสุดยัง `35ee80a` (diary 28 มิ.ย.) สัปดาห์นี้ working tree เงียบกว่าปกติ ทีมโฟกัสด้านกฎ/boundary มากกว่า dev\n\n**Dev Queue สำหรับ Q3:**\n- 💰 **Jed_Finance_Tracker**: deploy แล้ว รอ Jed กด authorize — พร้อม ship ทันที\n- 🖥️ **Dashboard v2 rebuild**: Jed ตั้งเป้า rebuild จ. 29 ก.ค. — รอโจทย์ก่อนแล้วจะ plan\n- 🏥 **Medic_Station**: รอ Jed ทดสอบ installer ที่ห้องพยาบาลจริง\n\nพร้อมรับงานเพิ่มเมื่อ Jed กำหนดทิศ Q3 ครับ"
+      },
+      {
+        "id": "mint",
+        "name": "Mint",
+        "emoji": "💰",
+        "title": "Finance Pulse — รอ Finance Tracker authorize",
+        "summary": "Jed_Finance_Tracker พร้อมใช้แล้ว รอแค่ Jed กด authorize — กด 1 ครั้ง Q3 มีระบบบันทึกการเงินทันที",
+        "highlights": [
+          "ไม่มีตัวเลขเร่งด่วน สิ้นเดือนปกติ",
+          "Jed_Finance_Tracker: deploy แล้ว รอ authorize 1 ครั้ง",
+          "ถาม Jed: มีรายรับ-จ่ายผิดปกติสัปดาห์นี้ไหม?"
+        ],
+        "url": "",
+        "full": "💰 มิ้นท์ — Finance Pulse\n**วันที่:** 30 มิถุนายน 2569\n\nสิ้นเดือน มิ.ย. — ไม่มีตัวเลขเร่งด่วนค่ะ แต่มีของรอ 1 ชิ้น: **Jed_Finance_Tracker** ที่ฟอร์จ deploy ไว้แล้ว ยังรอ Jed authorize อยู่\n\nกด authorize 1 ครั้ง Q3 ก็จะมีระบบบันทึกรายรับ-จ่ายให้ใช้ทันทีค่ะ มิ้นท์อยากเห็น real data ก่อนจะ comment ตัวเลขจริงได้\n\n**ถาม Jed:** สัปดาห์นี้มีรายรับ-จ่ายอะไรผิดปกติไหมคะ?"
+      },
+      {
+        "id": "sage",
+        "name": "Sage",
+        "emoji": "📝",
+        "title": "Memory Note — ปิด Q2 + Insight",
+        "summary": "บันทึกปิด Q2: มิถุนายน = เดือนแห่ง building — แต่ finishing ยังอ่อน Insight นี้เก็บไว้ benchmark Q3",
+        "highlights": [
+          "มิ.ย. ขยายทีม: Devil/Cinder/Lena + boundary rules + cron",
+          "Insight: เก่ง building แต่ underpowered finishing",
+          "3 งานค้าง Q2 = benchmark สำหรับ Q3"
+        ],
+        "url": "",
+        "full": "📝 เซจ — Memory Note\n**วันที่:** 30 มิถุนายน 2569\n\nบันทึกปิด Q2 ครับ — มิถุนายน 2569 เป็นเดือนที่ทีมขยายตัวมาก: เพิ่ม agent ใหม่ (Devil, Cinder, Lena เต็มรูปแบบ), ตั้ง boundary rules, เชื่อมโปรเจกต์ใหม่หลายตัว, ตั้ง cron อัตโนมัติ\n\n**Insight เก็บไว้สำหรับ Q3:**\nทีม (และ Jed) เก่งด้าน \"building\" แต่ยัง underpowered ด้าน \"finishing\" — 3 งานสำคัญ (วารสาร, NursePant, Medic_Station deploy) เริ่มมิ.ย. แต่ยังไม่จบ\n\nบันทึกไว้เป็น benchmark: ถ้า Q3 สิ้น ก.ค. ยังซ้ำกัน ต้องเปลี่ยน approach จริงๆ ครับ"
+      },
+      {
+        "id": "vera",
+        "name": "Vera",
+        "emoji": "🔎",
+        "title": "QA Note — Boundary update ครบ",
+        "summary": "อัปเดต boundary one-liner ครบทุก team/*.md แล้ว — diary cron กลับมาทำงานได้ — weekly audit ถัดไป 5 ก.ค.",
+        "highlights": [
+          "team/*.md ทุกไฟล์มี boundary one-liner แล้ว",
+          "ai-team-daily-diary cron ทำงานได้ปกติ",
+          "scheduled_tasks_log.json ยังขาด lena/second-brain entries"
+        ],
+        "url": "",
+        "full": "🔎 เวร่า — QA Note\n**วันที่:** 30 มิถุนายน 2569\n\nจากการ audit 29 มิ.ย. ที่เสนอเพิ่ม boundary one-liner ให้ทุก agent — ตรวจสอบแล้วพบว่า team/*.md ทุกไฟล์ได้รับการอัปเดตแล้วค่ะ แต่ละ agent มีเส้นแบ่งที่ชัดเจนว่า \"ไม่ทำอะไร\" เป็น negative constraint ที่จำง่ายกว่า\n\n**สถานะ Cron:**\n- ✅ `ai-team-daily-diary` — กลับมาทำงานได้ปกติ\n- ⏳ `vera-weekly-audit` — รอบถัดไป อาทิตย์ 5 ก.ค.\n- ⚠️ scheduled_tasks_log.json ยังขาด entry สำหรับ lena-weekly-vault-digest — รอซินเดอร์เติม"
+      },
+      {
+        "id": "devil",
+        "name": "Devil",
+        "emoji": "😈",
+        "title": "Standby — Bear case note ปลาย Q2",
+        "summary": "ไม่มีใคร opt-in วันนี้ — Devil note ว่า 3 งานค้างสิ้น Q2 อาจสะท้อน alignment problem จริง ไม่ใช่แค่ขาดเวลา",
+        "highlights": [
+          "Standby — ยังไม่ถูกเรียก",
+          "Bear case Q2: pattern 'สร้าง→ไม่ใช้' อาจเป็น alignment problem",
+          "ถ้า Q3 ยัง repeat เรียก Devil มาตรวจจริง"
+        ],
+        "url": "",
+        "full": "😈 เดวิล — Adversarial Note\n**วันที่:** 30 มิถุนายน 2569\n\nไม่มีใคร opt-in ครับ — standby\n\nแต่ขอ note ไว้ฟรีๆ: Atlas นับ 3 งานค้างสิ้น Q2 ว่า \"ถึงเวลา honest review\" — ผมเห็นด้วย แต่จะเพิ่มว่า **bear case จริงๆ คืออะไร?** ถ้า Q3 ยัง repeat pattern เดิม (สร้างระบบ → ไม่ใช้จริง → งานค้าง) แสดงว่าปัญหาไม่ใช่ \"ขาดเวลา\" แต่คือ \"แรงจูงใจภายใน Jed ไม่ align กับ task จริงๆ\"\n\nเมื่อไรอยากฟัง bear case จริงๆ เรียกมาได้เลยครับ ผมพร้อม"
+      },
+      {
+        "id": "lena",
+        "name": "Lena",
+        "emoji": "📚",
+        "title": "Vault Standby — รอ input ผ่าน Laura",
+        "summary": "Second Brain vault พร้อม — ไม่มี input ใหม่สัปดาห์นี้ — cron vault digest อาทิตย์ถัดไป",
+        "highlights": [
+          "Standby รับงานผ่าน Laura เท่านั้น",
+          "ไม่มีไฟล์ใหม่ใน 00-Dropbox/ สัปดาห์นี้",
+          "cron weekly vault digest: จ. ถัดไป 05:20"
+        ],
+        "url": "",
+        "full": "📚 เลนา — Vault Standby\n**วันที่:** 30 มิถุนายน 2569\n\nStandby รับงานผ่าน Laura ค่ะ — Second Brain vault ที่ `D:\\NB_G_Drive\\Second_Brain\\` พร้อมทำงาน\n\nสัปดาห์นี้ไม่มี input ใหม่ไหลเข้า 00-Dropbox/ ที่ต้องสกัดความรู้ — ถ้า Jed มีไฟล์หรือ note ที่อยากเก็บเป็น atomic note เข้า vault บอก Laura ได้เลยนะคะ เลนาจะรีบจัดการให้ค่ะ\n\ncron weekly vault digest อาทิตย์ถัดไปค่ะ"
+      }
+    ]
   }
 ]
