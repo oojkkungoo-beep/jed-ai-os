@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jed Finance Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    :root {
+      --bg1: #fff6e9; --bg2: #ffe9f3; --bg3: #e8f6ff;
+      --cream: #fffaf0; --ink: #6b4a3a; --ink-soft: #a8836f;
+      --pink: #ff8fb1; --pink-deep: #ff5d8f; --peach: #ffb37a; --peach-deep: #ff9248;
+      --mint: #6fd6a8; --mint-deep: #3fb88a; --sky: #7cc6f0; --sky-deep: #4aa9e0;
+      --lemon: #ffd76a; --lemon-deep: #f5b400; --lavender: #b9a4ff;
+      --line: #ffd9c2;
+    }
+    body {
+      font-family: "Nunito", "Noto Sans Thai", -apple-system, sans-serif;
+      margin: 0; color: var(--ink); padding-bottom: 84px;
+      background: linear-gradient(160deg, var(--bg1) 0%, var(--bg3) 55%, var(--bg2) 100%);
+      min-height: 100vh;
+    }
+    header { padding: 20px 16px 8px; text-align: center; }
+    header h1 {
+      font-family: "Baloo 2", sans-serif; font-size: 22px; margin: 0; color: var(--pink-deep);
+      text-shadow: 0 2px 0 #fff, 0 4px 8px rgba(255,141,178,0.35);
+      letter-spacing: 0.5px;
+    }
+    .card {
+      background: var(--cream); border-radius: 22px; margin: 12px 14px; padding: 16px;
+      border: 3px solid #fff; box-shadow: 0 6px 0 var(--line), 0 10px 18px rgba(255,150,100,0.15);
+    }
+    .banner {
+      background: linear-gradient(135deg, var(--lemon), var(--peach));
+      border-radius: 18px; margin: 12px 14px; padding: 12px 14px; font-size: 13px;
+      color: #7a4a00; font-weight: 700; border: 3px solid #fff;
+      box-shadow: 0 5px 0 #f0a800;
+    }
+    .summary-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 14px 14px; }
+    .summary-card {
+      background: var(--cream); border-radius: 18px; padding: 12px; text-align: center;
+      border: 3px solid #fff; box-shadow: 0 5px 0 var(--line);
+    }
+    .summary-card .label { font-size: 12px; color: var(--ink-soft); font-weight: 700; }
+    .summary-card .value { font-family: "Baloo 2", sans-serif; font-size: 18px; font-weight: 700; margin-top: 4px; }
+    .green { color: var(--mint-deep); } .red { color: var(--pink-deep); } .yellow { color: var(--lemon-deep); }
+    label { display: block; font-size: 13px; color: var(--ink-soft); font-weight: 700; margin: 12px 0 5px; }
+    input, select, textarea {
+      width: 100%; padding: 11px 12px; border-radius: 14px; border: 2.5px solid var(--line);
+      background: #fffefb; color: var(--ink); font-size: 15px; font-family: inherit;
+    }
+    input:focus, select:focus { outline: none; border-color: var(--pink); }
+    button.primary {
+      width: 100%; padding: 13px; margin-top: 16px; border: none; border-radius: 16px;
+      background: linear-gradient(135deg, var(--pink), var(--pink-deep)); color: #fff;
+      font-family: "Baloo 2", sans-serif; font-size: 16px; font-weight: 700;
+      box-shadow: 0 5px 0 #d63d72; letter-spacing: 0.3px;
+    }
+    button.primary:active { box-shadow: 0 2px 0 #d63d72; transform: translateY(3px); }
+    button.secondary {
+      width: 100%; padding: 10px; margin-top: 8px; border: 2.5px solid var(--sky); border-radius: 14px;
+      background: #fff; color: var(--sky-deep); font-size: 14px; font-weight: 700;
+    }
+    .seg { display: flex; gap: 8px; margin-top: 6px; }
+    .seg button {
+      flex: 1; padding: 11px; border-radius: 14px; border: 2.5px solid var(--line);
+      background: #fff; color: var(--ink-soft); font-weight: 700; font-size: 13px;
+    }
+    .seg button.active { background: linear-gradient(135deg, var(--peach), var(--peach-deep)); color: #fff; border-color: var(--peach-deep); }
+    .list-item {
+      display: flex; justify-content: space-between; padding: 10px 4px; font-size: 14px;
+      border-bottom: 2px dashed var(--line); font-weight: 600;
+    }
+    .list-item:last-child { border-bottom: none; }
+    .list-item .sub { font-size: 11px; color: var(--ink-soft); font-weight: 600; }
+    .tabbar {
+      position: fixed; bottom: 0; left: 0; right: 0;
+      background: var(--cream); display: flex; overflow-x: auto;
+      border-top: 3px solid #fff; box-shadow: 0 -6px 16px rgba(255,150,100,0.18);
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+    .tabbar button { flex: 1; min-width: 60px; background: none; border: none; color: var(--ink-soft); padding: 10px 2px; font-size: 10px; font-weight: 700; }
+    .tabbar button.active { color: var(--pink-deep); }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+    .toast {
+      position: fixed; top: 16px; left: 50%; transform: translateX(-50%);
+      background: linear-gradient(135deg, var(--mint), var(--mint-deep)); color: #fff;
+      padding: 11px 20px; border-radius: 16px; font-weight: 700;
+      font-size: 14px; display: none; z-index: 99; white-space: nowrap;
+      box-shadow: 0 5px 0 #2f9670; border: 2px solid #fff;
+    }
+    h3 { margin: 0 0 10px; font-family: "Baloo 2", sans-serif; font-size: 15px; color: var(--pink-deep); }
+    .modal-overlay {
+      display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(107,74,58,0.45); z-index: 100; align-items: flex-end;
+    }
+    .modal-overlay.active { display: flex; }
+    .modal {
+      background: var(--cream); border-radius: 26px 26px 0 0; padding: 20px; width: 100%;
+      max-height: 85vh; overflow-y: auto; border-top: 4px solid #fff;
+    }
+    .modal h3 { font-size: 17px; color: var(--pink-deep); }
+    .close-btn { text-align: right; color: var(--ink-soft); font-size: 13px; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="toast" id="toast"></div>
+  <header><h1>🌸 Jed Finance Tracker 🍃</h1></header>
+
+  <!-- Dashboard -->
+  <div class="tab-content active" id="tab-dashboard">
+    <div class="banner" id="billBanner" style="display:none;"></div>
+    <div class="summary-grid">
+      <div class="summary-card"><div class="label">รายรับเดือนนี้</div><div class="value green" id="sumIncome">-</div></div>
+      <div class="summary-card"><div class="label">รายจ่ายเดือนนี้</div><div class="value red" id="sumExpense">-</div></div>
+      <div class="summary-card"><div class="label">หนี้คงเหลือรวม</div><div class="value yellow" id="sumDebt">-</div></div>
+      <div class="summary-card"><div class="label">เงินสำรองรวม</div><div class="value green" id="sumReserve">-</div></div>
+      <div class="summary-card"><div class="label">พอร์ตลงทุนรวม</div><div class="value green" id="sumInvest">-</div></div>
+      <div class="summary-card"><div class="label">สำรองพอกี่เดือน</div><div class="value" id="sumRunway">-</div></div>
+    </div>
+    <div class="card">
+      <h3>ยอดเงินแต่ละบัญชี</h3>
+      <div id="accountBalances">กำลังโหลด...</div>
+    </div>
+    <div class="card">
+      <h3>รายการล่าสุด</h3>
+      <div id="recentTx">กำลังโหลด...</div>
+    </div>
+  </div>
+
+  <!-- Transaction -->
+  <div class="tab-content" id="tab-tx">
+    <div class="card">
+      <h3>เพิ่มรายการ</h3>
+      <div class="seg" id="txType">
+        <button class="active" data-v="รายจ่าย">รายจ่าย</button>
+        <button data-v="รายรับ">รายรับ</button>
+        <button data-v="โอนเงิน">โอนเงิน</button>
+      </div>
+      <label id="lblAccount">บัญชี</label>
+      <select id="txAccount"></select>
+      <label id="lblToAccount" style="display:none;">โอนไปบัญชี</label>
+      <select id="txToAccount" style="display:none;"></select>
+      <label>หมวดหมู่</label>
+      <input id="txCategory" placeholder="เช่น อาหาร, เงินเดือน, ค่าเดินทาง">
+      <label>จำนวนเงิน (บาท)</label>
+      <input id="txAmount" type="number" inputmode="decimal" placeholder="0">
+      <label>วันที่</label>
+      <input id="txDate" type="date">
+      <label>โน้ต (ไม่บังคับ)</label>
+      <input id="txNote" placeholder="รายละเอียดเพิ่มเติม">
+      <button class="primary" onclick="submitTx()">บันทึก</button>
+    </div>
+    <div class="card"><h3>รายการทั้งหมด (แตะเพื่อแก้ไข/ลบ)</h3><div id="txList">กำลังโหลด...</div></div>
+  </div>
+
+  <!-- Accounts -->
+  <div class="tab-content" id="tab-account">
+    <div class="card">
+      <h3>เพิ่มบัญชี/กระเป๋าเงิน</h3>
+      <label>ชื่อบัญชี</label>
+      <input id="accName" placeholder="เช่น บัญชีหลัก SCB, วอลเล็ตเติมเงิน">
+      <label>ประเภท</label>
+      <select id="accType">
+        <option value="ธนาคาร">ธนาคาร</option>
+        <option value="เงินสด">เงินสด</option>
+        <option value="วอลเล็ต/เติมเงิน">วอลเล็ต/เติมเงิน</option>
+        <option value="บัตรเครดิต">บัตรเครดิต</option>
+        <option value="อื่นๆ">อื่นๆ</option>
+      </select>
+      <label>ยอดเงินตั้งต้น</label>
+      <input id="accBalance" type="number" placeholder="0">
+      <button class="primary" onclick="submitAccount()">เพิ่มบัญชี</button>
+    </div>
+    <div class="card">
+      <h3>บัญชีทั้งหมด (แตะเพื่อแก้ไข/ลบ)</h3>
+      <div id="accountList">กำลังโหลด...</div>
+    </div>
+  </div>
+
+  <!-- Debts -->
+  <div class="tab-content" id="tab-debt">
+    <div class="card">
+      <h3>เพิ่มหนี้ใหม่</h3>
+      <label>ชื่อหนี้</label>
+      <input id="debtName" placeholder="เช่น บัตรเครดิต KBank">
+      <label>ยอดเดิม</label>
+      <input id="debtOriginal" type="number" placeholder="0">
+      <label>ยอดคงเหลือ</label>
+      <input id="debtRemaining" type="number" placeholder="0">
+      <label>ดอกเบี้ย (%ต่อปี)</label>
+      <input id="debtRate" type="number" placeholder="0">
+      <label>ผ่อนขั้นต่ำ/เดือน</label>
+      <input id="debtMin" type="number" placeholder="0">
+      <label>วันที่เริ่มหนี้</label>
+      <input id="debtStart" type="date">
+      <label>ระยะเวลาทั้งหมด (เดือน)</label>
+      <input id="debtTerm" type="number" placeholder="เช่น 36">
+      <button class="primary" onclick="submitDebt()">เพิ่มหนี้</button>
+    </div>
+    <div class="card">
+      <h3>หนี้ทั้งหมด (แตะเพื่อดูรายละเอียด/ชำระ)</h3>
+      <div id="debtList">กำลังโหลด...</div>
+    </div>
+  </div>
+
+  <!-- Reserves -->
+  <div class="tab-content" id="tab-reserve">
+    <div class="card">
+      <h3>เพิ่ม/อัปเดตเงินสำรอง</h3>
+      <label>ชื่อบัญชี/กองทุน</label>
+      <input id="resName" placeholder="เช่น เงินสำรองฉุกเฉิน">
+      <label>ยอดปัจจุบัน</label>
+      <input id="resAmount" type="number" placeholder="0">
+      <label>โน้ต</label>
+      <input id="resNote" placeholder="ไม่บังคับ">
+      <button class="primary" onclick="submitReserve()">บันทึก</button>
+    </div>
+    <div class="card"><h3>เงินสำรองทั้งหมด (แตะเพื่อแก้ไข/ลบ)</h3><div id="reserveList">กำลังโหลด...</div></div>
+  </div>
+
+  <!-- Investments -->
+  <div class="tab-content" id="tab-invest">
+    <div class="card">
+      <h3>เพิ่ม/อัปเดตพอร์ตลงทุน</h3>
+      <label>ชื่อสินทรัพย์</label>
+      <input id="invName" placeholder="เช่น ETF S&P500, หุ้น PTT">
+      <label>ประเภท</label>
+      <input id="invType" placeholder="เช่น ETF, หุ้น, ทอง, คริปโต">
+      <label>มูลค่าปัจจุบัน</label>
+      <input id="invAmount" type="number" placeholder="0">
+      <label>โน้ต</label>
+      <input id="invNote" placeholder="ไม่บังคับ">
+      <button class="primary" onclick="submitInvestment()">บันทึก</button>
+    </div>
+    <div class="card"><h3>พอร์ตทั้งหมด (แตะเพื่อแก้ไข/ลบ)</h3><div id="investList">กำลังโหลด...</div></div>
+  </div>
+
+  <!-- Bills -->
+  <div class="tab-content" id="tab-bill">
+    <div class="card">
+      <h3>เพิ่มรายจ่ายประจำ</h3>
+      <label>ชื่อบิล</label>
+      <input id="billName" placeholder="เช่น ค่าผ่อนบ้าน, ค่าไฟ, บัตรเครดิต">
+      <label>จำนวนเงิน</label>
+      <input id="billAmount" type="number" placeholder="0">
+      <label>ครบกำหนดวันที่ (1-31 ของเดือน)</label>
+      <input id="billDueDay" type="number" min="1" max="31" placeholder="เช่น 5">
+      <label>จ่ายทุกกี่เดือน</label>
+      <select id="billInterval">
+        <option value="1">ทุก 1 เดือน</option>
+        <option value="2">ทุก 2 เดือน</option>
+        <option value="3">ทุก 3 เดือน</option>
+        <option value="6">ทุก 6 เดือน</option>
+        <option value="12">ทุก 12 เดือน</option>
+      </select>
+      <label>เริ่มรอบแรกเดือนนี้ใช่ไหม</label>
+      <input id="billStartMonth" type="month">
+      <label>เชื่อมกับหนี้ (ไม่บังคับ)</label>
+      <select id="billLinkedDebt"><option value="">-- ไม่เชื่อม --</option></select>
+      <button class="primary" onclick="submitBill()">เพิ่มรายการแจ้งเตือน</button>
+      <p style="font-size:12px;color:#94a3b8;margin-top:10px;">ระบบจะส่งอีเมลแจ้งเตือนล่วงหน้า 3 วันก่อนครบกำหนดเฉพาะเดือนที่ถึงรอบ (เช็คทุกเช้า 8:00)</p>
+    </div>
+    <div class="card"><h3>รายจ่ายประจำทั้งหมด (แตะเพื่อแก้ไข/ลบ)</h3><div id="billList">กำลังโหลด...</div></div>
+  </div>
+
+  <div class="tabbar">
+    <button class="active" onclick="showTab('dashboard')">📊<br>ภาพรวม</button>
+    <button onclick="showTab('tx')">💸<br>รายการ</button>
+    <button onclick="showTab('account')">🏦<br>บัญชี</button>
+    <button onclick="showTab('debt')">📉<br>หนี้</button>
+    <button onclick="showTab('reserve')">🛟<br>สำรอง</button>
+    <button onclick="showTab('invest')">📈<br>พอร์ต</button>
+    <button onclick="showTab('bill')">🔔<br>แจ้งเตือน</button>
+  </div>
+
+  <div class="modal-overlay" id="debtModal" onclick="if(event.target===this) this.classList.remove('active')">
+    <div class="modal">
+      <div class="close-btn" onclick="document.getElementById('debtModal').classList.remove('active')">ปิด ✕</div>
+      <h3 id="debtModalTitle">รายละเอียดหนี้</h3>
+      <div id="debtModalInfo"></div>
+      <label>ชำระเงิน (บาท)</label>
+      <input id="payAmount" type="number" placeholder="0">
+      <label>จากบัญชี (ไม่บังคับ)</label>
+      <select id="payAccount"><option value="">-- ไม่ระบุ --</option></select>
+      <label>วันที่</label>
+      <input id="payDate" type="date">
+      <button class="primary" onclick="confirmPayDebt()">บันทึกการชำระ</button>
+      <h3 style="margin-top:16px;">ประวัติการชำระ (Logbook)</h3>
+      <div id="debtLogbook">-</div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="billModal" onclick="if(event.target===this) this.classList.remove('active')">
+    <div class="modal">
+      <div class="close-btn" onclick="document.getElementById('billModal').classList.remove('active')">ปิด ✕</div>
+      <h3 id="billModalTitle">แก้ไขรายจ่ายประจำ</h3>
+      <label>จำนวนเงิน</label>
+      <input id="editBillAmount" type="number" placeholder="0">
+      <label>ครบกำหนดวันที่</label>
+      <input id="editBillDueDay" type="number" min="1" max="31">
+      <label>จ่ายทุกกี่เดือน</label>
+      <select id="editBillInterval">
+        <option value="1">ทุก 1 เดือน</option>
+        <option value="2">ทุก 2 เดือน</option>
+        <option value="3">ทุก 3 เดือน</option>
+        <option value="6">ทุก 6 เดือน</option>
+        <option value="12">ทุก 12 เดือน</option>
+      </select>
+      <button class="primary" onclick="saveBillEdit()">บันทึกการแก้ไข</button>
+      <button class="secondary" style="border-color:#ff5d8f;color:#ff5d8f;" onclick="deleteBillConfirm()">🗑️ ลบรายการนี้</button>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="reserveModal" onclick="if(event.target===this) this.classList.remove('active')">
+    <div class="modal">
+      <div class="close-btn" onclick="document.getElementById('reserveModal').classList.remove('active')">ปิด ✕</div>
+      <h3 id="reserveModalTitle">แก้ไขเงินสำรอง</h3>
+      <label>ยอดปัจจุบัน</label>
+      <input id="editResAmount" type="number" placeholder="0">
+      <label>โน้ต</label>
+      <input id="editResNote" placeholder="ไม่บังคับ">
+      <button class="primary" onclick="saveReserveEdit()">บันทึกการแก้ไข</button>
+      <button class="secondary" style="border-color:#ff5d8f;color:#ff5d8f;" onclick="deleteReserveConfirm()">🗑️ ลบบัญชีสำรองนี้</button>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="txModal" onclick="if(event.target===this) this.classList.remove('active')">
+    <div class="modal">
+      <div class="close-btn" onclick="document.getElementById('txModal').classList.remove('active')">ปิด ✕</div>
+      <h3 id="txModalTitle">แก้ไขรายการ</h3>
+      <div id="txModalInfo" class="sub" style="margin-bottom:8px;"></div>
+      <label>หมวดหมู่</label>
+      <input id="editTxCategory">
+      <label>จำนวนเงิน</label>
+      <input id="editTxAmount" type="number">
+      <label>วันที่</label>
+      <input id="editTxDate" type="date">
+      <label>โน้ต</label>
+      <input id="editTxNote">
+      <button class="primary" onclick="saveTxEdit()">บันทึกการแก้ไข</button>
+      <button class="secondary" style="border-color:#ff5d8f;color:#ff5d8f;" onclick="deleteTxConfirm()">🗑️ ลบรายการนี้</button>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="accountModal" onclick="if(event.target===this) this.classList.remove('active')">
+    <div class="modal">
+      <div class="close-btn" onclick="document.getElementById('accountModal').classList.remove('active')">ปิด ✕</div>
+      <h3 id="accountModalTitle">แก้ไขบัญชี</h3>
+      <label>ประเภท</label>
+      <select id="editAccType">
+        <option value="ธนาคาร">ธนาคาร</option>
+        <option value="เงินสด">เงินสด</option>
+        <option value="วอลเล็ต/เติมเงิน">วอลเล็ต/เติมเงิน</option>
+        <option value="บัตรเครดิต">บัตรเครดิต</option>
+        <option value="อื่นๆ">อื่นๆ</option>
+      </select>
+      <label>ยอดเงิน</label>
+      <input id="editAccBalance" type="number">
+      <label>โน้ต</label>
+      <input id="editAccNote">
+      <button class="primary" onclick="saveAccountEdit()">บันทึกการแก้ไข</button>
+      <button class="secondary" style="border-color:#ff5d8f;color:#ff5d8f;" onclick="deleteAccountConfirm()">🗑️ ลบบัญชีนี้</button>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="investModal" onclick="if(event.target===this) this.classList.remove('active')">
+    <div class="modal">
+      <div class="close-btn" onclick="document.getElementById('investModal').classList.remove('active')">ปิด ✕</div>
+      <h3 id="investModalTitle">แก้ไขพอร์ตลงทุน</h3>
+      <label>ประเภท</label>
+      <input id="editInvType">
+      <label>มูลค่าปัจจุบัน</label>
+      <input id="editInvAmount" type="number">
+      <label>โน้ต</label>
+      <input id="editInvNote">
+      <button class="primary" onclick="saveInvestEdit()">บันทึกการแก้ไข</button>
+      <button class="secondary" style="border-color:#ff5d8f;color:#ff5d8f;" onclick="deleteInvestConfirm()">🗑️ ลบรายการนี้</button>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="confirmModal" style="z-index:200;">
+    <div class="modal" style="max-width:420px;margin:auto;border-radius:20px;">
+      <h3 id="confirmText" style="font-size:15px;color:var(--ink);">ยืนยันการลบ?</h3>
+      <button class="primary" style="background:linear-gradient(135deg,#ff8fb1,#ff5d8f);" onclick="confirmYes()">✅ ยืนยันลบ</button>
+      <button class="secondary" onclick="confirmNo()">ยกเลิก</button>
+    </div>
+  </div>
+
+  <script>
+    var cache = null;
+    var _confirmResolve = null;
+
+    function customConfirm(message) {
+      document.getElementById('confirmText').textContent = message;
+      document.getElementById('confirmModal').classList.add('active');
+      return new Promise(function(resolve) { _confirmResolve = resolve; });
+    }
+    function confirmYes() {
+      document.getElementById('confirmModal').classList.remove('active');
+      if (_confirmResolve) _confirmResolve(true);
+    }
+    function confirmNo() {
+      document.getElementById('confirmModal').classList.remove('active');
+      if (_confirmResolve) _confirmResolve(false);
+    }
+    var currentDebtName = null;
+
+    function showTab(name) {
+      document.querySelectorAll('.tab-content').forEach(function(el){ el.classList.remove('active'); });
+      document.getElementById('tab-' + name).classList.add('active');
+      document.querySelectorAll('.tabbar button').forEach(function(el){ el.classList.remove('active'); });
+      event.currentTarget.classList.add('active');
+      if (name === 'dashboard') loadData();
+    }
+
+    function toast(msg) {
+      var t = document.getElementById('toast');
+      t.textContent = msg;
+      t.style.display = 'block';
+      setTimeout(function(){ t.style.display = 'none'; }, 2200);
+    }
+
+    document.getElementById('txDate').valueAsDate = new Date();
+    (function(){
+      var n = new Date();
+      document.getElementById('billStartMonth').value = n.getFullYear() + '-' + String(n.getMonth()+1).padStart(2,'0');
+    })();
+    document.getElementById('payDate').valueAsDate = new Date();
+
+    document.querySelectorAll('#txType button').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        document.querySelectorAll('#txType button').forEach(function(b){ b.classList.remove('active'); });
+        btn.classList.add('active');
+        var isTransfer = btn.dataset.v === 'โอนเงิน';
+        document.getElementById('lblToAccount').style.display = isTransfer ? 'block' : 'none';
+        document.getElementById('txToAccount').style.display = isTransfer ? 'block' : 'none';
+        document.getElementById('lblAccount').textContent = isTransfer ? 'โอนจากบัญชี' : 'บัญชี';
+      });
+    });
+
+    function getTxType() { return document.querySelector('#txType button.active').dataset.v; }
+
+    function callServer(fnName, payload) {
+      return new Promise(function(resolve, reject) {
+        google.script.run
+          .withSuccessHandler(resolve)
+          .withFailureHandler(reject)[fnName](payload);
+      });
+    }
+
+    function postAction(payload) {
+      var fnName = payload.action;
+      var args = {};
+      Object.keys(payload).forEach(function(k){ if (k !== 'action') args[k] = payload[k]; });
+      return callServer(fnName, args)
+        .catch(function(err){ toast('เชื่อมต่อไม่ได้: ' + (err && err.message ? err.message : err)); return { error: String(err && err.message ? err.message : err) }; });
+    }
+
+    function submitTx() {
+      var amount = document.getElementById('txAmount').value;
+      var accountRaw = document.getElementById('txAccount').value;
+      if (!amount) { toast('กรอกจำนวนเงินก่อนนะ'); return; }
+      if (!accountRaw) { toast('เลือกบัญชีก่อนนะ (ไปเพิ่มที่แท็บบัญชีถ้ายังไม่มี)'); return; }
+      var accountParts = accountRaw.split('|');
+      var accountType = accountParts[0] || 'account';
+      var accountName = accountParts[1] || '';
+      var toRaw = document.getElementById('txToAccount').value;
+      var toParts = toRaw.split('|');
+      var toAccountType = toParts[0] || 'account';
+      var toAccountName = toParts[1] || '';
+      postAction({
+        action: 'addTransaction',
+        type: getTxType(),
+        account: accountName,
+        accountType: accountType,
+        toAccount: toAccountName,
+        toAccountType: toAccountType,
+        category: document.getElementById('txCategory').value,
+        amount: amount,
+        date: document.getElementById('txDate').value,
+        note: document.getElementById('txNote').value
+      }).then(function(res){
+        if (res.ok) {
+          toast('บันทึกแล้ว ✅');
+          document.getElementById('txAmount').value = '';
+          document.getElementById('txCategory').value = '';
+          document.getElementById('txNote').value = '';
+        } else toast('error: ' + (res.error || 'ไม่สำเร็จ'));
+      });
+    }
+
+    function submitAccount() {
+      var name = document.getElementById('accName').value;
+      if (!name) { toast('กรอกชื่อบัญชีก่อนนะ'); return; }
+      postAction({
+        action: 'addAccount', name: name,
+        type: document.getElementById('accType').value,
+        balance: document.getElementById('accBalance').value
+      }).then(function(res){
+        if (res.ok) {
+          toast('เพิ่มบัญชีแล้ว ✅');
+          document.getElementById('accName').value = '';
+          document.getElementById('accBalance').value = '';
+          loadData();
+        } else toast('error: ' + (res.error || ''));
+      });
+    }
+
+    function submitDebt() {
+      var name = document.getElementById('debtName').value;
+      if (!name) { toast('กรอกชื่อหนี้ก่อนนะ'); return; }
+      postAction({
+        action: 'addDebt', name: name,
+        originalAmount: document.getElementById('debtOriginal').value,
+        remainingAmount: document.getElementById('debtRemaining').value,
+        interestRate: document.getElementById('debtRate').value,
+        minPayment: document.getElementById('debtMin').value,
+        startDate: document.getElementById('debtStart').value,
+        termMonths: document.getElementById('debtTerm').value
+      }).then(function(res){
+        if (res.ok) {
+          toast('เพิ่มหนี้แล้ว ✅');
+          document.getElementById('debtName').value = '';
+          document.getElementById('debtOriginal').value = '';
+          document.getElementById('debtRemaining').value = '';
+          document.getElementById('debtRate').value = '';
+          document.getElementById('debtMin').value = '';
+          document.getElementById('debtTerm').value = '';
+          loadData();
+        } else toast('error: ' + (res.error || ''));
+      });
+    }
+
+    function openDebtModal(name) {
+      currentDebtName = name;
+      var debt = cache.debts.find(function(d){ return d.Name === name; });
+      if (!debt) return;
+      document.getElementById('debtModalTitle').textContent = name;
+      var monthsElapsed = debt.StartDate ? Math.floor((new Date() - new Date(debt.StartDate)) / (1000*60*60*24*30)) : 0;
+      var remainingMonths = Number(debt.TermMonths) - monthsElapsed;
+      document.getElementById('debtModalInfo').innerHTML =
+        '<div class="list-item"><span>ยอดคงเหลือ</span><span class="yellow">' + fmt(debt.RemainingAmount) + '</span></div>' +
+        '<div class="list-item"><span>ดอกเบี้ย</span><span>' + debt.InterestRate + '% /ปี</span></div>' +
+        '<div class="list-item"><span>ผ่อนขั้นต่ำ/เดือน</span><span>' + fmt(debt.MinPayment) + '</span></div>' +
+        '<div class="list-item"><span>ระยะเวลาทั้งหมด</span><span>' + debt.TermMonths + ' เดือน</span></div>' +
+        '<div class="list-item"><span>เหลืออีก</span><span>' + (remainingMonths > 0 ? remainingMonths : 0) + ' เดือน</span></div>';
+      var logs = cache.debtLogs.filter(function(l){ return l.DebtName === name; }).reverse();
+      document.getElementById('debtLogbook').innerHTML = logs.map(function(l){
+        return '<div class="list-item"><span>' + l.Date + '<div class="sub">' + (l.Note||'') + '</div></span><span class="green">-' + fmt(l.Amount) + '</span></div>';
+      }).join('') || 'ยังไม่มีประวัติการชำระ';
+      document.getElementById('debtModal').classList.add('active');
+    }
+
+    function confirmPayDebt() {
+      var amount = document.getElementById('payAmount').value;
+      if (!amount) { toast('กรอกจำนวนที่ชำระก่อนนะ'); return; }
+      postAction({
+        action: 'payDebt', name: currentDebtName, amount: amount,
+        account: document.getElementById('payAccount').value,
+        date: document.getElementById('payDate').value
+      }).then(function(res){
+        if (res.ok) {
+          toast('บันทึกการชำระแล้ว ✅');
+          document.getElementById('payAmount').value = '';
+          loadData().then(function(){ openDebtModal(currentDebtName); });
+        } else toast('error: ' + (res.error || ''));
+      });
+    }
+
+    function submitReserve() {
+      var name = document.getElementById('resName').value;
+      if (!name) { toast('กรอกชื่อก่อนนะ'); return; }
+      var exists = cache && cache.reserves.some(function(r){ return r.Name === name; });
+      if (exists) { toast('มีบัญชีนี้แล้ว แตะที่รายการด้านล่างเพื่อแก้ไขนะ'); return; }
+      postAction({
+        action: 'addReserve', name: name,
+        amount: document.getElementById('resAmount').value,
+        note: document.getElementById('resNote').value
+      }).then(function(res){
+        if (res.ok) {
+          toast('บันทึกแล้ว ✅');
+          document.getElementById('resName').value = '';
+          document.getElementById('resAmount').value = '';
+          document.getElementById('resNote').value = '';
+          loadData();
+        } else toast('error: ' + (res.error || ''));
+      });
+    }
+
+    var currentReserveName = null;
+
+    function openReserveModal(name) {
+      currentReserveName = name;
+      var r = cache.reserves.find(function(x){ return x.Name === name; });
+      if (!r) return;
+      document.getElementById('reserveModalTitle').textContent = name;
+      document.getElementById('editResAmount').value = r.Amount;
+      document.getElementById('editResNote').value = r.Note || '';
+      document.getElementById('reserveModal').classList.add('active');
+    }
+
+    function saveReserveEdit() {
+      postAction({
+        action: 'updateReserve', name: currentReserveName,
+        amount: document.getElementById('editResAmount').value,
+        note: document.getElementById('editResNote').value
+      }).then(function(res){
+        if (res.ok) {
+          toast('บันทึกแล้ว ✅');
+          document.getElementById('reserveModal').classList.remove('active');
+          loadData();
+        } else toast('error: ' + (res.error || ''));
+      });
+    }
+
+    function deleteReserveConfirm() {
+      customConfirm('ลบบัญชีสำรอง "' + currentReserveName + '" ใช่ไหม?').then(function(ok){
+        if (!ok) return;
+        postAction({ action: 'deleteReserve', name: currentReserveName }).then(function(res){
+          if (res.ok) {
+            toast('ลบแล้ว ✅');
+            document.getElementById('reserveModal').classList.remove('active');
+            loadData();
+          } else toast('error: ' + (res.error || ''));
+        });
+      });
+    }
+
+    function submitInvestment() {
+      var name = document.getElementById('invName').value;
+      if (!name) { toast('กรอกชื่อก่อนนะ'); return; }
+      var exists = cache && cache.investments.some(function(i){ return i.Name === name; });
+      var act = exists ? 'updateInvestment' : 'addInvestment';
+      postAction({
+        action: act, name: name,
+        type: document.getElementById('invType').value,
+        amount: document.getElementById('invAmount').value,
+        note: document.getElementById('invNote').value
+      }).then(function(res){
+        if (res.ok) {
+          toast('บันทึกแล้ว ✅');
+          document.getElementById('invName').value = '';
+          document.getElementById('invType').value = '';
+          document.getElementById('invAmount').value = '';
+          document.getElementById('invNote').value = '';
+          loadData();
+        } else toast('error: ' + (res.error || ''));
+      });
+    }
+
+    function submitBill() {
+      var name = document.getElementById('billName').value;
+      if (!name) { toast('กรอกชื่อบิลก่อนนะ'); return; }
+      postAction({
+        action: 'addBill', name: name,
+        amount: document.getElementById('billAmount').value,
+        dueDay: document.getElementById('billDueDay').value,
+        intervalMonths: document.getElementById('billInterval').value,
+        startMonth: document.getElementById('billStartMonth').value,
+        linkedDebt: document.getElementById('billLinkedDebt').value
+      }).then(function(res){
+        if (res.ok) {
+          toast('เพิ่มแล้ว ✅');
+          document.getElementById('billName').value = '';
+          document.getElementById('billAmount').value = '';
+          document.getElementById('billDueDay').value = '';
+          loadData();
+        } else toast('error: ' + (res.error || ''));
+      });
+    }
+
+    var currentBillName = null;
+
+    function openBillModal(name) {
+      currentBillName = name;
+      var b = cache.bills.find(function(x){ return x.Name === name; });
+      if (!b) return;
+      document.getElementById('billModalTitle').textContent = name;
+      document.getElementById('editBillAmount').value = b.Amount;
+      document.getElementById('editBillDueDay').value = b.DueDay;
+      document.getElementById('editBillInterval').value = b.IntervalMonths || 1;
+      document.getElementById('billModal').classList.add('active');
+    }
+
+    function saveBillEdit() {
+      postAction({
+        action: 'updateBill', name: currentBillName,
+        amount: document.getElementById('editBillAmount').value,
+        dueDay: document.getElementById('editBillDueDay').value,
+        intervalMonths: document.getElementById('editBillInterval').value
+      }).then(function(res){
+        if (res.ok) {
+          toast('บันทึกแล้ว ✅');
+          document.getElementById('billModal').classList.remove('active');
+          loadData();
+        } else toast('error: ' + (res.error || ''));
+      });
+    }
+
+    function deleteBillConfirm() {
+      customConfirm('ลบรายการ "' + currentBillName + '" ใช่ไหม?').then(function(ok){
+        if (!ok) return;
+        postAction({ action: 'deleteBill', name: currentBillName }).then(function(res){
+          if (res.ok) {
+            toast('ลบแล้ว ✅');
+            document.getElementById('billModal').classList.remove('active');
+            loadData();
+          } else toast('error: ' + (res.error || ''));
+        });
+      });
+    }
+
+    function ymToIndexJS(ym) {
+      var p = String(ym).split('-');
+      return Number(p[0]) * 12 + Number(p[1]);
+    }
+
+    function isBillDueThisCycleJS(b, ym) {
+      var startIdx = ymToIndexJS(b.StartMonth || ym);
+      var interval = Number(b.IntervalMonths) || 1;
+      var diff = ymToIndexJS(ym) - startIdx;
+      return diff >= 0 && (diff % interval === 0);
+    }
+
+    function fmt(n) {
+      n = Number(n) || 0;
+      return n.toLocaleString('th-TH', { maximumFractionDigits: 0 }) + ' บาท';
+    }
+
+    function buildGroupedOptions(accounts, reserves, debts, investments, opts) {
+      opts = opts || {};
+      var html = opts.placeholder ? '<option value="">' + opts.placeholder + '</option>' : '';
+      if (accounts && accounts.length) html += '<optgroup label="🏦 บัญชี">' + accounts.map(function(a){ return '<option value="account|' + a.Name + '">' + a.Name + (opts.showBalance ? ' (' + fmt(a.Balance) + ')' : '') + '</option>'; }).join('') + '</optgroup>';
+      if (reserves && reserves.length) html += '<optgroup label="🛟 เงินสำรอง">' + reserves.map(function(r){ return '<option value="reserve|' + r.Name + '">' + r.Name + (opts.showBalance ? ' (' + fmt(r.Amount) + ')' : '') + '</option>'; }).join('') + '</optgroup>';
+      if (debts && debts.length) html += '<optgroup label="📉 ชำระหนี้">' + debts.map(function(d){ return '<option value="debt|' + d.Name + '">' + d.Name + '</option>'; }).join('') + '</optgroup>';
+      if (investments && investments.length) html += '<optgroup label="📈 พอร์ตลงทุน">' + investments.map(function(i){ return '<option value="investment|' + i.Name + '">' + i.Name + (opts.showBalance ? ' (' + fmt(i.Amount) + ')' : '') + '</option>'; }).join('') + '</optgroup>';
+      return html;
+    }
+
+    function populateAccountSelects(data) {
+      var accounts = data.accounts, reserves = data.reserves, debts = data.debts, investments = data.investments;
+
+      // ต้นทาง: บัญชี + เงินสำรอง + พอร์ตลงทุน (ไม่รวมหนี้ เพราะไม่มีเงินให้ดึงออกมาใช้)
+      document.getElementById('txAccount').innerHTML = buildGroupedOptions(accounts, reserves, null, investments, { placeholder: '-- เลือกบัญชี --', showBalance: true });
+
+      // ปลายทาง: บัญชี + เงินสำรอง + หนี้(ชำระ) + พอร์ตลงทุน
+      document.getElementById('txToAccount').innerHTML = buildGroupedOptions(accounts, reserves, debts, investments, { placeholder: '-- เลือกปลายทาง --' });
+
+      document.getElementById('payAccount').innerHTML = '<option value="">-- ไม่ระบุ --</option>' + accounts.map(function(a){ return '<option value="' + a.Name + '">' + a.Name + '</option>'; }).join('');
+    }
+
+    function populateDebtSelect(debts) {
+      document.getElementById('billLinkedDebt').innerHTML = '<option value="">-- ไม่เชื่อม --</option>' +
+        debts.map(function(d){ return '<option value="' + d.Name + '">' + d.Name + '</option>'; }).join('');
+    }
+
+    function loadData() {
+      return callServer('getAllData')
+        .then(function(data){
+          cache = data;
+          populateAccountSelects(data);
+          populateDebtSelect(data.debts);
+          renderDashboard(data);
+          renderAccountList(data.accounts);
+          renderTxList(data.transactions);
+          renderDebtList(data.debts);
+          renderReserveList(data.reserves);
+          renderInvestList(data.investments);
+          renderBillList(data.bills);
+        })
+        .catch(function(err){ toast('โหลดข้อมูลไม่ได้: ' + err); });
+    }
+
+    function renderDashboard(data) {
+      var now = new Date();
+      var ym = now.getFullYear() + '-' + String(now.getMonth()+1).padStart(2,'0');
+      var income = 0, expense = 0;
+      data.transactions.forEach(function(t){
+        var d = String(t.Date);
+        if (d.indexOf(ym) === 0) {
+          if (t.Type === 'รายรับ') income += Number(t.Amount);
+          else if (t.Type === 'รายจ่าย') expense += Number(t.Amount);
+        }
+      });
+      var totalDebt = data.debts.reduce(function(s,d){ return s + Number(d.RemainingAmount); }, 0);
+      var totalReserve = data.reserves.reduce(function(s,r){ return s + Number(r.Amount); }, 0);
+      var totalInvest = data.investments.reduce(function(s,i){ return s + Number(i.Amount); }, 0);
+      document.getElementById('sumIncome').textContent = fmt(income);
+      document.getElementById('sumExpense').textContent = fmt(expense);
+      document.getElementById('sumDebt').textContent = fmt(totalDebt);
+      document.getElementById('sumReserve').textContent = fmt(totalReserve);
+      document.getElementById('sumInvest').textContent = fmt(totalInvest);
+      document.getElementById('sumRunway').textContent = expense > 0 ? (totalReserve / expense).toFixed(1) + ' เดือน' : '-';
+
+      var today = now.getDate();
+      var nowYm = now.getFullYear() + '-' + String(now.getMonth()+1).padStart(2,'0');
+      var upcoming = (data.bills || []).filter(function(b){
+        var diff = Number(b.DueDay) - today;
+        return b.Active !== false && b.Active !== 'FALSE' && diff >= 0 && diff <= 3 && isBillDueThisCycleJS(b, nowYm);
+      });
+      var banner = document.getElementById('billBanner');
+      if (upcoming.length > 0) {
+        banner.style.display = 'block';
+        banner.innerHTML = '🔔 ใกล้ครบกำหนด: ' + upcoming.map(function(b){ return b.Name + ' (' + fmt(b.Amount) + ' วันที่ ' + b.DueDay + ')'; }).join(', ');
+      } else banner.style.display = 'none';
+
+      document.getElementById('accountBalances').innerHTML = data.accounts.map(function(a){
+        return '<div class="list-item"><span>' + a.Name + '<div class="sub">' + a.Type + '</div></span><span>' + fmt(a.Balance) + '</span></div>';
+      }).join('') || 'ยังไม่มีบัญชี — ไปเพิ่มที่แท็บ 🏦 บัญชี';
+
+      var recent = data.transactions.slice(-10).reverse();
+      document.getElementById('recentTx').innerHTML = recent.map(function(t){
+        var cls = t.Type === 'รายรับ' ? 'green' : (t.Type === 'โอนเงิน' ? 'yellow' : 'red');
+        var label = t.Type === 'โอนเงิน' ? ((t.Account||'-') + ' → ' + (t.ToAccount||'-')) : ((t.Category||'-') + ' · ' + (t.Account||'-'));
+        return '<div class="list-item"><span>' + (t.Date||'-') + '<div class="sub">' + label + '</div></span><span class="' + cls + '">' + fmt(t.Amount) + '</span></div>';
+      }).join('') || 'ยังไม่มีรายการ';
+    }
+
+    function renderAccountList(accounts) {
+      document.getElementById('accountList').innerHTML = accounts.map(function(a){
+        return '<div class="list-item" onclick="openAccountModal(\'' + a.Name + '\')"><span>' + a.Name + '<div class="sub">' + a.Type + '</div></span><span>' + fmt(a.Balance) + '</span></div>';
+      }).join('') || 'ยังไม่มีบัญชี';
+    }
+
+    var currentAccountName = null;
+
+    function openAccountModal(name) {
+      currentAccountName = name;
+      var a = cache.accounts.find(function(x){ return x.Name === name; });
+      if (!a) return;
+      document.getElementById('accountModalTitle').textContent = name;
+      document.getElementById('editAccType').value = a.Type || 'ธนาคาร';
+      document.getElementById('editAccBalance').value = a.Balance;
+      document.getElementById('editAccNote').value = a.Note || '';
+      document.getElementById('accountModal').classList.add('active');
+    }
+
+    function saveAccountEdit() {
+      postAction({
+        action: 'updateAccount', name: currentAccountName,
+        type: document.getElementById('editAccType').value,
+        balance: document.getElementById('editAccBalance').value,
+        note: document.getElementById('editAccNote').value
+      }).then(function(res){
+        if (res.ok) {
+          toast('บันทึกแล้ว ✅');
+          document.getElementById('accountModal').classList.remove('active');
+          loadData();
+        } else toast('error: ' + (res.error || ''));
+      });
+    }
+
+    function deleteAccountConfirm() {
+      customConfirm('ลบบัญชี "' + currentAccountName + '" ใช่ไหม? (รายการที่ผูกกับบัญชีนี้จะยังอยู่)').then(function(ok){
+        if (!ok) return;
+        postAction({ action: 'deleteAccount', name: currentAccountName }).then(function(res){
+          if (res.ok) {
+            toast('ลบแล้ว ✅');
+            document.getElementById('accountModal').classList.remove('active');
+            loadData();
+          } else toast('error: ' + (res.error || ''));
+        });
+      });
+    }
+
+    var currentTxId = null;
+    var TYPE_LABEL = { reserve: 'เงินสำรอง', debt: 'หนี้', investment: 'พอร์ตลงทุน', account: 'บัญชี' };
+
+    function renderTxList(transactions) {
+      var sorted = (transactions || []).slice().reverse();
+      document.getElementById('txList').innerHTML = sorted.map(function(t){
+        var cls = t.Type === 'รายรับ' ? 'green' : (t.Type === 'โอนเงิน' ? 'yellow' : 'red');
+        var accountName = t.Account || '-';
+        var fromLabel = TYPE_LABEL[t.AccountType] || 'บัญชี';
+        var label;
+        if (t.Type === 'โอนเงิน') {
+          var toLabel = TYPE_LABEL[t.ToAccountType] || 'บัญชี';
+          label = accountName + ' (' + fromLabel + ') → ' + (t.ToAccount || '-') + ' (' + toLabel + ')';
+        } else {
+          label = (t.Category || '-') + ' · ' + accountName + (t.AccountType && t.AccountType !== 'account' ? ' (' + fromLabel + ')' : '');
+        }
+        return '<div class="list-item" onclick="openTxModal(\'' + t.Id + '\')">' +
+          '<span>' + (t.Date || '-') + '<div class="sub">' + label + (t.Note ? ' · ' + t.Note : '') + '</div></span>' +
+          '<span class="' + cls + '">' + fmt(t.Amount) + '</span></div>';
+      }).join('') || 'ยังไม่มีรายการ';
+    }
+
+    function openTxModal(id) {
+      var t = cache.transactions.find(function(x){ return x.Id === id; });
+      if (!t) { toast('รายการนี้แก้ไขไม่ได้ (เป็นรายการเก่าก่อนอัปเดต)'); return; }
+      currentTxId = id;
+      var accountName = t.Account || '(ไม่มีข้อมูล)';
+      var infoLabel = t.Type === 'โอนเงิน' ? (accountName + ' → ' + (t.ToAccount || '(ไม่มีข้อมูล)')) : ((t.Type || '-') + ' · ' + accountName);
+      document.getElementById('txModalTitle').textContent = t.Type || 'รายการ';
+      document.getElementById('txModalInfo').textContent = infoLabel;
+      document.getElementById('editTxCategory').value = t.Category || '';
+      document.getElementById('editTxAmount').value = Number(t.Amount) || 0;
+      document.getElementById('editTxDate').value = t.Date || '';
+      document.getElementById('editTxNote').value = t.Note || '';
+      document.getElementById('txModal').classList.add('active');
+    }
+
+    function saveTxEdit() {
+      postAction({
+        action: 'updateTransaction', id: currentTxId,
+        category: document.getElementById('editTxCategory').value,
+        amount: document.getElementById('editTxAmount').value,
+        date: document.getElementById('editTxDate').value,
+        note: document.getElementById('editTxNote').value
+      }).then(function(res){
+        if (res.ok) {
+          toast('บันทึกแล้ว ✅');
+          document.getElementById('txModal').classList.remove('active');
+          loadData();
+        } else toast('error: ' + (res.error || ''));
+      });
+    }
+
+    function deleteTxConfirm() {
+      customConfirm('ลบรายการนี้ใช่ไหม? ระบบจะคืนยอดเงินในบัญชีให้อัตโนมัติ').then(function(ok){
+        if (!ok) return;
+        postAction({ action: 'deleteTransaction', id: currentTxId }).then(function(res){
+          if (res.ok) {
+            toast('ลบแล้ว ✅');
+            document.getElementById('txModal').classList.remove('active');
+            loadData();
+          } else toast('error: ' + (res.error || ''));
+        });
+      });
+    }
+
+    function renderDebtList(debts) {
+      document.getElementById('debtList').innerHTML = debts.map(function(d){
+        return '<div class="list-item" onclick="openDebtModal(\'' + d.Name + '\')">' +
+          '<span>' + d.Name + '<div class="sub">' + d.InterestRate + '% /ปี · เหลือผ่อน ' + d.TermMonths + ' เดือนรวม</div></span>' +
+          '<span class="yellow">' + fmt(d.RemainingAmount) + '</span></div>';
+      }).join('') || 'ยังไม่มีหนี้บันทึกไว้';
+    }
+
+    function renderReserveList(reserves) {
+      document.getElementById('reserveList').innerHTML = reserves.map(function(r){
+        return '<div class="list-item" onclick="openReserveModal(\'' + r.Name + '\')">' +
+          '<span>' + r.Name + (r.Note ? '<div class="sub">' + r.Note + '</div>' : '') + '</span>' +
+          '<span class="green">' + fmt(r.Amount) + '</span></div>';
+      }).join('') || 'ยังไม่มีข้อมูล';
+    }
+
+    function renderInvestList(investments) {
+      document.getElementById('investList').innerHTML = investments.map(function(i){
+        return '<div class="list-item" onclick="openInvestModal(\'' + i.Name + '\')"><span>' + i.Name + ' (' + i.Type + ')</span><span class="green">' + fmt(i.Amount) + '</span></div>';
+      }).join('') || 'ยังไม่มีข้อมูล';
+    }
+
+    var currentInvestName = null;
+
+    function openInvestModal(name) {
+      currentInvestName = name;
+      var i = cache.investments.find(function(x){ return x.Name === name; });
+      if (!i) return;
+      document.getElementById('investModalTitle').textContent = name;
+      document.getElementById('editInvType').value = i.Type || '';
+      document.getElementById('editInvAmount').value = i.Amount;
+      document.getElementById('editInvNote').value = i.Note || '';
+      document.getElementById('investModal').classList.add('active');
+    }
+
+    function saveInvestEdit() {
+      postAction({
+        action: 'updateInvestment', name: currentInvestName,
+        type: document.getElementById('editInvType').value,
+        amount: document.getElementById('editInvAmount').value,
+        note: document.getElementById('editInvNote').value
+      }).then(function(res){
+        if (res.ok) {
+          toast('บันทึกแล้ว ✅');
+          document.getElementById('investModal').classList.remove('active');
+          loadData();
+        } else toast('error: ' + (res.error || ''));
+      });
+    }
+
+    function deleteInvestConfirm() {
+      customConfirm('ลบรายการ "' + currentInvestName + '" ใช่ไหม?').then(function(ok){
+        if (!ok) return;
+        postAction({ action: 'deleteInvestment', name: currentInvestName }).then(function(res){
+          if (res.ok) {
+            toast('ลบแล้ว ✅');
+            document.getElementById('investModal').classList.remove('active');
+            loadData();
+          } else toast('error: ' + (res.error || ''));
+        });
+      });
+    }
+
+    function renderBillList(bills) {
+      var now = new Date();
+      var nowYm = now.getFullYear() + '-' + String(now.getMonth()+1).padStart(2,'0');
+      document.getElementById('billList').innerHTML = (bills || []).map(function(b){
+        var interval = Number(b.IntervalMonths) || 1;
+        var intervalText = interval === 1 ? 'ทุกเดือน' : 'ทุก ' + interval + ' เดือน';
+        var dueThisMonth = isBillDueThisCycleJS(b, nowYm);
+        return '<div class="list-item" onclick="openBillModal(\'' + b.Name + '\')">' +
+          '<span>' + b.Name + '<div class="sub">ครบกำหนดวันที่ ' + b.DueDay + ' · ' + intervalText + (dueThisMonth ? ' · 🔔 เดือนนี้ถึงรอบ' : '') + '</div></span>' +
+          '<span class="yellow">' + fmt(b.Amount) + '</span></div>';
+      }).join('') || 'ยังไม่มีรายจ่ายประจำ';
+    }
+
+    loadData();
+  </script>
+</body>
+</html>
