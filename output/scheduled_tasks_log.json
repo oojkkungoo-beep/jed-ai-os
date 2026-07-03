@@ -13,8 +13,35 @@
     "name": "Atlas Daily Reflection",
     "emoji": "🪞",
     "schedule": "ทุกวัน ~05:19",
-    "lastRunAt": "2026-06-16T05:19:00+07:00",
+    "lastRunAt": "2026-07-01T05:19:00+07:00",
     "lastRunStatus": "success",
-    "lastRunNote": "Atlas reflection วันจันทร์ที่ 15 มิถุนายน 2569 เรียบร้อย"
+    "lastRunNote": "Atlas reflection ของ 30 มิถุนายน 2569 เรียบร้อย (ยืนยันจาก commit 84aeca5) — เดิม log ค้างที่ 16 มิ.ย. ทั้งที่งานรันจริง 3 รอบ (26/27/30 มิ.ย.) เป็น log-only bug ไม่ใช่ cron พัง — Cinder แก้ให้ตรงจริง 2026-07-03"
+  },
+  {
+    "taskId": "lena-weekly-vault-digest",
+    "name": "Lena Weekly Vault Digest",
+    "emoji": "📚",
+    "schedule": "ทุกวันจันทร์ ~05:20",
+    "lastRunAt": "2026-06-26T00:17:00+07:00",
+    "lastRunStatus": "degraded",
+    "lastRunNote": "ไม่ยืนยัน — หลักฐานล่าสุดคือ weekly-2026-W26.md (แก้ไข 26 มิ.ย., วันศุกร์ ไม่ใช่จันทร์ตามกำหนด) ยังไม่มี weekly-2026-W27.md (ควรรันจันทร์ 29 มิ.ย.) เกิน 1 รอบแล้ว — สงสัยว่า cron ไม่รันตามกำหนดหรือรันด้วยมือแทน ต้องให้ Lena ตรวจยืนยันจริงอีกครั้ง"
+  },
+  {
+    "taskId": "second-brain-git-backup",
+    "name": "Second Brain Git Backup",
+    "emoji": "💾",
+    "schedule": "อัตโนมัติเมื่อมีการเปลี่ยนแปลง vault",
+    "lastRunAt": "2026-07-01T10:41:41+07:00",
+    "lastRunStatus": "success",
+    "lastRunNote": "ยืนยันจาก git log จริงของ D:\\Second_Brain_gitdata\\Second_Brain.git (commit auto: 2026-07-01 10:41:41) — backup ทำงานปกติ ต่อเนื่อง ไม่มีปัญหา"
+  },
+  {
+    "taskId": "vera-weekly-audit",
+    "name": "Vera Weekly Audit",
+    "emoji": "🔎",
+    "schedule": "ทุกวันอาทิตย์ 21:13",
+    "lastRunAt": "2026-06-28T21:13:00+07:00",
+    "lastRunStatus": "success",
+    "lastRunNote": "ยืนยันจาก output/qa/2026-06-28-weekly-audit.md — รอบถัดไป 5 ก.ค. ยังไม่ถึงกำหนด"
   }
 ]

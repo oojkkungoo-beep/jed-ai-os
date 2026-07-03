@@ -25,8 +25,11 @@ review / QA / ตรวจสอบ / skill → Vera   (team/qa.md)
 vault / Second Brain / บันทึก / sync note / จัด inbox → Lena (team/librarian.md) — ทุก input ผ่าน Laura ก่อน
 งานเล็ก / ด่วน               → Laura  (team/laura.md)
 ```
-**Model & Tools:** ดู `team/model_assignment.md` — แนะนำ model/tool เสริมต่อ agent (Fable 5, Opus 4.8, Sonnet 4.6, Haiku 4.5, Canva/pptx/xlsx)
+**Model & Tools:** ดู `team/model_assignment.md` — แนะนำ model/tool เสริมต่อ agent (Fable 5, Opus 4.8, Sonnet 5, Haiku 4.5, Canva/pptx/xlsx)
 **โครงสร้างแผนก:** ดู `team/org_structure.md` — แบ่งแผนก+หัวหน้าแผนก งานข้ามแผนกผ่าน Laura เหมือนเดิม
+
+## Dropbox Pipeline — ทางเลือกเสริมจากส่งไฟล์ตรงให้ Laura
+Jed วางไฟล์ดิบที่ต้องการให้วิเคราะห์+เก็บเป็น KB ลง `00-Dropbox/` แล้วพิมพ์ "เช็ค dropbox" บอก Laura (สั่งเองตามต้องการ ไม่มี cron อัตโนมัติ) → Laura route ให้ Scout วิเคราะห์ก่อนถ้าจำเป็น แล้วส่งต่อ Lena สร้าง KB note + เก็บเข้า Second Brain เสมอ — รายละเอียดดู `team/laura.md` และ `team/librarian.md` โหมด 1.5
 
 ## กฎ In-Parallel — ส่งงานหลาย Agent พร้อมกัน
 เมื่อ Laura ต้อง delegate งานให้ agent มากกว่า 1 ตัวที่ไม่ติดเงื่อนไขกัน (ไม่ต้องรอผลตัวแรกก่อนเริ่มตัวที่สอง) → ต้องสั่งให้รัน **in parallel เสมอ** ระบุชัดในคำสั่ง ห้ามปล่อยให้รันแบบ sequential โดยไม่ตั้งใจ เพราะเสีย token/เวลาโดยไม่จำเป็น (ดู `output/research/2026-06-28-notebooklm-skill-workflow-pipeline.md`)

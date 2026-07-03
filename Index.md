@@ -3,29 +3,29 @@
 อัปเดตอัตโนมัติด้วย `scripts/sync_index.py` (Cinder รันทุกครั้งที่มีไฟล์ใหม่/แก้ไฟล์ใน team, characters, output) ห้ามแก้ไฟล์นี้ตรงๆ
 
 
-สร้างล่าสุด: 2026-06-28 00:14
+สร้างล่าสุด: 2026-07-03 13:34
 
 
 ## Agent Definitions (team/)
 
-- [Lena — Vault Librarian & Knowledge Synthesizer (เลนา)](team/librarian.md) (2026-06-25)
+- [Cinder — Maintenance & Ops (ซินเดอร์)](team/cinder.md) (2026-07-03)
+- [Mint — Finance Agent (มิ้นท์)](team/finance.md) (2026-07-03)
+- [Forge — Dev Agent (ฟอร์จ)](team/forge.md) (2026-07-03)
+- [Muse — Idea & Content Agent (มิ้วส์)](team/idea.md) (2026-07-03)
+- [Laura — Orchestrator (ลอร่า)](team/laura.md) (2026-07-03)
+- [Lena — Vault Librarian & Knowledge Synthesizer (เลนา)](team/librarian.md) (2026-07-03)
+- [Nova — Life & Health Manager (โนว่า)](team/life.md) (2026-07-03)
+- [Sage — Memory Agent (เซจ)](team/memory_agent.md) (2026-07-03)
+- [Model Assignment — ทีม Laura](team/model_assignment.md) (2026-07-03)
+- [Vera — QA & Skill Developer (เวร่า)](team/qa.md) (2026-07-03)
+- [Scout — Research & Analysis Agent (สเกาท์)](team/research.md) (2026-07-03)
+- [Eir — Wellness & Vitality Healer (เอียร์)](team/wellness.md) (2026-07-03)
 - [Checklist การเพิ่ม Agent ใหม่เข้าทีม Laura](team/agent_creation_checklist.md) (2026-06-21)
-- [Cinder — Maintenance & Ops (ซินเดอร์)](team/cinder.md) (2026-06-21)
-- [Forge — Dev Agent (ฟอร์จ)](team/forge.md) (2026-06-21)
-- [Model Assignment — ทีม Laura](team/model_assignment.md) (2026-06-21)
 - [โครงสร้างทีม Laura — แบ่งแผนก](team/org_structure.md) (2026-06-21)
-- [Vera — QA & Skill Developer (เวร่า)](team/qa.md) (2026-06-21)
-- [Scout — Research & Analysis Agent (สเกาท์)](team/research.md) (2026-06-21)
 - [Atlas — CEO Coach & Strategist (แอตลาส)](team/ceo_coach.md) (2026-06-20)
 - [Council — Strategic Decision Chamber (เคาน์ซิล)](team/council.md) (2026-06-20)
 - [Devil — Adversarial Reviewer (เดวิล)](team/devil.md) (2026-06-20)
-- [Mint — Finance Agent (มิ้นท์)](team/finance.md) (2026-06-20)
-- [Muse — Idea & Content Agent (มิ้วส์)](team/idea.md) (2026-06-20)
-- [Laura — Orchestrator (ลอร่า)](team/laura.md) (2026-06-20)
-- [Nova — Life & Health Manager (โนว่า)](team/life.md) (2026-06-20)
-- [Sage — Memory Agent (เซจ)](team/memory_agent.md) (2026-06-20)
 - [Video Knowledge Pipeline — สกัดความรู้จาก YouTube/วิดีโอ ผ่าน NotebookLM](team/video_knowledge_pipeline.md) (2026-06-20)
-- [Eir — Wellness & Vitality Healer (เอียร์)](team/wellness.md) (2026-06-20)
 
 ## Character Definitions (characters/)
 
@@ -47,7 +47,10 @@
 
 ## Diary (output/diary/)
 
+- [📔 Diary — วันอังคารที่ 30 มิถุนายน 2569](output/diary/2026-06-30.md) (2026-06-30) — Sage
+- [📔 Diary — วันอาทิตย์ที่ 28 มิถุนายน 2569](output/diary/2026-06-28.md) (2026-06-28)
 - [📔 Diary — วันศุกร์ที่ 26 มิถุนายน 2569](output/diary/2026-06-26.md) (2026-06-27)
+- [📔 Diary — วันเสาร์ที่ 27 มิถุนายน 2569](output/diary/2026-06-27.md) (2026-06-27)
 - [📔 Diary — วันจันทร์ที่ 15 มิถุนายน 2569](output/diary/2026-06-15.md) (2026-06-16)
 - [📔 Diary — วันอังคารที่ 16 มิถุนายน 2569](output/diary/2026-06-16.md) (2026-06-15)
 - [📔 Diary — วันอาทิตย์ที่ 14 มิถุนายน 2569](output/diary/2026-06-14.md) (2026-06-14)
@@ -71,7 +74,9 @@
 
 ## Decisions (output/decisions/)
 
+- [🪞 Atlas Daily Reflection — วันอังคารที่ 30 มิถุนายน 2569](output/decisions/2026-06-30-atlas-reflection-ceo-lens.md) (2026-06-30) — Atlas
 - [🪞 Atlas Daily Reflection — วันศุกร์ที่ 26 มิถุนายน 2569](output/decisions/2026-06-26-atlas-reflection-ceo-lens.md) (2026-06-27)
+- [🪞 Atlas Daily Reflection — วันเสาร์ที่ 27 มิถุนายน 2569](output/decisions/2026-06-27-atlas-reflection-ceo-lens.md) (2026-06-27)
 - [🪞 Atlas Daily Reflection — วันพฤหัสบดีที่ 25 มิถุนายน 2569](output/decisions/2026-06-25-atlas-reflection-ceo-lens.md) (2026-06-25)
 - ["Devil Review: Second Brain git relocation — Mode B"](output/decisions/2026-06-20-devil-second-brain-git-relocation.md) (2026-06-20)
 - [🪞 Atlas Daily Reflection — วันจันทร์ที่ 15 มิถุนายน 2569](output/decisions/2026-06-15-atlas-reflection-ceo-lens.md) (2026-06-16)
@@ -82,6 +87,9 @@
 
 ## QA (output/qa/)
 
+- ["Vera World-Class Skill Audit — ทั้งทีม 14 agent (deep pass + external skills)"](output/qa/2026-07-03-worldclass-skill-audit.md) (2026-07-03)
+- ["Vera On-Demand Audit — Model & Skill ทั้งทีม (โฟกัส Cinder)"](output/qa/2026-07-01-team-model-skill-audit.md) (2026-07-01)
+- ["Vera Weekly Team Audit — 28 มิถุนายน 2569"](output/qa/2026-06-28-weekly-audit.md) (2026-06-28)
 - ["Vera Weekly Team Audit — 26 มิถุนายน 2569"](output/qa/2026-06-26-weekly-audit.md) (2026-06-25)
 - ["Vera Review: Lena — Second Brain Vault Fixes"](output/qa/2026-06-20-second-brain-vault-fixes.md) (2026-06-20)
 - [🔎 Vera Review: Laura — อัปเดต Model Assignment ทีม](output/qa/2026-06-12-model-assignment.md) (2026-06-12)
@@ -101,3 +109,9 @@
 - [Memory Index](output/content/AI_Secretary_Template/memory/MEMORY.md) (2026-06-15)
 - [[ชื่อ Agent] — [หน้าที่สั้นๆ เช่น "ผู้ช่วยด้านไอเดีย/คอนเทนต์"]](output/content/AI_Secretary_Template/team/_persona_template.md) (2026-06-15)
 - [วิธีใช้โฟลเดอร์ team/](output/content/AI_Secretary_Template/team/README.md) (2026-06-15)
+
+## Output — Other
+
+- [🔥 ย้าย ชศพอ. Web App → Netlify + บัญชีใหม่ nurse.rtafnc@gmail.com — Cinder](output/dev/2026-07-01-cinder-migrate-rtaf-nurse-web-netlify.md) (2026-07-01)
+- [🔧 ระบบทะเบียนเวชภัณฑ์ (Medsupply Registry) — Build + Audit + Deploy](output/dev/2026-06-29-medsupply-registry-deploy.md) (2026-06-29)
+- [💰 รีวิว "4 พิมพ์เขียวการเงิน" ของ Annabel เทียบกับสถานะ Jed](output/finance/2026-06-28-annabel-wealth-architect-framework-review.md) (2026-06-27)

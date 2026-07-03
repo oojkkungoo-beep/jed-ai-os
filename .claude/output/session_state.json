@@ -671,17 +671,17 @@
     ]
   },
   "7f036072-7c30-4b99-b9dd-69f602fda078": {
-    "date": "24 มิถุนายน 2569",
+    "date": "2 กรกฎาคม 2569",
     "scores": {
-      "🎯 Strategy & CEO": 2,
-      "💡 Creative & Content": 9,
-      "🌿 Life & Health": 6,
-      "🔍 Research": 23,
-      "⚖️ Decision": 2,
-      "🔧 Dev & Tech": 44,
+      "🎯 Strategy & CEO": 4,
+      "💡 Creative & Content": 11,
+      "🌿 Life & Health": 10,
+      "🔍 Research": 44,
+      "⚖️ Decision": 3,
+      "🔧 Dev & Tech": 67,
       "💰 Finance": 5,
-      "📝 Memory & Diary": 33,
-      "🤖 System & Setup": 24
+      "📝 Memory & Diary": 59,
+      "🤖 System & Setup": 42
     },
     "tasks": [
       "ความหมายแบบง่าย: เหมือนการ \"คัดลอกเส้นทางงาน\" ออกไปอีกเส้นหนึ่ง โดยเริ่มจากจุดที่เราอยู่ตอนนี้ (commit ปัจจุบัน) — งานที",
@@ -816,14 +816,14 @@
     "tasks": []
   },
   "18b4d2d5-79e3-4629-82e2-c79ed4297190": {
-    "date": "24 มิถุนายน 2569",
+    "date": "29 มิถุนายน 2569",
     "scores": {
       "🎯 Strategy & CEO": 1,
-      "💡 Creative & Content": 2,
+      "💡 Creative & Content": 3,
       "🌿 Life & Health": 1,
-      "🔍 Research": 10,
+      "🔍 Research": 14,
       "⚖️ Decision": 3,
-      "🔧 Dev & Tech": 16,
+      "🔧 Dev & Tech": 25,
       "📝 Memory & Diary": 4,
       "🤖 System & Setup": 1
     },
@@ -917,14 +917,14 @@
   "d1d1b289-e2ff-40ce-b7f3-a9acb5e6b508": {
     "date": "28 มิถุนายน 2569",
     "scores": {
-      "💡 Creative & Content": 9,
-      "🌿 Life & Health": 1,
-      "🔍 Research": 37,
+      "💡 Creative & Content": 18,
+      "🌿 Life & Health": 3,
+      "🔍 Research": 42,
       "⚖️ Decision": 4,
-      "🔧 Dev & Tech": 25,
+      "🔧 Dev & Tech": 35,
       "💰 Finance": 1,
-      "📝 Memory & Diary": 5,
-      "🤖 System & Setup": 16
+      "📝 Memory & Diary": 10,
+      "🤖 System & Setup": 19
     },
     "tasks": [
       "ก่อนเริ่มงานใหม่ ขอเช็ค memory ที่มีอยู่ก่อนนะคะ เพราะจำได้ว่าเคยทำเรื่องนี้ผ่าน NotebookLM ไปแล้วรอบหนึ่ง (TU/MWIT/KVIS",
@@ -958,6 +958,463 @@
       "Atlas กำลังเริ่มงาน reflection ประจำวันโดยอ่านบริบทของเมื่อวาน (2026-06-26) จาก diary, session log, และ memory ที่เกี่ยว",
       "Diary อัปเดตเรียบร้อย ตอนนี้ sync ไปที่ Second Brain vault (ใช้ path ปัจจุบัน `D:\\NB_G_Drive\\Second_Brain\\` เพราะ vault ",
       "- **Action เล็ก:** แค่ commit+push งาน 6 วันที่ค้างอยู่ (ใช้เวลา <5 นาที) — ผมยังไม่ได้ทำให้ เพราะ task นี้อนุญาตแค่ com"
+    ]
+  },
+  "0417110c-142c-4319-8432-a606f1e2fb53": {
+    "date": "29 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 2,
+      "💡 Creative & Content": 58,
+      "🌿 Life & Health": 21,
+      "🔍 Research": 117,
+      "⚖️ Decision": 18,
+      "🔧 Dev & Tech": 103,
+      "💰 Finance": 164,
+      "📝 Memory & Diary": 53,
+      "🤖 System & Setup": 48
+    },
+    "tasks": [
+      "- ยังไม่ชัดว่าเธอขายคอร์ส/ที่ปรึกษาแบบมีค่าใช้จ่ายหรือไม่ ต้องดูเพจจริงเพิ่ม",
+      "| **Mind map extraction** | `download mind-map` | Export hierarchical JSON for visualization tools |",
+      "| Error | Cause | Action |",
+      "| Code | Meaning | Action |",
+      "ถามเพิ่มเติมเรื่อง private banking ให้หน่อยครับ",
+      "## 🔍 Private Banking — เจาะลึกเพิ่มเติม",
+      "ค้นหาเพิ่มเติมเรื่อง private banker ในบริบทของ annabel",
+      "ต้องการให้ค้นเพิ่มมุมไหนอีกไหมครับ หรือพอแล้วอยากให้ส่งสรุปทั้งหมดต่อ Mint"
+    ]
+  },
+  "16f10a09-5789-46ee-83d4-5600a1ea7ae3": {
+    "date": "28 มิถุนายน 2569",
+    "scores": {
+      "🔧 Dev & Tech": 3,
+      "🤖 System & Setup": 3
+    },
+    "tasks": [
+      "ขอเช็คเพิ่มอีกนิดว่า L3210 ตัวจริงเปิดเครื่อง/เสียบสาย USB หรือต่อ WiFi อยู่หรือเปล่าก่อนนะคะ คลิกดูรายละเอียดเครื่อง L3",
+      "1. **กระดาษทดสอบออกจากเครื่องพิมพ์จริงไหม?** ถ้าไม่ออก แปลว่าปัญหาอยู่ที่สาย USB/WiFi หรือเครื่องพิมพ์ไม่ได้เปิดอยู่ ไม่",
+      "กระดาษทดสอบพิมพ?ออกแล้ว  แต่ผมสั่งอีกครั้งไม่ออก  ผมต้องการพิมพ์ถาพนี้ \"C:\\Users\\oojkk\\OneDrive\\Documents\\S__54788099.jp"
+    ]
+  },
+  "b0587e87-c410-4953-8600-72956e4ccaf3": {
+    "date": "28 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 1,
+      "💡 Creative & Content": 1,
+      "🌿 Life & Health": 1,
+      "⚖️ Decision": 1,
+      "🔧 Dev & Tech": 2,
+      "💰 Finance": 2,
+      "📝 Memory & Diary": 17,
+      "🤖 System & Setup": 5
+    },
+    "tasks": [
+      "- ตรวจ `team/*.md` ทั้งหมดว่ามี role ซ้ำซ้อนกันใหม่ไหม (โดยเฉพาะไฟล์ที่ถูกแก้ในสัปดาห์นี้)",
+      "- เช็คว่า Laura ลงมือทำงานเองที่ควร delegate ไหม (ดู git log `--since=\"7 days ago\"` ว่า commit ไหนควรเป็นของ Forge/Mint/",
+      "- รัน `git log --since=\"7 days ago\" --oneline` ใน `D:\\Claude_Cowork\\Jed_org` แล้วประเมินว่า agent ไหนรับงานมากที่สุด/น้อ",
+      "- ถ้า agent คนเดียวรับงานข้ามหลายโดเมนต่อเนื่องเกิน 2 สัปดาห์ → flag ว่าอาจต้องพิจารณาแยกบทบาท (แต่ไม่ต้องเสนอสร้าง agen",
+      "สร้างไฟล์ `D:\\Claude_Cowork\\Jed_org\\output\\qa\\YYYY-MM-DD-weekly-audit.md` ใช้ format จาก `team/qa.md` (Output Review sty",
+      "- ถ้าไม่เจอปัญหาอะไรเลย ให้เขียนสั้นๆว่า \"สัปดาห์นี้ทุกอย่างปกติ\" ไม่ต้องยืดเพื่อให้ดูมีเนื้อหา",
+      "**คะแนนสัปดาห์นี้: C+**",
+      "- Token growth ของ `CLAUDE.md`/`team/*.md` เป็นโครงสร้าง ไม่ bloat (ส่วนใหญ่คือ frontmatter sync)"
+    ]
+  },
+  "b9a8eb8a-8bd2-4164-a046-727a6026223d": {
+    "date": "29 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 10,
+      "💡 Creative & Content": 257,
+      "🌿 Life & Health": 13,
+      "🔍 Research": 137,
+      "⚖️ Decision": 14,
+      "🔧 Dev & Tech": 289,
+      "💰 Finance": 46,
+      "📝 Memory & Diary": 140,
+      "🤖 System & Setup": 227
+    },
+    "tasks": [
+      "นอกจากส่งให้ลอร่าโดยตรง  ขอเพิ่มเป็นแบบนี้ได้ไหม",
+      "1 ผมนำไฟล์ใส่ folder >>> 2 ทีมอ่านและวิเคราะห์ >>>>3 สร้างเป็น Knowledge Base >>>> 4 จัดเก็บ second brain แบบนี้ได้ไหม",
+      "3. ส่งต่อให้ **Lena** สร้างเป็นโน้ต KB (frontmatter + cross-link แบบ Zettelkasten)",
+      "**ต้องผ่าน skill เฉพาะก่อน (Lena/Scout เรียก skill ให้ ไม่ต้องทำเอง):**",
+      "ถ้า Jed มีไฟล์วิดีโอ/เสียงที่อยากเข้า KB เหมือนกัน บอกได้เลยค่ะ จะให้ Forge เพิ่ม branch ใน pipeline ให้ไหมคะ หรือจะส่งแ",
+      "[Laura] มีข้อเสียที่ควรรู้ก่อนตัดสินใจเพิ่มเข้า pipeline ค่ะ",
+      "[Laura] ไม่เหมือนกันทั้งหมดค่ะ ต่างกันที่จุดเริ่มกับวิธีจัดเก็บ แต่ปลายทางทำได้เหมือนกันถ้า Jed สั่ง",
+      "- ไม่ต้องรอ Jed พิมพ์ \"เช็ค dropbox\" — ผมเห็นไฟล์ในแชทแล้วเริ่มได้เลยถ้า Jed สั่งให้วิเคราะห์"
+    ]
+  },
+  "fa689602-1021-4a17-9252-9f5e02254b10": {
+    "date": "29 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 1,
+      "💡 Creative & Content": 5,
+      "🌿 Life & Health": 3,
+      "🔍 Research": 3,
+      "⚖️ Decision": 3,
+      "🔧 Dev & Tech": 33,
+      "💰 Finance": 2,
+      "📝 Memory & Diary": 3,
+      "🤖 System & Setup": 7
+    },
+    "tasks": [
+      "- **เหมาะกับ:** งานง่ายๆ ไม่ซับซ้อน อยากเริ่มเร็ว",
+      "**คำแนะนำ:** ถ้า automation ที่ต้องการต้องทำงานตลอดเวลา (เช่น เช็คอีเมลทุกชั่วโมง) → ต้องใช้ VPS หรือ cloud ถ้าเป็นงานที",
+      "- ค่าเริ่มต้นใช้ SQLite ได้เลย (ไม่ต้องตั้งค่าเพิ่ม)",
+      "**คำถามก่อนเริ่ม:** Jed อยากรันบนเครื่องนี้เลย (ใช้ Tailscale ที่มีอยู่แล้ว) หรืออยากเช่า VPS แยกคะ และมี use case แรกที",
+      "### 1. Google Cloud Run (แนะนำสุดสำหรับเริ่มต้น)",
+      "- **ข้อเสีย:** ต้องดูแล server เองนิดหน่อย (อัปเดต, security patch)",
+      "**สิ่งที่ต้องมีก่อนเริ่ม:** Google Cloud account ที่ผูก billing ไว้แล้ว (แม้จะใช้ free tier ก็ต้องผูกบัตรเครดิตไว้เผื่อเ",
+      "อยากให้ Forge เริ่ม setup ให้เลยไหมคะ หรือ Jed อยากดูรายละเอียดราคา/ขั้นตอนเพิ่มก่อน? และมี Google Cloud account/billing"
+    ]
+  },
+  "a51f7a9d-7bc2-4f20-97ff-f288321c27d5": {
+    "date": "29 มิถุนายน 2569",
+    "scores": {
+      "💡 Creative & Content": 1,
+      "🔍 Research": 1,
+      "🔧 Dev & Tech": 3
+    },
+    "tasks": [
+      "- สร้าง zip ใหม่ชื่อ `second-brain-git-YYYY-MM-DD.zip` ถ้ายังไม่มีของวันนี้",
+      "บริบท: นี่คือ fix ที่ Devil เสนอไว้หลังจากตรวจพบว่าการย้าย `.git` ออกจากโฟลเดอร์ sync คลาวด์ (เพื่อป้องกัน conflict) ทำใ"
+    ]
+  },
+  "425d2603-e0e1-4122-99dc-4ba0ebe474a2": {
+    "date": "29 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 23,
+      "💡 Creative & Content": 8,
+      "🔍 Research": 2,
+      "⚖️ Decision": 2,
+      "🔧 Dev & Tech": 1,
+      "💰 Finance": 3,
+      "📝 Memory & Diary": 24,
+      "🤖 System & Setup": 1
+    },
+    "tasks": [
+      "## สิ่งเล็กๆที่ทำได้วันนี้/พรุ่งนี้",
+      "[1 action เล็กมาก ทำได้ใน 24 ชม. ที่เชื่อมกับงานค้างจริง]",
+      "- สร้างไฟล์ `output/decisions/YYYY-MM-DD-atlas-reflection-ceo-lens.md` (ใช้วันที่ของเมื่อวาน รูปแบบ YYYY-MM-DD จาก step ",
+      "- ถ้ามี `output/diary/YYYY-MM-DD.md` ของเมื่อวานแล้ว → เพิ่ม section ใหม่ \"### 🪞 Atlas Daily Reflection\" ต่อท้ายในส่วน \"",
+      "- sync diary ที่อัปเดต/สร้างใหม่ไปที่ `D:\\Second_Brain\\40-Life\\Diary\\YYYY-MM-DD.md` ด้วย (copy ไฟล์ทับ, ใช้วันที่ของเมื่",
+      "- **คำถามท้าทาย:** ถ้าเจดเขียน \"Anti-writing\" ฉบับของตัวเองบ้าง จะใส่พฤติกรรมอะไร — และทำไมสร้างระบบ AI ถึงรู้สึกง่ายกว่",
+      "- **Action เล็ก:** ถ่ายรูป NursePant 1 ใบ ส่ง Muse ขึ้นโพสต์ (ค้างจาก 25 มิ.ย.)"
+    ]
+  },
+  "19857f80-9989-4ea4-a569-c5fbefa3c92f": {
+    "date": "29 มิถุนายน 2569",
+    "scores": {
+      "💡 Creative & Content": 1,
+      "🔍 Research": 2,
+      "⚖️ Decision": 1,
+      "🔧 Dev & Tech": 2,
+      "💰 Finance": 2,
+      "📝 Memory & Diary": 6,
+      "🤖 System & Setup": 2
+    },
+    "tasks": [
+      "**Plus** — ~$10/เดือน (ถ้าจ่ายรายปี) — ปลดล็อก AI summary มากขึ้น/ฟีเจอร์เพิ่ม"
+    ]
+  },
+  "b2ab7bc5-5ab6-45ef-b8dc-76cb86d74f51": {
+    "date": "29 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 2,
+      "💡 Creative & Content": 13,
+      "🌿 Life & Health": 7,
+      "🔍 Research": 4,
+      "⚖️ Decision": 1,
+      "🔧 Dev & Tech": 17,
+      "💰 Finance": 5,
+      "📝 Memory & Diary": 28,
+      "🤖 System & Setup": 9
+    },
+    "tasks": [
+      "- `output/todos.json` (pending tasks)"
+    ]
+  },
+  "157c57a8-1ed1-4b98-a98a-aa13f570200c": {
+    "date": "29 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 1,
+      "💡 Creative & Content": 2,
+      "🔍 Research": 1,
+      "⚖️ Decision": 5,
+      "🔧 Dev & Tech": 2,
+      "💰 Finance": 1,
+      "📝 Memory & Diary": 2,
+      "🤖 System & Setup": 3
+    },
+    "tasks": [
+      "ผมอยากสร้างระบบ home sever เล็กๆ ในบ้าน ราคาประหยัด ทนๆ",
+      "ต้องการให้ผมเขียนแผน setup ทีละขั้น (OS, Docker, network, backup strategy) เลยไหมคะ หรือยังอยากดูตัวเลือกฮาร์ดแวร์เพิ่มก"
+    ]
+  },
+  "5fef14a2-ddc0-4079-93c3-dbff982ecc21": {
+    "date": "29 มิถุนายน 2569",
+    "scores": {
+      "💡 Creative & Content": 48,
+      "🌿 Life & Health": 1,
+      "🔍 Research": 49,
+      "⚖️ Decision": 5,
+      "🔧 Dev & Tech": 28,
+      "💰 Finance": 32,
+      "📝 Memory & Diary": 7,
+      "🤖 System & Setup": 48
+    },
+    "tasks": [
+      "| **Mind map extraction** | `download mind-map` | Export hierarchical JSON for visualization tools |",
+      "| Error | Cause | Action |",
+      "| Code | Meaning | Action |",
+      "Login ใหม่สำเร็จแล้วค่ะ กำลังสร้าง notebook และเพิ่มวิดีโอเข้าไป",
+      "วิดีโอคือ \"ลืมวิธีเขียนเว็บแบบเดิมๆ! ใช้ Claude Design & Code สร้างระบบใช้จริงในองค์กร\" — ตรงกับงาน dev ของเรา รอ source",
+      "Source ready แล้ว เริ่มถามรอบที่ 1 (สรุปกว้าง + หา pattern)",
+      "อยากให้ Forge ลองเอา pattern \"เลือกโมเดลตามเฟส\" ไปทดสอบกับงาน dev จริงในมือตอนนี้ไหมคะ หรือจะเก็บ insight นี้ไว้ใน memor"
+    ]
+  },
+  "1905a7ae-b6bd-450c-9e3b-81e13fa3fe04": {
+    "date": "29 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 4,
+      "💡 Creative & Content": 9,
+      "🌿 Life & Health": 7,
+      "🔍 Research": 14,
+      "⚖️ Decision": 1,
+      "🔧 Dev & Tech": 9,
+      "💰 Finance": 12,
+      "📝 Memory & Diary": 18,
+      "🤖 System & Setup": 3
+    },
+    "tasks": [
+      "[Laura] เปรียบเทียบโครงสร้าง \"ทีมเลขา AI\" ของพี่ Jed กับทีม \"ลงทุน Diary\" ค่ะ",
+      "## โครงสร้างที่ลงทุน Diary แสดงไว้ (เว็บค่อนข้าง high-level)",
+      "| **Auto-governance** | ไม่ระบุ | มี standing rules เช่น auto-sync index, benchmark ก่อนเริ่มงานใหม่, agent creation che",
+      "→ Devil ของเราตอนนี้เป็น opt-in กว้างๆ ยังไม่มี mode ย่อยที่ใช้คนละ model ต่อมุม — ตรงนี้เพิ่มความคม วิเคราะห์ได้ลึกขึ้น",
+      "- เรามี standing rules ระดับ governance (auto-sync, benchmark ก่อนเริ่มงาน, agent creation checklist) ที่เขาไม่มีพูดถึง",
+      "1. เพิ่ม boundary one-liner ให้ทุก agent ใน `team/*.md`",
+      "4. เพิ่ม \"intake triage\" routine ให้ Scout หรือ Lena (ไม่ต้องเปิด agent ใหม่)"
+    ]
+  },
+  "06d226ef-dbe1-4af1-8a84-9684ddce4150": {
+    "date": "29 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 4,
+      "💡 Creative & Content": 10,
+      "🌿 Life & Health": 7,
+      "🔍 Research": 17,
+      "⚖️ Decision": 1,
+      "🔧 Dev & Tech": 9,
+      "💰 Finance": 12,
+      "📝 Memory & Diary": 22,
+      "🤖 System & Setup": 5
+    },
+    "tasks": [
+      "[Laura] เปรียบเทียบโครงสร้าง \"ทีมเลขา AI\" ของพี่ Jed กับทีม \"ลงทุน Diary\" ค่ะ",
+      "## โครงสร้างที่ลงทุน Diary แสดงไว้ (เว็บค่อนข้าง high-level)",
+      "| **Auto-governance** | ไม่ระบุ | มี standing rules เช่น auto-sync index, benchmark ก่อนเริ่มงานใหม่, agent creation che",
+      "→ Devil ของเราตอนนี้เป็น opt-in กว้างๆ ยังไม่มี mode ย่อยที่ใช้คนละ model ต่อมุม — ตรงนี้เพิ่มความคม วิเคราะห์ได้ลึกขึ้น",
+      "- เรามี standing rules ระดับ governance (auto-sync, benchmark ก่อนเริ่มงาน, agent creation checklist) ที่เขาไม่มีพูดถึง",
+      "1. เพิ่ม boundary one-liner ให้ทุก agent ใน `team/*.md`",
+      "4. เพิ่ม \"intake triage\" routine ให้ Scout หรือ Lena (ไม่ต้องเปิด agent ใหม่)",
+      "- Chris/Vera ของเขาแยก QA เป็น 2 ชั้น (structural vs fact) — ของเรา Vera ทำรวมอยู่แล้วใน `team/qa.md`, **ไม่ขาด ไม่ต้องเ"
+    ]
+  },
+  "80509ff7-ad27-4d57-b091-787fc535f456": {
+    "date": "1 กรกฎาคม 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 30,
+      "💡 Creative & Content": 32,
+      "🌿 Life & Health": 15,
+      "🔍 Research": 18,
+      "⚖️ Decision": 5,
+      "🔧 Dev & Tech": 83,
+      "💰 Finance": 3,
+      "📝 Memory & Diary": 151,
+      "🤖 System & Setup": 48
+    },
+    "tasks": [
+      "เนื่องจากจำนวนมากและไฟล์หนักหลายไฟล์ (รวมกันหลาย GB) ขอเช็คให้ตรงทางก่อนเริ่มประมวลผลค่ะ",
+      "ยังไม่ต้องทำ 100 ไฟล์นี้ครับ  ไปทำการ retrofit ทั้ง vault (ไปไล่แยก atomic note จากโน้ตเก่าที่มีอยู่แล้วทั้งหมด)ก่อนเลย",
+      "ขอสำรวจขนาด vault ก่อนว่ามีกี่โน้ตที่ต้องไล่ จะได้ประเมินสโคปให้แม่นก่อนส่ง Lena ลงมือค่ะ",
+      "<result>Note: claude-sonnet-4-6 (the safety classifier) was unavailable when reviewing this subagent's work. Please care",
+      "งานนี้รันเป็น background task — จะรายงานสรุปให้ทันทีที่เสร็จนะคะ (จำนวน atomic note ที่สร้าง, ไฟล์ต้นทางที่ครอบคลุมแล้ว,",
+      "[Laura] 10-Clinical ก็ยังอยู่ในขั้น delegate ต่อ ไม่ใช่ของจริงอีกเช่นกัน — รอ noti ชั้นถัดไปต่อไปค่ะ ไม่ต้องทำอะไรเพิ่มต",
+      "**Atomic notes สร้างใหม่ในรอบนี้ (9 ไฟล์):**",
+      "- `atom-paperclip-ai-release-date` (จาก Paperclip AI วิธีสร้างบริษัท)"
+    ]
+  },
+  "21701eb8-b120-42f7-a934-72fc9445a8e1": {
+    "date": "30 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 2,
+      "💡 Creative & Content": 16,
+      "🌿 Life & Health": 2,
+      "🔍 Research": 55,
+      "⚖️ Decision": 9,
+      "🔧 Dev & Tech": 219,
+      "💰 Finance": 2,
+      "📝 Memory & Diary": 33,
+      "🤖 System & Setup": 31
+    },
+    "tasks": [
+      "ก่อนวาง architecture มีจุดที่อยากให้ Jed เลือกครับ เพราะกระทบโครงสร้างทั้งระบบ",
+      "Backend เสร็จแล้ว ต่อด้วย frontend (SPA หน้าเดียว: list/search, เพิ่ม-แก้-ลบ, detail+QR+logbook)",
+      "**สร้างเสร็จแล้ว** ที่ [Medsupply_Registry/](Medsupply_Registry/)",
+      "| [gas/index.html](Medsupply_Registry/gas/index.html) | SPA หน้าเดียว — list/search/filter, ฟอร์มเพิ่ม-แก้, detail+QR+lo",
+      "**สิ่งที่ Jed ต้องทำต่อ (ทำครั้งแรกเท่านั้น, ตามขั้นตอนใน README):**",
+      "1. สร้าง Google Sheet + Apps Script project, วาง Code.gs + index.html",
+      "2. สร้างโฟลเดอร์ Drive สำหรับรูป → ใส่ Folder ID ใน Code.gs",
+      "ยังไม่ได้ deploy จริงเพราะต้องใช้ Google account ของ Jed เอง (สร้าง Sheet/Apps Script project) — พร้อมเดินตาม README ได้"
+    ]
+  },
+  "785274e0-cce5-4aa9-a046-4ec19073b301": {
+    "date": "29 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 4,
+      "💡 Creative & Content": 3,
+      "🔍 Research": 8,
+      "⚖️ Decision": 5,
+      "🔧 Dev & Tech": 7,
+      "📝 Memory & Diary": 5,
+      "🤖 System & Setup": 20
+    },
+    "tasks": [
+      "ลอร่า  ผมจะแจ้งคุณครับว่าผมได้สร้างทีมเลขาจาก Antigravity ขึ้นมาเพื่อลดการใช้ token นี้  โดยทีมนี้อยู่ที่ D:\\Antigravity",
+      "ต้องการให้ผมเพิ่ม reference link ใน Index.md/CLAUDE.md ตอนนี้เลยไหมคะ หรือรอดูทีม Antigravity นี้ stable ก่อน",
+      "[Laura] รับทราบค่ะ มีอะไรให้ช่วยเพิ่มไหมคะ"
+    ]
+  },
+  "6faf12fa-91a8-4b22-b50a-640eea88a228": {
+    "date": "30 มิถุนายน 2569",
+    "scores": {
+      "💡 Creative & Content": 3,
+      "🔍 Research": 23,
+      "🔧 Dev & Tech": 22,
+      "💰 Finance": 3,
+      "📝 Memory & Diary": 6,
+      "🤖 System & Setup": 4
+    },
+    "tasks": [
+      "Web extraction, search, and URL discovery using the Nimble CLI. Returns clean structured data from any website.",
+      "- **Save all outputs to `.nimble/`.** Never leave extraction results in memory only.",
+      "| **nimble-agent-builder**           | Build reusable agents — create, refine, publish named extraction templates | CLI:",
+      "| \"Crawl / archive a whole section\"  | `nimble crawl`                                | Async bulk extraction            ",
+      "2. **Report:** _\"Found `<agent_name>` — using it now.\"_ or _\"No pre-built agent — falling back to extraction.\"_",
+      "For the full extract waterfall (tiers, flags, browser actions, network capture), see `references/nimble-extract/SKILL.md",
+      "| `references/nimble-extract/SKILL.md`                 | Extract flags, render tiers, browser actions, network capture, ",
+      "| `references/nimble-extract/browser-actions.md`       | Full browser action types and parameters                       "
+    ]
+  },
+  "cd6a18ad-d455-4325-89de-865f595221d7": {
+    "date": "30 มิถุนายน 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 22,
+      "💡 Creative & Content": 19,
+      "🌿 Life & Health": 7,
+      "🔍 Research": 32,
+      "⚖️ Decision": 11,
+      "🔧 Dev & Tech": 19,
+      "💰 Finance": 3,
+      "📝 Memory & Diary": 45,
+      "🤖 System & Setup": 14
+    },
+    "tasks": [
+      "| Action Plan ปี 67 (ซ้อมเพลิงไหม้) | ✅ มีแล้ว |",
+      "| บันทึกเหตุการณ์นิรภัย | ✅ มี (อัปเดตล่าสุด ธ.ค.64) |",
+      "**1. อ่าน Action Plan ปี 67 ที่มีอยู่**",
+      "เกือบทุก folder ยังไม่มีเนื้อหา = งานหลักที่ต้องทำ ได้แก่:",
+      "**อัปเดต folder \"รอปรับปรุง\" ทีละหมวด**",
+      "จาก Action Plan เดิม = ประชุมทุก 2 เดือน — ยืนยันหรือปรับให้เหมาะกับตำแหน่งใหม่",
+      "1. **นัดประชุม kick-off กรรมการ** — แนะนำตัว + ทบทวน action plan เดิม",
+      "อยากให้ Scout วิจัย best practice OR Safety Committee จาก HA/JCI/WHO standard เพิ่มเติม หรืออยากให้ Atlas ช่วยวาง roadma"
+    ]
+  },
+  "dbd71f34-9388-4e21-a546-b4f8d93558f6": {
+    "date": "1 กรกฎาคม 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 20,
+      "💡 Creative & Content": 8,
+      "🔍 Research": 1,
+      "⚖️ Decision": 2,
+      "🔧 Dev & Tech": 1,
+      "💰 Finance": 2,
+      "📝 Memory & Diary": 20,
+      "🤖 System & Setup": 1
+    },
+    "tasks": [
+      "## สิ่งเล็กๆที่ทำได้วันนี้/พรุ่งนี้",
+      "[1 action เล็กมาก ทำได้ใน 24 ชม. ที่เชื่อมกับงานค้างจริง]",
+      "- สร้างไฟล์ `output/decisions/YYYY-MM-DD-atlas-reflection-ceo-lens.md` (ใช้วันที่ของเมื่อวาน รูปแบบ YYYY-MM-DD จาก step ",
+      "- ถ้ามี `output/diary/YYYY-MM-DD.md` ของเมื่อวานแล้ว → เพิ่ม section ใหม่ \"### 🪞 Atlas Daily Reflection\" ต่อท้ายในส่วน \"",
+      "- sync diary ที่อัปเดต/สร้างใหม่ไปที่ `D:\\Second_Brain\\40-Life\\Diary\\YYYY-MM-DD.md` ด้วย (copy ไฟล์ทับ, ใช้วันที่ของเมื่",
+      "ได้บริบทครบแล้ว — มิถุนายน 30 ไม่มี diary, ไม่มีกิจกรรมใหม่จากเจด วันที่ 29 มิ.ย. Vera ทำรายงานเปรียบทีม อ่านแล้ว ตรวจสอ",
+      "Second Brain path ยืนยันแล้ว ค่ะ ตอนนี้สร้างทั้ง decision file และ diary พร้อมกันเลย"
+    ]
+  },
+  "3d039430-34a9-4f1a-bc68-f063fcf026b2": {
+    "date": "2 กรกฎาคม 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 2,
+      "💡 Creative & Content": 31,
+      "🌿 Life & Health": 22,
+      "🔍 Research": 47,
+      "⚖️ Decision": 25,
+      "🔧 Dev & Tech": 308,
+      "💰 Finance": 2,
+      "📝 Memory & Diary": 54,
+      "🤖 System & Setup": 2
+    },
+    "tasks": [
+      "| Framework ที่ถนัดสุด | Next.js (เจ้าของสร้าง Next.js เอง) — SSR/ISR ทำงานลื่นสุด | ไม่ยึดติด framework ไหนเป็นพิเศษ |",
+      "**สรุปเร็ว:** ถ้า Jed จะทำเว็บด้วย **Next.js/React** → Vercel เหมาะกว่า เพราะ deploy แล้วเร็วสุด ไม่ต้อง config เพิ่ม",
+      "- Preview link อัตโนมัติต่อ branch/PR ก่อน merge เข้า main (ดีถ้าจะเพิ่มฟีเจอร์แล้วอยากทดสอบก่อนของจริงเห็น)",
+      "- เพิ่มความซับซ้อนโดยไม่ได้ฟีเจอร์ backend เพิ่มเลย เพราะ backend ยังเป็น GAS เหมือนเดิม",
+      "ก่อนลงมือ อยากถาม 2 เรื่องเพื่อไม่เดาผิด",
+      "2. [`apps-script-new/รหัส.js`](D:\\Claude_Cowork\\rtaf-nurse-web\\apps-script-new\\รหัส.js) — โค้ด backend ใหม่ มี TODO 2 จุ",
+      "จุดที่ต้องระมัดระวังสุดคือ **Google OAuth (Authorized JavaScript origins)** ต้องเพิ่ม domain Netlify ใหม่ใน Google Cloud",
+      "Step 1-4 ต้อง login บัญชี nurse.rtafnc@gmail.com เอง ทำเสร็จแล้วบอกได้เลย จะช่วยเช็ค Step 6 (ทดสอบ) ต่อให้ค่ะ"
+    ]
+  },
+  "0dd146cd-a17a-4d2f-bb2e-fd4eb946245c": {
+    "date": "1 กรกฎาคม 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 3,
+      "💡 Creative & Content": 16,
+      "🌿 Life & Health": 9,
+      "🔍 Research": 3,
+      "⚖️ Decision": 2,
+      "🔧 Dev & Tech": 16,
+      "💰 Finance": 4,
+      "📝 Memory & Diary": 35,
+      "🤖 System & Setup": 10
+    },
+    "tasks": [
+      "- `output/todos.json` (pending tasks)",
+      "- **Vera**: boundary one-liner อัปเดตครบทุก team/*.md + cron status"
+    ]
+  },
+  "52df67bd-61b8-411d-9fdb-da7baef2380c": {
+    "date": "3 กรกฎาคม 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 8,
+      "💡 Creative & Content": 21,
+      "🌿 Life & Health": 11,
+      "🔍 Research": 18,
+      "⚖️ Decision": 11,
+      "🔧 Dev & Tech": 30,
+      "💰 Finance": 11,
+      "📝 Memory & Diary": 14,
+      "🤖 System & Setup": 16
+    },
+    "tasks": [
+      "ช่วย Audit ทีมทุกคนหน่อยครับทั้ง Model และ skill โดยเฉพาะ cinda ขอให้เพิ่ม skill ในการdebug และการเขียนโปรแกรม",
+      "2. **Forge** เจอช่องว่างเดียวกัน (เขียนโค้ดใหม่แต่ไม่เคยอ้างสกิล) → เพิ่ม `karpathy-guidelines`, `code-review`, `securit",
+      "3. **Sage** มี standard เขียนไว้ว่า memory ต้องไม่ปล่อย stale แต่ไม่มีสกิลรองรับ → เพิ่ม `anthropic-skills:consolidate-m",
+      "ทั้งหมดนี้เป็นการแก้ระดับ \"เพิ่มบรรทัดอ้างอิงสกิล\" ยังไม่ได้แตะ core role/boundary ของใครนะคะ — ถ้าอยากให้ Vera ตรวจลึกก",
+      "**สิ่งที่พบเพิ่มจากรอบแรก:**",
+      "- `.gitignore` ยังไม่เพิ่ม `.nimble/` และ `.claude/skills/`",
+      "ถ้า Jed อยากให้อัปเดตทีมจาก Sonnet 4.6 → Sonnet 5 จริงๆ บอกได้เลยนะคะ ไว้ค่อยทำตอนพร้อมค่ะ",
+      "1. **เก็บคำอธิบาย model เข้า dictionary แล้ว** — เพิ่ม Fable 5, Opus 4.8, Sonnet 5, Haiku 4.5 เข้า [output/glossary.json"
     ]
   }
 }

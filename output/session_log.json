@@ -1174,44 +1174,44 @@
   {
     "id": 26,
     "date": "28 มิถุนายน 2569",
-    "topCategory": "🔍 Research",
+    "topCategory": "💰 Finance",
     "tags": [
+      "💰 Finance",
       "🔍 Research",
       "🔧 Dev & Tech",
-      "🤖 System & Setup",
-      "💡 Creative & Content"
+      "🤖 System & Setup"
     ],
-    "summary": "Auto-log: หมวดหลัก 🔍 Research (38%) — รอ Sage สรุปท้ายวัน",
+    "summary": "Auto-log: หมวดหลัก 💰 Finance (21%) — รอ Sage สรุปท้ายวัน",
     "categories": [
       {
+        "name": "💰 Finance",
+        "count": 148,
+        "pct": 21
+      },
+      {
         "name": "🔍 Research",
-        "count": 37,
-        "pct": 38
+        "count": 147,
+        "pct": 21
       },
       {
         "name": "🔧 Dev & Tech",
-        "count": 25,
-        "pct": 26
+        "count": 133,
+        "pct": 19
       },
       {
         "name": "🤖 System & Setup",
-        "count": 16,
-        "pct": 16
+        "count": 80,
+        "pct": 12
       },
       {
         "name": "💡 Creative & Content",
-        "count": 9,
-        "pct": 9
+        "count": 73,
+        "pct": 11
       },
       {
         "name": "📝 Memory & Diary",
-        "count": 5,
-        "pct": 5
-      },
-      {
-        "name": "⚖️ Decision",
-        "count": 4,
-        "pct": 4
+        "count": 69,
+        "pct": 10
       }
     ],
     "tasks": [
@@ -1223,6 +1223,291 @@
       "## ข้อค้นพบหลัก (จาก 8 คลิปของพี่ที่สอนสร้าง Skill/Workflow/KB)",
       "อยากให้ผมเริ่มสร้างอันไหนก่อนครับ หรือ Jed อยากให้ผมถามต่อ NotebookLM อีกรอบในมุมอื่นก่อน?",
       "ถ้า Jed จะลงมือทำ ไม่ต้องถามต่อแล้วครับ พอเริ่มได้เลย — แนะนำเริ่มจาก Master_Profile.md/Anti-writing.md กับกฎ \"in parall"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 27,
+    "date": "29 มิถุนายน 2569",
+    "topCategory": "🔧 Dev & Tech",
+    "tags": [
+      "🔧 Dev & Tech",
+      "📝 Memory & Diary",
+      "💡 Creative & Content",
+      "🔍 Research"
+    ],
+    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (24%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 711,
+        "pct": 24
+      },
+      {
+        "name": "📝 Memory & Diary",
+        "count": 454,
+        "pct": 15
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 447,
+        "pct": 15
+      },
+      {
+        "name": "🔍 Research",
+        "count": 443,
+        "pct": 15
+      },
+      {
+        "name": "🤖 System & Setup",
+        "count": 434,
+        "pct": 14
+      },
+      {
+        "name": "💰 Finance",
+        "count": 287,
+        "pct": 10
+      }
+    ],
+    "tasks": [
+      "ความหมายแบบง่าย: เหมือนการ \"คัดลอกเส้นทางงาน\" ออกไปอีกเส้นหนึ่ง โดยเริ่มจากจุดที่เราอยู่ตอนนี้ (commit ปัจจุบัน) — งานที",
+      "- มี subagent หรือ session แยกที่ต้องทำงานคู่ขนานกัน (เหมือนที่ระบบ Agent tool มี `isolation: worktree` ให้ทำงานแยกจากโค",
+      "ช่วยสร้าง Dictionary คลังคำศัพท์ และจัดเก็บคำศัพท์นี้ให้ผมด้วย",
+      "[Laura] เรียบร้อยค่ะ Jed สร้าง Dictionary คลังคำศัพท์ไว้ที่ [output/glossary.json](output/glossary.json) แล้ว พร้อมเก็บค",
+      "โครงสร้างไฟล์ (ต่อ 1 คำศัพท์):",
+      "[Laura] เพิ่ม Glossary เข้า dashboard เรียบร้อยค่ะ Jed",
+      "- เพิ่มเมนู \"📔 Glossary\" ใน sidebar — [dashboard/index.html](dashboard/index.html)",
+      "- เพิ่มหน้า Glossary พร้อมช่องค้นหาคำศัพท์"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 28,
+    "date": "30 มิถุนายน 2569",
+    "topCategory": "🔧 Dev & Tech",
+    "tags": [
+      "🔧 Dev & Tech",
+      "📝 Memory & Diary",
+      "🔍 Research",
+      "🤖 System & Setup"
+    ],
+    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (33%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 390,
+        "pct": 33
+      },
+      {
+        "name": "📝 Memory & Diary",
+        "count": 289,
+        "pct": 25
+      },
+      {
+        "name": "🔍 Research",
+        "count": 166,
+        "pct": 14
+      },
+      {
+        "name": "🤖 System & Setup",
+        "count": 132,
+        "pct": 11
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 72,
+        "pct": 6
+      },
+      {
+        "name": "🎯 Strategy & CEO",
+        "count": 56,
+        "pct": 5
+      }
+    ],
+    "tasks": [
+      "ความหมายแบบง่าย: เหมือนการ \"คัดลอกเส้นทางงาน\" ออกไปอีกเส้นหนึ่ง โดยเริ่มจากจุดที่เราอยู่ตอนนี้ (commit ปัจจุบัน) — งานที",
+      "- มี subagent หรือ session แยกที่ต้องทำงานคู่ขนานกัน (เหมือนที่ระบบ Agent tool มี `isolation: worktree` ให้ทำงานแยกจากโค",
+      "ช่วยสร้าง Dictionary คลังคำศัพท์ และจัดเก็บคำศัพท์นี้ให้ผมด้วย",
+      "[Laura] เรียบร้อยค่ะ Jed สร้าง Dictionary คลังคำศัพท์ไว้ที่ [output/glossary.json](output/glossary.json) แล้ว พร้อมเก็บค",
+      "โครงสร้างไฟล์ (ต่อ 1 คำศัพท์):",
+      "[Laura] เพิ่ม Glossary เข้า dashboard เรียบร้อยค่ะ Jed",
+      "- เพิ่มเมนู \"📔 Glossary\" ใน sidebar — [dashboard/index.html](dashboard/index.html)",
+      "- เพิ่มหน้า Glossary พร้อมช่องค้นหาคำศัพท์"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 29,
+    "date": "1 กรกฎาคม 2569",
+    "topCategory": "🔧 Dev & Tech",
+    "tags": [
+      "🔧 Dev & Tech",
+      "📝 Memory & Diary",
+      "🤖 System & Setup",
+      "💡 Creative & Content"
+    ],
+    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (34%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 381,
+        "pct": 34
+      },
+      {
+        "name": "📝 Memory & Diary",
+        "count": 303,
+        "pct": 27
+      },
+      {
+        "name": "🤖 System & Setup",
+        "count": 103,
+        "pct": 9
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 92,
+        "pct": 8
+      },
+      {
+        "name": "🔍 Research",
+        "count": 90,
+        "pct": 8
+      },
+      {
+        "name": "🎯 Strategy & CEO",
+        "count": 60,
+        "pct": 5
+      }
+    ],
+    "tasks": [
+      "ความหมายแบบง่าย: เหมือนการ \"คัดลอกเส้นทางงาน\" ออกไปอีกเส้นหนึ่ง โดยเริ่มจากจุดที่เราอยู่ตอนนี้ (commit ปัจจุบัน) — งานที",
+      "- มี subagent หรือ session แยกที่ต้องทำงานคู่ขนานกัน (เหมือนที่ระบบ Agent tool มี `isolation: worktree` ให้ทำงานแยกจากโค",
+      "ช่วยสร้าง Dictionary คลังคำศัพท์ และจัดเก็บคำศัพท์นี้ให้ผมด้วย",
+      "[Laura] เรียบร้อยค่ะ Jed สร้าง Dictionary คลังคำศัพท์ไว้ที่ [output/glossary.json](output/glossary.json) แล้ว พร้อมเก็บค",
+      "โครงสร้างไฟล์ (ต่อ 1 คำศัพท์):",
+      "[Laura] เพิ่ม Glossary เข้า dashboard เรียบร้อยค่ะ Jed",
+      "- เพิ่มเมนู \"📔 Glossary\" ใน sidebar — [dashboard/index.html](dashboard/index.html)",
+      "- เพิ่มหน้า Glossary พร้อมช่องค้นหาคำศัพท์"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 30,
+    "date": "2 กรกฎาคม 2569",
+    "topCategory": "🔧 Dev & Tech",
+    "tags": [
+      "🔧 Dev & Tech",
+      "📝 Memory & Diary",
+      "🔍 Research",
+      "🤖 System & Setup"
+    ],
+    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (51%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 375,
+        "pct": 51
+      },
+      {
+        "name": "📝 Memory & Diary",
+        "count": 113,
+        "pct": 15
+      },
+      {
+        "name": "🔍 Research",
+        "count": 91,
+        "pct": 12
+      },
+      {
+        "name": "🤖 System & Setup",
+        "count": 44,
+        "pct": 6
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 42,
+        "pct": 6
+      },
+      {
+        "name": "🌿 Life & Health",
+        "count": 32,
+        "pct": 4
+      }
+    ],
+    "tasks": [
+      "ความหมายแบบง่าย: เหมือนการ \"คัดลอกเส้นทางงาน\" ออกไปอีกเส้นหนึ่ง โดยเริ่มจากจุดที่เราอยู่ตอนนี้ (commit ปัจจุบัน) — งานที",
+      "- มี subagent หรือ session แยกที่ต้องทำงานคู่ขนานกัน (เหมือนที่ระบบ Agent tool มี `isolation: worktree` ให้ทำงานแยกจากโค",
+      "ช่วยสร้าง Dictionary คลังคำศัพท์ และจัดเก็บคำศัพท์นี้ให้ผมด้วย",
+      "[Laura] เรียบร้อยค่ะ Jed สร้าง Dictionary คลังคำศัพท์ไว้ที่ [output/glossary.json](output/glossary.json) แล้ว พร้อมเก็บค",
+      "โครงสร้างไฟล์ (ต่อ 1 คำศัพท์):",
+      "[Laura] เพิ่ม Glossary เข้า dashboard เรียบร้อยค่ะ Jed",
+      "- เพิ่มเมนู \"📔 Glossary\" ใน sidebar — [dashboard/index.html](dashboard/index.html)",
+      "- เพิ่มหน้า Glossary พร้อมช่องค้นหาคำศัพท์"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 31,
+    "date": "3 กรกฎาคม 2569",
+    "topCategory": "🔧 Dev & Tech",
+    "tags": [
+      "🔧 Dev & Tech",
+      "💡 Creative & Content",
+      "🔍 Research",
+      "🤖 System & Setup"
+    ],
+    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (21%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 30,
+        "pct": 21
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 21,
+        "pct": 15
+      },
+      {
+        "name": "🔍 Research",
+        "count": 18,
+        "pct": 13
+      },
+      {
+        "name": "🤖 System & Setup",
+        "count": 16,
+        "pct": 11
+      },
+      {
+        "name": "📝 Memory & Diary",
+        "count": 14,
+        "pct": 10
+      },
+      {
+        "name": "🌿 Life & Health",
+        "count": 11,
+        "pct": 8
+      }
+    ],
+    "tasks": [
+      "ช่วย Audit ทีมทุกคนหน่อยครับทั้ง Model และ skill โดยเฉพาะ cinda ขอให้เพิ่ม skill ในการdebug และการเขียนโปรแกรม",
+      "2. **Forge** เจอช่องว่างเดียวกัน (เขียนโค้ดใหม่แต่ไม่เคยอ้างสกิล) → เพิ่ม `karpathy-guidelines`, `code-review`, `securit",
+      "3. **Sage** มี standard เขียนไว้ว่า memory ต้องไม่ปล่อย stale แต่ไม่มีสกิลรองรับ → เพิ่ม `anthropic-skills:consolidate-m",
+      "ทั้งหมดนี้เป็นการแก้ระดับ \"เพิ่มบรรทัดอ้างอิงสกิล\" ยังไม่ได้แตะ core role/boundary ของใครนะคะ — ถ้าอยากให้ Vera ตรวจลึกก",
+      "**สิ่งที่พบเพิ่มจากรอบแรก:**",
+      "- `.gitignore` ยังไม่เพิ่ม `.nimble/` และ `.claude/skills/`",
+      "ถ้า Jed อยากให้อัปเดตทีมจาก Sonnet 4.6 → Sonnet 5 จริงๆ บอกได้เลยนะคะ ไว้ค่อยทำตอนพร้อมค่ะ",
+      "1. **เก็บคำอธิบาย model เข้า dictionary แล้ว** — เพิ่ม Fable 5, Opus 4.8, Sonnet 5, Haiku 4.5 เข้า [output/glossary.json"
     ],
     "details": "",
     "relatedProjects": [],

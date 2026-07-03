@@ -10,3 +10,6 @@ Medic_Station/medic_station.db
 Medic_Station/offline_install/python-3.14.5-amd64.exe
 Medic_Station/offline_install/packages/
 desktop.ini
+
+# Nimble scrape cache — ไฟล์ค้นคว้าชั่วคราวจากงานอื่น ไม่เกี่ยวกับ Jed_org (เพิ่ม 2026-07-03 — Cinder)
+.nimble/

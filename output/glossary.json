@@ -39,8 +39,8 @@
     "id": 5,
     "term": "Migration",
     "category": "Dev / Tech",
-    "meaning": "การย้าย/แปลงข้อมูลหรือโครงสร้างจากแบบหนึ่งไปอีกแบบ — Database migration: เปลี่ยนโครงสร้างตาราง/schema แบบมีลำดับขั้นตอนโดยไม่ทำข้อมูลเดิมพัง | ย้ายระบบ: ย้ายข้อมูล/แอปจากที่เก่าไปที่ใหม่",
-    "example": "เพิ่มคอลัมน์ใหม่ในตาราง database หรือย้าย server เก่าไป server ใหม่",
+    "meaning": "การย้าย/แปลงจากแบบหนึ่งไปอีกแบบ มี 3 บริบทหลัก: (1) Database migration — เปลี่ยนโครงสร้างตาราง/schema แบบ script ที่รันทีละขั้นและ rollback ได้, (2) Platform migration — ย้ายแอป/ระบบทั้งหมดไปที่ใหม่, (3) Data migration — แปลงข้อมูลจาก format เก่าไป format ใหม่",
+    "example": "ย้าย ชศพอ. จาก GitHub Pages → Netlify คือ platform migration | เพิ่มคอลัมน์ใหม่ใน database ผ่าน migration script คือ database migration",
     "date_added": "2026-06-20",
     "source": "ถาม Jed ในแชท"
   },
@@ -213,6 +213,258 @@
     "meaning": "runtime ที่ให้รันภาษา JavaScript ได้นอกเบราว์เซอร์ ใช้เขียน server, สคริปต์เบื้องหลัง, CLI tool ได้ด้วย มี npm เป็นคลังไลบรารีให้ใช้งาน",
     "example": "โปรเจกต์ dashboard-svelte/ ของ Jed (SvelteKit) รันอยู่บน Node.js เบื้องหลัง ต่างจาก dashboard เดิมที่ใช้ Python/PowerShell",
     "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 25,
+    "term": "ทำ batch เล็ก (Small batch processing)",
+    "category": "Dev / Process",
+    "meaning": "การแบ่งงานที่ต้องทำกับไฟล์/รายการจำนวนมาก ออกเป็นกลุ่มย่อยครั้งละไม่กี่รายการ (เช่น 5-10 ไฟล์ต่อรอบ) แทนที่จะทำทีเดียวหมดทั้งหมด",
+    "example": "ลดความเสี่ยงถ้า error กระทบแค่กลุ่มเล็ก, ตรวจสอบผลแต่ละรอบได้ง่ายกว่า, คุม token/เวลาไม่ให้บวมเกินไป",
+    "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 26,
+    "term": "Docker",
+    "category": "Dev / Tech",
+    "meaning": "เครื่องมือสำหรับบรรจุแอป/โปรแกรมพร้อมทุกอย่างที่ต้องใช้ (โค้ด, library, การตั้งค่า) ไว้ในกล่องเดียวที่เรียกว่า Container เอาไปรันที่เครื่องไหนก็ได้ผลลัพธ์เหมือนกันทุกครั้ง",
+    "example": "Image = แบบพิมพ์ของแอป, Container = แอปที่รันขึ้นมาจริงจาก image — ใช้ตอน deploy แอปขึ้น server หรือทำให้ทีมมี environment เหมือนกันเป๊ะ",
+    "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 27,
+    "term": "วิเคราะห์และอธิบายคลิปอย่างละเอียด เป็น thesis",
+    "category": "Knowledge / Research",
+    "meaning": "การดูคลิปแล้วสรุป/อธิบายเนื้อหาแบบมีโครงสร้างเชิงวิชาการ ประกอบด้วย 3 ชั้น: (1) สรุปเนื้อหา (content summary) — คลิปพูดเรื่องอะไรตามลำดับจริง เป็นฐาน, (2) แก่นความคิดหลัก (thesis statement) — สังเคราะห์จากสรุปว่าใจความที่คลิปต้องการสื่อจริงๆคืออะไร, (3) วิเคราะห์เชิงลึก — ทำไมประเด็นนั้นสำคัญ เชื่อมโยงกับบริบทอื่นได้อย่างไร",
+    "example": "สรุป = ส่วน 'อะไร' ที่ต้องมีอยู่แล้วเป็นฐาน, thesis/วิเคราะห์ = ส่วน 'ทำไม/แล้วยังไง' ที่ต่อยอดขึ้นไปอีกชั้น — ใช้ใน NotebookLM Video Knowledge Pipeline ของ Jed",
+    "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 28,
+    "term": "Index / Metadata",
+    "category": "Dev / Tech",
+    "meaning": "Index = ดัชนี/รายการสรุปว่าอะไรอยู่ที่ไหน ช่วยหาของเจอเร็วโดยไม่ต้องไล่อ่านทุกไฟล์ | Metadata = ข้อมูลที่อธิบาย 'ข้อมูล' อีกชั้นหนึ่ง (data about data) เช่น วันที่สร้าง, ผู้เขียน, แท็ก ไม่ใช่เนื้อหาจริง",
+    "example": "Index.md ที่ root ของ Jed คือ index บอกไฟล์ไหนอยู่ที่ไหน | แต่ละ entry ใน glossary.json มี date_added/source/category คือ metadata ของคำศัพท์นั้น",
+    "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 29,
+    "term": "Ask permissions",
+    "category": "Claude Code / Permission Mode",
+    "meaning": "โหมดเริ่มต้นของ Claude Code ปลอดภัยที่สุด — ทุกครั้งที่ AI จะรันคำสั่ง/แก้ไฟล์/ทำ action ที่มีผลกับระบบ จะหยุดถามอนุญาตก่อนเสมอ",
+    "example": "เหมาะกับงานที่ Jed อยากเห็นทุกขั้นตอนก่อนปล่อยให้ AI ทำ",
+    "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 30,
+    "term": "Accept edits",
+    "category": "Claude Code / Permission Mode",
+    "meaning": "โหมดที่อนุญาตให้ AI แก้ไฟล์ (edit/write) ได้เองโดยไม่ต้องถามทุกครั้ง แต่ action ที่เสี่ยงกว่า (รันคำสั่งระบบ, ลบไฟล์) ยังต้องขออนุญาตอยู่",
+    "example": "กลางๆระหว่างความปลอดภัยกับความเร็ว เหมาะกับงานแก้โค้ดที่ไว้ใจ AI ระดับหนึ่ง",
+    "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 31,
+    "term": "Plan mode",
+    "category": "Claude Code / Permission Mode",
+    "meaning": "โหมดที่ AI จะคิด/วางแผนก่อนโดยยังไม่ลงมือทำจริง เสนอแผนให้ดูและอนุมัติก่อน ค่อยเปลี่ยนไปทำจริง",
+    "example": "เหมาะกับงานใหญ่ที่อยากเห็นภาพรวมก่อนลงมือ — ใช้ EnterPlanMode/ExitPlanMode",
+    "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 32,
+    "term": "Auto mode",
+    "category": "Claude Code / Permission Mode",
+    "meaning": "ให้ AI ทำงานต่อเนื่องได้เองโดยไม่ต้องหยุดถามบ่อย ลด friction แต่ลดการควบคุมจากผู้ใช้ลงไปด้วย",
+    "example": "เหมาะกับงานที่เชื่อใจ AI แล้วระดับหนึ่ง ไม่อยากถูกถามบ่อยเกินไป",
+    "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 33,
+    "term": "Bypass permissions",
+    "category": "Claude Code / Permission Mode",
+    "meaning": "โหมดเสี่ยงที่สุด ข้ามการขออนุญาตทั้งหมด ให้ AI ทำทุกอย่างได้ทันทีโดยไม่หยุดถาม รวมถึง action ที่ทำลายข้อมูลได้",
+    "example": "ควรใช้เฉพาะกรณีไว้ใจเต็มที่และเข้าใจความเสี่ยงแล้วเท่านั้น เช่น rm -rf, force push",
+    "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 34,
+    "term": "Archive conversation",
+    "category": "Claude Code / Session",
+    "meaning": "การนำบทสนทนา/session ที่คุยจบแล้ว ออกจากรายการที่ใช้งานอยู่ (active list) ไปไว้ในคลังเก่า (archived) ไม่ใช่การลบทิ้ง แต่ซ่อนไม่ให้รก",
+    "example": "หยุด process/worktree ที่ค้างอยู่ของ session นั้น แต่ยังเปิดดู/กู้กลับมาทำต่อได้ ต่างจากการลบถาวร",
+    "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 35,
+    "term": "แพตช์ (Patch)",
+    "category": "Dev / Tech",
+    "meaning": "การแก้โค้ดเล็กๆเฉพาะจุดที่มีปัญหา โดยไม่ต้องเขียนระบบใหม่ทั้งหมด เหมือนปะรอยรั่วที่ท่อน้ำ — ไม่ต้องรื้อบ้านทั้งหลัง แค่ซ่อมจุดที่รั่ว",
+    "example": "แพตช์ความปลอดภัยของระบบทะเบียนเวชภัณฑ์ (Antigravity build): เพิ่มเช็ค token ก่อนแก้/ลบข้อมูล + กรอง HTML ก่อนแสดงผล กันคนนอกแก้ข้อมูล/แฝงโค้ดอันตราย โดยไม่กระทบหน้าตาหรือวิธีใช้งานเดิม",
+    "date_added": "2026-06-29",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 35,
+    "term": "Static WebApp",
+    "category": "Dev / Tech",
+    "meaning": "เว็บแอปที่ไฟล์ HTML/CSS/JS ถูกสร้างไว้ล่วงหน้าครบแล้ว ส่งให้เบราว์เซอร์ตรงๆโดยไม่ต้องมี server ประมวลผลเพิ่ม ต่างจาก dynamic webapp ที่ต้องให้ server คำนวณ/ดึงข้อมูลใหม่ทุกครั้ง",
+    "example": "dashboard เดิมของ Jed (index.html + app.js) เป็น static webapp ใช้ JS fetch ไฟล์ output/*.json มาแสดงผล ต่างจาก dashboard-svelte ที่มี server-side route",
+    "date_added": "2026-06-20",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 36,
+    "term": "Framing",
+    "category": "Business / Strategy",
+    "meaning": "มุมมอง/กรอบความคิดที่ใช้ตีความสถานการณ์เดียวกัน — เรื่องเดิมแต่ตั้งกรอบมองต่างกัน จะนำไปสู่การตัดสินใจ/พฤติกรรมต่างกัน",
+    "example": "Jed ตั้ง framing ว่าตัวเองเป็น 'ผู้บริหารที่บริหาร 2 บริษัท' โดยมีลอร่าและแองจี้เป็น Chief of Staff คนละบริษัท — framing นี้ทำให้ไม่ต้องพยายามรวมสองทีมเป็นระบบเดียว เพราะมองว่าเป็นองค์กรอิสระกันจริงๆ",
+    "date_added": "2026-06-29",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 36,
+    "term": "Dropbox reconcile",
+    "category": "Dev / Process",
+    "meaning": "การกระทบยอดไฟล์ที่อยู่ใน Dropbox folder กับแหล่งข้อมูลอื่น เพื่อตรวจสอบว่าตรงกัน ไม่มีของหาย ไม่ซ้ำ และไม่ขัดแย้งกัน",
+    "example": "ตรวจสอบว่าไฟล์ที่ Jed วางไว้ใน 00-Dropbox/ ถูกประมวลผลและเก็บเข้า Second Brain ครบแล้วหรือยัง มีไฟล์ค้างหรือหลุดไปไหมหลังจาก Laura route ให้ Scout/Lena",
+    "date_added": "2026-06-30",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 37,
+    "term": "Deliverable",
+    "category": "Business / Project",
+    "meaning": "ผลงาน/สิ่งที่ต้องส่งมอบที่ตกลงกันไว้ว่าจะได้รับเมื่อจบงาน/โปรเจกต์ มีลักษณะจับต้องได้ชัดเจน เช่น ไฟล์, รายงาน, ระบบ, feature",
+    "example": "Laura ทำงาน session นี้ → deliverable คือ output/glossary.json ที่มี 37 คำ + หน้า Glossary ใน dashboard",
+    "date_added": "2026-06-30",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 38,
+    "term": "Deficiency checklist",
+    "category": "Business / Project",
+    "meaning": "รายการตรวจสอบข้อบกพร่อง/จุดที่ยังขาดหรือไม่ผ่านเกณฑ์ ใช้ตรวจว่างาน/ระบบ/สถานที่มีส่วนไหนต้องแก้ไขหรือเติมให้ครบก่อนผ่านการรับรอง",
+    "example": "ตรวจห้องปฏิบัติการก่อนเปิดใช้งาน → deficiency checklist บอกว่าสิ่งใดยังขาด/ไม่ผ่านมาตรฐาน",
+    "date_added": "2026-06-30",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 39,
+    "term": "Kick-off",
+    "category": "Business / Project",
+    "meaning": "การประชุม/กิจกรรมเปิดตัวโปรเจกต์อย่างเป็นทางการครั้งแรก เพื่อให้ทุกคนที่เกี่ยวข้องรู้เป้าหมาย บทบาท ขอบเขต และไทม์ไลน์ร่วมกันก่อนลงมือทำจริง",
+    "example": "ประชุม kick-off โปรเจกต์ห้องพยาบาล → ทุกฝ่ายรู้หน้าที่และกำหนดส่งงานชัดเจนก่อนเริ่ม",
+    "date_added": "2026-06-30",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 40,
+    "term": "Action items",
+    "category": "Business / Project",
+    "meaning": "รายการงาน/ภาระกิจที่ต้องดำเนินการต่อจากการประชุมหรือการวิเคราะห์ มีผู้รับผิดชอบชัดเจนและกำหนดเวลาส่ง ต่างจาก 'ข้อสรุป' ตรงที่ต้องมีคนไปลงมือทำจริง",
+    "example": "หลังประชุม → action items: Jed ส่งรายงานภายในวันศุกร์, Forge แก้ bug ภายในพรุ่งนี้",
+    "date_added": "2026-06-30",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 41,
+    "term": "Actionable accurate involvement",
+    "category": "Business / Project",
+    "meaning": "การมีส่วนร่วมที่ถูกต้องแม่นยำและนำไปปฏิบัติได้จริง ทุกคนที่เกี่ยวข้องต้องมีข้อมูลที่ถูกต้องและสามารถแปลงเป็นการกระทำได้จริง ไม่ใช่แค่รับรู้ข้อมูลแบบผ่านๆ",
+    "example": "รายงานความเสี่ยงที่ดีต้องมี actionable accurate involvement — ระบุผู้รับผิดชอบชัด ข้อมูลถูก และแก้ได้จริง",
+    "date_added": "2026-06-30",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 42,
+    "term": "Waste Anesthetic Gas (WAG)",
+    "category": "Medical / Occupational Health",
+    "meaning": "ก๊าซยาสลบที่รั่วไหลออกมาในพื้นที่ผ่าตัดหรือห้องที่ใช้ยาสลบ เป็นอันตรายต่อบุคลากรทางการแพทย์ที่สัมผัสเป็นเวลานาน (ปวดหัว, คลื่นไส้, ผลต่อระบบประสาทและสืบพันธุ์)",
+    "example": "มีมาตรฐานควบคุมระดับ WAG ในสถานที่ทำงานทางการแพทย์ ต้องมีระบบดูดก๊าซและตรวจวัดสม่ำเสมอ",
+    "date_added": "2026-06-30",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 43,
+    "term": "Anonymous/Just culture",
+    "category": "Medical / Occupational Health",
+    "meaning": "Anonymous reporting = รายงานเหตุการณ์/ความผิดพลาดโดยไม่เปิดเผยตัวตน ให้กล้ารายงานโดยไม่กลัวถูกลงโทษ | Just culture = วัฒนธรรมองค์กรที่แยกแยะ 'ความผิดพลาดโดยสุจริต' กับ 'การละเลยตั้งใจ' ไม่ลงโทษคนแต่มุ่งแก้ระบบแทน",
+    "example": "ใช้มากในบริบทความปลอดภัยทางการแพทย์ เช่น รายงาน near miss โดยไม่ระบุชื่อ เพื่อป้องกันเหตุซ้ำโดยไม่ต้องโทษบุคคล",
+    "date_added": "2026-06-30",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 44,
+    "term": "React / Next.js",
+    "category": "Dev / Tech",
+    "meaning": "React = library JavaScript สำหรับสร้าง UI แบ่งเป็น component ชิ้นเล็กๆนำกลับมาใช้ซ้ำได้ (พัฒนาโดย Meta) | Next.js = framework ที่สร้างต่อบน React เพิ่ม routing, server-side rendering, static generation",
+    "example": "React คือ 'เครื่องยนต์', Next.js คือ 'รถที่ประกอบมาให้พร้อมขับ' — dashboard-svelte ของ Jed ใช้ SvelteKit ซึ่งเป็นแนวคิดคล้ายกัน",
+    "date_added": "2026-06-30",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 45,
+    "term": "Config",
+    "category": "Dev / Tech",
+    "meaning": "ย่อจาก Configuration (การตั้งค่า) คือไฟล์หรือค่าที่กำหนดพฤติกรรมของโปรแกรม/ระบบ โดยไม่ต้องแก้โค้ดตรงๆ เปลี่ยนค่าแล้วโปรแกรมทำงานต่างออกไปได้ทันที",
+    "example": ".claude/launch.json ของ Jed คือ config บอกว่าจะ start server ยังไง, port เท่าไหร่, รันคำสั่งอะไร",
+    "date_added": "2026-06-30",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 46,
+    "term": "Static site",
+    "category": "Dev / Tech",
+    "meaning": "เว็บไซต์ที่ทุกหน้าถูกสร้างเป็นไฟล์ HTML สำเร็จรูปไว้ล่วงหน้าทั้งหมด (build ครั้งเดียว) ไม่มี server ประมวลผลตอนมีคนเข้าดู เหมาะกับเนื้อหาที่ไม่เปลี่ยนบ่อย",
+    "example": "blog, docs, portfolio — โฮสต์ง่ายบน GitHub Pages/Netlify ต่างจาก static webapp ที่ใช้ JS ดึงข้อมูลสดมาแสดงเพิ่มเติมได้",
+    "date_added": "2026-06-30",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 47,
+    "term": "Fable 5",
+    "category": "AI / Claude Models",
+    "meaning": "โมเดล Claude ที่เก่งเรื่องน้ำเสียง/การเล่าเรื่องที่สุดในกลุ่ม เหมาะกับงานที่ต้องมีอารมณ์ ความลื่นไหล หรือคาแรกเตอร์ชัด ไม่เหมาะกับงานตัวเลข/logic ล้วนๆ",
+    "example": "Muse (เขียนคอนเทนต์/ไอเดีย) และ Eir (เล่า Quest แบบ isekai ยาวๆ) ในทีม Laura ใช้ตัวนี้",
+    "date_added": "2026-07-03",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 48,
+    "term": "Opus 4.8",
+    "category": "AI / Claude Models",
+    "meaning": "โมเดล Claude ที่คิดลึกที่สุดในกลุ่ม วิเคราะห์หลายมุมมอง เห็น trade-off ซับซ้อน เหมาะกับการตัดสินใจใหญ่ที่ผิดพลาดแล้วแก้ยาก แต่ช้ากว่าและแพงกว่าตัวอื่น",
+    "example": "Atlas (วางกลยุทธ์), Council (ตัดสินใจใหญ่), Devil (ท้าทายความคิด) ในทีม Laura ใช้ตัวนี้",
+    "date_added": "2026-07-03",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 49,
+    "term": "Sonnet 5",
+    "category": "AI / Claude Models",
+    "meaning": "โมเดล Claude ตัวสมดุลที่สุด เร็ว แม่นยำ เป็นตัวหลักที่ Claude Code ใช้เขียน/อ่านโค้ด เหมาะกับงานที่ต้องแม่นแต่ไม่ต้องคิดลึกระดับ Opus — รุ่นล่าสุดที่มาแทน Sonnet 4.6 เดิม",
+    "example": "Forge (เขียนโค้ด), Cinder (ซ่อม bug), Scout (ค้นคว้า), Mint (การเงิน), Vera (ตรวจงาน), Laura (routing) ในทีม Laura ใช้ตัวนี้เป็นหลัก",
+    "date_added": "2026-07-03",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 50,
+    "term": "Haiku 4.5",
+    "category": "AI / Claude Models",
+    "meaning": "โมเดล Claude ที่เร็วที่สุด ประหยัดที่สุด แต่คิดซับซ้อนได้น้อยกว่า เหมาะกับงาน routine ที่มีรูปแบบชัดเจน ไม่ต้องตัดสินใจเยอะ",
+    "example": "Nova (จัดตาราง/todo), Lena ตอน intake/organize ไฟล์เข้า vault ในทีม Laura ใช้ตัวนี้",
+    "date_added": "2026-07-03",
     "source": "ถาม Jed ในแชท"
   }
 ]
