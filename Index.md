@@ -3,7 +3,7 @@
 อัปเดตอัตโนมัติด้วย `scripts/sync_index.py` (Cinder รันทุกครั้งที่มีไฟล์ใหม่/แก้ไฟล์ใน team, characters, output) ห้ามแก้ไฟล์นี้ตรงๆ
 
 
-สร้างล่าสุด: 2026-07-03 13:34
+สร้างล่าสุด: 2026-07-04 13:23
 
 
 ## Agent Definitions (team/)
@@ -47,6 +47,7 @@
 
 ## Diary (output/diary/)
 
+- [📔 Diary — วันศุกร์ที่ 3 กรกฎาคม 2569](output/diary/2026-07-03.md) (2026-07-03) — Sage
 - [📔 Diary — วันอังคารที่ 30 มิถุนายน 2569](output/diary/2026-06-30.md) (2026-06-30) — Sage
 - [📔 Diary — วันอาทิตย์ที่ 28 มิถุนายน 2569](output/diary/2026-06-28.md) (2026-06-28)
 - [📔 Diary — วันศุกร์ที่ 26 มิถุนายน 2569](output/diary/2026-06-26.md) (2026-06-27)
@@ -65,6 +66,7 @@
 
 ## Research (output/research/)
 
+- [🏆 Benchmark — Chief of Staff / Weekly Ops Review เชิงรุก](output/research/2026-07-04-benchmark-chief-of-staff-weekly-ops-review.md) (2026-07-04) — Scout
 - [🔍 การสร้าง Skill/Workflow/Knowledge Base สำหรับ AI Agent (ผ่าน NotebookLM)](output/research/2026-06-28-notebooklm-skill-workflow-pipeline.md) (2026-06-27)
 - [ความรู้: Tailscale + WireGuard](output/research/2026-06-21-tailscale-wireguard-ความรู้.md) (2026-06-21)
 - [🏆 Benchmark: รายได้เสริมจากคอนเทนต์ความรู้วิชาชีพพยาบาล/วิสัญญี (Jed_fremwork)](output/research/2026-06-20-benchmark-nurse-content-income.md) (2026-06-20)
@@ -74,6 +76,7 @@
 
 ## Decisions (output/decisions/)
 
+- [🪞 Atlas Daily Reflection — วันศุกร์ที่ 3 กรกฎาคม 2569](output/decisions/2026-07-03-atlas-reflection-ceo-lens.md) (2026-07-03) — Atlas
 - [🪞 Atlas Daily Reflection — วันอังคารที่ 30 มิถุนายน 2569](output/decisions/2026-06-30-atlas-reflection-ceo-lens.md) (2026-06-30) — Atlas
 - [🪞 Atlas Daily Reflection — วันศุกร์ที่ 26 มิถุนายน 2569](output/decisions/2026-06-26-atlas-reflection-ceo-lens.md) (2026-06-27)
 - [🪞 Atlas Daily Reflection — วันเสาร์ที่ 27 มิถุนายน 2569](output/decisions/2026-06-27-atlas-reflection-ceo-lens.md) (2026-06-27)

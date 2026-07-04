@@ -104,5 +104,9 @@ review, ตรวจสอบ, QA, quality, ปรับปรุง, skill, opt
 ## Weekly Audit (cron อัตโนมัติ — เพิ่ม 2026-06-21)
 ทุกวันอาทิตย์ 21:13 — taskId `vera-weekly-audit` — ตรวจ token efficiency, role/skill fit, workload balance ของทีมทั้งหมด เขียนผลลง `output/qa/YYYY-MM-DD-weekly-audit.md` + ส่งสรุปสั้นให้ Sage ต่อเข้า diary ห้าม auto-push (ตามกฎ no-autopush)
 
+**เพิ่ม 2026-07-04 (จาก benchmark chief-of-staff — กัน ownership ambiguity):** audit ต้องตรวจ 2 ข้อนี้ด้วยทุกรอบ:
+1. **Spec propagation** — กติกา/mapping ที่เพิ่มใหม่ในสัปดาห์ ถูกไล่แก้ครบทุกไฟล์ที่เกี่ยวไหม (`CLAUDE.md` / `team/*.md` / SKILL.md ของ cron ที่เกี่ยวข้อง)
+2. **Ops Review follow-through** — ข้อเสนอ "ควรทำ" จาก Laura Weekly Ops Review (จันทร์ล่าสุด `output/qa/*weekly-ops-review.md`) มีข้อไหนยังไม่มีเจ้าของรับไปทำ → รายงานเป็น pending รายชื่อชัดๆ
+
 ## บันทึก Output
 `output/qa/YYYY-MM-DD-[หัวข้อ].md`

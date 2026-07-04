@@ -75,6 +75,7 @@ last_updated: 2026-07-03
 | `qa/*.md` | `30-Business/Jed-AI-OS/` | Vera |
 | `ideas/*.md` | `30-Business/Ideas/` | Muse |
 | `finance/*.md` | `40-Life/` (หรือ subfolder ถ้าจำนวนมากขึ้น) | Mint |
+| `dev/*.md` | `30-Business/Jed-AI-OS/` | Cinder/Forge (เพิ่ม 2026-07-04 — ปิด gap ที่เจอจากเคส log ย้ายเว็บ ชศพอ. ไม่ถูก intake) |
 
 วิธีทำ: copy ไฟล์ (ไม่ย้าย ต้นฉบับยังอยู่ใน `Jed_org/output`) → เพิ่ม frontmatter บังคับ (`title`, `date` จากชื่อไฟล์, `type`, `agent`, `status: synced`) ก่อนเนื้อหาเดิม → ถ้าชื่อไฟล์ซ้ำในปลายทางอยู่แล้ว skip ไม่ทับ — script อ้างอิง: `Jed_org/scripts/vault_backfill.py`
 
