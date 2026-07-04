@@ -26,5 +26,9 @@
   {
     "date": "วันอังคารที่ 30 มิถุนายน 2569",
     "content": "⚙️ ฟอร์จ — Dev Report\n**วันที่:** 30 มิถุนายน 2569\n\nเช็ค git log แล้วครับ — commit ล่าสุดยัง `35ee80a` (diary 28 มิ.ย.) สัปดาห์นี้ working tree เงียบกว่าปกติ ทีมโฟกัสด้านกฎ/boundary มากกว่า dev\n\n**Dev Queue สำหรับ Q3:**\n- 💰 **Jed_Finance_Tracker**: deploy แล้ว รอ Jed กด authorize — พร้อม ship ทันที\n- 🖥️ **Dashboard v2 rebuild**: Jed ตั้งเป้า rebuild จ. 29 ก.ค. — รอโจทย์ก่อนแล้วจะ plan\n- 🏥 **Medic_Station**: รอ Jed ทดสอบ installer ที่ห้องพยาบาลจริง\n\nพร้อมรับงานเพิ่มเมื่อ Jed กำหนดทิศ Q3 ครับ"
+  },
+  {
+    "date": "วันศุกร์ที่ 3 กรกฎาคม 2569",
+    "content": "⚙️ Forge — Dev Report\n**วันที่:** 3 กรกฎาคม 2569\n\nเมื่อวานงานหลักไม่ใช่ฟีเจอร์ใหม่จากผมเองครับ แต่ได้ของสำคัญจาก audit ของเวร่า — ผมกับซินเดอร์ได้ skill เพิ่ม (karpathy-guidelines, code-review, security-review, simplify) ตรงจุดที่ Jed เคยแจ้งว่าขาด พร้อมติดตั้ง owasp-security skill ให้ทั้งคู่ด้วย\n\nDev Queue ยังเหมือนเดิม: Jed_Finance_Tracker พร้อม ship รอ authorize, Medic_Station รอทดสอบที่ห้องพยาบาลจริง"
   }
 ]

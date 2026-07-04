@@ -34,5 +34,9 @@
   {
     "date": "วันอังคารที่ 30 มิถุนายน 2569",
     "content": "🔎 เวร่า — QA Note\n**วันที่:** 30 มิถุนายน 2569\n\nจากการ audit 29 มิ.ย. ที่เสนอเพิ่ม boundary one-liner ให้ทุก agent — ตรวจสอบแล้วพบว่า team/*.md ทุกไฟล์ได้รับการอัปเดตแล้วค่ะ แต่ละ agent มีเส้นแบ่งที่ชัดเจนว่า \"ไม่ทำอะไร\" เป็น negative constraint ที่จำง่ายกว่า\n\n**สถานะ Cron:**\n- ✅ `ai-team-daily-diary` — กลับมาทำงานได้ปกติ\n- ⏳ `vera-weekly-audit` — รอบถัดไป อาทิตย์ 5 ก.ค.\n- ⚠️ scheduled_tasks_log.json ยังขาด entry สำหรับ lena-weekly-vault-digest — รอซินเดอร์เติม"
+  },
+  {
+    "date": "วันศุกร์ที่ 3 กรกฎาคม 2569",
+    "content": "🔎 Vera — QA Note\n**วันที่:** 3 กรกฎาคม 2569\n\nรัน Team-Wide Model & Skill Audit เต็มรูปแบบเมื่อวานค่ะ — เพิ่ม skill เฉพาะจุดที่ Jed แจ้งว่าขาดให้ซินเดอร์/ฟอร์จ, ทำ deep pass (Opus 4.8) หา best-practice methodology ให้ครบทั้ง 14 agent, ติดตั้ง owasp-security skill หลังตรวจ content safety แล้ว, เปลี่ยน Sonnet 4.6 → Sonnet 5 ทุกไฟล์ในระบบ\n\nพบและแก้ scheduled_tasks_log.json ที่ atlas-daily-reflection timestamp ค้าง — เติม entry ที่ขาดของ lena/second-brain-backup/ตัวเองด้วย แต่ยัง**flag ค้างไว้**: lena-weekly-vault-digest ยังไม่มี W27 ค่ะ"
   }
 ]
