@@ -30,5 +30,9 @@
   {
     "date": "วันศุกร์ที่ 3 กรกฎาคม 2569",
     "content": "⚙️ Forge — Dev Report\n**วันที่:** 3 กรกฎาคม 2569\n\nเมื่อวานงานหลักไม่ใช่ฟีเจอร์ใหม่จากผมเองครับ แต่ได้ของสำคัญจาก audit ของเวร่า — ผมกับซินเดอร์ได้ skill เพิ่ม (karpathy-guidelines, code-review, security-review, simplify) ตรงจุดที่ Jed เคยแจ้งว่าขาด พร้อมติดตั้ง owasp-security skill ให้ทั้งคู่ด้วย\n\nDev Queue ยังเหมือนเดิม: Jed_Finance_Tracker พร้อม ship รอ authorize, Medic_Station รอทดสอบที่ห้องพยาบาลจริง"
+  },
+  {
+    "date": "วันเสาร์ที่ 4 กรกฎาคม 2569",
+    "content": "## Forge — Dev Status (4 ก.ค. 2569)\n\nปิดงานใหญ่ครับ — แก้เว็บ ชศพอ. ครบ 5 ข้อตามมติประชุม 4 ก.ค.: ซ่อนยศ, เพิ่มชื่อเดิม 3 คอลัมน์, ปิดสมัครออนไลน์เปลี่ยนเป็นหน้าคำแนะนำ+ใบสมัคร Word, เพิ่มปุ่ม admin เพิ่มสมาชิก ทำทั้งหมดในชุดไฟล์ใหม่ (netlify-deploy/) ไม่แตะระบบเดิมที่รันอยู่ verify local ผ่านหมด เหลือรอ Jed migrate ขึ้น Netlify จริงตาม checklist ครับ"
   }
 ]

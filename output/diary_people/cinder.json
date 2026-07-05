@@ -10,5 +10,9 @@
   {
     "date": "วันศุกร์ที่ 3 กรกฎาคม 2569",
     "content": "🔥 Cinder — Maintenance Log\n**วันที่:** 3 กรกฎาคม 2569\n\nเมื่อวานส่งงาน run-side 3 เรื่องเข้า output/dev/ ค่ะ: คู่มือ setup home server, deploy log Medsupply Registry, และย้าย ชศพอ. จาก GitHub Pages ไป Netlify — commit ตามหลังพร้อมกับ audit ของเวร่าและงานของมินท์รอบเดียวกัน\n\nยังมีของค้างเดิมที่ตัวเองรับไว้: หาสาเหตุจริงว่าทำไม lena-weekly-vault-digest ไม่มี W27 — จะไล่ต่อค่ะ"
+  },
+  {
+    "date": "วันเสาร์ที่ 4 กรกฎาคม 2569",
+    "content": "## Cinder — Maintenance Log (4 ก.ค. 2569)\n\nวันนี้ยังไล่หาสาเหตุจริงว่าทำไม lena-weekly-vault-digest ไม่ออก W27 อยู่ค่ะ — Laura ยืนยันเพิ่มว่ามีไฟล์ค้าง 12 ไฟล์จริง ตรงกับที่สงสัยไว้ พรุ่งนี้เช้าเป็นรอบทดสอบ ถ้ายังไม่ครบจะเข้าไปแก้ SKILL.md ให้ต่อค่ะ"
   }
 ]

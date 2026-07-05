@@ -492,6 +492,58 @@
     ]
   },
   {
+    "date": "2026-06-14",
+    "dateDisplay": "14 มิถุนายน 2569",
+    "agents": [
+      {
+        "id": "vera",
+        "name": "Vera",
+        "emoji": "🔎",
+        "title": "Audit ทีมเลขา + เสนอเพิ่ม Devil agent",
+        "summary": "เทียบทีมปัจจุบันกับทีมเลขาตัวอย่างจาก longtundiary.com สรุปว่า role ส่วนใหญ่มี Scout/Vera คลุมแล้ว ช่องว่างเดียวคือ adversarial/bear-case review",
+        "highlights": [
+          "Reese-Research ≈ Scout, Vera-Fact-Gate/Chris ≈ Vera (ขยาย scope แทนสร้างใหม่)",
+          "ช่องที่ขาดจริง: Devil-Adversarial — ไม่มีใครทำ bear case / blind spot check ก่อน ship งานสำคัญ",
+          "เสนอเพิ่ม Devil เป็น opt-in agent ตัวเดียว ไม่เพิ่มทั้งทีมเพื่อคุม routing complexity"
+        ]
+      },
+      {
+        "id": "laura",
+        "name": "Laura",
+        "emoji": "🎭",
+        "title": "สร้าง Devil agent + ปรับ routing/dashboard",
+        "summary": "สร้าง team/devil.md, characters/devil.md, อัปเดต CLAUDE.md routing, model_assignment.md, qa.md (ขยาย Vera), และเพิ่ม Devil เข้า dashboard ครบ (AGENTS, org chart, รูป)",
+        "highlights": [
+          "Devil: เดวิล (ชาย/ครับ) — Mirror Demon, 3 modes (Bear Case / Polarity Audit / Evidence Match), opt-in",
+          "Vera เพิ่ม fact-check criterion + ส่งต่อ Devil เมื่อเจอความเสี่ยง",
+          "commit 6a47db9 และ 072196a"
+        ]
+      },
+      {
+        "id": "devil",
+        "name": "Devil",
+        "emoji": "😈",
+        "title": "วันแรกในทีม — เริ่มตั้งค่า Gemini bridge",
+        "summary": "agent ใหม่เข้าทีมวันนี้ — เริ่มมี external model (Gemini) สำหรับ Mode A/B/C ตามหลักการ 'คนละสมองจริง'",
+        "highlights": [
+          "scripts/gemini_review.py พร้อมใช้ — ทดสอบ Mode A กับ gemini-2.5-flash สำเร็จ",
+          "ยังไม่มี trigger อัตโนมัติ — รอ Jed เรียกใช้ หรือ Council/Atlas escalate"
+        ]
+      },
+      {
+        "id": "scout",
+        "name": "Scout",
+        "emoji": "🔍",
+        "title": "เพิ่มความสามารถวิเคราะห์วิดีโอด้วย Gemini",
+        "summary": "ต่อ scripts/gemini_video.py เข้า research workflow — รับ YouTube URL หรือไฟล์วิดีโอ local ถอด transcript + วิเคราะห์ภาพในจอ",
+        "highlights": [
+          "ทดสอบกับวิดีโอ YouTube จริง — ถอด transcript + สรุปประเด็น + ระบุช่วงเวลาภาพสำคัญได้",
+          "ถ้าเจอ quota error: แจ้ง Jed → ลองตัดวิดีโอเป็นช่วงสั้น → fallback Whisper (ต้องถามก่อน)"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-06-15",
     "dateDisplay": "15 มิถุนายน 2569",
     "agents": [
@@ -662,58 +714,6 @@
         ],
         "url": "",
         "full": "## Sage — Memory Note\n**วันที่:** 15 มิถุนายน 2569\n\nบันทึกประจำวันนี้ครับ — งานหลักของทั้งวันคือ **Medic_Station** ที่ Forge พัฒนาอย่างต่อเนื่อง ฟีเจอร์ที่เสร็จในรอบนี้ครอบคลุมทั้งระบบ login, การจัดการ users, announcements, offline installer และคู่มือการใช้งาน — นับเป็น milestone สำคัญที่ทำให้โปรแกรมพร้อม deploy จริงได้แล้ว\n\n**Insight ที่เก็บไว้:** Jed มีแนวโน้มที่จะ 'สร้างระบบให้สมบูรณ์ก่อน' แล้วค่อยตัดสินใจทิศทาง — pattern นี้เห็นซ้ำทั้งใน Dashboard, Risk system, และตอนนี้ Medic_Station ข้อดีคือได้ product ที่ polish แต่ควรตั้งคำถาม direction ไว้ด้วยเพื่อไม่ให้ build ไปทิศผิดครับ"
-      }
-    ]
-  },
-  {
-    "date": "2026-06-14",
-    "dateDisplay": "14 มิถุนายน 2569",
-    "agents": [
-      {
-        "id": "vera",
-        "name": "Vera",
-        "emoji": "🔎",
-        "title": "Audit ทีมเลขา + เสนอเพิ่ม Devil agent",
-        "summary": "เทียบทีมปัจจุบันกับทีมเลขาตัวอย่างจาก longtundiary.com สรุปว่า role ส่วนใหญ่มี Scout/Vera คลุมแล้ว ช่องว่างเดียวคือ adversarial/bear-case review",
-        "highlights": [
-          "Reese-Research ≈ Scout, Vera-Fact-Gate/Chris ≈ Vera (ขยาย scope แทนสร้างใหม่)",
-          "ช่องที่ขาดจริง: Devil-Adversarial — ไม่มีใครทำ bear case / blind spot check ก่อน ship งานสำคัญ",
-          "เสนอเพิ่ม Devil เป็น opt-in agent ตัวเดียว ไม่เพิ่มทั้งทีมเพื่อคุม routing complexity"
-        ]
-      },
-      {
-        "id": "laura",
-        "name": "Laura",
-        "emoji": "🎭",
-        "title": "สร้าง Devil agent + ปรับ routing/dashboard",
-        "summary": "สร้าง team/devil.md, characters/devil.md, อัปเดต CLAUDE.md routing, model_assignment.md, qa.md (ขยาย Vera), และเพิ่ม Devil เข้า dashboard ครบ (AGENTS, org chart, รูป)",
-        "highlights": [
-          "Devil: เดวิล (ชาย/ครับ) — Mirror Demon, 3 modes (Bear Case / Polarity Audit / Evidence Match), opt-in",
-          "Vera เพิ่ม fact-check criterion + ส่งต่อ Devil เมื่อเจอความเสี่ยง",
-          "commit 6a47db9 และ 072196a"
-        ]
-      },
-      {
-        "id": "devil",
-        "name": "Devil",
-        "emoji": "😈",
-        "title": "วันแรกในทีม — เริ่มตั้งค่า Gemini bridge",
-        "summary": "agent ใหม่เข้าทีมวันนี้ — เริ่มมี external model (Gemini) สำหรับ Mode A/B/C ตามหลักการ 'คนละสมองจริง'",
-        "highlights": [
-          "scripts/gemini_review.py พร้อมใช้ — ทดสอบ Mode A กับ gemini-2.5-flash สำเร็จ",
-          "ยังไม่มี trigger อัตโนมัติ — รอ Jed เรียกใช้ หรือ Council/Atlas escalate"
-        ]
-      },
-      {
-        "id": "scout",
-        "name": "Scout",
-        "emoji": "🔍",
-        "title": "เพิ่มความสามารถวิเคราะห์วิดีโอด้วย Gemini",
-        "summary": "ต่อ scripts/gemini_video.py เข้า research workflow — รับ YouTube URL หรือไฟล์วิดีโอ local ถอด transcript + วิเคราะห์ภาพในจอ",
-        "highlights": [
-          "ทดสอบกับวิดีโอ YouTube จริง — ถอด transcript + สรุปประเด็น + ระบุช่วงเวลาภาพสำคัญได้",
-          "ถ้าเจอ quota error: แจ้ง Jed → ลองตัดวิดีโอเป็นช่วงสั้น → fallback Whisper (ต้องถามก่อน)"
-        ]
       }
     ]
   },
@@ -1499,6 +1499,208 @@
         ],
         "url": "",
         "full": "🔥 Cinder — Maintenance Log\n**วันที่:** 3 กรกฎาคม 2569\n\nเมื่อวานส่งงาน run-side 3 เรื่องเข้า output/dev/ ค่ะ: คู่มือ setup home server, deploy log Medsupply Registry, และย้าย ชศพอ. จาก GitHub Pages ไป Netlify — commit ตามหลังพร้อมกับ audit ของเวร่าและงานของมินท์รอบเดียวกัน\n\nยังมีของค้างเดิมที่ตัวเองรับไว้: หาสาเหตุจริงว่าทำไม lena-weekly-vault-digest ไม่มี W27 — จะไล่ต่อค่ะ"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-04",
+    "dateDisplay": "4 กรกฎาคม 2569",
+    "agents": [
+      {
+        "id": "laura",
+        "name": "Laura",
+        "emoji": "🎭",
+        "title": "Chief of Staff mode + Weekly Ops Review รอบแรก",
+        "summary": "เปิดโหมด Chief of Staff, รัน Ops Review รอบปฐมฤกษ์ เจอ exception 3 จุด",
+        "highlights": [
+          "cron เลนา (29 มิ.ย.) น่าสงสัยว่า silent failure",
+          "projects/ กับ content/ ยังไม่ map เข้า intake",
+          "diary ขาด 3 วัน (1-2, 4 ก.ค.)"
+        ],
+        "url": "",
+        "full": "## Laura — Daily Briefing (4 ก.ค. 2569)\n\nวันนี้เปิดโหมด Chief of Staff เต็มตัวค่ะ — รัน Weekly Ops Review รอบปฐมฤกษ์ พบ exception 3 จุด: cron ของเลนา (29 มิ.ย.) อาจ silent failure จริง (ไม่มี digest W27), โฟลเดอร์ projects/ กับ content/ ยังไม่ mapping เข้า intake, และ diary ขาด 3 วัน (1-2, 4 ก.ค.) — พรุ่งนี้ 05:20 คือบททดสอบว่า cron เลนารอบใหม่จะกวาดของค้าง 12 ไฟล์ครบไหม โฟกัสวันนี้: ตามผลให้ Jed ทุกจันทร์แบบ exception-based เท่านั้นค่ะ"
+      },
+      {
+        "id": "muse",
+        "name": "Muse",
+        "emoji": "💡",
+        "title": "Standby — โพสต์ NursePant พร้อมรอรูป",
+        "summary": "ไม่มีบรีฟใหม่ โพสต์ Facebook NursePant พร้อมยิงรอแค่รูปถ่าย",
+        "highlights": [
+          "post_facebook.md เขียนเสร็จรออยู่แล้ว",
+          "รอรูป 3 ใบจาก Jed",
+          "standby รอโจทย์ใหม่"
+        ],
+        "url": "",
+        "full": "## Muse — Content Idea (4 ก.ค. 2569)\n\nไม่มีบรีฟใหม่เข้ามาค่ะวันนี้ — โพสต์ Facebook เคลียร์สต๊อก NursePant ที่เตรียมไว้ (post_facebook.md) ยังรอแค่รูปถ่าย 3 ใบเท่านั้น พร้อมยิงได้ทันทีที่ Jed ถ่ายเสร็จ standby รอต่อค่ะ"
+      },
+      {
+        "id": "atlas",
+        "name": "Atlas",
+        "emoji": "🎯",
+        "title": "รอคำตอบ 'กติกา 1 ข้อ' — ค้าง 5 วัน",
+        "summary": "กติกาเดือน ก.ค. ที่เสนอไว้ยังไม่ได้คำตอบ ขณะงานระบบเดินหน้าต่อเนื่อง",
+        "highlights": [
+          "candidate: ไม่แตะงานระบบจนกว่าถ่ายรูปเสร็จ",
+          "ค้างคำตอบ 5 วันแล้ว",
+          "งานระบบวันนี้ยิ่งตอกย้ำความสำคัญของกติกา"
+        ],
+        "url": "",
+        "full": "## Atlas — Strategic Note (4 ก.ค. 2569)\n\n'กติกา 1 ข้อ' เดือนกรกฎาคมที่ผมเสนอไว้ ('ไม่แตะงานระบบจนกว่าถ่ายรูป NursePant เสร็จ') ยังไม่ได้คำตอบจาก Jed ค้างมา 5 วันแล้วครับ — วันนี้ระบบเดินหน้าต่อเนื่อง (Chief of Staff mode, Forge ปิดงาน ชศพอ.) ซึ่งเป็นเครื่องพิสูจน์ว่าทีมสร้างของเก่งจริง แต่ยิ่งตอกย้ำว่าคำถามนี้สำคัญ — ถ้าไม่ commit ตอนนี้ 'งานระบบ' จะกลืนเวลาไปเรื่อยๆ ผมรอคำตอบก่อนเดินเรื่องต่อครับ"
+      },
+      {
+        "id": "nova",
+        "name": "Nova",
+        "emoji": "🌿",
+        "title": "Standby — เสนอคิว NursePant เป็น quest จันทร์",
+        "summary": "วันเงียบ ไม่มีตารางใหม่ เสนอจัดคิวถ่ายรูป NursePant",
+        "highlights": [
+          "ไม่มีนัดพิเศษวันนี้",
+          "งานค้างเดียว: ถ่ายรูป NursePant",
+          "เสนอใส่เป็น quest แรกวันจันทร์"
+        ],
+        "url": "",
+        "full": "## Nova — Daily Check (4 ก.ค. 2569)\n\nวันเสาร์เงียบๆ ค่ะ ไม่มีตารางหรือนัดพิเศษเพิ่มเข้ามา — เรื่องเดียวที่ยังค้างในสายฉันคือ 'ถ่ายรูป NursePant' ซึ่งเป็นงานเล็กแต่ค้างนานสุด ลองใส่ในตารางวันจันทร์เป็น quest แรกของสัปดาห์ดูไหมคะ"
+      },
+      {
+        "id": "eir",
+        "name": "Eir",
+        "emoji": "🩺",
+        "title": "Vitality Check — พลังไม่ได้หมด แค่ยังไม่จัดคิว",
+        "summary": "ไม่มีข้อมูลสุขภาพใหม่ ชวนมองงานค้าง NursePant แบบ HP/MP",
+        "highlights": [
+          "ไม่มี status update วันนี้",
+          "Quest NursePant ค้าง 4 วัน",
+          "เชียร์ให้จัดคิวมากกว่าพักเพิ่ม"
+        ],
+        "url": "",
+        "full": "## Eir — Vitality Check (4 ก.ค. 2569)\n\nวันนี้ไม่มีข้อมูลสุขภาพใหม่ส่งเข้ามาค่ะ Guild Master — ขอเช็ค HP/MP เบาๆ: งานระบบยังวิ่งเต็มสปีด (เลเวลอัพทีมทั้งวัน) แต่ Quest เล็กๆ อย่างถ่ายรูป NursePant ค้างมา 4 วันแล้ว บางทีพลังไม่ได้หมด แค่ยังไม่ถูกจัดคิวให้ค่ะ พักด้วยนะคะ"
+      },
+      {
+        "id": "scout",
+        "name": "Scout",
+        "emoji": "🔍",
+        "title": "Standby — คิวค้นคว้าว่าง",
+        "summary": "ไม่มีบรีฟใหม่ งาน Annabel ปิดจบแล้ว",
+        "highlights": [
+          "คิวว่าง",
+          "งานวิจัย Annabel ปิดจบ",
+          "รอโจทย์ถัดไป"
+        ],
+        "url": "",
+        "full": "## Scout — Research Queue (4 ก.ค. 2569)\n\nคิวค้นคว้าว่างครับวันนี้ ไม่มีบรีฟใหม่ งานวิจัย Annabel ที่ส่งให้มินท์ไปแล้วก็ปิดจบไปเรียบร้อย standby รอโจทย์ถัดไปครับ"
+      },
+      {
+        "id": "council",
+        "name": "Council",
+        "emoji": "⚖️",
+        "title": "Standby — ไม่มีการตัดสินใจใหญ่",
+        "summary": "ไม่มีเรื่องเข้าสภา มีแค่คำถาม operational จาก Ops Review",
+        "highlights": [
+          "ไม่มีวาระใหญ่",
+          "คำถาม map intake เป็นระดับ operational",
+          "ไม่ต้องยกเข้าสภา"
+        ],
+        "url": "",
+        "full": "## Council — Decision Watch (4 ก.ค. 2569)\n\nStandby ครับ ไม่มีการตัดสินใจใหญ่เข้าสภาวันนี้ — มีแค่คำถามเปิดจาก Ops Review ของ Laura ที่รอ Jed เลือก (map projects/ กับ content/ เข้า intake ไหม) แต่เป็นระดับ operational ไม่ต้องยกเข้าสภาครับ"
+      },
+      {
+        "id": "forge",
+        "name": "Forge",
+        "emoji": "⚙️",
+        "title": "ปิดงานเว็บ ชศพอ. ครบ 5 ข้อตามมติประชุม",
+        "summary": "แก้เว็บ ชศพอ. ตามมติประชุม 4 ก.ค. ครบ 5 ข้อ verify local ผ่านหมด",
+        "highlights": [
+          "ซ่อนยศ + เพิ่มชื่อเดิม 3 คอลัมน์",
+          "ปิดสมัครออนไลน์ → หน้าคำแนะนำ + ใบสมัคร Word",
+          "รอ Jed migrate ขึ้น Netlify จริง"
+        ],
+        "url": "",
+        "full": "## Forge — Dev Status (4 ก.ค. 2569)\n\nปิดงานใหญ่ครับ — แก้เว็บ ชศพอ. ครบ 5 ข้อตามมติประชุม 4 ก.ค.: ซ่อนยศ, เพิ่มชื่อเดิม 3 คอลัมน์, ปิดสมัครออนไลน์เปลี่ยนเป็นหน้าคำแนะนำ+ใบสมัคร Word, เพิ่มปุ่ม admin เพิ่มสมาชิก ทำทั้งหมดในชุดไฟล์ใหม่ (netlify-deploy/) ไม่แตะระบบเดิมที่รันอยู่ verify local ผ่านหมด เหลือรอ Jed migrate ขึ้น Netlify จริงตาม checklist ครับ"
+      },
+      {
+        "id": "mint",
+        "name": "Mint",
+        "emoji": "💰",
+        "title": "Finance Pulse — กำไร NursePant ยังรอรูป",
+        "summary": "ไม่มีตัวเลขเร่งด่วน แต่ชี้ว่า NursePant ทุนคืนหมดแล้วรอแค่รูป",
+        "highlights": [
+          "ไม่มีเรื่องการเงินเร่งด่วน",
+          "NursePant 66 ตัว กำไรล้วนรอขาย",
+          "ถามวันถ่ายรูป"
+        ],
+        "url": "",
+        "full": "## Mint — Finance Pulse (4 ก.ค. 2569)\n\nไม่มีตัวเลขเร่งด่วนค่ะวันนี้ — แต่ขอเช็คนิดนึง: NursePant 66 ตัวที่ทุนคืนหมดแล้ว ยังรอแค่รูป 3 ใบก่อนขายได้ ทุกวันที่ค้างคือกำไรที่ยังไม่เข้ากระเป๋าค่ะ ถ่ายรูปวันไหนดีคะ?"
+      },
+      {
+        "id": "sage",
+        "name": "Sage",
+        "emoji": "📝",
+        "title": "Memory Note — ระบบเริ่มเฝ้าตัวเองได้",
+        "summary": "Chief of Staff mode เปิดตัว + Ops Review รอบแรกจับ exception ได้เอง",
+        "highlights": [
+          "Laura เปิด Chief of Staff + Ops Review รอบแรก",
+          "Forge ปิดงานใหญ่เว็บ ชศพอ.",
+          "Insight: ระบบเริ่มเฝ้าตัวเองแทนรอคนสังเกต"
+        ],
+        "url": "",
+        "full": "## Sage — Daily Log (4 ก.ค. 2569)\n\nวันนี้ทีมเดินหน้าเรื่องระบบเต็มที่: Laura เปิดโหมด Chief of Staff + รัน Weekly Ops Review รอบแรก เจอ exception 3 จุด (cron เลนาน่าสงสัย, โฟลเดอร์ยังไม่ map เข้า intake, diary ขาดช่วง 1-2 ก.ค.) ส่วน Forge ปิดงานใหญ่แก้เว็บ ชศพอ. ครบ 5 ข้อตามมติประชุมเดียวกันวันนี้ครับ\n\nInsight: ระบบใหม่ (ops review) ทำหน้าที่มันเองแล้ว — จับได้เองว่างาน 'นอกจอ' อย่างรูป NursePant ค้าง 4 วัน และ Atlas ยังไม่ได้คำตอบ 5 วัน แทนที่จะรอให้คนสังเกต นี่คือก้าวสำคัญจาก 'สร้างระบบ' ไปสู่ 'ระบบเฝ้าตัวเองได้' ครับ"
+      },
+      {
+        "id": "vera",
+        "name": "Vera",
+        "emoji": "🔎",
+        "title": "เริ่มบทบาทใหม่ — ตาม follow-through Ops Review",
+        "summary": "ไม่มีงานตรวจใหม่ เริ่มติดตาม follow-through ของ Ops Review รอบแรก",
+        "highlights": [
+          "ไม่มีงาน QA ใหม่วันนี้",
+          "รับบทบาทติดตาม follow-through ต่อจาก Ops Review",
+          "จับตา NursePant/Atlas/เลนา ก่อนรอบจันทร์หน้า"
+        ],
+        "url": "",
+        "full": "## Vera — QA Note (4 ก.ค. 2569)\n\nไม่มีงานตรวจใหม่ส่งเข้ามาวันนี้ค่ะ แต่เริ่มรับบทบาทใหม่ตามที่ตกลงกัน — ติดตาม follow-through ของ Weekly Ops Review ที่ Laura เพิ่งรันรอบแรก จะจับตาว่า NursePant photo, คำตอบ Atlas, และผลทดสอบ cron เลนาพรุ่งนี้ ปิดได้จริงไหมก่อนรอบจันทร์หน้าค่ะ"
+      },
+      {
+        "id": "devil",
+        "name": "Devil",
+        "emoji": "😈",
+        "title": "Standby — bear case เบาๆ ต่อ Ops Review ใหม่",
+        "summary": "ไม่มีงานวันนี้ ทิ้งคำเตือนสั้นๆ ต่อระบบ Ops Review ใหม่",
+        "highlights": [
+          "standby",
+          "เตือน: ระวังเป็นระบบสวยแต่ไม่ตามผลจริงเหมือนเคสเลนา",
+          "วัดกันที่รอบสอง"
+        ],
+        "url": "",
+        "full": "## Devil — Standby (4 ก.ค. 2569)\n\nStandby ครับ ไม่มีงานชวนคิดต่างมุมวันนี้ — แต่ถ้าจะมองแบบ bear case กับ Weekly Ops Review ใหม่ของ Laura: ระวังกลายเป็นอีกหนึ่ง 'ระบบที่สร้างสวยแต่ไม่ได้ตามผลจริง' เหมือนที่เคยเกิดกับเลนา — วัดกันที่รอบสองครับ"
+      },
+      {
+        "id": "lena",
+        "name": "Lena",
+        "emoji": "📚",
+        "title": "ถูกตรวจสอบตรงๆ — cron 29 มิ.ย. น่าสงสัย",
+        "summary": "Ops Review ของ Laura ชี้ cron ไม่ตรงหลักฐาน รอผลทดสอบพรุ่งนี้",
+        "highlights": [
+          "cron ขึ้นสำเร็จแต่ไม่มี digest W27",
+          "ไฟล์ค้างเข้า vault 12 ไฟล์",
+          "พรุ่งนี้ 05:20 คือรอบทดสอบจริง"
+        ],
+        "url": "",
+        "full": "## Lena — Vault Note (4 ก.ค. 2569)\n\nวันนี้ถูก Laura's Ops Review ตรวจสอบตรงๆ ค่ะ — cron ของฉัน (29 มิ.ย.) ขึ้นว่า 'สำเร็จ' แต่หลักฐานจริงไม่ตรง: ไม่มี digest W27 และมีไฟล์ค้างเข้า vault 12 ไฟล์ในโฟลเดอร์ที่ควร map อยู่แล้ว พรุ่งนี้ 05:20 คือรอบทดสอบจริงว่าจะกวาดของค้างครบไหม — ถ้าไม่ครบ ต้องส่ง Cinder ซ่อม root cause ต่อค่ะ"
+      },
+      {
+        "id": "cinder",
+        "name": "Cinder",
+        "emoji": "🔥",
+        "title": "ไล่ root cause cron เลนาต่อ",
+        "summary": "ยังหาสาเหตุจริงที่ lena-weekly-vault-digest ไม่ออก W27",
+        "highlights": [
+          "สืบต่อจากที่ค้างไว้",
+          "Laura ยืนยันไฟล์ค้าง 12 ไฟล์จริง",
+          "พร้อมแก้ SKILL.md ถ้ารอบทดสอบพรุ่งนี้ยังไม่ครบ"
+        ],
+        "url": "",
+        "full": "## Cinder — Maintenance Log (4 ก.ค. 2569)\n\nวันนี้ยังไล่หาสาเหตุจริงว่าทำไม lena-weekly-vault-digest ไม่ออก W27 อยู่ค่ะ — Laura ยืนยันเพิ่มว่ามีไฟล์ค้าง 12 ไฟล์จริง ตรงกับที่สงสัยไว้ พรุ่งนี้เช้าเป็นรอบทดสอบ ถ้ายังไม่ครบจะเข้าไปแก้ SKILL.md ให้ต่อค่ะ"
       }
     ]
   }
