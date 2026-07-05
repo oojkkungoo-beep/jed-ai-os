@@ -3,11 +3,12 @@
 อัปเดตอัตโนมัติด้วย `scripts/sync_index.py` (Cinder รันทุกครั้งที่มีไฟล์ใหม่/แก้ไฟล์ใน team, characters, output) ห้ามแก้ไฟล์นี้ตรงๆ
 
 
-สร้างล่าสุด: 2026-07-04 13:23
+สร้างล่าสุด: 2026-07-05 23:44
 
 
 ## Agent Definitions (team/)
 
+- [Model Assignment — ทีม Laura](team/model_assignment.md) (2026-07-04)
 - [Cinder — Maintenance & Ops (ซินเดอร์)](team/cinder.md) (2026-07-03)
 - [Mint — Finance Agent (มิ้นท์)](team/finance.md) (2026-07-03)
 - [Forge — Dev Agent (ฟอร์จ)](team/forge.md) (2026-07-03)
@@ -16,7 +17,6 @@
 - [Lena — Vault Librarian & Knowledge Synthesizer (เลนา)](team/librarian.md) (2026-07-03)
 - [Nova — Life & Health Manager (โนว่า)](team/life.md) (2026-07-03)
 - [Sage — Memory Agent (เซจ)](team/memory_agent.md) (2026-07-03)
-- [Model Assignment — ทีม Laura](team/model_assignment.md) (2026-07-03)
 - [Vera — QA & Skill Developer (เวร่า)](team/qa.md) (2026-07-03)
 - [Scout — Research & Analysis Agent (สเกาท์)](team/research.md) (2026-07-03)
 - [Eir — Wellness & Vitality Healer (เอียร์)](team/wellness.md) (2026-07-03)
@@ -47,6 +47,7 @@
 
 ## Diary (output/diary/)
 
+- [📔 Diary — วันอาทิตย์ที่ 5 กรกฎาคม 2569](output/diary/2026-07-05.md) (2026-07-05) — Sage
 - [📔 Diary — วันศุกร์ที่ 3 กรกฎาคม 2569](output/diary/2026-07-03.md) (2026-07-03) — Sage
 - [📔 Diary — วันอังคารที่ 30 มิถุนายน 2569](output/diary/2026-06-30.md) (2026-06-30) — Sage
 - [📔 Diary — วันอาทิตย์ที่ 28 มิถุนายน 2569](output/diary/2026-06-28.md) (2026-06-28)
@@ -90,6 +91,8 @@
 
 ## QA (output/qa/)
 
+- ["Vera Weekly Team Audit — 5 กรกฎาคม 2569"](output/qa/2026-07-05-weekly-audit.md) (2026-07-05)
+- [🧭 Laura Weekly Ops Review — สัปดาห์ 27 (ฉบับปฐมฤกษ์)](output/qa/2026-07-04-weekly-ops-review.md) (2026-07-04) — Laura
 - ["Vera World-Class Skill Audit — ทั้งทีม 14 agent (deep pass + external skills)"](output/qa/2026-07-03-worldclass-skill-audit.md) (2026-07-03)
 - ["Vera On-Demand Audit — Model & Skill ทั้งทีม (โฟกัส Cinder)"](output/qa/2026-07-01-team-model-skill-audit.md) (2026-07-01)
 - ["Vera Weekly Team Audit — 28 มิถุนายน 2569"](output/qa/2026-06-28-weekly-audit.md) (2026-06-28)

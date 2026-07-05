@@ -2,7 +2,7 @@
 title: Model Assignment — ทีม Laura
 file_type: agent_definition
 agent_owner: unspecified
-last_updated: 2026-07-03
+last_updated: 2026-07-04
 ---
 
 # Model Assignment — ทีม Laura
@@ -73,6 +73,14 @@ audit ทั้ง 14 agent เทียบ real-world benchmark ปัจจุ
 
 ## วิธีระบุ model ให้ subagent (อนาคต)
 ถ้า Jed ต้องการให้ Laura สั่ง subagent แบบระบุ model จริง — ใช้ Agent tool พร้อม `model:` ตามตารางด้านบน เมื่อ Forge/Mint/Atlas ทำงานผ่าน Agent tool
+
+## กฎบังคับ — ขอบเขตชัดก่อนเรียก Opus subagent (เพิ่ม 2026-07-04)
+Opus 4.8 ใช้ token ต่องานแพงกว่า Sonnet/Haiku มาก — เคยเจอปัญหาจริง (audit 2026-07-03 ใช้ ~160,000 token/70 tool call ทำให้ Jed ชน usage limit เร็ว) ตั้งแต่นี้ไป **ทุกครั้งที่ Laura จะ spawn subagent ด้วย `model: opus`** ต้องระบุขอบเขตชัดเจนไว้ใน prompt ก่อนเสมอ ห้ามปล่อยเปิดกว้าง:
+- จำนวนไฟล์/agent ที่จะแตะสูงสุดกี่ไฟล์/กี่คนต่อการเรียก 1 ครั้ง
+- ขอบเขตการค้นเว็บ (กี่ query โดยประมาณ หรือจำกัดเฉพาะแหล่งที่ระบุไว้ล่วงหน้า แทนให้ค้นเปิดกว้างเอง)
+- ผลลัพธ์ที่ต้องได้ (deliverable) ชัดเจน ไม่ใช่ "audit ให้ดีที่สุดเท่าที่ทำได้"
+
+ถ้างานมีขอบเขตใหญ่จริง (เช่น audit ทั้งทีมทีเดียวตามที่ Jed ต้องการความสะดวก) — ยังทำได้ในคำสั่งเดียวเหมือนเดิม แต่ต้องระบุ cap ชัดในพรอมต์ (เช่น "ไม่เกิน N tool call" หรือ "อ่านไฟล์ให้ตรงจุด ไม่เปิดกว้างเกินจำเป็น") ไม่ใช่ปล่อยให้ subagent ตัดสินใจขอบเขตเอง
 
 ## Maintenance
 - Vera รับผิดชอบ review ตารางนี้เมื่อมี Claude model ใหม่ออก หรือ Jed สังเกตว่า agent คนไหนทำงานช้า/แพงเกินไปเทียบกับงาน
