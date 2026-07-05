@@ -1462,41 +1462,155 @@
     "topCategory": "🔧 Dev & Tech",
     "tags": [
       "🔧 Dev & Tech",
-      "💡 Creative & Content",
       "🔍 Research",
+      "📝 Memory & Diary",
       "🤖 System & Setup"
+    ],
+    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (49%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 284,
+        "pct": 49
+      },
+      {
+        "name": "🔍 Research",
+        "count": 78,
+        "pct": 14
+      },
+      {
+        "name": "📝 Memory & Diary",
+        "count": 56,
+        "pct": 10
+      },
+      {
+        "name": "🤖 System & Setup",
+        "count": 51,
+        "pct": 9
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 41,
+        "pct": 7
+      },
+      {
+        "name": "⚖️ Decision",
+        "count": 22,
+        "pct": 4
+      }
+    ],
+    "tasks": [
+      "ก่อนวาง architecture มีจุดที่อยากให้ Jed เลือกครับ เพราะกระทบโครงสร้างทั้งระบบ",
+      "Backend เสร็จแล้ว ต่อด้วย frontend (SPA หน้าเดียว: list/search, เพิ่ม-แก้-ลบ, detail+QR+logbook)",
+      "**สร้างเสร็จแล้ว** ที่ [Medsupply_Registry/](Medsupply_Registry/)",
+      "| [gas/index.html](Medsupply_Registry/gas/index.html) | SPA หน้าเดียว — list/search/filter, ฟอร์มเพิ่ม-แก้, detail+QR+lo",
+      "**สิ่งที่ Jed ต้องทำต่อ (ทำครั้งแรกเท่านั้น, ตามขั้นตอนใน README):**",
+      "1. สร้าง Google Sheet + Apps Script project, วาง Code.gs + index.html",
+      "2. สร้างโฟลเดอร์ Drive สำหรับรูป → ใส่ Folder ID ใน Code.gs",
+      "ยังไม่ได้ deploy จริงเพราะต้องใช้ Google account ของ Jed เอง (สร้าง Sheet/Apps Script project) — พร้อมเดินตาม README ได้"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 32,
+    "date": "4 กรกฎาคม 2569",
+    "topCategory": "📝 Memory & Diary",
+    "tags": [
+      "📝 Memory & Diary",
+      "🔍 Research",
+      "🎯 Strategy & CEO",
+      "🤖 System & Setup"
+    ],
+    "summary": "Auto-log: หมวดหลัก 📝 Memory & Diary (24%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "📝 Memory & Diary",
+        "count": 109,
+        "pct": 24
+      },
+      {
+        "name": "🔍 Research",
+        "count": 87,
+        "pct": 19
+      },
+      {
+        "name": "🎯 Strategy & CEO",
+        "count": 62,
+        "pct": 14
+      },
+      {
+        "name": "🤖 System & Setup",
+        "count": 60,
+        "pct": 13
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 39,
+        "pct": 9
+      },
+      {
+        "name": "🌿 Life & Health",
+        "count": 31,
+        "pct": 7
+      }
+    ],
+    "tasks": [
+      "[Laura] สวัสดีค่ะ Jed — Laura นะคะ เดี๋ยวเช็คโครงสร้าง Second Brain ให้ก่อนค่ะ",
+      "vault อยู่ในโฟลเดอร์ที่ sync กับ Google Drive อยู่แล้ว และมี routine \"Second brain git backup\" รายสัปดาห์เก็บสำรองให้อีก",
+      "[Laura] ปิดงานค่ะ — และแก้ข้อมูลรอบที่แล้วให้ตรงนะคะ: diary เดือนกรกฎาคมมีแล้ว 1 วัน (3 ก.ค. สร้างโดย cron) ส่วน 1–2 ก.ค",
+      "[Laura] Laura ขอตอบเรื่องนี้เองค่ะ เพราะมันคือปัญหาของ orchestrator โดยตรง — และ Jed พูดถูกเผงเลยค่ะ ความรู้สึกนั้นมีสาเ",
+      "## ข้อเสนอ: เพิ่มบทบาท \"Chief of Staff\" ให้ Laura + cron ใหม่ 1 ตัว",
+      "3. **สังเคราะห์เป็นฉบับเดียวถึง Jed** — อ่าน Vera audit + Atlas reflections + Lena digest แล้วสรุปเป็น 3 หมวด: **ควรทำ /",
+      "พร้อมแก้ spec 3 จุด: เพิ่มโหมดนี้ใน `team/laura.md`, เพิ่ม pipeline check เข้า audit ของ Vera, และปิด gap `dev/` ใน `tea",
+      "- **ทางครบกติกา:** รอหลัง reset ให้ Scout benchmark ก่อน แล้วค่อยสร้างจากของจริงที่คนอื่นพิสูจน์แล้ว"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 33,
+    "date": "5 กรกฎาคม 2569",
+    "topCategory": "🔧 Dev & Tech",
+    "tags": [
+      "🔧 Dev & Tech",
+      "📝 Memory & Diary",
+      "🔍 Research",
+      "💡 Creative & Content"
     ],
     "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (21%) — รอ Sage สรุปท้ายวัน",
     "categories": [
       {
         "name": "🔧 Dev & Tech",
-        "count": 30,
+        "count": 133,
         "pct": 21
       },
       {
-        "name": "💡 Creative & Content",
-        "count": 21,
-        "pct": 15
+        "name": "📝 Memory & Diary",
+        "count": 124,
+        "pct": 20
       },
       {
         "name": "🔍 Research",
-        "count": 18,
-        "pct": 13
+        "count": 100,
+        "pct": 16
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 78,
+        "pct": 12
       },
       {
         "name": "🤖 System & Setup",
-        "count": 16,
+        "count": 66,
         "pct": 11
       },
       {
-        "name": "📝 Memory & Diary",
-        "count": 14,
-        "pct": 10
-      },
-      {
-        "name": "🌿 Life & Health",
-        "count": 11,
-        "pct": 8
+        "name": "⚖️ Decision",
+        "count": 40,
+        "pct": 6
       }
     ],
     "tasks": [

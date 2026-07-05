@@ -2,6 +2,13 @@
   "version": "0.0.1",
   "configurations": [
     {
+      "name": "rtaf-nurse-netlify-preview",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8899", "--directory", "D:\\Claude_Cowork\\rtaf-nurse-web\\netlify-deploy"],
+      "port": 8899,
+      "autoPort": true
+    },
+    {
       "name": "jed-ai-os",
       "runtimeExecutable": "python",
       "runtimeArgs": ["-m", "http.server", "3334", "--directory", "."],

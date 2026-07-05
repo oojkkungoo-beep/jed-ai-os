@@ -13,3 +13,7 @@ desktop.ini
 
 # Nimble scrape cache — ไฟล์ค้นคว้าชั่วคราวจากงานอื่น ไม่เกี่ยวกับ Jed_org (เพิ่ม 2026-07-03 — Cinder)
 .nimble/
+
+# Dropbox pipeline staging — ไฟล์ต้นฉบับ/เอกสารภายในโรงพยาบาล (1.9GB+) ความรู้ที่สกัดแล้วอยู่ใน Second Brain vault แยกต่างหาก ไม่ต้องซ้ำใน git (เพิ่ม 2026-07-03 — Cinder ตามคำสั่ง Jed)
+00-Dropbox/
+00-Dropbox - Shortcut.lnk

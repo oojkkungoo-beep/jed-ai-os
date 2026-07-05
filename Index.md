@@ -3,7 +3,7 @@
 อัปเดตอัตโนมัติด้วย `scripts/sync_index.py` (Cinder รันทุกครั้งที่มีไฟล์ใหม่/แก้ไฟล์ใน team, characters, output) ห้ามแก้ไฟล์นี้ตรงๆ
 
 
-สร้างล่าสุด: 2026-07-05 23:44
+สร้างล่าสุด: 2026-07-05 23:48
 
 
 ## Agent Definitions (team/)
@@ -48,6 +48,7 @@
 ## Diary (output/diary/)
 
 - [📔 Diary — วันอาทิตย์ที่ 5 กรกฎาคม 2569](output/diary/2026-07-05.md) (2026-07-05) — Sage
+- [📔 Diary — วันเสาร์ที่ 4 กรกฎาคม 2569](output/diary/2026-07-04.md) (2026-07-04) — Sage
 - [📔 Diary — วันศุกร์ที่ 3 กรกฎาคม 2569](output/diary/2026-07-03.md) (2026-07-03) — Sage
 - [📔 Diary — วันอังคารที่ 30 มิถุนายน 2569](output/diary/2026-06-30.md) (2026-06-30) — Sage
 - [📔 Diary — วันอาทิตย์ที่ 28 มิถุนายน 2569](output/diary/2026-06-28.md) (2026-06-28)
@@ -77,6 +78,7 @@
 
 ## Decisions (output/decisions/)
 
+- [Atlas Daily Reflection — วันเสาร์ที่ 4 กรกฎาคม 2569](output/decisions/2026-07-04-atlas-reflection-ceo-lens.md) (2026-07-04) — Atlas
 - [🪞 Atlas Daily Reflection — วันศุกร์ที่ 3 กรกฎาคม 2569](output/decisions/2026-07-03-atlas-reflection-ceo-lens.md) (2026-07-03) — Atlas
 - [🪞 Atlas Daily Reflection — วันอังคารที่ 30 มิถุนายน 2569](output/decisions/2026-06-30-atlas-reflection-ceo-lens.md) (2026-06-30) — Atlas
 - [🪞 Atlas Daily Reflection — วันศุกร์ที่ 26 มิถุนายน 2569](output/decisions/2026-06-26-atlas-reflection-ceo-lens.md) (2026-06-27)
