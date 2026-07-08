@@ -4,9 +4,9 @@
     "name": "AI Team Daily Diary",
     "emoji": "📝",
     "schedule": "ทุกวัน ~05:01",
-    "lastRunAt": "2026-07-05T05:01:00+07:00",
+    "lastRunAt": "2026-07-08T05:01:00+07:00",
     "lastRunStatus": "success",
-    "lastRunNote": "เขียน diary ของ 4 กรกฎาคม 2569 เรียบร้อย — 14 agents"
+    "lastRunNote": "เขียน diary ของ 7 กรกฎาคม 2569 เรียบร้อย — 14 agents (พบว่า cron ไม่ได้รันช่วง 5-6 ก.ค. ทำให้ diary ขาด 2 วันนั้น ยังไม่ backfill เพราะไม่มีหลักฐานกิจกรรมจริงของวันนั้น)"
   },
   {
     "taskId": "atlas-daily-reflection",
