@@ -3,12 +3,6 @@
 __pycache__/
 *.pyc
 
-# ฐานข้อมูลจริง (มีข้อมูลพนักงาน/สุขภาพ) ไม่ track เข้า repo public
-Medic_Station/medic_station.db
-
-# ตัวติดตั้ง offline ขนาดใหญ่ (binary)
-Medic_Station/offline_install/python-3.14.5-amd64.exe
-Medic_Station/offline_install/packages/
 desktop.ini
 
 # Nimble scrape cache — ไฟล์ค้นคว้าชั่วคราวจากงานอื่น ไม่เกี่ยวกับ Jed_org (เพิ่ม 2026-07-03 — Cinder)

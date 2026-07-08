@@ -1394,7 +1394,7 @@
     ]
   },
   "52df67bd-61b8-411d-9fdb-da7baef2380c": {
-    "date": "5 กรกฎาคม 2569",
+    "date": "6 กรกฎาคม 2569",
     "scores": {
       "🎯 Strategy & CEO": 8,
       "💡 Creative & Content": 27,
@@ -1404,7 +1404,7 @@
       "🔧 Dev & Tech": 38,
       "💰 Finance": 14,
       "📝 Memory & Diary": 32,
-      "🤖 System & Setup": 29
+      "🤖 System & Setup": 30
     },
     "tasks": [
       "ช่วย Audit ทีมทุกคนหน่อยครับทั้ง Model และ skill โดยเฉพาะ cinda ขอให้เพิ่ม skill ในการdebug และการเขียนโปรแกรม",
@@ -1480,16 +1480,17 @@
     ]
   },
   "2e950f11-f70d-4910-adca-764508c7dab9": {
-    "date": "5 กรกฎาคม 2569",
+    "date": "7 กรกฎาคม 2569",
     "scores": {
-      "💡 Creative & Content": 26,
-      "🌿 Life & Health": 9,
-      "🔍 Research": 74,
-      "⚖️ Decision": 5,
-      "🔧 Dev & Tech": 73,
+      "🎯 Strategy & CEO": 1,
+      "💡 Creative & Content": 29,
+      "🌿 Life & Health": 23,
+      "🔍 Research": 84,
+      "⚖️ Decision": 6,
+      "🔧 Dev & Tech": 106,
       "💰 Finance": 3,
-      "📝 Memory & Diary": 30,
-      "🤖 System & Setup": 19
+      "📝 Memory & Diary": 41,
+      "🤖 System & Setup": 29
     },
     "tasks": [
       "*   **กรอบเวลาการอัปเดตฐานข้อมูล:**",
@@ -1573,6 +1574,81 @@
     "tasks": [
       "- สร้าง zip ใหม่ชื่อ `second-brain-git-YYYY-MM-DD.zip` ถ้ายังไม่มีของวันนี้",
       "บริบท: นี่คือ fix ที่ Devil เสนอไว้หลังจากตรวจพบว่าการย้าย `.git` ออกจากโฟลเดอร์ sync คลาวด์ (เพื่อป้องกัน conflict) ทำใ"
+    ]
+  },
+  "555decaa-f935-4d3c-8c07-aacb656f4602": {
+    "date": "6 กรกฎาคม 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 6,
+      "💡 Creative & Content": 52,
+      "🌿 Life & Health": 14,
+      "🔍 Research": 31,
+      "⚖️ Decision": 2,
+      "🔧 Dev & Tech": 145,
+      "💰 Finance": 43,
+      "📝 Memory & Diary": 28,
+      "🤖 System & Setup": 66
+    },
+    "tasks": [
+      "[Laura] รับเรื่องค่ะ Jed — งานนี้เกี่ยวกับความรู้พยาบาล/หลักสูตรวิสัญญี ตรงสาย Eir แต่เป็นงานด่วนเล็ก ขอเริ่มอ่านเนื้อหา",
+      "### pdfplumber - Text and Table Extraction",
+      "#### Advanced Table Extraction",
+      "**โครงสร้างหลักสูตร:** ภาคทฤษฎี (สอนโดยวิสัญญีแพทย์ ≥80%) + ภาคปฏิบัติ (เก็บเคสในห้องผ่าตัด ≥150 ราย/คน), ประเมินผล 50:5",
+      "1. **หัวเรื่อง + จุดเริ่มต้น** (1 บรรทัด): \"หลักสูตรวิสัญญีพยาบาล 1 ปี — เปิดสอนตั้งแต่ ต.ค.57 แก้วิกฤตขาดแคลนวิสัญญีพยา",
+      "4. **โครงสร้างหลักสูตรแบบย่อ** (ไอคอน 2 อัน: ทฤษฎี 50% / ปฏิบัติ 50% เก็บเคส ≥150 ราย)",
+      "ต้องการให้ผมลงมือสร้างสไลด์นี้เลยไหมครับ (ผมทำไฟล์ .pptx ให้ได้) หรือ Jed อยากปรับเนื้อหา/มุมเน้นตรงไหนก่อน?",
+      "ลงมือสร้างสไลด์นี้เลยไหมครับ (ผมทำไฟล์ .pptx ให้ได้) เดี๋ยวผมปรับแก้เพิ่มใน .pptx ต่อเองครับ"
+    ]
+  },
+  "b9061381-18a3-49c6-950f-f69d2f95ad5f": {
+    "date": "6 กรกฎาคม 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 1,
+      "💡 Creative & Content": 7,
+      "🌿 Life & Health": 4,
+      "🔍 Research": 14,
+      "🔧 Dev & Tech": 19,
+      "📝 Memory & Diary": 3,
+      "🤖 System & Setup": 21
+    },
+    "tasks": [
+      "### pdfplumber - Text and Table Extraction",
+      "#### Advanced Table Extraction",
+      "[Laura] สวัสดีค่ะ ลอร่า orchestrator ของทีมนะคะ — สร้างโปรเจกต์ **SAR_OR** เสร็จแล้ว อ่านไฟล์เก่าครบทั้ง 5 ไฟล์ และสรุปม",
+      "## สิ่งที่สร้างให้แล้วใน D:\\Project\\SAR_OR"
+    ]
+  },
+  "1fea7c9c-349a-4bb3-90ae-569a96dad099": {
+    "date": "7 กรกฎาคม 2569",
+    "scores": {
+      "🌿 Life & Health": 2,
+      "🔍 Research": 14,
+      "⚖️ Decision": 3,
+      "🔧 Dev & Tech": 8,
+      "🤖 System & Setup": 4
+    },
+    "tasks": [
+      "ผมได้ให้ แองจี้ สร้าง project \"STAT_OR_dashboard\" ไว้ที่ \"d:\\Project\\STAT_OR\"  ตามเอกสารนี้file:///c%3A/Users/oojkk/.gem",
+      "1. **ปิด sheet เป็นส่วนตัว + ใช้ไฟล์สำรองในเครื่องอย่างเดียว** (ปลอดภัยสุด — แนะนำ, ทำสคริปต์อัปเดตไฟล์ให้ได้)",
+      "### ✅ บั๊กที่เจอและแก้เสร็จแล้ว 8 จุด (ทดสอบบนหน้าจอจริงทุกข้อ)",
+      "- **กล่องสรุปรายงาน PDF รายงานเท็จ** — เดิมพิมพ์ว่า \"ห้องผ่าตัดทั้งหมด/ทุกแผนก\" เสมอแม้กรองข้อมูลอยู่ ซึ่งอันตรายมากถ้าแ",
+      "ระบบตอนนี้เปิดใช้ผ่าน `run_silent.vbs` ได้ตามเดิม ข้อมูลสดโหลดครบ 15,955 เคสค่ะ — ตอบข้อ 🔴 มาได้เลยนะคะ เดี๋ยว Laura ส่ง"
+    ]
+  },
+  "837967ef-9bab-4e90-ba1b-5269bc9c539a": {
+    "date": "8 กรกฎาคม 2569",
+    "scores": {
+      "🌿 Life & Health": 1,
+      "🔍 Research": 6,
+      "⚖️ Decision": 1,
+      "🔧 Dev & Tech": 5,
+      "📝 Memory & Diary": 2,
+      "🤖 System & Setup": 8
+    },
+    "tasks": [
+      "[Laura] อัปเดตไฟล์อ้างอิงชุดแรกเลยค่ะ",
+      "| ใน Claude_Cowork | rtaf-nurse-web, Risk, ISBAR, OR_System, จัดซื้อ ห้องผ่าตัด, ตีพิมพ์วารสารสร้างเสริมสุขภาพไทย, วิจัย",
+      "- **ไฟล์อ้างอิงทั้งระบบ:** projects.json, memory ของทีม, Index.md (รัน sync_index แล้ว), config Claude — อัปเดตครบ / das"
     ]
   }
 }

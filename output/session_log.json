@@ -1626,5 +1626,171 @@
     "details": "",
     "relatedProjects": [],
     "auto": true
+  },
+  {
+    "id": 34,
+    "date": "6 กรกฎาคม 2569",
+    "topCategory": "🔧 Dev & Tech",
+    "tags": [
+      "🔧 Dev & Tech",
+      "🤖 System & Setup",
+      "💡 Creative & Content",
+      "🔍 Research"
+    ],
+    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (30%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 202,
+        "pct": 30
+      },
+      {
+        "name": "🤖 System & Setup",
+        "count": 117,
+        "pct": 17
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 86,
+        "pct": 13
+      },
+      {
+        "name": "🔍 Research",
+        "count": 67,
+        "pct": 10
+      },
+      {
+        "name": "📝 Memory & Diary",
+        "count": 63,
+        "pct": 9
+      },
+      {
+        "name": "💰 Finance",
+        "count": 57,
+        "pct": 9
+      }
+    ],
+    "tasks": [
+      "ช่วย Audit ทีมทุกคนหน่อยครับทั้ง Model และ skill โดยเฉพาะ cinda ขอให้เพิ่ม skill ในการdebug และการเขียนโปรแกรม",
+      "2. **Forge** เจอช่องว่างเดียวกัน (เขียนโค้ดใหม่แต่ไม่เคยอ้างสกิล) → เพิ่ม `karpathy-guidelines`, `code-review`, `securit",
+      "3. **Sage** มี standard เขียนไว้ว่า memory ต้องไม่ปล่อย stale แต่ไม่มีสกิลรองรับ → เพิ่ม `anthropic-skills:consolidate-m",
+      "ทั้งหมดนี้เป็นการแก้ระดับ \"เพิ่มบรรทัดอ้างอิงสกิล\" ยังไม่ได้แตะ core role/boundary ของใครนะคะ — ถ้าอยากให้ Vera ตรวจลึกก",
+      "**สิ่งที่พบเพิ่มจากรอบแรก:**",
+      "- `.gitignore` ยังไม่เพิ่ม `.nimble/` และ `.claude/skills/`",
+      "ถ้า Jed อยากให้อัปเดตทีมจาก Sonnet 4.6 → Sonnet 5 จริงๆ บอกได้เลยนะคะ ไว้ค่อยทำตอนพร้อมค่ะ",
+      "1. **เก็บคำอธิบาย model เข้า dictionary แล้ว** — เพิ่ม Fable 5, Opus 4.8, Sonnet 5, Haiku 4.5 เข้า [output/glossary.json"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 35,
+    "date": "7 กรกฎาคม 2569",
+    "topCategory": "🔧 Dev & Tech",
+    "tags": [
+      "🔧 Dev & Tech",
+      "🔍 Research",
+      "📝 Memory & Diary",
+      "🤖 System & Setup"
+    ],
+    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (32%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 114,
+        "pct": 32
+      },
+      {
+        "name": "🔍 Research",
+        "count": 98,
+        "pct": 28
+      },
+      {
+        "name": "📝 Memory & Diary",
+        "count": 41,
+        "pct": 12
+      },
+      {
+        "name": "🤖 System & Setup",
+        "count": 33,
+        "pct": 9
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 29,
+        "pct": 8
+      },
+      {
+        "name": "🌿 Life & Health",
+        "count": 25,
+        "pct": 7
+      }
+    ],
+    "tasks": [
+      "*   **กรอบเวลาการอัปเดตฐานข้อมูล:**",
+      "*   **กันยายน (ภายใน 30 ก.ย.):** ปิดรับสมัครสมาชิกใหม่เพิ่มเติม     *   **ตุลาคม - ธันวาคม:** นำข้อมูลผู้สมัครใหม่ทั้งหม",
+      "*   **ระยะเวลารับสมัครและค่าธรรมเนียม:** เปิดให้ผู้ที่ยังไม่ได้เป็นสมาชิกสามารถสมัครเพิ่มเติมได้จนถึงวันที่ 30 กันยายนนี",
+      "*   **ตุลาคม - ธันวาคม:** นำข้อมูลผู้สมัครใหม่ทั้งหมดมาอัปเดตเข้าระบบฐานข้อมูล เพื่อให้ได้ฐานข้อมูลทะเบียนฉบับสมบูรณ์",
+      "[Laura] อัปเดต memory โปรเจกต์เรียบร้อยค่ะ — มติประชุมทั้งหมดถูกบันทึกเป็น Phase 2 backlog แล้ว session หน้าทีมจะจำได้เอ",
+      "2. **ส่งไฟล์ฐานข้อมูล 2 ชุด** (ฐานเดิมที่ถูกต้อง + ไฟล์อัปเดตงานแจกร่ม) มาให้ทีมเริ่ม cleansing — งานนี้ deadline ก.ค.–ส",
+      "3. **สั่งทีมแก้เว็บ** เมื่อพร้อม: ตัดยศ, เพิ่มช่องชื่อเดิม, ลดฟอร์มใบสมัคร, แก้ค่าสมัคร 500→1,000, แจ้งปิดรับ 30 ก.ย., ท",
+      "เริ่มที่ข้อ 3 ก่อนนะครับ"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 36,
+    "date": "8 กรกฎาคม 2569",
+    "topCategory": "🤖 System & Setup",
+    "tags": [
+      "🤖 System & Setup",
+      "🔍 Research",
+      "🔧 Dev & Tech",
+      "📝 Memory & Diary"
+    ],
+    "summary": "Auto-log: หมวดหลัก 🤖 System & Setup (35%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "🤖 System & Setup",
+        "count": 8,
+        "pct": 35
+      },
+      {
+        "name": "🔍 Research",
+        "count": 6,
+        "pct": 26
+      },
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 5,
+        "pct": 22
+      },
+      {
+        "name": "📝 Memory & Diary",
+        "count": 2,
+        "pct": 9
+      },
+      {
+        "name": "🌿 Life & Health",
+        "count": 1,
+        "pct": 4
+      },
+      {
+        "name": "⚖️ Decision",
+        "count": 1,
+        "pct": 4
+      }
+    ],
+    "tasks": [
+      "[Laura] อัปเดตไฟล์อ้างอิงชุดแรกเลยค่ะ",
+      "| ใน Claude_Cowork | rtaf-nurse-web, Risk, ISBAR, OR_System, จัดซื้อ ห้องผ่าตัด, ตีพิมพ์วารสารสร้างเสริมสุขภาพไทย, วิจัย",
+      "- **ไฟล์อ้างอิงทั้งระบบ:** projects.json, memory ของทีม, Index.md (รัน sync_index แล้ว), config Claude — อัปเดตครบ / das"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
   }
 ]

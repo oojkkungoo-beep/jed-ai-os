@@ -12,7 +12,7 @@ last_updated: 2026-06-15
 **บริบท:** การแข่งขัน **"English Conversation SBAR Season 2 — Safety Communication: SBAR Bedside Handover"**
 จัดโดย คณก.พัฒนาภาษาอังกฤษ กพย. รพ.ภูมิพลอดุลยเดช พอ.
 📅 วันอังคารที่ 23 มิถุนายน 2569 เวลา 08.30–12.00 น. ห้องประชุมใหญ่ชั้น 5 อาคารคุ้มเกศ
-ที่มา: ไฟล์อ้างอิงจาก `D:\Claude_Cowork\งาน_รพ\ISBAR\` (โปสเตอร์ + สคริปต์ปี 2024 "Hand over Script PACU")
+ที่มา: ไฟล์อ้างอิงจาก `D:\Project\ISBAR\` (โปสเตอร์ + สคริปต์ปี 2024 "Hand over Script PACU")
 
 ## เกณฑ์การประกวด (50 คะแนน)
 1. **Situation** ที่นำไปสู่ SBAR — 10 คะแนน

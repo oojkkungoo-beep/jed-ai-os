@@ -3,7 +3,7 @@
 อัปเดตอัตโนมัติด้วย `scripts/sync_index.py` (Cinder รันทุกครั้งที่มีไฟล์ใหม่/แก้ไฟล์ใน team, characters, output) ห้ามแก้ไฟล์นี้ตรงๆ
 
 
-สร้างล่าสุด: 2026-07-05 23:48
+สร้างล่าสุด: 2026-07-08 22:21
 
 
 ## Agent Definitions (team/)
@@ -93,6 +93,7 @@
 
 ## QA (output/qa/)
 
+- [QA Review — STAT_OR Dashboard (รับต่อจากทีม Angie)](output/qa/2026-07-07-stat-or-dashboard-qa-review.md) (2026-07-07)
 - ["Vera Weekly Team Audit — 5 กรกฎาคม 2569"](output/qa/2026-07-05-weekly-audit.md) (2026-07-05)
 - [🧭 Laura Weekly Ops Review — สัปดาห์ 27 (ฉบับปฐมฤกษ์)](output/qa/2026-07-04-weekly-ops-review.md) (2026-07-04) — Laura
 - ["Vera World-Class Skill Audit — ทั้งทีม 14 agent (deep pass + external skills)"](output/qa/2026-07-03-worldclass-skill-audit.md) (2026-07-03)
