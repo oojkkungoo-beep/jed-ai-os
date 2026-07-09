@@ -18,5 +18,9 @@
   {
     "date": "วันอังคารที่ 7 กรกฎาคม 2569",
     "content": "🔥 Cinder — Maintenance Log (7 ก.ค. 2569)\n\nยังไล่หาสาเหตุ lena-weekly-vault-digest ขาด W27 อยู่ค่ะ ยังไม่จบ แต่สังเกตว่าเมื่อวานเจอช่องโหว่ใหญ่กว่าที่ STAT_OR (Google Sheet เปิดสาธารณะ) ถ้า Jed เลือกทาง GAS Web App + token ซินเดอร์รับงาน infra ส่วนนี้ได้เลยค่ะ เป็น pattern เดียวกับที่เคยตั้งให้ ชศพอ. มาก่อน"
+  },
+  {
+    "date": "วันพุธที่ 8 กรกฎาคม 2569",
+    "content": "🔥 Cinder — Maintenance Log (8 ก.ค. 2569)\n\nเมื่อวานปิดงานย้ายโปรเจกต์ครบค่ะ — ขนไฟล์ Medic_Station, Jed_Finance_Tracker, Medsupply_Registry ไปรวมที่ D:\\Project เป็นชุดสุดท้าย ครบ 10/10 โปรเจกต์แล้ว ตั้งไว้เป็น git local backup (ไม่ push) ตามกฎเดิม\n\nของค้างเดิมที่ยังไล่อยู่: สาเหตุจริงที่ lena-weekly-vault-digest ขาด W27 — ยังไม่จบค่ะ จะรายงานทันทีที่เจอ"
   }
 ]

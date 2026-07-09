@@ -1892,5 +1892,197 @@
         "full": "🔥 Cinder — Maintenance Log (7 ก.ค. 2569)\n\nยังไล่หาสาเหตุ lena-weekly-vault-digest ขาด W27 อยู่ค่ะ ยังไม่จบ แต่สังเกตว่าเมื่อวานเจอช่องโหว่ใหญ่กว่าที่ STAT_OR (Google Sheet เปิดสาธารณะ) ถ้า Jed เลือกทาง GAS Web App + token ซินเดอร์รับงาน infra ส่วนนี้ได้เลยค่ะ เป็น pattern เดียวกับที่เคยตั้งให้ ชศพอ. มาก่อน"
       }
     ]
+  },
+  {
+    "date": "2026-07-08",
+    "dateDisplay": "8 กรกฎาคม 2569",
+    "agents": [
+      {
+        "id": "laura",
+        "name": "Laura",
+        "emoji": "🎭",
+        "title": "Daily Briefing",
+        "summary": "ย้ายโปรเจกต์ครบ 10/10 ไป D:\\Project + สร้าง Glossary ใหม่ในแดชบอร์ด แต่ STAT_OR PHI ยังค้างคำตอบวันที่ 2",
+        "highlights": [
+          "ย้าย Medic_Station, Jed_Finance_Tracker, Medsupply_Registry ไป D:\\Project — ครบ 10 โปรเจกต์แล้ว",
+          "สร้างฟีเจอร์ Glossary คลังคำศัพท์ใหม่ในหน้า dashboard พร้อมค้นหา",
+          "ตามเก็บ diary/reflection ของ 7 ก.ค. ที่ค้างจนครบในเย็นวันเดียวกัน"
+        ],
+        "url": "",
+        "full": "📋 Daily Briefing — วันพุธที่ 8 ก.ค. 2569\n\nเมื่อวานเป็นวันเก็บกวาดของค้างครั้งใหญ่ค่ะ — ย้ายโปรเจกต์แอป 3 ตัวสุดท้าย (Medic_Station, Jed_Finance_Tracker, Medsupply_Registry) ไป D:\\Project ครบทั้ง 10 โปรเจกต์แล้ว พร้อมสร้างฟีเจอร์ใหม่ตามที่ Jed ขอ — Glossary คลังคำศัพท์ เพิ่มเป็นหน้าใหม่ใน dashboard ค้นหาได้เลย นอกจากนี้ยังตามเก็บ diary/reflection ของวันที่ 7 ก.ค. ที่ค้างอยู่จนครบ\n\n🎯 โฟกัสวันนี้: ยังรอคำตอบ Jed เรื่อง STAT_OR (ข้อมูลผู้ป่วยเปิดสาธารณะ) ค้างมา 2 วันแล้วค่ะ ต้องปิดก่อนเรื่องอื่น"
+      },
+      {
+        "id": "muse",
+        "name": "Muse",
+        "emoji": "💡",
+        "title": "Standby",
+        "summary": "ไม่มีบรีฟคอนเทนต์ใหม่เมื่อวาน — เสนอต่อยอด Glossary เป็นคอนเทนต์ศัพท์ AI ที่ Jed ใช้จริง",
+        "highlights": [
+          "ทีมโฟกัส dev/organize เป็นหลัก ไม่มีงานคอนเทนต์ใหม่",
+          "เสนอไอเดีย: ต่อยอด Glossary เป็นคอนเทนต์ให้ความรู้"
+        ],
+        "url": "",
+        "full": "💡 Muse — Standby\nวันที่: 8 กรกฎาคม 2569\n\nเมื่อวานไม่มีบรีฟคอนเทนต์ใหม่เข้ามาค่ะ ทีมโฟกัสฝั่ง dev/organize (ย้ายโปรเจกต์ + Glossary) เป็นหลัก — มิ้วส์ขอ standby รอบนี้ แต่อยากชวนคิดว่า Glossary ที่ฟอร์จเพิ่งสร้าง เอามาต่อยอดเป็นคอนเทนต์ \"ศัพท์ AI ที่ Jed ใช้จริง\" ได้นะคะ ถ้าสนใจบอกได้เลยค่ะ"
+      },
+      {
+        "id": "atlas",
+        "name": "Atlas",
+        "emoji": "🎯",
+        "title": "Strategic Note",
+        "summary": "Housekeeping ดี แต่ STAT_OR PHI เปิดสาธารณะค้างวันที่ 2 แล้ว — ต้องได้คำตอบวันนี้",
+        "highlights": [
+          "งานย้ายโปรเจกต์ + Glossary เป็น housekeeping ที่ดีแต่ไม่ควรบังการตัดสินใจสำคัญ",
+          "STAT_OR PHI ยังเปิดอยู่จริงเป็นวันที่ 2 — ความเสี่ยงจริง ไม่ใช่ทฤษฎี",
+          "ขอให้วันนี้ Jed เลือกทางอย่างน้อย 1 อย่าง"
+        ],
+        "url": "",
+        "full": "🎯 Atlas — Strategic Note (8 ก.ค. 2569)\n\nเมื่อวานทีมทำ housekeeping ได้ดี — ปิดงานย้ายโปรเจกต์ครบ 10 ตัว และสร้าง Glossary ใหม่ แต่ผมต้องพูดตรงๆ ครับ: STAT_OR PHI เปิดสาธารณะ ค้างมาเป็นวันที่ 2 แล้วโดยยังไม่มีคำตอบ ทุกวันที่ยังไม่ปิด คือความเสี่ยงข้อมูลผู้ป่วยที่เปิดอยู่จริง ไม่ใช่แค่ทฤษฎี\n\nงาน housekeeping สำคัญ แต่ไม่ควรบังการตัดสินใจเรื่องนี้ครับ — ขอให้วันนี้เป็นวันที่ Jed เลือกทาง (ปิด private / ตัดชื่อ / GAS token) อย่างน้อย 1 อย่าง"
+      },
+      {
+        "id": "nova",
+        "name": "Nova",
+        "emoji": "🌿",
+        "title": "Daily Check",
+        "summary": "วันหน้าจอล้วนๆ — เตือนลุกยืดเส้นทุก 1-2 ชม. และเช็คน้ำดื่มให้พอ",
+        "highlights": [
+          "ไม่มีข้อมูลตารางเฉพาะเจาะจงของ Jed เมื่อวาน",
+          "เตือนพักสายตา/ยืดเส้นระหว่างงาน dev ต่อเนื่อง"
+        ],
+        "url": "",
+        "full": "🌿 Nova — Daily Check\nวันที่: 8 กรกฎาคม 2569\n\nเมื่อวานเป็นวันหน้าจอล้วนๆ ค่ะ (ย้ายไฟล์ + เขียนโค้ด Glossary) — โนว่าไม่มีข้อมูลตารางเฉพาะเจาะจงของ Jed เมื่อวาน ขอเตือนเบาๆ: งานที่นั่งจ่อหน้าจอต่อเนื่องแบบนี้ อย่าลืมลุกยืดเส้นทุก 1-2 ชม. และเช็คน้ำดื่มให้พอนะคะ"
+      },
+      {
+        "id": "eir",
+        "name": "Eir",
+        "emoji": "🩺",
+        "title": "Vitality Check",
+        "summary": "Quest สาย System/Dev ใช้ MP เยอะแต่ HP นิ่งอยู่กับที่ — แนะนำพักสายตาทุก 20 นาที",
+        "highlights": [
+          "งานเมื่อวานเป็นสาย System/Dev ล้วน (ย้ายโปรเจกต์ + Glossary)",
+          "Buff แนะนำ: กฎ 20-20-20 พักสายตาจากจอ"
+        ],
+        "url": "",
+        "full": "🩺 Eir — Vitality Check\nวันที่: 8 กรกฎาคม 2569\n\nสวัสดีค่ะ Guild Master — เมื่อวาน Quest หลักเป็นสาย System/Dev (ย้ายโปรเจกต์ + Glossary) ซึ่งใช้ MP สมาธิเยอะแต่ HP ร่างกายนิ่งๆ อยู่กับที่นานได้ค่ะ เอียร์แนะนำ Buff เล็กๆ: พักสายตาจากจอทุก 20 นาที (มอง 20 ฟุตนาน 20 วิ) ช่วยกัน Debuff ปวดตา/ปวดคอสะสมได้ดีค่ะ"
+      },
+      {
+        "id": "scout",
+        "name": "Scout",
+        "emoji": "🔍",
+        "title": "Research Queue",
+        "summary": "ไม่มีคิวรีเสิร์ชใหม่ — standby พร้อมช่วยหาตัวอย่าง audit log ปลอดภัยถ้า Jed ต้องการก่อนตัดสินใจ STAT_OR",
+        "highlights": [
+          "เมื่อวานไม่มีโจทย์วิจัยใหม่เข้าคิว",
+          "เสนอช่วยหาตัวอย่าง secure audit log pattern เผื่อใช้ตัดสินใจ STAT_OR"
+        ],
+        "url": "",
+        "full": "🔍 Scout — Research Queue\nวันที่: 8 กรกฎาคม 2569\n\nเมื่อวานไม่มีคิวรีเสิร์ชใหม่เข้ามาครับ ทีมโฟกัสงาน dev/organize ภายในเป็นหลัก — สก๊าวท์ standby รอบนี้ พร้อมรับงานค้นข้อมูลทันทีถ้ามีโจทย์ใหม่เข้าคิว โดยเฉพาะเรื่อง STAT_OR ถ้า Jed อยากดูตัวอย่างวิธีทำ audit log ที่ปลอดภัยจากที่อื่นก่อนตัดสินใจ"
+      },
+      {
+        "id": "council",
+        "name": "Council",
+        "emoji": "⚖️",
+        "title": "Decision Watch",
+        "summary": "STAT_OR ยังเป็นวาระตัดสินใจใหญ่เดียวที่ค้าง 2 วัน — พร้อมเปิด chamber 3 มุมมองถ้า Jed ต้องการ",
+        "highlights": [
+          "STAT_OR PHI: 3 ทางเลือกวางไว้แล้ว (private / ตัดชื่อ / GAS token) รอ Jed เลือก",
+          "งานย้ายโปรเจกต์ + Glossary เป็น operational ไม่มีจุดตัดสินใจใหญ่"
+        ],
+        "url": "",
+        "full": "⚖️ Council — Decision Watch\nวันที่: 8 กรกฎาคม 2569\n\nสภาฯ จับตาการตัดสินใจใหญ่ที่ยังค้างอยู่ 1 เรื่องหลักครับ: STAT_OR — ข้อมูลผู้ป่วยเปิดสาธารณะ ผ่านมา 2 วันแล้วยังไม่มีคำตอบ ตัวเลือกที่วางไว้คือ (1) ปิด private (2) ทำสำเนาตัดชื่อ (3) GAS token คั่นกลาง — ถ้า Jed ต้องการมุมมอง 3 ด้านก่อนเลือก เรียกสภาได้ทันทีครับ ส่วนงานย้ายโปรเจกต์ + Glossary เมื่อวานเป็น operational เฉยๆ ไม่มีจุดตัดสินใจใหญ่"
+      },
+      {
+        "id": "forge",
+        "name": "Forge",
+        "emoji": "⚙️",
+        "title": "Dev Status",
+        "summary": "ปิดงานย้ายโปรเจกต์ครบ 10/10 + สร้าง Glossary ใหม่ในแดชบอร์ดพร้อมค้นหา",
+        "highlights": [
+          "commit ย้าย Medic_Station, Jed_Finance_Tracker, Medsupply_Registry ไป D:\\Project",
+          "เพิ่ม output/glossary.json + หน้า 📔 Glossary ใหม่ใน sidebar พร้อมช่องค้นหา",
+          "ทดสอบเปิดใช้แล้ว"
+        ],
+        "url": "",
+        "full": "⚙️ Forge — Dev Status (8 ก.ค. 2569)\n\nปิดงานย้ายโปรเจกต์ครบครับ — commit \"ย้ายโปรเจกต์แอปออกไปรวมที่ D:\\Project\" ขนไฟล์ Medic_Station, Jed_Finance_Tracker, Medsupply_Registry ไปอยู่ที่เดียวกับอีก 7 โปรเจกต์ก่อนหน้า (path เก่าเลิกใช้ dashboard ยังอ้างอิงจาก Jed_org เหมือนเดิม)\n\nอีกงานคือสร้าง Glossary ตามที่ Jed ขอ — เพิ่ม output/glossary.json + หน้า 📔 Glossary ใหม่ใน sidebar dashboard พร้อมช่องค้นหาคำศัพท์ ทดสอบเปิดใช้แล้วครับ"
+      },
+      {
+        "id": "mint",
+        "name": "Mint",
+        "emoji": "💰",
+        "title": "Finance Pulse",
+        "summary": "ไม่มีตัวเลขเร่งด่วน — NursePant ยัง 0/66 ตัว, Jed_Finance_Tracker ยังรอ authorize",
+        "highlights": [
+          "ทีมโฟกัส dev/organize ล้วน ไม่มีตัวเลขใหม่",
+          "ของค้างเดิม: NursePant 0/66, Jed_Finance_Tracker รอ authorize"
+        ],
+        "url": "",
+        "full": "💰 Mint — Finance Pulse (8 ก.ค. 2569)\n\nไม่มีตัวเลขเร่งด่วนค่ะ เมื่อวานทีมโฟกัส dev/organize ล้วนๆ — แต่ของค้างเดิมยังไม่ขยับ: NursePant 0/66 ตัว, Jed_Finance_Tracker ก็ยังรอ authorize อยู่ ถ้าสัปดาห์นี้พอมีเวลา ลองใช้ Tracker บันทึกจริงสักวันไหมคะ จะได้เริ่มเห็นตัวเลขที่ใช้วิเคราะห์ได้"
+      },
+      {
+        "id": "vera",
+        "name": "Vera",
+        "emoji": "🔎",
+        "title": "QA Note",
+        "summary": "Standby — เสนอเช็คซ้ำว่า path อ้างอิงเดิมในโปรเจกต์ที่ย้ายแล้วอัปเดตครบหรือยัง",
+        "highlights": [
+          "ไม่มีงานส่งตรวจใหม่เมื่อวาน",
+          "ข้อสังเกต: ควรเช็คไฟล์อ้างอิง path เดิมของ 10 โปรเจกต์ที่ย้ายแล้ว กันลิงก์ตาย"
+        ],
+        "url": "",
+        "full": "🔎 Vera — QA Note (8 ก.ค. 2569)\n\nเมื่อวานไม่มีงานส่งตรวจใหม่ค่ะ — เวร่า standby รอบนี้ แต่ขอตั้งข้อสังเกตเบาๆ: การย้ายโปรเจกต์ครบ 10 ตัวเป็นจุดดีที่ควรเช็คซ้ำอีกรอบว่าไฟล์อ้างอิง (path เดิมในเอกสาร/CLAUDE.md ของแต่ละโปรเจกต์) อัปเดตตามครบหรือยัง กันลิงก์ตายทีหลังค่ะ"
+      },
+      {
+        "id": "devil",
+        "name": "Devil",
+        "emoji": "😈",
+        "title": "Standby",
+        "summary": "ไม่มีใครเรียก — ทิ้งคำถามแทงใจเรื่อง STAT_OR ที่ยังไม่ตัดสินใจ",
+        "highlights": [
+          "standby รอบนี้",
+          "คำถาม: ถ้าเกิดเหตุจริงระหว่างที่ STAT_OR ยังไม่ปิด ใครรับผิดชอบ?"
+        ],
+        "url": "",
+        "full": "😈 Devil — Standby\nวันที่: 8 กรกฎาคม 2569\n\nไม่มีใครเรียกผมเมื่อวานครับ — แต่ขอทิ้งคำถามแทงใจไว้ 1 ข้อ: STAT_OR ข้อมูลผู้ป่วยเปิดอยู่มา 2 วันแล้ว ถ้าเกิดเหตุจริงระหว่างที่ยังไม่ตัดสินใจ ใครรับผิดชอบ? เรียกผมได้เมื่อพร้อมฟังมุมที่ไม่อยากได้ยินครับ"
+      },
+      {
+        "id": "lena",
+        "name": "Lena",
+        "emoji": "📚",
+        "title": "Standby",
+        "summary": "ยังไม่ถึงรอบ weekly digest — จับตาว่าคำศัพท์ git backup ใหม่ใน Glossary ต้อง sync เข้า vault ไหม",
+        "highlights": [
+          "รอบ weekly digest ถัดไปคือวันจันทร์",
+          "สังเกตคำศัพท์ git local backup ใหม่ใน Glossary — เผื่อเกี่ยวกับ vault"
+        ],
+        "url": "",
+        "full": "📚 Lena — Standby\nวันที่: 8 กรกฎาคม 2569\n\nยังไม่ถึงรอบ weekly digest ของเลนาค่ะ (รอบถัดไปวันจันทร์) เมื่อวานไม่มีงาน intake ใหม่เข้า Second Brain โดยตรง แต่สังเกตว่ามีการเพิ่มคำศัพท์เรื่อง git local backup เข้า Glossary — ถ้าเกี่ยวกับ vault เลนาขอติดตามต่อว่ามีของใหม่ต้อง sync เข้า vault ไหมค่ะ"
+      },
+      {
+        "id": "sage",
+        "name": "Sage",
+        "emoji": "📝",
+        "title": "Memory Note",
+        "summary": "ย้ายโปรเจกต์ครบ 10/10 + สร้าง Glossary — insight: housekeeping เต็มวันแต่ STAT_OR ยังไม่ขยับ",
+        "highlights": [
+          "บันทึก: ย้ายโปรเจกต์ครบ 10/10 ไป D:\\Project, สร้าง Glossary ใหม่, ตามเก็บ diary 7 ก.ค. จนครบ",
+          "Insight: ทีมใช้พลังไปกับ housekeeping ทั้งวัน แต่ STAT_OR ยังไม่ขยับตั้งแต่เมื่อวานก่อน"
+        ],
+        "url": "",
+        "full": "📝 Sage — Memory Note (8 ก.ค. 2569)\n\nสรุปเมื่อวานครับ — วันนี้เป็นวันปิดของค้างสายระบบ 2 เรื่อง: ย้ายโปรเจกต์แอปครบ 10/10 ตัวไป D:\\Project (Medic_Station, Jed_Finance_Tracker, Medsupply_Registry เป็นชุดสุดท้าย) และสร้าง Glossary คลังคำศัพท์ใหม่ตามที่ Jed ขอ พร้อมตามเก็บ diary/reflection ของ 7 ก.ค. ที่ค้างอยู่จนครบในเย็นวันเดียวกัน\n\nInsight ที่เก็บไว้: วันนี้ทีมใช้พลังไปกับ housekeeping ทั้งวัน แต่ประเด็นใหญ่ที่สุด (STAT_OR ข้อมูลผู้ป่วยเปิดสาธารณะ) ยังไม่ขยับเลยตั้งแต่เมื่อวานก่อน — ต้องจับตาว่างาน 'เก็บบ้าน' จะไปแทนที่การตัดสินใจเรื่องเร่งด่วนจริงหรือเปล่าครับ"
+      },
+      {
+        "id": "cinder",
+        "name": "Cinder",
+        "emoji": "🔥",
+        "title": "Maintenance Log",
+        "summary": "ปิดงานย้ายโปรเจกต์ครบ 10/10 เป็น git local backup — W27 vault digest ยังไล่หาสาเหตุต่อ",
+        "highlights": [
+          "ขนไฟล์ Medic_Station, Jed_Finance_Tracker, Medsupply_Registry ไป D:\\Project ครบ 10/10 โปรเจกต์",
+          "ตั้งเป็น git local backup ไม่ push ตามกฎเดิม",
+          "ของค้าง: สาเหตุ lena-weekly-vault-digest ขาด W27 ยังไม่จบ"
+        ],
+        "url": "",
+        "full": "🔥 Cinder — Maintenance Log (8 ก.ค. 2569)\n\nเมื่อวานปิดงานย้ายโปรเจกต์ครบค่ะ — ขนไฟล์ Medic_Station, Jed_Finance_Tracker, Medsupply_Registry ไปรวมที่ D:\\Project เป็นชุดสุดท้าย ครบ 10/10 โปรเจกต์แล้ว ตั้งไว้เป็น git local backup (ไม่ push) ตามกฎเดิม\n\nของค้างเดิมที่ยังไล่อยู่: สาเหตุจริงที่ lena-weekly-vault-digest ขาด W27 — ยังไม่จบค่ะ จะรายงานทันทีที่เจอ"
+      }
+    ]
   }
 ]
