@@ -466,5 +466,32 @@
     "example": "Nova (จัดตาราง/todo), Lena ตอน intake/organize ไฟล์เข้า vault ในทีม Laura ใช้ตัวนี้",
     "date_added": "2026-07-03",
     "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 47,
+    "term": ".gitignore",
+    "category": "Git / Dev",
+    "meaning": "ไฟล์ที่บอก git ว่าไฟล์/โฟลเดอร์ไหนไม่ต้องติดตามและไม่ต้อง commit ขึ้น repo — ป้องกันข้อมูลลับหลุด, ตัดไฟล์ขยะ/cache, และไฟล์เฉพาะเครื่องที่ไม่ควรแชร์",
+    "example": "node_modules/ (library หนัก ติดตั้งใหม่ได้), .env (API key), *.log (log ชั่วคราว) — dashboard-svelte/ ของ Jed มี .gitignore ป้องกัน node_modules ขึ้น repo",
+    "date_added": "2026-07-08",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 48,
+    "term": "Git repo แบบ local",
+    "category": "Git / Dev",
+    "meaning": "repository (คลังเก็บโค้ด+ประวัติการเปลี่ยนแปลง) ที่อยู่บนเครื่องของตัวเองเท่านั้น ยังไม่ได้ sync ขึ้น remote เช่น GitHub ทำงาน/commit ได้แม้ไม่มีเน็ต",
+    "example": "Second Brain Vault ของ Jed มี git local backup — แม้ไม่ push ขึ้น remote ก็มีประวัติการเปลี่ยนแปลงเก็บไว้บนเครื่องเป็น redundant backup",
+    "date_added": "2026-07-08",
+    "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 49,
+    "term": "git init + git commit",
+    "category": "Git / Dev",
+    "meaning": "git init = สร้าง git repo ใหม่ในโฟลเดอร์ที่เลือก (ทำครั้งเดียวตอนเริ่ม) | git commit = บันทึก snapshot ของไฟล์ที่เลือกไว้ ณ จุดนั้น พร้อมข้อความอธิบาย",
+    "example": "ลำดับแรก: git init → git add . → git commit -m '...' | ใช้ตอนตั้ง git local backup ให้ Second Brain Vault ของ Jed",
+    "date_added": "2026-07-08",
+    "source": "ถาม Jed ในแชท"
   }
 ]

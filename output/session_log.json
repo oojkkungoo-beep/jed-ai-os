@@ -1744,50 +1744,112 @@
   {
     "id": 36,
     "date": "8 กรกฎาคม 2569",
-    "topCategory": "🤖 System & Setup",
+    "topCategory": "📝 Memory & Diary",
     "tags": [
-      "🤖 System & Setup",
-      "🔍 Research",
+      "📝 Memory & Diary",
       "🔧 Dev & Tech",
-      "📝 Memory & Diary"
+      "🤖 System & Setup",
+      "🔍 Research"
     ],
-    "summary": "Auto-log: หมวดหลัก 🤖 System & Setup (35%) — รอ Sage สรุปท้ายวัน",
+    "summary": "Auto-log: หมวดหลัก 📝 Memory & Diary (26%) — รอ Sage สรุปท้ายวัน",
     "categories": [
       {
-        "name": "🤖 System & Setup",
-        "count": 8,
-        "pct": 35
-      },
-      {
-        "name": "🔍 Research",
-        "count": 6,
+        "name": "📝 Memory & Diary",
+        "count": 126,
         "pct": 26
       },
       {
         "name": "🔧 Dev & Tech",
-        "count": 5,
+        "count": 104,
         "pct": 22
       },
       {
-        "name": "📝 Memory & Diary",
-        "count": 2,
-        "pct": 9
+        "name": "🤖 System & Setup",
+        "count": 71,
+        "pct": 15
       },
       {
-        "name": "🌿 Life & Health",
-        "count": 1,
-        "pct": 4
+        "name": "🔍 Research",
+        "count": 65,
+        "pct": 14
       },
       {
-        "name": "⚖️ Decision",
-        "count": 1,
-        "pct": 4
+        "name": "💡 Creative & Content",
+        "count": 32,
+        "pct": 7
+      },
+      {
+        "name": "🎯 Strategy & CEO",
+        "count": 31,
+        "pct": 7
       }
     ],
     "tasks": [
-      "[Laura] อัปเดตไฟล์อ้างอิงชุดแรกเลยค่ะ",
-      "| ใน Claude_Cowork | rtaf-nurse-web, Risk, ISBAR, OR_System, จัดซื้อ ห้องผ่าตัด, ตีพิมพ์วารสารสร้างเสริมสุขภาพไทย, วิจัย",
-      "- **ไฟล์อ้างอิงทั้งระบบ:** projects.json, memory ของทีม, Index.md (รัน sync_index แล้ว), config Claude — อัปเดตครบ / das"
+      "ความหมายแบบง่าย: เหมือนการ \"คัดลอกเส้นทางงาน\" ออกไปอีกเส้นหนึ่ง โดยเริ่มจากจุดที่เราอยู่ตอนนี้ (commit ปัจจุบัน) — งานที",
+      "- มี subagent หรือ session แยกที่ต้องทำงานคู่ขนานกัน (เหมือนที่ระบบ Agent tool มี `isolation: worktree` ให้ทำงานแยกจากโค",
+      "ช่วยสร้าง Dictionary คลังคำศัพท์ และจัดเก็บคำศัพท์นี้ให้ผมด้วย",
+      "[Laura] เรียบร้อยค่ะ Jed สร้าง Dictionary คลังคำศัพท์ไว้ที่ [output/glossary.json](output/glossary.json) แล้ว พร้อมเก็บค",
+      "โครงสร้างไฟล์ (ต่อ 1 คำศัพท์):",
+      "[Laura] เพิ่ม Glossary เข้า dashboard เรียบร้อยค่ะ Jed",
+      "- เพิ่มเมนู \"📔 Glossary\" ใน sidebar — [dashboard/index.html](dashboard/index.html)",
+      "- เพิ่มหน้า Glossary พร้อมช่องค้นหาคำศัพท์"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 37,
+    "date": "9 กรกฎาคม 2569",
+    "topCategory": "🔧 Dev & Tech",
+    "tags": [
+      "🔧 Dev & Tech",
+      "🤖 System & Setup",
+      "📝 Memory & Diary",
+      "💡 Creative & Content"
+    ],
+    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (21%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 89,
+        "pct": 21
+      },
+      {
+        "name": "🤖 System & Setup",
+        "count": 79,
+        "pct": 19
+      },
+      {
+        "name": "📝 Memory & Diary",
+        "count": 72,
+        "pct": 17
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 63,
+        "pct": 15
+      },
+      {
+        "name": "🔍 Research",
+        "count": 43,
+        "pct": 10
+      },
+      {
+        "name": "🌿 Life & Health",
+        "count": 32,
+        "pct": 8
+      }
+    ],
+    "tasks": [
+      "### pdfplumber - Text and Table Extraction",
+      "#### Advanced Table Extraction",
+      "[Laura] สวัสดีค่ะ ลอร่า orchestrator ของทีมนะคะ — สร้างโปรเจกต์ **SAR_OR** เสร็จแล้ว อ่านไฟล์เก่าครบทั้ง 5 ไฟล์ และสรุปม",
+      "## สิ่งที่สร้างให้แล้วใน D:\\Project\\SAR_OR",
+      "# Text extraction as markdown",
+      "- **pandoc**: Text extraction",
+      "- **จัดโครงสร้างเลขหัวข้อ \"iii. กระบวนการ\"** ให้ต่อเนื่อง — ส่วน ก. เติม (1)(2) ที่หายไป แก้ \"(4 \" ที่วงเล็บไม่ปิด / ส่ว",
+      "- **เพิ่มหัวเรื่องเอกสาร** \"รายงานการประเมินตนเอง (SAR) ปี 2569 กวห.รพ.ภูมิพลอดุลยเดช พอ.\" ไว้บนสุด (ฉบับเก่าที่ส่งศูนย์"
     ],
     "details": "",
     "relatedProjects": [],
