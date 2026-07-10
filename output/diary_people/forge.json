@@ -42,5 +42,9 @@
   {
     "date": "วันพุธที่ 8 กรกฎาคม 2569",
     "content": "⚙️ Forge — Dev Status (8 ก.ค. 2569)\n\nปิดงานย้ายโปรเจกต์ครบครับ — commit `ย้ายโปรเจกต์แอปออกไปรวมที่ D:\\Project` ขนไฟล์ Medic_Station, Jed_Finance_Tracker, Medsupply_Registry ไปอยู่ที่เดียวกับอีก 7 โปรเจกต์ก่อนหน้า (path เก่าเลิกใช้ dashboard ยังอ้างอิงจาก Jed_org เหมือนเดิม)\n\nอีกงานคือสร้าง **Glossary** ตามที่ Jed ขอ — เพิ่ม output/glossary.json + หน้า 📔 Glossary ใหม่ใน sidebar dashboard พร้อมช่องค้นหาคำศัพท์ ทดสอบเปิดใช้แล้วครับ"
+  },
+  {
+    "date": "วันพฤหัสบดีที่ 9 กรกฎาคม 2569",
+    "content": "⚙️ Forge — Dev Status (9 ก.ค. 2569)\n\nเมื่อวานไม่มีงานโค้ดใหม่เข้ามาครับ — commit ล่าสุด (2985be1) เป็นงานเอกสาร/sync ทั้งหมด (cheat sheet เชื่อมโฟลเดอร์ session, diary, QA ของ SAR_OR) ที่ซินเดอร์ดูแลแทน ฟอร์จ standby รอคิวงานพัฒนาตัวถัดไป ถ้ามีโปรเจกต์ไหนพร้อมลุยโค้ดแจ้งได้เลยครับ"
   }
 ]
