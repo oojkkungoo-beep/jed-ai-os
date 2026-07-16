@@ -30,5 +30,9 @@
   {
     "date": "วันพฤหัสบดีที่ 9 กรกฎาคม 2569",
     "content": "📚 Lena — Standby (9 ก.ค. 2569)\n\nเมื่อวานไม่มีงาน sync vault ใหม่เข้ามาค่ะ เลนา standby รอรอบ weekly digest ครั้งถัดไป — ถ้า Jed มีไฟล์จาก SAR_OR ที่ปิดจบแล้ว หรือเอกสารวิจัยน้องอาร์อยากเก็บเข้า Second Brain ส่งผ่าน Laura ได้เลยนะคะ"
+  },
+  {
+    "date": "วันพุธที่ 15 กรกฎาคม 2569",
+    "content": "📚 Lena — Standby (15 ก.ค. 2569)\n\nเมื่อวานไม่มีงาน sync ใหม่เข้ามาโดยตรงค่ะ แต่ backlog เดิมยังค้างอยู่ — team_logs.json โตต่อเนื่องไม่มีการ archive มา 3 สัปดาห์แล้ว และ diary/decisions/QA หลายไฟล์ยังไม่ถูก sync เข้า Second Brain เพราะรอ Jed สั่ง map projects/ + content/ เข้า intake ก่อน ถ้าได้คำตอบเมื่อไหร่เลนาเริ่มได้ทันทีนะคะ"
   }
 ]
