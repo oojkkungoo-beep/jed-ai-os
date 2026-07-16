@@ -1801,44 +1801,44 @@
   {
     "id": 37,
     "date": "9 กรกฎาคม 2569",
-    "topCategory": "🔧 Dev & Tech",
+    "topCategory": "📝 Memory & Diary",
     "tags": [
+      "📝 Memory & Diary",
       "🔧 Dev & Tech",
       "🤖 System & Setup",
-      "📝 Memory & Diary",
       "💡 Creative & Content"
     ],
-    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (21%) — รอ Sage สรุปท้ายวัน",
+    "summary": "Auto-log: หมวดหลัก 📝 Memory & Diary (23%) — รอ Sage สรุปท้ายวัน",
     "categories": [
       {
+        "name": "📝 Memory & Diary",
+        "count": 124,
+        "pct": 23
+      },
+      {
         "name": "🔧 Dev & Tech",
-        "count": 89,
-        "pct": 21
+        "count": 107,
+        "pct": 20
       },
       {
         "name": "🤖 System & Setup",
-        "count": 79,
-        "pct": 19
-      },
-      {
-        "name": "📝 Memory & Diary",
-        "count": 72,
+        "count": 91,
         "pct": 17
       },
       {
         "name": "💡 Creative & Content",
-        "count": 63,
-        "pct": 15
+        "count": 74,
+        "pct": 14
       },
       {
         "name": "🔍 Research",
-        "count": 43,
+        "count": 52,
         "pct": 10
       },
       {
         "name": "🌿 Life & Health",
-        "count": 32,
-        "pct": 8
+        "count": 35,
+        "pct": 7
       }
     ],
     "tasks": [
@@ -1850,6 +1850,288 @@
       "- **pandoc**: Text extraction",
       "- **จัดโครงสร้างเลขหัวข้อ \"iii. กระบวนการ\"** ให้ต่อเนื่อง — ส่วน ก. เติม (1)(2) ที่หายไป แก้ \"(4 \" ที่วงเล็บไม่ปิด / ส่ว",
       "- **เพิ่มหัวเรื่องเอกสาร** \"รายงานการประเมินตนเอง (SAR) ปี 2569 กวห.รพ.ภูมิพลอดุลยเดช พอ.\" ไว้บนสุด (ฉบับเก่าที่ส่งศูนย์"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 38,
+    "date": "10 กรกฎาคม 2569",
+    "topCategory": "📝 Memory & Diary",
+    "tags": [
+      "📝 Memory & Diary",
+      "🔧 Dev & Tech",
+      "🔍 Research",
+      "🤖 System & Setup"
+    ],
+    "summary": "Auto-log: หมวดหลัก 📝 Memory & Diary (25%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "📝 Memory & Diary",
+        "count": 136,
+        "pct": 25
+      },
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 105,
+        "pct": 19
+      },
+      {
+        "name": "🔍 Research",
+        "count": 86,
+        "pct": 16
+      },
+      {
+        "name": "🤖 System & Setup",
+        "count": 84,
+        "pct": 15
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 44,
+        "pct": 8
+      },
+      {
+        "name": "🌿 Life & Health",
+        "count": 34,
+        "pct": 6
+      }
+    ],
+    "tasks": [
+      "ความหมายแบบง่าย: เหมือนการ \"คัดลอกเส้นทางงาน\" ออกไปอีกเส้นหนึ่ง โดยเริ่มจากจุดที่เราอยู่ตอนนี้ (commit ปัจจุบัน) — งานที",
+      "- มี subagent หรือ session แยกที่ต้องทำงานคู่ขนานกัน (เหมือนที่ระบบ Agent tool มี `isolation: worktree` ให้ทำงานแยกจากโค",
+      "ช่วยสร้าง Dictionary คลังคำศัพท์ และจัดเก็บคำศัพท์นี้ให้ผมด้วย",
+      "[Laura] เรียบร้อยค่ะ Jed สร้าง Dictionary คลังคำศัพท์ไว้ที่ [output/glossary.json](output/glossary.json) แล้ว พร้อมเก็บค",
+      "โครงสร้างไฟล์ (ต่อ 1 คำศัพท์):",
+      "[Laura] เพิ่ม Glossary เข้า dashboard เรียบร้อยค่ะ Jed",
+      "- เพิ่มเมนู \"📔 Glossary\" ใน sidebar — [dashboard/index.html](dashboard/index.html)",
+      "- เพิ่มหน้า Glossary พร้อมช่องค้นหาคำศัพท์"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 39,
+    "date": "13 กรกฎาคม 2569",
+    "topCategory": "📝 Memory & Diary",
+    "tags": [
+      "📝 Memory & Diary",
+      "🔧 Dev & Tech",
+      "🤖 System & Setup",
+      "🎯 Strategy & CEO"
+    ],
+    "summary": "Auto-log: หมวดหลัก 📝 Memory & Diary (28%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "📝 Memory & Diary",
+        "count": 20,
+        "pct": 28
+      },
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 13,
+        "pct": 18
+      },
+      {
+        "name": "🤖 System & Setup",
+        "count": 13,
+        "pct": 18
+      },
+      {
+        "name": "🎯 Strategy & CEO",
+        "count": 11,
+        "pct": 15
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 6,
+        "pct": 8
+      },
+      {
+        "name": "⚖️ Decision",
+        "count": 4,
+        "pct": 6
+      }
+    ],
+    "tasks": [
+      "- สร้าง zip ใหม่ชื่อ `second-brain-git-YYYY-MM-DD.zip` ถ้ายังไม่มีของวันนี้",
+      "บริบท: นี่คือ fix ที่ Devil เสนอไว้หลังจากตรวจพบว่าการย้าย `.git` ออกจากโฟลเดอร์ sync คลาวด์ (เพื่อป้องกัน conflict) ทำใ",
+      "- **Continuity:** งานที่เริ่มแล้วค้างคาไม่จบวงจร รวมข้อเสนอจาก Atlas/Vera ที่ยังไม่มีใครรับไปทำ",
+      "**เฟส 3 — Get Creative (ข้อเสนอ):** สรุป 3 หมวด **ควรทำ / น่าทำแต่รอได้ / ยังไม่ต้องทำ** หมวดละไม่เกิน 3 ข้อ + คำถามเติบ",
+      "- รัน `python D:\\Claude_Cowork\\Jed_org\\scripts\\sync_index.py` หลังสร้างไฟล์",
+      "[Laura] เริ่มรัน Weekly Ops Review ประจำวันจันทร์ค่ะ ขอเวลาไล่เช็ค 3 เฟส (Get Clear → Get Current → Get Creative) ก่อนสร",
+      "**3 ข้อ \"ควรทำ\" สัปดาห์นี้:**",
+      "- ตรวจ `team/*.md` ทั้งหมดว่ามี role ซ้ำซ้อนกันใหม่ไหม (โดยเฉพาะไฟล์ที่ถูกแก้ในสัปดาห์นี้)"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 40,
+    "date": "14 กรกฎาคม 2569",
+    "topCategory": "📝 Memory & Diary",
+    "tags": [
+      "📝 Memory & Diary",
+      "🎯 Strategy & CEO",
+      "🤖 System & Setup",
+      "💡 Creative & Content"
+    ],
+    "summary": "Auto-log: หมวดหลัก 📝 Memory & Diary (31%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "📝 Memory & Diary",
+        "count": 27,
+        "pct": 31
+      },
+      {
+        "name": "🎯 Strategy & CEO",
+        "count": 23,
+        "pct": 26
+      },
+      {
+        "name": "🤖 System & Setup",
+        "count": 10,
+        "pct": 11
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 9,
+        "pct": 10
+      },
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 8,
+        "pct": 9
+      },
+      {
+        "name": "🔍 Research",
+        "count": 6,
+        "pct": 7
+      }
+    ],
+    "tasks": [
+      "ผมอยากสร้างโปรเจคใหม่ที่ \"D:\\Project\\ปรับปรุง_KM\" ฉันลองเปลี่ยนชื่อโฟลเดอร์หลักเป็นโฟลเดอร์โปรเจคแล้ว แต่ในนั้นไม่มีลอร่",
+      "3. **อัปเดต [cheat sheet](output/2026-07-09-session-folder-cheatsheet.md)** + รัน sync_index.py ตาม standing rule แล้ว",
+      "ข้อสังเกตเล็กน้อย: ใน SOP69 มีไฟล์ซ้ำ `ANE-SOP-05...pdf` สองไฟล์ชื่อต่างกันแค่ช่องว่าง — ไว้ค่อยเก็บกวาดตอนเริ่มปรับปรุง",
+      "คราวหน้าถ้าเริ่มโปนเจคใหม่ต้องมาให้คุณสร้างความเชื่อมโยงก่อนถูกไหมครับ",
+      "1. **สร้าง/เตรียมโฟลเดอร์โปรเจกต์** ที่ `D:\\Project\\<ชื่อโปรเจกต์>` (ใส่ไฟล์งานได้เลย)",
+      "2. **มาบอกลอร่าที่ห้อง Jed_org นี้** ว่า \"สร้างโปรเจกต์ใหม่ที่ ...\" → ลอร่าจะสร้าง `CLAUDE.md` + ลงทะเบียน projects.json",
+      "ผมตั้ง session นี้ในการเริ่ม project นะครับ  จะได้ง่ายๆ",
+      "[Laura] ดีเลยค่ะ — ลอร่าบันทึกลง memory เรียบร้อยแล้วนะคะว่า **ห้องนี้คือ \"จุดเริ่มโปรเจกต์ใหม่\"** ของ Jed"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 41,
+    "date": "15 กรกฎาคม 2569",
+    "topCategory": "🎯 Strategy & CEO",
+    "tags": [
+      "🎯 Strategy & CEO",
+      "📝 Memory & Diary",
+      "💡 Creative & Content",
+      "⚖️ Decision"
+    ],
+    "summary": "Auto-log: หมวดหลัก 🎯 Strategy & CEO (38%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "🎯 Strategy & CEO",
+        "count": 23,
+        "pct": 38
+      },
+      {
+        "name": "📝 Memory & Diary",
+        "count": 22,
+        "pct": 36
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 7,
+        "pct": 11
+      },
+      {
+        "name": "⚖️ Decision",
+        "count": 4,
+        "pct": 7
+      },
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 2,
+        "pct": 3
+      },
+      {
+        "name": "🔍 Research",
+        "count": 1,
+        "pct": 2
+      }
+    ],
+    "tasks": [
+      "## สิ่งเล็กๆที่ทำได้วันนี้/พรุ่งนี้",
+      "[1 action เล็กมาก ทำได้ใน 24 ชม. ที่เชื่อมกับงานค้างจริง]",
+      "- สร้างไฟล์ `output/decisions/YYYY-MM-DD-atlas-reflection-ceo-lens.md` (ใช้วันที่ของเมื่อวาน รูปแบบ YYYY-MM-DD จาก step ",
+      "- ถ้ามี `output/diary/YYYY-MM-DD.md` ของเมื่อวานแล้ว → เพิ่ม section ใหม่ \"### 🪞 Atlas Daily Reflection\" ต่อท้ายในส่วน \"",
+      "- sync diary ที่อัปเดต/สร้างใหม่ไปที่ `D:\\Second_Brain\\40-Life\\Diary\\YYYY-MM-DD.md` ด้วย (copy ไฟล์ทับ, ใช้วันที่ของเมื่"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 42,
+    "date": "16 กรกฎาคม 2569",
+    "topCategory": "🌿 Life & Health",
+    "tags": [
+      "🌿 Life & Health",
+      "📝 Memory & Diary",
+      "🎯 Strategy & CEO",
+      "🔧 Dev & Tech"
+    ],
+    "summary": "Auto-log: หมวดหลัก 🌿 Life & Health (19%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "🌿 Life & Health",
+        "count": 101,
+        "pct": 19
+      },
+      {
+        "name": "📝 Memory & Diary",
+        "count": 89,
+        "pct": 17
+      },
+      {
+        "name": "🎯 Strategy & CEO",
+        "count": 78,
+        "pct": 15
+      },
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 68,
+        "pct": 13
+      },
+      {
+        "name": "🔍 Research",
+        "count": 52,
+        "pct": 10
+      },
+      {
+        "name": "🤖 System & Setup",
+        "count": 50,
+        "pct": 9
+      }
+    ],
+    "tasks": [
+      "## สิ่งเล็กๆที่ทำได้วันนี้/พรุ่งนี้",
+      "[1 action เล็กมาก ทำได้ใน 24 ชม. ที่เชื่อมกับงานค้างจริง]",
+      "- สร้างไฟล์ `output/decisions/YYYY-MM-DD-atlas-reflection-ceo-lens.md` (ใช้วันที่ของเมื่อวาน รูปแบบ YYYY-MM-DD จาก step ",
+      "- ถ้ามี `output/diary/YYYY-MM-DD.md` ของเมื่อวานแล้ว → เพิ่ม section ใหม่ \"### 🪞 Atlas Daily Reflection\" ต่อท้ายในส่วน \"",
+      "- sync diary ที่อัปเดต/สร้างใหม่ไปที่ `D:\\Second_Brain\\40-Life\\Diary\\YYYY-MM-DD.md` ด้วย (copy ไฟล์ทับ, ใช้วันที่ของเมื่",
+      "คำถามที่ผมควรถามจริงๆ ไม่ใช่ \"ทำไมไม่ทำ\" แต่คือ **\"จะสร้างกลไก 'คนทวง' ให้ของ 3 ข้อนี้ได้ยังไง\"** — ลองคิดเล่นๆดูครับ:",
+      "**[Eir]** ขอบคุณที่บอกรายละเอียดเพิ่มนะคะ ภาพชัดขึ้นมากเลยค่ะ และหนูต้องแก้คำที่ตัวเองพูดผิดก่อน",
+      "Eir ทำแล้วรู้สึกดีนะ    ช่วยบอกผมหน่อยในสภาวะแบบนี้ สิ่งที่ผมต้องทำตอนนี้คืออะไรเพื่อที่จะลุยต่อได้อย่างมีพลังมากขึ้น fl"
     ],
     "details": "",
     "relatedProjects": [],

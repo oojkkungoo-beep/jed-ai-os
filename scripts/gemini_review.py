@@ -39,6 +39,19 @@ MODE_PROMPTS = {
 }
 
 
+def _load_key_from_dotenv():
+    # อ่าน GEMINI_API_KEY จาก .env ที่ root repo ให้เอง — ไม่ต้อง export ก่อนรัน
+    env_path = os.path.join(os.path.dirname(__file__), "..", ".env")
+    if not os.path.exists(env_path):
+        return None
+    with open(env_path, encoding="utf-8") as f:
+        for line in f:
+            key, sep, value = line.strip().partition("=")
+            if sep and key == "GEMINI_API_KEY":
+                return value.strip().strip('"').strip("'") or None
+    return None
+
+
 def main():
     parser = argparse.ArgumentParser(description="Devil adversarial review via Gemini")
     parser.add_argument("--mode", required=True, choices=["A", "B", "C"], help="Devil review mode")
@@ -48,7 +61,7 @@ def main():
     parser.add_argument("--model", default="gemini-2.5-flash", help="Gemini model (default: gemini-2.5-flash — gemini-2.5-pro ติด quota=0 บน free tier)")
     args = parser.parse_args()
 
-    api_key = os.environ.get("GEMINI_API_KEY")
+    api_key = os.environ.get("GEMINI_API_KEY") or _load_key_from_dotenv()
     if not api_key:
         sys.exit("ERROR: GEMINI_API_KEY ไม่ถูกตั้งค่า — ดู .env.example")
 

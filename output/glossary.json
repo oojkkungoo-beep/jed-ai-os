@@ -493,5 +493,14 @@
     "example": "ลำดับแรก: git init → git add . → git commit -m '...' | ใช้ตอนตั้ง git local backup ให้ Second Brain Vault ของ Jed",
     "date_added": "2026-07-08",
     "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 50,
+    "term": "Cheat sheet",
+    "category": "General",
+    "meaning": "เอกสารสรุปแบบกระชับที่รวบรวมข้อมูล/คำสั่ง/สูตรที่ใช้บ่อยไว้ในที่เดียว ดูได้เร็วโดยไม่ต้องไล่หาจากเอกสารเต็ม",
+    "example": "output/2026-07-09-session-folder-cheatsheet.md ของ Jed คือ cheat sheet สรุปว่าโฟลเดอร์ไหนเก็บอะไร ดูได้ทันทีโดยไม่ต้องไล่อ่านทุกไฟล์",
+    "date_added": "2026-07-10",
+    "source": "ถาม Jed ในแชท"
   }
 ]

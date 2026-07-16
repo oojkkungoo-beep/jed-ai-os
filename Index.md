@@ -3,7 +3,7 @@
 อัปเดตอัตโนมัติด้วย `scripts/sync_index.py` (Cinder รันทุกครั้งที่มีไฟล์ใหม่/แก้ไฟล์ใน team, characters, output) ห้ามแก้ไฟล์นี้ตรงๆ
 
 
-สร้างล่าสุด: 2026-07-09 22:06
+สร้างล่าสุด: 2026-07-16 12:55
 
 
 ## Agent Definitions (team/)
@@ -47,6 +47,19 @@
 
 ## Diary (output/diary/)
 
+- [📔 Diary — วันพุธที่ 15 กรกฎาคม 2569](output/diary/2026-07-15.md) (2026-07-15) — Sage
+- [📔 Diary — วันอังคารที่ 14 กรกฎาคม 2569](output/diary/2026-07-14.md) (2026-07-14) — Sage
+- [📔 Diary — วันจันทร์ที่ 13 กรกฎาคม 2569](output/diary/2026-07-13.md) (2026-07-13) — Sage
+- [📔 Diary — วันพุธที่ 17 มิถุนายน 2569](output/diary/2026-06-17.md) (2026-07-09) — Sage
+- [📔 Diary — วันพฤหัสบดีที่ 18 มิถุนายน 2569](output/diary/2026-06-18.md) (2026-07-09) — Sage
+- [📔 Diary — วันเสาร์ที่ 20 มิถุนายน 2569](output/diary/2026-06-20.md) (2026-07-09) — Sage
+- [📔 Diary — วันอาทิตย์ที่ 21 มิถุนายน 2569](output/diary/2026-06-21.md) (2026-07-09) — Sage
+- [📔 Diary — วันจันทร์ที่ 22 มิถุนายน 2569](output/diary/2026-06-22.md) (2026-07-09) — Sage
+- [📔 Diary — วันพุธที่ 24 มิถุนายน 2569](output/diary/2026-06-24.md) (2026-07-09) — Sage
+- [📔 Diary — วันพฤหัสบดีที่ 25 มิถุนายน 2569](output/diary/2026-06-25.md) (2026-07-09) — Sage
+- [📔 Diary — วันจันทร์ที่ 29 มิถุนายน 2569](output/diary/2026-06-29.md) (2026-07-09) — Sage
+- [📔 Diary — วันพุธที่ 1 กรกฎาคม 2569](output/diary/2026-07-01.md) (2026-07-09) — Sage
+- [📔 Diary — วันจันทร์ที่ 6 กรกฎาคม 2569](output/diary/2026-07-06.md) (2026-07-09) — Sage
 - [📔 Diary — วันพฤหัสบดีที่ 9 กรกฎาคม 2569](output/diary/2026-07-09.md) (2026-07-09) — Sage
 - [📔 Diary — วันพุธที่ 8 กรกฎาคม 2569](output/diary/2026-07-08.md) (2026-07-08) — Sage
 - [📔 Diary — วันอังคารที่ 7 กรกฎาคม 2569](output/diary/2026-07-07.md) (2026-07-07) — Sage
@@ -81,6 +94,12 @@
 
 ## Decisions (output/decisions/)
 
+- [Council + Vera/Devil/Atlas — นำ GLM + Gemini มาเป็นเครื่องมือกลางของทีม](output/decisions/2026-07-16-council-glm-gemini-tools.md) (2026-07-16)
+- [🪞 Atlas Daily Reflection — วันพุธที่ 15 กรกฎาคม 2569](output/decisions/2026-07-15-atlas-reflection-ceo-lens.md) (2026-07-15) — Atlas
+- [🪞 Atlas Daily Reflection — วันอังคารที่ 14 กรกฎาคม 2569](output/decisions/2026-07-14-atlas-reflection-ceo-lens.md) (2026-07-14) — Atlas
+- [🪞 Atlas Daily Reflection — วันจันทร์ที่ 13 กรกฎาคม 2569](output/decisions/2026-07-13-atlas-reflection-ceo-lens.md) (2026-07-13) — Atlas
+- [🪞 Atlas Daily Reflection — 12 กรกฎาคม 2569](output/decisions/2026-07-12-atlas-reflection-ceo-lens.md) (2026-07-12) — Atlas
+- [🪞 Atlas Daily Reflection — วันพฤหัสบดีที่ 9 กรกฎาคม 2569](output/decisions/2026-07-09-atlas-reflection-ceo-lens.md) (2026-07-09) — Atlas
 - [🪞 Atlas Daily Reflection — วันพุธที่ 8 กรกฎาคม 2569](output/decisions/2026-07-08-atlas-reflection-ceo-lens.md) (2026-07-08) — Atlas
 - [🪞 Atlas Daily Reflection — วันอังคารที่ 7 กรกฎาคม 2569](output/decisions/2026-07-07-atlas-reflection-ceo-lens.md) (2026-07-07) — Atlas
 - [Atlas Daily Reflection — วันเสาร์ที่ 4 กรกฎาคม 2569](output/decisions/2026-07-04-atlas-reflection-ceo-lens.md) (2026-07-04) — Atlas
@@ -98,6 +117,9 @@
 
 ## QA (output/qa/)
 
+- [🔎 Vera Review: Laura — ANE-WI-013 อัปเดต AHA CPR 2025](output/qa/2026-07-13-ANE-WI-013-CPR2025.md) (2026-07-14)
+- ["Vera Weekly Team Audit — 13 กรกฎาคม 2569"](output/qa/2026-07-13-weekly-audit.md) (2026-07-13)
+- [🧭 Laura Weekly Ops Review — สัปดาห์ 29 (13 กรกฎาคม 2569)](output/qa/2026-07-13-weekly-ops-review.md) (2026-07-13) — Laura
 - [🔎 Vera Review: SAR กวห. ปี 2569 — Final QA ก่อนส่งศูนย์พัฒนา](output/qa/2026-07-09-sar-or-69-final-qa.md) (2026-07-09)
 - [QA Review — STAT_OR Dashboard (รับต่อจากทีม Angie)](output/qa/2026-07-07-stat-or-dashboard-qa-review.md) (2026-07-07)
 - ["Vera Weekly Team Audit — 5 กรกฎาคม 2569"](output/qa/2026-07-05-weekly-audit.md) (2026-07-05)
@@ -127,7 +149,7 @@
 
 ## Output — Other
 
-- [Cheat Sheet — เปิด session โปรเจกต์ไหน ที่โฟลเดอร์ไหน](output/2026-07-09-session-folder-cheatsheet.md) (2026-07-09)
+- [Cheat Sheet — เปิด session โปรเจกต์ไหน ที่โฟลเดอร์ไหน](output/2026-07-09-session-folder-cheatsheet.md) (2026-07-10)
 - [🔥 ย้าย ชศพอ. Web App → Netlify + บัญชีใหม่ nurse.rtafnc@gmail.com — Cinder](output/dev/2026-07-01-cinder-migrate-rtaf-nurse-web-netlify.md) (2026-07-01)
 - [🔧 ระบบทะเบียนเวชภัณฑ์ (Medsupply Registry) — Build + Audit + Deploy](output/dev/2026-06-29-medsupply-registry-deploy.md) (2026-06-29)
 - [💰 รีวิว "4 พิมพ์เขียวการเงิน" ของ Annabel เทียบกับสถานะ Jed](output/finance/2026-06-28-annabel-wealth-architect-framework-review.md) (2026-06-27)

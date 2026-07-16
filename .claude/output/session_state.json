@@ -671,17 +671,17 @@
     ]
   },
   "7f036072-7c30-4b99-b9dd-69f602fda078": {
-    "date": "8 กรกฎาคม 2569",
+    "date": "10 กรกฎาคม 2569",
     "scores": {
       "🎯 Strategy & CEO": 4,
       "💡 Creative & Content": 11,
       "🌿 Life & Health": 10,
-      "🔍 Research": 45,
+      "🔍 Research": 46,
       "⚖️ Decision": 6,
       "🔧 Dev & Tech": 72,
       "💰 Finance": 5,
-      "📝 Memory & Diary": 69,
-      "🤖 System & Setup": 45
+      "📝 Memory & Diary": 72,
+      "🤖 System & Setup": 46
     },
     "tasks": [
       "ความหมายแบบง่าย: เหมือนการ \"คัดลอกเส้นทางงาน\" ออกไปอีกเส้นหนึ่ง โดยเริ่มจากจุดที่เราอยู่ตอนนี้ (commit ปัจจุบัน) — งานที",
@@ -1701,15 +1701,15 @@
     ]
   },
   "9ac0f32e-01d6-47ad-9ad4-2ad1ef049c38": {
-    "date": "9 กรกฎาคม 2569",
+    "date": "10 กรกฎาคม 2569",
     "scores": {
-      "💡 Creative & Content": 1,
-      "🌿 Life & Health": 6,
-      "🔍 Research": 14,
-      "⚖️ Decision": 1,
-      "🔧 Dev & Tech": 7,
-      "📝 Memory & Diary": 3,
-      "🤖 System & Setup": 9
+      "💡 Creative & Content": 11,
+      "🌿 Life & Health": 13,
+      "🔍 Research": 27,
+      "⚖️ Decision": 7,
+      "🔧 Dev & Tech": 13,
+      "📝 Memory & Diary": 6,
+      "🤖 System & Setup": 19
     },
     "tasks": [
       "- สร้าง [CLAUDE.md](D:\\Project\\วิจัย_ป_เอก_น้องอาร์\\CLAUDE.md) ในโฟลเดอร์ตาม pattern เดียวกับ Risk_OR_BAH — เปิด session",
@@ -1743,30 +1743,169 @@
   "1b83d8dc-8c70-42b4-a0f6-fcafcac3e6dc": {
     "date": "9 กรกฎาคม 2569",
     "scores": {
-      "💡 Creative & Content": 2,
-      "🌿 Life & Health": 2,
-      "🔍 Research": 5,
-      "⚖️ Decision": 2,
-      "🔧 Dev & Tech": 4,
-      "💰 Finance": 2,
-      "📝 Memory & Diary": 6,
-      "🤖 System & Setup": 9
+      "🎯 Strategy & CEO": 2,
+      "💡 Creative & Content": 12,
+      "🌿 Life & Health": 3,
+      "🔍 Research": 11,
+      "⚖️ Decision": 4,
+      "🔧 Dev & Tech": 19,
+      "💰 Finance": 4,
+      "📝 Memory & Diary": 55,
+      "🤖 System & Setup": 19
     },
     "tasks": [
       "**กลุ่มที่ยังไม่มีโฟลเดอร์:** AN_Logbook — ในเครื่องยังไม่มีโฟลเดอร์นี้เลยค่ะ ถ้าจะทำต่อควรสร้าง `D:\\Project\\AN_Logbook`",
       "| ไฟล์ที่สร้าง | จุดเด่นเฉพาะที่ใส่ไว้ |",
       "| `D:\\NB_G_Drive\\Second_Brain\\CLAUDE.md` | ระบุ Lena เป็นเจ้าของ vault + กฎ thesis format, atomic note, และ \"retrofit โน",
-      "**เหลือรายการเดียวที่รอสั่ง:** AN_Logbook ยังไม่มีโฟลเดอร์ — ถ้าจะเริ่มเมื่อไหร่บอกได้เลยค่ะ"
+      "**เหลือรายการเดียวที่รอสั่ง:** AN_Logbook ยังไม่มีโฟลเดอร์ — ถ้าจะเริ่มเมื่อไหร่บอกได้เลยค่ะ",
+      "คุณจะเชคได้ไหมว่า session ไหนมีสรุปแล้ว อันไหนไม่ีมี  และเมื่อลบไปแล้วการที่จะเพิ่มกรุป project หลังจากนี้จะทำอย่างไร",
+      "[Laura] ทำได้ค่ะ ลอร่ามีเครื่องมือดูรายชื่อ session ทั้งหมด แล้วเอามาเทียบกับ diary + session log ที่ Sage เก็บไว้ได้ ขอ",
+      "## 2) ลบแล้ว จะเพิ่ม group แบบ project ยังไงต่อจากนี้",
+      "ง่ายกว่าที่คิดค่ะ — **project ใน sidebar ไม่ต้อง \"สร้าง\" เอง มันโผล่เองเมื่อมี session แรกในโฟลเดอร์นั้น:**"
     ]
   },
   "08790f08-deb0-4601-82cc-f38e925fe85c": {
+    "date": "10 กรกฎาคม 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 23,
+      "💡 Creative & Content": 6,
+      "🔍 Research": 5,
+      "⚖️ Decision": 4,
+      "🔧 Dev & Tech": 2,
+      "💰 Finance": 1,
+      "📝 Memory & Diary": 23,
+      "🤖 System & Setup": 3
+    },
+    "tasks": [
+      "## สิ่งเล็กๆที่ทำได้วันนี้/พรุ่งนี้",
+      "[1 action เล็กมาก ทำได้ใน 24 ชม. ที่เชื่อมกับงานค้างจริง]",
+      "- สร้างไฟล์ `output/decisions/YYYY-MM-DD-atlas-reflection-ceo-lens.md` (ใช้วันที่ของเมื่อวาน รูปแบบ YYYY-MM-DD จาก step ",
+      "- ถ้ามี `output/diary/YYYY-MM-DD.md` ของเมื่อวานแล้ว → เพิ่ม section ใหม่ \"### 🪞 Atlas Daily Reflection\" ต่อท้ายในส่วน \"",
+      "- sync diary ที่อัปเดต/สร้างใหม่ไปที่ `D:\\Second_Brain\\40-Life\\Diary\\YYYY-MM-DD.md` ด้วย (copy ไฟล์ทับ, ใช้วันที่ของเมื่",
+      "**[Atlas]** เขียน reflection ประจำวันที่ 8 ก.ค. 2569 เสร็จแล้วนะครับ (diary ของวันนั้นยังไม่มี เลยสร้างใหม่ตามฟอร์แมตของ",
+      "**[Atlas]** รับทราบแล้วครับ ขอบคุณที่ปิดจริงๆ — เป็นข้อมูลผู้ป่วยที่สำคัญมาก อัปเดตให้แล้วครับ:"
+    ]
+  },
+  "9c985779-57c2-45ce-84e0-2a355be912f7": {
     "date": "9 กรกฎาคม 2569",
     "scores": {
-      "🎯 Strategy & CEO": 19,
-      "💡 Creative & Content": 6,
-      "🔍 Research": 2,
+      "💡 Creative & Content": 1,
+      "🌿 Life & Health": 2,
+      "🔍 Research": 3,
       "⚖️ Decision": 2,
-      "🔧 Dev & Tech": 1,
+      "🔧 Dev & Tech": 3,
+      "💰 Finance": 1,
+      "📝 Memory & Diary": 3,
+      "🤖 System & Setup": 2
+    },
+    "tasks": [
+      "- **Second Brain vault + Lena** — โครงสร้าง KB แบบ atomic note (โน้ตย่อย 1 เรื่อง 1 ไฟล์ ลิงก์ถึงกัน = wiki ที่ Jed ต้อง",
+      "## แนวทางที่จะเสนอ (ยังไม่ลงมือ รอ Jed เคาะก่อนค่ะ)",
+      "ถ้า Jed โอเคแนวนี้ เสียบ SSD แล้วบอกดิฉันว่า drive letter อะไร (เช่น E: หรือ F:) ดิฉันจะเริ่มจากขั้นที่ 1 — สแกน invento"
+    ]
+  },
+  "089f88b2-d18a-473d-84a9-9650d7ca74b4": {
+    "date": "10 กรกฎาคม 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 4,
+      "💡 Creative & Content": 15,
+      "🌿 Life & Health": 10,
+      "🔍 Research": 5,
+      "⚖️ Decision": 4,
+      "🔧 Dev & Tech": 16,
+      "💰 Finance": 4,
+      "📝 Memory & Diary": 28,
+      "🤖 System & Setup": 10
+    },
+    "tasks": [
+      "- `output/todos.json` (pending tasks)",
+      "- เขียน entry เฉพาะตัวให้ทั้ง 13 agents ลง `output/diary_people/*.json` + อัปเดต `output/team_logs.json` (ใช้ title/form",
+      "- อัปเดต `output/scheduled_tasks_log.json` สำหรับ task นี้"
+    ]
+  },
+  "d7ed4f43-7077-4f4b-b0d2-b818a70d6ba7": {
+    "date": "14 กรกฎาคม 2569",
+    "scores": {
+      "💡 Creative & Content": 1,
+      "🌿 Life & Health": 1,
+      "🔍 Research": 5,
+      "🔧 Dev & Tech": 5,
+      "📝 Memory & Diary": 7,
+      "🤖 System & Setup": 9
+    },
+    "tasks": [
+      "ผมอยากสร้างโปรเจคใหม่ที่ \"D:\\Project\\ปรับปรุง_KM\" ฉันลองเปลี่ยนชื่อโฟลเดอร์หลักเป็นโฟลเดอร์โปรเจคแล้ว แต่ในนั้นไม่มีลอร่",
+      "3. **อัปเดต [cheat sheet](output/2026-07-09-session-folder-cheatsheet.md)** + รัน sync_index.py ตาม standing rule แล้ว",
+      "ข้อสังเกตเล็กน้อย: ใน SOP69 มีไฟล์ซ้ำ `ANE-SOP-05...pdf` สองไฟล์ชื่อต่างกันแค่ช่องว่าง — ไว้ค่อยเก็บกวาดตอนเริ่มปรับปรุง",
+      "คราวหน้าถ้าเริ่มโปนเจคใหม่ต้องมาให้คุณสร้างความเชื่อมโยงก่อนถูกไหมครับ",
+      "1. **สร้าง/เตรียมโฟลเดอร์โปรเจกต์** ที่ `D:\\Project\\<ชื่อโปรเจกต์>` (ใส่ไฟล์งานได้เลย)",
+      "2. **มาบอกลอร่าที่ห้อง Jed_org นี้** ว่า \"สร้างโปรเจกต์ใหม่ที่ ...\" → ลอร่าจะสร้าง `CLAUDE.md` + ลงทะเบียน projects.json",
+      "ผมตั้ง session นี้ในการเริ่ม project นะครับ  จะได้ง่ายๆ",
+      "[Laura] ดีเลยค่ะ — ลอร่าบันทึกลง memory เรียบร้อยแล้วนะคะว่า **ห้องนี้คือ \"จุดเริ่มโปรเจกต์ใหม่\"** ของ Jed"
+    ]
+  },
+  "4b342f13-a592-4253-9791-0d76209f4e84": {
+    "date": "13 กรกฎาคม 2569",
+    "scores": {
+      "💡 Creative & Content": 1,
+      "🔍 Research": 1,
+      "🔧 Dev & Tech": 3
+    },
+    "tasks": [
+      "- สร้าง zip ใหม่ชื่อ `second-brain-git-YYYY-MM-DD.zip` ถ้ายังไม่มีของวันนี้",
+      "บริบท: นี่คือ fix ที่ Devil เสนอไว้หลังจากตรวจพบว่าการย้าย `.git` ออกจากโฟลเดอร์ sync คลาวด์ (เพื่อป้องกัน conflict) ทำใ"
+    ]
+  },
+  "fa5c23dc-c76c-4447-990d-56d748fe3569": {
+    "date": "13 กรกฎาคม 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 9,
+      "💡 Creative & Content": 2,
+      "🌿 Life & Health": 2,
+      "⚖️ Decision": 3,
+      "🔧 Dev & Tech": 7,
+      "💰 Finance": 1,
+      "📝 Memory & Diary": 6,
+      "🤖 System & Setup": 8
+    },
+    "tasks": [
+      "- **Continuity:** งานที่เริ่มแล้วค้างคาไม่จบวงจร รวมข้อเสนอจาก Atlas/Vera ที่ยังไม่มีใครรับไปทำ",
+      "**เฟส 3 — Get Creative (ข้อเสนอ):** สรุป 3 หมวด **ควรทำ / น่าทำแต่รอได้ / ยังไม่ต้องทำ** หมวดละไม่เกิน 3 ข้อ + คำถามเติบ",
+      "- รัน `python D:\\Claude_Cowork\\Jed_org\\scripts\\sync_index.py` หลังสร้างไฟล์",
+      "[Laura] เริ่มรัน Weekly Ops Review ประจำวันจันทร์ค่ะ ขอเวลาไล่เช็ค 3 เฟส (Get Clear → Get Current → Get Creative) ก่อนสร",
+      "**3 ข้อ \"ควรทำ\" สัปดาห์นี้:**"
+    ]
+  },
+  "7d54cd57-fc39-4d89-92d1-73562f82f409": {
+    "date": "13 กรกฎาคม 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 2,
+      "💡 Creative & Content": 3,
+      "⚖️ Decision": 1,
+      "🔧 Dev & Tech": 3,
+      "💰 Finance": 1,
+      "📝 Memory & Diary": 14,
+      "🤖 System & Setup": 5
+    },
+    "tasks": [
+      "- ตรวจ `team/*.md` ทั้งหมดว่ามี role ซ้ำซ้อนกันใหม่ไหม (โดยเฉพาะไฟล์ที่ถูกแก้ในสัปดาห์นี้)",
+      "- เช็คว่า Laura ลงมือทำงานเองที่ควร delegate ไหม (ดู git log `--since=\"7 days ago\"` ว่า commit ไหนควรเป็นของ Forge/Mint/",
+      "- รัน `git log --since=\"7 days ago\" --oneline` ใน `D:\\Claude_Cowork\\Jed_org` แล้วประเมินว่า agent ไหนรับงานมากที่สุด/น้อ",
+      "- ถ้า agent คนเดียวรับงานข้ามหลายโดเมนต่อเนื่องเกิน 2 สัปดาห์ → flag ว่าอาจต้องพิจารณาแยกบทบาท (แต่ไม่ต้องเสนอสร้าง agen",
+      "สร้างไฟล์ `D:\\Claude_Cowork\\Jed_org\\output\\qa\\YYYY-MM-DD-weekly-audit.md` ใช้ format จาก `team/qa.md` (Output Review sty",
+      "- ถ้าไม่เจอปัญหาอะไรเลย ให้เขียนสั้นๆว่า \"สัปดาห์นี้ทุกอย่างปกติ\" ไม่ต้องยืดเพื่อให้ดูมีเนื้อหา",
+      "3. **Laura Weekly Ops Review cron ยังไม่เคยรันอัตโนมัติสำเร็จเลย** ตั้งแต่ตั้งเมื่อ 4 ก.ค. (มีแค่รอบมือแรกเริ่มต้น)",
+      "Token/role fit ปกติดีค่ะ ไม่มีปัญหาใหม่ตรงนั้น จุดที่น่าเป็นห่วงจริงคือ cron reliability ที่เริ่มลามหลาย agent พร้อมกันน"
+    ]
+  },
+  "54f04370-b074-4b1e-89a3-5e998368a1af": {
+    "date": "14 กรกฎาคม 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 23,
+      "💡 Creative & Content": 8,
+      "🔍 Research": 1,
+      "⚖️ Decision": 3,
+      "🔧 Dev & Tech": 3,
       "💰 Finance": 1,
       "📝 Memory & Diary": 20,
       "🤖 System & Setup": 1
@@ -1776,8 +1915,92 @@
       "[1 action เล็กมาก ทำได้ใน 24 ชม. ที่เชื่อมกับงานค้างจริง]",
       "- สร้างไฟล์ `output/decisions/YYYY-MM-DD-atlas-reflection-ceo-lens.md` (ใช้วันที่ของเมื่อวาน รูปแบบ YYYY-MM-DD จาก step ",
       "- ถ้ามี `output/diary/YYYY-MM-DD.md` ของเมื่อวานแล้ว → เพิ่ม section ใหม่ \"### 🪞 Atlas Daily Reflection\" ต่อท้ายในส่วน \"",
+      "- sync diary ที่อัปเดต/สร้างใหม่ไปที่ `D:\\Second_Brain\\40-Life\\Diary\\YYYY-MM-DD.md` ด้วย (copy ไฟล์ทับ, ใช้วันที่ของเมื่"
+    ]
+  },
+  "c23c67a3-289e-4b99-bdee-07f444c564f9": {
+    "date": "15 กรกฎาคม 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 23,
+      "💡 Creative & Content": 7,
+      "🔍 Research": 1,
+      "⚖️ Decision": 4,
+      "🔧 Dev & Tech": 2,
+      "💰 Finance": 1,
+      "📝 Memory & Diary": 22,
+      "🤖 System & Setup": 1
+    },
+    "tasks": [
+      "## สิ่งเล็กๆที่ทำได้วันนี้/พรุ่งนี้",
+      "[1 action เล็กมาก ทำได้ใน 24 ชม. ที่เชื่อมกับงานค้างจริง]",
+      "- สร้างไฟล์ `output/decisions/YYYY-MM-DD-atlas-reflection-ceo-lens.md` (ใช้วันที่ของเมื่อวาน รูปแบบ YYYY-MM-DD จาก step ",
+      "- ถ้ามี `output/diary/YYYY-MM-DD.md` ของเมื่อวานแล้ว → เพิ่ม section ใหม่ \"### 🪞 Atlas Daily Reflection\" ต่อท้ายในส่วน \"",
+      "- sync diary ที่อัปเดต/สร้างใหม่ไปที่ `D:\\Second_Brain\\40-Life\\Diary\\YYYY-MM-DD.md` ด้วย (copy ไฟล์ทับ, ใช้วันที่ของเมื่"
+    ]
+  },
+  "bf20b09a-d3d0-4779-a342-75e5daaf86fe": {
+    "date": "16 กรกฎาคม 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 65,
+      "💡 Creative & Content": 18,
+      "🌿 Life & Health": 91,
+      "🔍 Research": 14,
+      "⚖️ Decision": 21,
+      "🔧 Dev & Tech": 4,
+      "💰 Finance": 14,
+      "📝 Memory & Diary": 47,
+      "🤖 System & Setup": 3
+    },
+    "tasks": [
+      "## สิ่งเล็กๆที่ทำได้วันนี้/พรุ่งนี้",
+      "[1 action เล็กมาก ทำได้ใน 24 ชม. ที่เชื่อมกับงานค้างจริง]",
+      "- สร้างไฟล์ `output/decisions/YYYY-MM-DD-atlas-reflection-ceo-lens.md` (ใช้วันที่ของเมื่อวาน รูปแบบ YYYY-MM-DD จาก step ",
+      "- ถ้ามี `output/diary/YYYY-MM-DD.md` ของเมื่อวานแล้ว → เพิ่ม section ใหม่ \"### 🪞 Atlas Daily Reflection\" ต่อท้ายในส่วน \"",
       "- sync diary ที่อัปเดต/สร้างใหม่ไปที่ `D:\\Second_Brain\\40-Life\\Diary\\YYYY-MM-DD.md` ด้วย (copy ไฟล์ทับ, ใช้วันที่ของเมื่",
-      "**[Atlas]** เขียน reflection ประจำวันที่ 8 ก.ค. 2569 เสร็จแล้วนะครับ (diary ของวันนั้นยังไม่มี เลยสร้างใหม่ตามฟอร์แมตของ"
+      "คำถามที่ผมควรถามจริงๆ ไม่ใช่ \"ทำไมไม่ทำ\" แต่คือ **\"จะสร้างกลไก 'คนทวง' ให้ของ 3 ข้อนี้ได้ยังไง\"** — ลองคิดเล่นๆดูครับ:",
+      "**[Eir]** ขอบคุณที่บอกรายละเอียดเพิ่มนะคะ ภาพชัดขึ้นมากเลยค่ะ และหนูต้องแก้คำที่ตัวเองพูดผิดก่อน",
+      "Eir ทำแล้วรู้สึกดีนะ    ช่วยบอกผมหน่อยในสภาวะแบบนี้ สิ่งที่ผมต้องทำตอนนี้คืออะไรเพื่อที่จะลุยต่อได้อย่างมีพลังมากขึ้น fl"
+    ]
+  },
+  "a73580b8-d836-4178-a6f0-d662ae25bc6c": {
+    "date": "16 กรกฎาคม 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 4,
+      "💡 Creative & Content": 14,
+      "🌿 Life & Health": 7,
+      "🔍 Research": 2,
+      "⚖️ Decision": 1,
+      "🔧 Dev & Tech": 14,
+      "💰 Finance": 3,
+      "📝 Memory & Diary": 29,
+      "🤖 System & Setup": 9
+    },
+    "tasks": [
+      "- `output/todos.json` (pending tasks)"
+    ]
+  },
+  "c131ebbc-300c-4003-9f66-5a6091f5be1a": {
+    "date": "16 กรกฎาคม 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 9,
+      "💡 Creative & Content": 6,
+      "🌿 Life & Health": 3,
+      "🔍 Research": 36,
+      "⚖️ Decision": 18,
+      "🔧 Dev & Tech": 50,
+      "💰 Finance": 3,
+      "📝 Memory & Diary": 13,
+      "🤖 System & Setup": 38
+    },
+    "tasks": [
+      "- จุดขายใหญ่: **เปิด weights ฟรีแบบ MIT license** (เอาไปใช้/ดัดแปลงเชิงพาณิชย์ได้ไม่มีเงื่อนไข) และเก่งงาน agentic (วางแ",
+      "**เส้นทางรุ่นก่อนหน้า:** ChatGLM → GLM-4 → GLM-4.5/4.6 (2025 เริ่มดังเรื่องโค้ด) → GLM-5 (ก.พ. 2026) → GLM-5.1 (เม.ย.) →",
+      "- ข้อดี: Jed เห็นทุกอย่างก่อน ควบคุมเต็มที่ ไม่ต้องสร้างอะไรเพิ่ม",
+      "ตามกฎเสนอแผนก่อนลงมือ: ถ้า Jed เลือกแนวทางแล้ว (เช่น รูปแบบ 3 หรือ 3+2 ผสม) บอกมาได้เลยค่ะ เดี๋ยว Laura ให้ Forge ร่างแผ",
+      "2. **งานสกัดข้อมูลเป็นโครงสร้าง** — แปลงเอกสารเป็น JSON/ตาราง, tool calling (การให้ AI เรียกใช้เครื่องมือ) ทำได้เสถียร ผ",
+      "| **Lena** | แปลงเอกสารกองใหญ่เป็นโครงสร้าง KB note | ไฟล์ 98 ไฟล์ในโปรเจกต์ปรับปรุง_KM, จัด inbox Second Brain |",
+      "2. Forge สร้าง `scripts/glm_task.py` + ซ่อม `gemini_review.py` ให้โหลด `.env` เอง (วันนี้เจอว่าต้อง export key เองก่อนรั",
+      "- Jed เริ่มชน rate limit ของ Claude บ่อยจนงานสะดุดจริง หรือ"
     ]
   }
 }

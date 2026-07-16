@@ -38,11 +38,11 @@ type: reference
 
 | Custom group เดิม | ข้อเสนอ |
 |---|---|
-| AN_Logbook | ยังไม่มีโฟลเดอร์ในเครื่อง — ถ้าจะทำต่อ แนะนำสร้าง `D:\Project\AN_Logbook` + CLAUDE.md เชื่อมทีม (pattern เดียวกับ Risk) |
+| AN_Logbook | ตัวแอปจริงอยู่ฝั่งทีม Angie ที่ `D:\Antigravity\Anesth_logbook` (Netlify+Sheets) — ฝั่งทีม Laura ยังไม่มีโฟลเดอร์ ถ้าจะรับมาดูแลต่อ แนะนำสร้าง `D:\Project\AN_Logbook` + CLAUDE.md (มี entry ใน projects.json แล้ว, Vera review 7 บั๊กรอแก้) |
 
 ## โฟลเดอร์โปรเจกต์ที่มีอยู่แต่ยังไม่เห็นเป็น group ใน sidebar
 
-`D:\Project\ISBAR`, `D:\Project\OR_Efficiancy_dashboard`, `D:\Project\จัดซื้อ ห้องผ่าตัด`, `D:\Project\ระบบลงทะเบียน Implant Setup 1.0.0`, `D:\Project\ตีพิมพ์วารสารสร้างเสริมสุขภาพไทย` (✅ CLAUDE.md), `D:\Project\วิจัย_ป_เอก_น้องอาร์` (✅ CLAUDE.md) — เปิด session ที่โฟลเดอร์ของมันได้เลยเช่นกัน
+`D:\Project\ISBAR`, `D:\Project\OR_Efficiancy_dashboard`, `D:\Project\จัดซื้อ ห้องผ่าตัด`, `D:\Project\ระบบลงทะเบียน Implant Setup 1.0.0`, `D:\Project\ตีพิมพ์วารสารสร้างเสริมสุขภาพไทย` (✅ CLAUDE.md), `D:\Project\วิจัย_ป_เอก_น้องอาร์` (✅ CLAUDE.md), `D:\Project\ปรับปรุง_KM` (✅ CLAUDE.md เพิ่ม 10 ก.ค.69 — เอกสารคุณภาพ QM/QP/SOP/WI กวห.) — เปิด session ที่โฟลเดอร์ของมันได้เลยเช่นกัน
 
 ## งานต่อยอด
 
