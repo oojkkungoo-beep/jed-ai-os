@@ -1220,17 +1220,17 @@
     ]
   },
   "80509ff7-ad27-4d57-b091-787fc535f456": {
-    "date": "1 กรกฎาคม 2569",
+    "date": "24 กรกฎาคม 2569",
     "scores": {
-      "🎯 Strategy & CEO": 30,
-      "💡 Creative & Content": 32,
+      "🎯 Strategy & CEO": 42,
+      "💡 Creative & Content": 56,
       "🌿 Life & Health": 15,
-      "🔍 Research": 18,
+      "🔍 Research": 25,
       "⚖️ Decision": 5,
-      "🔧 Dev & Tech": 83,
-      "💰 Finance": 3,
-      "📝 Memory & Diary": 151,
-      "🤖 System & Setup": 48
+      "🔧 Dev & Tech": 102,
+      "💰 Finance": 7,
+      "📝 Memory & Diary": 156,
+      "🤖 System & Setup": 58
     },
     "tasks": [
       "เนื่องจากจำนวนมากและไฟล์หนักหลายไฟล์ (รวมกันหลาย GB) ขอเช็คให้ตรงทางก่อนเริ่มประมวลผลค่ะ",
@@ -1982,15 +1982,15 @@
   "c131ebbc-300c-4003-9f66-5a6091f5be1a": {
     "date": "16 กรกฎาคม 2569",
     "scores": {
-      "🎯 Strategy & CEO": 9,
+      "🎯 Strategy & CEO": 10,
       "💡 Creative & Content": 6,
       "🌿 Life & Health": 3,
       "🔍 Research": 36,
       "⚖️ Decision": 18,
-      "🔧 Dev & Tech": 50,
+      "🔧 Dev & Tech": 52,
       "💰 Finance": 3,
-      "📝 Memory & Diary": 13,
-      "🤖 System & Setup": 38
+      "📝 Memory & Diary": 14,
+      "🤖 System & Setup": 40
     },
     "tasks": [
       "- จุดขายใหญ่: **เปิด weights ฟรีแบบ MIT license** (เอาไปใช้/ดัดแปลงเชิงพาณิชย์ได้ไม่มีเงื่อนไข) และเก่งงาน agentic (วางแ",
@@ -2001,6 +2001,54 @@
       "| **Lena** | แปลงเอกสารกองใหญ่เป็นโครงสร้าง KB note | ไฟล์ 98 ไฟล์ในโปรเจกต์ปรับปรุง_KM, จัด inbox Second Brain |",
       "2. Forge สร้าง `scripts/glm_task.py` + ซ่อม `gemini_review.py` ให้โหลด `.env` เอง (วันนี้เจอว่าต้อง export key เองก่อนรั",
       "- Jed เริ่มชน rate limit ของ Claude บ่อยจนงานสะดุดจริง หรือ"
+    ]
+  },
+  "0eead587-14df-45cb-b295-12328229c055": {
+    "date": "23 กรกฎาคม 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 20,
+      "💡 Creative & Content": 963,
+      "🌿 Life & Health": 29,
+      "🔍 Research": 17,
+      "⚖️ Decision": 3,
+      "🔧 Dev & Tech": 1316,
+      "💰 Finance": 161,
+      "📝 Memory & Diary": 1476,
+      "🤖 System & Setup": 696
+    },
+    "tasks": [
+      "| **Eir** | Sonnet 5 (+Fable เรื่องเล่า) | เพิ่ม escalate → **Opus 4.8** เฉพาะบทสนทนาอ่อนไหว/ประเมินซับซ้อน |",
+      "ตอนนี้เวลาใช้ Fable จะเสียเงินเพิ่มหรือ",
+      "| Subcommand | Action |",
+      "| Classification, summarization, extraction, Q&A  | Single LLM call | **Claude API**            | One request, one respo",
+      "## Compaction (Quick Reference)",
+      "See `{lang}/claude-api/README.md` (Compaction section) for code examples. Full docs via WebFetch in `shared/live-sources",
+      "**Single text classification/summarization/extraction/Q&A:**",
+      "→ Refer to `unknown/claude-api/README.md` — see Compaction section"
+    ]
+  },
+  "e0d581c8-da2c-41f1-8ebc-4da0c1a519e7": {
+    "date": "24 กรกฎาคม 2569",
+    "scores": {
+      "🎯 Strategy & CEO": 3,
+      "💡 Creative & Content": 7,
+      "🌿 Life & Health": 7,
+      "🔍 Research": 60,
+      "⚖️ Decision": 20,
+      "🔧 Dev & Tech": 27,
+      "💰 Finance": 5,
+      "📝 Memory & Diary": 19,
+      "🤖 System & Setup": 25
+    },
+    "tasks": [
+      "- จุดขายที่ต่างจากตัวอื่น: มี **learning loop ในตัว** คือทำงานเสร็จแล้ว \"จำ\" วิธีทำ สร้างเป็น skill ใช้ซ้ำได้ ยิ่งใช้ยิ่",
+      "hermes สามารถสร้างทีมแบบทีมลอร่าได้ไหม",
+      "[Scout] Scout ค่ะ — คำตอบสั้นคือ **ได้ค่ะ และตรงกว่าที่คิด** โครงสร้างของ Hermes Agent แทบจะ map กับทีมลอร่าแบบ 1:1 เลย ",
+      "| ไฟล์ agent ใน `team/` (Muse, Atlas, Nova...) | **Profiles** — แต่ละ profile มี SOUL.md, memory, skills, cron แยกของตัว",
+      "2. **สร้างทีมได้ ≠ ได้ทีมเดิม** — ไฟล์ persona ย้ายไปได้ (team/*.md → SOUL.md แปลงไม่ยาก) แต่ความรู้สะสม, memory, skill,",
+      "- **Reflection pass อัตโนมัติ** — เรามี Vera weekly audit อยู่แล้ว แต่ยังไม่มีขั้น \"สกัดบทเรียนเป็น skill ใหม่อัตโนมัติ\"",
+      "| ค่าใช้จ่าย/เดือน | ค่า subscription ที่จ่ายอยู่แล้ว (เหมาจ่าย ไม่ต้องจ่ายเพิ่ม) | ~300–900 บ. **เพิ่ม** | ~5,500–9,000",
+      "| คนดูแลระบบ | Anthropic ดูแลให้ | **Jed เป็นแอดมินเอง** — อัปเดต, ความปลอดภัยเซิร์ฟเวอร์, แก้ตอนล่ม | หนักกว่าอีก |"
     ]
   }
 }

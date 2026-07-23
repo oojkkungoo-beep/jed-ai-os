@@ -3,12 +3,13 @@
 อัปเดตอัตโนมัติด้วย `scripts/sync_index.py` (Cinder รันทุกครั้งที่มีไฟล์ใหม่/แก้ไฟล์ใน team, characters, output) ห้ามแก้ไฟล์นี้ตรงๆ
 
 
-สร้างล่าสุด: 2026-07-16 12:55
+สร้างล่าสุด: 2026-07-24 00:36
 
 
 ## Agent Definitions (team/)
 
-- [Model Assignment — ทีม Laura](team/model_assignment.md) (2026-07-04)
+- [Model Assignment — ทีม Laura](team/model_assignment.md) (2026-07-23)
+- [challenger-screening](team/skills/challenger-screening.md) (2026-07-23)
 - [Cinder — Maintenance & Ops (ซินเดอร์)](team/cinder.md) (2026-07-03)
 - [Mint — Finance Agent (มิ้นท์)](team/finance.md) (2026-07-03)
 - [Forge — Dev Agent (ฟอร์จ)](team/forge.md) (2026-07-03)

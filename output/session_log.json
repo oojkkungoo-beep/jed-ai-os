@@ -2099,17 +2099,17 @@
       },
       {
         "name": "📝 Memory & Diary",
-        "count": 89,
+        "count": 90,
         "pct": 17
       },
       {
         "name": "🎯 Strategy & CEO",
-        "count": 78,
+        "count": 79,
         "pct": 15
       },
       {
         "name": "🔧 Dev & Tech",
-        "count": 68,
+        "count": 70,
         "pct": 13
       },
       {
@@ -2119,8 +2119,8 @@
       },
       {
         "name": "🤖 System & Setup",
-        "count": 50,
-        "pct": 9
+        "count": 52,
+        "pct": 10
       }
     ],
     "tasks": [
@@ -2132,6 +2132,120 @@
       "คำถามที่ผมควรถามจริงๆ ไม่ใช่ \"ทำไมไม่ทำ\" แต่คือ **\"จะสร้างกลไก 'คนทวง' ให้ของ 3 ข้อนี้ได้ยังไง\"** — ลองคิดเล่นๆดูครับ:",
       "**[Eir]** ขอบคุณที่บอกรายละเอียดเพิ่มนะคะ ภาพชัดขึ้นมากเลยค่ะ และหนูต้องแก้คำที่ตัวเองพูดผิดก่อน",
       "Eir ทำแล้วรู้สึกดีนะ    ช่วยบอกผมหน่อยในสภาวะแบบนี้ สิ่งที่ผมต้องทำตอนนี้คืออะไรเพื่อที่จะลุยต่อได้อย่างมีพลังมากขึ้น fl"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 43,
+    "date": "23 กรกฎาคม 2569",
+    "topCategory": "📝 Memory & Diary",
+    "tags": [
+      "📝 Memory & Diary",
+      "🔧 Dev & Tech",
+      "💡 Creative & Content",
+      "🤖 System & Setup"
+    ],
+    "summary": "Auto-log: หมวดหลัก 📝 Memory & Diary (31%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "📝 Memory & Diary",
+        "count": 1485,
+        "pct": 31
+      },
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 1329,
+        "pct": 28
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 966,
+        "pct": 20
+      },
+      {
+        "name": "🤖 System & Setup",
+        "count": 703,
+        "pct": 15
+      },
+      {
+        "name": "💰 Finance",
+        "count": 164,
+        "pct": 3
+      },
+      {
+        "name": "🔍 Research",
+        "count": 57,
+        "pct": 1
+      }
+    ],
+    "tasks": [
+      "| **Eir** | Sonnet 5 (+Fable เรื่องเล่า) | เพิ่ม escalate → **Opus 4.8** เฉพาะบทสนทนาอ่อนไหว/ประเมินซับซ้อน |",
+      "ตอนนี้เวลาใช้ Fable จะเสียเงินเพิ่มหรือ",
+      "| Subcommand | Action |",
+      "| Classification, summarization, extraction, Q&A  | Single LLM call | **Claude API**            | One request, one respo",
+      "## Compaction (Quick Reference)",
+      "See `{lang}/claude-api/README.md` (Compaction section) for code examples. Full docs via WebFetch in `shared/live-sources",
+      "**Single text classification/summarization/extraction/Q&A:**",
+      "→ Refer to `unknown/claude-api/README.md` — see Compaction section"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 44,
+    "date": "24 กรกฎาคม 2569",
+    "topCategory": "📝 Memory & Diary",
+    "tags": [
+      "📝 Memory & Diary",
+      "🔧 Dev & Tech",
+      "🔍 Research",
+      "🤖 System & Setup"
+    ],
+    "summary": "Auto-log: หมวดหลัก 📝 Memory & Diary (27%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "📝 Memory & Diary",
+        "count": 175,
+        "pct": 27
+      },
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 129,
+        "pct": 20
+      },
+      {
+        "name": "🔍 Research",
+        "count": 85,
+        "pct": 13
+      },
+      {
+        "name": "🤖 System & Setup",
+        "count": 83,
+        "pct": 13
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 63,
+        "pct": 10
+      },
+      {
+        "name": "🎯 Strategy & CEO",
+        "count": 45,
+        "pct": 7
+      }
+    ],
+    "tasks": [
+      "เนื่องจากจำนวนมากและไฟล์หนักหลายไฟล์ (รวมกันหลาย GB) ขอเช็คให้ตรงทางก่อนเริ่มประมวลผลค่ะ",
+      "ยังไม่ต้องทำ 100 ไฟล์นี้ครับ  ไปทำการ retrofit ทั้ง vault (ไปไล่แยก atomic note จากโน้ตเก่าที่มีอยู่แล้วทั้งหมด)ก่อนเลย",
+      "ขอสำรวจขนาด vault ก่อนว่ามีกี่โน้ตที่ต้องไล่ จะได้ประเมินสโคปให้แม่นก่อนส่ง Lena ลงมือค่ะ",
+      "<result>Note: claude-sonnet-4-6 (the safety classifier) was unavailable when reviewing this subagent's work. Please care",
+      "งานนี้รันเป็น background task — จะรายงานสรุปให้ทันทีที่เสร็จนะคะ (จำนวน atomic note ที่สร้าง, ไฟล์ต้นทางที่ครอบคลุมแล้ว,",
+      "[Laura] 10-Clinical ก็ยังอยู่ในขั้น delegate ต่อ ไม่ใช่ของจริงอีกเช่นกัน — รอ noti ชั้นถัดไปต่อไปค่ะ ไม่ต้องทำอะไรเพิ่มต",
+      "**Atomic notes สร้างใหม่ในรอบนี้ (9 ไฟล์):**",
+      "- `atom-paperclip-ai-release-date` (จาก Paperclip AI วิธีสร้างบริษัท)"
     ],
     "details": "",
     "relatedProjects": [],
