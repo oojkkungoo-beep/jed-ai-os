@@ -54,5 +54,9 @@
   {
     "date": "วันอาทิตย์ที่ 26 กรกฎาคม 2569",
     "content": "⚙️ Forge — Dev Status\n**วันที่:** 26 กรกฎาคม 2569\n\nไม่มี commit ใหม่เมื่อวานครับ (วันอาทิตย์) — งาน Kanban.md + Reflection Pass + Skills layer ที่วางระบบเสร็จไปเมื่อ 24 ก.ค. ยังใช้งานได้ปกติ ไม่มีบั๊กแจ้งเข้ามา\n\nกำลังรอ Dashboard v2 rebuild kickoff วันจันทร์นี้ (29 ก.ค.) — เตรียมพร้อมแล้วรอ Jed คอนเฟิร์มขอบเขตก่อนเริ่มลงมือจริงครับ"
+  },
+  {
+    "date": "วันจันทร์ที่ 27 กรกฎาคม 2569",
+    "content": "⚙️ Forge — Dev Status\n**วันที่:** 27 กรกฎาคม 2569\n\nไม่มี commit ใหม่เมื่อวานครับ — แต่ Kanban card \"Kanban+Reflection+Skills layer\" ที่ผมทำไว้ 24 ก.ค. ได้รับการยืนยันแล้วว่าเสร็จจริง (CLAUDE.md/team/qa.md/team/skills/ ครบ) ย้ายเข้า Done โดย Laura\n\nของที่รอผมอยู่คือการ์ด \"debug scheduled-tasks runner\" ที่ Vera เพิ่งเติมกลับเข้า Kanban — แต่ตามที่ Vera เสนอ อาจต้องให้ Jed เช็คการตั้งค่าต้นทางเองก่อน เพราะผมเองก็รันผ่าน scheduler เดียวกัน อาจ debug จุดพังของตัวเองไม่ได้"
   }
 ]
