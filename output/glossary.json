@@ -502,5 +502,14 @@
     "example": "output/2026-07-09-session-folder-cheatsheet.md ของ Jed คือ cheat sheet สรุปว่าโฟลเดอร์ไหนเก็บอะไร ดูได้ทันทีโดยไม่ต้องไล่อ่านทุกไฟล์",
     "date_added": "2026-07-10",
     "source": "ถาม Jed ในแชท"
+  },
+  {
+    "id": 51,
+    "term": "Usage credits",
+    "category": "AI / Tools",
+    "meaning": "หน่วยนับการใช้งานที่แพลตฟอร์ม AI ใช้วัดและจำกัดว่าผู้ใช้ใช้ทรัพยากรไปเท่าไหร่แล้วในรอบนั้น แต่ละ request หัก credits ตามปริมาณ token ที่ใช้",
+    "example": "โปรเจกต์ Ai_Limit_monitoring ของ Jed คือ desktop widget แสดง usage credits ของ AI ต่างๆค้างหน้าจอ ไม่ต้องเปิดเว็บเช็คเอง",
+    "date_added": "2026-07-28",
+    "source": "ถาม Jed ในแชท"
   }
 ]

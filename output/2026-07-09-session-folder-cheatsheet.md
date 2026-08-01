@@ -29,10 +29,11 @@ type: reference
 |---|---|
 | Dashboard | dashboard ยังอยู่ใน Jed_org (มีแผนรื้อใหม่ 29 ก.ค.69) |
 | Framework | ไฟล์อยู่ `output/decisions/` ใน Jed_org |
-| สร้างเลขา | งานสร้าง/ปรับทีม agent = งานของระบบ Jed_org |
 | Routine | งานจัดไฟล์/cron ของระบบ |
 
-⚠️ 4 กลุ่มนี้จะรวมกันอยู่ใน project "Jed_org" ก้อนเดียวเสมอ — ถ้าอยากแยกให้เห็นเป็นกลุ่ม ให้คง custom group ไว้สำหรับ session พวกนี้
+⚠️ กลุ่มเหล่านี้จะรวมกันอยู่ใน project "Jed_org" ก้อนเดียวเสมอ — ถ้าอยากแยกให้เห็นเป็นกลุ่ม ให้คง custom group ไว้สำหรับ session พวกนี้
+
+> 🔄 **ย้ายแล้ว (1 ส.ค.69):** งาน "สร้างเลขา / จัดทีม / สร้าง-ปรับ agent" → เปิด session ที่ `D:\Project\Team_Management` แทน (มีโฟลเดอร์แยกแล้ว เพื่อรวมบทสนทนาเรื่องทีมเป็นกลุ่มเดียว หาง่าย) — **แต่ source of truth ยังอยู่ Jed_org** (`team/`, `org_structure.md` ฯลฯ) session แก้ที่ต้นทางผ่าน absolute path ไม่ fork สำเนา
 
 ## กลุ่มที่ยังไม่มีโฟลเดอร์
 
@@ -42,7 +43,7 @@ type: reference
 
 ## โฟลเดอร์โปรเจกต์ที่มีอยู่แต่ยังไม่เห็นเป็น group ใน sidebar
 
-`D:\Project\ISBAR`, `D:\Project\OR_Efficiancy_dashboard`, `D:\Project\จัดซื้อ ห้องผ่าตัด`, `D:\Project\ระบบลงทะเบียน Implant Setup 1.0.0`, `D:\Project\ตีพิมพ์วารสารสร้างเสริมสุขภาพไทย` (✅ CLAUDE.md), `D:\Project\วิจัย_ป_เอก_น้องอาร์` (✅ CLAUDE.md), `D:\Project\ปรับปรุง_KM` (✅ CLAUDE.md เพิ่ม 10 ก.ค.69 — เอกสารคุณภาพ QM/QP/SOP/WI กวห.) — เปิด session ที่โฟลเดอร์ของมันได้เลยเช่นกัน
+`D:\Project\ISBAR`, `D:\Project\OR_Efficiancy_dashboard`, `D:\Project\จัดซื้อ ห้องผ่าตัด`, `D:\Project\ระบบลงทะเบียน Implant Setup 1.0.0`, `D:\Project\ตีพิมพ์วารสารสร้างเสริมสุขภาพไทย` (✅ CLAUDE.md), `D:\Project\วิจัย_ป_เอก_น้องอาร์` (✅ CLAUDE.md), `D:\Project\ปรับปรุง_KM` (✅ CLAUDE.md เพิ่ม 10 ก.ค.69 — เอกสารคุณภาพ QM/QP/SOP/WI กวห.), `D:\Project\เกมเก็บแต้ม` (✅ CLAUDE.md เพิ่ม 24 ก.ค.69 — gamification เก็บแต้มในทีม/องค์กร), `D:\Project\Ai_Limit_monitoring` (✅ CLAUDE.md เพิ่ม 28 ก.ค.69 — desktop widget แสดง limit AI ค้างจอ), `D:\Project\Home_server` (✅ CLAUDE.md เพิ่ม 30 ก.ค.69 — home server SSH+Tailscale, สคริปต์เดิมจากทีม Angie), `D:\Project\Team_Management` (✅ CLAUDE.md เพิ่ม 1 ส.ค.69 — workspace จัดการทีม AI, source of truth อยู่ Jed_org) — เปิด session ที่โฟลเดอร์ของมันได้เลยเช่นกัน
 
 ## งานต่อยอด
 

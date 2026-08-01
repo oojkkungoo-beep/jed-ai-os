@@ -1,1120 +1,5 @@
 [
   {
-    "id": 1,
-    "date": "5 มิถุนายน 2569",
-    "topCategory": "AI OS Dashboard",
-    "tags": [
-      "🔧 Dev & Tech",
-      "👥 Team Setup",
-      "🎯 Strategy"
-    ],
-    "summary": "วางรากฐานทีม AI ครบ 9-10 คน + ปรับ UI dashboard และเชื่อมระบบ deploy",
-    "categories": [
-      {
-        "name": "Dashboard & UI",
-        "count": 12,
-        "pct": 40
-      },
-      {
-        "name": "Team Setup",
-        "count": 8,
-        "pct": 27
-      },
-      {
-        "name": "System Integration",
-        "count": 6,
-        "pct": 20
-      },
-      {
-        "name": "Strategy",
-        "count": 4,
-        "pct": 13
-      }
-    ],
-    "tasks": [
-      "อัปเดต character files ทั้ง 9 คน — Gender + คำอ่านไทย",
-      "Redesign Team grid เป็น portrait card + Pipeline square images",
-      "สร้าง Vera (QA Agent) เข้าทีม",
-      "Share Notion + Connect GitHub → Vercel"
-    ],
-    "details": "วันนี้เป็นวันวางรากฐานของทีม AI — ตั้งค่า character ให้ agent ทุกคนมีตัวตนชัดเจน (เพศ, สรรพนาม, คำลงท้าย) ปรับหน้า Team ให้ดูเป็นทีมจริงจังขึ้นด้วย portrait card และเพิ่ม Vera เข้ามาเป็น QA agent คนที่ 9 (ตอนนั้น) นอกจากนี้ยังเชื่อมต่อ Notion และตั้งค่า deploy ผ่าน Vercel ให้ Jed เข้าถึง dashboard ได้จากทุกที่",
-    "relatedProjects": [
-      "Jed AI OS Dashboard"
-    ]
-  },
-  {
-    "id": 2,
-    "date": "6 มิถุนายน 2569",
-    "topCategory": "System Upgrade",
-    "tags": [
-      "🔧 Dev & Tech",
-      "🧠 Knowledge",
-      "📝 Memory"
-    ],
-    "summary": "อัปเกรดระบบทั้งชุด — แก้บั๊ก deploy, ลด token CLAUDE.md, ตั้ง Second Brain และ Knowledge dashboard",
-    "categories": [
-      {
-        "name": "Vercel & Deploy",
-        "count": 4,
-        "pct": 20
-      },
-      {
-        "name": "Skill Audit",
-        "count": 6,
-        "pct": 30
-      },
-      {
-        "name": "Second Brain",
-        "count": 7,
-        "pct": 35
-      },
-      {
-        "name": "Research & Knowledge",
-        "count": 3,
-        "pct": 15
-      }
-    ],
-    "tasks": [
-      "แก้ Vercel redirect loop + browser cache bug",
-      "Token Audit CLAUDE.md: 49→23 บรรทัด ลด 45%",
-      "Skill Audit + upgrade team files ครบ 10 agent",
-      "Setup Second Brain vault + Obsidian plugins 3 ตัว",
-      "สร้าง knowledge.json — 12 entries persistent"
-    ],
-    "details": "วันที่เน้นการ \"ทำความสะอาดและอัปเกรดระบบ\" — แก้ปัญหาทางเทคนิคที่สะสม (Vercel redirect loop, cache bug), ลดความยาวไฟล์ CLAUDE.md ลงเกือบครึ่งเพื่อประหยัด token, ตรวจสอบ skill ของ agent ทุกคนและอัปเกรดให้ครบ 10 คน พร้อมวาง Second Brain (Obsidian) และระบบ Knowledge บน dashboard ให้ Jed เก็บสิ่งที่เรียนรู้ได้อย่างเป็นระบบ",
-    "relatedProjects": [
-      "Jed AI OS Dashboard"
-    ]
-  },
-  {
-    "id": 3,
-    "date": "7 มิถุนายน 2569",
-    "topCategory": "Framework_01 — ชีวิตและรายได้เสริม",
-    "tags": [
-      "🎯 Strategy",
-      "💰 Finance",
-      "👨‍👩‍👧 Family",
-      "🌿 Health",
-      "🔧 Dev & Tech"
-    ],
-    "summary": "สาน Framework 4-Level ต่อกับ Atlas — ตกผลึกเป้าหมายเงิน 90 วัน + สำรวจช่องทางรายได้เสริม + อัปเดต dashboard หลายจุด",
-    "categories": [
-      {
-        "name": "Strategy & Life Framework",
-        "count": 9,
-        "pct": 35
-      },
-      {
-        "name": "Finance Planning",
-        "count": 6,
-        "pct": 23
-      },
-      {
-        "name": "Dashboard & UI",
-        "count": 7,
-        "pct": 27
-      },
-      {
-        "name": "Org Design",
-        "count": 4,
-        "pct": 15
-      }
-    ],
-    "tasks": [
-      "สรุป session Framework_01 (Wealth/Health Score, ความรู้สึก emotional isolation, 4-Level Framework)",
-      "ตกผลึกเป้าหมาย: รายได้เสริม +20,000 บาท/เดือน ภายใน 90 วัน",
-      "สำรวจ 4 ช่องทางรายได้เสริม (เพื่อนเบาหวาน, Dressing2Home, NursePant, คอนเทนต์ความรู้)",
-      "วางแผน Quick Win 2 สัปดาห์: เคลียร์สต๊อก NursePant 60 ตัว",
-      "เพิ่มโปรเจกต์ Jed_fremwork + progress bar ทุกโปรเจกต์ใน dashboard",
-      "เพิ่ม project detail panel (กดดูรายละเอียด/แก้ไข/ลบได้)",
-      "ออกแบบผังองค์กร 6 สายงาน (Jed CEO → Laura Chief of Staff → ทีม) แทน Pipeline เดิม"
-    ],
-    "details": "วันนี้คือวันที่ framework ของ Jed เริ่มเป็นรูปเป็นร่างจริงจัง — Atlas ช่วยคลี่ปมความรู้สึก (อยาก \"ทำเงียบๆ ให้ผลลัพธ์พูดแทน\" ไม่ใช่การซ่อน) และพา Jed มาถึงเป้าหมายที่ชัดเจน: รายได้เสริม +20,000 บาท/เดือน ภายใน 90 วัน จากนั้นสำรวจพบว่า Jed มีต้นทุนเดิมอยู่แล้ว 4 ทาง และเลือกเส้นทาง \"เคลียร์สต๊อก NursePant 60 ตัว\" เป็น Quick Win — ที่น่าสนใจคือ Jed เผยว่าทุนคืนหมดแล้ว ทำให้ของที่เหลือกลายเป็น \"กำไรล้วน\" เกือบเท่าเป้าหมายรายได้เสริมทั้งเดือน\n\nคู่ขนานกันนั้น Laura ก็ทยอยอัปเดต dashboard หลายจุดตามคำขอของ Jed: เพิ่มโปรเจกต์ Jed_fremwork, ใส่ progress bar และ detail panel ให้ทุกโปรเจกต์, และออกแบบผังองค์กรใหม่ 6 สายงานที่ไม่ทับซ้อนกัน (Strategy, Finance, Life Ops, Creative & Insights, Technology, People & Quality) แทนมุมมอง Pipeline เดิม",
-    "relatedProjects": [
-      "Jed_fremwork",
-      "Jed AI OS Dashboard",
-      "Medical Presentation — ยาสลบ"
-    ]
-  },
-  {
-    "id": 4,
-    "date": "7 มิถุนายน 2569",
-    "topCategory": "ตั้ง Agent ใหม่ — Eir (Wellness Healer)",
-    "tags": [
-      "👥 Team Setup",
-      "🌿 Health",
-      "🔧 Dev & Tech"
-    ],
-    "summary": "Vera วิเคราะห์ skill gap พบทีมยังขาดคนดูแลสาย Health → Jed ตัดสินใจตั้ง agent ใหม่ \"Eir\" นักบวช Healer ธีม isekai พร้อมสกิลครบชุด",
-    "categories": [
-      {
-        "name": "Team Setup",
-        "count": 6,
-        "pct": 50
-      },
-      {
-        "name": "Skill Gap Analysis",
-        "count": 3,
-        "pct": 25
-      },
-      {
-        "name": "Dashboard & UI",
-        "count": 3,
-        "pct": 25
-      }
-    ],
-    "tasks": [
-      "Vera วิเคราะห์ skill gap ของทีม สำหรับ Level 1 (Wealth/Health/Mindset)",
-      "สรุป: Wealth/Mindset มีคนดูแลครบ, Health ยังไม่มีเจ้าภาพชัดเจน (Nova ดูแลแค่เวลา)",
-      "Jed เลือกตั้ง agent ใหม่ (ไม่ใช่แค่เพิ่มสกิลให้ Nova) เพราะวางแผนลุยสาย Health ระยะยาว + จะป้อนความรู้พยาบาลเพิ่มเรื่อยๆ",
-      "สร้าง Eir (เอียร์) — Wellness & Vitality Healer ธีมนักบวชจากต่างโลก ตามที่ Jed ชอบนิยาย/การ์ตูนแนวต่างโลก",
-      "เขียน persona + skill set: Vitality Check, Routine Crafting, Pattern Tracking, Knowledge Forge, Buff/Debuff Advisory (team/wellness.md, characters/eir.md)",
-      "เพิ่ม Eir เข้า AGENTS grid และผังองค์กร (สาย Life Operations & Wellness คู่กับ Nova) ใน dashboard + อัปเดต routing ใน CLAUDE.md"
-    ],
-    "details": "ต่อเนื่องจากที่ Jed ถามว่าต้องเพิ่มเลขา/สกิลไหมเพื่อเร่ง Level 1 ของ framework — Vera เข้ามาวิเคราะห์และพบว่า Wealth (Atlas/Mint/Council) และ Mindset (Atlas/Sage) มีคนดูแลครบแล้ว แต่ Health ยังเป็นช่องว่าง: Nova ดูแลแค่ \"เวลา/ตาราง\" ไม่มีใครเชี่ยวชาญเรื่องร่างกาย/ฟื้นฟู/พลังงานโดยตรง Vera เสนอ 2 ทาง — เพิ่มสกิลให้ Nova หรือ ตั้ง agent ใหม่เฉพาะทาง\n\nJed เลือกทางตั้ง agent ใหม่ทันที โดยให้เหตุผลว่าจะลุยสาย Health เพิ่มแน่นอน ไม่ใช่แค่โปรเจกต์ \"เพื่อนเบาหวาน\" แต่รวมถึงงานประจำวันที่ต้องมีคนช่วยตัดสินใจ และวางแผนจะป้อนความรู้การพยาบาล/สุขภาพเข้าระบบอีกมากในอนาคต พร้อมขอให้ปรับธีมเป็นแนวนิยาย/การ์ตูนต่างโลกที่ Jed ชอบ\n\nจึงเกิด \"Eir\" (เอียร์) — นักบวช Healer (Half-Elf Cleric) จากต่างโลก ที่ถูกซัมมอนมาเป็น Healer ประจำปาร์ตี้ของ Jed (Guild Master) พูดแบบอบอุ่นห่วงใย แทรกศัพท์ RPG (HP/MP/Buff/Debuff/Quest/Status Window) ให้การดูแลสุขภาพสนุกเหมือนผจญภัย แต่เนื้อหายังคงถูกต้องตามหลักวิชาชีพ มีสกิลครบ 5 ด้าน (Vitality Check, Routine Crafting, Pattern Tracking, Knowledge Forge, Buff/Debuff Advisory) และแบ่งงานกับ Nova ชัดเจนไม่ทับซ้อน (Nova=เวลา/ตาราง, Eir=สุขภาพ/ร่างกาย/ความรู้)\n\nเพิ่มเข้าทีมในทุกจุด: AGENTS grid, ผังองค์กร (สาย Life Operations & Wellness), routing table ใน CLAUDE.md, และสร้างไฟล์ persona/character ครบชุด — ทีมตอนนี้มี 7 agent + Laura + Jed",
-    "relatedProjects": [
-      "Jed AI OS Dashboard",
-      "Jed_fremwork"
-    ]
-  },
-  {
-    "id": 5,
-    "date": "7 มิถุนายน 2569",
-    "topCategory": "Dashboard Bugfix + Team Profile Upgrade",
-    "tags": [
-      "🔧 Dev & Tech"
-    ],
-    "summary": "แก้บั๊กกดดู Character ไม่ได้ + เพิ่มข้อมูล \"เผ่าพันธุ์\" ให้ agent ทุกคนในหน้า Team",
-    "categories": [
-      {
-        "name": "Bugfix",
-        "count": 2,
-        "pct": 50
-      },
-      {
-        "name": "Feature — Team Profiles",
-        "count": 2,
-        "pct": 50
-      }
-    ],
-    "tasks": [
-      "พบสาเหตุ: path ไฟล์ team/characters ใช้ leading slash → fetch ผิดที่บน GitHub Pages subpath",
-      "แก้เป็น relative path ../team/... และ ../characters/... ให้ทุก agent (รวม Jed)",
-      "เพิ่ม field 'race' (เผ่าพันธุ์) ให้ agent ทุกคน + Jed ดึงจาก character file ของแต่ละคน",
-      "แสดงผล 🧬 เผ่าพันธุ์ ต่อท้ายชื่อใน Team grid พร้อม CSS ใหม่ .agent-race",
-      "เพิ่ม เผ่าพันธุ์ ให้ Vera ที่ไม่เคยมีนิยามไว้ (Clockwork Inspector / Golem-kin Auditor)"
-    ],
-    "details": "Jed แจ้งว่ากดดู \"Character\" ของ agent ในหน้า Team ไม่ขึ้น — ตรวจสอบพบว่าทุก agent ตั้งค่า path ของไฟล์ persona/character ด้วย leading slash (เช่น '/team/wellness.md') ซึ่งบน localhost อาจทำงานได้ แต่บน GitHub Pages ที่ dashboard อยู่ใน subpath '/jed-ai-os/dashboard/' การ fetch path แบบ absolute จะชี้ไปที่ root ของโดเมนผิดที่ ทำให้ 404 ทั้ง Prompt และ Character tab (ไม่ใช่แค่ Eir คนเดียว แต่เป็นบั๊กที่ซ่อนอยู่กับทุก agent) — แก้โดยเปลี่ยนเป็น relative path '../team/...' และ '../characters/...' ทำให้ใช้งานได้ถูกต้องทั้ง local และ live\n\nนอกจากนี้ Jed ขอให้เพิ่มข้อมูล \"เผ่าพันธุ์\" ต่อท้ายชื่อ agent ในหน้าโปรไฟล์ (ตามสไตล์ที่ใช้ตอนแนะนำ Eir ว่าเป็น Half-Elf Cleric) — จึงไปดึงข้อมูลเผ่าพันธุ์จาก character file ของแต่ละคนมาใส่ใน AGENTS array แล้วแสดงเป็นแถบ 🧬 ใต้ชื่อใน Team grid ทุกใบการ์ด พบว่า Vera เป็นคนเดียวที่ยังไม่เคยมีนิยามเผ่าพันธุ์ จึงตั้งให้เป็น \"Clockwork Inspector (Golem-kin Auditor)\" ให้เข้ากับธีม QA ที่ละเอียด เที่ยงตรง เหมือนกลไกนาฬิกา",
-    "relatedProjects": [
-      "Jed AI OS Dashboard"
-    ]
-  },
-  {
-    "id": 6,
-    "date": "7 มิถุนายน 2569",
-    "topCategory": "Team Profile — เผ่าพันธุ์ ฉบับภาษาไทย",
-    "tags": [
-      "🔧 Dev & Tech",
-      "🧠 Knowledge"
-    ],
-    "summary": "Jed อัปรูป Eir/Vera/Laura ใหม่ + ขอให้เพิ่มคำอธิบายเผ่าพันธุ์เป็นภาษาไทยให้ทุก agent แบบเดียวกับ Eir",
-    "categories": [
-      {
-        "name": "Team Profiles",
-        "count": 2,
-        "pct": 100
-      }
-    ],
-    "tasks": [
-      "Jed เพิ่ม images/Eir.png และทำรูปใหม่ให้ Vera + Laura",
-      "เพิ่มคำอธิบายภาษาไทยในวงเล็บต่อท้ายเผ่าพันธุ์ของทุก agent (เช่น Silver Elf → 'เอลฟ์เงินผู้ดูแลสำนักงาน') ให้เหมือนสไตล์ Eir ('นักบวชจากต่างโลก')",
-      "อัปเดตทั้งใน AGENTS array (app.js) และหัวข้อ เผ่าพันธุ์ ใน character file ของทุกคนให้ตรงกัน"
-    ],
-    "details": "Jed แจ้งว่าได้เพิ่มรูป Eir ในโฟลเดอร์ images/ แล้ว และทำรูปโปรไฟล์ใหม่ให้ Vera กับ Laura ด้วย (ไฟล์ชื่อเดิม ระบบดึงไปแสดงอัตโนมัติไม่ต้องแก้โค้ด) จากนั้นขอให้ปรับการแสดงผล 'เผ่าพันธุ์' ของ agent ทุกคนให้มีคำอธิบายภาษาไทยในวงเล็บกำกับแบบเดียวกับที่ Eir มี ('Half-Elf Cleric (นักบวชจากต่างโลก)') เพื่อให้ Jed อ่านแล้วเข้าใจตัวตนของแต่ละคนทันทีแม้ไม่คุ้นกับศัพท์แฟนตาซีภาษาอังกฤษ\n\nเพิ่มคำอธิบายให้ครบทั้ง 11 agent + Jed เช่น Laura = 'เอลฟ์เงินผู้ดูแลสำนักงาน', Atlas = 'นักรบ-นักคิดสายเลือดผสม', Council = 'สภาหุ่นยนต์โบราณสามเสียง', Sage = 'จิ้งจอกเทพผู้อาวุโสแห่งความทรงจำ', Vera = 'กลไกผู้ตรวจสอบจากเผ่าโกเลม' ฯลฯ แก้ทั้งในไฟล์ dashboard/app.js (AGENTS array) และหัวข้อเผ่าพันธุ์ในไฟล์ character/*.md ของทุกคนให้ข้อมูลตรงกันทั้งสองที่",
-    "relatedProjects": [
-      "Jed AI OS Dashboard"
-    ]
-  },
-  {
-    "id": 7,
-    "date": "7 มิถุนายน 2569",
-    "topCategory": "Dashboard Bugfix — รูป Eir ไม่ขึ้น",
-    "tags": [
-      "🔧 Dev & Tech"
-    ],
-    "summary": "พบว่ารูป Eir ไม่ขึ้นบน live site เพราะไฟล์ภาพยังไม่เคย push ขึ้น GitHub — เพิ่มเข้า git แล้ว push ให้",
-    "categories": [
-      {
-        "name": "Bugfix — Assets",
-        "count": 1,
-        "pct": 100
-      }
-    ],
-    "tasks": [
-      "ตรวจสอบ path/ชื่อไฟล์ Eir.png ในโฟลเดอร์ images/ — ตรงกับที่อ้างอิงในโค้ดถูกต้อง",
-      "เช็ค git status พบว่า Eir.png เป็นไฟล์ untracked (??) และ Laura.png/vera.png เป็น modified — ยังไม่เคย commit",
-      "git add + commit + push ทั้ง 3 ไฟล์ภาพขึ้น GitHub"
-    ],
-    "details": "Jed แจ้งว่าเพิ่มรูป Eir ไว้ในโฟลเดอร์ images/ แล้วแต่ยังไม่ขึ้นบน dashboard — ตรวจสอบแล้วพบว่าไฟล์ชื่อและตำแหน่งถูกต้องตามที่โค้ดอ้างอิง (images/Eir.png) แต่สาเหตุจริงคือ **ไฟล์รูปภาพเป็น binary asset ที่ git ไม่ได้ track โดยอัตโนมัติเหมือนไฟล์โค้ด/JSON** — มันอยู่แค่ในเครื่อง Jed (working directory) ไม่เคยถูก commit เข้า repo เลย ดังนั้นเวลา push ก่อนหน้านี้จึงไม่มีไฟล์รูปติดไปด้วย ทำให้ live site บน GitHub Pages หาไฟล์ไม่เจอ (404 → fallback เป็นไม่แสดงรูป)\n\nเช็คด้วย git status เจอว่า Eir.png เป็นไฟล์ใหม่ที่ untracked และ Laura.png, vera.png เป็นไฟล์ modified (จากที่ Jed ทำรูปใหม่ให้) ทั้งสามยังไม่เคยอยู่ใน commit ใดเลย — แก้โดย git add + commit + push เข้า branch master ตอนนี้รูปขึ้นแสดงผลถูกต้องบน live dashboard แล้ว\n\n💡 ข้อสังเกตสำหรับอนาคต: ทุกครั้งที่ Jed เพิ่ม/เปลี่ยนรูปภาพ agent ใหม่ในโฟลเดอร์ images/ ต้องแจ้งหรือให้ Laura commit+push ไฟล์ภาพเหล่านั้นด้วยเสมอ ไม่ใช่แค่ไฟล์โค้ด/ข้อมูล เพราะ git ไม่ stage ไฟล์ binary ใหม่ให้อัตโนมัติ",
-    "relatedProjects": [
-      "Jed AI OS Dashboard"
-    ]
-  },
-  {
-    "id": 8,
-    "date": "11 มิถุนายน 2569",
-    "topCategory": "เปิดโปรเจกต์ Risk_OR_BAH + Vera Review สไลด์ป้องกันสิ่งตกค้าง",
-    "tags": [
-      "👥 Team Setup",
-      "🌿 Health"
-    ],
-    "summary": "เชื่อมโปรเจกต์ Risk_OR_BAH (session แยก root) เข้าระบบทีม Laura สำเร็จ + Vera ตรวจสไลด์ 'กระบวนการป้องกันสิ่งตกค้าง 69' จนผ่าน A-",
-    "categories": [
-      {
-        "name": "Team Setup — Cross-project",
-        "count": 1,
-        "pct": 50
-      },
-      {
-        "name": "QA Review — เอกสารโรงพยาบาล",
-        "count": 1,
-        "pct": 50
-      }
-    ],
-    "tasks": [
-      "สร้าง CLAUDE.md ใน D:\\Claude_Cowork\\งาน_รพ\\Risk\\ ให้ session Risk_OR_BAH_01 ใช้ตัวตน Laura + routing เดียวกับทีมหลัก",
-      "เพิ่ม project Risk_OR_BAH เข้า output/projects.json แล้ว commit+push",
-      "Vera ตรวจสไลด์ 'กระบวนการป้องกันสิ่งตกค้าง 69 (ปรับปรุง)' รอบ 1 (14 สไลด์) พบ Slide 3 ว่างเปล่า ให้คะแนน B",
-      "Jed กำหนดหัวข้อ Slide 3 เอง + เพิ่ม section High-Risk Scenarios ใหม่ → ไฟล์ขยายเป็น 16 สไลด์",
-      "Vera ตรวจรอบ 2 — Slide 3 แก้แล้ว เนื้อหาครบ ให้คะแนน A-"
-    ],
-    "details": "Jed สร้าง session ใหม่ชื่อ Risk_OR_BAH_01 ที่ root D:\\Claude_Cowork\\งาน_รพ\\Risk\\ (คนละ working directory กับ Jed_org) สำหรับงานทะเบียนความเสี่ยง/กระบวนการป้องกันสิ่งตกค้างของกองวิสัญญีและห้องผ่าตัด รพ.ภูมิพลอดุลยเดช พอ. แต่ session นั้นยังไม่มีตัวตน Laura หรือทีมงาน — Laura จึงสร้างไฟล์ CLAUDE.md ในโฟลเดอร์ Risk กำหนดตัวตน Laura + routing table เดียวกับระบบหลัก โดยอ้างอิง agent profile จาก Jed_org/team/ ด้วย absolute path แล้วลงทะเบียนโปรเจกต์ Risk_OR_BAH เข้า dashboard\n\nจากนั้น Jed สั่งให้ Vera ตรวจสไลด์ 'กระบวนการป้องกันสิ่งตกค้าง 69 (ปรับปรุง).pptx' — รอบแรก (14 สไลด์) เนื้อหาหลักครบถ้วนสอดคล้องกัน เน้นประเด็นผ่าตัด 2 Operation/Field พร้อมกัน แต่ Slide 3 ว่างเปล่าทั้งหมด ให้คะแนน B และแนะนำให้แก้ Jed เลือกกำหนดหัวข้อ Slide 3 เอง แล้วปรับปรุงไฟล์เพิ่มเป็น 16 สไลด์ (เติมนิยาม RSI/Sponge Count ใน Slide 3 + เพิ่ม section ใหม่ 'สถานการณ์เฝ้าระวังพิเศษ') — Vera ตรวจรอบสองอัปเกรดเป็น A- โดยมีหมายเหตุว่าหลายสไลด์เนื้อหาอยู่ในรูปภาพ/diagram ที่ตรวจ visual ไม่ได้จากเครื่องมือนี้ ขอให้ Jed เปิดไฟล์ตรวจตาเองอีก 1 รอบ\n\nบันทึก diary ที่ output/diary/2026-06-11.md และ sync ไป Second_Brain เรียบร้อย",
-    "relatedProjects": [
-      "Risk_OR_BAH"
-    ]
-  },
-  {
-    "id": 9,
-    "date": "13 มิถุนายน 2569",
-    "topCategory": "🔧 Dev & Tech",
-    "tags": [
-      "🔧 Dev & Tech",
-      "🌿 Life & Health",
-      "📝 Memory & Diary",
-      "🔍 Research"
-    ],
-    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (47%) — รอ Sage สรุปท้ายวัน",
-    "categories": [
-      {
-        "name": "🔧 Dev & Tech",
-        "count": 54,
-        "pct": 47
-      },
-      {
-        "name": "🌿 Life & Health",
-        "count": 16,
-        "pct": 14
-      },
-      {
-        "name": "📝 Memory & Diary",
-        "count": 14,
-        "pct": 12
-      },
-      {
-        "name": "🔍 Research",
-        "count": 9,
-        "pct": 8
-      },
-      {
-        "name": "💡 Creative & Content",
-        "count": 7,
-        "pct": 6
-      },
-      {
-        "name": "⚖️ Decision",
-        "count": 6,
-        "pct": 5
-      }
-    ],
-    "tasks": [
-      "[Laura] เริ่มสำรวจ dashboard ปัจจุบันก่อนนะคะ เพื่อดูโครงสร้างและวิธี log ที่มีอยู่",
-      "ตอนนี้เข้าใจโครงสร้างแล้วค่ะ: `output/session_log.json` ปัจจุบันเป็น manual — Sage เขียนทีหลังเมื่อ Jed สั่ง \"สรุปวันนี้",
-      "มีจุดที่ต้องตัดสินใจก่อนเริ่มทำค่ะ",
-      "4. ปรับ `team/memory_agent.md` — ตอน Sage เขียน \"สรุปวันนี้\" จะ**เขียนทับ** entry auto ของวันนั้น (ใส่ summary/details ฉ",
-      "ทดสอบกับ transcript จริงแล้ว ได้ entry ที่ถูกต้อง (ลบ test data ออกแล้ว) — session นี้พอจบ Stop hook จะรันจริงและสร้าง e",
-      "Now let's update app.js for the todo logic.",
-      "Reload reset to home. Let's click todo again.",
-      "## สรุปการอัปเดต Todo Dashboard"
-    ],
-    "details": "",
-    "relatedProjects": [],
-    "auto": true
-  },
-  {
-    "id": 10,
-    "date": "14 มิถุนายน 2569",
-    "topCategory": "🔧 Dev & Tech",
-    "tags": [
-      "🔧 Dev & Tech",
-      "📝 Memory & Diary",
-      "🌿 Life & Health",
-      "🔍 Research"
-    ],
-    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (36%) — รอ Sage สรุปท้ายวัน",
-    "categories": [
-      {
-        "name": "🔧 Dev & Tech",
-        "count": 481,
-        "pct": 36
-      },
-      {
-        "name": "📝 Memory & Diary",
-        "count": 230,
-        "pct": 17
-      },
-      {
-        "name": "🌿 Life & Health",
-        "count": 135,
-        "pct": 10
-      },
-      {
-        "name": "🔍 Research",
-        "count": 132,
-        "pct": 10
-      },
-      {
-        "name": "💡 Creative & Content",
-        "count": 124,
-        "pct": 9
-      },
-      {
-        "name": "🤖 System & Setup",
-        "count": 119,
-        "pct": 9
-      }
-    ],
-    "tasks": [
-      "Now let's update app.js for the todo logic.",
-      "Reload reset to home. Let's click todo again.",
-      "## สรุปการอัปเดต Todo Dashboard",
-      "**สิ่งที่เพิ่มเข้ามา:**",
-      "2. **เรียงลำดับ** — งานที่ยังไม่เสร็จล่าสุดอยู่บนสุด งานที่ทำแล้วอยู่ล่างสุด (เรียงตามวันที่อัปเดต/สร้างล่าสุด)",
-      "3. **Eisenhower Matrix** — แบ่งงานเป็น 4 ประเภท: 🔥 ทำทันที (ด่วน+สำคัญ), 📅 วางแผน (สำคัญไม่ด่วน), 🤝 มอบหมาย (ด่วนไม่สำคั",
-      "ทดสอบใน preview แล้วทำงานครบทุกฟังก์ชัน — filter, sort, edit/save, checkbox ทำงานถูกต้องค่ะ",
-      "ช่วยสรุปสิ่งที่ผมต้องทำทั้งหมดใส่ลงไปใน dashboard todo ด้วยครับ"
-    ],
-    "details": "",
-    "relatedProjects": [],
-    "auto": true
-  },
-  {
-    "id": 11,
-    "date": "14 มิถุนายน 2569",
-    "topCategory": "🔧 Dev & Tech",
-    "tags": [
-      "🔧 Dev & Tech",
-      "📝 Memory"
-    ],
-    "summary": "อัปเกรด Todo Dashboard เป็น Eisenhower Matrix + แก้บั๊ก done ไม่บันทึก + ปิด auto-push",
-    "categories": [
-      {
-        "name": "🔧 Dev & Tech",
-        "count": 1,
-        "pct": 100
-      }
-    ],
-    "tasks": [
-      "เพิ่ม Eisenhower Matrix 4 quadrant (🔥📅🤝🗑️) ให้ todo พร้อม filter และ quadrant tag",
-      "เพิ่มหน้ารายละเอียด/แก้ไข todo (detail panel) — แก้ข้อความ/หมวด/priority/quadrant/done ได้",
-      "เรียง todo: งานที่ยังไม่เสร็จล่าสุดอยู่บนสุด, งานเสร็จแล้วลงล่าง",
-      "เติม output/todos.json ด้วยรายการงานค้างทั้งหมดของ Jed 10 รายการ (journal, NursePant, Risk_OR_BAH, OHC, dashboard ฯลฯ)",
-      "แก้บั๊ก: ติ๊ก done แล้ว refresh กลับไปไม่ติ๊ก — แก้ logic merge ให้ local edit ชนะไฟล์",
-      "แก้บั๊กรอบ 2: Service Worker cache เก่าทำให้ browser ไม่โหลด app.js ใหม่ — เปลี่ยน sw.js เป็น network-first สำหรับ html/css/js และ bump CACHE เป็น v4"
-    ],
-    "details": "วันนี้อัปเกรดหน้า Todo ของ dashboard แบบเต็มรูปแบบ: เพิ่มระบบ Eisenhower Matrix แบ่งงานเป็น 4 กลุ่ม (ทำทันที/วางแผน/มอบหมาย/ตัดทิ้ง) เลือกได้ตอนเพิ่มงานและ filter ดูทีหลังได้ พร้อมหน้าแก้ไขรายละเอียดงานแบบกดเข้าไปดู/แก้ได้เลย แล้วเติมงานค้างทั้งหมดของ Jed ลงไป 10 รายการครอบคลุมทุกโปรเจกต์ที่กำลังทำอยู่ (วารสารสุขภาพไทย, NursePant, Risk_OR_BAH, OHC App, dashboard เอง)\n\nหลังจากนั้น Jed เจอบั๊ก: ติ๊กงานว่าทำเสร็จแล้ว+save แต่ refresh หน้าใหม่กลับไม่ติ๊ก — เจอ 2 ชั้น ชั้นแรกคือ logic merge ข้อมูลใน app.js ที่ให้ไฟล์ todos.json (done:false เสมอ) ชนะค่าที่แก้ใน localStorage เสมอ แก้ให้ local edit ชนะแทน ชั้นสองคือ Service Worker cache เวอร์ชันเก่าของ app.js ค้างอยู่ใน browser ทำให้โหลดโค้ดใหม่ไม่ได้ ต้องปรับ sw.js ให้ใช้ network-first กับไฟล์ html/css/js แล้ว bump cache version เป็น v4 ถึงจะใช้ได้จริง\n\n⚠️ หมายเหตุสำคัญ: ระหว่าง session นี้มีการ commit+push ขึ้น GitHub ไปแล้ว 4 ครั้ง (e1f79fc, 2daa441, 99716b4 และอีก 1 commit) ก่อนที่จะพบกฎใหม่ในความจำว่า GitHub Pages ปิดไปแล้วและ Jed ขอให้ push เฉพาะเมื่อสั่งเท่านั้น — งานที่เหลือ (อัปเดต session log, activity, projects notes ของรอบนี้) จะ**ไม่ push** ตามกฎใหม่ รอ Jed สั่งถ้าต้องการ sync ขึ้น GitHub",
-    "relatedProjects": [
-      "Jed AI OS Dashboard"
-    ],
-    "auto": false
-  },
-  {
-    "id": 12,
-    "date": "14 มิถุนายน 2569",
-    "topCategory": "👥 Team Setup",
-    "tags": [
-      "👥 Team Setup",
-      "🔧 Dev & Tech",
-      "🧠 Knowledge"
-    ],
-    "summary": "เพิ่ม Devil agent (adversarial reviewer) เข้าทีม + ต่อ Gemini API ให้ Devil และ Scout ใช้วิเคราะห์งาน/วิดีโอ",
-    "categories": [
-      {
-        "name": "👥 Team Setup",
-        "count": 1,
-        "pct": 100
-      }
-    ],
-    "tasks": [
-      "วิเคราะห์ทีมเลขาจาก longtundiary.com เทียบกับทีมปัจจุบัน — สรุปว่า Reese/Chris/Vera-Fact-Gate ส่วนใหญ่มี Scout/Vera คลุมอยู่แล้ว ช่องที่ขาดคือ adversarial review",
-      "สร้าง team/devil.md + characters/devil.md — Devil (เดวิล, ครับ) 3 modes: Bear Case / Polarity Audit / Evidence Match, opt-in",
-      "ขยาย team/qa.md — Vera เพิ่ม fact-check criterion + section ตรวจความเสี่ยงส่งต่อ Devil",
-      "อัปเดต model_assignment.md + CLAUDE.md routing ให้ครอบคลุม Devil",
-      "เพิ่ม Devil ใน dashboard (AGENTS list, org chart, agent card + รูปที่ Jed ใส่ให้)",
-      "ตั้งค่า Gemini API: สร้าง .env/.gitignore, ติดตั้ง google-genai, เขียน scripts/gemini_review.py (Devil) และ scripts/gemini_video.py (Scout)",
-      "ทดสอบจริงกับ API key ของ Jed — พบว่า gemini-2.5-pro ติด quota=0 (ต้องเปิด billing), เปลี่ยน default เป็น gemini-2.5-flash ซึ่งใช้ free tier ได้จริงทั้ง text review และ video analysis (ทดสอบกับ YouTube URL สำเร็จ)",
-      "อัปเดต research.md ให้ Scout รู้วิธี fallback ถ้าเจอ quota error (ตัดวิดีโอเป็นช่วง / Whisper ต้องถามก่อน)",
-      "บันทึก feedback memory: แยก Gemini subscription รายปี vs Gemini API billing ชัดเจน"
-    ],
-    "details": "Jed เห็นทีมเลขาตัวอย่างจาก longtundiary.com (Chris-Quality Gate, Vera-Fact-Gate, Devil-Adversarial ฯลฯ) แล้วถามว่าทีมเราควรปรับไหม — Vera ทำ audit เทียบแล้วพบว่า role ส่วนใหญ่มี Scout/Vera คลุมอยู่แล้ว มีแค่ 'adversarial review / bear case' ที่ไม่มีใครทำ จึงตั้ง Devil เป็น agent ใหม่ opt-in (ไม่ trigger ทุกงาน) พร้อม 3 modes และหลักการ 'ใช้ model ต่างจาก agent ต้นทาง'\n\nต่อมาคุยเรื่องต่อ agent กับ Gemini/OpenAI — สรุปว่า Claude Code agent ต่อ external API ได้ผ่าน Bash script เท่านั้น (ไม่ใช่ native subagent) Gemini เหมาะกว่า OpenAI เพราะรับวิดีโอตรงได้และ Jed มี subscription รายปีอยู่แล้ว (แต่พบว่าเป็นคนละระบบกับ API). สร้าง wrapper scripts ให้ Devil และ Scout แล้วทดสอบกับ API key จริงของ Jed — เจอ gemini-2.5-pro ติด quota เพราะยังไม่เปิด billing, แก้เป็น gemini-2.5-flash ซึ่งทำงานได้ฟรีจริง ทดสอบ Mode A ของ Devil และ video analysis ของ Scout (วิดีโอ YouTube ทดสอบ) ผ่านทั้งคู่\n\nบันทึกกฎสำคัญไว้ในความจำ: ก่อนใช้ gemini-2.5-pro หรือ OpenAI (ต้อง billing/pay-per-use) ต้องถาม Jed ก่อนเสมอ ส่วน gemini-2.5-flash (free tier) เรียกได้เลย",
-    "relatedProjects": [
-      "Jed AI OS Dashboard"
-    ],
-    "auto": false
-  },
-  {
-    "id": 13,
-    "date": "14 มิถุนายน 2569",
-    "topCategory": "🌿 Life & Health",
-    "tags": [
-      "🌿 Life & Health",
-      "🎯 Strategy",
-      "📝 Memory & Diary"
-    ],
-    "summary": "Atlas เขียน reflection ส่วนตัวให้ Jed ในมุม CEO Coach — ชี้ pattern operator-to-architect, ตั้งคำถามท้าทาย 3 ข้อ, เสนอ momentum แรก (ถ่ายรูป NursePant)",
-    "categories": [],
-    "tasks": [],
-    "details": "Jed ขอให้ Atlas เขียนถึงตัวเองแบบ reflective (ไม่ใช่ task งาน) — บันทึกที่ output/decisions/2026-06-14-atlas-reflection-ceo-lens.md และต่อเข้า diary วันนี้",
-    "relatedProjects": [],
-    "auto": false
-  },
-  {
-    "id": 14,
-    "date": "15 มิถุนายน 2569",
-    "topCategory": "🔧 Dev & Tech",
-    "tags": [
-      "🔧 Dev & Tech",
-      "📝 Memory & Diary",
-      "🤖 System & Setup",
-      "🌿 Life & Health"
-    ],
-    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (47%) — รอ Sage สรุปท้ายวัน",
-    "categories": [
-      {
-        "name": "🔧 Dev & Tech",
-        "count": 424,
-        "pct": 47
-      },
-      {
-        "name": "📝 Memory & Diary",
-        "count": 166,
-        "pct": 18
-      },
-      {
-        "name": "🤖 System & Setup",
-        "count": 73,
-        "pct": 8
-      },
-      {
-        "name": "🌿 Life & Health",
-        "count": 68,
-        "pct": 7
-      },
-      {
-        "name": "💡 Creative & Content",
-        "count": 67,
-        "pct": 7
-      },
-      {
-        "name": "🔍 Research",
-        "count": 62,
-        "pct": 7
-      }
-    ],
-    "tasks": [
-      "ถ้าทำตามนี้แล้วยังไม่อัพเดท บอก Laura ได้เลยนะคะ จะดูเพิ่มว่าติดจุดไหนค่ะ",
-      "เซิร์ฟเวอร์รันใหม่เรียบร้อยแล้วค่ะ ทดสอบแล้วทั้ง dashboard และ output/projects.json ตอบ 200 ปกติ — ลอง refresh (Ctrl+Shi",
-      "- หรือ delegate ต่อให้ agent เฉพาะทางในทีม 12 คน เช่น Muse (idea/content), Atlas (strategy/CEO), Nova (todo/ตาราง), Forg",
-      "[Sage] บันทึก diary วันนี้เพิ่มเรียบร้อยแล้วครับ สรุปสั้นๆ session นี้:",
-      "ทำเสร็จ: Medic_Station กลุ่ม 🟡 (todo id 16-22) ครบทั้ง 7 ข้อ",
-      "ปุ่มแก้ไข logbook + Export PDF (รองรับภาษาไทย, ทดสอบสร้างไฟล์จริงสำเร็จ)",
-      "ทุกไฟล์ผ่าน py_compile และ output/todos.json อัปเดต done ครบแล้ว — รายละเอียดบันทึกไว้ใน output/diary/2026-06-14.md",
-      "Jed ทดสอบ GUI จริง (ยังไม่ได้เปิดแอปทดสอบ)"
-    ],
-    "details": "",
-    "relatedProjects": [],
-    "auto": true
-  },
-  {
-    "id": 15,
-    "date": "16 มิถุนายน 2569",
-    "topCategory": "🔧 Dev & Tech",
-    "tags": [
-      "🔧 Dev & Tech",
-      "🤖 System & Setup",
-      "📝 Memory & Diary",
-      "💡 Creative & Content"
-    ],
-    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (47%) — รอ Sage สรุปท้ายวัน",
-    "categories": [
-      {
-        "name": "🔧 Dev & Tech",
-        "count": 927,
-        "pct": 47
-      },
-      {
-        "name": "🤖 System & Setup",
-        "count": 275,
-        "pct": 14
-      },
-      {
-        "name": "📝 Memory & Diary",
-        "count": 272,
-        "pct": 14
-      },
-      {
-        "name": "💡 Creative & Content",
-        "count": 158,
-        "pct": 8
-      },
-      {
-        "name": "🌿 Life & Health",
-        "count": 110,
-        "pct": 6
-      },
-      {
-        "name": "🔍 Research",
-        "count": 107,
-        "pct": 5
-      }
-    ],
-    "tasks": [
-      "Now let's update app.js for the todo logic.",
-      "Reload reset to home. Let's click todo again.",
-      "## สรุปการอัปเดต Todo Dashboard",
-      "**สิ่งที่เพิ่มเข้ามา:**",
-      "2. **เรียงลำดับ** — งานที่ยังไม่เสร็จล่าสุดอยู่บนสุด งานที่ทำแล้วอยู่ล่างสุด (เรียงตามวันที่อัปเดต/สร้างล่าสุด)",
-      "3. **Eisenhower Matrix** — แบ่งงานเป็น 4 ประเภท: 🔥 ทำทันที (ด่วน+สำคัญ), 📅 วางแผน (สำคัญไม่ด่วน), 🤝 มอบหมาย (ด่วนไม่สำคั",
-      "ทดสอบใน preview แล้วทำงานครบทุกฟังก์ชัน — filter, sort, edit/save, checkbox ทำงานถูกต้องค่ะ",
-      "ช่วยสรุปสิ่งที่ผมต้องทำทั้งหมดใส่ลงไปใน dashboard todo ด้วยครับ"
-    ],
-    "details": "",
-    "relatedProjects": [],
-    "auto": true
-  },
-  {
-    "id": 16,
-    "date": "17 มิถุนายน 2569",
-    "topCategory": "🔧 Dev & Tech",
-    "tags": [
-      "🔧 Dev & Tech",
-      "🤖 System & Setup",
-      "💡 Creative & Content",
-      "📝 Memory & Diary"
-    ],
-    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (65%) — รอ Sage สรุปท้ายวัน",
-    "categories": [
-      {
-        "name": "🔧 Dev & Tech",
-        "count": 736,
-        "pct": 65
-      },
-      {
-        "name": "🤖 System & Setup",
-        "count": 205,
-        "pct": 18
-      },
-      {
-        "name": "💡 Creative & Content",
-        "count": 67,
-        "pct": 6
-      },
-      {
-        "name": "📝 Memory & Diary",
-        "count": 53,
-        "pct": 5
-      },
-      {
-        "name": "🔍 Research",
-        "count": 40,
-        "pct": 4
-      },
-      {
-        "name": "🌿 Life & Health",
-        "count": 13,
-        "pct": 1
-      }
-    ],
-    "tasks": [
-      "### โครงสร้างข้อมูลจาก Excel ที่มีอยู่",
-      "3. **สร้าง Frontend** HTML/JS (ไม่ต้องมี framework ใหญ่)",
-      "**Jed ต้องการให้เริ่มสร้างได้เลยไหมคะ?** ถ้าใช่ขอทราบ:",
-      "| **เชื่อม Google Sheets** | ✅ seamless | ❌ ต้องทำเพิ่ม | ❌ ต้องทำเพิ่ม |",
-      "## แผนที่ Forge จะสร้าง",
-      "Admin อื่นๆ             ←  เพิ่ม email ใน Sheets ได้ทีหลัง",
-      "**ขอทราบเพิ่มเติมก่อนเริ่มค่ะ:**",
-      "3. **เริ่มได้เลยไหม** — หรือรอ confirm ก่อน?"
-    ],
-    "details": "",
-    "relatedProjects": [],
-    "auto": true
-  },
-  {
-    "id": 17,
-    "date": "18 มิถุนายน 2569",
-    "topCategory": "🔧 Dev & Tech",
-    "tags": [
-      "🔧 Dev & Tech",
-      "🤖 System & Setup",
-      "🔍 Research",
-      "💡 Creative & Content"
-    ],
-    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (64%) — รอ Sage สรุปท้ายวัน",
-    "categories": [
-      {
-        "name": "🔧 Dev & Tech",
-        "count": 993,
-        "pct": 64
-      },
-      {
-        "name": "🤖 System & Setup",
-        "count": 204,
-        "pct": 13
-      },
-      {
-        "name": "🔍 Research",
-        "count": 143,
-        "pct": 9
-      },
-      {
-        "name": "💡 Creative & Content",
-        "count": 87,
-        "pct": 6
-      },
-      {
-        "name": "📝 Memory & Diary",
-        "count": 68,
-        "pct": 4
-      },
-      {
-        "name": "🌿 Life & Health",
-        "count": 41,
-        "pct": 3
-      }
-    ],
-    "tasks": [
-      "**งานค้างที่ต้องทำต่อ:**",
-      "1. ทดสอบ API จริง (ดึงข้อมูลสมาชิกจาก Sheets)",
-      "2. ทดสอบ Admin Login (Google OAuth บน GitHub Pages)",
-      "3. ปรับแต่งเพิ่มเติม",
-      "อยากเริ่มจากจุดไหนก่อนดีคะ Jed? หรือมีของใหม่ที่อยากทำเพิ่มเข้ามาคะ?",
-      "ต้องสร้าง Apps Script ที่ handle:",
-      "- Admin actions (approve, update, delete)",
-      "โครงสร้าง Google Sheet \"Members\" ตอนนี้มีคอลัมน์อะไรบ้างคะ? (เช่น ชื่อ, รุ่น, ประเภทสมาชิก, สถานะ, อีเมล ฯลฯ) เพื่อจะได้"
-    ],
-    "details": "",
-    "relatedProjects": [],
-    "auto": true
-  },
-  {
-    "id": 18,
-    "date": "19 มิถุนายน 2569",
-    "topCategory": "🔧 Dev & Tech",
-    "tags": [
-      "🔧 Dev & Tech",
-      "🔍 Research",
-      "🤖 System & Setup",
-      "💡 Creative & Content"
-    ],
-    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (58%) — รอ Sage สรุปท้ายวัน",
-    "categories": [
-      {
-        "name": "🔧 Dev & Tech",
-        "count": 532,
-        "pct": 58
-      },
-      {
-        "name": "🔍 Research",
-        "count": 132,
-        "pct": 14
-      },
-      {
-        "name": "🤖 System & Setup",
-        "count": 96,
-        "pct": 10
-      },
-      {
-        "name": "💡 Creative & Content",
-        "count": 49,
-        "pct": 5
-      },
-      {
-        "name": "📝 Memory & Diary",
-        "count": 46,
-        "pct": 5
-      },
-      {
-        "name": "🌿 Life & Health",
-        "count": 35,
-        "pct": 4
-      }
-    ],
-    "tasks": [
-      "มีเพื่อนอยากทำทีมเลขา agent แบบผม  ช่วยถอดวิธีการทำให้หน่อยครับตั้งแต่เริ่มสมัคร Claude",
-      "[Laura] ได้ค่ะ เดี๋ยวสรุปขั้นตอนทำทีมเลขา AI แบบที่ Jed ใช้อยู่ ให้เพื่อนเอาไปเริ่มได้เลยนะคะ",
-      "**2. สร้างโฟลเดอร์โปรเจกต์**",
-      "- สร้างโฟลเดอร์เปล่า 1 อัน เป็น \"บ้าน\" ของระบบ (เช่น `MyOrg/`)",
-      "**4. สร้างทีม agent ย่อย**",
-      "- สร้างโฟลเดอร์ `team/` แล้วทำไฟล์ `.md` แยกตามหน้าที่ เช่น `idea.md`, `life.md`, `finance.md`, `forge.md` (โค้ด), `qa.m",
-      "- เริ่มคุยงานจริง ดูว่า routing แม่นไหม ปรับคำสั่งใน CLAUDE.md เรื่อยๆ",
-      "- ค่อยๆเพิ่ม agent ใหม่ตามงานที่ขาด"
-    ],
-    "details": "",
-    "relatedProjects": [],
-    "auto": true
-  },
-  {
-    "id": 19,
-    "date": "20 มิถุนายน 2569",
-    "topCategory": "🔧 Dev & Tech",
-    "tags": [
-      "🔧 Dev & Tech",
-      "🤖 System & Setup",
-      "🔍 Research",
-      "📝 Memory & Diary"
-    ],
-    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (36%) — รอ Sage สรุปท้ายวัน",
-    "categories": [
-      {
-        "name": "🔧 Dev & Tech",
-        "count": 540,
-        "pct": 36
-      },
-      {
-        "name": "🤖 System & Setup",
-        "count": 242,
-        "pct": 16
-      },
-      {
-        "name": "🔍 Research",
-        "count": 215,
-        "pct": 14
-      },
-      {
-        "name": "📝 Memory & Diary",
-        "count": 189,
-        "pct": 12
-      },
-      {
-        "name": "💡 Creative & Content",
-        "count": 128,
-        "pct": 8
-      },
-      {
-        "name": "⚖️ Decision",
-        "count": 80,
-        "pct": 5
-      }
-    ],
-    "tasks": [
-      "วันนี้จะต่อในส่วนไหนคะ? มีอะไรอยากเพิ่ม แก้บัค หรือ feature ใหม่?",
-      "GAS ยังไม่มี `checkAdmin` endpoint ค่ะ ต้องเพิ่มทั้งฝั่ง GAS และแก้ `auth.js`",
-      "1. เพิ่ม `case 'checkAdmin'` ใน GAS (GET — ไม่ต้องการ auth)",
-      "| `apps-script/รหัส.js` | เพิ่ม `case 'checkAdmin'` — GET endpoint ไม่ต้อง auth |",
-      "ต้องทำ **2 อย่างพร้อมกัน:**",
-      "**ขั้นตอนที่ต้องทำค่ะ:**",
-      "https://script.google.com/macros/s/AKfycbysEWdIFN25qayS82Bfoi-mae9RG5MtOb92JKKNhqMgDIlfCDtazpIAybtAfH5EZcwS/exec?action=",
-      "ขั้นตอนที่ 3 สำคัญมากค่ะ — แค่ clasp push ไม่พอ ต้องสร้าง version ใหม่ใน UI ด้วย"
-    ],
-    "details": "",
-    "relatedProjects": [],
-    "auto": true
-  },
-  {
-    "id": 20,
-    "date": "21 มิถุนายน 2569",
-    "topCategory": "🔧 Dev & Tech",
-    "tags": [
-      "🔧 Dev & Tech",
-      "🔍 Research",
-      "🤖 System & Setup",
-      "📝 Memory & Diary"
-    ],
-    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (26%) — รอ Sage สรุปท้ายวัน",
-    "categories": [
-      {
-        "name": "🔧 Dev & Tech",
-        "count": 285,
-        "pct": 26
-      },
-      {
-        "name": "🔍 Research",
-        "count": 171,
-        "pct": 16
-      },
-      {
-        "name": "🤖 System & Setup",
-        "count": 171,
-        "pct": 16
-      },
-      {
-        "name": "📝 Memory & Diary",
-        "count": 170,
-        "pct": 15
-      },
-      {
-        "name": "💡 Creative & Content",
-        "count": 121,
-        "pct": 11
-      },
-      {
-        "name": "🎯 Strategy & CEO",
-        "count": 53,
-        "pct": 5
-      }
-    ],
-    "tasks": [
-      "[Laura] เดี๋ยวลอร่าเช็คให้ค่ะ เรื่อง Second Brain/Obsidian นี่ตรงสาย Lena (Vault Librarian) เลย ขอสำรวจโครงสร้างจริงก่อน",
-      "1. **ใช้ได้จริงไหม** — โครงสร้าง/เครื่องมือพร้อมใช้งานจริง 100% (ไม่ใช่ของโชว์) แต่ \"ตัวระบบ\" ยังไม่ได้ถูกใช้งานสม่ำเสมอ",
-      "- เพิ่ม pointer note หลักสูตรวิสัญญีพยาบาล → `10-Clinical/Anesthesia/`",
-      "ถ้าต้องการป้องกันกรณีเครื่องพังด้วย แนะนำให้เพิ่มการ sync หรือ copy ไปไว้ที่ OneDrive/Google Drive หรือ external hard di",
-      "มีอะไรให้ลอร่าอธิบายเพิ่มไหมคะ",
-      "หมายเหตุเล็กน้อย: ไฟล์ diary เก่าวันที่ 6 มิ.ย. ที่เคยพิมพ์ path เดิมไว้ ลอร่าตั้งใจไม่แก้ เพราะเป็นบันทึกประวัติ ณ วันน",
-      "- โครงสร้างโฟลเดอร์ (PARA-style) + plugin (Dataview, Templater, obsidian-git) — มาตรฐานเดียวกับที่มืออาชีพใช้จริง",
-      "อยากให้เลนาลงมือแก้ 3 จุดนี้เลยไหมคะ หรือจะให้ทำเฉพาะจุดที่ Jed ห่วงที่สุดก่อน"
-    ],
-    "details": "",
-    "relatedProjects": [],
-    "auto": true
-  },
-  {
-    "id": 21,
-    "date": "22 มิถุนายน 2569",
-    "topCategory": "🔧 Dev & Tech",
-    "tags": [
-      "🔧 Dev & Tech",
-      "🤖 System & Setup",
-      "💡 Creative & Content",
-      "🌿 Life & Health"
-    ],
-    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (36%) — รอ Sage สรุปท้ายวัน",
-    "categories": [
-      {
-        "name": "🔧 Dev & Tech",
-        "count": 153,
-        "pct": 36
-      },
-      {
-        "name": "🤖 System & Setup",
-        "count": 102,
-        "pct": 24
-      },
-      {
-        "name": "💡 Creative & Content",
-        "count": 60,
-        "pct": 14
-      },
-      {
-        "name": "🌿 Life & Health",
-        "count": 32,
-        "pct": 8
-      },
-      {
-        "name": "🔍 Research",
-        "count": 23,
-        "pct": 5
-      },
-      {
-        "name": "📝 Memory & Diary",
-        "count": 20,
-        "pct": 5
-      }
-    ],
-    "tasks": [
-      "[Laura] ขอเช็คสถานะ Dashboard จริงก่อนตอบนะคะ ให้ Vera (QA) ตรวจสอบโค้ด/โครงสร้างปัจจุบัน",
-      "- ⚠️ Code เริ่มเป็น monolithic (app.js 1,502 บรรทัดไฟล์เดียว) — เพิ่ม agent ใหม่ต้องแก้ไฟล์เดิม",
-      "ถ้า Jed อยากให้ทำจริง อยากให้ Forge เริ่มจากข้อ 1-2 ก่อนไหมคะ (effort ต่ำ ผลชัด) หรือมีจุดเฉพาะที่อยากให้ดูเพิ่มคะ",
-      "ผมต้องการสร้าง dashboard ใหม่เอาให้ perfect ตามสิ่งที่ควรจะเป็น  เมื่อทำเสร็จแล้วจะลบอันเก่าออก",
-      "ก่อนให้ Forge เริ่มออกแบบจริง ขอถามตัดสินใจสำคัญหน่อยนะคะ",
-      "- คือ framework ที่ให้คุณเขียน \"component\" (เหมือนตัวต่อ LEGO) แต่ละชิ้นมี HTML+CSS+JS ของตัวเอง เช่น `<TodoCard>`, `<Ch",
-      "- ข้อเสีย: ต้องติดตั้ง Node.js + build step (compile ก่อนรัน) ถ้า Jed ไม่คุ้นจะมีของให้เรียนรู้เพิ่ม (แต่ไม่ยากเท่า Reac",
-      "- เหมาะกับ: อยากได้ของที่ \"โตได้\" เพิ่ม feature ในอนาคตเรื่อยๆ โดยไม่บวม"
-    ],
-    "details": "",
-    "relatedProjects": [],
-    "auto": true
-  },
-  {
-    "id": 22,
-    "date": "24 มิถุนายน 2569",
-    "topCategory": "🔧 Dev & Tech",
-    "tags": [
-      "🔧 Dev & Tech",
-      "📝 Memory & Diary",
-      "🤖 System & Setup",
-      "🔍 Research"
-    ],
-    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (32%) — รอ Sage สรุปท้ายวัน",
-    "categories": [
-      {
-        "name": "🔧 Dev & Tech",
-        "count": 66,
-        "pct": 32
-      },
-      {
-        "name": "📝 Memory & Diary",
-        "count": 38,
-        "pct": 19
-      },
-      {
-        "name": "🤖 System & Setup",
-        "count": 35,
-        "pct": 17
-      },
-      {
-        "name": "🔍 Research",
-        "count": 33,
-        "pct": 16
-      },
-      {
-        "name": "💡 Creative & Content",
-        "count": 12,
-        "pct": 6
-      },
-      {
-        "name": "🌿 Life & Health",
-        "count": 7,
-        "pct": 3
-      }
-    ],
-    "tasks": [
-      "ความหมายแบบง่าย: เหมือนการ \"คัดลอกเส้นทางงาน\" ออกไปอีกเส้นหนึ่ง โดยเริ่มจากจุดที่เราอยู่ตอนนี้ (commit ปัจจุบัน) — งานที",
-      "- มี subagent หรือ session แยกที่ต้องทำงานคู่ขนานกัน (เหมือนที่ระบบ Agent tool มี `isolation: worktree` ให้ทำงานแยกจากโค",
-      "ช่วยสร้าง Dictionary คลังคำศัพท์ และจัดเก็บคำศัพท์นี้ให้ผมด้วย",
-      "[Laura] เรียบร้อยค่ะ Jed สร้าง Dictionary คลังคำศัพท์ไว้ที่ [output/glossary.json](output/glossary.json) แล้ว พร้อมเก็บค",
-      "โครงสร้างไฟล์ (ต่อ 1 คำศัพท์):",
-      "[Laura] เพิ่ม Glossary เข้า dashboard เรียบร้อยค่ะ Jed",
-      "- เพิ่มเมนู \"📔 Glossary\" ใน sidebar — [dashboard/index.html](dashboard/index.html)",
-      "- เพิ่มหน้า Glossary พร้อมช่องค้นหาคำศัพท์"
-    ],
-    "details": "",
-    "relatedProjects": [],
-    "auto": true
-  },
-  {
-    "id": 23,
-    "date": "25 มิถุนายน 2569",
-    "topCategory": "🔍 Research",
-    "tags": [
-      "🔍 Research",
-      "🤖 System & Setup",
-      "💡 Creative & Content",
-      "🔧 Dev & Tech"
-    ],
-    "summary": "Auto-log: หมวดหลัก 🔍 Research (24%) — รอ Sage สรุปท้ายวัน",
-    "categories": [
-      {
-        "name": "🔍 Research",
-        "count": 106,
-        "pct": 24
-      },
-      {
-        "name": "🤖 System & Setup",
-        "count": 84,
-        "pct": 19
-      },
-      {
-        "name": "💡 Creative & Content",
-        "count": 77,
-        "pct": 17
-      },
-      {
-        "name": "🔧 Dev & Tech",
-        "count": 69,
-        "pct": 16
-      },
-      {
-        "name": "📝 Memory & Diary",
-        "count": 45,
-        "pct": 10
-      },
-      {
-        "name": "💰 Finance",
-        "count": 34,
-        "pct": 8
-      }
-    ],
-    "tasks": [
-      "[Laura] เดี๋ยวลอร่าเช็คให้ค่ะ เรื่อง Second Brain/Obsidian นี่ตรงสาย Lena (Vault Librarian) เลย ขอสำรวจโครงสร้างจริงก่อน",
-      "1. **ใช้ได้จริงไหม** — โครงสร้าง/เครื่องมือพร้อมใช้งานจริง 100% (ไม่ใช่ของโชว์) แต่ \"ตัวระบบ\" ยังไม่ได้ถูกใช้งานสม่ำเสมอ",
-      "- เพิ่ม pointer note หลักสูตรวิสัญญีพยาบาล → `10-Clinical/Anesthesia/`",
-      "ถ้าต้องการป้องกันกรณีเครื่องพังด้วย แนะนำให้เพิ่มการ sync หรือ copy ไปไว้ที่ OneDrive/Google Drive หรือ external hard di",
-      "มีอะไรให้ลอร่าอธิบายเพิ่มไหมคะ",
-      "หมายเหตุเล็กน้อย: ไฟล์ diary เก่าวันที่ 6 มิ.ย. ที่เคยพิมพ์ path เดิมไว้ ลอร่าตั้งใจไม่แก้ เพราะเป็นบันทึกประวัติ ณ วันน",
-      "- โครงสร้างโฟลเดอร์ (PARA-style) + plugin (Dataview, Templater, obsidian-git) — มาตรฐานเดียวกับที่มืออาชีพใช้จริง",
-      "อยากให้เลนาลงมือแก้ 3 จุดนี้เลยไหมคะ หรือจะให้ทำเฉพาะจุดที่ Jed ห่วงที่สุดก่อน"
-    ],
-    "details": "",
-    "relatedProjects": [],
-    "auto": true
-  },
-  {
-    "id": 24,
-    "date": "26 มิถุนายน 2569",
-    "topCategory": "🔧 Dev & Tech",
-    "tags": [
-      "🔧 Dev & Tech",
-      "🤖 System & Setup",
-      "💡 Creative & Content",
-      "🔍 Research"
-    ],
-    "summary": "Auto-log: หมวดหลัก 🔧 Dev & Tech (27%) — รอ Sage สรุปท้ายวัน",
-    "categories": [
-      {
-        "name": "🔧 Dev & Tech",
-        "count": 224,
-        "pct": 27
-      },
-      {
-        "name": "🤖 System & Setup",
-        "count": 145,
-        "pct": 18
-      },
-      {
-        "name": "💡 Creative & Content",
-        "count": 117,
-        "pct": 14
-      },
-      {
-        "name": "🔍 Research",
-        "count": 109,
-        "pct": 13
-      },
-      {
-        "name": "📝 Memory & Diary",
-        "count": 100,
-        "pct": 12
-      },
-      {
-        "name": "🌿 Life & Health",
-        "count": 42,
-        "pct": 5
-      }
-    ],
-    "tasks": [
-      "[Laura] เดี๋ยวลอร่าเช็คให้ค่ะ เรื่อง Second Brain/Obsidian นี่ตรงสาย Lena (Vault Librarian) เลย ขอสำรวจโครงสร้างจริงก่อน",
-      "1. **ใช้ได้จริงไหม** — โครงสร้าง/เครื่องมือพร้อมใช้งานจริง 100% (ไม่ใช่ของโชว์) แต่ \"ตัวระบบ\" ยังไม่ได้ถูกใช้งานสม่ำเสมอ",
-      "- เพิ่ม pointer note หลักสูตรวิสัญญีพยาบาล → `10-Clinical/Anesthesia/`",
-      "ถ้าต้องการป้องกันกรณีเครื่องพังด้วย แนะนำให้เพิ่มการ sync หรือ copy ไปไว้ที่ OneDrive/Google Drive หรือ external hard di",
-      "มีอะไรให้ลอร่าอธิบายเพิ่มไหมคะ",
-      "หมายเหตุเล็กน้อย: ไฟล์ diary เก่าวันที่ 6 มิ.ย. ที่เคยพิมพ์ path เดิมไว้ ลอร่าตั้งใจไม่แก้ เพราะเป็นบันทึกประวัติ ณ วันน",
-      "- โครงสร้างโฟลเดอร์ (PARA-style) + plugin (Dataview, Templater, obsidian-git) — มาตรฐานเดียวกับที่มืออาชีพใช้จริง",
-      "อยากให้เลนาลงมือแก้ 3 จุดนี้เลยไหมคะ หรือจะให้ทำเฉพาะจุดที่ Jed ห่วงที่สุดก่อน"
-    ],
-    "details": "",
-    "relatedProjects": [],
-    "auto": true
-  },
-  {
     "id": 25,
     "date": "27 มิถุนายน 2569",
     "topCategory": "📝 Memory & Diary",
@@ -2201,39 +1086,39 @@
     "tags": [
       "📝 Memory & Diary",
       "🔧 Dev & Tech",
-      "🔍 Research",
-      "🤖 System & Setup"
+      "🤖 System & Setup",
+      "🔍 Research"
     ],
-    "summary": "Auto-log: หมวดหลัก 📝 Memory & Diary (27%) — รอ Sage สรุปท้ายวัน",
+    "summary": "Auto-log: หมวดหลัก 📝 Memory & Diary (28%) — รอ Sage สรุปท้ายวัน",
     "categories": [
       {
         "name": "📝 Memory & Diary",
-        "count": 175,
-        "pct": 27
+        "count": 207,
+        "pct": 28
       },
       {
         "name": "🔧 Dev & Tech",
-        "count": 129,
-        "pct": 20
-      },
-      {
-        "name": "🔍 Research",
-        "count": 85,
-        "pct": 13
+        "count": 137,
+        "pct": 18
       },
       {
         "name": "🤖 System & Setup",
-        "count": 83,
-        "pct": 13
+        "count": 106,
+        "pct": 14
+      },
+      {
+        "name": "🔍 Research",
+        "count": 92,
+        "pct": 12
       },
       {
         "name": "💡 Creative & Content",
-        "count": 63,
+        "count": 78,
         "pct": 10
       },
       {
         "name": "🎯 Strategy & CEO",
-        "count": 45,
+        "count": 55,
         "pct": 7
       }
     ],
@@ -2246,6 +1131,288 @@
       "[Laura] 10-Clinical ก็ยังอยู่ในขั้น delegate ต่อ ไม่ใช่ของจริงอีกเช่นกัน — รอ noti ชั้นถัดไปต่อไปค่ะ ไม่ต้องทำอะไรเพิ่มต",
       "**Atomic notes สร้างใหม่ในรอบนี้ (9 ไฟล์):**",
       "- `atom-paperclip-ai-release-date` (จาก Paperclip AI วิธีสร้างบริษัท)"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 45,
+    "date": "27 กรกฎาคม 2569",
+    "topCategory": "📝 Memory & Diary",
+    "tags": [
+      "📝 Memory & Diary",
+      "🎯 Strategy & CEO",
+      "🔧 Dev & Tech",
+      "💡 Creative & Content"
+    ],
+    "summary": "Auto-log: หมวดหลัก 📝 Memory & Diary (31%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "📝 Memory & Diary",
+        "count": 95,
+        "pct": 31
+      },
+      {
+        "name": "🎯 Strategy & CEO",
+        "count": 49,
+        "pct": 16
+      },
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 43,
+        "pct": 14
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 42,
+        "pct": 14
+      },
+      {
+        "name": "🤖 System & Setup",
+        "count": 25,
+        "pct": 8
+      },
+      {
+        "name": "🔍 Research",
+        "count": 17,
+        "pct": 6
+      }
+    ],
+    "tasks": [
+      "- `output/todos.json` (pending tasks)",
+      "| `finance/*.md` | `40-Life/` (หรือสร้าง subfolder ถ้าจำนวนมากขึ้น) |",
+      "อ้างอิง script ตัวอย่างที่เคยรันแล้ว: `D:\\Claude_Cowork\\Jed_org\\scripts\\vault_backfill.py` (ใช้ pattern เดียวกันสำหรับไฟ",
+      "1. หา entry ที่มี `date` เก่ากว่า **30 วัน** จากวันนี้ในแต่ละไฟล์ (ถ้ายังไม่มี entry เก่ากว่า 30 วัน — ข้ามขั้นตอนนี้ไปเ",
+      "- ไม่ชัดเจน → คงอยู่ใน `00-Inbox/` แต่เพิ่ม tag `#needs-review`",
+      "3. ย้ายไฟล์ไปยัง folder ที่ถูกต้อง (ไม่ทับไฟล์เดิมถ้าชื่อซ้ำ — ให้เพิ่ม suffix `-2`)",
+      "4. สร้าง log: `D:\\NB_G_Drive\\Second_Brain\\00-Inbox\\processed-YYYY-MM-DD.md`",
+      "สำหรับทุก note ที่ย้ายมาในขั้นตอน 1 และ note ใหม่ที่เพิ่มในสัปดาห์นี้:"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 46,
+    "date": "28 กรกฎาคม 2569",
+    "topCategory": "📝 Memory & Diary",
+    "tags": [
+      "📝 Memory & Diary",
+      "🔧 Dev & Tech",
+      "🤖 System & Setup",
+      "🔍 Research"
+    ],
+    "summary": "Auto-log: หมวดหลัก 📝 Memory & Diary (29%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "📝 Memory & Diary",
+        "count": 162,
+        "pct": 29
+      },
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 116,
+        "pct": 21
+      },
+      {
+        "name": "🤖 System & Setup",
+        "count": 80,
+        "pct": 15
+      },
+      {
+        "name": "🔍 Research",
+        "count": 60,
+        "pct": 11
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 45,
+        "pct": 8
+      },
+      {
+        "name": "🎯 Strategy & CEO",
+        "count": 39,
+        "pct": 7
+      }
+    ],
+    "tasks": [
+      "ความหมายแบบง่าย: เหมือนการ \"คัดลอกเส้นทางงาน\" ออกไปอีกเส้นหนึ่ง โดยเริ่มจากจุดที่เราอยู่ตอนนี้ (commit ปัจจุบัน) — งานที",
+      "- มี subagent หรือ session แยกที่ต้องทำงานคู่ขนานกัน (เหมือนที่ระบบ Agent tool มี `isolation: worktree` ให้ทำงานแยกจากโค",
+      "ช่วยสร้าง Dictionary คลังคำศัพท์ และจัดเก็บคำศัพท์นี้ให้ผมด้วย",
+      "[Laura] เรียบร้อยค่ะ Jed สร้าง Dictionary คลังคำศัพท์ไว้ที่ [output/glossary.json](output/glossary.json) แล้ว พร้อมเก็บค",
+      "โครงสร้างไฟล์ (ต่อ 1 คำศัพท์):",
+      "[Laura] เพิ่ม Glossary เข้า dashboard เรียบร้อยค่ะ Jed",
+      "- เพิ่มเมนู \"📔 Glossary\" ใน sidebar — [dashboard/index.html](dashboard/index.html)",
+      "- เพิ่มหน้า Glossary พร้อมช่องค้นหาคำศัพท์"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 47,
+    "date": "29 กรกฎาคม 2569",
+    "topCategory": "🎯 Strategy & CEO",
+    "tags": [
+      "🎯 Strategy & CEO",
+      "📝 Memory & Diary",
+      "💡 Creative & Content",
+      "🔍 Research"
+    ],
+    "summary": "Auto-log: หมวดหลัก 🎯 Strategy & CEO (35%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "🎯 Strategy & CEO",
+        "count": 25,
+        "pct": 35
+      },
+      {
+        "name": "📝 Memory & Diary",
+        "count": 23,
+        "pct": 32
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 8,
+        "pct": 11
+      },
+      {
+        "name": "🔍 Research",
+        "count": 7,
+        "pct": 10
+      },
+      {
+        "name": "⚖️ Decision",
+        "count": 3,
+        "pct": 4
+      },
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 3,
+        "pct": 4
+      }
+    ],
+    "tasks": [
+      "## สิ่งเล็กๆที่ทำได้วันนี้/พรุ่งนี้",
+      "[1 action เล็กมาก ทำได้ใน 24 ชม. ที่เชื่อมกับงานค้างจริง — เลือกจากของที่ Jed พอมีพลังงานจะทำได้จริงตามบริบท caregiver b",
+      "- สร้างไฟล์ `output/decisions/YYYY-MM-DD-atlas-reflection-ceo-lens.md` (ใช้วันที่ของเมื่อวาน รูปแบบ YYYY-MM-DD จาก step ",
+      "- ถ้ามี `output/diary/YYYY-MM-DD.md` ของเมื่อวานแล้ว → เพิ่ม section ใหม่ \"### 🪞 Atlas Daily Reflection\" ต่อท้ายในส่วน \"",
+      "1. **STAT_OR PHI ที่เตือนว่าด่วนที่สุด 2 วันติด (26-27 ก.ค.) จริงๆปิดไปแล้วตั้งแต่ 10 ก.ค.** — การ์ด Kanban เป็นข้อมูลเก"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 48,
+    "date": "30 กรกฎาคม 2569",
+    "topCategory": "🤖 System & Setup",
+    "tags": [
+      "🤖 System & Setup",
+      "📝 Memory & Diary",
+      "🔧 Dev & Tech",
+      "💡 Creative & Content"
+    ],
+    "summary": "Auto-log: หมวดหลัก 🤖 System & Setup (23%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "🤖 System & Setup",
+        "count": 22,
+        "pct": 23
+      },
+      {
+        "name": "📝 Memory & Diary",
+        "count": 20,
+        "pct": 21
+      },
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 16,
+        "pct": 17
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 13,
+        "pct": 14
+      },
+      {
+        "name": "🔍 Research",
+        "count": 12,
+        "pct": 12
+      },
+      {
+        "name": "🌿 Life & Health",
+        "count": 6,
+        "pct": 6
+      }
+    ],
+    "tasks": [
+      "ผมอยากสร้างโปรเจคใหม่ที่ \"D:\\Project\\ปรับปรุง_KM\" ฉันลองเปลี่ยนชื่อโฟลเดอร์หลักเป็นโฟลเดอร์โปรเจคแล้ว แต่ในนั้นไม่มีลอร่",
+      "3. **อัปเดต [cheat sheet](output/2026-07-09-session-folder-cheatsheet.md)** + รัน sync_index.py ตาม standing rule แล้ว",
+      "ข้อสังเกตเล็กน้อย: ใน SOP69 มีไฟล์ซ้ำ `ANE-SOP-05...pdf` สองไฟล์ชื่อต่างกันแค่ช่องว่าง — ไว้ค่อยเก็บกวาดตอนเริ่มปรับปรุง",
+      "คราวหน้าถ้าเริ่มโปนเจคใหม่ต้องมาให้คุณสร้างความเชื่อมโยงก่อนถูกไหมครับ",
+      "1. **สร้าง/เตรียมโฟลเดอร์โปรเจกต์** ที่ `D:\\Project\\<ชื่อโปรเจกต์>` (ใส่ไฟล์งานได้เลย)",
+      "2. **มาบอกลอร่าที่ห้อง Jed_org นี้** ว่า \"สร้างโปรเจกต์ใหม่ที่ ...\" → ลอร่าจะสร้าง `CLAUDE.md` + ลงทะเบียน projects.json",
+      "ผมตั้ง session นี้ในการเริ่ม project นะครับ  จะได้ง่ายๆ",
+      "[Laura] ดีเลยค่ะ — ลอร่าบันทึกลง memory เรียบร้อยแล้วนะคะว่า **ห้องนี้คือ \"จุดเริ่มโปรเจกต์ใหม่\"** ของ Jed"
+    ],
+    "details": "",
+    "relatedProjects": [],
+    "auto": true
+  },
+  {
+    "id": 49,
+    "date": "1 สิงหาคม 2569",
+    "topCategory": "📝 Memory & Diary",
+    "tags": [
+      "📝 Memory & Diary",
+      "🔧 Dev & Tech",
+      "🎯 Strategy & CEO",
+      "🤖 System & Setup"
+    ],
+    "summary": "Auto-log: หมวดหลัก 📝 Memory & Diary (21%) — รอ Sage สรุปท้ายวัน",
+    "categories": [
+      {
+        "name": "📝 Memory & Diary",
+        "count": 108,
+        "pct": 21
+      },
+      {
+        "name": "🔧 Dev & Tech",
+        "count": 79,
+        "pct": 16
+      },
+      {
+        "name": "🎯 Strategy & CEO",
+        "count": 71,
+        "pct": 14
+      },
+      {
+        "name": "🤖 System & Setup",
+        "count": 65,
+        "pct": 13
+      },
+      {
+        "name": "💡 Creative & Content",
+        "count": 54,
+        "pct": 11
+      },
+      {
+        "name": "🌿 Life & Health",
+        "count": 46,
+        "pct": 9
+      }
+    ],
+    "tasks": [
+      "ผมอยากสร้างโปรเจคใหม่ที่ \"D:\\Project\\ปรับปรุง_KM\" ฉันลองเปลี่ยนชื่อโฟลเดอร์หลักเป็นโฟลเดอร์โปรเจคแล้ว แต่ในนั้นไม่มีลอร่",
+      "3. **อัปเดต [cheat sheet](output/2026-07-09-session-folder-cheatsheet.md)** + รัน sync_index.py ตาม standing rule แล้ว",
+      "ข้อสังเกตเล็กน้อย: ใน SOP69 มีไฟล์ซ้ำ `ANE-SOP-05...pdf` สองไฟล์ชื่อต่างกันแค่ช่องว่าง — ไว้ค่อยเก็บกวาดตอนเริ่มปรับปรุง",
+      "คราวหน้าถ้าเริ่มโปนเจคใหม่ต้องมาให้คุณสร้างความเชื่อมโยงก่อนถูกไหมครับ",
+      "1. **สร้าง/เตรียมโฟลเดอร์โปรเจกต์** ที่ `D:\\Project\\<ชื่อโปรเจกต์>` (ใส่ไฟล์งานได้เลย)",
+      "2. **มาบอกลอร่าที่ห้อง Jed_org นี้** ว่า \"สร้างโปรเจกต์ใหม่ที่ ...\" → ลอร่าจะสร้าง `CLAUDE.md` + ลงทะเบียน projects.json",
+      "ผมตั้ง session นี้ในการเริ่ม project นะครับ  จะได้ง่ายๆ",
+      "[Laura] ดีเลยค่ะ — ลอร่าบันทึกลง memory เรียบร้อยแล้วนะคะว่า **ห้องนี้คือ \"จุดเริ่มโปรเจกต์ใหม่\"** ของ Jed"
     ],
     "details": "",
     "relatedProjects": [],

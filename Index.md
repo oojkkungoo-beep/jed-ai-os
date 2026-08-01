@@ -3,7 +3,7 @@
 อัปเดตอัตโนมัติด้วย `scripts/sync_index.py` (Cinder รันทุกครั้งที่มีไฟล์ใหม่/แก้ไฟล์ใน team, characters, output) ห้ามแก้ไฟล์นี้ตรงๆ
 
 
-สร้างล่าสุด: 2026-07-24 00:36
+สร้างล่าสุด: 2026-08-01 14:15
 
 
 ## Agent Definitions (team/)
@@ -48,6 +48,13 @@
 
 ## Diary (output/diary/)
 
+- [📔 Diary — วันเสาร์ที่ 1 สิงหาคม 2569](output/diary/2026-08-01.md) (2026-08-01) — Sage
+- [📔 Diary — วันศุกร์ที่ 31 กรกฎาคม 2569](output/diary/2026-07-31.md) (2026-07-31) — Sage
+- [📔 Diary — วันอังคารที่ 28 กรกฎาคม 2569](output/diary/2026-07-28.md) (2026-07-28) — Sage
+- [📔 Diary — วันจันทร์ที่ 27 กรกฎาคม 2569](output/diary/2026-07-27.md) (2026-07-27) — Sage
+- ["Handoff to Sage — Lena Weekly Vault Digest สรุปเข้าไดอารี่ 27 ก.ค."](output/diary/_handoff-sage-2026-07-27-lena-digest.md) (2026-07-27)
+- ["Handoff to Sage — Vera Weekly Audit สรุปเข้าไดอารี่ 27 ก.ค."](output/diary/_handoff-sage-2026-07-27-vera-audit.md) (2026-07-27)
+- [📔 Diary — วันอาทิตย์ที่ 26 กรกฎาคม 2569](output/diary/2026-07-26.md) (2026-07-26) — Sage
 - [📔 Diary — วันพุธที่ 15 กรกฎาคม 2569](output/diary/2026-07-15.md) (2026-07-15) — Sage
 - [📔 Diary — วันอังคารที่ 14 กรกฎาคม 2569](output/diary/2026-07-14.md) (2026-07-14) — Sage
 - [📔 Diary — วันจันทร์ที่ 13 กรกฎาคม 2569](output/diary/2026-07-13.md) (2026-07-13) — Sage
@@ -95,6 +102,11 @@
 
 ## Decisions (output/decisions/)
 
+- [🎯 Atlas — "ไม่มีอะไรเป็นชิ้นเป็นอัน"? แยกความรู้สึกกับข้อมูลจริง](output/decisions/2026-08-01-atlas-completion-pattern.md) (2026-08-01) — Atlas
+- [🪞 Atlas Daily Reflection — วันศุกร์ที่ 31 กรกฎาคม 2569](output/decisions/2026-07-31-atlas-reflection-ceo-lens.md) (2026-07-31) — Atlas
+- [🪞 Atlas Daily Reflection — วันอังคารที่ 28 กรกฎาคม 2569](output/decisions/2026-07-28-atlas-reflection-ceo-lens.md) (2026-07-28) — Atlas
+- [🪞 Atlas Daily Reflection — วันจันทร์ที่ 27 กรกฎาคม 2569](output/decisions/2026-07-27-atlas-reflection-ceo-lens.md) (2026-07-27) — Atlas
+- [🪞 Atlas Daily Reflection — วันอาทิตย์ที่ 26 กรกฎาคม 2569](output/decisions/2026-07-26-atlas-reflection-ceo-lens.md) (2026-07-26) — Atlas
 - [Council + Vera/Devil/Atlas — นำ GLM + Gemini มาเป็นเครื่องมือกลางของทีม](output/decisions/2026-07-16-council-glm-gemini-tools.md) (2026-07-16)
 - [🪞 Atlas Daily Reflection — วันพุธที่ 15 กรกฎาคม 2569](output/decisions/2026-07-15-atlas-reflection-ceo-lens.md) (2026-07-15) — Atlas
 - [🪞 Atlas Daily Reflection — วันอังคารที่ 14 กรกฎาคม 2569](output/decisions/2026-07-14-atlas-reflection-ceo-lens.md) (2026-07-14) — Atlas
@@ -118,6 +130,8 @@
 
 ## QA (output/qa/)
 
+- ["Vera Weekly Team Audit — 27 กรกฎาคม 2569"](output/qa/2026-07-27-weekly-audit.md) (2026-07-27)
+- [🧭 Laura Weekly Ops Review — สัปดาห์ 31 (27 กรกฎาคม 2569)](output/qa/2026-07-27-weekly-ops-review.md) (2026-07-27) — Laura
 - [🔎 Vera Review: Laura — ANE-WI-013 อัปเดต AHA CPR 2025](output/qa/2026-07-13-ANE-WI-013-CPR2025.md) (2026-07-14)
 - ["Vera Weekly Team Audit — 13 กรกฎาคม 2569"](output/qa/2026-07-13-weekly-audit.md) (2026-07-13)
 - [🧭 Laura Weekly Ops Review — สัปดาห์ 29 (13 กรกฎาคม 2569)](output/qa/2026-07-13-weekly-ops-review.md) (2026-07-13) — Laura
@@ -150,7 +164,7 @@
 
 ## Output — Other
 
-- [Cheat Sheet — เปิด session โปรเจกต์ไหน ที่โฟลเดอร์ไหน](output/2026-07-09-session-folder-cheatsheet.md) (2026-07-10)
+- [Cheat Sheet — เปิด session โปรเจกต์ไหน ที่โฟลเดอร์ไหน](output/2026-07-09-session-folder-cheatsheet.md) (2026-08-01)
 - [🔥 ย้าย ชศพอ. Web App → Netlify + บัญชีใหม่ nurse.rtafnc@gmail.com — Cinder](output/dev/2026-07-01-cinder-migrate-rtaf-nurse-web-netlify.md) (2026-07-01)
 - [🔧 ระบบทะเบียนเวชภัณฑ์ (Medsupply Registry) — Build + Audit + Deploy](output/dev/2026-06-29-medsupply-registry-deploy.md) (2026-06-29)
 - [💰 รีวิว "4 พิมพ์เขียวการเงิน" ของ Annabel เทียบกับสถานะ Jed](output/finance/2026-06-28-annabel-wealth-architect-framework-review.md) (2026-06-27)

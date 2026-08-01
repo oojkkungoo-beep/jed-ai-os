@@ -79,6 +79,38 @@
     "id": "jed_anesth_logbook"
   },
   {
+    "name": "Team_Management",
+    "status": "active",
+    "progress": 3,
+    "updated": "2026-08-01T00:00:00.000Z",
+    "notes": "Workspace สำหรับงานจัดการทีม AI (agent) ของ Jed — วางแผน/ทบทวน/ปรับโครงสร้างทีม 15 agent, ออกแบบ agent ใหม่, ปรับ model assignment, ประเมินผลทีม — โปรเจกต์แยก root อยู่ที่ `D:\\Project\\Team_Management\\`\n\n🔗 เชื่อมเข้าทีม Jed's AI OS แล้ว (1 ส.ค.69): เพิ่ม `CLAUDE.md` ให้ session ใช้ตัวตน Laura + routing เดียวกับระบบหลัก\n\n⚠️ Source of truth อยู่ที่ Jed_org — โฟลเดอร์นี้เป็น workspace เท่านั้น ห้าม fork สำเนา agent profile/org structure มาไว้ ให้แก้ที่ต้นทาง (`Jed_org/team/`, org_structure.md, model_assignment.md, agent_creation_checklist.md, Kanban.md) เสมอ ใช้ที่นี่เก็บแค่ร่าง/แผน/บทวิเคราะห์ก่อนเข้าระบบหลัก\n\n💡 หมายเหตุ: งานจัดการทีมส่วนใหญ่เปิด session ที่ Jed_org ทำได้ตรงกว่า — โฟลเดอร์นี้เหมาะกับงานรื้อทีมรอบใหญ่ หรือถ้าจะสร้างเครื่องมือ/แดชบอร์ดจัดการทีม (→ Forge/Cinder)\n\n👥 ทีมหลัก: Vera (เพิ่ม/ปรับ agent, skill gap), Council+Atlas (โครงสร้างแผนก), Laura (ประสาน/Kanban)\n\n⏭ ที่เหลือ: Jed ระบุงานจัดการทีมชิ้นแรกที่อยากทำในโฟลเดอร์นี้",
+    "id": "team_management"
+  },
+  {
+    "name": "Home_server",
+    "status": "active",
+    "progress": 10,
+    "updated": "2026-07-30T00:00:00.000Z",
+    "notes": "ตั้งค่า+ดูแล Home Server ของ Jed — ใช้โน้ตบุ๊ก (user foong) เป็นเซิร์ฟเวอร์ที่บ้านรัน 24 ชม. (ปิดฝาไม่ดับ) เข้าถึงระยะไกลผ่าน SSH + Tailscale จากเครื่องหลัก Dell — โปรเจกต์แยก root อยู่ที่ `D:\\Project\\Home_server\\`\n\n🔗 เชื่อมเข้าทีม Jed's AI OS แล้ว (30 ก.ค.69): เพิ่ม `CLAUDE.md` ให้ session ใช้ตัวตน Laura + routing เดียวกับระบบหลัก อ้างอิง agent profile จาก `Jed_org/team/` แบบ absolute path\n\n📁 มีสคริปต์อยู่แล้ว 2 ไฟล์: `check_specs.ps1` (ตรวจสเปก/tool/port), `setup_server.ps1` (auto setup: Never Sleep, OpenSSH port 22, SSH key จาก Dell, ติดตั้ง Tailscale)\n\n⚠️ ที่มา: สคริปต์ทำโดยทีม Angie (Antigravity) — ทีม Laura กับ Angie ไม่เชื่อมระบบกัน ควรยืนยันกับ Jed ว่าจะให้ Laura เป็นเจ้าของหลักหรือทำคู่ขนาน กันงานชนกัน\n\n👥 ทีมหลัก: Cinder (server/SSH/Tailscale/ops), Scout (benchmark self-host), Forge (บริการบนเซิร์ฟเวอร์), Vera (security ก่อนเปิด port/บริการสู่ภายนอก)\n\n⏭ ที่เหลือ: Jed ยืนยันขอบเขต + ใครเป็นเจ้าของ (Laura/Angie), กำหนดว่าจะ host อะไรบนเซิร์ฟเวอร์",
+    "id": "home_server"
+  },
+  {
+    "name": "Ai_Limit_monitoring",
+    "status": "active",
+    "progress": 55,
+    "updated": "2026-08-01T00:00:00.000Z",
+    "notes": "โปรแกรม desktop widget ติดตั้งในเครื่อง Jed (Windows) แสดงโควตา/Limit ของ AI คงเหลือ + pin ค้างจอ (always-on-top) — root อยู่ที่ `D:\\Project\\Ai_Limit_monitoring\\`\n\n✅ อัปเดต (1 ส.ค.69): ตัดสินใจ **ไม่เขียนใหม่ — fork ของ open-source มาเป็นฐาน** หลัง Scout เจอว่ามี widget ตรงโจทย์เพียบ. เลือก **niccolo-sabato/claude-usage-widget** (MIT, v2.8.50, Python+tkinter ไฟล์เดียว `src/widget.pyw`) clone ไว้ที่ `claude-usage-widget/`\n\n🔒 Security audit ผ่าน: network ยิงแค่ claude.ai + api.github.com (เช็คอัปเดต), extension ไม่มี fetch/ส่งข้อมูลออก, redact `sk-ant-*` จาก log\n\n🟢 **รันได้จริงแล้ว**: เชื่อม claude.ai ผ่าน session key (บัญชี jedsada, plan Ai) โชว์ session 5ชม./weekly/รายโมเดล. key เก็บที่ `%LOCALAPPDATA%\\Claude Usage\\config.json` (นอก repo). Feasibility เคลียร์แล้ว = อ่าน local ผ่าน endpoint /usage ของเว็บ\n\n📌 Scope: Claude อย่างเดียวก่อน (ChatGPT/Gemini รายเดือนไม่มี local/API — ไว้เพิ่มช่องกรอกเองทีหลัง)\n\n⏭ งานค้าง: (1) แก้บั๊ก refresh ตอนไม่มี key → KeyError 'org_id' แล้วแอปดับ (แก้ `cfg['org_id']`→`.get`) (2) แต่ง UI/essential mode เกาะ taskbar (3) auto-start ตอนเปิดเครื่อง\n\n👥 ทีม: Scout (เจอ+เทียบทูล), Cinder (clone/audit/รัน), Forge (แต่ง UI ต่อ), Vera (QA)",
+    "id": "ai_limit_monitoring"
+  },
+  {
+    "name": "เกมเก็บแต้ม",
+    "status": "active",
+    "progress": 2,
+    "updated": "2026-07-24T00:00:00.000Z",
+    "notes": "ระบบ/กิจกรรม gamification (เกมเก็บแต้ม) สำหรับกระตุ้นพฤติกรรมในทีม/องค์กร — ให้สมาชิกสะสมแต้มจากกิจกรรมแล้วแลกรางวัล/จัดอันดับ — โปรเจกต์แยก root อยู่ที่ `D:\\Project\\เกมเก็บแต้ม\\`\n\n🔗 เชื่อมเข้าทีม Jed's AI OS แล้ว (24 ก.ค.69): เพิ่ม `CLAUDE.md` ให้ session ใช้ตัวตน Laura + routing เดียวกับระบบหลัก อ้างอิง agent profile จาก `Jed_org/team/` แบบ absolute path\n\n👥 ทีมหลัก: Atlas (ออกแบบกลไกแต้ม/แรงจูงใจ), Nova (จัดกิจกรรม/ติดตามผู้เล่น), Muse (กติกา/สื่อประชาสัมพันธ์), Scout (benchmark ระบบ gamification), Forge+Cinder (ถ้าพัฒนาเป็นเว็บ/แอป), Mint (งบรางวัล)\n\n📌 สถานะเริ่มต้น: โฟลเดอร์ยังว่าง รอ Jed กำหนดขอบเขต — กลุ่มเป้าหมาย (ทีม AI / บุคลากร กวห. / ครอบครัว), พฤติกรรมที่เก็บแต้ม, รางวัล, และรูปแบบ (ตาราง/เว็บแอป/manual)\n\n⏭ ที่เหลือ: Jed กำหนดขอบเขต → Scout benchmark → Atlas/Nova ออกแบบกลไก",
+    "id": "kem_kep_taem"
+  },
+  {
     "name": "ชศพอ_Web App",
     "status": "active",
     "progress": 75,

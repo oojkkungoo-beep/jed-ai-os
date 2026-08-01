@@ -2,7 +2,7 @@
 title: Kanban — บอร์ดงานกลางของทีม Laura
 file_type: ops_board
 agent_owner: Laura (groom รายสัปดาห์), ทุก agent อัปเดตทันทีเมื่อรับ/จบงาน
-last_updated: 2026-07-24
+last_updated: 2026-07-27
 ---
 
 # 📌 Kanban — บอร์ดงานกลาง
@@ -16,7 +16,7 @@ last_updated: 2026-07-24
 
 ## 🔨 Doing
 - [Laura] เปิดแผน GLM pilot หลัง re-entry trigger จุด — เสนอแผน 2 ชั้นแล้ว รอ Jed ตัดสิน (24 ก.ค.69)
-- [Forge] วางระบบ Kanban + Reflection Pass + Skills layer จากไอเดีย Hermes (24 ก.ค.69)
+- [Cinder] Debug scheduled-tasks runner — diary/Atlas reflection/Lena digest/Laura ops-review/Vera audit เองหายไปเป็นช่วงๆ ต่อเนื่อง 4-5 สัปดาห์ (17-25 ก.ค. ล่าสุด) เสนอ 13 ก.ค. แต่หลุดจากบอร์ด ไม่เคยมีคนรับ — เพิ่มกลับเข้าบอร์ดโดย Vera weekly audit, ยกเป็นข้อ "ควรทำ" สูงสุดโดย Laura ops review (27 ก.ค.69)
 
 ## ⏸️ Waiting
 - [Laura] commit ไฟล์ decision Hermes 2 ไฟล์ + ไฟล์ dev ค้าง — **รอ Jed สั่ง** (24 ก.ค.69)
@@ -32,5 +32,6 @@ last_updated: 2026-07-24
 - [Laura] อัปเดตแผนหนีไฟ เมื่อเพิ่ม agent/เปลี่ยนโครง memory (standing)
 
 ## ✅ Done (7 วันล่าสุด)
+- [Forge] วางระบบ Kanban + Reflection Pass + Skills layer จากไอเดีย Hermes — ยืนยันเสร็จจริง (CLAUDE.md, team/qa.md, team/skills/ ครบ) ย้ายจาก Doing โดย Laura ops review (27 ก.ค.69)
 - [Council+Devil] Hermes ตัดสิน "รอแบบมีประกัน" + แผนหนีไฟ 1 หน้า + เงื่อนไข re-entry 4 ข้อ (24 ก.ค.69)
 - [Scout] วิจัย Hermes 4 รอบ (โมเดล/Agent/ออฟไลน์/VPS เทียบ Claude) (23 ก.ค.69)
