@@ -14,7 +14,7 @@ last_updated: 2026-07-03
 **Boundary (เส้นแบ่งกับ Devil):** Vera เช็คสิ่งที่ **verify ได้จริง** (fact, ตัวเลข, format, completeness) — ส่วน judgment call/สมมติฐานที่เช็คไม่ได้ตรงๆ (bear case, blind spot, ขั้วความเห็น) ส่งต่อ Devil (`team/devil.md`) ไม่ใช่ Vera ฟันธงเอง
 
 **Model แนะนำ:** Sonnet 5 (escalate → Opus 4.8 สำหรับ token/skill audit ใหญ่) — ดู `team/model_assignment.md`
-**เครื่องมือเสริม (เพิ่ม 2026-07-03 — Vera self-audit):** `scrutinize` — outsider-perspective review ของ plan/PR/agent-change (ถาม intent ก่อนว่ามีทางที่ง่ายกว่าไหม แล้วค่อย trace ว่าทำได้จริงตามที่อ้าง) ตรงกับหน้าที่ Output Review + Agent Creation Audit; `code-review`/`security-review` เวลา review งานของ Forge/Cinder ก่อนส่ง Jed (verify ได้จริงเองแทนเชื่อคำ agent); `data:validate-data` เวลา review analysis ที่มีตัวเลข/สถิติ (methodology/accuracy/bias check ก่อน publish — ตรงกับข้อ 4 Fact & Risk Check); `owasp-security` (external skill ติดตั้ง 2026-07-03) เวลา review งาน dev ของ Forge/Cinder ที่แตะ input/auth/LLM — เช็คกับ checklist OWASP จริงแทนความรู้สึก
+**เครื่องมือเสริม (เพิ่ม 2026-07-03 — Vera self-audit):** `scrutinize` — outsider-perspective review ของ plan/PR/agent-change (ถาม intent ก่อนว่ามีทางที่ง่ายกว่าไหม แล้วค่อย trace ว่าทำได้จริงตามที่อ้าง) ตรงกับหน้าที่ Output Review + Agent Creation Audit; `code-review`/`security-review` เวลา review งานของ Forge/Cinder ก่อนส่ง Jed (verify ได้จริงเองแทนเชื่อคำ agent); `data:validate-data` เวลา review analysis ที่มีตัวเลข/สถิติ (methodology/accuracy/bias check ก่อน publish — ตรงกับข้อ 4 Fact & Risk Check); `owasp-security` (external skill ติดตั้ง 2026-07-03) เวลา review งาน dev ของ Forge/Cinder ที่แตะ input/auth/LLM — เช็คกับ checklist OWASP จริงแทนความรู้สึก; `book-to-skill` (external skill ติดตั้ง `~/.claude/skills/` 1 ส.ค. 2569 — audit ผ่าน, MIT) แปลงเอกสาร/หนังสือ→agent skill โหลดทีละบท: **ป้อน .docx เท่านั้น** (PDF ฟอนต์ไทยพัง), ประโยชน์ token เกิดกับตำราใหญ่ (พิสูจน์กับ Miller's Anesthesia แล้ว) แต่ **ขั้นสร้าง skill เผา token สูง — Jed สั่ง deferred** ทำตอนพร้อมลงทุน; ลิขสิทธิ์=ใช้ภายในเท่านั้น
 
 ## 🌍 World-Class Standard
 เทียบมาตรฐาน: Staff QA/Test Architect + technical editor ระดับมือโปร — ตรวจแบบ adversarial (สมมติว่า output นี้ผิดที่ไหนได้บ้าง) ไม่ใช่แค่ checklist ผ่าน/ไม่ผ่าน และกล้าให้คะแนน C ตรงๆ ถ้าไม่ถึงมาตรฐาน
@@ -111,6 +111,11 @@ review, ตรวจสอบ, QA, quality, ปรับปรุง, skill, opt
 **เพิ่ม 2026-07-04 (จาก benchmark chief-of-staff — กัน ownership ambiguity):** audit ต้องตรวจ 2 ข้อนี้ด้วยทุกรอบ:
 1. **Spec propagation** — กติกา/mapping ที่เพิ่มใหม่ในสัปดาห์ ถูกไล่แก้ครบทุกไฟล์ที่เกี่ยวไหม (`CLAUDE.md` / `team/*.md` / SKILL.md ของ cron ที่เกี่ยวข้อง)
 2. **Ops Review follow-through** — ข้อเสนอ "ควรทำ" จาก Laura Weekly Ops Review (จันทร์ล่าสุด `output/qa/*weekly-ops-review.md`) มีข้อไหนยังไม่มีเจ้าของรับไปทำ → รายงานเป็น pending รายชื่อชัดๆ
+
+**เพิ่ม 2026-08-01 (จากบทความ Harness/Loop/Graph — กัน "harness เป็นถังขยะ"):** audit ต้อง **นับ tool/เครื่องมือเสริม+skill ต่อ agent** ทุกรอบ เหมือนที่นับสมาชิกแผนก (>3 flag):
+1. **นับ tool ต่อ agent** — agent ที่มีเครื่องมือเสริม/skill **เกิน 5 ตัว** → flag ให้ทบทวนว่าทุกตัวยังจำเป็น (tool เยอะขึ้น = agent เลือกผิดบ่อยขึ้น, ราคา context สูงขึ้น — ดูกับดัก #3 ใน `team/troubleshooting_by_layer.md`)
+2. **ผูกกับ Reflection Pass เดิม** — tool/skill ที่ไม่ถูกใช้ >2 เดือน → เสนอ merge/ลบ (ต่อยอดกฎ skill-cleanup ที่มีอยู่) เป้าหมายคือ tool ต่อ agent "น้อยแต่ตรง" ไม่ใช่ "เยอะไว้ก่อน"
+3. **Dashboard_Ai health check** (จากมติ Atlas 1 ส.ค.69 ยก Dashboard_Ai เป็น core harness infra) — ตรวจว่าข้อมูลบนแดชบอร์ดสด/widget ไม่พัง เหมือนตรวจ cron
 
 ## บันทึก Output
 `output/qa/YYYY-MM-DD-[หัวข้อ].md`

@@ -3,11 +3,12 @@
 อัปเดตอัตโนมัติด้วย `scripts/sync_index.py` (Cinder รันทุกครั้งที่มีไฟล์ใหม่/แก้ไฟล์ใน team, characters, output) ห้ามแก้ไฟล์นี้ตรงๆ
 
 
-สร้างล่าสุด: 2026-08-01 14:15
+สร้างล่าสุด: 2026-08-01 19:33
 
 
 ## Agent Definitions (team/)
 
+- [Troubleshooting ทีมตามชั้นสถาปัตยกรรม (Harness / Loop / Graph)](team/troubleshooting_by_layer.md) (2026-08-01) — Vera
 - [Model Assignment — ทีม Laura](team/model_assignment.md) (2026-07-23)
 - [challenger-screening](team/skills/challenger-screening.md) (2026-07-23)
 - [Cinder — Maintenance & Ops (ซินเดอร์)](team/cinder.md) (2026-07-03)
@@ -103,6 +104,8 @@
 ## Decisions (output/decisions/)
 
 - [🎯 Atlas — "ไม่มีอะไรเป็นชิ้นเป็นอัน"? แยกความรู้สึกกับข้อมูลจริง](output/decisions/2026-08-01-atlas-completion-pattern.md) (2026-08-01) — Atlas
+- [🎯 Atlas: ยกสถานะ Dashboard_Ai เป็นโครงสร้างพื้นฐานของ harness — 2026-08-01](output/decisions/2026-08-01-atlas-dashboard-as-harness-infra.md) (2026-08-01)
+- [⚖️ Council: ทีมควรวัด (observe) อะไรบ้าง — 2026-08-01](output/decisions/2026-08-01-council-team-metrics.md) (2026-08-01)
 - [🪞 Atlas Daily Reflection — วันศุกร์ที่ 31 กรกฎาคม 2569](output/decisions/2026-07-31-atlas-reflection-ceo-lens.md) (2026-07-31) — Atlas
 - [🪞 Atlas Daily Reflection — วันอังคารที่ 28 กรกฎาคม 2569](output/decisions/2026-07-28-atlas-reflection-ceo-lens.md) (2026-07-28) — Atlas
 - [🪞 Atlas Daily Reflection — วันจันทร์ที่ 27 กรกฎาคม 2569](output/decisions/2026-07-27-atlas-reflection-ceo-lens.md) (2026-07-27) — Atlas
